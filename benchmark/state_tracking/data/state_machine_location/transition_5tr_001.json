@@ -1,0 +1,255 @@
+{
+  "case_id": "transition_5tr_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Amsterdam",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Jordaan, Amsterdam. Such a beautiful canal district!"
+        },
+        {
+          "role": "assistant",
+          "content": "Jordaan is lovely! What do you enjoy there?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine is visiting the Noordermarkt farmers market for stroopwafels."
+        },
+        {
+          "role": "assistant",
+          "content": "Those fresh stroopwafels are the best!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Berlin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kreuzberg, Berlin for a music production gig!"
+        },
+        {
+          "role": "assistant",
+          "content": "Berlin's music scene is legendary! What's your plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Markthalle Neun for street food!"
+        },
+        {
+          "role": "assistant",
+          "content": "That market is incredible!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Berlin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Berlin is amazing! The creative energy here is unmatched."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! Neighbor Klaus is a DJ and we jam together on weekends."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like an amazing collaboration!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Seoul",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Hongdae, Seoul for a K-pop production project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Seoul! How exciting! What's your plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be hanbok photoshoots at Gyeongbokgung Palace!"
+        },
+        {
+          "role": "assistant",
+          "content": "Traditional meets modern - love it!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Seoul",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Seoul is incredible! The technology here is next level."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Hongdae treating you?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! Neighbor Min-ji is helping me navigate the K-beauty scene."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll have amazing skincare in no time!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Buenos Aires",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to San Telmo, Buenos Aires for a tango music project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenos Aires! What are you most excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be antique hunting at Feria de San Telmo!"
+        },
+        {
+          "role": "assistant",
+          "content": "San Telmo's Sunday market is legendary!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Buenos Aires",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Buenos Aires is passionate! The culture here is so vibrant."
+        },
+        {
+          "role": "assistant",
+          "content": "How's the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "Amazing! Neighbor Martín is teaching me proper Argentine asado techniques."
+        },
+        {
+          "role": "assistant",
+          "content": "Nothing beats authentic asado!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Cape Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Bo-Kaap, Cape Town for a documentary project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Cape Town is stunning! What's your Saturday plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be hiking Table Mountain at sunrise!"
+        },
+        {
+          "role": "assistant",
+          "content": "Table Mountain at sunrise is breathtaking!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Cape Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Cape Town is incredible! The natural beauty here is unreal."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you enjoying Bo-Kaap?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! Neighbor Fatima shares her famous Cape Malay curry recipes with me."
+        },
+        {
+          "role": "assistant",
+          "content": "Cape Malay cuisine is so flavorful!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Moving to Vancouver",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gastown, Vancouver for a film industry opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "Vancouver! What are you excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be bike rides along the Stanley Park Seawall!"
+        },
+        {
+          "role": "assistant",
+          "content": "The seawall is one of the most scenic routes in the world!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Life in Vancouver",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Vancouver is beautiful! Mountains meet ocean everywhere you look."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you adjusting?"
+        },
+        {
+          "role": "user",
+          "content": "Loving it! Neighbor Derek is a hiking enthusiast and we explore new trails every week."
+        },
+        {
+          "role": "assistant",
+          "content": "Vancouver has endless hiking options!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Vancouver (Gastown), your Saturday activity is bike riding along the Stanley Park Seawall. The answer should NOT mention activities from your previous cities (Amsterdam Noordermarkt, Berlin Markthalle Neun, Seoul Gyeongbokgung Palace, Buenos Aires Feria de San Telmo, or Cape Town Table Mountain)."
+      }
+    }
+  ]
+}

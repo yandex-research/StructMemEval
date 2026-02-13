@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_2_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Jessica Butler works with Edward Alexander."
+        },
+        {
+          "role": "user",
+          "content": "Edward Alexander is a colleague of David Long."
+        },
+        {
+          "role": "user",
+          "content": "David Long works with Lawrence Johnson."
+        },
+        {
+          "role": "user",
+          "content": "Lawrence Johnson is a colleague of Rebecca Ellis."
+        },
+        {
+          "role": "user",
+          "content": "Rebecca Ellis works with Wayne Stevens."
+        },
+        {
+          "role": "user",
+          "content": "Wayne Stevens is a colleague of Martha Ramirez."
+        },
+        {
+          "role": "user",
+          "content": "Martha Ramirez works with Jonathan Roberts."
+        },
+        {
+          "role": "user",
+          "content": "Jonathan Roberts is a colleague of Shirley Ramos."
+        },
+        {
+          "role": "user",
+          "content": "Shirley Ramos works with Jean Rivera."
+        },
+        {
+          "role": "user",
+          "content": "Jean Rivera is a colleague of Danielle Jackson."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Jessica Butler and Danielle Jackson related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

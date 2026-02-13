@@ -1,0 +1,155 @@
+{
+  "case_id": "transition_2tr_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in San Telmo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in San Telmo, Buenos Aires. The antique shops and cobblestone streets."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love exploring the San Telmo Sunday antique fair then watching street tango."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Martín, a vintage record collector who hosts milonga nights. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have empanadas and mate at a parrilla on Defensa street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Bandra",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Bandra, Mumbai for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning walk on Bandstand Promenade then chaat at Elco Market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have vada pav and cutting chai at the corner tapri."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Bandra",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Bandra, Mumbai for a few weeks now. I love the sea-facing Art Deco buildings and street food stalls."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Priya, a Bollywood choreographer who invites me to dance rehearsals."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Barranco",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Barranco, Lima for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Barranco street art walk then ceviche at La Mar."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chicharrón sandwich and emoliente at a corner cart."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Barranco",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Barranco, Lima for a few weeks now. I love the colorful bohemian houses and Pacific Ocean cliffs."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Rosa, a poet who runs open-mic nights at a local peña."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Barranco, Lima, your neighbor is Rosa, a poet who runs open-mic nights at a local peña. The answer should NOT mention neighbors from your previous cities (San Telmo Martín, Bandra Priya)."
+      }
+    }
+  ]
+}

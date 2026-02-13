@@ -1,0 +1,364 @@
+{
+  "case_id": "recommendations_music_100",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Rock Guitar Passion",
+      "contains_fact": true,
+      "fact_id": "rock_guitar_preference",
+      "fact_quote": "I'm drawn to rock music primarily because of the expressive guitar solos. There's something about a well-crafted solo that tells a story without words",
+      "messages": [
+        {"role": "user", "content": "I've been obsessed with guitar solos lately."},
+        {"role": "assistant", "content": "Which guitarists inspire you most?"},
+        {"role": "user", "content": "Gilmour's phrasing is incredible. Every note has purpose."},
+        {"role": "assistant", "content": "He's a master of restraint—less is often more with his playing."},
+        {"role": "user", "content": "I'm drawn to rock music primarily because of the expressive guitar solos. There's something about a well-crafted solo that tells a story without words."},
+        {"role": "assistant", "content": "That emotional storytelling through melody is what separates great players from technicians."},
+        {"role": "user", "content": "I practice bending and vibrato for hours trying to capture that feeling."},
+        {"role": "assistant", "content": "Those subtle techniques carry so much emotional weight."},
+        {"role": "user", "content": "Modern rock solos often feel too clinical compared to 70s classics."},
+        {"role": "assistant", "content": "The analog warmth and human imperfection made those solos breathe."},
+        {"role": "user", "content": "I want my playing to have that same soulful quality someday."},
+        {"role": "assistant", "content": "Focus on phrasing over speed—you're already thinking like a real musician."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Classical Violin Journey",
+      "contains_fact": true,
+      "fact_id": "classical_violin_learning",
+      "fact_quote": "I started learning violin six months ago to understand classical music better. The discipline required is intense but rewarding",
+      "messages": [
+        {"role": "user", "content": "My violin teacher says my intonation is improving."},
+        {"role": "assistant", "content": "That's one of the hardest skills to develop on violin."},
+        {"role": "user", "content": "I practice scales for 30 minutes every morning before work."},
+        {"role": "assistant", "content": "Consistency beats marathon sessions for building muscle memory."},
+        {"role": "user", "content": "I started learning violin six months ago to understand classical music better. The discipline required is intense but rewarding."},
+        {"role": "assistant", "content": "Learning an instrument completely transforms how you listen to recordings of that instrument."},
+        {"role": "user", "content": "Now when I hear Heifetz, I appreciate the technical mastery so much more."},
+        {"role": "assistant", "content": "You're hearing the invisible work behind the beauty."},
+        {"role": "user", "content": "It's humbling but motivating at the same time."},
+        {"role": "assistant", "content": "That balance keeps musicians growing throughout their lives."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Pop Melody Craft",
+      "contains_fact": true,
+      "fact_id": "pop_melody_appreciation",
+      "fact_quote": "I have to admit pop music often has the catchiest melodies. There's real skill in writing something that sticks in your head after one listen",
+      "messages": [
+        {"role": "user", "content": "I can't stop humming this Dua Lipa chorus."},
+        {"role": "assistant", "content": "Those hooks are engineered to be memorable."},
+        {"role": "user", "content": "I have to admit pop music often has the catchiest melodies. There's real skill in writing something that sticks in your head after one listen."},
+        {"role": "assistant", "content": "The best pop writers understand musical psychology at a deep level."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Metal Vocal Preferences",
+      "contains_fact": true,
+      "fact_id": "metal_vocal_dislike",
+      "fact_quote": "I appreciate metal musicianship but can't get past the aggressive screaming vocals. It feels like shouting over interesting music",
+      "messages": [
+        {"role": "user", "content": "My friend loves death metal but I just can't connect with it."},
+        {"role": "assistant", "content": "What specifically doesn't work for you?"},
+        {"role": "user", "content": "I appreciate metal musicianship but can't get past the aggressive screaming vocals. It feels like shouting over interesting music."},
+        {"role": "assistant", "content": "You might enjoy bands like Opeth that blend clean and harsh vocals strategically."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Coffee Chat",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Just had the best pour-over coffee this morning."},
+        {"role": "assistant", "content": "What beans did you use?"},
+        {"role": "user", "content": "Ethiopian Yirgacheffe—floral notes with bright acidity."},
+        {"role": "assistant", "content": "Perfect choice for morning clarity. Nothing beats that first sip."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Jazz Improvisation",
+      "contains_fact": true,
+      "fact_id": "jazz_improvisation_interest",
+      "fact_quote": "I'm fascinated by jazz improvisation—the ability to create coherent melodies spontaneously shows deep musical understanding",
+      "messages": [
+        {"role": "user", "content": "Coltrane's Giant Steps solo blew my mind."},
+        {"role": "assistant", "content": "That's one of the most technically demanding pieces in jazz."},
+        {"role": "user", "content": "I'm fascinated by jazz improvisation—the ability to create coherent melodies spontaneously shows deep musical understanding."},
+        {"role": "assistant", "content": "It's like speaking a language fluently without planning your sentences."},
+        {"role": "user", "content": "I want to develop that kind of musical fluency someday."},
+        {"role": "assistant", "content": "Start with blues scales—they're the foundation of so much improvisation."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Electronic Production",
+      "contains_fact": true,
+      "fact_id": "electronic_production_fascination",
+      "fact_quote": "I've been diving into electronic music production lately. The ability to craft entire sonic worlds from samples and synths is incredibly empowering",
+      "messages": [
+        {"role": "user", "content": "I spent all weekend tweaking synth patches."},
+        {"role": "assistant", "content": "What kind of sounds are you going for?"},
+        {"role": "user", "content": "I've been diving into electronic music production lately. The ability to craft entire sonic worlds from samples and synths is incredibly empowering."},
+        {"role": "assistant", "content": "That creative control is what draws many producers to electronic music."},
+        {"role": "user", "content": "I love how you can build textures that don't exist in acoustic instruments."},
+        {"role": "assistant", "content": "Electronic music expands the palette of what's possible sonically."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Folk Storytelling",
+      "contains_fact": true,
+      "fact_id": "folk_storytelling_value",
+      "fact_quote": "Folk music resonates with me because of its storytelling tradition. The lyrics paint vivid pictures and carry cultural history in a way few other genres do",
+      "messages": [
+        {"role": "user", "content": "I've been listening to a lot of Simon & Garfunkel lately."},
+        {"role": "assistant", "content": "Their lyrical imagery is so cinematic."},
+        {"role": "user", "content": "Folk music resonates with me because of its storytelling tradition. The lyrics paint vivid pictures and carry cultural history in a way few other genres do."},
+        {"role": "assistant", "content": "Those narratives create emotional connections that transcend generations."},
+        {"role": "user", "content": "Modern music often feels disposable compared to these timeless stories."},
+        {"role": "assistant", "content": "Folk songs become part of our collective memory in a special way."},
+        {"role": "user", "content": "I find myself remembering every word of these songs years later."},
+        {"role": "assistant", "content": "That memorability is the hallmark of great storytelling in music."},
+        {"role": "user", "content": "The simplicity of the arrangements puts focus where it belongs—on the words."},
+        {"role": "assistant", "content": "When production serves the song rather than overshadowing it, magic happens."},
+        {"role": "user", "content": "I want my own songwriting to have that kind of lasting impact someday."},
+        {"role": "assistant", "content": "Start by writing honestly about your own experiences—that authenticity resonates."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Hip-Hop Beat Appreciation",
+      "contains_fact": true,
+      "fact_id": "hiphop_beat_appreciation",
+      "fact_quote": "I've grown to appreciate hip-hop primarily for its innovative beat production. The rhythmic complexity and sample manipulation show serious musical intelligence",
+      "messages": [
+        {"role": "user", "content": "Kendrick's album has such intricate production."},
+        {"role": "assistant", "content": "The beat switches and layered samples create constant surprise."},
+        {"role": "user", "content": "I've grown to appreciate hip-hop primarily for its innovative beat production. The rhythmic complexity and sample manipulation show serious musical intelligence."},
+        {"role": "assistant", "content": "Great producers like J Dilla approached rhythm with almost mathematical precision."},
+        {"role": "user", "content": "I've started analyzing the drum patterns in my DAW to understand the swing."},
+        {"role": "assistant", "content": "That micro-timing is what separates robotic quantization from human feel."},
+        {"role": "user", "content": "Even without understanding the lyrics, I can get lost in the instrumental textures."},
+        {"role": "assistant", "content": "The best hip-hop production works on multiple levels—rhythmic, textural, and emotional."},
+        {"role": "user", "content": "It's made me listen to rhythm differently in all genres now."},
+        {"role": "assistant", "content": "Hip-hop expanded the vocabulary of rhythm for the entire music world."},
+        {"role": "user", "content": "I catch myself tapping more complex patterns unconsciously now."},
+        {"role": "assistant", "content": "Your internal rhythm vocabulary is expanding—that's a real musical growth moment."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Weather Talk",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Finally got some sunshine after weeks of rain."},
+        {"role": "assistant", "content": "Perfect day to take a walk and clear your head."},
+        {"role": "user", "content": "I'm heading to the park with my sketchbook."},
+        {"role": "assistant", "content": "Natural light makes everything look more vibrant—great choice for drawing."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Blues Emotional Depth",
+      "contains_fact": true,
+      "fact_id": "blues_emotional_depth",
+      "fact_quote": "Blues music moves me because of its raw emotional honesty. There's no pretense—just pure feeling expressed through simple but powerful structures",
+      "messages": [
+        {"role": "user", "content": "B.B. King's vibrato makes me feel things I can't explain."},
+        {"role": "assistant", "content": "He could convey more emotion in one bent note than many singers do in entire songs."},
+        {"role": "user", "content": "Blues music moves me because of its raw emotional honesty. There's no pretense—just pure feeling expressed through simple but powerful structures."},
+        {"role": "assistant", "content": "That authenticity is why blues remains foundational to so much modern music."},
+        {"role": "user", "content": "Three chords and the truth—that simplicity forces you to mean every note."},
+        {"role": "assistant", "content": "When you can't hide behind complexity, your emotional intention has to be genuine."},
+        {"role": "user", "content": "I try to bring that same honesty to my own playing regardless of genre."},
+        {"role": "assistant", "content": "That's the universal lesson blues teaches every serious musician."},
+        {"role": "user", "content": "Even when I play rock or jazz, I think about that emotional directness."},
+        {"role": "assistant", "content": "Blues is less a genre and more an approach to musical expression."},
+        {"role": "user", "content": "It's the emotional foundation everything else gets built on."},
+        {"role": "assistant", "content": "You've grasped why musicians across styles keep returning to blues roots."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Indie Authenticity",
+      "contains_fact": true,
+      "fact_id": "indie_authenticity_preference",
+      "fact_quote": "I gravitate toward indie artists because they often prioritize artistic vision over commercial appeal. That commitment to authenticity creates more meaningful connections",
+      "messages": [
+        {"role": "user", "content": "Discovered this amazing indie band from Portland last night."},
+        {"role": "assistant", "content": "What drew you to their sound?"},
+        {"role": "user", "content": "Their lyrics felt genuinely personal, not focus-grouped for radio."},
+        {"role": "assistant", "content": "That unfiltered perspective is increasingly rare in mainstream music."},
+        {"role": "user", "content": "I gravitate toward indie artists because they often prioritize artistic vision over commercial appeal. That commitment to authenticity creates more meaningful connections."},
+        {"role": "assistant", "content": "When artists make music for themselves first, listeners can feel that integrity."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Genre Exploration",
+      "contains_fact": true,
+      "fact_id": "genre_exploration_pattern",
+      "fact_quote": "I notice I'm drawn to genres that balance technical skill with emotional expression. Pure virtuosity without feeling leaves me cold, but raw emotion without craft feels unfinished",
+      "messages": [
+        {"role": "user", "content": "I've been exploring so many different genres this year."},
+        {"role": "assistant", "content": "What patterns have you noticed in what resonates with you?"},
+        {"role": "user", "content": "I notice I'm drawn to genres that balance technical skill with emotional expression. Pure virtuosity without feeling leaves me cold, but raw emotion without craft feels unfinished."},
+        {"role": "assistant", "content": "That balance is the sweet spot where music becomes both impressive and moving."},
+        {"role": "user", "content": "I think that's why I connect with artists who have clear technical mastery but never show off unnecessarily."},
+        {"role": "assistant", "content": "Technique in service of expression—that's the hallmark of mature musicianship."},
+        {"role": "user", "content": "It's also why I struggle with genres that prioritize one extreme over the other."},
+        {"role": "assistant", "content": "Your taste has a clear philosophical center—that self-awareness will guide your musical journey."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q1_best_learning_genre",
+      "question": "Based on all our conversations, which musical genre would be most beneficial for me to study deeply as a developing musician?",
+      "reference_answer": {
+        "text": "Based on our 13 conversations, blues would be your most beneficial genre to study deeply. You specifically mentioned that blues teaches 'raw emotional honesty' and that 'three chords and the truth' forces genuine emotional intention. This aligns perfectly with your core musical value of balancing technical skill with emotional expression—you noted that 'pure virtuosity without feeling leaves me cold.' Blues provides the emotional foundation you've recognized as essential, while also developing fundamental skills like phrasing, vibrato, and bending that transfer directly to your rock guitar interests. Your violin studies will also benefit from blues' emphasis on microtonal expression. Starting with blues gives you the emotional vocabulary that will elevate everything else you play.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "classical_violin_learning", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identified blues as optimal learning genre based on emotional foundation",
+          "Connected to user's balance of technique and expression value",
+          "Explained cross-instrument benefits for both guitar and violin",
+          "Referenced specific user quotes about emotional honesty in music"
+        ]
+      }
+    },
+    {
+      "query_id": "q2_top_three_genres",
+      "question": "What are my top three most positively regarded music genres based on our discussions, and what specific qualities do I value in each?",
+      "reference_answer": {
+        "text": "Based on our conversations, your top three genres are: 1) Blues—valued for its 'raw emotional honesty' and ability to convey deep feeling through simple structures; 2) Rock—appreciated for 'expressive guitar solos that tell a story without words' and the soulful phrasing of players like Gilmour; 3) Folk—resonated with you for its 'storytelling tradition' where 'lyrics paint vivid pictures and carry cultural history.' All three share your core value of authenticity over technical display. You consistently praised emotional directness across these genres while criticizing music that feels manufactured or overly clinical. Interestingly, you approach each genre as a listener first but with musician's insight—you analyze phrasing in rock solos, study intonation in classical violin, and appreciate narrative craft in folk lyrics.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Correctly ranked top 3 genres based on conversation sentiment",
+          "Identified specific valued qualities for each genre",
+          "Connected all three to user's overarching authenticity value",
+          "Acknowledged user's dual perspective as listener and musician"
+        ]
+      }
+    },
+    {
+      "query_id": "q3_primary_instrument_focus",
+      "question": "I'm torn between focusing on guitar or violin. Based on my musical preferences and learning patterns, which instrument should I prioritize and why?",
+      "reference_answer": {
+        "text": "You should prioritize guitar as your primary instrument while maintaining violin as a complementary study. Here's why: 7 out of our 13 conversations centered on guitar-related topics (rock solos, blues phrasing, jazz improvisation), compared to 2 focused primarily on violin. You described guitar solos as 'telling a story without words' and spent hours practicing 'bending and vibrato' to capture emotional expression—showing deep intrinsic motivation. Your violin study, while valuable for understanding classical music, was explicitly framed as analytical ('to understand classical music better') rather than expressive passion. Guitar aligns better with your core genres (blues, rock, folk) and your value of emotional storytelling through melody. Keep violin for its unique benefits to your ear training and classical appreciation, but let guitar be your voice.",
+        "required_facts": ["rock_guitar_preference", "classical_violin_learning", "blues_emotional_depth", "folk_storytelling_value", "jazz_improvisation_interest"],
+        "evaluation_criteria": [
+          "Recommended guitar as primary instrument with data-backed reasoning",
+          "Quantified conversation distribution across instruments",
+          "Distinguished between analytical vs. expressive motivation",
+          "Proposed complementary role for secondary instrument"
+        ]
+      }
+    },
+    {
+      "query_id": "q4_genres_to_avoid",
+      "question": "Which music genres should I probably avoid based on my stated preferences, and what specific aspects of those genres conflict with my musical values?",
+      "reference_answer": {
+        "text": "You should probably avoid death metal and highly commercialized pop. With death metal, you explicitly stated you 'can't get past the aggressive screaming vocals' which 'feel like shouting over interesting music'—this directly conflicts with your value of emotional expression through melody. While you appreciate metal musicianship (as seen in your interest in Tool's complexity), the vocal approach in extreme metal subgenres undermines the emotional connection you seek. For commercial pop, your appreciation is nuanced—you enjoy 'catchy melodies' but gravitate toward indie artists who 'prioritize artistic vision over commercial appeal.' You've expressed discomfort with music that feels 'focus-grouped' or 'manufactured,' suggesting highly formulaic pop would leave you unsatisfied despite its melodic strengths. Both genres fail your core test: balancing technical craft with authentic emotional expression.",
+        "required_facts": ["metal_vocal_dislike", "pop_melody_appreciation", "indie_authenticity_preference", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identified specific genres to avoid with clear reasoning",
+          "Explained conflict between genre characteristics and user values",
+          "Acknowledged nuance in pop appreciation (melodies vs. authenticity)",
+          "Connected avoidance rationale to user's core balance principle"
+        ]
+      }
+    },
+    {
+      "query_id": "q5_production_style_match",
+      "question": "What production style or aesthetic would best suit my musical personality based on our conversations?",
+      "reference_answer": {
+        "text": "Based on our conversations, you'd thrive with a warm, organic production style that prioritizes performance authenticity over technical perfection. You've consistently criticized 'clinical' modern production while praising the 'analog warmth' of 70s recordings. You value 'human imperfection' in solos, appreciate blues' 'raw emotional honesty,' and connect with folk's unadorned storytelling approach. Even your interest in electronic production centers on 'crafting sonic worlds' rather than sterile precision—you're drawn to texture and emotion, not quantized perfection. Your ideal production aesthetic would blend: 1) Natural instrument tones with minimal processing, 2) Room ambiance that adds character rather than clinical isolation, 3) Performance-based editing that preserves human feel over grid-perfect timing, and 4) Strategic use of analog-style saturation for warmth. Think Neil Young's rawness meets Bon Iver's textural depth—not Auto-Tuned pop or hyper-compressed modern rock.",
+        "required_facts": ["rock_guitar_preference", "blues_emotional_depth", "folk_storytelling_value", "electronic_production_fascination", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identified warm/organic production as ideal match",
+          "Referenced user's criticism of clinical/perfect production",
+          "Balanced appreciation for electronic texture with acoustic authenticity",
+          "Provided concrete aesthetic characteristics with genre examples"
+        ]
+      }
+    },
+    {
+      "query_id": "q6_emotional_technical_balance",
+      "question": "Which genres best combine the emotional depth and technical mastery I seem to value? I want recommendations that satisfy both sides of my musical personality.",
+      "reference_answer": {
+        "text": "Three genres perfectly balance the emotional depth and technical mastery you value: 1) Jazz—especially modal jazz like Miles Davis' Kind of Blue—combines sophisticated harmonic understanding with profound emotional restraint. You're already drawn to jazz improvisation's 'deep musical understanding,' and this subgenre emphasizes feeling over flash. 2) Blues-rock fusion like early Jeff Beck or Gary Moore merges blues' 'raw emotional honesty' with virtuosic technique that always serves the song. 3) Progressive folk artists like Nick Drake or early Paul Simon blend intricate fingerstyle guitar work with deeply personal storytelling that 'paints vivid pictures.' All three avoid the extremes you reject: jazz avoids empty shredding through its emphasis on space and phrasing; blues-rock grounds technique in feeling; progressive folk balances lyrical sophistication with musical craft. These genres embody your stated principle that 'technique in service of expression' defines mature musicianship.",
+        "required_facts": ["blues_emotional_depth", "jazz_improvisation_interest", "folk_storytelling_value", "rock_guitar_preference", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Recommended 3 specific genre/style combinations",
+          "Explained how each balances emotion and technique",
+          "Connected recommendations to user's explicit values",
+          "Avoided genres representing extremes user rejects"
+        ]
+      }
+    },
+    {
+      "query_id": "q7_relaxation_genre",
+      "question": "When I want to unwind and relax, which genre from our conversations would serve me best, and why does it work for that purpose?",
+      "reference_answer": {
+        "text": "For relaxation, folk music would serve you best based on our conversations. You specifically connected with folk's 'storytelling tradition' where 'lyrics paint vivid pictures'—this narrative quality creates gentle mental engagement without demanding intense focus. Unlike rock with its guitar heroics or electronic music with its textural complexity, folk's 'simple arrangements put focus where it belongs' on emotional content. The acoustic instrumentation provides warmth without aggression (avoiding metal's intensity), while the lyrical depth offers more substance than formulaic pop. Artists like Simon & Garfunkel create what you called 'timeless' music that 'becomes part of our collective memory'—perfect for contemplative relaxation. The genre's emphasis on authenticity over production spectacle also means it won't trigger your sensitivity to 'manufactured' or overly processed sounds. Folk gives your mind something beautiful to rest on without demanding performance analysis like jazz improvisation or technical appreciation like metal musicianship.",
+        "required_facts": ["folk_storytelling_value", "pop_melody_appreciation", "metal_vocal_dislike", "electronic_production_fascination", "indie_authenticity_preference"],
+        "evaluation_criteria": [
+          "Recommended folk as optimal relaxation genre",
+          "Explained why narrative quality aids relaxation",
+          "Contrasted with genres requiring active analysis",
+          "Connected to user's aversion to manufactured/processed sounds"
+        ]
+      }
+    },
+    {
+      "query_id": "q8_authenticity_critique",
+      "question": "Which genres or music styles have I implicitly or explicitly criticized for lacking authenticity, and what specific authenticity markers am I looking for?",
+      "reference_answer": {
+        "text": "You've criticized three areas for authenticity issues: 1) Modern rock production that sounds 'too clinical' compared to 70s classics—you value the 'analog warmth and human imperfection' that made older solos 'breathe.' 2) Death metal vocals that feel like 'shouting over interesting music' rather than expressive singing—you seek emotional intention in vocal delivery. 3) Highly commercialized pop that feels 'focus-grouped' rather than personally expressive—you contrast this with indie artists who 'prioritize artistic vision over commercial appeal.' Your authenticity markers are consistent across genres: emotional intentionality (every note must 'have purpose'), human imperfection that reveals the performer (not quantized perfection), and artistic vision that serves personal expression rather than market calculation. You don't reject technical skill—you reject skill deployed without emotional purpose. As you put it: 'technique in service of expression' defines what feels authentic to you, while 'virtuosity without feeling leaves me cold.'",
+        "required_facts": ["rock_guitar_preference", "metal_vocal_dislike", "pop_melody_appreciation", "indie_authenticity_preference", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identified 3 specific authenticity criticisms with examples",
+          "Defined consistent authenticity markers across genres",
+          "Distinguished between rejecting technique vs. rejecting empty technique",
+          "Used user's own phrasing about 'technique in service of expression'"
+        ]
+      }
+    },
+    {
+      "query_id": "q9_next_exploration_genre",
+      "question": "Based on my current musical interests and blind spots, what genre should I explore next to expand my horizons meaningfully?",
+      "reference_answer": {
+        "text": "You should explore soul/R&B next to meaningfully expand your horizons. Here's why this fills your blind spots: You deeply value emotional expression (blues), melodic storytelling (folk/rock), and rhythmic sophistication (hip-hop beats)—but soul music uniquely combines all three in ways your current interests don't fully cover. Unlike blues' often melancholic tone, soul offers joy and celebration with equal emotional depth. Unlike rock's guitar-centric focus, soul foregrounds vocal expression—which you've shown sensitivity to through your metal vocal critiques. Unlike hip-hop's production focus, soul emphasizes live performance nuance and improvisational feel within structured arrangements. Artists like Al Green, D'Angelo, or Leon Bridges would resonate with your values: they balance technical mastery (impeccable phrasing) with raw emotion (vulnerable delivery), avoid manufactured feelings (authentic performance), and create melodies that stick without formulaic writing. Soul would stretch your appreciation for vocal expression while reinforcing your core value of emotional authenticity.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "hiphop_beat_appreciation", "metal_vocal_dislike", "pop_melody_appreciation"],
+        "evaluation_criteria": [
+          "Recommended soul/R&B as strategic next exploration",
+          "Identified specific blind spots it would fill",
+          "Connected to multiple existing interests (blues emotion, hip-hop rhythm)",
+          "Provided concrete artist examples matching user's values"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_core_musical_values",
+      "question": "What are my fundamental musical values that cut across all genres I've discussed? I want to understand my musical identity at its core.",
+      "reference_answer": {
+        "text": "Your core musical identity rests on three interconnected values that cut across all 13 conversations: 1) Emotional authenticity over technical display—you consistently reject 'virtuosity without feeling' while praising music where 'every note has purpose.' This appears in your blues appreciation ('raw emotional honesty'), rock preferences ('solos that tell a story'), and folk connection ('timeless stories'). 2) Human imperfection as expressive virtue—you critique 'clinical' production while valuing the 'analog warmth' and 'human imperfection' that makes music 'breathe.' This spans your rock, blues, and folk interests. 3) Artistic integrity over commercial calculation—you gravitate toward indie artists who 'prioritize artistic vision over commercial appeal' and reject music that feels 'manufactured' or 'focus-grouped.' These three values form a coherent philosophy: you seek music where skilled performers express genuine emotion through imperfectly human means, prioritizing personal truth over market appeal. This explains why you connect across blues, rock, folk, and jazz while struggling with extreme metal vocals and formulaic pop—they violate different aspects of this unified value system.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "metal_vocal_dislike", "indie_authenticity_preference", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Synthesized 3 core values from across all conversations",
+          "Demonstrated how each value appears in multiple genres",
+          "Showed coherence of value system across diverse interests",
+          "Explained why certain genres resonate or don't based on these values"
+        ]
+      }
+    }
+  ]
+}

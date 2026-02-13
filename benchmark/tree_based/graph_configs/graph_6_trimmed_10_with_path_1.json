@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_6_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Kevin Ramirez works with Christine Hernandez."
+        },
+        {
+          "role": "user",
+          "content": "Christine Hernandez is a colleague of Emma Baker."
+        },
+        {
+          "role": "user",
+          "content": "Emma Baker works with Sharon Rogers."
+        },
+        {
+          "role": "user",
+          "content": "Sharon Rogers is a colleague of Samuel Ward."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Ward works with Stephen Gibson."
+        },
+        {
+          "role": "user",
+          "content": "Stephen Gibson is a colleague of Jerry Ramos."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Ramos works with Richard Hughes."
+        },
+        {
+          "role": "user",
+          "content": "Richard Hughes is a colleague of Katherine Moore."
+        },
+        {
+          "role": "user",
+          "content": "Katherine Moore works with Kimberly Allen."
+        },
+        {
+          "role": "user",
+          "content": "Kimberly Allen is a colleague of Pamela Sanchez."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Kevin Ramirez and Pamela Sanchez related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

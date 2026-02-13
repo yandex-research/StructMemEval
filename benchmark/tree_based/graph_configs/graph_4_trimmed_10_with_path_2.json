@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_4_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Walter Russell works with Evelyn Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Evelyn Jackson is a colleague of Cynthia Baker."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Baker works with Megan Medina."
+        },
+        {
+          "role": "user",
+          "content": "Megan Medina is a colleague of Jerry Richardson."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Richardson works with Sara Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Sara Murphy is a colleague of Jordan Reed."
+        },
+        {
+          "role": "user",
+          "content": "Jordan Reed works with Randy Allen."
+        },
+        {
+          "role": "user",
+          "content": "Randy Allen is a colleague of Kimberly Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Kimberly Aguilar works with Dorothy Vasquez."
+        },
+        {
+          "role": "user",
+          "content": "Dorothy Vasquez is a colleague of Marilyn Long."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Walter Russell and Marilyn Long related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

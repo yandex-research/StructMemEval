@@ -1,0 +1,64 @@
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    embedding_dims: 3072
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_location
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_location
+    retrieve_limit: 10
+
+mem_agent:
+  model: gpt-4o-mini
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${OPENAI_API_KEY}
+
+benchmark:
+  parallel_workers: 1
+
+  # Run mem0_agent on 0tr (static) and 1tr cases
+  data_paths:
+    # 0tr (static)
+    - data/state_machine_location/static_001.json
+    - data/state_machine_location/static_002.json
+    - data/state_machine_location/static_003.json
+    - data/state_machine_location/static_004.json
+    - data/state_machine_location/static_005.json
+    - data/state_machine_location/static_006.json
+    - data/state_machine_location/static_007.json
+    # 1tr
+    - data/state_machine_location/transition_001.json
+    - data/state_machine_location/transition_002.json
+    - data/state_machine_location/transition_003.json
+    - data/state_machine_location/transition_004.json
+    - data/state_machine_location/transition_005.json
+    - data/state_machine_location/transition_006.json
+    - data/state_machine_location/transition_007.json
+
+  # Skip mem0 raw and mem-agent (already done)
+  mem0_infer: [false]
+  mem0_limits: []
+
+  # Only mem0_agent
+  mem0_agent_prompts:
+    - name: mem0_agent_hint
+      loading_prompt: prompts/mem0_agent_loading_hint.txt
+      query_prompt: prompts/mem0_agent_query_hint.txt
+
+  agent_prompts: []
+
+  output_dir: eval_results
+  verbose: false

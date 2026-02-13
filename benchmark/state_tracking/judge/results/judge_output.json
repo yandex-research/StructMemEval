@@ -1,0 +1,12 @@
+{
+  "input_file": "eval_results/results_mem_agent.json",
+  "num_examples": 1,
+  "mean_score": 1.0,
+  "details": [
+    {
+      "case_id": "location_context_switch",
+      "query_id": "",
+      "score": 1
+    }
+  ]
+}

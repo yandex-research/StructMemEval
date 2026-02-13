@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_0_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Billy Sanchez works with Denise Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Denise Jackson is a colleague of Teresa Ruiz."
+        },
+        {
+          "role": "user",
+          "content": "Teresa Ruiz works with Michelle Sanchez."
+        },
+        {
+          "role": "user",
+          "content": "Michelle Sanchez is a colleague of Eugene Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Eugene Jordan works with Bruce Turner."
+        },
+        {
+          "role": "user",
+          "content": "Bruce Turner is a colleague of Samantha Hayes."
+        },
+        {
+          "role": "user",
+          "content": "Samantha Hayes works with Betty Castro."
+        },
+        {
+          "role": "user",
+          "content": "Betty Castro is a colleague of Gerald Thomas."
+        },
+        {
+          "role": "user",
+          "content": "Gerald Thomas works with Katherine Brown."
+        },
+        {
+          "role": "user",
+          "content": "Katherine Brown is a colleague of George Coleman."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Billy Sanchez and George Coleman related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

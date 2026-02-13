@@ -1,0 +1,207 @@
+{
+  "case_id": "transition_3tr_007",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Montmartre",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Montmartre, Paris. The hilltop views and winding cobblestone stairs."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love sketching at Place du Tertre then wine at a sidewalk café."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Pierre, a retired painter who tells stories about old Montmartre. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have pain au chocolat and café allongé at the boulangerie near Sacré-Cœur."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Tiong Bahru",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Tiong Bahru, Singapore for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning dim sum at the hawker centre then browsing BooksActually."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have kaya toast and teh tarik at a traditional kopitiam."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Tiong Bahru",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Tiong Bahru, Singapore for a few weeks now. I love the Art Deco flats and tropical trees."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Wei Ming, a food blogger who shows me the best hawker stalls."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Shimokitazawa",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shimokitazawa, Tokyo for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be thrift shopping for vintage denim then live jazz at a tiny bar."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have onigiri and cold brew from a hidden café on a back alley."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Shimokitazawa",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Shimokitazawa, Tokyo for a few weeks now. I love the indie record shops and narrow bohemian lanes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Yuki, a manga artist who shows me her studio above a ramen shop."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Jongno",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Jongno, Seoul for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Insadong galleries then traditional tea at a hanok teahouse."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have hotteok and barley tea from a street vendor near Bukchon."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Jongno",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Jongno, Seoul for a few weeks now. I love the hanok rooftops and palace walls."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Soo-jin, a calligrapher who teaches me basic hangul brushwork."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Jongno, Seoul, your neighbor is Soo-jin, a calligrapher who teaches me basic hangul brushwork. The answer should NOT mention neighbors from your previous cities (Montmartre Pierre, Tiong Bahru Wei Ming, Shimokitazawa Yuki)."
+      }
+    }
+  ]
+}

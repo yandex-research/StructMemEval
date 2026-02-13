@@ -1,0 +1,104 @@
+{
+  "case_id": "graph_9_trimmed_20",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Angela Smith works with Lauren Alvarez."
+        },
+        {
+          "role": "user",
+          "content": "Lauren Alvarez is a colleague of Jacqueline Martin."
+        },
+        {
+          "role": "user",
+          "content": "Jacqueline Martin works with Denise Jones."
+        },
+        {
+          "role": "user",
+          "content": "Denise Jones is a colleague of Anthony Tran."
+        },
+        {
+          "role": "user",
+          "content": "Anthony Tran works with Patrick Martinez."
+        },
+        {
+          "role": "user",
+          "content": "Patrick Martinez is a colleague of Catherine Hernandez."
+        },
+        {
+          "role": "user",
+          "content": "Catherine Hernandez works with Julie Davis."
+        },
+        {
+          "role": "user",
+          "content": "Julie Davis is a colleague of Roy Davis."
+        },
+        {
+          "role": "user",
+          "content": "Roy Davis works with Anna Medina."
+        },
+        {
+          "role": "user",
+          "content": "Anna Medina is a colleague of Harold Ramos."
+        },
+        {
+          "role": "user",
+          "content": "Jesse Richardson works with Walter Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Walter Lopez is a colleague of Katherine Ward."
+        },
+        {
+          "role": "user",
+          "content": "Katherine Ward works with Carol Harris."
+        },
+        {
+          "role": "user",
+          "content": "Carol Harris is a colleague of Wayne Herrera."
+        },
+        {
+          "role": "user",
+          "content": "Wayne Herrera works with Danielle Miller."
+        },
+        {
+          "role": "user",
+          "content": "Danielle Miller is a colleague of Stephen Gonzalez."
+        },
+        {
+          "role": "user",
+          "content": "Stephen Gonzalez works with Carol Ford."
+        },
+        {
+          "role": "user",
+          "content": "Carol Ford is a colleague of Zachary Owens."
+        },
+        {
+          "role": "user",
+          "content": "Zachary Owens works with Gabriel Ward."
+        },
+        {
+          "role": "user",
+          "content": "Gabriel Ward is a colleague of Ryan Nguyen."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Angela Smith and Harold Ramos related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Jesse Richardson and Ryan Nguyen related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

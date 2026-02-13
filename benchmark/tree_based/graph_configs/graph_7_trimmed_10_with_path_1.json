@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_7_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Helen Jordan works with Vincent Smith."
+        },
+        {
+          "role": "user",
+          "content": "Vincent Smith is a colleague of Frank Hughes."
+        },
+        {
+          "role": "user",
+          "content": "Frank Hughes works with Douglas Edwards."
+        },
+        {
+          "role": "user",
+          "content": "Douglas Edwards is a colleague of Susan Kelly."
+        },
+        {
+          "role": "user",
+          "content": "Susan Kelly works with Joshua Cox."
+        },
+        {
+          "role": "user",
+          "content": "Joshua Cox is a colleague of Adam Ross."
+        },
+        {
+          "role": "user",
+          "content": "Adam Ross works with Bobby Tran."
+        },
+        {
+          "role": "user",
+          "content": "Bobby Tran is a colleague of Denise Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Denise Jackson works with Sharon Stewart."
+        },
+        {
+          "role": "user",
+          "content": "Sharon Stewart is a colleague of Joan Rivera."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Helen Jordan and Joan Rivera related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "case_id": "transition_3tr_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Hoi An Old Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Hoi An Old Town, Vietnam. The paper lanterns and ancient merchant houses."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning at the Central Market then tailoring a custom ao dai."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Linh, a lantern maker who teaches me traditional craft techniques. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have cao lầu and Vietnamese iced coffee at a riverside stall."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Gastown",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gastown, Vancouver for a language immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be bike riding along the Stanley Park Seawall."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have smoked salmon bagel and pour-over at Revolver Coffee."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Gastown",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gastown, Vancouver for a few weeks now. I love the mountain views and craft brewery scene."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Min-ji, a Korean-Canadian who takes me hiking on the North Shore."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Trastevere",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Trastevere, Rome for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Porta Portese flea market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have cornetto and cappuccino at the bar on Piazza di Santa Maria."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Trastevere",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Trastevere, Rome for a few weeks now. I love the ivy-covered walls and cobblestone alleys."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Marco, a retired chef who teaches me to make fresh pasta."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Phibsborough",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Phibsborough, Dublin for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing the book stalls at Dublin's Liberties then pint at a local pub."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have full Irish and Barry's tea at the corner café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Phibsborough",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Phibsborough, Dublin for a few weeks now. I love the Georgian doors and canal walks."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Seamus, a retired teacher who tells wild stories about old Dublin."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Phibsborough, Dublin, your neighbor is Seamus, a retired teacher who tells wild stories about old Dublin. The answer should NOT mention neighbors from your previous cities (Hoi An Old Town Linh, Gastown Min-ji, Trastevere Marco)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "case_id": "transition_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Brooklyn, Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Williamsburg, Brooklyn."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great! What's your favorite part about living there?"
+        },
+        {
+          "role": "user",
+          "content": "I love my morning coffee at Devoción on Grand Street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a nice spot! Do you go there every day?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I try to go every morning before work."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any favorite neighbors?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Mike fixed my bike, and I owe him $50."
+        },
+        {
+          "role": "assistant",
+          "content": "That's nice of him! How's the neighborhood overall?"
+        },
+        {
+          "role": "user",
+          "content": "I love it! There's also a hardware store 2 blocks away on Bedford Ave."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect for quick errands!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Living in Brooklyn, Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "On Sundays, I go to the farmers market at McCarren Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be fun! What do you usually buy there?"
+        },
+        {
+          "role": "user",
+          "content": "I like to get fresh produce and some baked goods."
+        },
+        {
+          "role": "assistant",
+          "content": "Yum! Do you have a favorite vendor?"
+        },
+        {
+          "role": "user",
+          "content": "There's this great bread vendor I always visit."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious! Are you planning to stay in Williamsburg for a long time?"
+        },
+        {
+          "role": "user",
+          "content": "Actually, I'm moving to Copenhagen, Nørrebro soon for work."
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, that's a big change! When are you moving?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Announcing the move to Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving next month to Copenhagen, Nørrebro."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds exciting! What are you looking forward to most?"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait to try the coffee and cardamom bun at Mirabelle."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Have you been to Copenhagen before?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't. It's a completely new adventure for me."
+        },
+        {
+          "role": "assistant",
+          "content": "It definitely sounds like one! How are you feeling about the move?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New life in Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled into my new place in Nørrebro."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great to hear! How's the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "I love cycling to the lakes for my morning exercise."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds refreshing! Are there any good spots around the lakes?"
+        },
+        {
+          "role": "user",
+          "content": "Yes! There's a nice park nearby where I can relax."
+        },
+        {
+          "role": "assistant",
+          "content": "Great! How's your neighbor situation?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Søren shares his homemade aquavit with me."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun neighbor to have!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "New life in Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I visited the flea market at Assistens Cemetery last weekend."
+        },
+        {
+          "role": "assistant",
+          "content": "That must have been interesting! What did you find?"
+        },
+        {
+          "role": "user",
+          "content": "I found some vintage items and a cool piece of art."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! Are you planning to go back again?"
+        },
+        {
+          "role": "user",
+          "content": "Definitely! I love exploring new shops."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like you're really enjoying Copenhagen!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in Copenhagen, Nørrebro now, you should check out the flea market at Assistens Cemetery."
+      }
+    }
+  ]
+}

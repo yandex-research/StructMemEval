@@ -1,0 +1,64 @@
+{
+  "case_id": "graph_5_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karen Hernandez works with Frank Carter."
+        },
+        {
+          "role": "user",
+          "content": "Frank Carter is a colleague of Lisa Henderson."
+        },
+        {
+          "role": "user",
+          "content": "Lisa Henderson works with Jessica Moore."
+        },
+        {
+          "role": "user",
+          "content": "Jessica Moore is a colleague of Jason Baker."
+        },
+        {
+          "role": "user",
+          "content": "Jason Baker works with Jack Lewis."
+        },
+        {
+          "role": "user",
+          "content": "Jack Lewis is a colleague of Kelly Phillips."
+        },
+        {
+          "role": "user",
+          "content": "Kelly Phillips works with Joshua Tran."
+        },
+        {
+          "role": "user",
+          "content": "Joshua Tran is a colleague of Karen Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Karen Murphy works with Alan Chavez."
+        },
+        {
+          "role": "user",
+          "content": "Alan Chavez is a colleague of Justin Moore."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Mary Simmons and Donna Long related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Karen Hernandez and Justin Moore related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

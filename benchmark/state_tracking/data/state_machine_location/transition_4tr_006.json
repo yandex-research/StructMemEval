@@ -1,0 +1,259 @@
+{
+  "case_id": "transition_4tr_006",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Khao San",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Khao San, Bangkok. The temple spires and tuk-tuk chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning at Chatuchak Weekend Market for vintage finds."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Niran, a muay thai trainer who takes me to local fights. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have pad thai and Thai iced tea from a street cart on Tanao Road."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Le Marais",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Le Marais, Paris for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Marché des Enfants Rouges for fresh crêpes."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have croissant and café crème at the boulangerie on Rue des Rosiers."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Le Marais",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Le Marais, Paris for a few weeks now. I love the old buildings and hidden courtyards."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Madame Dupont, an artist who invites me for wine evenings."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Nørrebro, Copenhagen for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be cycling to Assistens Cemetery flea market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have cardamom bun and filter coffee at Mirabelle."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Nørrebro, Copenhagen for a few weeks now. I love the bike-friendly streets and hygge culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Søren, a furniture designer who shares his homemade aquavit."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Hongdae",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Hongdae, Seoul for a creative collaboration!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing independent record shops and catching busker performances."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have kimchi jjigae and rice at a 24-hour jjigaezip."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Hongdae",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Hongdae, Seoul for a few weeks now. I love the neon-lit streets and live music scene."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ji-woo, a K-indie musician who takes me to underground gigs."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Recoleta",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Recoleta, Buenos Aires for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing the Feria de Recoleta artisan market by the cemetery."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have facturas and submarino at a grand confitería on Avenida Alvear."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Recoleta",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Recoleta, Buenos Aires for a few weeks now. I love the French-style mansions and jacaranda-lined streets."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Valentina, a psychoanalyst who explains Argentine culture over mate."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Recoleta, Buenos Aires, your breakfast is facturas and submarino at a grand confitería on Avenida Alvear. The answer should NOT mention breakfast from your previous cities (Khao San pad thai and Thai iced tea from a street, Le Marais croissant and café crème, Nørrebro cardamom bun and filter coffee, Hongdae kimchi jjigae and rice)."
+      }
+    }
+  ]
+}

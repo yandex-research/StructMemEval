@@ -1,0 +1,81 @@
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    embedding_dims: 3072
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_location
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_location
+    retrieve_limit: 10
+
+mem_agent:
+  model: gpt-4o-mini
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${OPENAI_API_KEY}
+
+benchmark:
+  parallel_workers: 1
+
+  # All 28 multi-transition cases (7 per group)
+  data_paths:
+    # 2 transitions (7 cases)
+    - data/state_machine_location/transition_2tr_001.json
+    - data/state_machine_location/transition_2tr_002.json
+    - data/state_machine_location/transition_2tr_003.json
+    - data/state_machine_location/transition_2tr_004.json
+    - data/state_machine_location/transition_2tr_005.json
+    - data/state_machine_location/transition_2tr_006.json
+    - data/state_machine_location/transition_2tr_007.json
+    # 3 transitions (7 cases)
+    - data/state_machine_location/transition_3tr_001.json
+    - data/state_machine_location/transition_3tr_002.json
+    - data/state_machine_location/transition_3tr_003.json
+    - data/state_machine_location/transition_3tr_004.json
+    - data/state_machine_location/transition_3tr_005.json
+    - data/state_machine_location/transition_3tr_006.json
+    - data/state_machine_location/transition_3tr_007.json
+    # 4 transitions (7 cases)
+    - data/state_machine_location/transition_4tr_001.json
+    - data/state_machine_location/transition_4tr_002.json
+    - data/state_machine_location/transition_4tr_003.json
+    - data/state_machine_location/transition_4tr_004.json
+    - data/state_machine_location/transition_4tr_005.json
+    - data/state_machine_location/transition_4tr_006.json
+    - data/state_machine_location/transition_4tr_007.json
+    # 5 transitions (7 cases)
+    - data/state_machine_location/transition_5tr_001.json
+    - data/state_machine_location/transition_5tr_002.json
+    - data/state_machine_location/transition_5tr_003.json
+    - data/state_machine_location/transition_5tr_004.json
+    - data/state_machine_location/transition_5tr_005.json
+    - data/state_machine_location/transition_5tr_006.json
+    - data/state_machine_location/transition_5tr_007.json
+
+  # All 4 approaches
+  mem0_infer: [false]
+  mem0_limits: [5, 20]
+
+  mem0_agent_prompts:
+    - name: mem0_agent_hint
+      loading_prompt: prompts/mem0_agent_loading_hint.txt
+      query_prompt: prompts/mem0_agent_query_hint.txt
+
+  agent_prompts:
+    - name: mem_agent_hint
+      path: prompts/system_prompt_location_huge_hint.txt
+
+  output_dir: eval_results
+  verbose: false

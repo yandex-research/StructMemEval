@@ -1,0 +1,97 @@
+{
+  "case_id": "static_006",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's Life in Melbourne",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Fitzroy, Melbourne."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a vibrant area! What do you love most about it?"
+        },
+        {
+          "role": "user",
+          "content": "I often have breakfast at Industry Beans. Their coffee is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I usually go on weekends. My Saturday morning routine includes visiting the Rose Street Artists Market."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun way to spend your Saturday!"
+        },
+        {
+          "role": "user",
+          "content": "I also spend hours at the bookshop on Brunswick Street."
+        },
+        {
+          "role": "assistant",
+          "content": "A good bookshop is a treasure! Do you have any favorite genres?"
+        },
+        {
+          "role": "user",
+          "content": "I live next to Liam, who's a musician. I sometimes hear him practicing."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great! It must be nice to have a musician as a neighbor!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "User's Daily Life and Interests",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been really enjoying the local art scene in Fitzroy."
+        },
+        {
+          "role": "assistant",
+          "content": "That's wonderful! Have you visited any exhibitions recently?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I went to one at a gallery near the bookshop on Brunswick Street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds interesting! Do you often attend art shows?"
+        },
+        {
+          "role": "user",
+          "content": "I always make time for them. After the gallery, I grabbed breakfast at Industry Beans."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect way to spend a day! What did you order?"
+        },
+        {
+          "role": "user",
+          "content": "Just a classic avocado toast and coffee. By the way, my neighbor Liam is really talented, I hear him practicing a lot."
+        },
+        {
+          "role": "assistant",
+          "content": "That's cool! What kind of music does he play?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What can you tell me about your neighbor?",
+      "reference_answer": {
+        "text": "My neighbor Liam is a musician, I sometimes hear him practicing."
+      }
+    }
+  ]
+}

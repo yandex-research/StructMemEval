@@ -1,0 +1,131 @@
+{
+  "case_id": "transition_2tr_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Berlin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Prenzlauer Berg, Berlin. Such a cool neighborhood!"
+        },
+        {
+          "role": "assistant",
+          "content": "Prenzlauer Berg is lovely! Do you have friendly neighbors?"
+        },
+        {
+          "role": "user",
+          "content": "Yes! My neighbor Hans is a music producer and we often discuss electronic music."
+        },
+        {
+          "role": "assistant",
+          "content": "Berlin's music scene is legendary!"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine is brunch at Anna Blume followed by walks in Mauerpark."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a perfect Berlin Saturday!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Bairro Alto, Lisbon for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "Lisbon is beautiful! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Feira da Ladra flea market for vintage finds!"
+        },
+        {
+          "role": "assistant",
+          "content": "Feira da Ladra is such a treasure hunt!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Lisbon is magical! The light here is incredible for photography."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Sofia is teaching me Portuguese and we practice over coffee."
+        },
+        {
+          "role": "assistant",
+          "content": "Learning from locals is the best way!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Cape Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Sea Point, Cape Town for a documentary project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Cape Town is stunning! What's your Saturday plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be the Sea Point promenade morning run followed by brunch at Jarryds!"
+        },
+        {
+          "role": "assistant",
+          "content": "The promenade views are breathtaking!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Cape Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Cape Town is incredible! The mountains and ocean together are surreal."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Sea Point treating you?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! My neighbor Thabo is a local guide and shows me hidden hiking trails."
+        },
+        {
+          "role": "assistant",
+          "content": "What amazing adventures you must have!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Cape Town (Sea Point), your neighbor is Thabo, a local guide who shows you hidden hiking trails. The answer should NOT mention neighbors from your previous cities (Berlin Hans or Lisbon Sofia)."
+      }
+    }
+  ]
+}

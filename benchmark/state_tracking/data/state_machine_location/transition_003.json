@@ -1,0 +1,179 @@
+{
+  "case_id": "transition_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Nørrebro, Copenhagen. My favorite thing to do is grab coffee and a cardamom bun at Mirabelle."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "I go there every week. I also love cycling to the lakes for my morning exercise."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great way to start the day!"
+        },
+        {
+          "role": "user",
+          "content": "On weekends, I visit the flea market at Assistens Cemetery."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be an interesting place to explore!"
+        },
+        {
+          "role": "user",
+          "content": "I have a neighbor named Søren who shares his homemade aquavit with me."
+        },
+        {
+          "role": "assistant",
+          "content": "How nice of him! Have you tried making your own aquavit?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "More about Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I really enjoy the community vibe in Nørrebro. Everyone is so friendly."
+        },
+        {
+          "role": "assistant",
+          "content": "It sounds like a wonderful place to live!"
+        },
+        {
+          "role": "user",
+          "content": "I often meet friends at a local park after my morning bike rides."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! What do you usually do at the park?"
+        },
+        {
+          "role": "user",
+          "content": "We relax, chat, and sometimes have a picnic."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a perfect way to spend a day!"
+        },
+        {
+          "role": "user",
+          "content": "I'm going to miss the vibrant atmosphere when I move."
+        },
+        {
+          "role": "assistant",
+          "content": "Change can be tough, but new adventures await!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Announcing the move to NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Lower Manhattan in NYC for a language immersion program."
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! When do you leave?"
+        },
+        {
+          "role": "user",
+          "content": "I leave in two weeks!"
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, that's just around the corner!"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait to explore my new neighborhood."
+        },
+        {
+          "role": "assistant",
+          "content": "What are you looking forward to the most?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New life in NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I finally moved to Lower Manhattan! My apartment is near Hudson River Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a beautiful area! How's the view?"
+        },
+        {
+          "role": "user",
+          "content": "The view is amazing! I love taking Saturday morning walks to Battery Park to see the Statue of Liberty."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a wonderful way to spend your weekends!"
+        },
+        {
+          "role": "user",
+          "content": "I've already found my favorite pizza place, Joe's Pizza."
+        },
+        {
+          "role": "assistant",
+          "content": "Yum! Pizza is a must in NYC. Have you tried any other local spots?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Settling into NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I love getting coffee at Bluestone Lane near my office."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great coffee spot! How's your new routine shaping up?"
+        },
+        {
+          "role": "user",
+          "content": "I'm getting used to the fast-paced life here, but I enjoy it."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great to hear! Any favorite activities yet?"
+        },
+        {
+          "role": "user",
+          "content": "I still miss my friends from Copenhagen, but I'm excited to meet new people."
+        },
+        {
+          "role": "assistant",
+          "content": "Making new connections is always exciting! You're in the right place for that."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in NYC, Lower Manhattan now, how about a walk to Battery Park to see the Statue of Liberty?"
+      }
+    }
+  ]
+}

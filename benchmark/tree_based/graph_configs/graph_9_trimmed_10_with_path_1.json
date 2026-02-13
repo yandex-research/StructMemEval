@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_9_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Angela Smith works with Lauren Alvarez."
+        },
+        {
+          "role": "user",
+          "content": "Lauren Alvarez is a colleague of Jacqueline Martin."
+        },
+        {
+          "role": "user",
+          "content": "Jacqueline Martin works with Denise Jones."
+        },
+        {
+          "role": "user",
+          "content": "Denise Jones is a colleague of Anthony Tran."
+        },
+        {
+          "role": "user",
+          "content": "Anthony Tran works with Patrick Martinez."
+        },
+        {
+          "role": "user",
+          "content": "Patrick Martinez is a colleague of Catherine Hernandez."
+        },
+        {
+          "role": "user",
+          "content": "Catherine Hernandez works with Julie Davis."
+        },
+        {
+          "role": "user",
+          "content": "Julie Davis is a colleague of Roy Davis."
+        },
+        {
+          "role": "user",
+          "content": "Roy Davis works with Anna Medina."
+        },
+        {
+          "role": "user",
+          "content": "Anna Medina is a colleague of Harold Ramos."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Angela Smith and Harold Ramos related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "case_id": "static_007",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's New Life in Brooklyn",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I finally moved into my new place in Williamsburg, Brooklyn."
+        },
+        {
+          "role": "assistant",
+          "content": "Congrats! How's the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "I'm really liking it. My neighbor Mike helped me move, super nice guy."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great to have handy neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "He fixed my bike yesterday too, I owe him $50 for parts."
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, sounds like he really came through for you!"
+        },
+        {
+          "role": "user",
+          "content": "I enjoy my morning coffee at Devoción on Grand Street."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a lovely spot! Do you go there every day?"
+        },
+        {
+          "role": "user",
+          "content": "Pretty much. I also visit the hardware store 2 blocks away on Bedford Ave for small repairs."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect for quick fixes! Do you have any projects in mind?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "User's Weekend Activities",
+      "messages": [
+        {
+          "role": "user",
+          "content": "On Sundays, I love going to the farmers market at McCarren Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great way to spend the day! What do you usually buy there?"
+        },
+        {
+          "role": "user",
+          "content": "I pick up fresh veggies and sometimes flowers."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! Fresh flowers always brighten up a space."
+        },
+        {
+          "role": "user",
+          "content": "After the market, I sometimes grab coffee at Devoción."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect way to relax after shopping! Do you have a favorite drink?"
+        },
+        {
+          "role": "user",
+          "content": "I love their cappuccino. It’s the best in the area."
+        },
+        {
+          "role": "assistant",
+          "content": "I’ll have to check it out! Have you met any other neighbors there?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is your neighbor?",
+      "reference_answer": {
+        "text": "My neighbor Mike who fixed my bike, I owe him $50."
+      }
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "case_id": "transition_007",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Fitzroy, Melbourne",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Fitzroy, Melbourne."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a vibrant area! What do you enjoy most about it?"
+        },
+        {
+          "role": "user",
+          "content": "I love having breakfast at Industry Beans, their coffee is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I try to go there every weekend."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice routine! What else do you do on weekends?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Fitzroy's Local Attractions",
+      "messages": [
+        {
+          "role": "user",
+          "content": "On Saturday mornings, I visit the Rose Street Artists Market."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun way to spend a Saturday!"
+        },
+        {
+          "role": "user",
+          "content": "I also love the bookshop on Brunswick Street where I spend hours."
+        },
+        {
+          "role": "assistant",
+          "content": "What kind of books do you usually look for there?"
+        },
+        {
+          "role": "user",
+          "content": "I enjoy fiction and graphic novels, they have a great selection."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a perfect spot for book lovers!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to Brooklyn, Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I finally moved to Brooklyn, Williamsburg last week!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! How's the new place?"
+        },
+        {
+          "role": "user",
+          "content": "Still unpacking but I love it. My commute to work is only 20 minutes now."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a great improvement! What do you like about your new neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "I found an amazing coffee shop called Devoción on Grand Street."
+        },
+        {
+          "role": "assistant",
+          "content": "I've heard great things about that place! Are there any other local spots you've discovered?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New Life in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have a neighbor named Mike who fixed my bike; I owe him $50."
+        },
+        {
+          "role": "assistant",
+          "content": "It's great to have helpful neighbors! How did he help you?"
+        },
+        {
+          "role": "user",
+          "content": "He repaired a flat tire for me."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome! Have you had a chance to explore the local shops?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, there's a hardware store just 2 blocks away on Bedford Ave."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds convenient! Do you have any plans for the weekend?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Weekend Routines in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm looking forward to the Sunday farmers market at McCarren Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great way to spend a Sunday!"
+        },
+        {
+          "role": "user",
+          "content": "I'm excited to check out local produce and maybe some crafts."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delightful! Have you met any new people there yet?"
+        },
+        {
+          "role": "user",
+          "content": "Not yet, but I'm hoping to connect with some locals."
+        },
+        {
+          "role": "assistant",
+          "content": "I'm sure you'll make some new friends soon!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in Brooklyn, Williamsburg now, you could visit the local farmers market or explore the shops around your area!"
+      }
+    }
+  ]
+}

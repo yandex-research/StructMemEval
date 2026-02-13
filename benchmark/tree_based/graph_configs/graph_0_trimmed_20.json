@@ -1,0 +1,104 @@
+{
+  "case_id": "graph_0_trimmed_20",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Johnny Fisher works with Christopher Peterson."
+        },
+        {
+          "role": "user",
+          "content": "Christopher Peterson is a colleague of Kathleen Herrera."
+        },
+        {
+          "role": "user",
+          "content": "Kathleen Herrera works with Linda Brooks."
+        },
+        {
+          "role": "user",
+          "content": "Linda Brooks is a colleague of Amanda Myers."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Myers works with Janet Edwards."
+        },
+        {
+          "role": "user",
+          "content": "Janet Edwards is a colleague of Cynthia Scott."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Scott works with Lawrence Scott."
+        },
+        {
+          "role": "user",
+          "content": "Lawrence Scott is a colleague of Abigail Harris."
+        },
+        {
+          "role": "user",
+          "content": "Abigail Harris works with Joan Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Joan Morgan is a colleague of Brenda Nguyen."
+        },
+        {
+          "role": "user",
+          "content": "Billy Sanchez works with Denise Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Denise Jackson is a colleague of Teresa Ruiz."
+        },
+        {
+          "role": "user",
+          "content": "Teresa Ruiz works with Michelle Sanchez."
+        },
+        {
+          "role": "user",
+          "content": "Michelle Sanchez is a colleague of Eugene Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Eugene Jordan works with Bruce Turner."
+        },
+        {
+          "role": "user",
+          "content": "Bruce Turner is a colleague of Samantha Hayes."
+        },
+        {
+          "role": "user",
+          "content": "Samantha Hayes works with Betty Castro."
+        },
+        {
+          "role": "user",
+          "content": "Betty Castro is a colleague of Gerald Thomas."
+        },
+        {
+          "role": "user",
+          "content": "Gerald Thomas works with Katherine Brown."
+        },
+        {
+          "role": "user",
+          "content": "Katherine Brown is a colleague of George Coleman."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Brenda Nguyen and Johnny Fisher related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Billy Sanchez and George Coleman related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "case_id": "transition_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Lisbon, Alfama",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Alfama, Lisbon, and I start my day with a pastel de nata from the corner bakery every morning."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Do you have a favorite bakery?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it's called Pastéis de Belém, the pastries are the best."
+        },
+        {
+          "role": "assistant",
+          "content": "Great choice! What else do you enjoy about living in Alfama?"
+        },
+        {
+          "role": "user",
+          "content": "I love watching the sunset from Miradouro da Senhora do Monte. It's breathtaking."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be a beautiful view! Do you go often?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Neighborhood in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live near Castelo de São Jorge, which is a landmark I really enjoy."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! Have you explored the castle much?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I often walk around the area, and my neighbor Maria teaches me Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome! Learning slang must be fun."
+        },
+        {
+          "role": "user",
+          "content": "It really is! Maria has taught me some hilarious phrases."
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Lower Manhattan, NYC for a 6-month work assignment."
+        },
+        {
+          "role": "assistant",
+          "content": "How exciting! What are you looking forward to the most?"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait for Saturday morning walks to Battery Park to see the Statue of Liberty."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a perfect plan! Have you found a place to live yet?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New life in NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I found an apartment near Hudson River Park, and I love it."
+        },
+        {
+          "role": "assistant",
+          "content": "That's fantastic! How's the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "It's vibrant! I also enjoy coffee at Bluestone Lane near my office."
+        },
+        {
+          "role": "assistant",
+          "content": "Great spot! Do you have a favorite drink there?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Exploring NYC",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've tried Joe's Pizza, and it's my favorite pizza place now."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! New York pizza is the best. How often do you go there?"
+        },
+        {
+          "role": "user",
+          "content": "I go there at least once a week after work."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great routine! Are you enjoying your new life in NYC?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in NYC, Lower Manhattan now, how about taking a walk to Battery Park to see the Statue of Liberty?"
+      }
+    }
+  ]
+}

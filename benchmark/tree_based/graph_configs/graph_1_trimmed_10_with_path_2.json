@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_1_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Gregory Nguyen works with Jose Martin."
+        },
+        {
+          "role": "user",
+          "content": "Jose Martin is a colleague of Dennis Alvarez."
+        },
+        {
+          "role": "user",
+          "content": "Dennis Alvarez works with Jordan Miller."
+        },
+        {
+          "role": "user",
+          "content": "Jordan Miller is a colleague of Kimberly Price."
+        },
+        {
+          "role": "user",
+          "content": "Kimberly Price works with Richard Stevens."
+        },
+        {
+          "role": "user",
+          "content": "Richard Stevens is a colleague of Doris Gonzales."
+        },
+        {
+          "role": "user",
+          "content": "Doris Gonzales works with James Johnson."
+        },
+        {
+          "role": "user",
+          "content": "James Johnson is a colleague of Jacqueline Adams."
+        },
+        {
+          "role": "user",
+          "content": "Jacqueline Adams works with Alexis Rivera."
+        },
+        {
+          "role": "user",
+          "content": "Alexis Rivera is a colleague of Austin Sanchez."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Gregory Nguyen and Austin Sanchez related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

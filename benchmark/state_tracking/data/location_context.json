@@ -1,0 +1,225 @@
+{
+  "case_id": "location_context_switch",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Perfect Saturday morning routine in NYC",
+      "messages": [
+        {
+          "role": "user",
+          "content": "finally figured out my perfect saturday morning routine"
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! What does it look like?"
+        },
+        {
+          "role": "user",
+          "content": "wake up around 8, walk to this little cafe on my block for breakfast. they have amazing eggs benedict"
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds relaxing. Do you stay there long or move on?"
+        },
+        {
+          "role": "user",
+          "content": "usually grab coffee to go after, then walk down to the waterfront. there's this spot where you can see the Statue of Liberty across the water. I just sit on a bench and enjoy the view for like an hour"
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds amazing. Nothing like starting the weekend with a view like that. Is this in Brooklyn or Jersey side?"
+        },
+        {
+          "role": "user",
+          "content": "Battery Park area actually, I live in lower Manhattan. the view is incredible on clear mornings"
+        },
+        {
+          "role": "assistant",
+          "content": "Battery Park is beautiful. Great spot to decompress before the weekend kicks in."
+        },
+        {
+          "role": "user",
+          "content": "exactly, it's become my ritual. can't imagine saturdays without it now"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Favorite NYC spots",
+      "messages": [
+        {
+          "role": "user",
+          "content": "coworker asked me for restaurant recs, realized I have so many favorites now"
+        },
+        {
+          "role": "assistant",
+          "content": "You've been there a while — what kind of food are they looking for?"
+        },
+        {
+          "role": "user",
+          "content": "italian. told them about this place in tribeca I love, and a pizza spot near my apartment"
+        },
+        {
+          "role": "assistant",
+          "content": "Tribeca has great Italian options. The pizza spot near you in lower Manhattan?"
+        },
+        {
+          "role": "user",
+          "content": "yeah, Joe's Pizza. classic NY slice. I go there way too often honestly"
+        },
+        {
+          "role": "assistant",
+          "content": "Joe's is legendary. Hard to beat a good NY slice."
+        },
+        {
+          "role": "user",
+          "content": "truth. okay back to work"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Weekend plans with friends",
+      "messages": [
+        {
+          "role": "user",
+          "content": "friends want to do brunch sunday, trying to pick a place"
+        },
+        {
+          "role": "assistant",
+          "content": "How many people and what vibe — fancy or casual?"
+        },
+        {
+          "role": "user",
+          "content": "like 5 people, casual. somewhere with outdoor seating ideally"
+        },
+        {
+          "role": "assistant",
+          "content": "In your area there's probably good options near the waterfront. Any cuisine preference?"
+        },
+        {
+          "role": "user",
+          "content": "american brunch stuff. maybe somewhere near hudson river park since the weather is nice"
+        },
+        {
+          "role": "assistant",
+          "content": "Hudson River Park area has some great spots. Grand Banks if you want the boat experience, or Pier A Harbor House for more classic brunch."
+        },
+        {
+          "role": "user",
+          "content": "pier a sounds good, I'll suggest that. thanks"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Work trip announcement",
+      "messages": [
+        {
+          "role": "user",
+          "content": "big news — got assigned to a project in Paris for the next month"
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, that's exciting! When do you leave?"
+        },
+        {
+          "role": "user",
+          "content": "flying out tomorrow actually. super last minute. company is putting me up in an apartment near the office"
+        },
+        {
+          "role": "assistant",
+          "content": "A month in Paris sounds amazing despite being work. Do you know the area you'll be staying?"
+        },
+        {
+          "role": "user",
+          "content": "somewhere in Le Marais I think? supposed to be a nice neighborhood"
+        },
+        {
+          "role": "assistant",
+          "content": "Le Marais is beautiful — historic, great food, very walkable. You'll love it."
+        },
+        {
+          "role": "user",
+          "content": "hope so. gonna be working a lot but hoping to explore on weekends"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "First week in Paris",
+      "messages": [
+        {
+          "role": "user",
+          "content": "survived my first week here. work is intense but the city is beautiful"
+        },
+        {
+          "role": "assistant",
+          "content": "How's the apartment and neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "apartment is tiny but charming. Le Marais is amazing, so many little cafes and shops"
+        },
+        {
+          "role": "assistant",
+          "content": "That's the Parisian charm. Have you had time to explore at all?"
+        },
+        {
+          "role": "user",
+          "content": "just quick walks after work. found a boulangerie nearby with incredible croissants"
+        },
+        {
+          "role": "assistant",
+          "content": "Fresh Parisian croissants are unbeatable. Make sure to try pain au chocolat too."
+        },
+        {
+          "role": "user",
+          "content": "already did, dangerous how good they are. okay gotta sleep, early meeting tomorrow"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Weekend coming up",
+      "messages": [
+        {
+          "role": "user",
+          "content": "finally friday here. first real weekend to actually explore"
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! Any plans?"
+        },
+        {
+          "role": "user",
+          "content": "not yet, still figuring it out. definitely want to see some of the classic sights"
+        },
+        {
+          "role": "assistant",
+          "content": "You've got a lot to choose from — Eiffel Tower, Louvre, Notre-Dame area, Seine walks..."
+        },
+        {
+          "role": "user",
+          "content": "yeah overwhelmed honestly. will probably just wander tomorrow and see what happens"
+        },
+        {
+          "role": "assistant",
+          "content": "Wandering is the best way to discover Paris. The architecture alone is worth it."
+        },
+        {
+          "role": "user",
+          "content": "true. excited to finally have time"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Tomorrow is Saturday and I want to have a nice relaxing morning. What should I do? I want something that feels special, like a nice routine.",
+      "reference_answer": {
+        "text": "Since you're in Paris now, here's a perfect Saturday morning: Start with fresh croissants from your local boulangerie in Le Marais (you mentioned they're incredible). Then take your coffee and walk along the Seine — the views of Notre-Dame and the bridges are magical in the morning light. Find a bench by the river and just enjoy the Parisian atmosphere. It's different from your Battery Park routine, but equally special."
+      }
+    }
+  ]
+}

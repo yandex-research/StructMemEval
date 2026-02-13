@@ -1,0 +1,123 @@
+{
+  "case_id": "transition_4tr_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Vienna",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Neubau, Vienna. The coffee house culture here is amazing!"
+        },
+        {
+          "role": "assistant",
+          "content": "Vienna's coffee houses are legendary!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Franz is a classical pianist and I hear beautiful music through the walls."
+        },
+        {
+          "role": "assistant",
+          "content": "What a cultured neighbor!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Marrakech",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to the Medina, Marrakech for a design project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Marrakech is colorful! Who's your neighbor?"
+        },
+        {
+          "role": "user",
+          "content": "Here in Marrakech, my neighbor Hassan is a rug merchant who teaches me about Berber patterns."
+        },
+        {
+          "role": "assistant",
+          "content": "Moroccan craftsmanship is extraordinary!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to Bali",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Ubud, Bali for a wellness retreat program!"
+        },
+        {
+          "role": "assistant",
+          "content": "Ubud is spiritual! Who lives nearby?"
+        },
+        {
+          "role": "user",
+          "content": "Here in Bali, my neighbor Ketut is a healer who does traditional blessing ceremonies."
+        },
+        {
+          "role": "assistant",
+          "content": "How special to have a healer neighbor!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Montreal",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Le Plateau, Montreal for a film festival job!"
+        },
+        {
+          "role": "assistant",
+          "content": "Montreal is artistic! Meet any neighbors?"
+        },
+        {
+          "role": "user",
+          "content": "Here in Montreal, my neighbor Marie-Claire is a filmmaker and we discuss cinema."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect neighbor for someone in film!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Moving to Istanbul",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kadıköy, Istanbul for a culinary writing project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Istanbul is magical! Who's your neighbor?"
+        },
+        {
+          "role": "user",
+          "content": "Here in Istanbul, my neighbor Elif is a pastry chef specializing in baklava!"
+        },
+        {
+          "role": "assistant",
+          "content": "A baklava expert neighbor - what a dream!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Istanbul (Kadıköy), your neighbor is Elif, a pastry chef specializing in baklava who shares her creations with you. The answer should NOT mention neighbors from your previous cities (Vienna Franz, Marrakech Hassan, Bali Ketut, or Montreal Marie-Claire)."
+      }
+    }
+  ]
+}

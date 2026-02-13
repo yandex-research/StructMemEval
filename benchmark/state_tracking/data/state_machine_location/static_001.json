@@ -1,0 +1,151 @@
+{
+  "case_id": "static_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's life in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Lisbon, Alfama."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a beautiful area! How do you like living there?"
+        },
+        {
+          "role": "user",
+          "content": "I have a pastel de nata at the corner bakery every morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious! Do you have a favorite flavor?"
+        },
+        {
+          "role": "user",
+          "content": "I enjoy watching the sunset from Miradouro da Senhora do Monte."
+        },
+        {
+          "role": "assistant",
+          "content": "What a stunning view that must be! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it's my favorite part of the day."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely!"
+        },
+        {
+          "role": "user",
+          "content": "I live near Castelo de São Jorge."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a great landmark to be close to!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "User's social interactions",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My neighbor Maria teaches me Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome! Learning slang can be really fun."
+        },
+        {
+          "role": "user",
+          "content": "We often chat about local culture."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great way to improve your language skills!"
+        },
+        {
+          "role": "user",
+          "content": "I owe her a coffee for all her help."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a nice gesture! What kind of coffee do you like?"
+        },
+        {
+          "role": "user",
+          "content": "I love a good espresso."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect choice!"
+        },
+        {
+          "role": "user",
+          "content": "I also enjoy the pastel de nata from that bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "Those pastries are a must-try!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "User's daily life",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My morning routine includes a pastel de nata at the corner bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a tasty way to start the day!"
+        },
+        {
+          "role": "user",
+          "content": "After that, I usually go for a walk around Alfama."
+        },
+        {
+          "role": "assistant",
+          "content": "Alfama is such a charming place to explore."
+        },
+        {
+          "role": "user",
+          "content": "I often end my day watching the sunset from Miradouro da Senhora do Monte."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a beautiful way to unwind."
+        },
+        {
+          "role": "user",
+          "content": "I also live near Castelo de São Jorge."
+        },
+        {
+          "role": "assistant",
+          "content": "What a fantastic location! Do you visit the castle often?"
+        },
+        {
+          "role": "user",
+          "content": "Not as often as I should, but it's nice to have it nearby."
+        },
+        {
+          "role": "assistant",
+          "content": "Absolutely! It's nice to have such history close to home."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do you have every morning at the bakery?",
+      "reference_answer": {
+        "text": "I have a pastel de nata at the corner bakery every morning."
+      }
+    }
+  ]
+}

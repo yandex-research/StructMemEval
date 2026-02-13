@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_3_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nicholas Rodriguez works with Grace Alvarez."
+        },
+        {
+          "role": "user",
+          "content": "Grace Alvarez is a colleague of Rachel Allen."
+        },
+        {
+          "role": "user",
+          "content": "Rachel Allen works with Barbara Simmons."
+        },
+        {
+          "role": "user",
+          "content": "Barbara Simmons is a colleague of Steven Howard."
+        },
+        {
+          "role": "user",
+          "content": "Steven Howard works with Samuel Scott."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Scott is a colleague of Melissa Ramos."
+        },
+        {
+          "role": "user",
+          "content": "Melissa Ramos works with Alan Young."
+        },
+        {
+          "role": "user",
+          "content": "Alan Young is a colleague of Raymond Johnson."
+        },
+        {
+          "role": "user",
+          "content": "Raymond Johnson works with Brittany Harris."
+        },
+        {
+          "role": "user",
+          "content": "Brittany Harris is a colleague of Teresa Young."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Nicholas Rodriguez and Teresa Young related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

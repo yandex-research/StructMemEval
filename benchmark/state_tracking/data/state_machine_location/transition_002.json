@@ -1,0 +1,163 @@
+{
+  "case_id": "transition_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Life in Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Nørrebro, Copenhagen, and love starting my day with coffee and a cardamom bun at Mirabelle."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I go there almost every morning before my routine of cycling to the lakes for some exercise."
+        },
+        {
+          "role": "assistant",
+          "content": "Cycling sounds like a great way to stay active! How long is your ride?"
+        },
+        {
+          "role": "user",
+          "content": "It's about 30 minutes, and I really enjoy the fresh air."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds refreshing! Do you have any favorite places to shop nearby?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Exploring Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "On weekends, I love visiting the flea market at Assistens Cemetery."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a unique experience! What do you usually look for at the market?"
+        },
+        {
+          "role": "user",
+          "content": "I like finding vintage items and sometimes clothes."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome! Do you have any favorite finds?"
+        },
+        {
+          "role": "user",
+          "content": "Once, I found an old vinyl record that I cherish."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great find! Do you know your neighbors well?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving Announcement",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Tokyo, Shibuya because my partner got a job there."
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! When do you plan to move?"
+        },
+        {
+          "role": "user",
+          "content": "We're leaving in two weeks, so I'm busy packing."
+        },
+        {
+          "role": "assistant",
+          "content": "I can imagine! Are you looking forward to anything in particular about Tokyo?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I'm really excited to try the morning matcha at a small shop near Yoyogi Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! Do you have any plans for your new routine there?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Settling in Tokyo, Shibuya",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled in Tokyo, Shibuya, and I love my new morning jog through Yoyogi Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds amazing! How does it compare to cycling in Copenhagen?"
+        },
+        {
+          "role": "user",
+          "content": "It's different, but I enjoy the vibrant atmosphere in the park."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great to hear! Have you discovered any favorite places to eat yet?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my favorite ramen place is in the basement of Shibuya Station."
+        },
+        {
+          "role": "assistant",
+          "content": "Ramen is the best! Do you have any neighbors you've connected with?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Tokyo, Shibuya",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've met my neighbor Tanaka-san, who shares vegetables from his balcony garden."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! Fresh vegetables are always a treat."
+        },
+        {
+          "role": "user",
+          "content": "Yes, I've already made a few dishes with them."
+        },
+        {
+          "role": "assistant",
+          "content": "What have you cooked?"
+        },
+        {
+          "role": "user",
+          "content": "I made a stir-fry with the vegetables and some ramen."
+        },
+        {
+          "role": "assistant",
+          "content": "Yum! Sounds like you're enjoying your new life in Tokyo!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in Tokyo, Shibuya now, why not enjoy a morning jog through Yoyogi Park followed by matcha at your favorite small shop nearby?"
+      }
+    }
+  ]
+}

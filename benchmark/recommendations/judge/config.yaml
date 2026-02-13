@@ -1,0 +1,13 @@
+input_path: eval_results/results_mem_agent.json
+prompt_path: prompt.txt
+output_path: results/judge_output_mem_agent_huge_hint_350.json
+model: gpt-4o-mini
+api_key: ${OPENAI_API_KEY}
+
+filter_case_id:
+  - recommendations_art
+  - recommendations_movies
+
+filter_prompt_path:
+  - prompts/system_prompt_art_huge_hint.txt
+  - prompts/system_prompt_movies_huge_hint.txt

@@ -1,0 +1,121 @@
+{
+  "case_id": "static_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's Life in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I finally moved into my new place in Williamsburg."
+        },
+        {
+          "role": "assistant",
+          "content": "Congrats! How's the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "It's great! My neighbor Mike helped me move, super nice guy."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome to have a helpful neighbor!"
+        },
+        {
+          "role": "user",
+          "content": "He even fixed my bike yesterday, I owe him $50 for parts."
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, that’s really generous of him!"
+        },
+        {
+          "role": "user",
+          "content": "I start my mornings with coffee at Devoción on Grand Street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a nice way to start the day!"
+        },
+        {
+          "role": "user",
+          "content": "And I usually hit the hardware store 2 blocks away on Bedford Ave when I need supplies."
+        },
+        {
+          "role": "assistant",
+          "content": "That's convenient!"
+        },
+        {
+          "role": "user",
+          "content": "On Sundays, I love going to the farmers market at McCarren Park."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun weekend activity!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Daily Life and Local Spots",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I recently started exploring more of Williamsburg."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! What have you discovered?"
+        },
+        {
+          "role": "user",
+          "content": "There's a great cafe called Devoción where I get my morning coffee."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "Almost every day! I also have a neighbor, Mike, who helped me out a lot."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great! What did he help you with?"
+        },
+        {
+          "role": "user",
+          "content": "He fixed my bike last weekend, I owe him $50 for the parts."
+        },
+        {
+          "role": "assistant",
+          "content": "It’s nice to have friends nearby who can help."
+        },
+        {
+          "role": "user",
+          "content": "When I need tools, I just go to the hardware store 2 blocks away on Bedford Ave."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect! That must save you a lot of time."
+        },
+        {
+          "role": "user",
+          "content": "I also enjoy the farmers market at McCarren Park every Sunday."
+        },
+        {
+          "role": "assistant",
+          "content": "What do you usually look for there?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Where do you go when you need tools?",
+      "reference_answer": {
+        "text": "I go to the hardware store 2 blocks away on Bedford Ave."
+      }
+    }
+  ]
+}

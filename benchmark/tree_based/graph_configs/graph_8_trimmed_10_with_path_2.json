@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_8_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Willie Hill works with Paul Kim."
+        },
+        {
+          "role": "user",
+          "content": "Paul Kim is a colleague of Gabriel Howard."
+        },
+        {
+          "role": "user",
+          "content": "Gabriel Howard works with Paul Brown."
+        },
+        {
+          "role": "user",
+          "content": "Paul Brown is a colleague of Lori Nelson."
+        },
+        {
+          "role": "user",
+          "content": "Lori Nelson works with Barbara Morales."
+        },
+        {
+          "role": "user",
+          "content": "Barbara Morales is a colleague of Lori Kim."
+        },
+        {
+          "role": "user",
+          "content": "Lori Kim works with Cynthia Kim."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Kim is a colleague of Nathan Alexander."
+        },
+        {
+          "role": "user",
+          "content": "Nathan Alexander works with Amanda Brown."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Brown is a colleague of Bryan Jackson."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Willie Hill and Bryan Jackson related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

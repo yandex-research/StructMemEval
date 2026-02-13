@@ -1,0 +1,144 @@
+{
+  "case_id": "graph_8_trimmed_30",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Kimberly Kim works with Donald Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Donald Murphy is a colleague of Samuel Harrison."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Harrison works with Janet West."
+        },
+        {
+          "role": "user",
+          "content": "Janet West is a colleague of Virginia Rivera."
+        },
+        {
+          "role": "user",
+          "content": "Virginia Rivera works with Amanda Bryant."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Bryant is a colleague of Martha Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Martha Lopez works with Christine Tran."
+        },
+        {
+          "role": "user",
+          "content": "Christine Tran is a colleague of Justin Gibson."
+        },
+        {
+          "role": "user",
+          "content": "Justin Gibson works with Edward Woods."
+        },
+        {
+          "role": "user",
+          "content": "Edward Woods is a colleague of Nicholas Gibson."
+        },
+        {
+          "role": "user",
+          "content": "Willie Hill works with Paul Kim."
+        },
+        {
+          "role": "user",
+          "content": "Paul Kim is a colleague of Gabriel Howard."
+        },
+        {
+          "role": "user",
+          "content": "Gabriel Howard works with Paul Brown."
+        },
+        {
+          "role": "user",
+          "content": "Paul Brown is a colleague of Lori Nelson."
+        },
+        {
+          "role": "user",
+          "content": "Lori Nelson works with Barbara Morales."
+        },
+        {
+          "role": "user",
+          "content": "Barbara Morales is a colleague of Lori Kim."
+        },
+        {
+          "role": "user",
+          "content": "Lori Kim works with Cynthia Kim."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Kim is a colleague of Nathan Alexander."
+        },
+        {
+          "role": "user",
+          "content": "Nathan Alexander works with Amanda Brown."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Brown is a colleague of Bryan Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Andrew Ross works with Edward Graham."
+        },
+        {
+          "role": "user",
+          "content": "Ashley Sanders is a colleague of Terry Chavez."
+        },
+        {
+          "role": "user",
+          "content": "Alexander Russell is a colleague of Cynthia Lewis."
+        },
+        {
+          "role": "user",
+          "content": "Shirley Perez is a colleague of Shirley Hamilton."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Hill works with Christine Butler."
+        },
+        {
+          "role": "user",
+          "content": "Debra Peterson is a colleague of Sandra Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Terry Fisher works with Amber Flores."
+        },
+        {
+          "role": "user",
+          "content": "Debra Fernandez works with Megan Morales."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Vasquez works with Bobby Miller."
+        },
+        {
+          "role": "user",
+          "content": "Jacqueline Hall works with Jean Brooks."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Kimberly Kim and Nicholas Gibson related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Willie Hill and Bryan Jackson related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

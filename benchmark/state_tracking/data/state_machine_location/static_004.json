@@ -1,0 +1,105 @@
+{
+  "case_id": "static_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Berlin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I recently moved to Berlin, Kreuzberg."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds exciting! How do you like the area?"
+        },
+        {
+          "role": "user",
+          "content": "My apartment overlooks the Landwehr Canal, the view is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, that must be a beautiful sight! Do you have a favorite spot nearby?"
+        },
+        {
+          "role": "user",
+          "content": "I love getting my morning coffee at a small cafe on Oranienstrasse."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great way to start your day!"
+        },
+        {
+          "role": "user",
+          "content": "There's also a Turkish grocery store downstairs with amazing bread."
+        },
+        {
+          "role": "assistant",
+          "content": "Fresh bread is the best! Do you shop there often?"
+        },
+        {
+          "role": "user",
+          "content": "I go there all the time, especially for my Sunday flea market visits at Mauerpark."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun routine! What do you usually look for at the market?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Daily Life in Kreuzberg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled into my new place in Kreuzberg."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great! How's your new neighborhood treating you?"
+        },
+        {
+          "role": "user",
+          "content": "It’s fantastic! My apartment has a view of the Landwehr Canal."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! Do you enjoy spending time by the canal?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, and I start my day with morning coffee at a small cafe on Oranienstrasse."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds perfect for your mornings!"
+        },
+        {
+          "role": "user",
+          "content": "Plus, there's a Turkish grocery store downstairs with amazing bread."
+        },
+        {
+          "role": "assistant",
+          "content": "Fresh bread is a must! What’s your favorite kind?"
+        },
+        {
+          "role": "user",
+          "content": "I love going to the Sunday flea market at Mauerpark."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great way to spend your Sundays! What do you enjoy finding there?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do you like to do for your morning coffee?",
+      "reference_answer": {
+        "text": "I get my morning coffee at a small cafe on Oranienstrasse."
+      }
+    }
+  ]
+}

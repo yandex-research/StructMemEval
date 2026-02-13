@@ -1,0 +1,155 @@
+{
+  "case_id": "transition_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in NYC, Lower Manhattan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Lower Manhattan, NYC, and I love my Saturday morning walks to Battery Park to see the Statue of Liberty."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a beautiful way to start the weekend!"
+        },
+        {
+          "role": "user",
+          "content": "I also enjoy grabbing my favorite pizza at Joe's Pizza, it's the best in the area."
+        },
+        {
+          "role": "assistant",
+          "content": "Joe's Pizza is a classic! Do you have a favorite order?"
+        },
+        {
+          "role": "user",
+          "content": "I usually get a slice of pepperoni. My apartment is near Hudson River Park, so it's a great spot to relax."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be a lovely view! Do you spend a lot of time at the park?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "More about NYC life",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Yes, I often go for a jog there. I also love stopping by Bluestone Lane for coffee near my office."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great routine! What do you usually order at Bluestone Lane?"
+        },
+        {
+          "role": "user",
+          "content": "I usually get an almond milk latte. It's my favorite way to kickstart the day."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Are there any other places you love in NYC?"
+        },
+        {
+          "role": "user",
+          "content": "I also enjoy the view of the skyline from my apartment, it's breathtaking."
+        },
+        {
+          "role": "assistant",
+          "content": "I can only imagine! NYC has such an iconic skyline."
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to Melbourne, Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've decided to move to Melbourne, Fitzroy for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting news! When are you making the move?"
+        },
+        {
+          "role": "user",
+          "content": "I'm moving next week! It's a big change for me."
+        },
+        {
+          "role": "assistant",
+          "content": "It sure is! Are you looking forward to anything specific in Fitzroy?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New life in Melbourne, Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've already found a great cafe called Industry Beans for breakfast."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds amazing! What's your go-to breakfast there?"
+        },
+        {
+          "role": "user",
+          "content": "I love their avocado toast. It's so good! I also plan to visit the Rose Street Artists Market on Saturday mornings."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun way to spend your weekends!"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait! I also want to check out the bookshop on Brunswick Street where I can spend hours browsing."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a perfect spot for a book lover!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Settling into Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've met my neighbor Liam who is a musician. I sometimes hear him practicing."
+        },
+        {
+          "role": "assistant",
+          "content": "That's cool! It must be nice to have a creative neighbor."
+        },
+        {
+          "role": "user",
+          "content": "Yeah, he's really talented! I feel like I'm settling in well."
+        },
+        {
+          "role": "assistant",
+          "content": "That's wonderful to hear! How are you finding the local community?"
+        },
+        {
+          "role": "user",
+          "content": "Everyone seems friendly, and I'm excited to explore more of Fitzroy."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll have a lot of fun discovering the area!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in Melbourne, Fitzroy now, you might enjoy visiting the Rose Street Artists Market!"
+      }
+    }
+  ]
+}

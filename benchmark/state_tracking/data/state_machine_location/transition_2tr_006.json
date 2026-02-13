@@ -1,0 +1,155 @@
+{
+  "case_id": "transition_2tr_006",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Mile End",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Mile End, Montreal. The murals and bilingual banter."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love bagels at St-Viateur then browsing Mile End record shops."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Jean-Pierre, a jazz musician who plays saxophone on his balcony. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have smoked meat sandwich and coffee at Beautys Luncheonette."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Gion",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gion, Kyoto for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be early morning walks through Arashiyama bamboo grove."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have traditional Japanese breakfast with miso soup and grilled fish at a ryokan."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Gion",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gion, Kyoto for a few weeks now. I love the wooden machiya houses and temple bells."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Yamamoto-san, a tea ceremony master who gives me private lessons."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Williamsburg, Brooklyn for a creative collaboration!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be hitting Smorgasburg food market by the waterfront."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have avocado toast and cold brew at Devoción."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Williamsburg, Brooklyn for a few weeks now. I love the rooftop views and warehouse vibes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Mike, a photographer who keeps lending me camera gear."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Williamsburg, Brooklyn, your breakfast is avocado toast and cold brew at Devoción. The answer should NOT mention breakfast from your previous cities (Mile End smoked meat sandwich and coffee, Gion traditional Japanese breakfast with miso soup and grilled fish)."
+      }
+    }
+  ]
+}

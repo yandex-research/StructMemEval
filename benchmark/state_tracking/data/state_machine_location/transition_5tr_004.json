@@ -1,0 +1,311 @@
+{
+  "case_id": "transition_5tr_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Tiong Bahru",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Tiong Bahru, Singapore. The art deco flats and tropical trees."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning dim sum at the hawker centre then browsing BooksActually."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Wei Ming, a food blogger who shows me the best hawker stalls. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have kaya toast and teh tarik at a traditional kopitiam."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Kreuzberg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kreuzberg, Berlin for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Markthalle Neun for street food."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have bretzel and filter coffee at a Späti on Oranienstrasse."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Kreuzberg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Kreuzberg, Berlin for a few weeks now. I love the street art and canal-side walks."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Hans, a music producer who hosts Sunday jam sessions."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Fitzroy, Melbourne for a creative collaboration!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Rose Street Artists Market then hitting Brunswick Street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have smashed avo and long black at Industry Beans."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Fitzroy, Melbourne for a few weeks now. I love the laneway street art and amazing coffee culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Liam, a barista who gets me into secret coffee tastings."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Mitte",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Mitte, Vienna for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Naschmarkt for cheese and wine."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have Sachertorte and melange at Café Central."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Mitte",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Mitte, Vienna for a few weeks now. I love the imperial architecture and coffeehouse culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Franz, a classical pianist who practices Chopin every evening."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Gion",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gion, Kyoto for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be early morning walks through Arashiyama bamboo grove."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have traditional Japanese breakfast with miso soup and grilled fish at a ryokan."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Gion",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gion, Kyoto for a few weeks now. I love the wooden machiya houses and temple bells."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Yamamoto-san, a tea ceremony master who gives me private lessons."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Moving to Shibuya",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shibuya, Tokyo for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Yoyogi Park and visiting the Meiji Shrine."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have tamago sando and matcha latte from a konbini."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Life in Shibuya",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Shibuya, Tokyo for a few weeks now. I love the energy of the crossing and the quiet side streets."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Tanaka-san, a retired teacher who shares vegetables from his garden."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Shibuya, Tokyo, your breakfast is tamago sando and matcha latte from a konbini. The answer should NOT mention breakfast from your previous cities (Tiong Bahru kaya toast and teh tarik, Kreuzberg bretzel and filter coffee, Fitzroy smashed avo and long black, Mitte Sachertorte and melange, Gion traditional Japanese breakfast with miso soup and grilled fish)."
+      }
+    }
+  ]
+}

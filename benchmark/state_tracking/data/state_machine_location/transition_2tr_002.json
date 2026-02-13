@@ -1,0 +1,131 @@
+{
+  "case_id": "transition_2tr_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Paris",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Le Marais, Paris. The architecture here is stunning!"
+        },
+        {
+          "role": "assistant",
+          "content": "Le Marais is beautiful! What's your morning routine like?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine is fresh croissants from Boulangerie Poilâne with café au lait."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like the perfect Parisian morning!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Pierre is a retired chef and sometimes shares his pastry tips."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful neighbor to have!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Seoul",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gangnam, Seoul for a tech startup!"
+        },
+        {
+          "role": "assistant",
+          "content": "Seoul is amazing! What are you excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be traditional Korean breakfast at Gwangjang Market!"
+        },
+        {
+          "role": "assistant",
+          "content": "Korean breakfast is so hearty and delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Seoul",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Seoul for a month now. The pace here is incredible!"
+        },
+        {
+          "role": "assistant",
+          "content": "How are you adjusting?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ji-hoon helps me navigate the subway system."
+        },
+        {
+          "role": "assistant",
+          "content": "That's so helpful in a big city like Seoul!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Mexico City",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Roma Norte, Mexico City for a creative project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Mexico City is vibrant! What's your plan?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be chilaquiles and fresh jugo at Mercado Roma!"
+        },
+        {
+          "role": "assistant",
+          "content": "Mercado Roma has the best breakfast options!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Mexico City",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Mexico City is incredible! The food culture here is unmatched."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Roma Norte treating you?"
+        },
+        {
+          "role": "user",
+          "content": "Amazing! My neighbor Carmen introduced me to the best taco spots in the neighborhood."
+        },
+        {
+          "role": "assistant",
+          "content": "Local knowledge is the best!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Mexico City (Roma Norte), your breakfast is chilaquiles and fresh jugo at Mercado Roma. The answer should NOT mention breakfast from your previous cities (Paris croissants or Seoul Gwangjang Market)."
+      }
+    }
+  ]
+}

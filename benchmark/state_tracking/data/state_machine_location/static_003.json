@@ -1,0 +1,105 @@
+{
+  "case_id": "static_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's life in Paris",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I just moved to Le Marais in Paris."
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! How do you like the area?"
+        },
+        {
+          "role": "user",
+          "content": "I love it! I get my croissants from the boulangerie on Rue des Rosiers."
+        },
+        {
+          "role": "assistant",
+          "content": "Yum, that sounds delicious! Do you have a favorite type of pastry?"
+        },
+        {
+          "role": "user",
+          "content": "I also enjoy my evening walks along the Seine."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! The Seine must be beautiful in the evenings."
+        },
+        {
+          "role": "user",
+          "content": "My apartment is just a 5-minute walk from Place des Vosges."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great location! Have you explored the area around the square?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have an elderly neighbor, Madame Dupont, who waters my plants when I travel."
+        },
+        {
+          "role": "assistant",
+          "content": "It's wonderful to have a helpful neighbor like that!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Daily routine and local life",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I really enjoy my mornings with coffee and croissants."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a perfect start to the day! Do you have a favorite café?"
+        },
+        {
+          "role": "user",
+          "content": "I usually grab my croissants from the boulangerie on Rue des Rosiers."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice choice! What do you typically do after breakfast?"
+        },
+        {
+          "role": "user",
+          "content": "In the evenings, I like to take walks along the Seine."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be a relaxing way to end your day."
+        },
+        {
+          "role": "user",
+          "content": "I also live just a short walk from Place des Vosges."
+        },
+        {
+          "role": "assistant",
+          "content": "That's a beautiful area! Have you been to the park there?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor, Madame Dupont, is really nice. She waters my plants when I'm away."
+        },
+        {
+          "role": "assistant",
+          "content": "It's great to have someone you can rely on!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do you enjoy doing in the evenings?",
+      "reference_answer": {
+        "text": "I like to take evening walks along the Seine."
+      }
+    }
+  ]
+}

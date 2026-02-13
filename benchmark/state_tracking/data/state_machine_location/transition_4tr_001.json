@@ -1,0 +1,211 @@
+{
+  "case_id": "transition_4tr_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Alfama, Lisbon. Love the traditional Fado music here!"
+        },
+        {
+          "role": "assistant",
+          "content": "Alfama is so charming! What's your favorite thing to do?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I visit Feira da Ladra for vintage books and records."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great tradition!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Tokyo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Shibuya, Tokyo for an exciting new project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Wow! What are you most excited about?"
+        },
+        {
+          "role": "user",
+          "content": "Saturday trips to Tsukiji Outer Market for the freshest sushi breakfast!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's a foodie's dream!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Tokyo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Tokyo life is incredible! The energy here is amazing."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! Neighbor Tanaka-san taught me proper sushi etiquette."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful cultural experience!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to London",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shoreditch, London for a tech role."
+        },
+        {
+          "role": "assistant",
+          "content": "Exciting! What's your plan there?"
+        },
+        {
+          "role": "user",
+          "content": "Saturday mornings will be spent at Columbia Road Flower Market!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's such a lovely London tradition!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in London",
+      "messages": [
+        {
+          "role": "user",
+          "content": "London is growing on me! The pub culture is fantastic."
+        },
+        {
+          "role": "assistant",
+          "content": "How's your neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! My neighbor Oliver and I watch football at the local pub."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like proper British bonding!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Barcelona",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to El Born, Barcelona for a creative agency job!"
+        },
+        {
+          "role": "assistant",
+          "content": "Barcelona is amazing! What's your plan?"
+        },
+        {
+          "role": "user",
+          "content": "Saturday brunch at La Boqueria market is a must - fresh fruits and jamón!"
+        },
+        {
+          "role": "assistant",
+          "content": "La Boqueria is legendary!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Barcelona",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Barcelona is incredible! The architecture here is stunning."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you adjusting?"
+        },
+        {
+          "role": "user",
+          "content": "Perfectly! Neighbor Carmen is teaching me Catalan phrases."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great way to integrate!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Sydney",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Bondi, Sydney next month!"
+        },
+        {
+          "role": "assistant",
+          "content": "Beach life! What are you excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be sunrise yoga on Bondi Beach followed by brunch at Bills!"
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like paradise!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Sydney",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Sydney life is amazing! The weather is perfect."
+        },
+        {
+          "role": "assistant",
+          "content": "How's the beach lifestyle treating you?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! My neighbor Liam is a surf instructor and I'm learning to ride waves."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great way to embrace Australian culture!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Sydney (Bondi), your Saturday activity is sunrise yoga on Bondi Beach followed by brunch at Bills. The answer should NOT mention activities from your previous cities (Lisbon Feira da Ladra, Tokyo Tsukiji Market, London Columbia Road, or Barcelona La Boqueria)."
+      }
+    }
+  ]
+}

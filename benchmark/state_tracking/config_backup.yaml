@@ -1,0 +1,59 @@
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_location
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_location
+    retrieve_limit: 10
+    infer: false
+
+mem_agent:
+  model: gpt-4o-mini
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${OPENAI_API_KEY}
+
+benchmark:
+  # Data files to benchmark (each file = one case)
+  data_paths:
+    # State machine location cases (generated)
+    - data/state_machine_location/static_001.json
+    - data/state_machine_location/static_002.json
+    - data/state_machine_location/static_003.json
+    - data/state_machine_location/static_004.json
+    - data/state_machine_location/static_005.json
+    - data/state_machine_location/static_006.json
+    - data/state_machine_location/static_007.json
+    - data/state_machine_location/transition_001.json
+    - data/state_machine_location/transition_002.json
+    - data/state_machine_location/transition_003.json
+    - data/state_machine_location/transition_004.json
+    - data/state_machine_location/transition_005.json
+    - data/state_machine_location/transition_006.json
+    - data/state_machine_location/transition_007.json
+
+  # mem0 retrieve limits to test
+  mem0_limits: [5, 20]
+
+  # Agent prompt configurations
+  agent_prompts:
+    - name: mem_agent
+      path: prompts/system_prompt.txt
+    - name: mem_agent_hint
+      path: prompts/system_prompt_location_huge_hint.txt
+
+  output_dir: eval_results
+  verbose: false

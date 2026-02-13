@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_8_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Kimberly Kim works with Donald Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Donald Murphy is a colleague of Samuel Harrison."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Harrison works with Janet West."
+        },
+        {
+          "role": "user",
+          "content": "Janet West is a colleague of Virginia Rivera."
+        },
+        {
+          "role": "user",
+          "content": "Virginia Rivera works with Amanda Bryant."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Bryant is a colleague of Martha Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Martha Lopez works with Christine Tran."
+        },
+        {
+          "role": "user",
+          "content": "Christine Tran is a colleague of Justin Gibson."
+        },
+        {
+          "role": "user",
+          "content": "Justin Gibson works with Edward Woods."
+        },
+        {
+          "role": "user",
+          "content": "Edward Woods is a colleague of Nicholas Gibson."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Kimberly Kim and Nicholas Gibson related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

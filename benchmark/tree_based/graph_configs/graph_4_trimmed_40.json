@@ -1,0 +1,184 @@
+{
+  "case_id": "graph_4_trimmed_40",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Emily Sanders works with Michael Clark."
+        },
+        {
+          "role": "user",
+          "content": "Michael Clark is a colleague of Madison Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Madison Aguilar works with Alice Perry."
+        },
+        {
+          "role": "user",
+          "content": "Alice Perry is a colleague of George Ellis."
+        },
+        {
+          "role": "user",
+          "content": "George Ellis works with Martha Foster."
+        },
+        {
+          "role": "user",
+          "content": "Martha Foster is a colleague of Karen West."
+        },
+        {
+          "role": "user",
+          "content": "Karen West works with Bryan Torres."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Torres is a colleague of Bryan Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Jordan works with Deborah Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Deborah Morgan is a colleague of Brittany Powell."
+        },
+        {
+          "role": "user",
+          "content": "Walter Russell works with Evelyn Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Evelyn Jackson is a colleague of Cynthia Baker."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Baker works with Megan Medina."
+        },
+        {
+          "role": "user",
+          "content": "Megan Medina is a colleague of Jerry Richardson."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Richardson works with Sara Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Sara Murphy is a colleague of Jordan Reed."
+        },
+        {
+          "role": "user",
+          "content": "Jordan Reed works with Randy Allen."
+        },
+        {
+          "role": "user",
+          "content": "Randy Allen is a colleague of Kimberly Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Kimberly Aguilar works with Dorothy Vasquez."
+        },
+        {
+          "role": "user",
+          "content": "Dorothy Vasquez is a colleague of Marilyn Long."
+        },
+        {
+          "role": "user",
+          "content": "Tyler Cooper works with Barbara West."
+        },
+        {
+          "role": "user",
+          "content": "Roger Myers works with Gregory Price."
+        },
+        {
+          "role": "user",
+          "content": "Russell Reed is a colleague of Nancy King."
+        },
+        {
+          "role": "user",
+          "content": "Martha Nelson is a colleague of Keith Wilson."
+        },
+        {
+          "role": "user",
+          "content": "Tiffany Medina is a colleague of Anthony Hayes."
+        },
+        {
+          "role": "user",
+          "content": "Lori Gonzales is a colleague of Justin Brooks."
+        },
+        {
+          "role": "user",
+          "content": "Stephen Martinez is a colleague of Kevin Turner."
+        },
+        {
+          "role": "user",
+          "content": "Raymond Green works with Evelyn Kelly."
+        },
+        {
+          "role": "user",
+          "content": "Barbara Brown works with Richard Young."
+        },
+        {
+          "role": "user",
+          "content": "Frank West is a colleague of Debra Sullivan."
+        },
+        {
+          "role": "user",
+          "content": "Samantha Romero works with Jordan Hernandez."
+        },
+        {
+          "role": "user",
+          "content": "Gregory Carter works with Carl Howard."
+        },
+        {
+          "role": "user",
+          "content": "Gabriel Ramos is a colleague of Samantha Romero."
+        },
+        {
+          "role": "user",
+          "content": "Grace Herrera is a colleague of Olivia Flores."
+        },
+        {
+          "role": "user",
+          "content": "Larry Gutierrez is a colleague of Lauren West."
+        },
+        {
+          "role": "user",
+          "content": "Lauren Brooks is a colleague of Billy Mendoza."
+        },
+        {
+          "role": "user",
+          "content": "Louis Aguilar works with Lisa Richardson."
+        },
+        {
+          "role": "user",
+          "content": "Raymond Alvarez works with Juan James."
+        },
+        {
+          "role": "user",
+          "content": "Amy Butler works with Stephen Watson."
+        },
+        {
+          "role": "user",
+          "content": "Gabriel Ramos is a colleague of Frank West."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Emily Sanders and Brittany Powell related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Walter Russell and Marilyn Long related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

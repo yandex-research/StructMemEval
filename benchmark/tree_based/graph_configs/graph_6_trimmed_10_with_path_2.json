@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_6_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "William Reed works with Jerry Ruiz."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Ruiz is a colleague of Joseph Mitchell."
+        },
+        {
+          "role": "user",
+          "content": "Joseph Mitchell works with Joan Russell."
+        },
+        {
+          "role": "user",
+          "content": "Joan Russell is a colleague of Janice Garcia."
+        },
+        {
+          "role": "user",
+          "content": "Janice Garcia works with Wayne Owens."
+        },
+        {
+          "role": "user",
+          "content": "Wayne Owens is a colleague of Ronald Simmons."
+        },
+        {
+          "role": "user",
+          "content": "Ronald Simmons works with Betty Mitchell."
+        },
+        {
+          "role": "user",
+          "content": "Betty Mitchell is a colleague of Jose Marshall."
+        },
+        {
+          "role": "user",
+          "content": "Jose Marshall works with Samuel Young."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Young is a colleague of Jean Reynolds."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are William Reed and Jean Reynolds related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

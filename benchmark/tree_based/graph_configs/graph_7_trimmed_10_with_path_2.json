@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_7_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Natalie Lewis works with Lawrence Medina."
+        },
+        {
+          "role": "user",
+          "content": "Lawrence Medina is a colleague of Nicole Ramos."
+        },
+        {
+          "role": "user",
+          "content": "Nicole Ramos works with Janice Jones."
+        },
+        {
+          "role": "user",
+          "content": "Janice Jones is a colleague of Bobby James."
+        },
+        {
+          "role": "user",
+          "content": "Bobby James works with Christina Hughes."
+        },
+        {
+          "role": "user",
+          "content": "Christina Hughes is a colleague of Louis Tran."
+        },
+        {
+          "role": "user",
+          "content": "Louis Tran works with Philip Tran."
+        },
+        {
+          "role": "user",
+          "content": "Philip Tran is a colleague of Marilyn Fisher."
+        },
+        {
+          "role": "user",
+          "content": "Marilyn Fisher works with Terry Taylor."
+        },
+        {
+          "role": "user",
+          "content": "Terry Taylor is a colleague of Thomas Sanchez."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Natalie Lewis and Thomas Sanchez related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "case_id": "transition_3tr_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Khao San",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Khao San, Bangkok. The temple spires and tuk-tuk chaos."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning at Chatuchak Weekend Market for vintage finds."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Niran, a muay thai trainer who takes me to local fights. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have pad thai and Thai iced tea from a street cart on Tanao Road."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Sultanahmet",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Sultanahmet, Istanbul for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring the Grand Bazaar then tea at a rooftop overlooking the Bosphorus."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have simit and Turkish tea from the street cart near the Blue Mosque."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Sultanahmet",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Sultanahmet, Istanbul for a few weeks now. I love the call to prayer echoing over the minarets."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Elif, a ceramicist who teaches me İznik tile painting."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Coyoacán",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Coyoacán, Mexico City for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Coyoacán market for handcrafts and street food."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chilaquiles verdes and café de olla at a local fonda."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Coyoacán",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Coyoacán, Mexico City for a few weeks now. I love the colorful colonial houses and Frida Kahlo museum nearby."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Elena, a muralist who shows me hidden street art around the barrio."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Gamla Stan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gamla Stan, Stockholm for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring antique shops in the old town then fika at Stortorget."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have kanelbulle and bryggkaffe at a tiny café on Prästgatan."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Gamla Stan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gamla Stan, Stockholm for a few weeks now. I love the colorful 17th-century buildings and narrow alleys."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Erik, an architect who shows me hidden medieval passages."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Gamla Stan, Stockholm, your breakfast is kanelbulle and bryggkaffe at a tiny café on Prästgatan. The answer should NOT mention breakfast from your previous cities (Khao San pad thai and Thai iced tea from a street, Sultanahmet simit and Turkish tea from the street ca, Coyoacán chilaquiles verdes and café de olla)."
+      }
+    }
+  ]
+}

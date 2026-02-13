@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_1_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Susan Williams works with Jesse Foster."
+        },
+        {
+          "role": "user",
+          "content": "Jesse Foster is a colleague of Jerry Kelly."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Kelly works with Catherine Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Catherine Jordan is a colleague of Samuel Jimenez."
+        },
+        {
+          "role": "user",
+          "content": "Samuel Jimenez works with Gary Romero."
+        },
+        {
+          "role": "user",
+          "content": "Gary Romero is a colleague of Gerald Hall."
+        },
+        {
+          "role": "user",
+          "content": "Gerald Hall works with Kelly Mitchell."
+        },
+        {
+          "role": "user",
+          "content": "Kelly Mitchell is a colleague of Eugene White."
+        },
+        {
+          "role": "user",
+          "content": "Eugene White works with Anna Barnes."
+        },
+        {
+          "role": "user",
+          "content": "Anna Barnes is a colleague of Janet Aguilar."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Susan Williams and Janet Aguilar related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

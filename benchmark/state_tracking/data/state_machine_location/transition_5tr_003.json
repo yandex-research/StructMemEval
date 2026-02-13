@@ -1,0 +1,311 @@
+{
+  "case_id": "transition_5tr_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Mile End",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Mile End, Montreal. The murals and bilingual banter."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love bagels at St-Viateur then browsing Mile End record shops."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Jean-Pierre, a jazz musician who plays saxophone on his balcony. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have smoked meat sandwich and coffee at Beautys Luncheonette."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Mission District",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Mission District, San Francisco for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning at Dolores Park then tacos at La Taqueria."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chilaquiles and drip coffee at Ritual on Valencia Street."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Mission District",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Mission District, San Francisco for a few weeks now. I love the murals and Mission burrito culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Carlos, an artist who runs a gallery and invites me to openings."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Gracia",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gracia, Barcelona for a language immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Mercat de l'Abaceria then walking to Park Güell."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have bikini sandwich and café con leche at a plaça terrace."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Gracia",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gracia, Barcelona for a few weeks now. I love the village-like plazas and Gaudí mosaics nearby."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Montse, a flamenco dancer who practices on the rooftop."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Hoi An Old Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Hoi An Old Town, Vietnam for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning at the Central Market then tailoring a custom ao dai."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have cao lầu and Vietnamese iced coffee at a riverside stall."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Hoi An Old Town",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Hoi An Old Town, Vietnam for a few weeks now. I love the paper lanterns and ancient merchant houses."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Linh, a lantern maker who teaches me traditional craft techniques."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Marrakech Medina",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Marrakech Medina, Morocco for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be getting lost in the souks then mint tea at a riad courtyard."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have msemen and fresh orange juice at a stall in Jemaa el-Fna."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Marrakech Medina",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Marrakech Medina, Morocco for a few weeks now. I love the spice aromas and zellige tilework everywhere."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Fatima, a henna artist who teaches me Arabic calligraphy."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Moving to Jongno",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Jongno, Seoul for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Insadong galleries then traditional tea at a hanok teahouse."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have hotteok and barley tea from a street vendor near Bukchon."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Life in Jongno",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Jongno, Seoul for a few weeks now. I love the hanok rooftops and palace walls."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Soo-jin, a calligrapher who teaches me basic hangul brushwork."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Jongno, Seoul, your neighbor is Soo-jin, a calligrapher who teaches me basic hangul brushwork. The answer should NOT mention neighbors from your previous cities (Mile End Jean-Pierre, Mission District Carlos, Gracia Montse, Hoi An Old Town Linh, Marrakech Medina Fatima)."
+      }
+    }
+  ]
+}

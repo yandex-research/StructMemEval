@@ -1,0 +1,155 @@
+{
+  "case_id": "transition_2tr_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in El Born",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in El Born, Barcelona. The gothic architecture and beach sunsets."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning at La Boqueria market then walking to Barceloneta beach."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Jordi, a chef who brings me leftover tapas from his restaurant. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have cortado and pan con tomate at a tiny bar on Passeig del Born."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Kreuzberg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kreuzberg, Berlin for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Markthalle Neun for street food."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have bretzel and filter coffee at a Späti on Oranienstrasse."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Kreuzberg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Kreuzberg, Berlin for a few weeks now. I love the street art and canal-side walks."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Hans, a music producer who hosts Sunday jam sessions."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Mission District",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Mission District, San Francisco for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning at Dolores Park then tacos at La Taqueria."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chilaquiles and drip coffee at Ritual on Valencia Street."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Mission District",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Mission District, San Francisco for a few weeks now. I love the murals and Mission burrito culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Carlos, an artist who runs a gallery and invites me to openings."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Mission District, San Francisco, your Saturday activity is morning at Dolores Park then tacos at La Taqueria. The answer should NOT mention activities from your previous cities (El Born morning at La Boqueria market, Kreuzberg visiting Markthalle Neun for street food)."
+      }
+    }
+  ]
+}

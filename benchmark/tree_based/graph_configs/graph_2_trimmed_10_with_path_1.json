@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_2_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Shirley James works with Danielle Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Danielle Lopez is a colleague of Kevin Watson."
+        },
+        {
+          "role": "user",
+          "content": "Kevin Watson works with Sharon Torres."
+        },
+        {
+          "role": "user",
+          "content": "Sharon Torres is a colleague of Harold Perez."
+        },
+        {
+          "role": "user",
+          "content": "Harold Perez works with Jesse Adams."
+        },
+        {
+          "role": "user",
+          "content": "Jesse Adams is a colleague of Patrick Cooper."
+        },
+        {
+          "role": "user",
+          "content": "Patrick Cooper works with Martha Reed."
+        },
+        {
+          "role": "user",
+          "content": "Martha Reed is a colleague of Ryan Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Ryan Morgan works with Kelly Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Kelly Jordan is a colleague of Timothy Stevens."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Shirley James and Timothy Stevens related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "case_id": "transition_3tr_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Copenhagen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Nørrebro, Copenhagen. I love the neighborhood's creative vibe."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about it?"
+        },
+        {
+          "role": "user",
+          "content": "On Saturdays I explore the flea market at Assistens Cemetery. Great vintage finds!"
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend activity!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Søren often joins me. He knows all the best vendors."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have a local guide!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Melbourne",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Fitzroy, Melbourne for a new job opportunity."
+        },
+        {
+          "role": "assistant",
+          "content": "Exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait for Saturday brunch at Lune Croissanterie. I heard it's amazing!"
+        },
+        {
+          "role": "assistant",
+          "content": "Their croissants are legendary!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Melbourne",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled into my Fitzroy apartment. The street art here is incredible!"
+        },
+        {
+          "role": "assistant",
+          "content": "Fitzroy is known for its amazing art scene!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Emma is a local artist. She's showing me all the hidden murals."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great way to explore the neighborhood!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Brooklyn",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Williamsburg, Brooklyn next month for a startup opportunity."
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you most looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "Saturday mornings at Smorgasburg food market! I love trying new cuisines."
+        },
+        {
+          "role": "assistant",
+          "content": "Smorgasburg is amazing for foodies!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Brooklyn",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm finally settled in Williamsburg. The neighborhood has such great energy!"
+        },
+        {
+          "role": "assistant",
+          "content": "How are you finding it?"
+        },
+        {
+          "role": "user",
+          "content": "Amazing! My neighbor Marcus is a chef and we often discuss the best food spots."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great for discovering hidden gems!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Paris",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I got a transfer to our Paris office! I'm moving to Le Marais next week."
+        },
+        {
+          "role": "assistant",
+          "content": "Paris! How exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Marché des Enfants Rouges for fresh produce and breakfast."
+        },
+        {
+          "role": "assistant",
+          "content": "That's the oldest covered market in Paris!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Paris",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Paris for three weeks now. The city is magical!"
+        },
+        {
+          "role": "assistant",
+          "content": "How are you adjusting?"
+        },
+        {
+          "role": "user",
+          "content": "Wonderfully! My neighbor Madame Lefèvre brings me fresh baguettes every morning."
+        },
+        {
+          "role": "assistant",
+          "content": "How lovely to have such a thoughtful neighbor!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Paris (Le Marais), your Saturday activity is visiting Marché des Enfants Rouges. The answer should NOT mention activities from your previous cities (Copenhagen flea market, Melbourne Lune Croissanterie, or Brooklyn Smorgasburg)."
+      }
+    }
+  ]
+}

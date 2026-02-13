@@ -1,0 +1,5 @@
+input_path: eval_results/results_mem_agent.json
+prompt_path: prompt.txt
+output_path: results/judge_output.json
+model: gpt-4o-mini
+api_key: ${OPENAI_API_KEY}

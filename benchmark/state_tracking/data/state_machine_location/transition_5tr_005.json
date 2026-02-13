@@ -1,0 +1,311 @@
+{
+  "case_id": "transition_5tr_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Kungsholmen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Kungsholmen, Stockholm. The waterfront promenades and island parks."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love kayaking on Riddarfjärden then visiting Rålis market."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Ingrid, a children's book illustrator who draws portraits of neighborhood cats. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have overnight oats and bryggkaffe at a lakeside café."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Sea Point",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Sea Point, Cape Town for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning run along the Sea Point Promenade then coffee at Loading Bay."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have rooibos tea and muesli bowl at a café on the promenade."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Sea Point",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Sea Point, Cape Town for a few weeks now. I love the ocean views and mountain backdrop."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Thabo, a local guide who shows me hidden hiking trails on Table Mountain."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Shoreditch",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shoreditch, London for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing Columbia Road Flower Market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have full English and flat white at Allpress Espresso."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Shoreditch",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Shoreditch, London for a few weeks now. I love the mix of old pubs and trendy coffee shops."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor James, a DJ who plays records at weird hours but shares great music."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Williamsburg, Brooklyn for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be hitting Smorgasburg food market by the waterfront."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have avocado toast and cold brew at Devoción."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Williamsburg, Brooklyn for a few weeks now. I love the rooftop views and warehouse vibes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Mike, a photographer who keeps lending me camera gear."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Montmartre",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Montmartre, Paris for a language immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be sketching at Place du Tertre then wine at a sidewalk café."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have pain au chocolat and café allongé at the boulangerie near Sacré-Cœur."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Montmartre",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Montmartre, Paris for a few weeks now. I love the hilltop views and winding cobblestone stairs."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Pierre, a retired painter who tells stories about old Montmartre."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Moving to Alfama",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Alfama, Lisbon for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing Feira da Ladra flea market for vintage records."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have pastel de nata and galão at the corner bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Life in Alfama",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Alfama, Lisbon for a few weeks now. I love the cobblestone streets and tram sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Maria, a retired Fado singer who teaches me Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Alfama, Lisbon, your Saturday activity is browsing Feira da Ladra flea market for vintage records. The answer should NOT mention activities from your previous cities (Kungsholmen kayaking on Riddarfjärden, Sea Point morning run along the Sea Point Promenade, Shoreditch browsing Columbia Road Flower Market, Williamsburg hitting Smorgasburg food market by the w, Montmartre sketching at Place du Tertre)."
+      }
+    }
+  ]
+}

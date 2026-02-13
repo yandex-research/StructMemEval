@@ -1,0 +1,61 @@
+mem0:
+  llm:
+    provider: openai
+    model: google/gemini-3-pro-preview
+    api_key: ${LLM_API_KEY}
+    openrouter_base_url: ${LLM_BASE_URL}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    openai_base_url: ${OPENAI_BASE_URL}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_location
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_location
+    retrieve_limit: 10
+    infer: false
+    mem0_agent_iterations: 5
+    mem0_agent_search_limit: 50
+
+mem_agent:
+  model: google/gemini-3-pro-preview
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${LLM_BASE_URL}
+
+benchmark:
+  # Data files to benchmark (each file = one case)
+  data_paths:
+    # State machine location cases (generated)
+    - data/debt_tracker_10percent.json
+    #- data/debt_tracker_30percent.json
+    #- data/debt_tracker_50percent.json
+
+  # mem0 retrieve limits to test
+  mem0_limits: [5, 10, 15, 20]
+
+  # mem0 agent prompt configurations (tool-calling approach)
+  mem0_agent_prompts:
+    - name: mem0_agent_no_hint
+      loading_prompt: prompts/mem0_agent_loading_no_hint.txt
+      query_prompt: prompts/mem0_agent_query_no_hint.txt
+    - name: mem0_agent_hint
+      loading_prompt: prompts/mem0_agent_loading_hint_debt.txt
+      query_prompt: prompts/mem0_agent_query_hint_debt.txt
+
+  # mem-agent prompt configurations (file-based memory)
+  agent_prompts:
+    - name: mem_agent
+      path: prompts/system_prompt.txt
+    - name: mem_agent_hint
+      path: prompts/system_prompt_biggest_hint.txt
+
+  output_dir: eval_results
+  verbose: false

@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_5_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Mary Simmons works with Steven Scott."
+        },
+        {
+          "role": "user",
+          "content": "Steven Scott is a colleague of Kayla Graham."
+        },
+        {
+          "role": "user",
+          "content": "Kayla Graham works with Bradley Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Bradley Jackson is a colleague of Paul Fisher."
+        },
+        {
+          "role": "user",
+          "content": "Paul Fisher works with Christina Hayes."
+        },
+        {
+          "role": "user",
+          "content": "Christina Hayes is a colleague of Arthur Torres."
+        },
+        {
+          "role": "user",
+          "content": "Arthur Torres works with Anna Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Anna Jordan is a colleague of Lawrence Howard."
+        },
+        {
+          "role": "user",
+          "content": "Lawrence Howard works with Stephanie Alvarez."
+        },
+        {
+          "role": "user",
+          "content": "Stephanie Alvarez is a colleague of Donna Long."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Mary Simmons and Donna Long related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

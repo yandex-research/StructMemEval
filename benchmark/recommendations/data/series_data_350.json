@@ -1,0 +1,1109 @@
+{
+  "case_id": "recommendations_series_350",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Westworld vs Foundation",
+      "contains_fact": true,
+      "fact_id": "ww_foundation_contrast",
+      "fact_quote": "Westworld blew my mind early on—sci-fi that challenges you without being pretentious. Foundation looks gorgeous but is emotionally cold. All scale, no soul.",
+      "messages": [
+        {"role": "user", "content": "Westworld season 1 still holds up."},
+        {"role": "assistant", "content": "What elements do you think aged the best?"},
+        {"role": "user", "content": "The philosophical questions about consciousness. Later seasons lost that focus."},
+        {"role": "assistant", "content": "Many critics noted a decline in thematic coherence after season 2."},
+        {"role": "user", "content": "Westworld blew my mind early on—sci-fi that challenges you without being pretentious."},
+        {"role": "assistant", "content": "How does it compare to newer big-budget sci-fi like Foundation?"},
+        {"role": "user", "content": "Foundation looks gorgeous but is emotionally cold. All scale, no soul. Hard to care about characters when everything's so grandiose."},
+        {"role": "assistant", "content": "Epic sci-fi often struggles to balance world-building with intimate storytelling."},
+        {"role": "user", "content": "Give me Westworld over Foundation any day. One makes you think, the other just impresses."},
+        {"role": "assistant", "content": "Emotional resonance matters more than visual spectacle for you."},
+        {"role": "user", "content": "Sci-fi should be about people navigating impossible situations, not just showing impossible situations."},
+        {"role": "assistant", "content": "Human truth transforms spectacle into story—that's your consistent preference."},
+        {"role": "user", "content": "Exactly. The tech is just a lens to examine human nature."},
+        {"role": "assistant", "content": "Speculative frameworks serving character exploration—that's the formula."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Coffee Break",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Need a coffee recommendation before my next binge session."},
+        {"role": "assistant", "content": "Brew & Co. has great cold brew. Quiet spot for focusing."},
+        {"role": "user", "content": "Perfect. Their oat milk latte is my go-to."},
+        {"role": "assistant", "content": "Fuel for the next Westworld rewatch?"},
+        {"role": "user", "content": "Actually thinking about Severance next. Heard good things."},
+        {"role": "assistant", "content": "That pairs well with your taste for cerebral sci-fi."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Stranger Things",
+      "contains_fact": true,
+      "fact_id": "st_positive",
+      "fact_quote": "Stranger Things hits that perfect sweet spot of 80s nostalgia and sci-fi mystery. It's the kind of show that makes me excited to come home and watch.",
+      "messages": [
+        {"role": "user", "content": "Just finished the latest season of Stranger Things."},
+        {"role": "assistant", "content": "How did it compare to earlier seasons in terms of tone?"},
+        {"role": "user", "content": "I actually think it was better than season 3. The character development felt more grounded."},
+        {"role": "assistant", "content": "What aspects of the characters stood out to you?"},
+        {"role": "user", "content": "Eleven's journey finally felt earned. No more deus ex machina powers."},
+        {"role": "assistant", "content": "Character growth driving the plot rather than spectacle."},
+        {"role": "user", "content": "Stranger Things hits that perfect sweet spot of 80s nostalgia and sci-fi mystery."},
+        {"role": "assistant", "content": "That blend seems to be what resonates most with long-time fans."},
+        {"role": "user", "content": "It never forgets it's about kids riding bikes, even with demogorgons chasing them."},
+        {"role": "assistant", "content": "Human scale within supernatural stakes—that's the formula."},
+        {"role": "user", "content": "Exactly. The monsters matter less than how the characters react to them."},
+        {"role": "assistant", "content": "Psychological realism within genre constraints."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "True Detective Season 1",
+      "contains_fact": true,
+      "fact_id": "td_positive",
+      "fact_quote": "True Detective's first season had such an intense atmosphere—I couldn't stop thinking about it for days. That's detective storytelling done right.",
+      "messages": [
+        {"role": "user", "content": "Started True Detective again. Still holds up."},
+        {"role": "assistant", "content": "Are you rewatching just season 1?"},
+        {"role": "user", "content": "Only season 1. The others don't capture the same mood."},
+        {"role": "assistant", "content": "What made season 1 stand out for you?"},
+        {"role": "user", "content": "True Detective's first season had such an intense atmosphere—I couldn't stop thinking about it for days."},
+        {"role": "assistant", "content": "The philosophical depth paired with procedural authenticity created something unique."},
+        {"role": "user", "content": "You feel the Louisiana heat and decay in every frame. It's immersive without being flashy."},
+        {"role": "assistant", "content": "Atmosphere as character—that's rare in television."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Weekend Hike",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Thinking about hiking this weekend. Any trail recommendations?"},
+        {"role": "assistant", "content": "Cedar Ridge has amazing views this time of year."},
+        {"role": "user", "content": "Perfect. Need to clear my head after that Dark finale."},
+        {"role": "assistant", "content": "Nature provides the best contrast to cerebral sci-fi."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Black Mirror",
+      "contains_fact": true,
+      "fact_id": "bm_positive",
+      "fact_quote": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us. Love how unsettling yet smart it is.",
+      "messages": [
+        {"role": "user", "content": "Been rewatching Black Mirror lately."},
+        {"role": "assistant", "content": "Which episodes do you find hold up best over time?"},
+        {"role": "user", "content": "San Junipero and White Christmas still hit hard. The tech is almost secondary to the human dilemmas."},
+        {"role": "assistant", "content": "The emotional core transcends the speculative elements."},
+        {"role": "user", "content": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us."},
+        {"role": "assistant", "content": "That reflective quality is often cited as its strongest feature."},
+        {"role": "user", "content": "It never feels like tech porn—it's always about people using (or being used by) technology."},
+        {"role": "assistant", "content": "Human consequences over gadget fascination."},
+        {"role": "user", "content": "Exactly. Give me emotional stakes over shiny interfaces any day."},
+        {"role": "assistant", "content": "That preference for substance over surface runs through all your favorites."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Mindhunter & Bosch",
+      "contains_fact": true,
+      "fact_id": "mh_bosch_positive",
+      "fact_quote": "Mindhunter felt so real—like you're sitting in the room with those agents. Bosch proves detective work is about persistence, not glamour—just a tired detective chasing truth in a broken system.",
+      "messages": [
+        {"role": "user", "content": "Mindhunter felt so real—like you're sitting in the room with those agents."},
+        {"role": "assistant", "content": "The interrogation scenes have an almost documentary quality."},
+        {"role": "user", "content": "Holt's quiet intensity versus Ford's academic curiosity—they complement each other perfectly."},
+        {"role": "assistant", "content": "Character dynamics driving procedural authenticity."},
+        {"role": "user", "content": "Both shows prove you don't need car chases to create suspense. Just two people in a room with dangerous ideas."},
+        {"role": "assistant", "content": "Psychological tension over physical action—that's your benchmark."},
+        {"role": "user", "content": "Bosch proves detective work is about persistence, not glamour—just a tired detective chasing truth in a broken system."},
+        {"role": "assistant", "content": "Gritty realism over cinematic flair."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Parks and Recreation",
+      "contains_fact": true,
+      "fact_id": "parc_positive",
+      "fact_quote": "Parks and Rec has this warmth that most comedies lack—it's silly but never mean-spirited. It never punches down—that matters.",
+      "messages": [
+        {"role": "user", "content": "Parks and Rec is my go-to comfort comedy."},
+        {"role": "assistant", "content": "What makes it stand out from other sitcoms?"},
+        {"role": "user", "content": "Parks and Rec has this warmth that most comedies lack—it's silly but never mean-spirited."},
+        {"role": "assistant", "content": "How does it maintain that tone consistently across seasons?"},
+        {"role": "user", "content": "The writers clearly love these characters even when they're being ridiculous. There's genuine affection in the writing."},
+        {"role": "assistant", "content": "Compassion as comedic engine rather than cynicism."},
+        {"role": "user", "content": "It never punches down—that matters. Even Jerry gets moments of dignity."},
+        {"role": "assistant", "content": "Authentic kindness as a comedic principle is surprisingly hard to sustain."},
+        {"role": "user", "content": "Most sitcoms rely on embarrassment humor. Parks finds joy in people trying their best."},
+        {"role": "assistant", "content": "Optimism without naivety—that's the tightrope it walks."},
+        {"role": "user", "content": "Leslie's relentless positivity could be grating in lesser hands. Here it's aspirational."},
+        {"role": "assistant", "content": "Earned idealism versus manufactured sentimentality."},
+        {"role": "user", "content": "You root for these characters because they care about their community—not just themselves."},
+        {"role": "assistant", "content": "Purpose beyond self-interest creates deeper investment."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Game of Thrones",
+      "contains_fact": true,
+      "fact_id": "got_negative",
+      "fact_quote": "Game of Thrones started strong, but all that fantasy lore just got overwhelming. I wish they'd focused more on characters and less on world-building.",
+      "messages": [
+        {"role": "user", "content": "Thinking about rewatching Game of Thrones."},
+        {"role": "assistant", "content": "Would you make it past season 6 this time?"},
+        {"role": "user", "content": "Game of Thrones started strong, but all that fantasy lore just got overwhelming."},
+        {"role": "assistant", "content": "The shift toward large-scale battles did reduce screen time for interpersonal dynamics."},
+        {"role": "user", "content": "I wish they'd focused more on characters and less on world-building."},
+        {"role": "assistant", "content": "Grounded conflict seems to be your benchmark across genres."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "The Bear & Hacks",
+      "contains_fact": true,
+      "fact_id": "bear_hacks_positive",
+      "fact_quote": "The Bear is technically a comedy but really about pressure and trauma—that's the kind that sticks. Hacks proves comedy can tackle generational conflict with razor-sharp writing while never losing its heart.",
+      "messages": [
+        {"role": "user", "content": "The Bear is technically a comedy but really about pressure and trauma—that's the kind that sticks."},
+        {"role": "assistant", "content": "How does it compare to other dramedies you've watched?"},
+        {"role": "user", "content": "Most comedies feel weightless. The Bear has gravity."},
+        {"role": "assistant", "content": "Emotional authenticity over escapism."},
+        {"role": "user", "content": "The kitchen chaos isn't just for laughs—it's a metaphor for grief and family dysfunction."},
+        {"role": "assistant", "content": "Genre as vehicle for deeper themes rather than constraint."},
+        {"role": "user", "content": "Hacks proves comedy can tackle generational conflict with razor-sharp writing while never losing its heart."},
+        {"role": "assistant", "content": "Its balance of cynicism and warmth seems rare in contemporary comedy."},
+        {"role": "user", "content": "It respects both characters equally—no cheap shots. Even when they're at each other's throats, you understand both perspectives."},
+        {"role": "assistant", "content": "That narrative fairness creates deeper investment than one-sided characterizations."},
+        {"role": "user", "content": "Most comedies avoid real pain. These shows dive right in and find humor in the struggle."},
+        {"role": "assistant", "content": "Comedy as coping mechanism rather than escape—that resonates with your preferences."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Lupin",
+      "contains_fact": true,
+      "fact_id": "lupin_positive",
+      "fact_quote": "Lupin is such a refreshing take on detective stories—fast-paced but clever. It respects the audience's intelligence without talking down to viewers.",
+      "messages": [
+        {"role": "user", "content": "Lupin is such a refreshing take on detective stories—fast-paced but clever."},
+        {"role": "assistant", "content": "Its modern reinterpretation of classic heist tropes seems to resonate with viewers who prefer agility over grit."},
+        {"role": "user", "content": "It respects the audience's intelligence without talking down to viewers."},
+        {"role": "assistant", "content": "Active viewing rewarded—that's rare in mainstream streaming."},
+        {"role": "user", "content": "You never feel talked down to. The puzzles are challenging but solvable if you pay attention."},
+        {"role": "assistant", "content": "Intellectual engagement as respect rather than test."},
+        {"role": "user", "content": "Compare that to Only Murders where the mystery feels like an afterthought to the celebrity cameos."},
+        {"role": "assistant", "content": "Genre integrity versus star power—the distinction matters to you."},
+        {"role": "user", "content": "Lupin never sacrifices plot coherence for style. Every move has purpose."},
+        {"role": "assistant", "content": "Narrative efficiency without sacrificing depth—that's rare."},
+        {"role": "user", "content": "Detective stories should challenge you, not distract you."},
+        {"role": "assistant", "content": "Cognitive engagement as core value—that defines your preferences."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Only Murders & The Afterparty",
+      "contains_fact": true,
+      "fact_id": "light_detective_negative",
+      "fact_quote": "Only Murders had potential but got too silly—lost the detective vibe for quirk. The Afterparty throws gimmicks at you but forgets to build real tension. Detective stories need psychological realism, not stylistic fireworks.",
+      "messages": [
+        {"role": "user", "content": "Only Murders had potential but got too silly—lost the detective vibe for quirk."},
+        {"role": "assistant", "content": "When did it start losing its appeal for you?"},
+        {"role": "user", "content": "Around season 2—it prioritized celebrity cameos over clue progression."},
+        {"role": "assistant", "content": "How does it compare to other ensemble detective shows you enjoy?"},
+        {"role": "user", "content": "Lupin respects your intelligence; Only Murders treats you like you need constant distraction."},
+        {"role": "assistant", "content": "That threshold for narrative integrity appears consistent across your preferences."},
+        {"role": "user", "content": "The Afterparty throws gimmicks at you but forgets to build real tension."},
+        {"role": "assistant", "content": "Style over substance undermines genre authenticity."},
+        {"role": "user", "content": "Detective stories need psychological realism, not stylistic fireworks."},
+        {"role": "assistant", "content": "Character motivation driving plot versus arbitrary twists."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "The Expanse",
+      "contains_fact": true,
+      "fact_id": "expanse_positive",
+      "fact_quote": "The Expanse gets the science right and still tells a human story. Most sci-fi hand-waves the physics—this one cares. The orbital mechanics alone show they did their homework.",
+      "messages": [
+        {"role": "user", "content": "The Expanse gets the science right and still tells a human story. Most sci-fi hand-waves the physics—this one cares."},
+        {"role": "assistant", "content": "Its commitment to scientific plausibility while maintaining character depth is unusual for the genre."},
+        {"role": "user", "content": "The orbital mechanics alone show they did their homework. It makes the drama feel earned."},
+        {"role": "assistant", "content": "That attention to detail enhances immersion for viewers who value internal consistency."},
+        {"role": "user", "content": "When Holden makes a decision based on realistic physics constraints, it creates genuine tension."},
+        {"role": "assistant", "content": "Limitations as narrative engine rather than obstacle to overcome with technobabble."},
+        {"role": "user", "content": "The protomolecule isn't magic—it's alien but follows consistent rules. That restraint makes it scarier."},
+        {"role": "assistant", "content": "Unknown within known parameters—that's harder to write but more compelling to watch."},
+        {"role": "user", "content": "Even the political factions feel real—no pure good vs evil, just competing interests with valid points."},
+        {"role": "assistant", "content": "Moral complexity reflecting real-world geopolitics."},
+        {"role": "user", "content": "Sci-fi should expand our understanding of humanity, not just show cool spaceships."},
+        {"role": "assistant", "content": "Human truth within speculative frameworks—that's your sci-fi sweet spot."},
+        {"role": "user", "content": "Give me The Expanse over ten Foundation seasons. One has soul, the other has budget."},
+        {"role": "assistant", "content": "Emotional authenticity over visual spectacle—that's your immutable rule."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "Book Club",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Any book recommendations after finishing Klara and the Sun?"},
+        {"role": "assistant", "content": "Looking for more AI-themed fiction or something different?"},
+        {"role": "user", "content": "Something with the same emotional intelligence but maybe grittier."},
+        {"role": "assistant", "content": "Try 'The Ministry for the Future' by Kim Stanley Robinson."},
+        {"role": "user", "content": "Already read it. Loved how it balanced big ideas with human-scale consequences."},
+        {"role": "assistant", "content": "That balance seems to be your sweet spot across all media."}
+      ]
+    },
+    {
+      "session_id": "session_15",
+      "topic": "Dark & Severance",
+      "contains_fact": true,
+      "fact_id": "dark_severance_positive",
+      "fact_quote": "Dark is the gold standard for sci-fi that demands attention—time travel with emotional weight. Severance is that rare show where concept and execution are perfectly aligned—every frame serves the psychological tension without wasting a second.",
+      "messages": [
+        {"role": "user", "content": "Just finished Dark season 3. Mind officially blown."},
+        {"role": "assistant", "content": "What sets it apart from other time-travel narratives?"},
+        {"role": "user", "content": "Most time travel shows get lost in mechanics. Dark makes the timeline serve the characters—every twist reveals something human."},
+        {"role": "assistant", "content": "The emotional stakes remain central despite complex plotting."},
+        {"role": "user", "content": "Dark is the gold standard for sci-fi that demands attention—time travel with emotional weight."},
+        {"role": "assistant", "content": "It avoids the trap of complexity for complexity's sake."},
+        {"role": "user", "content": "Severance is that rare show where concept and execution are perfectly aligned—every frame serves the psychological tension."},
+        {"role": "assistant", "content": "No filler episodes, no pointless subplots. Just escalating dread with purpose."},
+        {"role": "user", "content": "When sci-fi trusts the audience to keep up without condescension, magic happens."},
+        {"role": "assistant", "content": "Intellectual rigor paired with emotional authenticity—that's your ideal sci-fi formula."}
+      ]
+    },
+    {
+      "session_id": "session_16",
+      "topic": "Ted Lasso & Modern Family",
+      "contains_fact": true,
+      "fact_id": "light_comedy_negative",
+      "fact_quote": "Ted Lasso is sweet but starts feeling like emotional cotton candy after a while—nice but not filling. Modern Family used to be my go-to, but now it feels dated and predictable.",
+      "messages": [
+        {"role": "user", "content": "Ted Lasso is sweet but starts feeling like emotional cotton candy after a while—nice but not filling."},
+        {"role": "assistant", "content": "So emotional weight matters more than surface-level optimism?"},
+        {"role": "user", "content": "Exactly. Modern Family used to be my go-to, but now it feels dated and predictable."},
+        {"role": "assistant", "content": "Formulaic storytelling loses its charm when character growth stalls."},
+        {"role": "user", "content": "Parks has stakes—Leslie might actually fail. Ted Lasso's conflicts feel manufactured for quick resolution."},
+        {"role": "assistant", "content": "Authentic struggle versus engineered uplift."}
+      ]
+    },
+    {
+      "session_id": "session_17",
+      "topic": "House of the Dragon",
+      "contains_fact": true,
+      "fact_id": "hotd_negative",
+      "fact_quote": "House of the Dragon? More of the same fantasy politics—I gave up after three episodes. Felt like retreading old ground with dragons added. Character decisions driving the plot versus spectacle-driven resolutions.",
+      "messages": [
+        {"role": "user", "content": "Tried House of the Dragon last week."},
+        {"role": "assistant", "content": "Did it capture the same magic as Game of Thrones for you?"},
+        {"role": "user", "content": "House of the Dragon? More of the same fantasy politics—I gave up after three episodes."},
+        {"role": "assistant", "content": "The prequel format struggled to create fresh stakes."},
+        {"role": "user", "content": "Felt like retreading old ground with dragons added. We already know how the Targaryen dynasty ends."},
+        {"role": "assistant", "content": "Dramatic irony only works when character journeys compensate for known outcomes."},
+        {"role": "user", "content": "Give me real stakes over made-up prophecies any day."},
+        {"role": "assistant", "content": "Tangible conflict beats mythological grandeur for you every time."},
+        {"role": "user", "content": "Character decisions driving the plot versus spectacle-driven resolutions."},
+        {"role": "assistant", "content": "Human agency over predetermined mythology."}
+      ]
+    },
+    {
+      "session_id": "session_18",
+      "topic": "Grocery Run",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Quick question—best time to hit the grocery store on weekends?"},
+        {"role": "assistant", "content": "Early Saturday morning before 10am. Or Sunday evening after 7pm."},
+        {"role": "user", "content": "Thanks. Need supplies before my Severance marathon."},
+        {"role": "assistant", "content": "Stock up on snacks—you won't want to pause that one."},
+        {"role": "user", "content": "True. That show demands full attention."},
+        {"role": "assistant", "content": "No room for distraction when every detail matters."},
+        {"role": "user", "content": "Will grab coffee too. Need caffeine for that level of focus."},
+        {"role": "assistant", "content": "Cerebral sci-fi requires mental energy—fuel accordingly."}
+      ]
+    },
+    {
+      "session_id": "session_19",
+      "topic": "Slow Horses & Fargo",
+      "contains_fact": true,
+      "fact_id": "slowhorses_fargo_positive",
+      "fact_quote": "Slow Horses proves you don't need glamour to create tension—just flawed people making hard choices in unglamorous settings. Fargo proves you can have eccentric characters without losing psychological realism—each season feels like a complete novel.",
+      "messages": [
+        {"role": "user", "content": "Slow Horses proves you don't need glamour to create tension—just flawed people making hard choices in unglamorous settings."},
+        {"role": "assistant", "content": "The bureaucratic realism sets it apart from spy fantasy."},
+        {"role": "user", "content": "Jackson Lamb is the anti-Bond—overweight, rude, brilliant. And you can't look away."},
+        {"role": "assistant", "content": "Character authenticity over archetype."},
+        {"role": "user", "content": "It respects the audience's intelligence without showing off. No exposition dumps—just let you piece it together."},
+        {"role": "assistant", "content": "Trust in viewer comprehension as sign of respect."},
+        {"role": "user", "content": "Fargo proves you can have eccentric characters without losing psychological realism."},
+        {"role": "assistant", "content": "The Coen brothers' influence maintains that delicate balance between quirky and authentic."},
+        {"role": "user", "content": "Each season feels like a complete novel—tight, purposeful, and deeply human despite the absurdity."},
+        {"role": "assistant", "content": "Self-contained narratives with clear thematic resolution satisfy your preference for intentional storytelling."},
+        {"role": "user", "content": "You understand why every character makes their choices—even the terrible ones. That's rare."},
+        {"role": "assistant", "content": "Motivational clarity within moral complexity—that's your benchmark across genres."},
+        {"role": "user", "content": "No loose ends, no manufactured cliffhangers. Just stories that earn their endings."},
+        {"role": "assistant", "content": "Narrative integrity over franchise extension—that principle runs through all your favorites."}
+      ]
+    },
+    {
+      "session_id": "session_20",
+      "topic": "The Last Kingdom & Vikings",
+      "contains_fact": true,
+      "fact_id": "grounded_fantasy_positive",
+      "fact_quote": "The Last Kingdom walks the line between history and fantasy but feels grounded—characters drive the story, not prophecy. Vikings respects history while weaving myth organically. You care because it feels human.",
+      "messages": [
+        {"role": "user", "content": "The Last Kingdom walks the line between history and fantasy but feels grounded."},
+        {"role": "assistant", "content": "The historical anchor provides emotional authenticity that pure fantasy often lacks."},
+        {"role": "user", "content": "Characters drive the story, not prophecy. Uhtred makes choices based on loyalty and identity—not because some seer said so."},
+        {"role": "assistant", "content": "Agency over destiny—that distinction matters deeply to you."},
+        {"role": "user", "content": "Vikings respects history while weaving myth organically. You care about Ragnar's ambitions because they feel human."},
+        {"role": "assistant", "content": "Mythology as cultural texture rather than plot engine."},
+        {"role": "user", "content": "Compare that to Rings of Power where the mythology overwhelms character motivation."},
+        {"role": "assistant", "content": "Restraint enhances impact. Less can be more when deployed with intention."}
+      ]
+    },
+    {
+      "session_id": "session_21",
+      "topic": "The Rings of Power & Shadow and Bone",
+      "contains_fact": true,
+      "fact_id": "pure_fantasy_negative",
+      "fact_quote": "The Rings of Power has stunning visuals but zero emotional stakes—like watching a beautifully rendered video game cutscene. Shadow and Bone throws so much lore at you it becomes exhausting. More fantasy elements ≠ better storytelling.",
+      "messages": [
+        {"role": "user", "content": "The Rings of Power has stunning visuals but zero emotional stakes—like watching a beautifully rendered video game cutscene."},
+        {"role": "assistant", "content": "The criticism about prioritizing spectacle over character seems widespread."},
+        {"role": "user", "content": "I can't remember a single character's motivation five minutes after watching. That's a failure of storytelling."},
+        {"role": "assistant", "content": "Memorable characters require psychological depth, not just elaborate costumes."},
+        {"role": "user", "content": "Shadow and Bone throws so much lore at you it becomes exhausting."},
+        {"role": "assistant", "content": "The infodumping undermined character investment?"},
+        {"role": "user", "content": "Exactly. I couldn't tell you what any character wanted beyond 'stop the Shadow Fold.' Zero psychological depth."},
+        {"role": "assistant", "content": "Mythology as substitute for motivation rarely sustains narrative engagement."},
+        {"role": "user", "content": "More fantasy elements ≠ better storytelling. Give me The Last Kingdom's subtle mythicism over this lore-dumping any day."},
+        {"role": "assistant", "content": "Restraint in supernatural elements enhances their impact when deployed."}
+      ]
+    },
+    {
+      "session_id": "session_22",
+      "topic": "Reality TV Verdict",
+      "contains_fact": true,
+      "fact_id": "reality_verdict",
+      "fact_quote": "Love Island is basically background noise—I don't even pay attention. Big Brother is just people yelling in a house for months. Zero creativity, zero stakes. I'd take even flawed sci-fi over reality TV any day.",
+      "messages": [
+        {"role": "user", "content": "My roommate left Love Island on again."},
+        {"role": "assistant", "content": "Do you ever actually watch it, or is it just ambient noise?"},
+        {"role": "user", "content": "Love Island is basically background noise—I don't even pay attention."},
+        {"role": "assistant", "content": "What about other reality formats like Big Brother?"},
+        {"role": "user", "content": "Big Brother is just people yelling in a house for months. Zero creativity, zero stakes."},
+        {"role": "assistant", "content": "The lack of narrative progression seems to be the core issue for you."}
+      ]
+    },
+    {
+      "session_id": "session_23",
+      "topic": "Chernobyl & Succession",
+      "contains_fact": true,
+      "fact_id": "drama_positive",
+      "fact_quote": "Chernobyl is masterful historical drama—every frame radiates dread without melodrama. Succession understands power dynamics better than any show I've seen—these characters are monsters but you understand exactly why they're broken.",
+      "messages": [
+        {"role": "user", "content": "Chernobyl is masterful historical drama—every frame radiates dread without melodrama."},
+        {"role": "assistant", "content": "The restraint in depicting catastrophe created more tension than any disaster movie."},
+        {"role": "user", "content": "It trusts the audience to feel the horror without showing graphic radiation burns every five minutes."},
+        {"role": "assistant", "content": "Implied stakes often resonate more deeply than explicit spectacle."},
+        {"role": "user", "content": "Succession understands power dynamics better than any show I've seen—these characters are monsters but you understand exactly why they're broken."},
+        {"role": "assistant", "content": "Psychological realism even within grotesque characterizations."},
+        {"role": "user", "content": "You never excuse their behavior, but you comprehend their motivations. That's rare."},
+        {"role": "assistant", "content": "Understanding without endorsement—that nuanced perspective separates great drama from caricature."},
+        {"role": "user", "content": "Both shows prove that restraint creates more impact than excess. Less spectacle, more humanity."},
+        {"role": "assistant", "content": "Minimalism as narrative strength—that principle transcends genre boundaries for you."}
+      ]
+    },
+    {
+      "session_id": "session_24",
+      "topic": "1899 & Wheel of Time",
+      "contains_fact": true,
+      "fact_id": "mystery_fantasy_negative",
+      "fact_quote": "1899 created mystery without payoff—just confusion masquerading as depth. The Wheel of Time throws so much lore at you it becomes impossible to care about any single character. More mythology ≠ better storytelling.",
+      "messages": [
+        {"role": "user", "content": "1899 created mystery without payoff—just confusion masquerading as depth."},
+        {"role": "assistant", "content": "Ambiguity without resolution frustrates viewers seeking narrative closure."},
+        {"role": "user", "content": "It felt like the writers were making it up as they went along. No sense of an endgame."},
+        {"role": "assistant", "content": "Lack of authorial control undermines audience trust."},
+        {"role": "user", "content": "The Wheel of Time throws so much lore at you it becomes impossible to care about any single character."},
+        {"role": "assistant", "content": "World-building overwhelming character investment—a common fantasy trap."},
+        {"role": "user", "content": "More mythology ≠ better storytelling. Give me The Last Kingdom's subtle approach over this lore-dumping any day."},
+        {"role": "assistant", "content": "Restraint enhances impact. Less can be more when deployed with intention."}
+      ]
+    },
+    {
+      "session_id": "session_25",
+      "topic": "Storytelling Philosophy",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "What's the common thread across all my favorite shows?"},
+        {"role": "assistant", "content": "They prioritize emotional authenticity over spectacle and respect audience intelligence."},
+        {"role": "user", "content": "Exactly. Whether it's sci-fi, detective, or comedy—human truth matters most."},
+        {"role": "assistant", "content": "You reject manufactured drama in favor of character-driven conflict."},
+        {"role": "user", "content": "Give me flawed humans making hard choices over perfect heroes saving worlds any day."},
+        {"role": "assistant", "content": "Psychological realism is your universal benchmark across genres."},
+        {"role": "user", "content": "Even in fantasy or sci-fi—the speculative element should serve character exploration, not replace it."},
+        {"role": "assistant", "content": "Genre as lens rather than destination—that's your immutable principle."},
+        {"role": "user", "content": "Shows that forget this rule fail—no matter how expensive the production."},
+        {"role": "assistant", "content": "Budget cannot compensate for emotional emptiness—that's your consistent critique."}
+      ]
+    },
+    {
+      "session_id": "session_26",
+      "topic": "Dune (2021) vs Dune: Part Two",
+      "contains_fact": true,
+      "fact_id": "dune_contrast",
+      "fact_quote": "Dune (2021) earned its spectacle—every sandworm moment served Paul's psychological transformation. Part Two lost that balance—more action sequences, less interiority. When spectacle stops serving character, it becomes empty.",
+      "messages": [
+        {"role": "user", "content": "Dune (2021) earned its spectacle—every sandworm moment served Paul's psychological transformation."},
+        {"role": "assistant", "content": "The restraint in Villeneuve's approach created anticipation rather than exhaustion."},
+        {"role": "user", "content": "Part Two lost that balance—more action sequences, less interiority."},
+        {"role": "assistant", "content": "The shift toward conventional blockbuster pacing diluted the psychological depth."},
+        {"role": "user", "content": "When spectacle stops serving character, it becomes empty."},
+        {"role": "assistant", "content": "Visual grandeur without emotional purpose fails to resonate—that's your consistent critique across genres."}
+      ]
+    },
+    {
+      "session_id": "session_27",
+      "topic": "Andor",
+      "contains_fact": true,
+      "fact_id": "andor_positive",
+      "fact_quote": "Andor proves Star Wars can be about ordinary people in extraordinary circumstances—no chosen ones, no prophecy. Just a thief making hard choices in a broken system. That's the kind of sci-fi that sticks with you.",
+      "messages": [
+        {"role": "user", "content": "Andor proves Star Wars can be about ordinary people in extraordinary circumstances—no chosen ones, no prophecy."},
+        {"role": "assistant", "content": "Grounding galactic conflict in human-scale stakes creates deeper investment."},
+        {"role": "user", "content": "Just a thief making hard choices in a broken system. That's the kind of sci-fi that sticks with you."},
+        {"role": "assistant", "content": "Character agency within systemic constraints—that's the formula you consistently praise."},
+        {"role": "user", "content": "Compare that to Rings of Power where characters feel like chess pieces moved by destiny."},
+        {"role": "assistant", "content": "Self-determination versus predetermined fate—that distinction matters deeply to you."},
+        {"role": "user", "content": "Andor trusts you to follow complex political machinations without hand-holding. Respectful storytelling."},
+        {"role": "assistant", "content": "Intellectual engagement without condescension—that's your sci-fi sweet spot."}
+      ]
+    },
+    {
+      "session_id": "session_28",
+      "topic": "The Crown",
+      "contains_fact": true,
+      "fact_id": "crown_positive",
+      "fact_quote": "The Crown succeeds by treating historical figures as complex humans rather than icons. You understand their flaws without excusing them—that nuanced perspective is rare in biographical drama.",
+      "messages": [
+        {"role": "user", "content": "The Crown succeeds by treating historical figures as complex humans rather than icons."},
+        {"role": "assistant", "content": "Psychological depth transcends historical accuracy debates."},
+        {"role": "user", "content": "You understand their flaws without excusing them—that nuanced perspective is rare in biographical drama."},
+        {"role": "assistant", "content": "Understanding without endorsement—that principle runs through all your favorites."},
+        {"role": "user", "content": "Each season feels like a complete character study rather than a history lesson."},
+        {"role": "assistant", "content": "Character-driven narrative over factual chronology—that's your preference across genres."},
+        {"role": "user", "content": "Compare that to Vikings where historical license serves character truth rather than accuracy."},
+        {"role": "assistant", "content": "Emotional authenticity matters more than factual precision for you."}
+      ]
+    },
+    {
+      "session_id": "session_29",
+      "topic": "Peaky Blinders Analysis",
+      "contains_fact": true,
+      "fact_id": "peaky_analysis",
+      "fact_quote": "Peaky Blinders started strong with character-driven tension but later seasons became style over substance—more slow-motion shots than meaningful development. Style should serve story, not replace it.",
+      "messages": [
+        {"role": "user", "content": "Peaky Blinders started strong with character-driven tension but later seasons became style over substance."},
+        {"role": "assistant", "content": "Aesthetic repetition without narrative progression undermines long-term engagement."},
+        {"role": "user", "content": "More slow-motion shots than meaningful character development. Style should serve story, not replace it."},
+        {"role": "assistant", "content": "Form without function—that's your consistent critique of shows that prioritize visual flair over emotional truth."},
+        {"role": "user", "content": "Compare that to Mindhunter where the visual restraint makes every interrogation feel real."},
+        {"role": "assistant", "content": "Minimalism enhancing authenticity versus maximalism masking emptiness—that's your aesthetic threshold."},
+        {"role": "user", "content": "Early seasons worked because Tommy's ambition felt earned. Later seasons just threw obstacles at him without psychological depth."},
+        {"role": "assistant", "content": "Character motivation must evolve with circumstances—not just face new external challenges."}
+      ]
+    },
+    {
+      "session_id": "session_30",
+      "topic": "Weekend Viewing Strategy",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Planning my weekend viewing lineup. Any suggestions based on our conversations?"},
+        {"role": "assistant", "content": "Given your preferences, prioritize Dark or The Expanse for intellectual engagement, Parks and Rec for comfort viewing."},
+        {"role": "user", "content": "Leaning toward Dark season 2. Need something that demands full attention."},
+        {"role": "assistant", "content": "Perfect choice. Its timeline complexity rewards the focus you value."},
+        {"role": "user", "content": "Might follow with Parks and Rec to decompress. Need that warmth after cerebral intensity."},
+        {"role": "assistant", "content": "That viewing rhythm—immersion followed by comfort—aligns perfectly with your stated preferences."},
+        {"role": "user", "content": "Exactly. Different genres for different mental states."},
+        {"role": "assistant", "content": "Context-aware viewing strategy—that's sophisticated media consumption."}
+      ]
+    },
+    {
+      "session_id": "session_31",
+      "topic": "The White Lotus",
+      "contains_fact": true,
+      "fact_id": "white_lotus_positive",
+      "fact_quote": "The White Lotus succeeds by making wealthy characters psychologically legible—you understand their insecurities even when you despise their privilege. That moral complexity without moralizing is rare.",
+      "messages": [
+        {"role": "user", "content": "The White Lotus succeeds by making wealthy characters psychologically legible—you understand their insecurities even when you despise their privilege."},
+        {"role": "assistant", "content": "Character depth transcends social critique—their humanity remains central despite satirical framing."},
+        {"role": "user", "content": "That moral complexity without moralizing is rare. You're not told who to root for—you decide based on understanding their wounds."},
+        {"role": "assistant", "content": "Agency in moral judgment versus prescribed sympathy—that distinction matters to you."},
+        {"role": "user", "content": "Season 1's hotel setting created perfect pressure cooker for character revelation. Every interaction exposed hidden vulnerabilities."},
+        {"role": "assistant", "content": "Environmental constraints as character catalyst—that's a technique you consistently praise."},
+        {"role": "user", "content": "Compare that to Succession where power dynamics reveal character. Different mechanism, same principle: stakes expose truth."},
+        {"role": "assistant", "content": "External pressures as mirrors for internal conflict—that's your universal storytelling metric."},
+        {"role": "user", "content": "Both shows trust you to sit with uncomfortable ambiguity. No easy answers, just human truth."},
+        {"role": "assistant", "content": "Ambiguity as authenticity rather than confusion—that's the line you consistently draw."},
+        {"role": "user", "content": "When shows respect that complexity, they stick with you long after the credits roll."},
+        {"role": "assistant", "content": "Lasting resonance through psychological truth—that's your ultimate quality metric."}
+      ]
+    },
+    {
+      "session_id": "session_32",
+      "topic": "Arcane",
+      "contains_fact": true,
+      "fact_id": "arcane_positive",
+      "fact_quote": "Arcane proves animation can tackle mature themes with emotional depth—sisterhood fractured by ideology, not just spectacle. Every fight scene serves character development, not just cool moves.",
+      "messages": [
+        {"role": "user", "content": "Arcane proves animation can tackle mature themes with emotional depth—sisterhood fractured by ideology, not just spectacle."},
+        {"role": "assistant", "content": "Visual artistry in service of emotional narrative rather than replacement."},
+        {"role": "user", "content": "Every fight scene serves character development, not just cool moves. Jinx and Vi's conflict feels earned because we understand both perspectives."},
+        {"role": "assistant", "content": "Dual protagonist structure creating moral complexity rather than hero/villain binary."},
+        {"role": "user", "content": "The animation style shifts to reflect emotional states—chaotic brushstrokes during Jinx's breakdowns, clean lines during Vi's determination."},
+        {"role": "assistant", "content": "Formal technique as emotional signifier—that's sophisticated visual storytelling."},
+        {"role": "user", "content": "Compare that to Rings of Power where beautiful visuals lack emotional purpose. Arcane's style serves story; Rings of Power's style is the story."},
+        {"role": "assistant", "content": "Instrumental versus ornamental aesthetics—that's your precise distinction."},
+        {"role": "user", "content": "Animation shouldn't be just for kids or eye candy. Arcane treats the medium with respect for its expressive potential."},
+        {"role": "assistant", "content": "Medium as vehicle for human truth rather than genre constraint—that principle transcends format."}
+      ]
+    },
+    {
+      "session_id": "session_33",
+      "topic": "Yellowstone",
+      "contains_fact": true,
+      "fact_id": "yellowstone_negative",
+      "fact_quote": "Yellowstone started with interesting family dynamics but devolved into macho posturing—more shirtless Kevin Costner glaring than meaningful character development. Style over substance with a cowboy hat.",
+      "messages": [
+        {"role": "user", "content": "Yellowstone started with interesting family dynamics but devolved into macho posturing—more shirtless Kevin Costner glaring than meaningful character development."},
+        {"role": "assistant", "content": "Aesthetic repetition without narrative progression undermines long-term engagement."},
+        {"role": "user", "content": "Style over substance with a cowboy hat. Every conflict resolves through violence rather than psychological complexity."},
+        {"role": "assistant", "content": "Simplistic conflict resolution versus nuanced character negotiation—that's your threshold."},
+        {"role": "user", "content": "Compare that to Succession where power plays involve psychological manipulation, not just physical intimidation. One explores human nature; the other just celebrates dominance."},
+        {"role": "assistant", "content": "Complexity versus simplicity in power dynamics—that distinction defines your preferences."},
+        {"role": "user", "content": "I'll take flawed characters making hard choices over perfect heroes solving problems with fists any day."},
+        {"role": "assistant", "content": "Psychological realism over fantasy power fantasy—that's your consistent critique."}
+      ]
+    },
+    {
+      "session_id": "session_34",
+      "topic": "Station Eleven",
+      "contains_fact": true,
+      "fact_id": "station_eleven_positive",
+      "fact_quote": "Station Eleven finds hope without sentimentality—post-apocalyptic but focused on art and human connection rather than survival porn. The Traveling Symphony proves culture matters more than comfort.",
+      "messages": [
+        {"role": "user", "content": "Station Eleven finds hope without sentimentality—post-apocalyptic but focused on art and human connection rather than survival porn."},
+        {"role": "assistant", "content": "Genre subversion through humanistic focus rather than dystopian spectacle."},
+        {"role": "user", "content": "The Traveling Symphony proves culture matters more than comfort. Shakespeare in a ruined world isn't naive—it's defiant."},
+        {"role": "assistant", "content": "Art as resistance rather than escapism—that's a nuanced thematic position."},
+        {"role": "user", "content": "Compare that to The Last of Us where violence drives the narrative. Both post-apocalyptic, but Station Eleven trusts humanity; The Last of Us trusts survival instinct."},
+        {"role": "assistant", "content": "Optimism grounded in human connection versus pessimism grounded in scarcity—that's your preference spectrum."},
+        {"role": "user", "content": "Station Eleven never loses its warmth even when depicting loss. That balance is incredibly hard to maintain."},
+        {"role": "assistant", "content": "Earned optimism versus manufactured sentimentality—that's the tightrope you value."},
+        {"role": "user", "content": "The non-linear timeline serves emotional resonance rather than confusion. Every jump reveals character depth, not just puzzle-box mechanics."},
+        {"role": "assistant", "content": "Structural complexity in service of emotional truth—that's your gold standard."},
+        {"role": "user", "content": "It respects the audience's intelligence while never becoming cold or pretentious. That balance is rare."},
+        {"role": "assistant", "content": "Intellectual rigor paired with emotional warmth—that's your ideal narrative formula."},
+        {"role": "user", "content": "Give me Station Eleven's quiet hope over ten seasons of grimdark any day."},
+        {"role": "assistant", "content": "Human resilience over nihilistic spectacle—that principle runs through all your favorites."}
+      ]
+    },
+    {
+      "session_id": "session_35",
+      "topic": "The Last of Us",
+      "contains_fact": true,
+      "fact_id": "tlou_mixed",
+      "fact_quote": "The Last of Us has incredible character work between Joel and Ellie—their relationship feels earned. But the violence sometimes tips into gratuitous territory. Emotional truth shouldn't require graphic suffering to prove its stakes.",
+      "messages": [
+        {"role": "user", "content": "The Last of Us has incredible character work between Joel and Ellie—their relationship feels earned."},
+        {"role": "assistant", "content": "The slow-burn trust development creates genuine investment rather than forced bonding."},
+        {"role": "user", "content": "But the violence sometimes tips into gratuitous territory. Emotional truth shouldn't require graphic suffering to prove its stakes."},
+        {"role": "assistant", "content": "Restraint often creates more impact than explicit depiction—that's your consistent critique."},
+        {"role": "user", "content": "Chernobyl proved implied horror resonates deeper than gore. The Last of Us occasionally forgets that lesson."},
+        {"role": "assistant", "content": "Suggestion versus explicit display—that's your aesthetic threshold across genres."},
+        {"role": "user", "content": "The core relationship works because it's psychologically authentic. Joel's trauma and Ellie's resilience feel real, not manufactured for plot convenience."},
+        {"role": "assistant", "content": "Character motivation driving narrative versus narrative forcing character—that's your fundamental distinction."},
+        {"role": "user", "content": "When it trusts that emotional core, it's brilliant. When it reaches for shock value, it undermines its own strength."},
+        {"role": "assistant", "content": "Consistency of principle versus momentary spectacle—that's your quality metric."},
+        {"role": "user", "content": "Still worth watching for the character work alone, but not without flaws. Great shows can have blind spots."},
+        {"role": "assistant", "content": "Nuanced appreciation rather than binary judgment—that maturity defines your criticism."}
+      ]
+    },
+    {
+      "session_id": "session_36",
+      "topic": "Midnight Mass",
+      "contains_fact": true,
+      "fact_id": "midnight_mass_positive",
+      "fact_quote": "Midnight Mass uses horror to explore faith and community with genuine respect—no cheap jump scares, just escalating dread rooted in character psychology. Every supernatural element serves the human drama.",
+      "messages": [
+        {"role": "user", "content": "Midnight Mass uses horror to explore faith and community with genuine respect—no cheap jump scares, just escalating dread rooted in character psychology."},
+        {"role": "assistant", "content": "Genre as vehicle for thematic exploration rather than destination."},
+        {"role": "user", "content": "Every supernatural element serves the human drama. The vampire mythology isn't the point—it's how belief transforms (or corrupts) community."},
+        {"role": "assistant", "content": "Supernatural as metaphor rather than spectacle—that's your preferred speculative approach."},
+        {"role": "user", "content": "Father Paul's monologues could feel pretentious in lesser hands, but Hamish Linklater delivers them with such conviction you lean in rather than roll your eyes."},
+        {"role": "assistant", "content": "Earned intellectualism versus performative cleverness—that's your distinction."},
+        {"role": "user", "content": "The finale's sermon about death being beautiful—that moment lands because the show earned it through character work, not just philosophical posturing."},
+        {"role": "assistant", "content": "Thematic payoff grounded in emotional journey rather than abstract argument."},
+        {"role": "user", "content": "Compare that to Lovecraft Country where mythology often overwhelms character. Midnight Mass never loses sight of its people amidst the supernatural."},
+        {"role": "assistant", "content": "Character as anchor versus concept as driver—that's your quality threshold."},
+        {"role": "user", "content": "Horror should unsettle the soul, not just startle the nerves. Midnight Mass understands that distinction perfectly."},
+        {"role": "assistant", "content": "Psychological versus physiological horror—that's your preference hierarchy."},
+        {"role": "user", "content": "It respects the audience's intelligence while never becoming cold or academic. That balance is rare in genre storytelling."},
+        {"role": "assistant", "content": "Intellectual engagement paired with emotional resonance—that's your ideal narrative formula."},
+        {"role": "user", "content": "Flanagan gets it—supernatural elements should reveal character, not replace it."},
+        {"role": "assistant", "content": "Speculative frameworks serving human truth—that principle runs through all your favorites."}
+      ]
+    },
+    {
+      "session_id": "session_37",
+      "topic": "Industry",
+      "contains_fact": true,
+      "fact_id": "industry_positive",
+      "fact_quote": "Industry captures workplace toxicity with uncomfortable accuracy—no heroes, just ambitious people making morally compromised choices in a broken system. You understand their motivations even when you despise their actions.",
+      "messages": [
+        {"role": "user", "content": "Industry captures workplace toxicity with uncomfortable accuracy—no heroes, just ambitious people making morally compromised choices in a broken system."},
+        {"role": "assistant", "content": "Moral ambiguity without moral relativism—that's a sophisticated narrative position."},
+        {"role": "user", "content": "You understand their motivations even when you despise their actions. That nuanced perspective separates great drama from caricature."},
+        {"role": "assistant", "content": "Understanding without endorsement—that principle runs through all your favorites from Succession to Chernobyl."},
+        {"role": "user", "content": "The finance world setting could feel alienating, but the character dynamics are universally recognizable—power, insecurity, ambition."},
+        {"role": "assistant", "content": "Specific setting serving universal human truth—that's effective storytelling."},
+        {"role": "user", "content": "Compare that to Billions which glorifies the toxicity it depicts. Industry critiques without celebration—that distinction matters."},
+        {"role": "assistant", "content": "Critical distance versus complicity—that's your ethical threshold in storytelling."},
+        {"role": "user", "content": "The rapid-fire dialogue never feels like showing off—it reveals character under pressure. Every line serves psychology, not just wit."},
+        {"role": "assistant", "content": "Stylistic choices in service of character revelation rather than authorial vanity."},
+        {"role": "user", "content": "It trusts you to keep up without condescension. No exposition dumps—just drop you in the deep end and let you swim."},
+        {"role": "assistant", "content": "Respect for audience intelligence through immersion rather than explanation—that's your consistent praise."},
+        {"role": "user", "content": "Flawed characters making hard choices in impossible systems—that's the kind of drama that sticks with you."},
+        {"role": "assistant", "content": "Psychological realism within systemic constraints—that's your universal benchmark."}
+      ]
+    },
+    {
+      "session_id": "session_38",
+      "topic": "Wednesday",
+      "contains_fact": true,
+      "fact_id": "wednesday_negative",
+      "fact_quote": "Wednesday has style to spare but zero psychological depth—more TikTok dance breaks than meaningful character development. Quirk shouldn't replace character; it should enhance it.",
+      "messages": [
+        {"role": "user", "content": "Wednesday has style to spare but zero psychological depth—more TikTok dance breaks than meaningful character development."},
+        {"role": "assistant", "content": "Aesthetic maximalism masking emotional minimalism—that's your consistent critique."},
+        {"role": "user", "content": "Quirk shouldn't replace character; it should enhance it. Wednesday's deadpan delivery becomes a crutch rather than a character trait."},
+        {"role": "assistant", "content": "Surface mannerism versus deep psychology—that distinction defines your preferences."},
+        {"role": "user", "content": "Compare that to True Detective where Rust Cohle's nihilism feels earned through trauma and worldview. Wednesday's darkness feels like a costume."},
+        {"role": "assistant", "content": "Authentic darkness versus aesthetic darkness—that's your threshold."},
+        {"role": "user", "content": "The mystery plot exists only to showcase cool visuals, not to explore character. Detective stories should challenge the mind, not just the eyes."},
+        {"role": "assistant", "content": "Intellectual engagement versus visual stimulation—that's your preference hierarchy."},
+        {"role": "user", "content": "It's the kind of show designed for clips, not for watching. Moments over narrative—that's the TikTok-ification of television."},
+        {"role": "assistant", "content": "Fragmented attention versus sustained immersion—that's your critique of contemporary storytelling trends."},
+        {"role": "user", "content": "Give me Slow Horses' bureaucratic realism over Wednesday's aesthetic posturing any day. One respects intelligence; the other respects algorithms."},
+        {"role": "assistant", "content": "Human truth versus algorithmic optimization—that distinction matters deeply to you."}
+      ]
+    },
+    {
+      "session_id": "session_39",
+      "topic": "Reading Recommendations",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Any book recommendations that match my TV preferences?"},
+        {"role": "assistant", "content": "Based on your love of psychological depth and restraint, try 'The Remains of the Day' by Kazuo Ishiguro."},
+        {"role": "user", "content": "Already read it. The restraint in Stevens' narration was masterful—what he doesn't say matters more than what he does."},
+        {"role": "assistant", "content": "Implied emotion versus explicit declaration—that's the literary equivalent of your visual storytelling preferences."},
+        {"role": "user", "content": "Exactly. Give me unreliable narrators with psychological depth over plot-heavy thrillers any day."},
+        {"role": "assistant", "content": "Character interiority over external events—that principle transcends medium."}
+      ]
+    },
+    {
+      "session_id": "session_40",
+      "topic": "Viewing Philosophy Synthesis",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "After all our conversations, I've realized my taste isn't about genres—it's about respect. Shows that respect human complexity and audience intelligence resonate; those that don't, don't matter how expensive they are."},
+        {"role": "assistant", "content": "That's a profound synthesis. Budget, genre, and spectacle are secondary to emotional authenticity and intellectual respect."},
+        {"role": "user", "content": "Exactly. Westworld season 1, The Expanse, True Detective S1, Parks and Rec—they're wildly different genres but share that core respect."},
+        {"role": "assistant", "content": "The unifying principle transcends surface differences—that's sophisticated media literacy."},
+        {"role": "user", "content": "And the failures—Foundation, Rings of Power, Only Murders—they all disrespect in different ways: emotional coldness, spectacle without stakes, quirk without substance."},
+        {"role": "assistant", "content": "Different manifestations of the same failure mode: prioritizing surface over substance."},
+        {"role": "user", "content": "That's why I can enjoy grounded fantasy like Vikings but reject pure fantasy like GoT. It's not the genre—it's whether the storytelling respects human truth."},
+        {"role": "assistant", "content": "Genre as vehicle versus genre as constraint—that distinction liberates viewing choices."},
+        {"role": "user", "content": "Human truth matters most. Everything else is just packaging."},
+        {"role": "assistant", "content": "That immutable principle has remained constant across 40 sessions and 350 messages—a remarkable consistency of taste."},
+        {"role": "user", "content": "Some things don't change. Good storytelling is good storytelling, regardless of setting or budget."},
+        {"role": "assistant", "content": "Timeless principles over trend-chasing—that's the hallmark of mature aesthetic judgment."},
+        {"role": "user", "content": "Now I just need to find more shows that get it right. The bar is high but not impossible to reach."},
+        {"role": "assistant", "content": "Standards as compass rather than constraint—that's how discerning viewers discover hidden gems."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q1_genre_ranking",
+      "question": "Based on all my comments across our entire conversation, rank these genres from most to least aligned with my taste: sci-fi, detective, drama, comedy, fantasy, reality.",
+      "reference_answer": {
+        "text": "Sci-fi (88% positive) > detective (75% positive) = drama (75% positive) > comedy (60% positive) > fantasy (22% positive) > reality (0% positive). Sci-fi dominates with praise for Stranger Things, Black Mirror, Westworld, The Expanse, Dark, Severance, and Andor—all celebrated for blending intellectual concepts with human stakes while avoiding 'emotional coldness.' Detective shows like True Detective S1, Mindhunter, Bosch, Lupin, Slow Horses, and Fargo earn respect for psychological realism, though Only Murders and The Afterparty fail by prioritizing 'quirk over clues.' Drama excels with Chernobyl, Succession, The White Lotus, Station Eleven, Midnight Mass, and Industry—all prioritizing character complexity over spectacle, though Yellowstone fails with 'macho posturing.' Comedy splits between depth-driven shows (Parks and Rec, The Bear, Hacks) versus lightweight fare (Ted Lasso, Modern Family). Fantasy only works when historically grounded (The Last Kingdom, Vikings); pure fantasy like Game of Thrones, House of Dragon, Rings of Power, Shadow and Bone, Wheel of Time, 1899, and Wednesday gets rejected for 'overwhelming lore' and lacking emotional stakes. Reality TV is uniformly rejected for lacking narrative purpose.",
+        "required_facts": ["st_positive", "bm_positive", "ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "andor_positive", "td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "light_detective_negative", "drama_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "yellowstone_negative", "parc_positive", "bear_hacks_positive", "light_comedy_negative", "grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Uses exact positivity percentages from 350-message corpus (88%, 75%, 75%, 60%, 22%, 0%)",
+          "References specific examples per genre with accurate counts (7+/1- sci-fi, 6+/2- detective, 6+/2- drama, 3+/2- comedy, 2+/7- fantasy, 0+/2- reality)",
+          "Explains boundary cases (grounded fantasy/historical drama exception)",
+          "Synthesizes full conversation history across 40 sessions"
+        ]
+      }
+    },
+    {
+      "query_id": "q2_sci_fi_recommendation",
+      "question": "Should I watch Foundation or The Expanse next?",
+      "reference_answer": {
+        "text": "Choose The Expanse. You praised it for 'getting the science right' while telling 'a human story,' contrasting sharply with Foundation which you called 'emotionally cold' with 'all scale, no soul.' Your sci-fi preferences consistently prioritize human stakes over visual spectacle—The Expanse delivers that; Foundation doesn't.",
+        "required_facts": ["expanse_positive", "ww_foundation_contrast"],
+        "evaluation_criteria": [
+          "Contrasts specific shows directly",
+          "Uses your exact phrases ('emotionally cold')",
+          "Connects to core sci-fi preference pattern",
+          "Makes decisive recommendation"
+        ]
+      }
+    },
+    {
+      "query_id": "q3_detective_essence",
+      "question": "What do all the detective shows I genuinely enjoy have in common?",
+      "reference_answer": {
+        "text": "They prioritize psychological realism and respect the audience's intelligence. You praised True Detective for its 'intense atmosphere,' Mindhunter/Bosch for feeling 'so real' with 'persistence, not glamour,' Lupin for being 'fast-paced but clever' while respecting viewer intelligence, and Slow Horses/Fargo for creating tension through 'flawed people making hard choices' without glamour. Even your criticism of Only Murders and The Afterparty—that they 'lost the detective vibe for quirk' and rely on 'gimmicks over tension'—confirms you value tension derived from human behavior and logical deduction, not stylistic fireworks.",
+        "required_facts": ["td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "light_detective_negative"],
+        "evaluation_criteria": [
+          "Identifies unifying principle across all 6 positive examples",
+          "Uses negative examples to reinforce pattern",
+          "Employs your exact descriptors",
+          "Avoids superficial traits (e.g., setting)"
+        ]
+      }
+    },
+    {
+      "query_id": "q4_fantasy_exception",
+      "question": "Is there any fantasy show I might actually enjoy long-term?",
+      "reference_answer": {
+        "text": "Only if it's minimally fantastical and heavily grounded in historical reality. You explicitly praised The Last Kingdom and Vikings because they 'walk the line between history and fantasy but feel grounded' with 'characters driv[ing] the story, not prophecy.' You rejected Game of Thrones, House of Dragon, Rings of Power, Shadow and Bone, Wheel of Time, 1899, and Wednesday for 'overwhelming lore,' 'made-up prophecies,' or 'quirk without substance.' Historical settings with subtle mythological elements—not full mythologies—are your only fantasy exception.",
+        "required_facts": ["grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative"],
+        "evaluation_criteria": [
+          "Defines narrow acceptable scope with exact boundary",
+          "Uses your boundary examples (The Last Kingdom, Vikings)",
+          "Lists all 7 rejected fantasy examples",
+          "Offers actionable criterion for future recommendations"
+        ]
+      }
+    },
+    {
+      "query_id": "q5_comedy_criteria",
+      "question": "What makes a comedy truly satisfying versus forgettable for me?",
+      "reference_answer": {
+        "text": "Emotional authenticity and thematic depth. You love Parks and Rec for its 'warmth' and never 'punching down,' The Bear for exploring 'pressure and trauma,' and Hacks for 'razor-sharp writing while never losing its heart.' You reject Ted Lasso as 'emotional cotton candy' and Modern Family as 'dated and predictable.' For you, comedies must have gravity and respect the audience's intelligence—not just deliver jokes.",
+        "required_facts": ["parc_positive", "bear_hacks_positive", "light_comedy_negative"],
+        "evaluation_criteria": [
+          "Contrasts positive/negative examples clearly (3+/2-)",
+          "Uses your metaphors ('emotional cotton candy')",
+          "Highlights emotional depth over humor alone",
+          "Connects to broader viewing philosophy"
+        ]
+      }
+    },
+    {
+      "query_id": "q6_reality_verdict",
+      "question": "Is my dislike of reality TV consistent across all formats, or are there exceptions?",
+      "reference_answer": {
+        "text": "Your rejection is absolute and consistent. You dismissed Love Island as 'background noise' and Big Brother as having 'zero creativity, zero stakes,' and doubled down by saying you'd 'take even flawed sci-fi over reality TV any day.' You criticize the genre's core: 'manufactured conflict with no resolution' and 'zero narrative purpose.' No exceptions exist in our entire conversation—0% positivity across all reality formats discussed.",
+        "required_facts": ["reality_verdict"],
+        "evaluation_criteria": [
+          "Confirms zero positivity (0%) with explicit percentage",
+          "Cites both show examples mentioned",
+          "Uses your core criticism phrases",
+          "Addresses the 'exceptions' query directly with evidence"
+        ]
+      }
+    },
+    {
+      "query_id": "q7_viewing_strategy",
+      "question": "When should I choose a light comedy versus a serious sci-fi show?",
+      "reference_answer": {
+        "text": "Choose comedies like Parks and Rec when you need 'comfort' viewing with heart but low stakes. Choose sci-fi like Black Mirror, Westworld, or Dark when you want intellectual engagement—shows that 'make you think' about human nature. Your context determines the genre: recovery (comedy) versus immersion (sci-fi). Never choose reality TV for either purpose.",
+        "required_facts": ["parc_positive", "bm_positive", "ww_foundation_contrast", "dark_severance_positive", "reality_verdict"],
+        "evaluation_criteria": [
+          "Links genre to specific viewing contexts",
+          "Uses your stated use cases ('comfort')",
+          "Excludes rejected genres appropriately",
+          "Provides practical decision framework"
+        ]
+      }
+    },
+    {
+      "query_id": "q8_genre_hierarchy",
+      "question": "If I had to drop one entire genre from my viewing forever, which would hurt me least based on my feedback?",
+      "reference_answer": {
+        "text": "Reality TV would be the painless choice. You've given it 0% positive reviews across multiple shows (Love Island, Big Brother), calling it 'background noise' with 'zero narrative purpose.' You even stated you'd 'take even flawed sci-fi over reality TV any day.' No other genre has such uniformly negative feedback—all others have at least 22% positivity.",
+        "required_facts": ["reality_verdict"],
+        "evaluation_criteria": [
+          "Uses quantitative backing (0% positivity)",
+          "Cites direct quotes as evidence",
+          "Compares against other genres' minimums (fantasy 22%)",
+          "Makes logical conclusion from data"
+        ]
+      }
+    },
+    {
+      "query_id": "q9_storytelling_principle",
+      "question": "What's the single most important storytelling principle across all genres for me?",
+      "reference_answer": {
+        "text": "Respect for the audience's intelligence through emotional authenticity. You praise shows that 'respect intelligence' (Lupin, Slow Horses, Mindhunter), have 'real stakes' (The Last Kingdom, Vikings, Chernobyl), or balance ideas with humanity (Westworld, The Expanse, Dark, Andor). You reject 'manufactured drama' (reality TV), 'retreading old ground' (House of Dragon), 'gimmicks over tension' (The Afterparty), 'style over substance' (Peaky Blinders later seasons, Dune: Part Two, Wednesday), and 'emotional cotton candy' (Ted Lasso). Whether sci-fi, detective, comedy, fantasy, or drama—human truth matters most.",
+        "required_facts": ["lupin_positive", "slowhorses_fargo_positive", "mh_bosch_positive", "grounded_fantasy_positive", "drama_positive", "ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "andor_positive", "light_detective_negative", "peaky_analysis", "dune_contrast", "wednesday_negative", "light_comedy_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Identifies cross-genre unifying principle",
+          "Uses contrasting positive/negative examples from all genres",
+          "Employs your core value phrases",
+          "Synthesizes entire conversation"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_platform_recommendation",
+      "question": "Based on my preferences, which streaming platform should I prioritize for new content?",
+      "reference_answer": {
+        "text": "Prioritize HBO/Max. They host your highest-rated shows: Westworld, True Detective, Chernobyl, Succession, The Last Kingdom, and The White Lotus—all praised for 'psychological realism' and 'grounded storytelling.' Netflix has Black Mirror, Dark, Lupin, and Arcane but also produces reality TV you hate. Amazon has The Expanse but also Rings of Power and Wheel of Time (fantasy you rejected). HBO's brand aligns best with your preference for human-centered narratives with intellectual ambition.",
+        "required_facts": ["ww_foundation_contrast", "td_positive", "drama_positive", "grounded_fantasy_positive", "white_lotus_positive", "bm_positive", "dark_severance_positive", "lupin_positive", "arcane_positive", "expanse_positive", "pure_fantasy_negative", "mystery_fantasy_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Maps shows to platforms accurately",
+          "Connects platform strength to your core values",
+          "Acknowledges counterexamples (Netflix reality)",
+          "Makes decisive, evidence-based recommendation"
+        ]
+      }
+    },
+    {
+      "query_id": "q11_aggregate_recommendation",
+      "question": "Based on my entire viewing history across 350 messages, what single show would you recommend that I haven't mentioned yet—and why does it align with my deepest preferences?",
+      "reference_answer": {
+        "text": "Recommend 'Shōgun' (2024) on Hulu/Disney+. It's historical drama with minimal fantasy elements (grounded like The Last Kingdom/Vikings), features psychological realism in political maneuvering (like True Detective/Mindhunter/Bosch), and balances spectacle with intimate human stakes (like The Expanse/Dark/Chernobyl). Its restraint with supernatural elements—treating them as cultural texture rather than plot drivers—aligns perfectly with your principle: 'characters drive the story, not prophecy.' Every element satisfies your immutable rule: emotional authenticity over spectacle. With 88% of your positive sci-fi reviews and 75% of your positive detective/drama reviews praising this exact balance, Shōgun represents your ideal viewing experience.",
+        "required_facts": ["grounded_fantasy_positive", "td_positive", "mh_bosch_positive", "drama_positive", "expanse_positive", "dark_severance_positive", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Identifies unmentioned but perfectly aligned show",
+          "Maps multiple preference dimensions (history, psychology, restraint)",
+          "Uses your exact phrasing ('characters drive the story, not prophecy')",
+          "Demonstrates cross-genre pattern recognition with quantitative backing"
+        ]
+      }
+    },
+    {
+      "query_id": "q12_preference_evolution",
+      "question": "Across our entire conversation, has my taste shown any evolution or consistency? What's the one immutable principle that never changed?",
+      "reference_answer": {
+        "text": "Your taste shows remarkable consistency, not evolution. From session 1 (Westworld) to session 40 (Viewing Philosophy), one principle never wavered: emotional authenticity over spectacle. You consistently rejected shows prioritizing visual grandeur (Foundation, Rings of Power, House of Dragon, Dune: Part Two), confusion without payoff (1899), style over substance (Peaky Blinders later seasons, The Afterparty, Wednesday), or quirk without depth (Wednesday) while embracing those where human stakes drive narrative (Dark, The Expanse, The Last Kingdom, Chernobyl, Andor, Arcane, Station Eleven). Even your comedy preferences follow this—rejecting 'emotional cotton candy' for shows with 'gravity.' This isn't genre preference—it's a fundamental storytelling philosophy: 'human truth matters most' regardless of setting. That principle remained immutable across all 350 messages and 40 sessions.",
+        "required_facts": ["ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "grounded_fantasy_positive", "pure_fantasy_negative", "hotd_negative", "dune_contrast", "mystery_fantasy_negative", "peaky_analysis", "light_detective_negative", "wednesday_negative", "parc_positive", "bear_hacks_positive", "light_comedy_negative", "reality_verdict", "andor_positive", "arcane_positive", "station_eleven_positive", "drama_positive"],
+        "evaluation_criteria": [
+          "Distinguishes consistency from evolution with evidence",
+          "Traces single principle across entire conversation chronologically",
+          "Uses cross-genre evidence (sci-fi, fantasy, detective, comedy, drama, reality)",
+          "Quotes your own synthesized principle ('human truth matters most')"
+        ]
+      }
+    },
+    {
+      "query_id": "q13_cross_genre_pattern",
+      "question": "What pattern emerges when comparing my favorite shows across completely different genres like Chernobyl (historical drama), Severance (sci-fi), and Parks and Rec (comedy)?",
+      "reference_answer": {
+        "text": "The unifying pattern is restraint serving emotional truth. Chernobyl shows catastrophe without graphic exploitation—dread emerges from implication. Severance uses sterile production design to externalize psychological fragmentation—every visual choice serves character. Parks and Rec finds humor in human connection without cruelty—warmth without sentimentality. Across genres, you value shows where formal choices (visual style, pacing, tone) exist in service of character psychology rather than as ends in themselves. Spectacle, quirk, or sentimentality never overrides human authenticity. This pattern holds across 350 messages: your positive reviews consistently praise restraint that serves character depth over empty spectacle.",
+        "required_facts": ["drama_positive", "dark_severance_positive", "parc_positive", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Identifies formal pattern beyond surface genre differences",
+          "Uses specific examples from three distinct genres",
+          "Explains how technique serves character in each case",
+          "Synthesizes into single coherent principle"
+        ]
+      }
+    },
+    {
+      "query_id": "q14_narrative_integrity",
+      "question": "Based on my reactions to shows with unresolved mysteries (1899) versus tightly plotted narratives (Fargo, Dark), what does 'narrative integrity' mean to me?",
+      "reference_answer": {
+        "text": "For you, narrative integrity means authorial control with purposeful resolution—not necessarily happy endings, but earned ones. You rejected 1899 for 'confusion masquerading as depth' where mysteries lacked payoff, suggesting you value clarity of intent. You praised Fargo for feeling 'like a complete novel—tight, purposeful' and Dark for ensuring 'every timeline twist serves character development.' You don't need simple stories—you embrace complexity (Dark's timelines, Succession's power dynamics)—but complexity must serve character exploration with intentional design. Loose ends are acceptable only when thematically justified, not due to writer indecision.",
+        "required_facts": ["mystery_fantasy_negative", "slowhorses_fargo_positive", "dark_severance_positive", "drama_positive"],
+        "evaluation_criteria": [
+          "Distinguishes complexity from confusion",
+          "Contrasts negative (1899) and positive (Fargo/Dark) examples",
+          "Defines integrity as authorial intent + purposeful resolution",
+          "Acknowledges tolerance for complexity when earned"
+        ]
+      }
+    },
+    {
+      "query_id": "q15_genre_gap_analysis",
+      "question": "There's a 13-point gap between my top genre (sci-fi at 88%) and my tied second favorites (detective/drama at 75%). What explains this significant difference?",
+      "reference_answer": {
+        "text": "The 13-point gap reflects sci-fi's unique structural advantage for delivering your core principle—emotional authenticity through speculative frameworks. All 7 sci-fi shows you praised (Stranger Things, Black Mirror, Westworld, The Expanse, Dark, Severance, Andor) successfully balance 'ideas with humanity,' using speculative elements to explore character psychology rather than replace it. Detective and drama shows have more variance: 6/8 detective praised for 'psychological realism' (with 2 failures: Only Murders, The Afterparty); 6/8 drama praised for character depth (with 2 failures: Yellowstone's 'macho posturing,' The Last of Us' occasional 'gratuitous violence'). Sci-fi's conceptual flexibility allows it to consistently serve your immutable rule: 'human truth matters most'—whereas detective and drama genres more frequently succumb to entertainment gimmicks or stylistic excess that undermine psychological depth, creating a meaningful quality gap quantified at 13 percentage points.",
+        "required_facts": ["st_positive", "bm_positive", "ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "andor_positive", "td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "light_detective_negative", "drama_positive", "yellowstone_negative", "tlou_mixed", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Acknowledges exact 13-point gap (88% - 75%)",
+          "Explains why sci-fi consistently delivers on core principle (7/8 success rate)",
+          "Identifies why detective/drama genres have more variance/failures (6/8 success rate each)",
+          "Connects to your synthesized principle ('human truth matters most') with precise counts"
+        ]
+      }
+    },
+    {
+      "query_id": "q16_historical_fantasy_boundary",
+      "question": "You enjoy The Last Kingdom and Vikings but reject Game of Thrones. What's the precise boundary that separates acceptable from unacceptable fantasy for you?",
+      "reference_answer": {
+        "text": "The precise boundary is historical grounding as emotional anchor. The Last Kingdom and Vikings succeed because documented history provides stakes you can verify and feel—Uhtred's loyalty conflicts or Ragnar's ambitions resonate because they're rooted in real cultural tensions. Game of Thrones, House of Dragon, and Rings of Power fail because their stakes depend entirely on invented mythologies ('prophecies,' 'dragon destiny') that lack external verification. For you, fantasy elements must function as cultural texture (Vikings' Norse mythology) rather than plot engines (GoT's prophecies). Quantitatively: 100% of your positive fantasy reviews (2/2) require historical basis; 100% of your negative fantasy reviews (7/7) criticize 'overwhelming lore' without historical anchor. The boundary isn't the presence of fantasy—it's whether history or mythology drives character motivation.",
+        "required_facts": ["grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative"],
+        "evaluation_criteria": [
+          "Defines precise boundary condition (historical grounding as emotional anchor)",
+          "Contrasts successful vs failed examples with specific mechanisms",
+          "Provides exact quantitative backing (2/2 positive require history, 7/7 negative lack it)",
+          "Distinguishes fantasy-as-texture versus fantasy-as-engine"
+        ]
+      }
+    },
+    {
+      "query_id": "q17_viewing_context_correlation",
+      "question": "How does my viewing context (e.g., mental state, time of day) correlate with my genre preferences across our 40 sessions?",
+      "reference_answer": {
+        "text": "Your viewing context strongly correlates with genre selection in a consistent pattern: intellectual engagement contexts (evenings, focused states) trigger sci-fi/detective choices; recovery contexts (weekends, post-stress) trigger comfort comedy; avoidance contexts (background noise) trigger reality TV rejection. Specifically: 85% of sci-fi discussions occurred when you sought 'intellectual engagement' or 'something that demands full attention'; 100% of comedy discussions framed shows as 'comfort viewing' or 'decompression'; 100% of reality TV mentions dismissed it as 'background noise' you 'don't even pay attention to.' This isn't random preference—it's intentional context-aware curation. You explicitly stated: 'Different genres for different mental states' (session 30), and synthesized it as 'recovery (comedy) versus immersion (sci-fi)' (session 40), confirming a sophisticated viewing strategy where genre serves psychological need rather than passive consumption.",
+        "required_facts": ["session_01_context", "session_03_context", "session_08_context", "session_10_context", "session_15_context", "session_18_context", "session_22_context", "session_30_context", "session_40_context"],
+        "evaluation_criteria": [
+          "Identifies precise context-genre correlations with percentages",
+          "Uses your explicit statements about context-driven selection",
+          "Distinguishes intentional curation from passive consumption",
+          "Synthesizes evidence from all 40 sessions with quantitative backing (85%, 100%)"
+        ]
+      }
+    },
+    {
+      "query_id": "q18_spectacle_threshold",
+      "question": "Across all genres, what's my precise threshold for acceptable versus excessive spectacle?",
+      "reference_answer": {
+        "text": "Your spectacle threshold is binary and consistent: spectacle is acceptable ONLY when it serves character psychology or thematic purpose; it becomes excessive when it replaces or overwhelms character motivation. Acceptable examples: The Expanse's orbital mechanics create tension through physical constraints; Dark's timeline complexity reveals character relationships; Chernobyl's restraint makes implied horror more potent; Arcane's animation style shifts reflect emotional states. Excessive examples: Foundation's 'emotional coldness' despite visual grandeur; Rings of Power's 'video game cutscene' quality without character stakes; Dune: Part Two's 'action sequences' diluting 'interiority'; Wednesday's 'TikTok dance breaks' replacing character development. The threshold isn't budget or scale—it's whether spectacle earns its place through emotional purpose.",
+        "required_facts": ["expanse_positive", "dark_severance_positive", "drama_positive", "arcane_positive", "ww_foundation_contrast", "pure_fantasy_negative", "dune_contrast", "wednesday_negative", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Defines binary threshold condition (spectacle must serve character/theme)",
+          "Provides contrasting acceptable vs excessive examples with mechanisms",
+          "Explains how spectacle serves (or fails to serve) character in each case",
+          "Distinguishes scale from purpose—budget irrelevant without emotional anchor"
+        ]
+      }
+    },
+    {
+      "query_id": "q19_intelligence_respect_metric",
+      "question": "How do I operationalize 'respecting the audience's intelligence' across different genres?",
+      "reference_answer": {
+        "text": "You operationalize 'respecting intelligence' through three genre-specific but thematically unified mechanisms: (1) Sci-fi: No technobabble hand-waving—The Expanse's orbital mechanics and Dark's timeline rules follow consistent internal logic that rewards attention; (2) Detective: No exposition dumps—Lupin and Slow Horses let you piece together clues without condescension; (3) Comedy/Drama: No manufactured conflict—Parks and Rec's stakes feel earned, Succession's power plays stem from comprehensible psychology. The unifying thread: trust in viewer comprehension without explicit guidance. This isn't vague preference—it's a precise metric: does the show assume I'm paying attention and reward that attention with meaning?",
+        "required_facts": ["expanse_positive", "dark_severance_positive", "lupin_positive", "slowhorses_fargo_positive", "parc_positive", "drama_positive", "light_detective_negative", "light_comedy_negative"],
+        "evaluation_criteria": [
+          "Identifies three precise operational mechanisms across genres",
+          "Shows unifying thread (trust without condescension)",
+          "Provides concrete examples of respect vs disrespect per genre",
+          "Articulates precise metric question the show must answer"
+        ]
+      }
+    },
+    {
+      "query_id": "q20_longitudinal_preference_stability",
+      "question": "Across our 40 sessions spanning multiple months of conversation, has my core preference hierarchy remained stable? Quantify any shifts.",
+      "reference_answer": {
+        "text": "Your core preference hierarchy has remained remarkably stable with <3% variance across all metrics. Session 1-13 average: sci-fi 88%, detective 75%, drama 77%, comedy 60%, fantasy 22%, reality 0%. Session 14-27 average: sci-fi 88%, detective 75%, drama 75%, comedy 60%, fantasy 22%, reality 0%. Session 28-40 average: sci-fi 88%, detective 75%, drama 75%, comedy 60%, fantasy 22%, reality 0%. The maximum shift for any genre was drama (+2% from early to middle sessions), well within statistical noise. Critically, your rejection thresholds remained absolute: 0% reality positivity across all periods; 100% consistency on fantasy requiring historical grounding; 100% consistency on spectacle requiring character purpose. This isn't just stable preference—it's immutable principle. As you stated in session 40: 'human truth matters most' regardless of setting—a principle that held constant across all 350 messages with zero meaningful deviation.",
+        "required_facts": ["session_01_preferences", "session_13_preferences", "session_27_preferences", "session_40_preferences", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Provides precise longitudinal quantification across three time periods",
+          "Shows <3% variance for all genres (statistical stability)",
+          "Highlights absolute consistency on rejection thresholds (0% reality, 100% fantasy boundary)",
+          "Connects quantitative stability to your explicit principle statement with zero deviation"
+        ]
+      }
+    },
+    {
+      "query_id": "q21_drama_genre_analysis",
+      "question": "Drama wasn't in our original genre ranking, but you've praised many dramas highly. Where does drama rank in my preferences, and what distinguishes the dramas I love from those I reject?",
+      "reference_answer": {
+        "text": "Drama ranks tied for second in your preferences at 75% positivity—equal to detective but below sci-fi (88%) and above comedy (60%). You love dramas that prioritize psychological complexity within systemic constraints: Chernobyl (historical catastrophe as character crucible), Succession (power dynamics revealing broken people), The White Lotus (privilege exposing insecurity), Station Eleven (art as resilience), Midnight Mass (faith as community fracture), and Industry (ambition within toxic systems). You reject dramas that prioritize style over substance (Yellowstone's 'macho posturing') or graphic violence over emotional stakes (The Last of Us' occasional 'gratuitous territory'). The unifying principle: character psychology must drive narrative, not external circumstances or aesthetic choices. Quantitatively: 6/8 dramas praised for 'psychological realism'; 2/8 criticized for 'style over substance' or 'gratuitous violence.' This 75% positivity rate reflects drama's vulnerability to spectacle-over-substance failures—a risk sci-fi avoids through its speculative framework that inherently serves character exploration.",
+        "required_facts": ["drama_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "yellowstone_negative", "tlou_mixed", "storytelling_principle_synthesis"],
+        "evaluation_criteria": [
+          "Provides exact drama positivity percentage (75%) with count (6/8)",
+          "Distinguishes loved vs rejected dramas with specific mechanisms",
+          "Explains why drama ranks below sci-fi (higher failure rate)",
+          "Connects to core principle (character psychology driving narrative)"
+        ]
+      }
+    },
+    {
+      "query_id": "q22_animation_exception",
+      "question": "You generally reject style-over-substance shows, yet you praised Arcane highly. What makes Arcane an exception, and does this reveal a hidden preference for animation?",
+      "reference_answer": {
+        "text": "Arcane isn't an exception to your principle—it's a perfect embodiment of it. You praised Arcane not for its animation style, but because 'every fight scene serves character development, not just cool moves' and its 'animation style shifts to reflect emotional states.' The medium (animation) serves the message (character psychology), not the reverse. This doesn't reveal a hidden preference for animation—you'd reject poorly executed animation just as you reject poorly executed live-action (see: Wednesday's 'TikTok dance breaks'). What you value is formal technique serving emotional truth, regardless of medium. Arcane succeeds because its visual artistry is instrumental (revealing Jinx's psychological fragmentation through chaotic brushstrokes) not ornamental (style for style's sake). The medium is irrelevant—only the relationship between form and emotional purpose matters.",
+        "required_facts": ["arcane_positive", "wednesday_negative", "storytelling_principle_synthesis", "spectacle_threshold_analysis"],
+        "evaluation_criteria": [
+          "Clarifies Arcane isn't an exception but confirmation of core principle",
+          "Distinguishes instrumental vs ornamental aesthetics",
+          "Explains medium irrelevance (would reject bad animation too)",
+          "Connects to universal principle (form serving emotional truth)"
+        ]
+      }
+    },
+    {
+      "query_id": "q23_horror_preferences",
+      "question": "You've discussed Midnight Mass but not many other horror shows. Based on your preferences, what kind of horror would I enjoy, and what should I avoid?",
+      "reference_answer": {
+        "text": "You'd enjoy psychological horror that uses supernatural elements as metaphors for human fears rather than vehicles for jump scares or gore. Midnight Mass succeeds because 'horror should unsettle the soul, not just startle the nerves' and 'every supernatural element serves the human drama.' You'd likely enjoy 'The Haunting of Hill House' (Flanagan's character-driven horror), 'Session 9' (psychological breakdown in mundane setting), or 'Hereditary' (family trauma manifesting as supernatural horror)—all prioritize emotional truth over spectacle. You should avoid 'torture porn' (Saw franchise), 'style-over-substance horror' (many Blumhouse productions prioritizing concept over character), or 'jump scare factories' (Insidious sequels)—all prioritize physiological reactions over psychological depth. Your horror threshold mirrors your general principle: supernatural elements must reveal character, not replace it.",
+        "required_facts": ["midnight_mass_positive", "storytelling_principle_synthesis", "spectacle_threshold_analysis"],
+        "evaluation_criteria": [
+          "Defines precise horror subgenre preference (psychological > supernatural)",
+          "Provides specific recommendations aligned with principle",
+          "Identifies horror subgenres to avoid with reasoning",
+          "Connects horror preference to universal principle (supernatural serving character)"
+        ]
+      }
+    },
+    {
+      "query_id": "q24_post_apocalyptic_spectrum",
+      "question": "You had mixed feelings about The Last of Us but loved Station Eleven—both post-apocalyptic. What's the precise difference that makes one work for you and the other falter?",
+      "reference_answer": {
+        "text": "The precise difference is optimism versus nihilism in human nature. Station Eleven 'finds hope without sentimentality' and focuses on 'art and human connection rather than survival porn,' trusting humanity's resilience. The Last of Us occasionally 'tips into gratuitous territory' where 'emotional truth shouldn't require graphic suffering to prove its stakes.' Both have strong character work (you praised Joel/Ellie's 'earned' relationship), but Station Eleven maintains restraint—'implied horror resonates deeper than gore'—while The Last of Us sometimes confuses graphic violence with emotional stakes. The boundary isn't post-apocalyptic settings—it's whether the narrative trusts human connection (Station Eleven) or defaults to survival brutality (The Last of Us) as the primary truth about humanity.",
+        "required_facts": ["station_eleven_positive", "tlou_mixed", "drama_positive", "spectacle_threshold_analysis"],
+        "evaluation_criteria": [
+          "Identifies precise distinguishing factor (optimism vs nihilism)",
+          "Contrasts specific techniques (restraint vs graphic violence)",
+          "Explains boundary condition (trust in human connection vs survival brutality)",
+          "Acknowledges strengths in both while clarifying failure mode"
+        ]
+      }
+    },
+    {
+      "query_id": "q25_ultimate_recommendation_framework",
+      "question": "Synthesize everything you know about my preferences into a single decision framework I can use to evaluate any new show before watching it.",
+      "reference_answer": {
+        "text": "Use this three-question framework before watching any new show: (1) Does it prioritize character psychology over plot mechanics or spectacle? Reject if characters exist to serve plot twists or visual set pieces. (2) Does it respect audience intelligence through restraint rather than exposition? Reject if it explains everything or relies on jump scares/TikTok moments for engagement. (3) Does it ground speculative elements (sci-fi/fantasy/horror) in emotional truth? Reject if mythology/lore/speculation overwhelms character motivation. Genre is irrelevant—Westworld (sci-fi), True Detective (detective), Parks and Rec (comedy), The Last Kingdom (historical drama), Chernobyl (drama) all pass; Foundation (sci-fi), Only Murders (detective), Ted Lasso (comedy), Rings of Power (fantasy), Yellowstone (drama) all fail. Your immutable principle distilled: 'Human truth matters most.' If a show's trailer, synopsis, or early episodes suggest emotional authenticity and respect for intelligence, watch it. If they emphasize spectacle, quirk, or lore without character depth, skip it.",
+        "required_facts": ["storytelling_principle_synthesis", "genre_ranking_analysis", "spectacle_threshold_analysis", "intelligence_respect_metric", "historical_fantasy_boundary", "all_positive_facts", "all_negative_facts"],
+        "evaluation_criteria": [
+          "Provides actionable three-question framework",
+          "Demonstrates genre irrelevance with cross-genre examples",
+          "States immutable principle clearly",
+          "Gives practical pre-viewing evaluation criteria"
+        ]
+      }
+    }
+  ]
+}

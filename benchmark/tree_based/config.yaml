@@ -1,0 +1,145 @@
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_location
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_location
+    retrieve_limit: 10
+    infer: false
+
+mem_agent:
+  model: gpt-4o-mini
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${OPENAI_API_KEY}
+
+benchmark:
+  # Data files to benchmark (each file = one case)
+  data_paths:
+    # State machine location cases (generated)
+    - graph_configs/graph_0_trimmed_100.json
+    - graph_configs/graph_0_trimmed_10_with_path_1.json
+    - graph_configs/graph_0_trimmed_10_with_path_2.json
+    - graph_configs/graph_0_trimmed_150.json
+    - graph_configs/graph_0_trimmed_20.json
+    - graph_configs/graph_0_trimmed_200.json
+    - graph_configs/graph_0_trimmed_250.json
+    - graph_configs/graph_0_trimmed_30.json
+    - graph_configs/graph_0_trimmed_40.json
+    - graph_configs/graph_0_trimmed_50.json
+    - graph_configs/graph_1_trimmed_100.json
+    - graph_configs/graph_1_trimmed_10_with_path_1.json
+    - graph_configs/graph_1_trimmed_10_with_path_2.json
+    - graph_configs/graph_1_trimmed_150.json
+    - graph_configs/graph_1_trimmed_20.json
+    - graph_configs/graph_1_trimmed_200.json
+    - graph_configs/graph_1_trimmed_250.json
+    - graph_configs/graph_1_trimmed_30.json
+    - graph_configs/graph_1_trimmed_40.json
+    - graph_configs/graph_1_trimmed_50.json
+    - graph_configs/graph_2_trimmed_100.json
+    - graph_configs/graph_2_trimmed_10_with_path_1.json
+    - graph_configs/graph_2_trimmed_10_with_path_2.json
+    - graph_configs/graph_2_trimmed_150.json
+    - graph_configs/graph_2_trimmed_20.json
+    - graph_configs/graph_2_trimmed_200.json
+    - graph_configs/graph_2_trimmed_250.json
+    - graph_configs/graph_2_trimmed_30.json
+    - graph_configs/graph_2_trimmed_40.json
+    - graph_configs/graph_2_trimmed_50.json
+    - graph_configs/graph_3_trimmed_100.json
+    - graph_configs/graph_3_trimmed_10_with_path_1.json
+    - graph_configs/graph_3_trimmed_10_with_path_2.json
+    - graph_configs/graph_3_trimmed_150.json
+    - graph_configs/graph_3_trimmed_20.json
+    - graph_configs/graph_3_trimmed_200.json
+    - graph_configs/graph_3_trimmed_250.json
+    - graph_configs/graph_3_trimmed_30.json
+    - graph_configs/graph_3_trimmed_40.json
+    - graph_configs/graph_3_trimmed_50.json
+    - graph_configs/graph_4_trimmed_100.json
+    - graph_configs/graph_4_trimmed_10_with_path_1.json
+    - graph_configs/graph_4_trimmed_10_with_path_2.json
+    - graph_configs/graph_4_trimmed_150.json
+    - graph_configs/graph_4_trimmed_20.json
+    - graph_configs/graph_4_trimmed_200.json
+    - graph_configs/graph_4_trimmed_250.json
+    - graph_configs/graph_4_trimmed_30.json
+    - graph_configs/graph_4_trimmed_40.json
+    - graph_configs/graph_4_trimmed_50.json
+    - graph_configs/graph_5_trimmed_100.json
+    - graph_configs/graph_5_trimmed_10_with_path_1.json
+    - graph_configs/graph_5_trimmed_10_with_path_2.json
+    - graph_configs/graph_5_trimmed_150.json
+    - graph_configs/graph_5_trimmed_20.json
+    - graph_configs/graph_5_trimmed_200.json
+    - graph_configs/graph_5_trimmed_250.json
+    - graph_configs/graph_5_trimmed_30.json
+    - graph_configs/graph_5_trimmed_40.json
+    - graph_configs/graph_5_trimmed_50.json
+    - graph_configs/graph_6_trimmed_100.json
+    - graph_configs/graph_6_trimmed_10_with_path_1.json
+    - graph_configs/graph_6_trimmed_10_with_path_2.json
+    - graph_configs/graph_6_trimmed_150.json
+    - graph_configs/graph_6_trimmed_20.json
+    - graph_configs/graph_6_trimmed_200.json
+    - graph_configs/graph_6_trimmed_250.json
+    - graph_configs/graph_6_trimmed_30.json
+    - graph_configs/graph_6_trimmed_40.json
+    - graph_configs/graph_6_trimmed_50.json
+    - graph_configs/graph_7_trimmed_100.json
+    - graph_configs/graph_7_trimmed_10_with_path_1.json
+    - graph_configs/graph_7_trimmed_10_with_path_2.json
+    - graph_configs/graph_7_trimmed_150.json
+    - graph_configs/graph_7_trimmed_20.json
+    - graph_configs/graph_7_trimmed_200.json
+    - graph_configs/graph_7_trimmed_250.json
+    - graph_configs/graph_7_trimmed_30.json
+    - graph_configs/graph_7_trimmed_40.json
+    - graph_configs/graph_7_trimmed_50.json
+    - graph_configs/graph_8_trimmed_100.json
+    - graph_configs/graph_8_trimmed_10_with_path_1.json
+    - graph_configs/graph_8_trimmed_10_with_path_2.json
+    - graph_configs/graph_8_trimmed_150.json
+    - graph_configs/graph_8_trimmed_20.json
+    - graph_configs/graph_8_trimmed_200.json
+    - graph_configs/graph_8_trimmed_250.json
+    - graph_configs/graph_8_trimmed_30.json
+    - graph_configs/graph_8_trimmed_40.json
+    - graph_configs/graph_8_trimmed_50.json
+    - graph_configs/graph_9_trimmed_100.json
+    - graph_configs/graph_9_trimmed_10_with_path_1.json
+    - graph_configs/graph_9_trimmed_10_with_path_2.json
+    - graph_configs/graph_9_trimmed_150.json
+    - graph_configs/graph_9_trimmed_20.json
+    - graph_configs/graph_9_trimmed_200.json
+    - graph_configs/graph_9_trimmed_250.json
+    - graph_configs/graph_9_trimmed_30.json
+    - graph_configs/graph_9_trimmed_40.json
+    - graph_configs/graph_9_trimmed_50.json
+
+  # mem0 retrieve limits to test
+  mem0_limits: [5, 10, 15, 20]
+
+  # Agent prompt configurations
+  agent_prompts:
+    - name: mem_agent
+      path: prompts/system_prompt.txt
+    # - name: mem_agent_hint
+    #   path: prompts/system_prompt_location_huge_hint.txt
+
+  output_dir: eval_results
+  verbose: false

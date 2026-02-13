@@ -1,0 +1,167 @@
+{
+  "case_id": "transition_3tr_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Prague",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Vinohrady, Prague. The Art Nouveau buildings here are gorgeous!"
+        },
+        {
+          "role": "assistant",
+          "content": "Vinohrady is beautiful! Who are your neighbors?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Karel is a jazz musician and we often attend concerts together."
+        },
+        {
+          "role": "assistant",
+          "content": "Prague has a great jazz scene!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Vancouver",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Kitsilano, Vancouver for a tech job!"
+        },
+        {
+          "role": "assistant",
+          "content": "Vancouver is stunning! What are you excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be avocado toast at Fable Kitchen!"
+        },
+        {
+          "role": "assistant",
+          "content": "West coast breakfast with those views - perfect!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Vancouver",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Vancouver is incredible! Mountains, ocean, all in one place."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Kitsilano?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Sarah is a yoga instructor and we do beach yoga on weekends."
+        },
+        {
+          "role": "assistant",
+          "content": "Beach yoga sounds amazing!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Dublin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Temple Bar, Dublin for a writing residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "Dublin! What's your breakfast plan?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be full Irish breakfast at The Woollen Mills!"
+        },
+        {
+          "role": "assistant",
+          "content": "Nothing beats a proper Irish breakfast!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Dublin",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Dublin is so literary! Writers everywhere!"
+        },
+        {
+          "role": "assistant",
+          "content": "How's Temple Bar?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Seamus is a poet and we have great conversations at the pub."
+        },
+        {
+          "role": "assistant",
+          "content": "Literary Dublin at its finest!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Bangkok",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Thonglor, Bangkok for a food journalism project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Bangkok's food scene is legendary! Breakfast plans?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be boat noodles and Thai iced tea at street stalls!"
+        },
+        {
+          "role": "assistant",
+          "content": "Street food for breakfast - the Thai way!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Bangkok",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Bangkok is chaotic but amazing! The food is beyond incredible."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Thonglor?"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Niran is a chef and takes me to hidden food gems every week."
+        },
+        {
+          "role": "assistant",
+          "content": "A local chef guide - you're so lucky!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Bangkok (Thonglor), your breakfast is boat noodles and Thai iced tea at local street stalls. The answer should NOT mention breakfast from your previous cities (Prague, Vancouver avocado toast, or Dublin Irish breakfast)."
+      }
+    }
+  ]
+}

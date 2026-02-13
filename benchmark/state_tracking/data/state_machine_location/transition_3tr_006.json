@@ -1,0 +1,207 @@
+{
+  "case_id": "transition_3tr_006",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Sea Point",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Sea Point, Cape Town. The ocean views and mountain backdrop."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning run along the Sea Point Promenade then coffee at Loading Bay."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Thabo, a local guide who shows me hidden hiking trails on Table Mountain. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have rooibos tea and muesli bowl at a café on the promenade."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Mitte",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Mitte, Vienna for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Naschmarkt for cheese and wine."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have Sachertorte and melange at Café Central."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Mitte",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Mitte, Vienna for a few weeks now. I love the imperial architecture and coffeehouse culture."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Franz, a classical pianist who practices Chopin every evening."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Kungsholmen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kungsholmen, Stockholm for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be kayaking on Riddarfjärden then visiting Rålis market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have overnight oats and bryggkaffe at a lakeside café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Kungsholmen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Kungsholmen, Stockholm for a few weeks now. I love the waterfront promenades and island parks."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ingrid, a children's book illustrator who draws portraits of neighborhood cats."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Marrakech Medina",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Marrakech Medina, Morocco for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be getting lost in the souks then mint tea at a riad courtyard."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have msemen and fresh orange juice at a stall in Jemaa el-Fna."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Marrakech Medina",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Marrakech Medina, Morocco for a few weeks now. I love the spice aromas and zellige tilework everywhere."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Fatima, a henna artist who teaches me Arabic calligraphy."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Marrakech Medina, Morocco, your Saturday activity is getting lost in the souks then mint tea at a riad courtyard. The answer should NOT mention activities from your previous cities (Sea Point morning run along the Sea Point Promenade, Mitte visiting the Naschmarkt for cheese and w, Kungsholmen kayaking on Riddarfjärden)."
+      }
+    }
+  ]
+}

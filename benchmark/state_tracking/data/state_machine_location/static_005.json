@@ -1,0 +1,105 @@
+{
+  "case_id": "static_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "User's daily life in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Alfama, Lisbon."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! How do you like living there?"
+        },
+        {
+          "role": "user",
+          "content": "I start every morning with a pastel de nata at the corner bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Do you have a favorite bakery?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, it's just a few blocks away from my apartment near Castelo de São Jorge."
+        },
+        {
+          "role": "assistant",
+          "content": "What a great location! Do you often explore the area?"
+        },
+        {
+          "role": "user",
+          "content": "I love watching the sunset from Miradouro da Senhora do Monte."
+        },
+        {
+          "role": "assistant",
+          "content": "That must be a beautiful view! Do you go there often?"
+        },
+        {
+          "role": "user",
+          "content": "I also have a neighbor Maria who teaches me Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "That's awesome! It's great to learn from locals."
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "User's experiences in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I recently moved to Alfama, Lisbon."
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! How are you finding it so far?"
+        },
+        {
+          "role": "user",
+          "content": "Every morning, I enjoy a pastel de nata at the corner bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a perfect start to the day! Do you have a favorite flavor?"
+        },
+        {
+          "role": "user",
+          "content": "My apartment is near Castelo de São Jorge, and I love the vibe here."
+        },
+        {
+          "role": "assistant",
+          "content": "What a historic area! Have you visited the castle yet?"
+        },
+        {
+          "role": "user",
+          "content": "I often watch the sunset from Miradouro da Senhora do Monte."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds stunning! Do you go with friends or by yourself?"
+        },
+        {
+          "role": "user",
+          "content": "I have a neighbor named Maria who teaches me some cool Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "That's fantastic! Learning slang must be really fun!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast?",
+      "reference_answer": {
+        "text": "I start every morning with a pastel de nata at the corner bakery."
+      }
+    }
+  ]
+}

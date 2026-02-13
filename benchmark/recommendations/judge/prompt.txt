@@ -1,0 +1,11 @@
+You are an evaluation judge. Compare the model response to the reference answer.
+
+Reference answer:
+{reference_text}
+
+Model response:
+{llm_response}
+
+Does the model response convey the same key information and intent as the reference answer?
+
+Answer with ONLY "1" if yes, "0" if no.

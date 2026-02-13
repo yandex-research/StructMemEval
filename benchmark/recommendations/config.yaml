@@ -1,0 +1,76 @@
+mem0:
+  llm:
+    provider: openai
+    model: google/gemini-2.5-pro
+    api_key: ${LLM_API_KEY}
+    openrouter_base_url: ${LLM_BASE_URL}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    openai_base_url: ${OPENAI_BASE_URL}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_books_recommendations
+    path: ./qdrant_data
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_books_recommendations
+    retrieve_limit: 10
+    infer: false
+
+mem_agent:
+  model: google/gemini-2.5-pro
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${API_KEY}
+
+benchmark:
+  cases:
+    #- data_path: data/series_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/series_data.json
+    #  prompt_path: prompts/system_prompt_series_small_hint.txt
+    #- data_path: data/series_data.json
+    #  prompt_path: prompts/system_prompt_series_huge_hint.txt
+    #- data_path: data/boardgames_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/boardgames_data.json
+    #  prompt_path: prompts/system_prompt_boardgames_small_hint.txt
+    #- data_path: data/boardgames_data.json
+    #  prompt_path: prompts/system_prompt_boardgames_huge_hint.txt
+    #- data_path: data/sports_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/sports_data.json
+    #  prompt_path: prompts/system_prompt_sports_small_hint.txt
+    #- data_path: data/sports_data.json
+    #  prompt_path: prompts/system_prompt_sports_huge_hint.txt
+    #- data_path: data/music_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/music_data.json
+    #  prompt_path: prompts/system_prompt_music_small_hint.txt
+    #- data_path: data/music_data.json
+    #  prompt_path: prompts/system_prompt_music_huge_hint.txt
+    #- data_path: data/movies_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/movies_data.json
+    #  prompt_path: prompts/system_prompt_movies_small_hint.txt
+    #- data_path: data/movies_data.json
+    #  prompt_path: prompts/system_prompt_movies_huge_hint.txt
+    #- data_path: data/books_data.json
+    #  prompt_path: prompts/system_prompt.txt
+    #- data_path: data/books_data.json
+    #  prompt_path: prompts/system_prompt_books_small_hint.txt
+    #- data_path: data/books_data.json
+    #  prompt_path: prompts/system_prompt_books_huge_hint.txt
+    - data_path: data/art_data.json
+      prompt_path: prompts/system_prompt.txt
+    - data_path: data/art_data.json
+      prompt_path: prompts/system_prompt_art_small_hint.txt
+    - data_path: data/art_data.json
+      prompt_path: prompts/system_prompt_art_huge_hint.txt
+  output_dir: eval_results
+  verbose: false

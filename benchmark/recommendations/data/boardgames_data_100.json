@@ -1,0 +1,361 @@
+{
+"case_id": "recommendations_boardgames_100",
+"sessions": [
+{
+"session_id": "session_01",
+"topic": "Strategy Games Discussion",
+"contains_fact": true,
+"fact_id": "strategy_depth_appreciation",
+"fact_quote": "I love strategy games that require deep thinking and long-term planning. Games like Terraforming Mars give me that satisfying feeling of building something complex over time",
+"messages": [
+{"role": "user", "content": "I just finished my third game of Terraforming Mars."},
+{"role": "assistant", "content": "How do you find the strategic depth compared to other engine-building games?"},
+{"role": "user", "content": "It's incredibly satisfying to see your engine develop over the rounds."},
+{"role": "assistant", "content": "Do you prefer games with more direct interaction or solo puzzle elements?"},
+{"role": "user", "content": "I love strategy games that require deep thinking and long-term planning. Games like Terraforming Mars give me that satisfying feeling of building something complex over time."},
+{"role": "assistant", "content": "Have you tried Gaia Project? It offers similar depth with more player interaction."}
+]
+},
+{
+"session_id": "session_02",
+"topic": "Party Games Experience",
+"contains_fact": true,
+"fact_id": "party_games_fatigue",
+"fact_quote": "Most party games feel too shallow and repetitive after a few plays. I enjoy them occasionally, but they don't give me the strategic satisfaction I'm looking for",
+"messages": [
+{"role": "user", "content": "We played Codenames at game night last weekend."},
+{"role": "assistant", "content": "Is that still holding up well for your group?"},
+{"role": "user", "content": "It's fun but getting repetitive. Everyone knows the best strategies now."},
+{"role": "assistant", "content": "Have you considered trying different word association games?"},
+{"role": "user", "content": "Most party games feel too shallow and repetitive after a few plays. I enjoy them occasionally, but they don't give me the strategic satisfaction I'm looking for."},
+{"role": "assistant", "content": "You might prefer party games with more variability like Just One or Wavelength."},
+{"role": "user", "content": "Wavelength actually surprised me with how engaging it was."},
+{"role": "assistant", "content": "It creates genuine moments of connection rather than just following formulas."}
+]
+},
+{
+"session_id": "session_03",
+"topic": "Cooperative Games Assessment",
+"contains_fact": true,
+"fact_id": "cooperative_alpha_player_problem",
+"fact_quote": "I struggle with cooperative games because someone always becomes the 'alpha player' who tells everyone what to do. It ruins the collaborative experience for me",
+"messages": [
+{"role": "user", "content": "My group tried Pandemic Legacy recently."},
+{"role": "assistant", "content": "How did the cooperative aspect work with your group?"},
+{"role": "user", "content": "One person ended up making all the decisions. It felt like playing solo with spectators."},
+{"role": "assistant", "content": "That alpha player problem is common in cooperative games. Have you tried games designed to prevent it?"},
+{"role": "user", "content": "I struggle with cooperative games because someone always becomes the 'alpha player' who tells everyone what to do. It ruins the collaborative experience for me."},
+{"role": "assistant", "content": "Games like Spirit Island or The Crew have mechanics that naturally limit alpha player behavior."},
+{"role": "user", "content": "The Crew actually worked really well for us."},
+{"role": "assistant", "content": "The hidden information forces everyone to contribute equally."},
+{"role": "user", "content": "I never felt pressured to follow one person's lead."},
+{"role": "assistant", "content": "That shared decision-making is what cooperative games should be about."},
+{"role": "user", "content": "Have you tried other games with hidden information mechanics?"},
+{"role": "assistant", "content": "Hanabi is another great example - you can see everyone's cards except your own."}
+]
+},
+{
+"session_id": "session_04",
+"topic": "Abstract Games Exploration",
+"contains_fact": true,
+"fact_id": "abstract_games_appreciation",
+"fact_quote": "Abstract games like Azul and Santorini offer perfect balance between simple rules and deep strategy. I can play them repeatedly without getting bored",
+"messages": [
+{"role": "user", "content": "I've been playing Azul every evening this week."},
+{"role": "assistant", "content": "What keeps you coming back to it?"},
+{"role": "user", "content": "The tile placement is so satisfying, and each game feels different."},
+{"role": "assistant", "content": "Have you tried other abstract games by the same designer?"},
+{"role": "user", "content": "Abstract games like Azul and Santorini offer perfect balance between simple rules and deep strategy. I can play them repeatedly without getting bored."},
+{"role": "assistant", "content": "Santorini's god powers add great variability while keeping the core simple."},
+{"role": "user", "content": "I love how the components feel in your hands too."},
+{"role": "assistant", "content": "Physical quality really enhances the abstract gaming experience."}
+]
+},
+{
+"session_id": "session_05",
+"topic": "Strategy Game Complexity",
+"contains_fact": true,
+"fact_id": "strategy_complexity_overwhelm",
+"fact_quote": "Some strategy games are too complex with rulebooks longer than novels. I want depth, but not unnecessary complexity that takes hours to learn",
+"messages": [
+{"role": "user", "content": "I looked at Twilight Imperium but the rulebook intimidated me."},
+{"role": "assistant", "content": "It's definitely on the heavier side. What's your threshold for learning time?"},
+{"role": "user", "content": "I don't mind learning complex games, but 4+ hour rule explanations are too much."},
+{"role": "assistant", "content": "Games like Scythe or Brass offer good depth with more manageable learning curves."},
+{"role": "user", "content": "Some strategy games are too complex with rulebooks longer than novels. I want depth, but not unnecessary complexity that takes hours to learn."},
+{"role": "assistant", "content": "The best games teach themselves through intuitive mechanics rather than dense rulebooks."},
+{"role": "user", "content": "Scythe sounds more approachable. Is the combat system complicated?"},
+{"role": "assistant", "content": "It uses a simple action selection system with area control. Much more accessible than TI."},
+{"role": "user", "content": "That sounds perfect for my group. We like depth but hate setup time."},
+{"role": "assistant", "content": "Scythe has great components too - the miniatures really add to the experience."},
+{"role": "user", "content": "I'll check it out this weekend. Thanks for the recommendation!"},
+{"role": "assistant", "content": "You'll probably enjoy it based on your love for strategic depth with manageable rules."}
+]
+},
+{
+"session_id": "session_06",
+"topic": "Party Game Recommendations",
+"contains_fact": true,
+"fact_id": "party_game_exceptions",
+"fact_quote": "While most party games bore me quickly, I really enjoy games like Wavelength that create genuine moments of connection and surprise",
+"messages": [
+{"role": "user", "content": "We tried Wavelength at our last game night."},
+{"role": "assistant", "content": "How did it compare to other party games you've played?"},
+{"role": "user", "content": "It was surprisingly engaging! The spectrum concept creates real discussion."},
+{"role": "assistant", "content": "It avoids the repetition problem that plagues many party games."},
+{"role": "user", "content": "While most party games bore me quickly, I really enjoy games like Wavelength that create genuine moments of connection and surprise."},
+{"role": "assistant", "content": "Games that focus on communication rather than competition often have more staying power."}
+]
+},
+{
+"session_id": "session_07",
+"topic": "Cooperative Game Success",
+"contains_fact": true,
+"fact_id": "cooperative_success_enjoyment",
+"fact_quote": "When cooperative games work well without alpha players, the shared victory feels amazing. Spirit Island gives me that perfect cooperative experience",
+"messages": [
+{"role": "user", "content": "Spirit Island finally gave me a good cooperative experience."},
+{"role": "assistant", "content": "What makes it work better than other co-ops you've tried?"},
+{"role": "user", "content": "Each player has unique powers and separate boards. No one can control everything."},
+{"role": "assistant", "content": "The asymmetric design naturally prevents the alpha player problem."},
+{"role": "user", "content": "When cooperative games work well without alpha players, the shared victory feels amazing. Spirit Island gives me that perfect cooperative experience."},
+{"role": "assistant", "content": "That sense of individual contribution to a shared goal is what co-ops should aim for."},
+{"role": "user", "content": "I actually felt like my decisions mattered, not just executing someone else's plan."},
+{"role": "assistant", "content": "That autonomy within cooperation is exactly what makes it satisfying."}
+]
+},
+{
+"session_id": "session_08",
+"topic": "Abstract Game Disappointment",
+"contains_fact": true,
+"fact_id": "abstract_game_repetition",
+"fact_quote": "Some abstract games become predictable after a few plays. Once you learn the optimal strategies, there's not much left to discover",
+"messages": [
+{"role": "user", "content": "I got tired of Hive after about 10 games."},
+{"role": "assistant", "content": "What made it lose its appeal?"},
+{"role": "user", "content": "The opening moves became too formulaic, and I could predict outcomes early."},
+{"role": "assistant", "content": "Games need enough variability to stay interesting long-term."},
+{"role": "user", "content": "Some abstract games become predictable after a few plays. Once you learn the optimal strategies, there's not much left to discover."},
+{"role": "assistant", "content": "That's why games with variable setup or asymmetric powers tend to have better longevity."},
+{"role": "user", "content": "Maybe I should stick to games with more randomness or hidden information."},
+{"role": "assistant", "content": "Or try abstract games with more components like Azul that add tactical variety."},
+{"role": "user", "content": "Santorini has more variety with the god powers changing each game."},
+{"role": "assistant", "content": "Yes, that random element keeps it fresh even after many plays."}
+]
+},
+{
+"session_id": "session_09",
+"topic": "Strategy Game Interaction",
+"contains_fact": true,
+"fact_id": "strategy_interaction_preference",
+"fact_quote": "I prefer strategy games with meaningful player interaction rather than multiplayer solitaire. Games where your decisions directly affect other players are more engaging",
+"messages": [
+{"role": "user", "content": "Terraforming Mars sometimes feels like multiplayer solitaire."},
+{"role": "assistant", "content": "Do you miss having more direct interaction with other players?"},
+{"role": "user", "content": "Yes, I want my decisions to actually impact what others can do."},
+{"role": "assistant", "content": "Games like Blood Rage or Root offer that direct conflict you're looking for."},
+{"role": "user", "content": "I prefer strategy games with meaningful player interaction rather than multiplayer solitaire. Games where your decisions directly affect other players are more engaging."},
+{"role": "assistant", "content": "The tension of direct competition often creates more memorable gaming experiences."},
+{"role": "user", "content": "Root seems perfect then. Each faction plays completely differently."},
+{"role": "assistant", "content": "And your actions directly block and affect other players' strategies."}
+]
+},
+{
+"session_id": "session_10",
+"topic": "Party Game Social Dynamics",
+"contains_fact": true,
+"fact_id": "party_game_social_value",
+"fact_quote": "Party games are valuable for bringing people together, even if they're not strategically deep. Sometimes the social connection matters more than the gameplay",
+"messages": [
+{"role": "user", "content": "Even though Codenames isn't deep, it got my family talking and laughing."},
+{"role": "assistant", "content": "That social value is important, especially with mixed gaming groups."},
+{"role": "user", "content": "My non-gamer relatives actually asked to play again."},
+{"role": "assistant", "content": "Accessibility often trumps depth when introducing new people to board games."},
+{"role": "user", "content": "Party games are valuable for bringing people together, even if they're not strategically deep. Sometimes the social connection matters more than the gameplay."},
+{"role": "assistant", "content": "Different games serve different purposes in your collection."},
+{"role": "user", "content": "I guess I shouldn't judge party games by the same standards as strategy games."},
+{"role": "assistant", "content": "Exactly! They're designed for different experiences and audiences."},
+{"role": "user", "content": "It's like comparing a quick snack to a five-course meal."},
+{"role": "assistant", "content": "Some days you need light social interaction, other days you crave deep strategic engagement."},
+{"role": "user", "content": "That's a perfect analogy. I'll remember that next time someone criticizes party games."},
+{"role": "assistant", "content": "Every game has its place depending on the group and occasion."}
+]
+},
+{
+"session_id": "session_11",
+"topic": "Cooperative Game Mechanics",
+"contains_fact": true,
+"fact_id": "cooperative_hidden_information",
+"fact_quote": "Cooperative games with hidden information or limited communication work better for me because they naturally prevent one player from dominating the decision-making",
+"messages": [
+{"role": "user", "content": "The Crew was a refreshing cooperative experience."},
+{"role": "assistant", "content": "Was it the hidden information that made it work well?"},
+{"role": "user", "content": "Exactly! No one could see all the cards, so everyone had to contribute."},
+{"role": "assistant", "content": "Limited communication forces genuine collaboration rather than dictation."},
+{"role": "user", "content": "Cooperative games with hidden information or limited communication work better for me because they naturally prevent one player from dominating the decision-making."},
+{"role": "assistant", "content": "These mechanics create the cooperative spirit that many co-ops miss."},
+{"role": "user", "content": "I felt like a real team instead of following instructions from the smartest player."},
+{"role": "assistant", "content": "That shared uncertainty creates genuine teamwork rather than solo play with spectators."},
+{"role": "user", "content": "Are there other co-op games with similar hidden information mechanics?"},
+{"role": "assistant", "content": "Hanabi uses card-holding where you can see everyone's cards except your own - it creates similar dynamics."}
+]
+},
+{
+"session_id": "session_12",
+"topic": "Abstract Game Aesthetics",
+"contains_fact": true,
+"fact_id": "abstract_aesthetic_importance",
+"fact_quote": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying",
+"messages": [
+{"role": "user", "content": "Azul's tiles are so beautiful to handle."},
+{"role": "assistant", "content": "Does the tactile quality affect your enjoyment of the game?"},
+{"role": "user", "content": "Absolutely! The weight and color of the tiles make placing them more satisfying."},
+{"role": "assistant", "content": "Component quality can elevate even simple mechanics into something special."},
+{"role": "user", "content": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying."},
+{"role": "assistant", "content": "Games that engage multiple senses often create stronger emotional connections."}
+]
+}
+],
+"queries": [
+{
+"query_id": "q1_genre_recommendation",
+"question": "Based on my board game preferences, which genre should I choose for my next purchase - strategy, party, cooperative, or abstract games?",
+"reference_answer": {
+"text": "Based on your feedback patterns, you should focus on strategy games for your next purchase. Your reviews show 70% positive feedback for strategy games compared to 60% for abstract games, 50% for party games, and 40% for cooperative games. You consistently praise strategy games for their 'deep thinking and long-term planning' and 'meaningful player interaction,' while your main criticism of cooperative games is the 'alpha player problem' that 'ruins the collaborative experience.' While you appreciate abstract games for their 'perfect balance between simple rules and deep strategy,' and acknowledge that party games have 'social value,' your most passionate and consistent praise is reserved for strategy games that offer both depth and player interaction. Your ideal strategy games have 'variable setup or asymmetric factions' and avoid being 'multiplayer solitaire.'",
+"required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "abstract_games_appreciation", "party_game_social_value", "cooperative_alpha_player_problem"],
+"evaluation_criteria": [
+"Correctly identified user's genre preference ranking based on statistics",
+"Referenced specific positive/negative experiences",
+"Mentioned key aspects user values in preferred genre",
+"Provided clear reasoning based on user's feedback patterns"
+]
+}
+},
+{
+"query_id": "q2_cooperative_game_selection",
+"question": "I want to try cooperative games again despite my past frustrations. Based on my feedback, what specific characteristics should I look for?",
+"reference_answer": {
+"text": "Based on your 40% positive feedback on cooperative games, you should specifically look for games with hidden information, limited communication, or asymmetric roles that naturally prevent the 'alpha player problem.' You've had success with 'Spirit Island' because 'each player has unique powers and separate boards. No one can control everything,' and 'The Crew' worked well because 'no one could see all the cards, so everyone had to contribute.' You also appreciate cooperative games with 'balanced difficulty that challenges without frustrating' where 'victory feels earned but not impossible.' Avoid cooperative games with open information and simple mechanics that allow one experienced player to dictate all decisions. Your path to enjoying cooperative games lies in finding those with built-in mechanics that force genuine collaboration rather than allowing one person to solve the puzzle for everyone.",
+"required_facts": ["cooperative_alpha_player_problem", "cooperative_success_enjoyment", "cooperative_hidden_information", "cooperative_balanced_difficulty"],
+"evaluation_criteria": [
+"Acknowledged user's general frustration with cooperative games",
+"Identified specific cooperative games/user enjoys",
+"Provided strategic approach based on positive exceptions",
+"Connected recommendations to user's core gaming values"
+]
+}
+},
+{
+"query_id": "q3_party_game_strategy",
+"question": "I have mixed feelings about party games. Based on my feedback, what approach should I take when selecting party games?",
+"reference_answer": {
+"text": "Based on your 50/50 split in party game feedback, you should focus on party games that emphasize communication, creativity, and unique mechanics rather than simple trivia or word association. You specifically praised games like 'Wavelength that create genuine moments of connection and surprise' and 'Just One's simplicity' with 'clever mechanics that create unique experiences.' However, you criticized most party games for being 'too shallow and repetitive after a few plays' and lacking 'strategic satisfaction.' Your ideal party games balance accessibility for non-gamers with enough depth to remain engaging for experienced players. You also recognize their 'social value' for 'bringing people together,' suggesting you should view them as social tools rather than strategic challenges. Look for party games that create memorable moments through innovative mechanics rather than relying on familiar formulas.",
+"required_facts": ["party_games_fatigue", "party_game_exceptions", "party_game_social_value", "party_game_mechanical_innovation"],
+"evaluation_criteria": [
+"Recognized user's balanced (50/50) party game feedback",
+"Referenced specific positive and negative party game experiences",
+"Provided concrete selection criteria for user",
+"Connected recommendations to user's social gaming needs"
+]
+}
+},
+{
+"query_id": "q4_abstract_game_selection",
+"question": "I enjoy abstract games but sometimes find them repetitive. Based on my feedback, what specific qualities should I look for in new abstract games?",
+"reference_answer": {
+"text": "Based on your 60% positive feedback on abstract games, you should look for abstract games with variable setup, asymmetric powers, or high-quality components that enhance replayability. You specifically praised games like 'Azul and Santorini' for offering 'perfect balance between simple rules and deep strategy' and noted that 'beautiful components make the gameplay more satisfying.' However, you also mentioned that 'some abstract games become predictable after a few plays' once 'optimal strategies' are learned. Your ideal abstract games combine elegant, simple rules with enough variability to prevent predictability. Games with different starting conditions, asymmetric player powers, or modular boards will likely hold your interest longer than those with fixed setups. Additionally, prioritize games with high-quality physical components since you've noted that 'tactile quality affects your enjoyment of the game.'",
+"required_facts": ["abstract_games_appreciation", "abstract_game_repetition", "abstract_aesthetic_importance"],
+"evaluation_criteria": [
+"Identified specific abstract game qualities user values",
+"Referenced user's positive and negative abstract experiences",
+"Provided concrete selection criteria for replayability",
+"Connected to user's appreciation for component quality"
+]
+}
+},
+{
+"query_id": "q5_strategy_game_characteristics",
+"question": "What specific characteristics define the perfect strategy game for me based on my feedback history?",
+"reference_answer": {
+"text": "Based on your feedback history, your perfect strategy game should have: 1) Meaningful player interaction rather than 'multiplayer solitaire' - you want your decisions to 'directly affect other players,' 2) Variable setup or asymmetric factions that ensure 'each game feels fresh rather than repetitive,' 3) Manageable complexity that offers 'depth, but not unnecessary complexity that takes hours to learn,' and 4) A good balance between strategic depth and accessible rules. You specifically praised games like Root for having 'asymmetric factions' that 'play completely differently, like different games,' and expressed frustration with games that feel like 'multiplayer solitaire' where players don't meaningfully interact. You also appreciate games that 'teach themselves through intuitive mechanics rather than dense rulebooks.' Your ideal strategy game combines the depth you love with the interaction and variability that keeps games fresh and engaging.",
+"required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_complexity_overwhelm"],
+"evaluation_criteria": [
+"Synthesized user's ideal strategy game characteristics",
+"Referenced specific user quotes about strategy preferences",
+"Balanced depth requirements with accessibility concerns",
+"Connected all characteristics to user's actual experiences"
+]
+}
+},
+{
+"query_id": "q6_game_night_planning",
+"question": "I'm planning a game night with mixed experience levels. Based on my preferences, what combination of games would work best?",
+"reference_answer": {
+"text": "Based on your preferences, you should plan a game night that starts with an accessible party game for social connection, followed by a strategic game with good player interaction for deeper engagement. Begin with a party game like 'Wavelength' or 'Just One' that you've praised for creating 'genuine moments of connection' while remaining accessible to non-gamers. Then transition to a strategy game like 'Root' or 'Blood Rage' that offers the 'meaningful player interaction' you prefer over 'multiplayer solitaire.' Avoid cooperative games due to your 'alpha player problem' concerns, and skip complex strategy games with 'rulebooks longer than novels' that might overwhelm newer players. This combination leverages your appreciation for both social connection ('sometimes the social connection matters more than the gameplay') and strategic depth, creating an inclusive experience that satisfies both casual and experienced gamers in your group.",
+"required_facts": ["party_game_social_value", "party_game_exceptions", "strategy_interaction_preference", "strategy_complexity_overwhelm", "cooperative_alpha_player_problem"],
+"evaluation_criteria": [
+"Created balanced game night plan for mixed groups",
+"Referenced user's specific game recommendations",
+"Addressed accessibility concerns for new players",
+"Combined social and strategic elements appropriately"
+]
+}
+},
+{
+"query_id": "q7_positive_feedback_statistics",
+"question": "What are the exact percentages of my positive feedback for strategy, abstract, party, and cooperative games based on our conversations?",
+"reference_answer": {
+"text": "Based on our conversations, your positive feedback percentages are: Strategy games: 70% positive (7 positive out of 10 discussions), Abstract games: 60% positive (3 positive out of 5 discussions), Party games: 50% positive (4 positive out of 8 discussions), and Cooperative games: 40% positive (2 positive out of 5 discussions). These statistics reflect your consistent enthusiasm for strategy games that offer depth and interaction, appreciation for abstract games with elegant design and quality components, equal appreciation and criticism of party games (valuing their social function while criticizing repetitiveness), and general difficulty with cooperative games due to the alpha player problem, despite enjoying specific well-designed examples like Spirit Island and The Crew.",
+"required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_complexity_overwhelm", "abstract_games_appreciation", "abstract_aesthetic_importance", "abstract_game_repetition", "party_games_fatigue", "party_game_exceptions", "party_game_social_value", "party_game_mechanical_innovation", "cooperative_alpha_player_problem", "cooperative_success_enjoyment", "cooperative_hidden_information", "cooperative_balanced_difficulty"],
+"evaluation_criteria": [
+"Provided accurate percentage breakdown for all four genres",
+"Based statistics on actual conversation counts",
+"Maintained required statistical accuracy",
+"Referenced the underlying conversation data"
+]
+}
+},
+{
+"query_id": "q8_game_complexity_balance",
+"question": "How do I balance wanting strategic depth with avoiding overwhelming complexity in my game choices?",
+"reference_answer": {
+"text": "Based on your feedback, you should look for games that achieve depth through elegant mechanics rather than complex rules. You specifically mentioned wanting 'depth, but not unnecessary complexity that takes hours to learn' and praised games that 'teach themselves through intuitive mechanics rather than dense rulebooks.' Your sweet spot appears to be games like 'Root' with 'asymmetric factions' that create depth through varied gameplay rather than complicated systems, or 'Azul' with 'simple rules and deep strategy.' Focus on games where the strategic complexity emerges from player interaction and interesting decisions rather than from memorizing extensive rules. Games with intuitive iconography, clear player aids, and teachable in under 30 minutes are likely to hit your complexity sweet spot. The key is distinguishing between depth (meaningful choices with consequences) and complexity (sheer volume of rules to remember).",
+"required_facts": ["strategy_complexity_overwhelm", "strategy_variable_setup", "abstract_games_appreciation", "party_game_mechanical_innovation"],
+"evaluation_criteria": [
+"Distinguished between depth and complexity clearly",
+"Referenced user's specific complexity concerns",
+"Provided concrete examples of well-balanced games",
+"Offered practical selection criteria for user"
+]
+}
+},
+{
+"query_id": "q9_replayability_factors",
+"question": "What factors contribute most to game replayability based on my feedback patterns?",
+"reference_answer": {
+"text": "Based on your feedback patterns, the factors that contribute most to game replayability are: 1) Variable setup or asymmetric factions that ensure 'each game feels fresh rather than repetitive,' 2) Meaningful player interaction that creates unpredictable dynamics, 3) Hidden information or limited communication that prevents optimal strategies from dominating, and 4) High-quality components that enhance the tactile experience. You specifically praised 'Root' for having 'asymmetric factions' that 'play completely differently, like different games,' noted that 'some abstract games become predictable after a few plays' once optimal strategies are known, and appreciated 'The Crew' because 'no one could see all the cards, so everyone had to contribute.' Your replayability sweet spot combines strategic depth with enough variability to prevent games from becoming solved puzzles, ensuring that each playthrough offers new challenges and experiences.",
+"required_facts": ["strategy_variable_setup", "strategy_interaction_preference", "abstract_game_repetition", "cooperative_hidden_information", "abstract_aesthetic_importance"],
+"evaluation_criteria": [
+"Identified key replayability factors from user feedback",
+"Referenced specific examples of high/low replayability games",
+"Connected factors to user's core gaming values",
+"Provided comprehensive analysis of replayability elements"
+]
+}
+},
+{
+"query_id": "q10_gaming_philosophy_synthesis",
+"question": "What overarching philosophy connects all my board game preferences across different genres?",
+"reference_answer": {
+"text": "Your overarching gaming philosophy centers on meaningful interaction and authentic engagement over artificial complexity or passive entertainment. Across all genres, you consistently value games that create genuine connections between players, whether through strategic competition ('meaningful player interaction'), cooperative problem-solving ('hidden information that forces collaboration'), or social bonding ('genuine moments of connection'). You reject experiences that feel artificial, repetitive, or dominated by single players, preferring games where everyone contributes meaningfully to the outcome. You also distinguish between depth and complexity, appreciating elegant designs that create rich experiences through simple, intuitive mechanics rather than overwhelming rulebooks. Whether you're playing strategy games, abstract games, party games, or cooperative games, your core value is authentic engagement—games that respect players' intelligence and create memorable, interactive experiences rather than serving as passive entertainment or mechanical puzzles.",
+"required_facts": ["strategy_interaction_preference", "cooperative_hidden_information", "party_game_exceptions", "abstract_games_appreciation", "strategy_complexity_overwhelm", "cooperative_alpha_player_problem", "party_game_social_value"],
+"evaluation_criteria": [
+"Identified unifying philosophy across all game genres",
+"Connected specific examples from multiple genres",
+"Synthesized user's core gaming values",
+"Provided comprehensive philosophical framework"
+]
+}
+}
+]
+}

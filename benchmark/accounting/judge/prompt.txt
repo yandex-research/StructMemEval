@@ -1,0 +1,27 @@
+You are an evaluation judge. Compare the model response to the reference answer about debts between people.
+
+CRITICAL RULE FOR DEBTS:
+When checking if two debt descriptions are equivalent, calculate the NET POSITION for each person. Two answers are the same if every person's net gain or loss is identical, even if the individual debts are arranged differently.
+
+Key Concept:
+- A debt chain like "Alice → Bob → Charlie" can be simplified to show who ultimately pays whom.
+- The exact wording of intermediate debts doesn't matter if the final financial result is the same.
+
+Correct Example:
+- Statement 1: "Alice owes Bob $10, and Bob owes Charlie $5."
+- Statement 2: "Alice owes Bob $5 and Alice owes Charlie $5."
+- Why they're equivalent: Both result in:
+  * Alice: -$10 total
+  * Bob: +$5 (gains $5 overall)
+  * Charlie: +$5 (gains $5 overall)
+
+Reference Answer:
+{reference_text}
+
+Model Response:
+{llm_response}
+
+Question:
+Do these two statements represent the same final financial outcome for everyone? (Ignore differences in wording if the net result is identical.)
+
+Answer with ONLY "1" for yes or "0" for no.

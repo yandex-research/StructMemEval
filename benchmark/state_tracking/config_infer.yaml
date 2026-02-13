@@ -1,0 +1,38 @@
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_infer
+    path: ./qdrant_data_infer
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_infer
+    retrieve_limit: 10
+    infer: true
+
+mem_agent:
+  model: gpt-4o-mini
+  memory_path: memory_mem_agent
+  use_vllm: false
+  api_key: ${OPENAI_API_KEY}
+
+benchmark:
+  data_paths:
+    - data/state_machine_location/static_001.json
+    - data/state_machine_location/transition_001.json
+    - data/state_machine_location/transition_002.json
+
+  mem0_limits: [20]
+  agent_prompts: []
+  output_dir: eval_results_infer
+  verbose: false

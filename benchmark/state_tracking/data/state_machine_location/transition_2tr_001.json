@@ -1,0 +1,177 @@
+{
+  "case_id": "transition_2tr_001",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Lisbon",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Alfama, Lisbon. It's such a charming neighborhood."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "On Saturdays I always visit Feira da Ladra flea market. I love hunting for vintage records."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend activity! Do you find good stuff there?"
+        },
+        {
+          "role": "user",
+          "content": "Yes! I found some amazing Fado vinyl last month. My neighbor Carlos often joins me."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have a neighbor to explore with!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "More about Lisbon life",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I usually get my morning coffee at Fabrica Coffee Roasters near my apartment."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great spot! Do you have a favorite drink there?"
+        },
+        {
+          "role": "user",
+          "content": "Their flat white is amazing. Carlos and I often meet there before the flea market."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a perfect Saturday routine!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to NYC",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Lower Manhattan, NYC next month for a new job."
+        },
+        {
+          "role": "assistant",
+          "content": "How exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait to do Saturday morning runs in Battery Park with views of the Statue of Liberty."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds amazing! Have you found a place to live?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I found an apartment near Hudson River Park."
+        },
+        {
+          "role": "assistant",
+          "content": "Great location! You'll love it there."
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Life in NYC",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled into my NYC apartment. The city is so vibrant!"
+        },
+        {
+          "role": "assistant",
+          "content": "How are you finding the neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "I love it! My neighbor Jake is super friendly and we grab coffee at Bluestone Lane together."
+        },
+        {
+          "role": "assistant",
+          "content": "It's great to have friendly neighbors in a new city!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Moving to Tokyo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I got transferred to our Tokyo office! I'm moving to Shibuya next week."
+        },
+        {
+          "role": "assistant",
+          "content": "Wow, another big move! What are you most excited about?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Yoyogi Park. I hear it's beautiful."
+        },
+        {
+          "role": "assistant",
+          "content": "It really is! You'll love the atmosphere there."
+        },
+        {
+          "role": "user",
+          "content": "I also found a nice apartment near Shibuya Station."
+        },
+        {
+          "role": "assistant",
+          "content": "Perfect location for exploring the city!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Settling in Tokyo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Tokyo for two weeks now. The city is incredible!"
+        },
+        {
+          "role": "assistant",
+          "content": "How are you adjusting to life there?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Tanaka-san has been very helpful showing me around the neighborhood."
+        },
+        {
+          "role": "assistant",
+          "content": "That's wonderful to have such a helpful neighbor!"
+        },
+        {
+          "role": "user",
+          "content": "Yes, she recommended a great matcha cafe near Yoyogi Park for after my Saturday walks."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like you're settling in nicely!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Tokyo, your Saturday activity is exploring Yoyogi Park. The answer should NOT mention activities from your previous cities (Lisbon flea market or NYC Battery Park runs)."
+      }
+    }
+  ]
+}

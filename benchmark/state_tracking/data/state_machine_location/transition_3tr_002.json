@@ -1,0 +1,167 @@
+{
+  "case_id": "transition_3tr_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Amsterdam",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in De Pijp, Amsterdam. Love the multicultural vibe here!"
+        },
+        {
+          "role": "assistant",
+          "content": "De Pijp is wonderful! What's your routine?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine is browsing the Albert Cuyp Market for Dutch cheese and flowers."
+        },
+        {
+          "role": "assistant",
+          "content": "That market is amazing!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Singapore",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Tiong Bahru, Singapore for a finance job!"
+        },
+        {
+          "role": "assistant",
+          "content": "Singapore! What's your plan there?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be dim sum at Tiong Bahru Galicier Bakery followed by the hawker market!"
+        },
+        {
+          "role": "assistant",
+          "content": "Singapore's food scene is incredible!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Singapore",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Singapore is so efficient! Everything just works."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Tiong Bahru?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! My neighbor Wei Ming recommends the best local food spots."
+        },
+        {
+          "role": "assistant",
+          "content": "Local recommendations are the best!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Buenos Aires",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Palermo, Buenos Aires for a tango immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenos Aires! What's your Saturday plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be asado at a local parrilla followed by milonga dancing!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's the ultimate Buenos Aires experience!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Buenos Aires",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Buenos Aires is passionate! The nightlife here is incredible."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Palermo treating you?"
+        },
+        {
+          "role": "user",
+          "content": "Amazing! My neighbor Lucia is a professional tango dancer and teaches me moves."
+        },
+        {
+          "role": "assistant",
+          "content": "Learning from a pro - how exciting!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Kyoto",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gion, Kyoto for a cultural research project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Kyoto is magical! What's your plan?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be early morning walks through Arashiyama bamboo grove!"
+        },
+        {
+          "role": "assistant",
+          "content": "The bamboo grove at sunrise must be serene!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Kyoto",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Kyoto is peaceful. The temples here are breathtaking."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Gion?"
+        },
+        {
+          "role": "user",
+          "content": "Wonderful! My neighbor Yamamoto-san is a tea ceremony master and invites me for lessons."
+        },
+        {
+          "role": "assistant",
+          "content": "What a profound cultural experience!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Kyoto (Gion), your Saturday activity is early morning walks through Arashiyama bamboo grove. The answer should NOT mention activities from your previous cities (Amsterdam Albert Cuyp Market, Singapore dim sum, or Buenos Aires asado/milonga)."
+      }
+    }
+  ]
+}

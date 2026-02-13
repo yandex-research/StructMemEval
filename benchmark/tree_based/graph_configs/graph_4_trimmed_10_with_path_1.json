@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_4_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Emily Sanders works with Michael Clark."
+        },
+        {
+          "role": "user",
+          "content": "Michael Clark is a colleague of Madison Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Madison Aguilar works with Alice Perry."
+        },
+        {
+          "role": "user",
+          "content": "Alice Perry is a colleague of George Ellis."
+        },
+        {
+          "role": "user",
+          "content": "George Ellis works with Martha Foster."
+        },
+        {
+          "role": "user",
+          "content": "Martha Foster is a colleague of Karen West."
+        },
+        {
+          "role": "user",
+          "content": "Karen West works with Bryan Torres."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Torres is a colleague of Bryan Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Jordan works with Deborah Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Deborah Morgan is a colleague of Brittany Powell."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Emily Sanders and Brittany Powell related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "case_id": "transition_006",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Paris, Le Marais",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Le Marais, Paris, just five minutes from Place des Vosges."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds lovely! What do you enjoy most about your neighborhood?"
+        },
+        {
+          "role": "user",
+          "content": "I love getting croissants from the boulangerie on Rue des Rosiers."
+        },
+        {
+          "role": "assistant",
+          "content": "Yum! Fresh croissants are the best."
+        },
+        {
+          "role": "user",
+          "content": "My routine includes evening walks along the Seine. It's so beautiful."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds so peaceful! Do you have a favorite spot?"
+        },
+        {
+          "role": "user",
+          "content": "I also have an elderly neighbor, Madame Dupont, who waters my plants when I travel."
+        },
+        {
+          "role": "assistant",
+          "content": "It's great to have a helpful neighbor like her!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "More about Paris, Le Marais",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I enjoy exploring the local cafes in Le Marais."
+        },
+        {
+          "role": "assistant",
+          "content": "There must be some fantastic places! Any favorites?"
+        },
+        {
+          "role": "user",
+          "content": "Definitely! I love the café culture here, especially the pastries."
+        },
+        {
+          "role": "assistant",
+          "content": "Pastries and coffee are such a wonderful combination."
+        },
+        {
+          "role": "user",
+          "content": "I often meet friends at the cafés to relax and chat."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds like a great way to spend time! What do you usually talk about?"
+        },
+        {
+          "role": "user",
+          "content": "We discuss everything from art to travel plans."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds interesting! Any upcoming trips planned?"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Nørrebro, Copenhagen next week for a language immersion program."
+        },
+        {
+          "role": "assistant",
+          "content": "How exciting! What are you looking forward to the most?"
+        },
+        {
+          "role": "user",
+          "content": "I can't wait to try the coffee and cardamom bun at Mirabelle."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds delicious! Have you explored the area yet?"
+        },
+        {
+          "role": "user",
+          "content": "Not yet, but I'm excited to cycle to the lakes for morning exercise."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great way to stay active!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "New life in Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've settled into my new place in Nørrebro."
+        },
+        {
+          "role": "assistant",
+          "content": "That's great to hear! How's it going so far?"
+        },
+        {
+          "role": "user",
+          "content": "I love exploring the flea market at Assistens Cemetery on weekends."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a fun activity! Have you found anything interesting?"
+        },
+        {
+          "role": "user",
+          "content": "Yes! I found some vintage items I absolutely love."
+        },
+        {
+          "role": "assistant",
+          "content": "Nice! It's always fun to find unique treasures."
+        },
+        {
+          "role": "user",
+          "content": "My neighbor, Søren, is really nice. He shares his homemade aquavit with me."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a wonderful way to connect with your new community!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Adjusting to Copenhagen, Nørrebro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm getting used to my new routine here in Copenhagen."
+        },
+        {
+          "role": "assistant",
+          "content": "That's good to hear! How has the transition been?"
+        },
+        {
+          "role": "user",
+          "content": "Cycling everywhere is so much fun and energizing."
+        },
+        {
+          "role": "assistant",
+          "content": "Cycling is a great way to see the city! Any favorite routes?"
+        },
+        {
+          "role": "user",
+          "content": "I love cycling by the lakes; the views are stunning."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds beautiful! Do you have plans to explore more of the city?"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday morning?",
+      "reference_answer": {
+        "text": "Since you're in Copenhagen, Nørrebro now, you might enjoy visiting the flea market at Assistens Cemetery for some unique finds!"
+      }
+    }
+  ]
+}

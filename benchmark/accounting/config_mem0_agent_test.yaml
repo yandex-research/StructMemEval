@@ -1,0 +1,59 @@
+mem0:
+  llm:
+    provider: openai
+    model: google/gemini-3-pro-preview
+    api_key: ${LLM_API_KEY}
+    openrouter_base_url: ${LLM_BASE_URL}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    openai_base_url: ${OPENAI_BASE_URL}
+
+  vector_db:
+    provider: qdrant
+    collection_name: benchmark_debts_test
+    path: ./qdrant_data_test
+    embedding_model_dims: 3072
+
+  benchmark:
+    user_id: benchmark_user_debts_test
+    retrieve_limit: 10
+    infer: false
+    mem0_agent_iterations: 5
+    mem0_agent_search_limit: 50
+
+mem_agent:
+  model: google/gemini-3-pro-preview
+  memory_path: memory_mem_agent_test
+  use_vllm: false
+  api_key: ${LLM_API_KEY}
+
+benchmark:
+  data_paths:
+    - data/debt_tracker_10percent.json
+
+  # Only 1 checkpoint: first 10 messages
+  message_checkpoints: [0, 10]
+
+  # Only 2 sessions (not all 5)
+  max_sessions: 2
+
+  # Skip mem0 RAG (already has results)
+  mem0_limits: []
+
+  # Test both mem0 agent variants
+  mem0_agent_prompts:
+    - name: mem0_agent_no_hint
+      loading_prompt: prompts/mem0_agent_loading_no_hint.txt
+      query_prompt: prompts/mem0_agent_query_no_hint.txt
+    - name: mem0_agent_hint
+      loading_prompt: prompts/mem0_agent_loading_hint_debt.txt
+      query_prompt: prompts/mem0_agent_query_hint_debt.txt
+
+  # Skip mem-agent (already has results)
+  agent_prompts: []
+
+  output_dir: eval_results
+  verbose: false

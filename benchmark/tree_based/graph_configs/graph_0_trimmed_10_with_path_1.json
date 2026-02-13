@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_0_trimmed_10_with_path_1",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Johnny Fisher works with Christopher Peterson."
+        },
+        {
+          "role": "user",
+          "content": "Christopher Peterson is a colleague of Kathleen Herrera."
+        },
+        {
+          "role": "user",
+          "content": "Kathleen Herrera works with Linda Brooks."
+        },
+        {
+          "role": "user",
+          "content": "Linda Brooks is a colleague of Amanda Myers."
+        },
+        {
+          "role": "user",
+          "content": "Amanda Myers works with Janet Edwards."
+        },
+        {
+          "role": "user",
+          "content": "Janet Edwards is a colleague of Cynthia Scott."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Scott works with Lawrence Scott."
+        },
+        {
+          "role": "user",
+          "content": "Lawrence Scott is a colleague of Abigail Harris."
+        },
+        {
+          "role": "user",
+          "content": "Abigail Harris works with Joan Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Joan Morgan is a colleague of Brenda Nguyen."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Brenda Nguyen and Johnny Fisher related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

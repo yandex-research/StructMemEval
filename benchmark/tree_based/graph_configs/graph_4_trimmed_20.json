@@ -1,0 +1,104 @@
+{
+  "case_id": "graph_4_trimmed_20",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Emily Sanders works with Michael Clark."
+        },
+        {
+          "role": "user",
+          "content": "Michael Clark is a colleague of Madison Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Madison Aguilar works with Alice Perry."
+        },
+        {
+          "role": "user",
+          "content": "Alice Perry is a colleague of George Ellis."
+        },
+        {
+          "role": "user",
+          "content": "George Ellis works with Martha Foster."
+        },
+        {
+          "role": "user",
+          "content": "Martha Foster is a colleague of Karen West."
+        },
+        {
+          "role": "user",
+          "content": "Karen West works with Bryan Torres."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Torres is a colleague of Bryan Jordan."
+        },
+        {
+          "role": "user",
+          "content": "Bryan Jordan works with Deborah Morgan."
+        },
+        {
+          "role": "user",
+          "content": "Deborah Morgan is a colleague of Brittany Powell."
+        },
+        {
+          "role": "user",
+          "content": "Walter Russell works with Evelyn Jackson."
+        },
+        {
+          "role": "user",
+          "content": "Evelyn Jackson is a colleague of Cynthia Baker."
+        },
+        {
+          "role": "user",
+          "content": "Cynthia Baker works with Megan Medina."
+        },
+        {
+          "role": "user",
+          "content": "Megan Medina is a colleague of Jerry Richardson."
+        },
+        {
+          "role": "user",
+          "content": "Jerry Richardson works with Sara Murphy."
+        },
+        {
+          "role": "user",
+          "content": "Sara Murphy is a colleague of Jordan Reed."
+        },
+        {
+          "role": "user",
+          "content": "Jordan Reed works with Randy Allen."
+        },
+        {
+          "role": "user",
+          "content": "Randy Allen is a colleague of Kimberly Aguilar."
+        },
+        {
+          "role": "user",
+          "content": "Kimberly Aguilar works with Dorothy Vasquez."
+        },
+        {
+          "role": "user",
+          "content": "Dorothy Vasquez is a colleague of Marilyn Long."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Emily Sanders and Brittany Powell related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    },
+    {
+      "question": "Are Walter Russell and Marilyn Long related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

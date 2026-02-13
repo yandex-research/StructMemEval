@@ -1,0 +1,58 @@
+{
+  "case_id": "graph_3_trimmed_10_with_path_2",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Justin Harrison works with Jonathan Ruiz."
+        },
+        {
+          "role": "user",
+          "content": "Jonathan Ruiz is a colleague of Ronald Lopez."
+        },
+        {
+          "role": "user",
+          "content": "Ronald Lopez works with Joe Ford."
+        },
+        {
+          "role": "user",
+          "content": "Joe Ford is a colleague of Sara Perry."
+        },
+        {
+          "role": "user",
+          "content": "Sara Perry works with Gregory Collins."
+        },
+        {
+          "role": "user",
+          "content": "Gregory Collins is a colleague of Austin Ellis."
+        },
+        {
+          "role": "user",
+          "content": "Austin Ellis works with Robert Woods."
+        },
+        {
+          "role": "user",
+          "content": "Robert Woods is a colleague of Cheryl Nguyen."
+        },
+        {
+          "role": "user",
+          "content": "Cheryl Nguyen works with Eugene Gray."
+        },
+        {
+          "role": "user",
+          "content": "Eugene Gray is a colleague of Janice Jones."
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Are Justin Harrison and Janice Jones related to each other at work through colleagues relations?",
+      "reference_answer": {
+        "text": "Yes, they are indirect colleagues according to their graph relations."
+      }
+    }
+  ]
+}

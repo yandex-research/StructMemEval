@@ -1,0 +1,5 @@
+input_path: eval_results/results_debt_tracker_10percent_mem_agent_MESSAGES_0.json
+prompt_path: prompt.txt
+output_path: results/judge_output.json
+model: gpt-4o-mini
+api_key: ${OPENAI_API_KEY}

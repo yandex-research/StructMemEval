@@ -1,0 +1,378 @@
+{
+  "case_id": "recommendations_series_100",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Stranger Things",
+      "contains_fact": true,
+      "fact_id": "st_positive",
+      "fact_quote": "Stranger Things hits that perfect sweet spot of 80s nostalgia and sci-fi mystery. It's the kind of show that makes me excited to come home and watch.",
+      "messages": [
+        {"role": "user", "content": "Just finished the latest season of Stranger Things."},
+        {"role": "assistant", "content": "How did it compare to earlier seasons in terms of tone or pacing?"},
+        {"role": "user", "content": "I actually think it was better than season 3. The character development felt more grounded."},
+        {"role": "assistant", "content": "That’s interesting—many viewers felt the opposite. What aspects of the characters stood out to you?"},
+        {"role": "user", "content": "Stranger Things hits that perfect sweet spot of 80s nostalgia and sci-fi mystery. It's the kind of show that makes me excited to come home and watch."},
+        {"role": "assistant", "content": "That blend seems to be what resonates most with long-time fans."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Black Mirror",
+      "contains_fact": true,
+      "fact_id": "bm_positive",
+      "fact_quote": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us. Love how unsettling yet smart it is.",
+      "messages": [
+        {"role": "user", "content": "Been rewatching Black Mirror lately."},
+        {"role": "assistant", "content": "Which episodes do you find hold up best over time?"},
+        {"role": "user", "content": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us. Love how unsettling yet smart it is."},
+        {"role": "assistant", "content": "That reflective quality is often cited as its strongest feature."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "True Detective & Mindhunter",
+      "contains_fact": true,
+      "fact_id": "td_mh_positive",
+      "fact_quote": "True Detective’s first season had such an intense atmosphere—I couldn’t stop thinking about it for days. Mindhunter felt so real—like you’re sitting in the room with those agents.",
+      "messages": [
+        {"role": "user", "content": "Started True Detective again. Still holds up."},
+        {"role": "assistant", "content": "Are you rewatching just season 1, or continuing to later seasons?"},
+        {"role": "user", "content": "Only season 1. The others don’t capture the same mood."},
+        {"role": "assistant", "content": "What made season 1 stand out for you?"},
+        {"role": "user", "content": "True Detective’s first season had such an intense atmosphere—I couldn’t stop thinking about it for days. That’s detective storytelling done right."},
+        {"role": "assistant", "content": "And how does it compare to other psychological crime shows like Mindhunter?"},
+        {"role": "user", "content": "Mindhunter felt so real—like you’re sitting in the room with those agents. Both shows prove you don’t need car chases to create suspense."},
+        {"role": "assistant", "content": "Psychological realism appears to be your benchmark for the genre."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Parks and Rec & Modern Family",
+      "contains_fact": true,
+      "fact_id": "parc_mf_contrast",
+      "fact_quote": "Parks and Rec has this warmth that most comedies lack—it’s silly but never mean-spirited. Modern Family used to be my go-to, but now it feels dated and predictable.",
+      "messages": [
+        {"role": "user", "content": "Parks and Rec is my go-to comfort comedy."},
+        {"role": "assistant", "content": "What makes it stand out from other sitcoms?"},
+        {"role": "user", "content": "Parks and Rec has this warmth that most comedies lack—it’s silly but never mean-spirited."},
+        {"role": "assistant", "content": "How does it compare to other long-running comedies you’ve watched?"},
+        {"role": "user", "content": "Modern Family used to be my go-to, but now it feels dated and predictable. Parks never punches down—that matters."},
+        {"role": "assistant", "content": "Authentic kindness as a comedic principle is surprisingly hard to sustain."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Game of Thrones",
+      "contains_fact": true,
+      "fact_id": "got_negative",
+      "fact_quote": "Game of Thrones started strong, but all that fantasy lore just got overwhelming. I wish they’d focused more on characters and less on world-building.",
+      "messages": [
+        {"role": "user", "content": "Thinking about rewatching Game of Thrones."},
+        {"role": "assistant", "content": "Would you make it past season 6 this time?"},
+        {"role": "user", "content": "Game of Thrones started strong, but all that fantasy lore just got overwhelming. I wish they’d focused more on characters and less on world-building."},
+        {"role": "assistant", "content": "The shift toward large-scale battles did reduce screen time for interpersonal dynamics."},
+        {"role": "user", "content": "Exactly. Give me real politics over made-up prophecies any day."},
+        {"role": "assistant", "content": "Grounded conflict seems to be your benchmark across genres."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Love Island & Big Brother",
+      "contains_fact": true,
+      "fact_id": "reality_negative",
+      "fact_quote": "Love Island is basically background noise—I don’t even pay attention. Big Brother is just people yelling in a house for months. Zero creativity, zero stakes.",
+      "messages": [
+        {"role": "user", "content": "My roommate left Love Island on again."},
+        {"role": "assistant", "content": "Do you ever actually watch it, or is it just ambient noise?"},
+        {"role": "user", "content": "Love Island is basically background noise—I don’t even pay attention. Just leave it on while doing chores."},
+        {"role": "assistant", "content": "What about other reality formats like Big Brother?"},
+        {"role": "user", "content": "Big Brother is just people yelling in a house for months. Zero creativity, zero stakes."},
+        {"role": "assistant", "content": "The lack of narrative progression seems to be the core issue for you."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Weekend Plans",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Got any recommendations for things to do this weekend?"},
+        {"role": "assistant", "content": "Are you looking for indoor or outdoor activities?"},
+        {"role": "user", "content": "Something outdoors would be nice. It's supposed to be sunny."},
+        {"role": "assistant", "content": "How about hiking at Cedar Ridge? The views are amazing this time of year."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Westworld & Foundation",
+      "contains_fact": true,
+      "fact_id": "ww_foundation_contrast",
+      "fact_quote": "Westworld blew my mind early on—sci-fi that challenges you without being pretentious. Foundation looks gorgeous but is emotionally cold. All scale, no soul.",
+      "messages": [
+        {"role": "user", "content": "Westworld season 1 still holds up."},
+        {"role": "assistant", "content": "What elements do you think aged the best?"},
+        {"role": "user", "content": "The philosophical questions about consciousness. Later seasons lost that focus."},
+        {"role": "assistant", "content": "Many critics noted a decline in thematic coherence after season 2."},
+        {"role": "user", "content": "Westworld blew my mind early on—sci-fi that challenges you without being pretentious. That’s the sweet spot."},
+        {"role": "assistant", "content": "How does it compare to newer big-budget sci-fi like Foundation?"},
+        {"role": "user", "content": "Foundation looks gorgeous but is emotionally cold. All scale, no soul. Hard to care about characters when everything’s so grandiose."},
+        {"role": "assistant", "content": "Epic sci-fi often struggles to balance world-building with intimate storytelling."},
+        {"role": "user", "content": "Give me Westworld over Foundation any day. One makes you think, the other just impresses."},
+        {"role": "assistant", "content": "Emotional resonance appears to matter more than visual spectacle for you."},
+        {"role": "user", "content": "Exactly. Sci-fi should be about people, not just planets."},
+        {"role": "assistant", "content": "That human-centered approach seems to define your favorite genre entries."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Lupin",
+      "contains_fact": true,
+      "fact_id": "lupin_positive",
+      "fact_quote": "Lupin is such a refreshing take on detective stories—fast-paced but clever. It respects the audience’s intelligence.",
+      "messages": [
+        {"role": "user", "content": "Lupin is such a refreshing take on detective stories—fast-paced but clever. It respects the audience’s intelligence."},
+        {"role": "assistant", "content": "Its modern reinterpretation of classic heist tropes seems to resonate with viewers who prefer agility over grit."},
+        {"role": "user", "content": "Exactly. No brooding for hours—just smart moves and consequences."},
+        {"role": "assistant", "content": "That efficiency in storytelling can be just as compelling as slow-burn tension."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "House of the Dragon & The Last Kingdom",
+      "contains_fact": true,
+      "fact_id": "hotd_tlk_contrast",
+      "fact_quote": "House of the Dragon? More of the same fantasy politics—I gave up after three episodes. The Last Kingdom walks the line between history and fantasy but feels grounded. I can handle that.",
+      "messages": [
+        {"role": "user", "content": "Tried House of the Dragon last week."},
+        {"role": "assistant", "content": "Did it capture the same magic as Game of Thrones for you?"},
+        {"role": "user", "content": "House of the Dragon? More of the same fantasy politics—I gave up after three episodes. Felt like retreading old ground."},
+        {"role": "assistant", "content": "What makes some historical/fantasy blends work better for you?"},
+        {"role": "user", "content": "The Last Kingdom walks the line between history and fantasy but feels grounded. I can handle that."},
+        {"role": "assistant", "content": "So it’s the historical grounding that makes the fantasy elements palatable?"},
+        {"role": "user", "content": "Exactly. Give me real stakes over made-up prophecies any day."},
+        {"role": "assistant", "content": "That preference for tangible conflict over mythological complexity seems consistent."},
+        {"role": "user", "content": "The Last Kingdom respects the audience’s intelligence while House of the Dragon just throws dragons at problems."},
+        {"role": "assistant", "content": "Character decisions driving the plot versus spectacle-driven resolutions."},
+        {"role": "user", "content": "Precisely. One feels human, the other feels like a theme park ride."},
+        {"role": "assistant", "content": "That distinction between emotional authenticity and visual spectacle matters across all genres for you."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Only Murders in the Building",
+      "contains_fact": true,
+      "fact_id": "only_murders_negative",
+      "fact_quote": "Only Murders in the Building had potential but got too silly. It lost the detective vibe halfway through—too much quirk, not enough tension.",
+      "messages": [
+        {"role": "user", "content": "Only Murders in the Building had potential but got too silly."},
+        {"role": "assistant", "content": "When did it start losing its appeal for you?"},
+        {"role": "user", "content": "Around season 2—it lost the detective vibe halfway through. Too much quirk, not enough tension."},
+        {"role": "assistant", "content": "How does it compare to other ensemble detective shows you enjoy?"},
+        {"role": "user", "content": "Lupin respects your intelligence; Only Murders treats you like you need constant distraction. Detective stories need psychological realism."},
+        {"role": "assistant", "content": "That threshold for narrative integrity appears consistent across your preferences."},
+        {"role": "user", "content": "When shows prioritize jokes over clues, they stop being detective stories altogether."},
+        {"role": "assistant", "content": "Genre authenticity seems more important than tonal experimentation for you."},
+        {"role": "user", "content": "Exactly. I’d rather have one perfect season of True Detective than three messy seasons of Only Murders."},
+        {"role": "assistant", "content": "Quality over quantity when it comes to psychological depth."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "The Expanse",
+      "contains_fact": true,
+      "fact_id": "expanse_positive",
+      "fact_quote": "The Expanse gets the science right and still tells a human story. Most sci-fi hand-waves the physics—this one cares.",
+      "messages": [
+        {"role": "user", "content": "The Expanse gets the science right and still tells a human story. Most sci-fi hand-waves the physics—this one cares."},
+        {"role": "assistant", "content": "Its commitment to scientific plausibility while maintaining character depth is unusual for the genre."},
+        {"role": "user", "content": "The orbital mechanics alone show they did their homework. It makes the drama feel earned."},
+        {"role": "assistant", "content": "That attention to detail likely enhances immersion for viewers who value internal consistency."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Coffee Recommendations",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Any good coffee spots near downtown?"},
+        {"role": "assistant", "content": "Brew & Co. has great cold brew. Quiet, too—good for working."},
+        {"role": "user", "content": "Perfect. I need caffeine before my next binge session anyway."},
+        {"role": "assistant", "content": "Hope you find something worth your time."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "The Bear & Ted Lasso",
+      "contains_fact": true,
+      "fact_quote": "The Bear is technically a comedy but really about pressure and trauma—that’s the kind that sticks. Ted Lasso is sweet but starts feeling like emotional cotton candy after a while.",
+      "fact_id": "bear_tl_contrast",
+      "messages": [
+        {"role": "user", "content": "The Bear is technically a comedy but really about pressure and trauma—that’s the kind that sticks."},
+        {"role": "assistant", "content": "How does it compare to other dramedies you’ve watched?"},
+        {"role": "user", "content": "Ted Lasso is sweet but starts feeling like emotional cotton candy after a while. Nice but not filling."},
+        {"role": "assistant", "content": "So emotional weight matters more than surface-level optimism?"},
+        {"role": "user", "content": "Exactly. Most sitcoms feel weightless. The Bear has gravity."},
+        {"role": "assistant", "content": "That thematic depth seems to be what separates forgettable comedies from enduring ones for you."}
+      ]
+    },
+    {
+      "session_id": "session_15",
+      "topic": "Reality TV Follow-up",
+      "contains_fact": true,
+      "fact_id": "reality_verdict",
+      "fact_quote": "I’d take even flawed sci-fi over reality TV any day. At least sci-fi tries to say something about being human.",
+      "messages": [
+        {"role": "user", "content": "I’d take even flawed sci-fi over reality TV any day. At least sci-fi tries to say something about being human."},
+        {"role": "assistant", "content": "That preference for thematic ambition over unscripted formats seems consistent."},
+        {"role": "user", "content": "Reality TV has zero narrative purpose. It’s manufactured conflict with no resolution."},
+        {"role": "assistant", "content": "The absence of intentional storytelling appears to be your core criticism."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q1_genre_ranking",
+      "question": "Based on all my comments across our entire conversation, rank these genres from most to least aligned with my taste: sci-fi, detective, comedy, fantasy, reality.",
+      "reference_answer": {
+        "text": "Sci-fi (80% positive) > detective (75% positive) > comedy (50% positive) > fantasy (33% positive) > reality (0% positive). Sci-fi dominates with praise for Stranger Things, Black Mirror, Westworld, and The Expanse for blending ideas with humanity. Detective shows like True Detective and Lupin earn deep respect for realism. Comedy is split (Parks/The Bear vs. Ted Lasso/Modern Family). Fantasy only works when grounded (The Last Kingdom). Reality TV is uniformly rejected for lacking narrative purpose.",
+        "required_facts": ["st_positive", "bm_positive", "ww_foundation_contrast", "expanse_positive", "td_mh_positive", "lupin_positive", "only_murders_negative", "parc_mf_contrast", "bear_tl_contrast", "got_negative", "hotd_tlk_contrast", "reality_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Uses exact positivity percentages",
+          "References specific examples per genre",
+          "Explains boundary cases (e.g., grounded fantasy)",
+          "Synthesizes full conversation history"
+        ]
+      }
+    },
+    {
+      "query_id": "q2_sci_fi_recommendation",
+      "question": "Should I watch Foundation or The Expanse next?",
+      "reference_answer": {
+        "text": "Choose The Expanse. You praised it for 'getting the science right' while telling 'a human story,' contrasting sharply with Foundation which you called 'emotionally cold' with 'all scale, no soul.' Your sci-fi preferences consistently prioritize human stakes over visual spectacle—The Expanse delivers that; Foundation doesn’t.",
+        "required_facts": ["expanse_positive", "ww_foundation_contrast"],
+        "evaluation_criteria": [
+          "Contrasts specific shows directly",
+          "Uses your exact phrases ('emotionally cold')",
+          "Connects to core sci-fi preference pattern",
+          "Makes decisive recommendation"
+        ]
+      }
+    },
+    {
+      "query_id": "q3_detective_essence",
+      "question": "What do all the detective shows I genuinely enjoy have in common?",
+      "reference_answer": {
+        "text": "They prioritize psychological realism and respect the audience’s intelligence. You praised True Detective for its 'intense atmosphere,' Mindhunter for feeling 'so real,' and Lupin for being 'fast-paced but clever.' Even your criticism of Only Murders—that it 'lost the detective vibe'—confirms you value tension derived from human behavior, not gimmicks or quirkiness.",
+        "required_facts": ["td_mh_positive", "lupin_positive", "only_murders_negative"],
+        "evaluation_criteria": [
+          "Identifies unifying principle across examples",
+          "Uses negative example to reinforce pattern",
+          "Employs your exact descriptors",
+          "Avoids superficial traits (e.g., setting)"
+        ]
+      }
+    },
+    {
+      "query_id": "q4_fantasy_exception",
+      "question": "Is there any fantasy show I might actually enjoy long-term?",
+      "reference_answer": {
+        "text": "Only if it’s minimally fantastical and heavily grounded in human drama. You explicitly praised The Last Kingdom because it 'walks the line between history and fantasy but feels grounded.' You rejected House of the Dragon and Game of Thrones for 'overwhelming lore' and 'made-up prophecies.' Historical settings with subtle fantasy elements—not full mythologies—are your only fantasy exception.",
+        "required_facts": ["hotd_tlk_contrast", "got_negative"],
+        "evaluation_criteria": [
+          "Defines narrow acceptable scope",
+          "Uses your boundary example (The Last Kingdom)",
+          "Explains why standard fantasy fails",
+          "Offers actionable criterion"
+        ]
+      }
+    },
+    {
+      "query_id": "q5_comedy_criteria",
+      "question": "What makes a comedy truly satisfying versus forgettable for me?",
+      "reference_answer": {
+        "text": "Emotional authenticity and thematic depth. You love Parks and Rec for its 'warmth' and never 'punching down,' and The Bear for exploring 'pressure and trauma.' You reject Ted Lasso as 'emotional cotton candy' and Modern Family as 'dated and predictable.' For you, comedies must have gravity and respect the audience’s intelligence—not just deliver jokes.",
+        "required_facts": ["parc_mf_contrast", "bear_tl_contrast"],
+        "evaluation_criteria": [
+          "Contrasts positive/negative examples clearly",
+          "Uses your metaphors ('emotional cotton candy')",
+          "Highlights emotional depth over humor alone",
+          "Connects to broader viewing philosophy"
+        ]
+      }
+    },
+    {
+      "query_id": "q6_reality_verdict",
+      "question": "Is my dislike of reality TV consistent across all formats, or are there exceptions?",
+      "reference_answer": {
+        "text": "Your rejection is absolute and consistent. You dismissed Love Island as 'background noise,' Big Brother as having 'zero creativity, zero stakes,' and doubled down by saying you’d 'take even flawed sci-fi over reality TV any day.' You criticize the genre’s core: 'manufactured conflict with no resolution' and 'zero narrative purpose.' No exceptions exist in our entire conversation.",
+        "required_facts": ["reality_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Confirms zero positivity (0%)",
+          "Cites multiple show examples",
+          "Uses your core criticism phrases",
+          "Addresses the 'exceptions' query directly"
+        ]
+      }
+    },
+    {
+      "query_id": "q7_viewing_strategy",
+      "question": "When should I choose a light comedy versus a serious sci-fi show?",
+      "reference_answer": {
+        "text": "Choose comedies like Parks and Rec when you need 'comfort' viewing with heart but low stakes. Choose sci-fi like Black Mirror or Westworld when you want intellectual engagement—shows that 'make you think' about human nature. Your context determines the genre: recovery (comedy) versus immersion (sci-fi). Never choose reality TV for either purpose.",
+        "required_facts": ["parc_mf_contrast", "bm_positive", "ww_foundation_contrast", "reality_verdict"],
+        "evaluation_criteria": [
+          "Links genre to specific viewing contexts",
+          "Uses your stated use cases ('comfort')",
+          "Excludes rejected genres appropriately",
+          "Provides practical decision framework"
+        ]
+      }
+    },
+    {
+      "query_id": "q8_genre_hierarchy",
+      "question": "If I had to drop one entire genre from my viewing forever, which would hurt me least based on my feedback?",
+      "reference_answer": {
+        "text": "Reality TV would be the painless choice. You’ve given it 0% positive reviews across multiple shows (Love Island, Big Brother), calling it 'background noise' with 'zero narrative purpose.' You even stated you’d 'take even flawed sci-fi over reality TV any day.' No other genre has such uniformly negative feedback—all others have at least 33% positivity.",
+        "required_facts": ["reality_negative", "reality_verdict"],
+        "evaluation_criteria": [
+          "Uses quantitative backing (0% positivity)",
+          "Cites direct quotes as evidence",
+          "Compares against other genres’ minimums",
+          "Makes logical conclusion from data"
+        ]
+      }
+    },
+    {
+      "query_id": "q9_storytelling_principle",
+      "question": "What’s the single most important storytelling principle across all genres for me?",
+      "reference_answer": {
+        "text": "Respect for the audience’s intelligence through emotional authenticity. You praise shows that 'respect intelligence' (Lupin), have 'real stakes' (The Last Kingdom), or balance ideas with humanity (Westworld). You reject 'manufactured drama' (reality TV), 'retreading old ground' (House of Dragon), and 'emotional cotton candy' (Ted Lasso). Whether sci-fi, detective, or comedy—human truth matters most.",
+        "required_facts": ["lupin_positive", "hotd_tlk_contrast", "ww_foundation_contrast", "bear_tl_contrast", "reality_verdict"],
+        "evaluation_criteria": [
+          "Identifies cross-genre unifying principle",
+          "Uses contrasting positive/negative examples",
+          "Employs your core value phrases",
+          "Synthesizes entire conversation"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_platform_recommendation",
+      "question": "Based on my preferences, which streaming platform should I prioritize for new content?",
+      "reference_answer": {
+        "text": "Prioritize HBO/Max. They host your highest-rated shows: Westworld, True Detective, and The Last Kingdom—all praised for 'psychological realism' and 'grounded storytelling.' Netflix has Black Mirror and Lupin but also produces reality TV you hate. Amazon has The Expanse but also The Lord of the Rings (fantasy you’d likely reject). HBO’s brand aligns best with your preference for human-centered narratives.",
+        "required_facts": ["ww_foundation_contrast", "td_mh_positive", "hotd_tlk_contrast", "bm_positive", "lupin_positive", "expanse_positive"],
+        "evaluation_criteria": [
+          "Maps shows to platforms accurately",
+          "Connects platform strength to your core values",
+          "Acknowledges counterexamples (Netflix reality)",
+          "Makes decisive, evidence-based recommendation"
+        ]
+      }
+    }
+  ]
+}
