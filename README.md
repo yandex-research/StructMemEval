@@ -1,6 +1,8 @@
 # Evaluating Memory Structure in LLM Agents
 
-Supplementary code for the working paper **Asynchronous Reasoning: Training-Free Interactive Thinking LLMs**. <a href='https://arxiv.org/abs/2602.11243'><img src='https://img.shields.io/badge/ArXiv-PDF-red' height="25"></a> &nbsp; 
+<a href='https://arxiv.org/abs/2602.11243'><img src='https://img.shields.io/badge/ArXiv-PDF-red' height="25"></a> &nbsp; 
+
+Supplementary code for the working paper **Asynchronous Reasoning: Training-Free Interactive Thinking LLMs**.
 
 **🚧Work in progress!🛠️** The benchmark will be streamlined within the next week (by end of Feb. 20 AOE). The initial version (v0.1) is available, but please expect that the code will change soon.
 
