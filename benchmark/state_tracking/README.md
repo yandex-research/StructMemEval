@@ -17,14 +17,14 @@ Output: `eval_results/results_mem_agent.json`, `eval_results/results_mem0.json`
 python judge/judge.py --config judge/config.yaml
 
 Config (`judge/config.yaml`):
-- input_path: путь к JSON результатам eval
-- model: модель для judge
+- input_path: path to eval results from the previous step
+- model: the LLM to use as a judge
 
-Output: {"num_examples": 1, "mean_score": 0.5, "details": [...]}
+Output: {"num_examples": ..., "mean_score": ..., "details": [...]}
 
-## Добавление своих примеров
+## Adding / editing examples
 
-1. Создать файл данных в `data/`:
+1. Create / edit files in `data/`:
 ```json
 {
   "case_id": "my_case",
@@ -37,9 +37,9 @@ Output: {"num_examples": 1, "mean_score": 0.5, "details": [...]}
 }
 ```
 
-2. Создать промпт в `prompts/` (можно скопировать существующий и модифицировать)
+2. Create a prompt (or hint) in `prompts/` (we recommend looking at existing prompts first)
 
-3. Добавить case в `config.yaml`:
+3. Add `config.yaml`:
 ```yaml
 benchmark:
   cases:
@@ -47,7 +47,7 @@ benchmark:
       prompt_path: prompts/my_prompt.txt
 ```
 
-4. Для отладки — закомментировать остальные cases:
+4. For debugging, you can comment-out other cases like this:
 ```yaml
 benchmark:
   cases:
@@ -57,7 +57,7 @@ benchmark:
       prompt_path: prompts/my_prompt.txt
 ```
 
-5. Запустить:
+5. Run benchmark & judge as usual:
 ```bash
 python benchmark.py
 python judge/judge.py --config judge/config.yaml
