@@ -17,14 +17,14 @@ Output: `eval_results/results_mem_agent.json`, `eval_results/results_mem0.json`
 python judge/judge.py --config judge/config.yaml
 
 Config (`judge/config.yaml`):
-- input_path: путь к JSON результатам eval
-- model: модель для judge
+- input_path: path to eval results from the previous step
+- model: the LLM to use as a judge
 
-Output: {"num_examples": 1, "mean_score": 0.5, "details": [...]}
+Output: {"num_examples": ..., "mean_score": ..., "details": [...]}
 
-## Добавление своих примеров
+## Adding / editing examples
 
-1. Создать файл данных в `data/`:
+1. Create / edit files in `data/`:
 ```json
 {
   "case_id": "my_case",
@@ -37,9 +37,9 @@ Output: {"num_examples": 1, "mean_score": 0.5, "details": [...]}
 }
 ```
 
-2. Создать промпт в `prompts/` (можно скопировать существующий и модифицировать)
+2. Create a prompt (or hint) in `prompts/` (we recommend looking at existing prompts first)
 
-3. Добавить case в `config.yaml`:
+3. Add `config.yaml`:
 ```yaml
 benchmark:
   cases:
@@ -47,7 +47,7 @@ benchmark:
       prompt_path: prompts/my_prompt.txt
 ```
 
-4. Для отладки — закомментировать остальные cases:
+4. For debugging, you can comment-out other cases like this:
 ```yaml
 benchmark:
   cases:
@@ -57,34 +57,35 @@ benchmark:
       prompt_path: prompts/my_prompt.txt
 ```
 
-5. Запустить оценку
+5. Run benchmark & judge as usual:
 
-1. **Убедитесь, что judge-конфиг ссылается на нужный файл с результатами.**  
-   В `judge/config.yaml` должно быть указано:
+
+- **Make sure judge points to the correct results file.**  
+   The config `judge/config.yaml` should have the following lines:
    ```yaml
-   input_path: eval_results/results_mem_agent.json   # или results_mem0.json
-   prompt_path: judge/judge_prompt.txt               # шаблон для judge-модели
+   input_path: eval_results/results_mem_agent.json   # or results_mem0.json
+   prompt_path: judge/judge_prompt.txt               # judge model prompt template
    output_path: judge/results/my_case_judge.json
    model: gpt-4o-mini
    api_key: ${OPENAI_API_KEY}
    
-   # Опционально: фильтрация по конкретной паре (case_id, prompt_path)
+   # Optional: filter specific (case_id, prompt_path)
    filter_case_id:
      - my_case
    filter_prompt_path:
      - prompts/my_prompt.txt
    ```
 
-2. **Запустите judge:**
+2. **Run judge:**
    ```bash
    python judge/judge.py --config judge/config.yaml
    ```
 
-3. **Результаты сохранятся в указанный `output_path`.**  
-   Файл будет содержать:
-   - Общее количество оценённых примеров
-   - Средний бинарный скор (`mean_score`)
-   - Детали по каждому запросу: вопрос, ответ модели, эталон, оценка и метаданные
+3. **The results are saved to `output_path`.**  
+   The file contains:
+   - The total number of samples evaluated
+   - Mean accuracy score
+   - Details on each example: questions, answers, metadata
 
-> 💡 Если вы не используете фильтрацию в конфиге, judge оценит **все примеры** из `input_path`. Чтобы оценить только свой кейс — либо добавьте `filter_case_id`/`filter_prompt_path`, либо временно закомментируйте другие кейсы в `benchmark/cases` перед запуском `benchmark.py`.
+> 💡 If you do not filter cases, the judge will grade **all examples** from `input_path`. To choose specific cases, add `filter_case_id`/`filter_prompt_path`, comment out other cases in `benchmark/cases` before running.
 
