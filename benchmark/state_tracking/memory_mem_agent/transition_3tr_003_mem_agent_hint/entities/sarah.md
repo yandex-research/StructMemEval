@@ -1,2 +1,0 @@
-# Sarah
-- profession: Yoga Instructor

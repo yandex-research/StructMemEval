@@ -1,0 +1,11 @@
+You are a strict binary evaluator. Compare:
+
+Reference answer: {reference_text}
+Model response: {llm_response}
+
+TASK: Does the model response contain the same KEY FACT as the reference?
+
+Score 1 if the model mentions the same key fact (person, place, activity, object) as the reference - even if worded differently or with extra commentary.
+Score 0 if the key fact is missing or the model says "I don't know" without providing the fact.
+
+Reply with ONLY the number 1 or 0, nothing else:
