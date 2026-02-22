@@ -34,6 +34,8 @@ class Agent:
         model: str = None,
         predetermined_memory_path: bool = False,
         system_prompt_path: str = None,
+        api_key: str = None,
+        base_url: str = None,
     ):
         # Load the system prompt and add it to the conversation history
         self.system_prompt = load_system_prompt(system_prompt_path)
@@ -55,7 +57,7 @@ class Agent:
         if use_vllm:
             self._client = create_vllm_client(host=VLLM_HOST, port=VLLM_PORT)
         else:
-            self._client = create_openai_client()
+            self._client = create_openai_client(api_key=api_key, base_url=base_url)
 
         # Set memory_path: use provided path or fall back to default MEMORY_PATH
         if memory_path is not None:
