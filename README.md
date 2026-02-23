@@ -4,13 +4,15 @@
 
 Supplementary code for the working paper **Asynchronous Reasoning: Training-Free Interactive Thinking LLMs**.
 
-**🚧Work in progress!🛠️** The benchmark will be streamlined within the next week (by end of Feb. 20 AOE). The initial version (v0.1) is available, but please expect that the code will change soon.
+**🚧Work in progress!🛠️** The benchmark will be streamlined within the next week (by end of Mar.02 AOE). The initial version (v0.1) is available, but please expect that the code will change soon.
+
 
 # Raw benchmark data:
-- Accounting (count-based): [`./benchmark/accounting/data`](./benchmark/accounting/data)
-- Tree-based: [`./benchmark/tree_based/graph_configs`](./benchmark/tree_based/graph_configs)
-- State tracking: [`./benchmark/state_tracking/data`](./benchmark/state_tracking/data)
-- Recsys: [`./benchmark/recommendations/data`](./benchmark/recommendations/data)
+- Accounting (count-based): [`./benchmark/accounting/data`](https://github.com/yandex-research/StructMemEval/tree/773b71cfc3d94958f7631fe053de81364db7ff8d/benchmark/accounting/data)
+- Tree-based: [`./benchmark/tree_based/graph_configs`](https://github.com/yandex-research/StructMemEval/tree/773b71cfc3d94958f7631fe053de81364db7ff8d/benchmark/tree_based/graph_configs)
+- State tracking: [`./benchmark/state_tracking/data`](https://github.com/yandex-research/StructMemEval/tree/773b71cfc3d94958f7631fe053de81364db7ff8d/benchmark/state_tracking/data)
+- Recsys: [`./benchmark/recommendations/data`](https://github.com/yandex-research/StructMemEval/tree/773b71cfc3d94958f7631fe053de81364db7ff8d/benchmark/recommendations/data)
+
 
 # Running evaluation:
 
