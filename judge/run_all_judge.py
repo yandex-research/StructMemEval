@@ -17,7 +17,7 @@ from openai import OpenAI
 from tqdm import tqdm
 
 # Load .env from project root
-load_dotenv(Path(__file__).parent.parent.parent / ".env")
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 
 def load_prompt(prompt_path: str) -> str:
