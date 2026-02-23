@@ -1,59 +1,44 @@
-## Quick test config — 1 case per transition group, all memory systems
+## Quick test config — first 6 cases, all memory systems
 ## Usage: python benchmark.py --config config_test.yaml
 
+# === Memory Systems ===
 mem0:
   llm:
     provider: openai
     model: gpt-4o-mini
     api_key: ${OPENAI_API_KEY}
-
   embedder:
     provider: openai
     model: text-embedding-3-large
     api_key: ${OPENAI_API_KEY}
     embedding_dims: 3072
-
   vector_db:
     provider: qdrant
-    collection_name: benchmark_test
     path: ./qdrant_data_test
     embedding_model_dims: 3072
 
-  benchmark:
-    user_id: test_user
-    retrieve_limit: 10
-
 mem_agent:
   model: gpt-4o-mini
-  memory_path: memory_test
-  use_vllm: false
   api_key: ${OPENAI_API_KEY}
+  memory_path: memory_test
 
-benchmark:
-  parallel_workers: 1
-  mem0_agent_iterations: 5
-  mem0_agent_search_limit: 50
-  auto_clean_memory: true
+# === Experiments ===
+experiments:
+  - name: gpt-4o-mini
+    data_dirs:
+      - data/state_machine_location/
+    run:
+      mem0_rag:
+        limits: [5]
+        infer: [false]
+      mem0_agent:
+        iterations: 5
+        search_limit: 50
+      mem_agent: {}
 
-  data_paths:
-    - data/state_machine_location/static_001.json
-    - data/state_machine_location/transition_001.json
-    - data/state_machine_location/transition_2tr_001.json
-    - data/state_machine_location/transition_3tr_001.json
-    - data/state_machine_location/transition_4tr_001.json
-    - data/state_machine_location/transition_5tr_001.json
-
-  mem0_limits: [5]
-  mem0_infer: [false]
-
-  mem0_agent_prompts:
-    - name: mem0_agent_hint
-      loading_prompt: prompts/mem0_agent_loading_hint.txt
-      query_prompt: prompts/mem0_agent_query_hint.txt
-
-  agent_prompts:
-    - name: mem_agent_v3
-      path: prompts/system_prompt_location_v3.txt
-
-  output_dir: eval_results_test
-  verbose: false
+# === Execution ===
+max_cases: 6
+parallel_workers: 1
+auto_clean_memory: true
+output_dir: eval_results_test
+verbose: false
