@@ -1,4 +1,4 @@
-## Quick test config — first 6 cases, all memory systems
+## Quick test — 6 cases, same model split as config.yaml
 ## Usage: python benchmark.py --config config_test.yaml
 
 # === Memory Systems ===
@@ -24,16 +24,34 @@ mem_agent:
 
 # === Experiments ===
 experiments:
-  - name: gpt-4o-mini
+  - name: gpt-4o-retrieval
+    model: gpt-4o
+    api_key: ${OPENAI_API_KEY}
     data_dirs:
       - data/state_machine_location/
     run:
       mem0_rag:
         limits: [5]
         infer: [false]
+
+  - name: gemini-3-flash-agent
+    model: google/gemini-3-flash-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - data/state_machine_location/
+    run:
       mem0_agent:
         iterations: 5
         search_limit: 50
+
+  - name: gemini-3-pro-memagent
+    model: google/gemini-3-pro-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - data/state_machine_location/
+    run:
       mem_agent: {}
 
 # === Execution ===

@@ -21,6 +21,17 @@ judge/                - LLM-based judge (run_all_judge.py)
 | **mem0 Agent** | Tool-calling agent with add/search/update/delete memory operations |
 | **mem-agent** | Structured markdown file-based memory (user.md + entities/) |
 
+### Environment Variables
+
+```bash
+# Required
+OPENAI_API_KEY=sk-...          # OpenAI (mem0 embedder + default LLM)
+
+# For non-OpenAI models via OpenRouter or other proxy
+LLM_PROVIDER_API_KEY=...       # API key for the LLM provider
+LLM_PROVIDER_BASE_URL=...      # OpenAI-compatible base URL
+```
+
 ### Running
 
 ```bash
