@@ -29,7 +29,7 @@ experiments:
     model: gpt-4o
     api_key: ${OPENAI_API_KEY}
     data_dirs:
-      - data/state_machine_location/
+      - benchmark/data/state_machine_location/
     run:
       mem0_rag:
         limits: [5, 20]
@@ -40,7 +40,7 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - data/state_machine_location/
+      - benchmark/data/state_machine_location/
     run:
       mem0_agent:
         iterations: 5
@@ -51,7 +51,7 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - data/state_machine_location/
+      - benchmark/data/state_machine_location/
     run:
       mem_agent: {}
 

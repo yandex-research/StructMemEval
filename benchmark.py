@@ -33,7 +33,7 @@ from openai import OpenAI
 from config_loader import load_config, resolve_dataset, resolve_experiments, Experiment, Dataset
 
 # Load .env from project root
-load_dotenv(Path(__file__).parent.parent / ".env")
+load_dotenv(Path(__file__).parent / ".env")
 
 # mem0 auto-detects OPENROUTER_API_KEY and switches provider — prevent this
 os.environ.pop('OPENROUTER_API_KEY', None)
@@ -46,7 +46,7 @@ from mem0.llms.configs import LlmConfig
 from mem0.vector_stores.configs import VectorStoreConfig
 
 # mem-agent
-project_root = Path.cwd().parent
+project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root / "mem-agent"))
 os.environ["PYTHONPATH"] = str(project_root / "mem-agent")
 
