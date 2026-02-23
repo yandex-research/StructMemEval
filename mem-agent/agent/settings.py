@@ -8,10 +8,10 @@ load_dotenv()
 # Agent settings
 MAX_TOOL_TURNS = 8
 
-# OpenRouter
-OPENROUTER_BASE_URL = os.getenv("BASE_URL")
-OPENROUTER_API_KEY = os.getenv("API_KEY")
-OPENROUTER_STRONG_MODEL = "google/gemini-2.5-pro"
+# LLM defaults (overridden by api_key/base_url params when called from benchmark)
+OPENROUTER_BASE_URL = os.getenv("OPENAI_BASE_URL") or "https://api.openai.com/v1"
+OPENROUTER_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENROUTER_STRONG_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 
 # vLLM
 VLLM_HOST = os.getenv("VLLM_HOST", "0.0.0.0")
