@@ -1,4 +1,5 @@
-## Full benchmark config — all scenarios, all memory systems
+## Full benchmark config
+## mem0 RAG → gpt-4o, mem0 Agent → gemini-3-flash, mem-agent → gemini-3-pro
 ## Usage: python benchmark.py --config config.yaml
 
 # === Memory Systems ===
@@ -24,16 +25,34 @@ mem_agent:
 
 # === Experiments ===
 experiments:
-  - name: gpt-4o-mini
+  - name: gpt-4o-retrieval
+    model: gpt-4o
+    api_key: ${OPENAI_API_KEY}
     data_dirs:
       - data/state_machine_location/
     run:
       mem0_rag:
         limits: [5, 20]
         infer: [false]
+
+  - name: gemini-3-flash-agent
+    model: google/gemini-3-flash-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - data/state_machine_location/
+    run:
       mem0_agent:
         iterations: 5
         search_limit: 50
+
+  - name: gemini-3-pro-memagent
+    model: google/gemini-3-pro-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - data/state_machine_location/
+    run:
       mem_agent: {}
 
 # === Execution ===
