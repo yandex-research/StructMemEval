@@ -1,0 +1,12 @@
+## Dataset: State Machine Location Tracking
+## Tests memory systems on tracking user location across 0-5 state transitions
+
+collection_name: benchmark_location
+user_id: benchmark_user_location
+
+prompts:
+  mem0_agent:
+    loading: prompts/mem0_agent_loading_hint.txt
+    query: prompts/mem0_agent_query_hint.txt
+  mem_agent:
+    system_prompt: prompts/system_prompt_location_v3.txt

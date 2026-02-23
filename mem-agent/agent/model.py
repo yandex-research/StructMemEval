@@ -6,11 +6,11 @@ from typing import Optional, Union
 from agent.settings import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, OPENROUTER_STRONG_MODEL
 from agent.schemas import ChatMessage, Role
 
-def create_openai_client() -> OpenAI:
+def create_openai_client(api_key: str = None, base_url: str = None) -> OpenAI:
     """Create a new OpenAI client instance."""
     return OpenAI(
-        api_key=OPENROUTER_API_KEY,
-        base_url=OPENROUTER_BASE_URL,
+        api_key=api_key or OPENROUTER_API_KEY,
+        base_url=base_url or OPENROUTER_BASE_URL,
     )
 
 def create_vllm_client(host: str = "0.0.0.0", port: int = 8000) -> OpenAI:
