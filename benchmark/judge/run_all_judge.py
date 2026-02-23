@@ -53,9 +53,19 @@ def main():
     client = OpenAI(api_key=api_key, base_url=base_url)
     print(f"Using judge model: {model}")
 
-    # Scan all eval_results* directories
-    eval_dirs = sorted(script_dir.parent.glob("eval_results*"))
-    eval_dirs = [d for d in eval_dirs if d.is_dir() and "test" not in d.name]
+    # Scan all eval_results* directories (supports nested experiment subdirs)
+    eval_top_dirs = sorted(script_dir.parent.glob("eval_results*"))
+    eval_top_dirs = [d for d in eval_top_dirs if d.is_dir() and "test" not in d.name]
+
+    eval_dirs = []
+    for top_dir in eval_top_dirs:
+        # Check for experiment subdirectories (new format)
+        subdirs = [d for d in sorted(top_dir.iterdir()) if d.is_dir() and not d.name.startswith('.')]
+        if subdirs:
+            eval_dirs.extend(subdirs)
+        else:
+            # Flat directory (old format)
+            eval_dirs.append(top_dir)
 
     eval_files = []
     for eval_dir in eval_dirs:
@@ -69,9 +79,14 @@ def main():
     to_judge = []
     for f in eval_files:
         key = f.stem.replace("results_", "")
-        # Include parent dir suffix for non-default eval dirs
-        if f.parent.name != "eval_results":
-            dir_suffix = f.parent.name.replace("eval_results", "")
+        # Include experiment/dir name for unique keys
+        parent = f.parent
+        grandparent = parent.parent
+        if grandparent.name.startswith("eval_results"):
+            # Nested: eval_results/gpt-4o-mini/results_*.json
+            key = f"{parent.name}_{key}"
+        elif parent.name != "eval_results":
+            dir_suffix = parent.name.replace("eval_results", "")
             key = key + dir_suffix
         if key not in existing:
             to_judge.append((f, key))
