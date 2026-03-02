@@ -1,13 +1,16 @@
-input_path: eval_results/results_mem_agent.json
+input_path: eval_results/gemini-3-pro/results_mem_agent.json
 prompt_path: prompt.txt
-output_path: results/judge_output_mem_agent_huge_hint_350.json
-model: gpt-4o-mini
-api_key: ${OPENAI_API_KEY}
+output_path: results/judge_output_mem_agent_small_hint_350.json
+model: google/gemini-3-pro-preview
+api_key: ${ELIZA_API_KEY}
+openrouter_base_url: "https://api.eliza.yandex.net/raw/openrouter/v1"
 
 filter_case_id:
-  - recommendations_art
-  - recommendations_movies
+  - recommendations_art_350
+  - recommendations_movies_350
+  - recommendations_music_350
 
 filter_prompt_path:
-  - prompts/system_prompt_art_huge_hint.txt
-  - prompts/system_prompt_movies_huge_hint.txt
+  - prompts/system_prompt_art_small_hint.txt
+  - prompts/system_prompt_movies_small_hint.txt
+  - prompts/system_prompt_music_small_hint.txt

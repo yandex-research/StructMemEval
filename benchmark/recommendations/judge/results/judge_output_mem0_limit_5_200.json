@@ -1,0 +1,428 @@
+{
+  "input_file": "eval_results/results_mem0_limit_5.json",
+  "filters": {
+    "paired_case_prompt": [
+      {
+        "case_id": "recommendations_music_200",
+        "prompt_path": "prompts/system_prompt.txt"
+      },
+      {
+        "case_id": "recommendations_art_200",
+        "prompt_path": "prompts/system_prompt.txt"
+      },
+      {
+        "case_id": "recommendations_movies_200",
+        "prompt_path": "prompts/system_prompt.txt"
+      }
+    ]
+  },
+  "num_examples": 45,
+  "mean_score": 0.26666666666666666,
+  "details": [
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Based on all our conversations, rank these art movements from most to least aligned with my preferences: Impressionism, Renaissance, Abstract Expressionism, Contemporary Installations.",
+      "llm_response": "Based on your preferences, here is a ranking of those movements from most to least aligned:\n\n1.  **Renaissance:** Your appreciation for Botticelli's grace and composition places this at the top. It offers complex, participatory works without being \"loud.\"\n2.  **Impressionism:** Aligns with your interest in informal composition and rhythm. These works invite participation to complete the scene, much like your sketches.\n3.  **Abstract Expressionism:** While it can be overwhelming in the way a Klimt is, it often veers into the \"loud or aggressive\" territory you seek respite from.\n4.  **Contemporary Installations:** This broad category is most likely to contain the minimal work that \"barely registers\" or the didactic pieces that \"shout answers,\" making it the least consistent fit.",
+      "reference_answer": "Impressionism (75% positive) > Renaissance (100% positive) > Abstract Expressionism (75% positive) > Contemporary Installations (0% positive). You consistently praise Monet, Degas, and Cézanne for capturing 'emotional weather' and 'authentic human moments' with visible brushwork that 'changes with viewing angle.' Renaissance works like Botticelli, Rembrandt, and Michelangelo earn unanimous respect for 'psychological realism' and 'potential energy in marble.' Abstract Expressionism receives qualified praise (Rothko's transcendence versus Pollock's inconsistency). Installations fail your core criteria: accessibility without explanation and emotional authenticity over conceptual puzzles—you called them 'conceptual puzzles where the artist holds all the answers.'",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Should I visit the Monet exhibit or the Renoir retrospective next month?",
+      "llm_response": "Based on your preferences, the Monet exhibit is the better choice.\n\nGiven your appreciation for how Monet captures \"nature's truth,\" it will likely be a more contemplative and rewarding experience. Considering you find Renoir's work \"saccharine,\" a full retrospective might feel overwhelming in the same way the Rodin exhibition did, but without the artistic connection.",
+      "reference_answer": "Choose Monet. You described his Water Lilies as capturing light that 'feels alive—like the pond breathes,' while calling Renoir's Boating Party 'saccharine' where 'all the interesting edges disappeared.' Your critique centers on authenticity: 'Monet shows nature's truth; Renoir shows nature's postcard.' With 100% positive comments about Monet versus 0% about Renoir in our conversations, the choice aligns perfectly with your artistic values.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Based on all our conversations, what percentage of my comments about sculpture were positive?",
+      "llm_response": "Based on your comments, approximately 85% of your sentiments about sculpture have been positive.\n\nYour praise consistently focuses on sculptors like Rodin, whose work you find dynamic and full of life. Your only negative remark was used to contrast this with sculpture you feel \"imprisons\" movement.",
+      "reference_answer": "67% of your sculpture comments were positive. You praised Rodin ('stone learning to be flesh'), Michelangelo's David ('potential energy in marble'), and Brancusi ('weightlessness tangible'), but criticized Serra ('intimidate rather than invite'). Out of 3 sculptural references with clear sentiment, 2 were positive. This 2:1 ratio reflects your preference for works where 'material carries meaning without explanation' versus those creating 'physical discomfort without emotional payoff.'",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Between Brancusi's minimalist sculptures and Serra's steel installations, which should I prioritize seeing?",
+      "llm_response": "Based on your preferences, you should definitely prioritize seeing Brancusi.\n\nYou value sculpture that lifts the soul and guides movement. Brancusi's minimalist, elegant forms will align with your taste, whereas you find Serra's work to be imprisoning and intimidating.",
+      "reference_answer": "Choose Brancusi. You praised his Bird in Space for capturing 'flight's essence through pure form' where 'weightlessness becomes tangible,' while calling Serra's works intimidating spaces that 'create physical discomfort without emotional payoff.' Your preference for 'art that trusts material to carry meaning without explanation' favors Brancusi's confident minimalism over Serra's imposing structures. This aligns with your broader pattern: valuing emotional resonance over physical impact in three-dimensional art.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "When visiting a large museum, how should I structure my time based on my preferences?",
+      "llm_response": "Based on your preferences, here is a concise approach to visiting a large museum:\n\n*   **Plan a focused route.** Before you go, use the museum map to locate your preferred artists, like Botticelli. Group nearby galleries to minimize travel time and maximize viewing time.\n\n*   **Be selective.** Instead of trying to see everything, choose a few key paintings or a single gallery. This allows for the deep, unhurried experience you value, where you can be present with the art.\n\n*   **Bring a sketchbook.** Since you appreciate composition, spend time sketching not just the art but also the gallery layouts that interest you.\n\n*   **Go off-peak.** Visiting during quieter hours can help replicate the intense, chapel-like focus you enjoy, free from crowds and the rush of a typical gallery.",
+      "reference_answer": "Prioritize 19th-20th century painting galleries first (Impressionism, Post-Impressionism), then Renaissance sections, and avoid contemporary installation wings. Spend maximum time with works that reward close viewing (Vermeer's light effects, Degas' backstage moments) and minimize time in areas with conceptual art. Your feedback shows 86% positive engagement with pre-1950s painting versus 0% with post-1980s installations. This structure honors your preference for 'art that reveals itself gradually' over 'conceptual puzzles demanding decoding.'",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What makes a portrait truly exceptional versus merely technical for me?",
+      "llm_response": "For you, an exceptional portrait is an **honest witness**, not just a technical rendering. It moves beyond mere skill when it has:\n\n*   **Heart:** It captures a \"stolen moment\" with warmth and spirit, making you feel the subject's humanity, unlike a cold, perfected image.\n*   **Purposeful Technique:** Every brushstroke or thick impasto highlight serves to reveal character and truth, rather than just showing off the artist's skill.\n*   **The Artist's Hand:** The work proudly shows evidence of its creation, connecting you to both the artist and the subject in a raw, authentic way.",
+      "reference_answer": "Exceptional portraits reveal psychological truth through physical detail. You praised Rembrandt's self-portraits for showing 'aging without vanity—every wrinkle maps a life fully lived,' and valued how his technique 'serves his vision' through impasto highlights that 'capture how light actually falls on aged skin.' You reject technically perfect but emotionally sterile portraits (implied in Renoir critique). The best portraits 'demand witness' rather than passive viewing, creating 'quiet conversation' across time through honest representation of the human condition.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What's my breaking point with abstract art—when does it stop working for me?",
+      "llm_response": "Based on your preferences, abstract art stops working for you when the \"compositional intelligence\" you admire in Pollock is no longer visible, and the work feels purely random or coldly conceptual.\n\nThe breaking point is when the artist's hand vanishes and the piece offers no potential for comfort, thus failing your test of what separates true art from decoration.",
+      "reference_answer": "Abstract art fails when it requires external explanation to convey meaning. You praised Rothko's color fields for creating 'emotional weather systems' that 'breathe with you,' but criticized Pollock's later works as lacking 'compositional intelligence beneath the surface' without his biography. Similarly, you rejected Serra's sculptures for creating 'physical discomfort without emotional payoff.' Your threshold is clear: 'If the artist needs to explain why it's art, the work has already failed its primary test.' Emotional resonance must be self-evident without footnotes or floor instructions.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Across all our conversations, what percentage of my comments about Renaissance art were positive?",
+      "llm_response": "Based on the information provided, 33% of your comments about Renaissance art were positive.\n\nThis is based on your positive statement about returning to Botticelli, while your other comments about studying the period were factual statements about your coursework.",
+      "reference_answer": "100% of your Renaissance art comments were positive. Specifically, you gave enthusiastic praise to Botticelli's Birth of Venus ('universal hesitation before becoming someone new'), Michelangelo's David ('carved potential energy into marble'), and Rembrandt's self-portraits ('light doesn't flatter; it forgives'). No negative Renaissance comments appeared in our conversations. This unanimous positive ratio reflects your deep appreciation for 'psychological realism' and mastery of light within historical context.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Do I prefer artworks emphasizing material authenticity or conceptual innovation?",
+      "llm_response": "Based on your preferences, you lean strongly towards **material authenticity**.\n\nYou want to see the \"artist's hand\" and value the \"imperfect truth\" found in the work's physical creation. Your appreciation for an \"honest Rembrandt\" over perfected images shows you prioritize the sincere, tangible evidence of the artist's process over a slick or purely conceptual statement.",
+      "reference_answer": "You strongly prefer material authenticity. You praised Van Gogh's Starry Night for how 'digital copies flatten it into wallpaper. The real texture shows his hand trembling with purpose,' and Rodin's sculptures for 'rough textures [that] make the human form seem caught mid-breath.' You criticized Serra's steel for prioritizing 'physical discomfort without emotional payoff.' Your core principle: 'Art must be felt, not just seen, to reach its full impact.' This explains your appreciation for Brancusi's polished bronze and Cézanne's 'seams' that show 'the world is still being stitched together'—materials serving emotional truth rather than conceptual novelty.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What emotional journey do I expect from a great artwork?",
+      "llm_response": "Based on your preferences, you expect an emotional journey that begins by overwhelming you, then demands your participation.\n\nYou want to navigate the artwork's \"emotional weather\"—its turbulence and hope—to find the monumental within the ordinary. The destination isn't a simple answer, but a profound connection that leaves you changed.",
+      "reference_answer": "You expect art to create a three-stage emotional arc: initial accessibility, deepening complexity upon reflection, and lasting resonance. You praised Monet for being 'meditative without being boring' (accessible depth), Rembrandt for making aging 'beautiful' through honesty (lasting resonance), and Cézanne for creating works where 'doubt can be more powerful than certainty' (intellectual engagement). You reject art that fails any stage: Pollock's late works lack compositional intelligence beneath surface chaos, and Serra's installations block accessibility entirely through physical intimidation. Your ideal: 'Art that reveals itself gradually' while remaining self-evident.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "If buying one artwork for my home, what period/style should I prioritize based on our conversations?",
+      "llm_response": "Based on your preferences, I would prioritize the **Symbolist** or **Pre-Raphaelite** movements.\n\nThese styles directly align with your desires:\n\n*   **Overwhelming & Detailed:** Like Klimt, they are rich in detail, pattern, and complex compositions.\n*   **Narrative & Mythological:** They share the literary and mythological depth you appreciate in Botticelli and Renaissance art.\n*   **Participatory:** They are filled with hidden meanings and stories, asking you to look closer and interpret, rather than shouting a simple message.\n\nA compelling alternative would be a **Dutch Golden Age** interior scene, which perfectly captures your interest in seeing the \"domestic transformed into the monumental.\"",
+      "reference_answer": "Prioritize late 19th-century Impressionist or Post-Impressionist works. Your highest praise went to Monet's Water Lilies ('captures light in a way that feels alive'), Degas' dancers ('beauty in the labor behind perfection'), and Cézanne's 'geological forms testing gravity.' These artists balance technical mastery with emotional authenticity, creating pieces that 'reward patience—you discover new layers each viewing.' Avoid contemporary installations (0% positive feedback) and artists like Renoir whose work you find 'saccharine.' Your home art should fulfill your core requirement: 'making beauty from turbulence' without requiring explanation.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "How should I approach learning art history to match my preferences?",
+      "llm_response": "Based on your interests, here is a suggested approach to learning art history:\n\n**Focus on the Human Form and Expressive Line.**\nYou're drawn to artists who mastered depicting the human figure and using line for emotional or graceful effect. This thread connects Michelangelo's powerful forms, Botticelli's elegant contours, and Van Gogh's passionate brushstrokes.\n\nHere’s how to follow that thread:\n\n*   **Deepen Your Renaissance Roots:** You love Botticelli and are studying Michelangelo. Explore their contemporary, **Raphael**, to see a different ideal of harmony. Also, look at the Venetian School (Titian, Veronese) to see how they prioritized color and light over Florence's focus on drawing.\n\n*   **Find Your Bridge to Modernism:** You enjoy modern sculpture but dislike \"aggressive\" art. The key is finding the right entry point.\n    *   Start with **Auguste Rodin**. He is considered the father of modern sculpture but is still deeply rooted in the emotion and drama of the human form, much like Michelangelo.\n    *   From Rodin, move to **Constantin Brancusi** and **Henry Moore**. They abstracted the human form with elegance and simplicity, avoiding the \"loudness\" you dislike. Their work is a quiet, powerful evolution of form.\n\n*   **Revisit Early Modern Painting:** Since you're studying *Starry Night*, explore other artists who used color and form for emotional expression without being jarring. Look into the **Symbolists** (like Gustave Moreau or Gustav Klimt), whose work is often mythological, decorative, and dream-like, which may appeal to the part of you that returns to Botticelli.\n\nThis approach lets you build bridges from what you already love to new discoveries, ensuring your journey through art history remains a pleasure.",
+      "reference_answer": "Focus chronologically from Renaissance to early Modernism (1400-1950), emphasizing technical mastery and emotional authenticity. Study Botticelli's symbolism, Rembrandt's light techniques, and Impressionist color theory before exploring Abstract Expressionism. Skip most contemporary installation theory unless examining specific exceptions like Rothko. Your feedback shows 86% positive engagement with pre-1950 art versus 0% with post-1980 installations. Supplement museum visits with artist biographies that reveal process (like Monet's garden influencing his brushwork) rather than theoretical frameworks. This approach honors your statement: 'Great art shouldn't need footnotes' while building foundational knowledge to appreciate complexity within your preferred movements.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Which artistic technique do I value most across different periods?",
+      "llm_response": "Based on your preferences, you most value seeing the **expressive \"hand of the artist.\"**\n\nYou appreciate when the technique—be it Botticelli's graceful lines, the thick impasto on a portrait, or Klimt's intricate patterning—is visibly and skillfully used to serve the artist's vision. You want the physical craft of the work to be inseparable from its emotional impact.",
+      "reference_answer": "You value techniques that reveal the artist's hand rather than conceal it. This spans periods: Monet's visible brushstrokes that 'change with viewing angle,' Van Gogh's impasto that shows 'his hand trembling with purpose,' Rembrandt's impasto highlights that capture 'how light actually falls on aged skin,' Degas' pastel smudges that 'feel like breath,' and Cézanne's 'seams' that show 'the world is still being stitched together.' You reject techniques that hide process: digital reproductions that 'flatten into wallpaper' and conceptual art requiring explanation. Your consistent standard: 'I want to see the artist's hand in the work, not just their concept.' This physical trace of creation creates the human connection central to your artistic values.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What role does art's therapeutic or healing power play in my preferences?",
+      "llm_response": "Based on your preferences, art's therapeutic power is not just a role; it is the central criterion by which you define and value art.\n\nYou see true art as a restorative force, a source of comfort and sanctuary from a world that can be loud or painful. Your litmus test is whether it can heal. This is why you favor the gentle harmony of Botticelli and the joyful energy of Matisse, seeing their work as a form of medicine that can soothe, uplift, and expand one's world.",
+      "reference_answer": "Therapeutic impact is your highest artistic criterion. You described Rothko's chapel as transformative where 'the painting breathes with you,' and said of Matisse's cut-outs: 'I'd hang one in a children's hospital—it would heal more than medicine sometimes.' Your ultimate test: 'Would this piece comfort someone in pain? If not, it's decoration, not art.' This explains your love for works that transform struggle into beauty like Van Gogh's turbulent skies. You value 'quiet confidence' in Botticelli and 'forgiving' light in Rembrandt precisely because they offer solace. For you, art that doesn't provide emotional sanctuary ultimately fails its most important function.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_art_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "How many total messages have we exchanged, and what percentage were about art judgments versus casual topics?",
+      "llm_response": "I don't have access to our full conversation history.\n\nHowever, based on the 5 messages you've provided as context, 100% of them are about your judgments on art—focusing on what makes a piece meaningful and participatory rather than just decoration.",
+      "reference_answer": "We've exchanged exactly 200 messages across 20 sessions. Of these, 16 sessions (170 messages) contained explicit art judgments with unique fact quotes, while 4 sessions (30 messages) were casual fillers about farmers markets, coffee, transportation, and grocery shopping—representing 20% filler content. Your art judgments covered 14 distinct artists/movements with an 86% positive sentiment ratio overall (12 positive, 2 negative). This distribution aligns perfectly with your belief that 'life informs art appreciation'—even casual conversations revealed your core value: 'accessible mastery inspires more than unattainable perfection.'",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Based on our conversations, which genre should I pick for movie night—action or drama?",
+      "llm_response": "Action, without a doubt.\n\nYou're looking for a film with character depth, practical effects, and real stakes—all the things you love, without being a \"slow drama.\"",
+      "reference_answer": "You should definitely go with action. Across 8 action film discussions, you gave 100% positive feedback to films like Terminator 2, Heat, and Fury Road, consistently praising their practical effects and efficient storytelling. Meanwhile, across 2 drama discussions, you've been 100% negative—calling The Irishman '3.5 hours of old men talking' and saying you 'don't have the patience for slow dramas anymore.' Your preference is crystal clear!",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "How many times have I praised practical effects over CGI in our chats?",
+      "llm_response": "Based on the context provided, you've championed practical effects over CGI five times. Your preference for tangible, real-world effects is very clear.",
+      "reference_answer": "You've explicitly praised practical effects in 11 different sessions! From Terminator 2 and Heat to Fury Road, Dune, Predator, and John Wick—you keep coming back to the same core principle: real stunts, real environments, and real danger create authentic tension that CGI just can't replicate. It's clearly your #1 criterion for great cinema.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Which actor do I admire most for doing their own stunts?",
+      "llm_response": "Based on your comments, you admire Tom Cruise the most for his commitment to doing his own stunts, like the HALO jump in *Mission: Impossible - Fallout*.",
+      "reference_answer": "You've highlighted three actors repeatedly: Tom Cruise (3 mentions), Keanu Reeves (3 mentions), and Arnold Schwarzenegger (4 mentions across 3 films). But if I had to pick one you mention most passionately, it's Schwarzenegger—you praised him across 3 different films (T2, Predator, Commando) for his physicality, charisma, and commitment to practical stunts. Your admiration for his screen presence is unmatched.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What's my ideal film length, based on what I've said?",
+      "llm_response": "Based on your preferences, your ideal film length is between a tight 90 minutes and a maximum of about 2 hours and 15 minutes.\n\nThe key for you isn't just the runtime, but that every scene serves the story, like in *Die Hard*.",
+      "reference_answer": "You've said your ideal film is 'under 2.5 hours with no wasted scenes,' and you've praised Die Hard (2h12m) as having 'perfect pacing.' You've criticized The Irishman (3.5h) and The Hateful Eight for dragging. So anything between 90–150 minutes that stays tight and purposeful is your sweet spot—5 of our sessions specifically reinforced this preference.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Have I ever given a positive review to a drama film?",
+      "llm_response": "Based on the context, no. You haven't given a positive review to a drama film.\n\nYou quit *The Irishman*, calling it a \"slow drama,\" and strongly prefer action films like *Commando*. However, you did praise the \"coffee shop scene\" for its character work and acting, showing you value strong dramatic moments.",
+      "reference_answer": "No—you haven't. Across all 2 drama-related sessions (The Irishman and general slow dramas), you've been consistently negative, saying you 'fell asleep,' have 'no patience,' and prefer 'action or comedy any day.' All your positive energy goes to action, sci-fi, and smart comedies—0% positive drama reviews.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Which director do I trust most to deliver practical filmmaking?",
+      "llm_response": "Based on your preferences, you trust **Christopher Nolan**.\n\nHe consistently champions in-camera effects, large-scale practical stunts, and on-location shooting to create a tangible sense of reality and high stakes. He'll flip a real truck or blow up a real 747 just to get the shot.\n\nA very close second is **George Miller**, whose work on *Mad Max: Fury Road* is a masterclass in practical stunt work and visceral, real-world action.",
+      "reference_answer": "You've expressed the most consistent trust in George Miller (Fury Road) and Denis Villeneuve (Dune). You noted Miller 'storyboarded 3,500 panels' and said 'Miller's always been consistent.' For Villeneuve, you mentioned him because 'he's one of the few directors who respects practical work.' But Miller edges ahead because you tied him directly to your core value: 'real danger creates real stakes.'",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What percentage of my film comments are positive vs negative?",
+      "llm_response": "Based on your comments, your opinions are split 50/50 between positive and negative.\n\nYou've praised a specific director and the value of short runtimes, while criticizing slow dramas and self-indulgent editing.",
+      "reference_answer": "Out of 14 factual sessions, 12 are clearly positive (86%), and 2 are negative (14%). Your negativity is very targeted—you love what you love (especially practical action), and dislike only specific traits like slow pacing or excessive CGI. Your positive-to-negative ratio is 6:1.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Should I invest in a projector or sound system first for my home theater?",
+      "llm_response": "Based on your preferences, invest in the sound system first.\n\nYou want bass that rattles the room and explosions that shake your chest. A great audio setup will give you that visceral, immersive experience you're looking for in action movies right away. You can add the projector later.",
+      "reference_answer": "You said it yourself: 'Sound matters more to me than visuals for action movies.' Since you care so much about feeling the 'weight of gunfire' and 'real danger,' a great sound system will amplify exactly what you love—explosions, engine roars, and punch impacts. Start with sound (as you planned), then add a projector later.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Which films have I called 'perfect' or 'gold standard'?",
+      "llm_response": "Based on the context you provided, you called **Terminator 2** the \"gold standard\" for action films.\n\nYou also used the word \"perfect\" to describe qualities you appreciate, such as a \"tight 90-minute action movie,\" a \"perfect comedy scene,\" and a \"perfect practical scene,\" but didn't attach it to a specific film title.",
+      "reference_answer": "You've used those exact phrases for three films: Terminator 2 ('gold standard for action films'), Heat ('the perfect action film'), and Die Hard ('perfect pacing,' 'perfect Christmas movie'). All three share your core values: practical effects, strong characters, and tight storytelling—the trifecta you value most.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "Am I more critical of modern superhero films or modern dramas?",
+      "llm_response": "Based on your comments, you are more critical of modern superhero films.\n\nYou offer specific criticisms for them, calling them \"weightless,\" \"CGI soup,\" and lamenting their lack of \"real stakes.\" Your dislike of \"slow drama\" seems more like a general preference for action films.",
+      "reference_answer": "You're critical of both, but more frustrated with modern superhero films. Across 3 superhero sessions, you gave 67% negative feedback (2 negative, 1 positive for exceptions like Winter Soldier). With dramas, you simply avoid them—you don't engage deeply enough to critique beyond saying 'I don't have the patience.' So superhero fatigue gets more detailed, nuanced criticism from you.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "How many of my favorite films feature Arnold Schwarzenegger?",
+      "llm_response": "Based on the films you've mentioned, all three of them—*Terminator 2*, *The Terminator*, and *Predator*—feature Arnold Schwarzenegger.",
+      "reference_answer": "You've positively mentioned Schwarzenegger in 3 films: Terminator 2, Predator, and Commando—all praised for his charisma, physicality, and one-liners. You even said 'they don't make them like Arnold anymore.' He's clearly a cornerstone of your action film taste, with 4 total mentions across our chats.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What's the main reason I dislike long dialogue scenes?",
+      "llm_response": "It's not the length you dislike, but the lack of forward momentum.\n\nYou lose patience when dialogue feels like it's just talk. You need it to actively build tension and have clear stakes, like in the *Inglourious Basterds* tavern scene, where every line pushes the characters closer to a breaking point.",
+      "reference_answer": "You don't dislike dialogue itself—you loved the Heat coffee shop scene! But you hate when dialogue 'overstays its welcome' without advancing stakes or tension. You praised Inglourious Basterds' tavern scene because 'you knew someone would be exposed any second,' but called The Hateful Eight 'long conversations with no push.' So it's about purpose and tension, not length alone.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "How important is character development in action films for me?",
+      "llm_response": "Based on your preferences, character development is paramount.\n\nFor you, action is a tool to reveal who a character is under pressure. The stakes are only real if we are invested in the people involved. That's why a tense dialogue scene between two well-drawn characters means more to you than any CGI battle. Without strong character work, action is just empty spectacle.",
+      "reference_answer": "It's essential. You've said 'action should reveal character' and praised Heat, John Wick, and Predator because their fights 'serve character and story.' No character = no stakes, in your view—and you've reinforced this across 6 sessions.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What's the most common phrase I use to describe great action?",
+      "llm_response": "Based on your comments, the most common phrase you use is **\"real action.\"**",
+      "reference_answer": "You keep coming back to 'real' and 'practical': 'real danger,' 'real stunts,' 'practical effects,' 'you can feel the danger.' You also say 'holds up' frequently—meaning it ages well. But the core idea is authenticity: 'When it's real, it creates authentic tension.' That's your mantra across 11 sessions.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_movies_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "What's the total number of messages we've exchanged?",
+      "llm_response": "Including this one, we're at 7 messages total. No overstuffed plot here, just a straight answer.",
+      "reference_answer": "We've exchanged exactly 200 messages across 17 sessions—168 in your 14 factual discussions and 32 in 3 filler chats about coffee, hiking, and plants. You've been impressively consistent throughout our entire conversation!",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I've been really into both classic rock and alternative lately. Which one do you think I should dive deeper into based on what I've shared with you?",
+      "llm_response": "Based on your preferences, I'd recommend you dive deeper into **alternative rock**.\n\nYour appreciation for innovative soundscapes, poetic lyrics, complex emotions, and raw, lo-fi production are all core tenets of the alternative genre. While you love the emotional guitar solos of classic rock, you'll find many alternative bands that integrate that same raw guitar work into more experimental song structures.\n\nSince you're looking for new music, you might enjoy bands that bridge that gap:\n\n*   **Dinosaur Jr.:** Famous for combining a lo-fi punk ethos with massive, classic rock-inspired guitar solos.\n*   **Built to Spill:** Known for complex, emotional guitar work and poetic lyrics, often compared to Neil Young.\n*   **Pavement:** The definition of lo-fi '90s alternative with smart, unconventional lyrics and a raw sound.",
+      "reference_answer": "Based on our conversations, I'd recommend diving deeper into classic rock. You've shown 80% positive engagement with rock (4 out of 5 rock-focused sessions) compared to 80% for alternative (4 out of 5 alternative sessions)—similar positivity, but your rock appreciation runs deeper emotionally. You consistently praise rock for its 'raw, emotional solos,' 'analog warmth,' and guitarists who 'don't need speed to be expressive.' Your connection to rock feels more foundational—it's tied to your own guitar playing journey and core musical identity. While you love alternative's emotional depth and innovation, you've also expressed disappointment when those bands 'lose their edge' after signing with majors. Rock's authenticity and focus on human imperfection in performance aligns more consistently with your values. Start with deeper dives into Gilmour's solo catalog and 70s analog recording techniques—you'll find rich territory that matches your expressive goals.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I keep trying to get into metal but it usually overwhelms me. Any suggestions for how I might actually enjoy it?",
+      "llm_response": "Of course. It sounds like you appreciate the technical skill in metal but are put off by the aggression and screaming vocals. Given your enjoyment of Tool and Animals as Leaders, the key is to focus on musicianship and melody.\n\nHere are a few approaches you could try:\n\n*   **More Instrumental Metal:** Since you like Animals as Leaders, you might enjoy other instrumental bands that prioritize melody and complex songwriting.\n    *   **Try:** **Plini**. He's an Australian guitarist whose music is often described as \"feel-good\" instrumental prog. It's incredibly technical but also very melodic and upbeat.\n    *   **Start with the album:** *Handmade Cities*.\n\n*   **Progressive Metal with Clean Vocals:** This genre emphasizes the complex song structures and technicality you appreciate from Tool, but many bands use clean, melodic singing.\n    *   **Try:** **Porcupine Tree**. They blend rock and metal with beautiful melodies and thoughtful lyrics. The metal elements are used for impact, not constant aggression.\n    *   **Start with the album:** *In Absentia*.\n\n*   **Lighter, Epic Metal:** Some subgenres use clean singing and focus more on fantasy and melody than on anger. Power Metal is a great example.\n    *   **Try:** **Blind Guardian**. They are known for huge, layered vocal harmonies (like Queen meets metal), fast melodic guitars, and epic, story-driven songs.\n    *   **Start with the album:** *Imaginations from the Other Side*.",
+      "reference_answer": "Given your sensitivity to metal's intensity, focus on three entry points that match your existing musical values: First, instrumental metal like Animals as Leaders—you already appreciated how they let you 'focus on the musicianship without being put off by aggressive vocals.' Second, bands with strong acoustic moments like Metallica's softer songs, which you noted 'show their musical range' beyond pure aggression. Third, rhythmically complex bands like Tool that prioritize 'complex time signatures and musicianship' over vocal aggression. Avoid death/black metal with constant growling—that consistently triggers your discomfort with metal being 'too overwhelming.' Also, don't get discouraged by metal's subgenre complexity—you mentioned there are 'too many metal subgenres to keep track of' that 'all seem to blend together.' Start with just 2-3 accessible bands rather than trying to navigate the entire landscape. Your appreciation for technical skill means you'll connect with metal that showcases compositional intelligence rather than pure sonic assault.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I'm still figuring out classical music—I love some parts but get lost in others. How can I build a more consistent appreciation for it?",
+      "llm_response": "Based on your experiences, it seems your appreciation deepens when you have a specific point of focus—the technique of an instrument, a performer's interaction, or a familiar texture. When you feel \"lost,\" it's often because there's too much to process at once.\n\nTo build on what works for you, try these approaches:\n\n*   **Follow an Instrument.** Instead of trying to hear the whole orchestra, pick one instrument—like the lead violin or cello—and follow its journey through the piece. This provides a narrative thread, much like focusing on a single character in a film.\n\n*   **Explore the Romantic Era.** Since you find Baroque music sometimes too \"mathematical,\" try composers like Tchaikovsky, Dvořák, or Rachmaninoff. Their music prioritizes emotional expression and sweeping melodies, which might resonate more with you. Tchaikovsky's Violin Concerto seems like a perfect fit.\n\n*   **Watch the Performance.** You discovered the power of live music. Recreate that by watching high-quality concert videos on YouTube. Seeing the conductor's gestures and the \"conversations\" between sections of the orchestra makes the structure of the music visible and much easier to follow.",
+      "reference_answer": "Your classical journey shows real promise—you have 75% positive engagement (3 out of 4 sessions). Build on your strengths: First, lean into Romantic composers like Brahms and Tchaikovsky who 'express clear emotions' you connect with immediately—avoid Baroque's mathematical precision that feels 'too restrained' for your taste. Second, prioritize live performances when possible—your breakthrough moment came when 'seeing a live orchestra perform changed my perspective' because 'the physical presence of the sound made the music come alive.' Third, continue your violin practice—it's already transformed how you hear classical recordings by revealing the 'technical skill required in pieces.' Fourth, explore the connection you've discovered between classical guitar and orchestral music—you noticed how 'playing classical guitar has helped me appreciate orchestral music more' by hearing 'guitar-like textures in string arrangements.' Avoid overly long symphonic works that you find 'difficult to follow'—start with shorter, programmatic pieces with clear emotional narratives. Your path into classical isn't about forcing appreciation—it's about finding the emotional and technical entry points that already resonate with you.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I have such mixed feelings about pop music—sometimes I love the hooks, other times it feels soulless. How do I find pop that actually resonates with me?",
+      "llm_response": "It sounds like you're looking for pop music with the artistry and emotional depth of alternative rock. You'd likely enjoy subgenres like **art pop** and **indie pop**, which combine catchy melodies with more innovative production and less-formulaic structures.\n\nLook for artists who are known for having a strong, singular vision. Based on your appreciation for Radiohead's soundscapes and dislike for shallow lyrics, you might connect with:\n\n*   **Lorde:** Known for her clever, introspective lyrics and layered production that avoids typical pop formulas.\n*   **FKA twigs:** Creates experimental, avant-garde pop with vulnerable vocals and unconventional song structures.\n*   **Billie Eilish:** While mainstream, her music features unique, minimalist production and a soft, expressive vocal style that feels very human.\n*   **Caroline Polachek:** Her work is celebrated for its innovative sound design and acrobatic, artistic vocal performances.\n\nWhen you find an artist you like on a streaming service, explore their \"Related Artists\" section. It's a great way to discover others who share that less-manufactured, more creative approach to pop music.",
+      "reference_answer": "Your mixed feelings make perfect sense—you've had exactly 50/50 engagement with pop (1 positive, 1 critical session). The key is finding pop that balances the 'incredibly catchy melodies that stick in your head' you genuinely enjoy with authentic emotional expression that avoids feeling 'manufactured.' Look for these markers: First, minimal auto-tune—seek artists who maintain 'slight imperfections that show real human expression' rather than pitch-perfect artificiality. Second, songwriter-driven material—artists who write their own songs tend to avoid the 'designed by committee' feeling you dislike. Third, organic instrumentation blended with electronic elements—Dua Lipa works for you because her production is 'undeniably polished' yet retains musicality. Fourth, emotional vulnerability in lyrics—avoid formulaic love songs in favor of artists who take lyrical risks. Artists like early Taylor Swift (pre-1989), Lorde, and Billie Eilish hit this sweet spot—they craft accessible melodies without sacrificing artistic integrity. Your pop sweet spot isn't about rejecting the genre—it's about finding the artists who use pop's accessibility as a vehicle for genuine expression rather than commercial calculation.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I want to improve my guitar playing—any thoughts on which players I should study based on what resonates with me?",
+      "llm_response": "Based on your appreciation for the melodic, compositional, and emotionally raw playing of guitarists like Gilmour and Knopfler, here are a few players you should study:\n\n*   **Jeff Beck:** The ultimate master of phrasing and expression. His use of the whammy bar, volume swells, and dynamic touch creates vocal-like lines. Study his work on *Blow by Blow* and *Wired*.\n\n*   **Brian May:** His solos are perfectly composed mini-symphonies within Queen's songs. His use of layered, orchestral guitar harmonies will directly appeal to your classical and orchestral sensibilities.\n\n*   **Steve Hackett:** As a Genesis guitarist, he pioneered melodic tapping and volume swells to create lush, cinematic textures. His playing is a perfect bridge between classic rock emotion and your interest in advanced techniques. Check out his solo on \"Firth of Fifth.\"\n\n*   **Peter Green:** The original Fleetwood Mac guitarist was a master of tone, space, and a deeply emotional, minimalist approach. His playing shows how much can be said with just a few perfectly placed notes.",
+      "reference_answer": "Based on your playing journey, focus on three guitarists who embody your core values: David Gilmour, Mark Knopfler, and Jimmy Page. You've consistently praised players who 'don't need speed to be expressive' and value 'melodic phrasing and tone choices' over technical shredding. Gilmour exemplifies this—his restraint and emotional phrasing make 'every note serve the song.' Page offers incredible tone and phrasing you're already studying through 'Whole Lotta Love.' All three prioritize the 'human imperfections that give the music soul' over clinical perfection. Your practice approach should mirror their philosophy: spend hours on bending and vibrato to capture emotional nuance rather than speed drills. Study their use of space—how they let notes breathe rather than filling every moment. Analyze their tone chains to understand how analog warmth shapes emotional delivery. Most importantly, approach their solos as emotional storytelling rather than technical exercises—ask 'what feeling is this phrase conveying?' rather than 'can I play these notes?' This aligns perfectly with your appreciation for 'raw, emotional solos' that 'tell a story without words.' These players will help you develop the expressive, melodic voice you're clearly seeking.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I love discovering new alternative bands but sometimes they all start to sound the same. What should I listen for to find the really special ones?",
+      "llm_response": "I know that feeling of digging for hidden treasure. To find those special bands that push boundaries, try listening for these three things:\n\n*   **Unconventional Structures:** Notice if a song avoids the standard verse-chorus formula. Does it build a mood or tell a story that evolves, like a journey, instead of just repeating sections?\n\n*   **A Unique Sonic Palette:** Listen to *how* they use their instruments. Is the guitar creating texture instead of just riffs? Are the vocals distinctive and expressive? Bands with a true personality create their own soundscapes.\n\n*   **A Clear Emotional Point of View:** Does the music evoke a complex, specific feeling beyond just \"happy\" or \"sad\"? The most innovative bands can create a whole atmosphere—whether it's anxious, dreamlike, or intense—that feels genuine and deliberate.",
+      "reference_answer": "You've shown 80% positive engagement with alternative rock (4 out of 5 sessions), so you clearly have a strong foundation. To find the special bands that avoid sounding generic, listen for these markers: First, emotional authenticity over formula—seek bands that 'explore complex emotions rather than just following the same verse-chorus formula' like Radiohead does. Second, production character—prioritize the 'lo-fi production quality' that 'feels more honest and authentic' over over-produced slickness. Third, lyrical depth—value bands with 'poetic lyrics that are thought-provoking rather than just repeating simple phrases about love.' Fourth, artistic integrity—avoid bands that 'lose their edge' after signing with majors and become 'safe and radio-friendly.' Fifth, that spark of discovery you described—the 'genuine excitement in discovering underground alternative bands that push boundaries.' Your ideal alternative bands balance innovation with emotional accessibility—they take risks without becoming inaccessible. Artists like early Arcade Fire, Tame Impala's psychedelic phase, and Big Thief hit this sweet spot—they're distinctive without being alienating. Trust your instinct for authenticity—it's your strongest filter for cutting through alternative's crowded landscape.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I play both guitar and violin—how can I make these instruments work together to deepen my overall musicianship?",
+      "llm_response": "Excellent question. The synergy between guitar and violin creates a powerful feedback loop for developing musicianship. Here’s how to leverage them together, based on your experience:\n\n**How Your Guitar Experience Benefits Your Violin Playing:**\n\n*   **Understand Bach's Implied Harmony:** You're struggling with Partita No. 3. Your classical guitar background is a huge advantage. Think of Bach's solo violin lines as one voice from a multi-part piece. Use your guitar knowledge to imagine the chords he's outlining. This will make the melodic lines feel less random and more intentional.\n*   **Transfer Phrasing Concepts:** The melodic expressiveness you admire in Gilmour and Knopfler is all about note choice and articulation. Apply this mindset to your bowing. The bow is your voice, just like their picking hand and fingers. Focus on the attack, sustain, and decay of each note to create phrases, not just play notes.\n\n**How Your Violin Experience Benefits Your Guitar Playing:**\n\n*   **Refine Your Picking Hand:** Your struggle with bow/finger coordination highlights the importance of the \"right hand.\" All the nuance you learn with the bow—pressure, speed, and contact point—can be directly applied to your picking hand on guitar for massive gains in tone and dynamics.\n*   **Improve Your Ear and Intonation:** Violin forces you to listen intently for pitch. This ear training will make your guitar bends more accurate and your melodic hearing more precise, helping you better analyze and replicate the expressive phrasing you love.\n\nBy treating them as two sides of the same coin, you're not just learning two instruments; you're gaining a more complete understanding of melody, harmony, and expression.",
+      "reference_answer": "Your dual-instrument practice is a superpower most musicians never develop. Here's how to maximize the synergy: First, let guitar inform your violin phrasing—your understanding of blues bends and vibrato can translate to more expressive violin playing, even though the mechanics differ. Second, let violin develop your guitar intonation—classical training has already given you 'a new appreciation for classical music' by revealing the 'technical skill required' in pieces. Apply that precision to your guitar bends and vibrato. Third, explore the cross-instrument insight you've already discovered: 'playing classical guitar has helped me appreciate orchestral music more' because you 'can hear guitar-like textures in string arrangements.' Study how composers write for both instruments—Bach's lute suites work beautifully on guitar, while his violin partitas reveal counterpoint principles applicable to fingerstyle guitar. Fourth, use guitar for harmonic exploration (chords, progressions) and violin for melodic refinement—then bring those insights back to each instrument. Your guitar background gives you harmonic context for violin pieces; your violin training develops the microtonal sensitivity that makes guitar phrasing breathe. This isn't about becoming equally proficient on both—it's about letting each instrument illuminate different dimensions of musical expression that enrich your overall musicianship.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I'm starting to record my own music—what production approach would suit my musical personality?",
+      "llm_response": "Given your appreciation for raw, authentic sound, embrace a **\"performance-first, lo-fi\"** production approach. This philosophy prioritizes capturing a feeling over achieving technical perfection.\n\nFocus on these key ideas:\n\n*   **Capture the Live Energy:** Record as much as you can live, even if it's just you. The goal is to document a moment, not assemble a perfect product. This will give your music the soulful, honest quality you admire.\n*   **Embrace \"Happy Accidents\":** Don't edit out every imperfection. The slight feedback, amp hum, or a voice crack are part of the texture that makes early alternative rock feel so genuine. These are the \"risks\" that make music exciting.\n*   **Limit Your Tools:** Avoid the temptation of endless plugins and track counts. Use a few simple microphones and minimal processing. Getting a great sound at the source forces creative decisions and prevents the \"over-produced\" feel you dislike.\n\nThis approach aligns perfectly with your desire to create music that feels less manufactured and more like a genuine artistic statement.",
+      "reference_answer": "Your production approach should prioritize warmth, humanity, and emotional authenticity over clinical perfection. You've consistently criticized 'over-produced music' while praising the 'analog warmth' of 70s recordings and 'human imperfections that give the music soul.' Your sweet spot lives between extremes: recordings that preserve natural dynamics and performance nuance while maintaining clarity—think Neil Young's 'Harvest' (warm, slightly imperfect) meets Bon Iver's textural richness without losing emotional directness. Practical approach: First, record basic tracks live with minimal overdubs—capture the energy of musicians playing together in one room, like the 'classic rock bands' you admire. Second, embrace room ambiance rather than sterile isolation—those 'imperfections' create character. Third, use analog-style saturation sparingly for warmth, but avoid over-processing that strips away human feel. Fourth, prioritize performances with genuine emotional intent over grid-perfect timing—your love of 'raw, unpolished sound' means you'll connect more with slightly imperfect but emotionally honest takes. Fifth, minimize auto-tune—preserve the 'human vulnerability' you value in singing. Your philosophy should be: 'Technical perfection should never mask emotional authenticity.' Start simple—a good preamp, minimal mics, and focus on capturing great performances. You can always add polish later, but you can't add humanity to a sterile recording.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I want to branch out musically but don't want to waste time on genres that fundamentally clash with my taste. Where should I start exploring?",
+      "llm_response": "Based on your appreciation for innovative, emotionally complex bands like Radiohead, here are a few genres to explore that avoid formulaic structures and metal tropes.\n\n### 1. Post-Rock\n\n*   **Why you might like it:** This genre is almost entirely built on creating soundscapes. It prioritizes texture, dynamics, and emotional crescendos over traditional verse-chorus structures, often being instrumental.\n*   **Essential Artists:**\n    *   **Godspeed You! Black Emperor:** Epic, cinematic, and politically charged soundscapes.\n    *   **Mogwai:** Masters of the \"loud-quiet-loud\" dynamic, ranging from beautiful to brutally heavy.\n\n### 2. Trip-Hop\n\n*   **Why you might like it:** If you enjoy the electronic, moody, and beat-driven side of Radiohead (think *Kid A*), this is a perfect fit. It fuses hip-hop beats with soul, jazz, and ambient textures for a dark, atmospheric feel.\n*   **Essential Artists:**\n    *   **Massive Attack:** The genre pioneers; their album *Mezzanine* is a masterpiece of dark, paranoid atmosphere.\n    *   **Portishead:** More melancholy and cinematic, with haunting vocals and vinyl-scratch textures.\n\n### 3. Shoegaze\n\n*   **Why you might like it:** This genre treats the guitar as a tool for creating texture rather than just riffs. It’s defined by overwhelming waves of distorted, effects-laden guitars and buried, ethereal vocals, creating a uniquely immersive sound.\n*   **Essential Artists:**\n    *   **My Bloody Valentine:** The band that defined the genre by pushing guitar sounds to their absolute limit.\n    *   **Slowdive:** Focuses more on the dreamy, atmospheric, and beautiful side of the genre.",
+      "reference_answer": "Based on your engagement patterns across our 20 conversations, classical music offers your highest-probability expansion path. You show 75% positive engagement with classical (3 out of 4 sessions)—significantly better than metal's 40% (2 out of 5) and pop's 50% (1 out of 2). Your positive classical experiences are meaningful breakthroughs: the live orchestra revelation, your violin studies deepening appreciation, and connection to Romantic composers' emotional clarity. Your negative reactions mainly involve accessibility barriers (pieces being 'too long and difficult to follow') rather than fundamental dislike of the musical language. Since you already play violin and appreciate emotional expression in Romantic works, you have natural entry points. Metal presents a steeper challenge—your 60% negative reaction rate stems from core value conflicts: metal's aggression clashes with your need for melodic emotional connection, and the 'constant screaming' obscures the musicianship you'd otherwise appreciate. Pop sits in the middle—your 50/50 split reflects genuine tension between appreciating catchy melodies and rejecting formulaic production. Start with shorter Romantic-era works (Tchaikovsky's shorter pieces, Brahms intermezzi) and live performances when possible. This builds on existing strengths rather than forcing appreciation for fundamentally misaligned aesthetics.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I'm curious—across all our conversations, what's my actual track record with different genres? I want to see the real numbers.",
+      "llm_response": "Based on our conversations, here is a data-driven breakdown of your musical interests:\n\n**High Correlation:**\n\n*   **Technical Complexity:** You consistently respond to music with structural and rhythmic complexity, like odd time signatures.\n*   **A Musician's Perspective:** You analyze music for its composition, production, and risk-taking elements.\n\n**Low Correlation:**\n\n*   **Genre Labels:** You find subgenre distinctions confusing and unhelpful, particularly within metal.\n\n**Conclusion:**\n\nYour track record shows you're not a genre collector. You're a **structuralist**—you connect with *how* a song is built, not the label it's given. This points toward a strong affinity for Progressive Rock/Metal and Math Rock.",
+      "reference_answer": "Here's your honest genre breakdown across our 20 conversations: Rock music shows 80% positive engagement (4 positive out of 5 rock-focused sessions)—you consistently praise its emotional authenticity, guitar work, and analog warmth, with only modern rock's decline registering as negative. Alternative rock also shows 80% positive engagement (4 positive out of 5 sessions)—you love its emotional depth, lo-fi aesthetic, and lyrical complexity, with only mainstream sellout triggering criticism. Classical music shows 75% positive engagement (3 positive out of 4 sessions)—your violin studies and live concert experiences created breakthrough moments, with only intimidating length/formality creating barriers. Pop music shows 50% positive engagement (1 positive out of 2 sessions)—you genuinely appreciate catchy melodies and polished production but equally criticize formulaic writing and excessive auto-tune. Metal shows 40% positive engagement (2 positive out of 5 sessions)—you respect technical skill in instrumental/acoustic contexts but consistently struggle with aggression, overwhelming production, and subgenre confusion. This pattern reveals your core principle: you connect with genres prioritizing emotional authenticity and human expression, while struggling with music that feels manufactured (formulaic pop) or emotionally inaccessible (aggressive metal). Your taste isn't about technical complexity—it's about whether the music serves genuine emotional expression.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I know metal isn't really my thing, but I keep hearing about bands I 'should' appreciate. Is there actually a way for me to find metal I might genuinely enjoy?",
+      "llm_response": "Of course. Given your appreciation for Tool's technical skill but dislike for overwhelming aggression, the world of **Progressive Metal** is the perfect entry point for you. This subgenre prioritizes complex musicianship, dynamic songwriting, and often features clean vocals.\n\nInstead of getting lost in genres, try these bands based on what you like about Tool:\n\n*   **For that complex, rhythmic, and moody vibe:**\n    *   **Karnivool:** Often compared to Tool, this Australian band uses intricate rhythms and layered, atmospheric soundscapes. Start with their album *Sound Awake*.\n    *   **Porcupine Tree:** Leaning more towards progressive rock, they share Tool's knack for intelligent lyrics and long, evolving song structures, but with a generally less aggressive tone. Try the album *In Absentia*.\n\n*   **To focus entirely on musicianship (with no vocals):**\n    *   **Animals As Leaders:** This instrumental trio is all about mind-bending guitar work and rhythmic complexity. It's heavy, but the focus is purely on jaw-dropping technicality, which you might appreciate.\n    *   **Plini:** A lighter, more melodic take on instrumental progressive metal, with beautiful guitar textures and a fusion-like quality.\n\nThese bands showcase incredible skill without relying on the constant aggression or screaming vocals you dislike. Start with one and focus on the musicianship, not the \"metal\" label.",
+      "reference_answer": "Yes—but only if you approach it strategically rather than trying to 'appreciate' metal on its own terms. Your 60% negative reaction rate stems from core value conflicts: metal's aggression clashes with your need for melodic emotional connection. However, you've shown genuine appreciation for metal that emphasizes musicianship over aggression. Your path in: First, focus exclusively on instrumental progressive metal like Animals as Leaders—you already connected with how they let you 'focus on the musicianship without being put off by aggressive vocals.' Second, explore bands with strong acoustic dimensions—you appreciated how 'some metal bands include beautiful acoustic sections' that 'show their musical range' beyond noise. Third, seek rhythmically complex bands like Tool that prioritize 'complex time signatures and musicianship' over vocal aggression. Critical avoidance rules: Steer clear of death/black metal with constant growling—that consistently triggers your discomfort with metal being 'too overwhelming.' Don't get bogged down in subgenre taxonomy—you've noted there are 'too many metal subgenres to keep track of' that 'all seem to blend together.' Start with just 2-3 accessible entry points rather than trying to navigate the entire landscape. Remember: you don't need to 'get' all of metal. Finding the 20% that aligns with your values (technical complexity, dynamic range) while avoiding the 80% that conflicts (aggression, vocal styles) is a perfectly valid approach. Your appreciation for technical skill means you'll connect with metal that showcases compositional intelligence rather than pure sonic assault.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I've been thinking about my musical identity lately—what ties together all the music I genuinely connect with?",
+      "llm_response": "Based on your preferences, your musical identity is rooted in **emotional authenticity and expressive freedom**.\n\nWhether it's the raw feeling in a classic rock solo, the clear emotion of a Tchaikovsky symphony, or the complex soundscapes of Radiohead, you connect with music that has a distinct, human-driven vision. You value art that isn't formulaic or manufactured, preferring music that has \"room to breathe\" and prioritizes genuine expression over commercial structure.",
+      "reference_answer": "Three interconnected values form your musical identity across all genres: First, emotional authenticity over technical display—you consistently reject 'virtuosity without feeling' while praising music where 'every note has purpose.' This appears in your rock appreciation ('raw emotional solos'), classical connection (Romantic composers' 'clear emotions'), and alternative love ('complex emotions'). Second, human imperfection as expressive virtue—you critique 'clinical' production while valuing 'analog warmth' and 'human imperfection' that makes music 'breathe.' This spans your rock, blues, and alternative interests—you hear vulnerability as strength, not weakness. Third, artistic integrity over commercial calculation—you gravitate toward artists who 'prioritize artistic vision over commercial appeal' and reject music that feels 'manufactured' or 'designed by committee.' These values form a coherent philosophy: you seek music where skilled performers express genuine emotion through imperfectly human means, prioritizing personal truth over market appeal. This explains your connections across rock, alternative, and Romantic classical while struggling with extreme metal vocals (lacks melodic emotional connection) and formulaic pop (prioritizes marketability over authenticity). Your musical identity isn't defined by genre—it's defined by this unwavering commitment to human authenticity in musical expression. You're not a technical virtuoso seeking complexity—you're an emotional communicator seeking genuine connection through sound.",
+      "score": 1
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I want to grow as a musician—what's the most effective way for me to approach learning and practice?",
+      "llm_response": "Based on your appreciation for soulful expression over sheer speed, here’s an effective approach to your practice:\n\n*   **Make phrasing your primary focus.** Before you play a melody, try singing it. This connects you to its natural breath and rhythm. Since you enjoy finding connections between instruments, try learning melodies from vocalists or cellists to expand your melodic vocabulary beyond typical guitar patterns.\n\n*   **Practice technique with musical intent.** Your work on bending and vibrato is perfect. Now, elevate it. Instead of just practicing a half-step bend, practice a *questioning* bend. Instead of just practicing vibrato, practice a *wistful* vibrato. Assigning an emotion to every technical exercise bridges the gap between your fingers and the soulful quality you admire.\n\n*   **Study tone and space.** When listening to Gilmour or Knopfler, analyze how they use the space between notes to create tension and release. Experiment with your tone controls and effects not as afterthoughts, but as core components of your voice. This mirrors how you learned to appreciate the technical skill within classical works.",
+      "reference_answer": "Your optimal learning approach uniquely combines analytical understanding with emotional immersion—never one without the other. You've demonstrated this dual approach repeatedly: learning violin not just to play, but to 'understand classical music better' by experiencing its technical demands firsthand. Studying guitar solos note-by-note but always with emotional intent—you want to 'capture that feeling,' not just replicate technique. This dual approach is your superpower. Practical application: First, learn technique through emotional goals—practice bends to express sadness, not just to execute the motion. Second, deepen appreciation through hands-on experience—your violin studies transformed how you hear classical recordings; your classical guitar practice revealed 'compositional bridges' in orchestral music. Third, cross-pollinate instruments—your guitar harmony knowledge helps your violin phrasing; violin intonation sensitivity improves your guitar bending. Fourth, analyze recordings emotionally and technically simultaneously—ask both 'what feeling does this convey?' and 'how was this achieved technically?' Avoid purely technical exercises divorced from musical context (scales without emotional intent), and avoid passive listening without active analysis. Your growth happens at the intersection of 'What is this technically?' and 'How does this make me feel?'—that's where your most profound musical insights emerge. This approach honors both your intellectual curiosity and emotional sensitivity—two sides of a single musical mind.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I've noticed I react differently to live music versus recordings—what does this tell me about my musical preferences?",
+      "llm_response": "Your preference for live music suggests you're an active, analytical listener who values the complete sensory experience of a performance.\n\nYou're drawn to the physical presence of the sound and the human element—the visual interaction and the unique, uncompressed dynamics of that specific moment. As a musician who analyzes production, you appreciate seeing the craft and performance unfold in real-time, an aspect that recordings can't fully capture.",
+      "reference_answer": "Your preference for live or live-sounding recordings over sterile studio productions reveals a core need for human connection in music. Your breakthrough classical moment came from 'seeing a live orchestra perform' where 'the physical presence of the sound...made the music come alive' in ways 'recordings never could.' You specifically praised classic rock bands that 'recorded live in the studio with minimal overdubs' where you can 'hear the human imperfections that give the music soul.' You criticize modern production for being 'too clinical' and 'processed,' stripping away the 'human element' you value. This isn't about audiophile preferences—it's about emotional authenticity. Live performance provides three things sterile recordings often lack: 1) Visual/spatial dimension—you watch musicians communicate non-verbally, creating a richer emotional context; 2) Dynamic unpredictability—slight variations in timing and expression that reveal human presence; 3) Shared experience—the collective energy of audience and performers creating a unique moment. Your preference matters practically: First, prioritize capturing authentic performances over perfecting every detail in post-production when you record. Second, seek out live albums and minimally produced records to train your ear on genuine musical interaction. Third, play with other musicians regularly—this develops the responsive listening skills that make performances breathe. Your preference isn't anti-technology; it's pro-humanity in music-making. The warmth you seek in 'analog recordings' and authenticity you value in 'lo-fi production' all point to the same core need: music that breathes like a human being, not a machine.",
+      "score": 0
+    },
+    {
+      "case_id": "recommendations_music_200",
+      "prompt_path": "prompts/system_prompt.txt",
+      "query_id": "",
+      "question": "I'm making a playlist that really represents my taste—what should I include to capture the essence of what I love in music?",
+      "llm_response": "Based on your appreciation for atmospheric, boundary-pushing rock, this playlist should capture the essence of what you love. It focuses on innovative structures and genuine emotional depth.\n\n*   **Radiohead - \"Weird Fishes/Arpeggi\"**: The benchmark for building a complex, propulsive soundscape that breathes.\n*   **Grizzly Bear - \"Sleeping Ute\"**: A masterclass in non-traditional structure, shifting from jarring rock to ethereal space.\n*   **The War on Drugs - \"Under the Pressure\"**: An epic that uses its long intro to create a vast, immersive atmosphere you can get lost in.\n*   **Slowdive - \"Sugar for the Pill\"**: For pure, melancholic atmosphere. It’s all about texture and space, the definition of a soundscape.\n*   **Black Country, New Road - \"Concorde\"**: For that exciting \"hidden treasure\" feeling. A recent band that takes incredible artistic risks, building from a whisper to a cathartic climax.",
+      "reference_answer": "Your perfect playlist should balance emotional authenticity, technical craft, and genre diversity while honoring your core values. Here's a 10-song arc that mirrors your musical journey: Start with Pink Floyd's 'Comfortably Numb'—Gilmour's solo embodies your love of 'raw, emotional solos' with 'human imperfections.' Add Led Zeppelin's 'Whole Lotta Love' for Jimmy Page's 'incredible tone and phrasing' you're learning. Include Radiohead's 'Paranoid Android' for its 'complex emotions' and the 'genuine excitement' you feel discovering boundary-pushing music. Add Simon & Garfunkel's 'The Sound of Silence' for poetic lyrics that 'paint vivid pictures.' Include a Brahms violin concerto movement honoring your connection to Romantic composers who 'express clear emotions.' Insert B.B. King's 'The Thrill Is Gone' to ground everything in blues' emotional honesty. Add Metallica's 'Nothing Else Matters' showcasing metal's 'musical range' in acoustic moments. Include Pink Floyd's 'Breathe' for its 'analog warmth' you cherish. Add Dua Lipa's 'Don't Start Now' for 'catchy melodies' without sacrificing production quality. Close with The Rolling Stones' 'Gimme Shelter' live version ending on musicians playing together in real time. This arc moves from technical mastery to emotional vulnerability and back—every song passes your authenticity test while showcasing your range. The unifying thread isn't genre—it's human expression prioritized over technical display or commercial calculation.",
+      "score": 0
+    }
+  ]
+}
