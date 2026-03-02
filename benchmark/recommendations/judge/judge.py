@@ -10,6 +10,8 @@ from pathlib import Path
 
 import yaml
 from openai import OpenAI
+from httpx import Client
+from openai._base_client import DEFAULT_TIMEOUT, DEFAULT_CONNECTION_LIMITS
 from tqdm import tqdm
 
 
@@ -78,16 +80,56 @@ def main():
     # Load resources
     judge_prompt = load_prompt(judge_prompt_path)
     eval_data = load_eval_results(eval_input_path)
-    client = OpenAI(api_key=config['api_key'])
+
+    memory_type = eval_data.get("memory_type", "")
+
+    # Validate filters based on memory type
+    if memory_type == "mem_agent":
+        if (case_ids is None) != (prompt_paths is None):
+            raise ValueError("For mem-agent both filter_case_id and filter_prompt_path must be provided together.")
+        if case_ids is not None and len(case_ids) != len(prompt_paths):
+            raise ValueError("filter_case_id and filter_prompt_path must have the same length.")
+    elif memory_type == "mem0":
+        if prompt_paths is not None and case_ids is None:
+            raise ValueError("For mem0 you cannot specify filter_prompt_path without filter_case_id.")
+    else:
+        # Unknown memory type: fall back to default paired filtering
+        pass
+
+    # Build allowed filter sets
+    allowed_pairs = None
+    allowed_case_ids = None
+    if case_ids is not None:
+        if memory_type == "mem_agent":
+            allowed_pairs = set(zip(case_ids, prompt_paths))
+        else:  # mem0 or unknown
+            allowed_case_ids = set(case_ids)
+
+    http_client = Client(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+
+    client = OpenAI(
+        base_url=config["openrouter_base_url"],
+        api_key=config['api_key'],
+        http_client=http_client
+    )
 
     # Flatten and filter
     all_results = []
     for case in eval_data['cases']:
         case_id = case.get('case_id', '')
         prompt_path = case.get('prompt_path', '')
-        
-        if allowed_pairs is not None and (case_id, prompt_path) not in allowed_pairs:
-            continue
+
+        if memory_type == "mem_agent":
+            if allowed_pairs is not None and (case_id, prompt_path) not in allowed_pairs:
+                continue
+        else:  # mem0
+            if allowed_case_ids is not None and case_id not in allowed_case_ids:
+                continue
 
         for result in case['results']:
             enriched = {

@@ -308,7 +308,7 @@ def run_mem_agent_query(agent: Agent, query_obj: dict, config: dict) -> dict:
 # Output Generation
 # ============================================================================
 
-def save_results_incremental(data: dict, output_path: str, memory_type: str):
+def save_results_incremental(data: dict, output_path: str, memory_type: str, retrieve_limit: int = None):
     """Save results to JSON file incrementally, preserving existing entries."""
     output_file = Path(output_path)
     
@@ -333,6 +333,10 @@ def save_results_incremental(data: dict, output_path: str, memory_type: str):
     # Update the config from new data if not already set
     if not existing_data.get("config"):
         existing_data["config"] = data.get("config", {})
+    
+    # Add retrieve_limit to config if provided
+    if retrieve_limit is not None:
+        existing_data["config"]["retrieve_limit"] = retrieve_limit
 
     # Process new cases and add only unique ones
     new_cases = data.get("cases", [])
@@ -373,7 +377,7 @@ def run_case(script_dir: Path, config: dict, case_config: dict, case_idx: int) -
     """Run benchmark for a single case. Returns (mem0_case_result, agent_case_result)."""
     data_path = script_dir / case_config['data_path']
     prompt_path = script_dir / case_config['prompt_path']
-    prompt_file = ".".join(case_config['prompt_path'].split(".")[:-1])
+    prompt_file = Path(case_config['prompt_path']).stem
     data = load_benchmark_data(str(data_path))
 
     case_id = data['case_id']
@@ -409,31 +413,37 @@ def run_case(script_dir: Path, config: dict, case_config: dict, case_idx: int) -
 
     mem0_case = {
         "case_id": case_id,
-        "prompt_path": case_config['prompt_path'],
+        "prompt_path": "",
         "results": mem0_results
     }
     agent_case = {
         "case_id": case_id,
-        "prompt_path": case_config['prompt_path'],
+        "prompt_path": Path(case_config['prompt_path']).name,
         "results": agent_results
     }
 
     # Save results incrementally after each case
     output_dir = script_dir / config['benchmark']['output_dir']
     output_dir.mkdir(parents=True, exist_ok=True)
-
-    mem0_output_path = output_dir / "results_mem0.json"
+    
+    # Get retrieve_limit from config
+    retrieve_limit = config['mem0']['benchmark']['retrieve_limit']
+    
+    # Create filename with retrieve_limit
+    mem0_output_path = output_dir / f"results_mem0_limit_{retrieve_limit}.json"
     mem0_data = {
         "benchmark_timestamp": datetime.now().isoformat(),
         "memory_type": "mem0",
         "config": {
             "model": config['mem0']['llm']['model'],
             "embedder": config['mem0']['embedder']['model'],
+            "retrieve_limit": retrieve_limit
         },
         "cases": [mem0_case]
     }
-    save_results_incremental(mem0_data, str(mem0_output_path), "mem0")
+    save_results_incremental(mem0_data, str(mem0_output_path), "mem0", retrieve_limit)
 
+    # For mem-agent, use a different naming pattern since it doesn't have retrieve_limit
     agent_output_path = output_dir / "results_mem_agent.json"
     agent_data = {
         "benchmark_timestamp": datetime.now().isoformat(),

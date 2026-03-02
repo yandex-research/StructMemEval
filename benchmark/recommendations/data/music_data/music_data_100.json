@@ -1,0 +1,385 @@
+{
+  "case_id": "recommendations_music_100",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Rock Guitar Passion",
+      "contains_fact": true,
+      "fact_id": "rock_guitar_preference",
+      "fact_quote": "I'm drawn to rock music primarily because of the expressive guitar solos. There's something about a well-crafted solo that tells a story without words",
+      "messages": [
+        {"role": "user", "content": "I've been obsessed with guitar solos lately."},
+        {"role": "assistant", "content": "Which guitarists inspire you most?"},
+        {"role": "user", "content": "Gilmour's phrasing is incredible. Every note has purpose."},
+        {"role": "assistant", "content": "He's a master of restraint—less is often more with his playing."},
+        {"role": "user", "content": "I'm drawn to rock music primarily because of the expressive guitar solos. There's something about a well-crafted solo that tells a story without words."},
+        {"role": "assistant", "content": "That emotional storytelling through melody is what separates great players from technicians."},
+        {"role": "user", "content": "I practice bending and vibrato for hours trying to capture that feeling."},
+        {"role": "assistant", "content": "Those subtle techniques carry so much emotional weight."},
+        {"role": "user", "content": "Modern rock solos often feel too clinical compared to 70s classics."},
+        {"role": "assistant", "content": "The analog warmth and human imperfection made those solos breathe."},
+        {"role": "user", "content": "I want my playing to have that same soulful quality someday."},
+        {"role": "assistant", "content": "That's the right goal—keep listening closely and your ear will guide your fingers."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Classical Violin Journey",
+      "contains_fact": true,
+      "fact_id": "classical_violin_learning",
+      "fact_quote": "I started learning violin six months ago to understand classical music better. The discipline required is intense but rewarding",
+      "messages": [
+        {"role": "user", "content": "My violin teacher says my intonation is improving."},
+        {"role": "assistant", "content": "That's one of the hardest skills to develop on violin."},
+        {"role": "user", "content": "I practice scales for 30 minutes every morning before work."},
+        {"role": "assistant", "content": "Consistency beats marathon sessions for building muscle memory."},
+        {"role": "user", "content": "I started learning violin six months ago to understand classical music better. The discipline required is intense but rewarding."},
+        {"role": "assistant", "content": "Learning an instrument completely transforms how you listen to recordings of that instrument."},
+        {"role": "user", "content": "Now when I hear Heifetz, I appreciate the technical mastery so much more."},
+        {"role": "assistant", "content": "You're hearing the invisible work behind the beauty."},
+        {"role": "user", "content": "It's humbling but motivating at the same time."},
+        {"role": "assistant", "content": "Exactly—the gap between where you are and where you want to be is the engine of growth."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Pop Melody Craft",
+      "contains_fact": true,
+      "fact_id": "pop_melody_appreciation",
+      "fact_quote": "I have to admit pop music often has the catchiest melodies. There's real skill in writing something that sticks in your head after one listen",
+      "messages": [
+        {"role": "user", "content": "I can't stop humming this Dua Lipa chorus."},
+        {"role": "assistant", "content": "Those hooks are engineered to be memorable."},
+        {"role": "user", "content": "I have to admit pop music often has the catchiest melodies. There's real skill in writing something that sticks in your head after one listen."},
+        {"role": "assistant", "content": "The best pop writers understand musical psychology at a deep level."},
+        {"role": "user", "content": "Even simple chord progressions can feel fresh with the right arrangement."},
+        {"role": "assistant", "content": "Production plays a huge role in making a melody land emotionally."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Metal Vocal Preferences",
+      "contains_fact": true,
+      "fact_id": "metal_vocal_dislike",
+      "fact_quote": "I appreciate metal musicianship but can't get past the aggressive screaming vocals. It feels like shouting over interesting music",
+      "messages": [
+        {"role": "user", "content": "My friend loves death metal but I just can't connect with it."},
+        {"role": "assistant", "content": "What specifically doesn't work for you?"},
+        {"role": "user", "content": "I appreciate metal musicianship but can't get past the aggressive screaming vocals. It feels like shouting over interesting music."},
+        {"role": "assistant", "content": "You might enjoy bands like Opeth that blend clean and harsh vocals strategically."},
+        {"role": "user", "content": "I'll check them out. I'm curious if instrumental metal could work for me."},
+        {"role": "assistant", "content": "Absolutely—bands like Animals as Leaders focus purely on composition."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Coffee Chat",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Just had the best pour-over coffee this morning."},
+        {"role": "assistant", "content": "What beans did you use?"},
+        {"role": "user", "content": "Ethiopian Yirgacheffe—floral notes with bright acidity."},
+        {"role": "assistant", "content": "Perfect choice for morning clarity. Nothing beats that first sip."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Jazz Improvisation",
+      "contains_fact": true,
+      "fact_id": "jazz_improvisation_interest",
+      "fact_quote": "I'm fascinated by jazz improvisation—the ability to create coherent melodies spontaneously shows deep musical understanding",
+      "messages": [
+        {"role": "user", "content": "Coltrane's Giant Steps solo blew my mind."},
+        {"role": "assistant", "content": "That's one of the most technically demanding pieces in jazz."},
+        {"role": "user", "content": "I'm fascinated by jazz improvisation—the ability to create coherent melodies spontaneously shows deep musical understanding."},
+        {"role": "assistant", "content": "It's like speaking a language fluently without planning your sentences."},
+        {"role": "user", "content": "I want to develop that kind of musical fluency someday."},
+        {"role": "assistant", "content": "Start with blues scales—they're the foundation of so much improvisation."},
+        {"role": "user", "content": "I've been transcribing simple Miles Davis phrases."},
+        {"role": "assistant", "content": "That's the best ear training—you internalize the vocabulary directly."},
+        {"role": "user", "content": "It's slow going but I can feel my ear improving."},
+        {"role": "assistant", "content": "Every phrase you learn becomes part of your own musical voice."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Electronic Production",
+      "contains_fact": true,
+      "fact_id": "electronic_production_fascination",
+      "fact_quote": "I've been diving into electronic music production lately. The ability to craft entire sonic worlds from samples and synths is incredibly empowering",
+      "messages": [
+        {"role": "user", "content": "I spent all weekend tweaking synth patches."},
+        {"role": "assistant", "content": "What kind of sounds are you going for?"},
+        {"role": "user", "content": "I've been diving into electronic music production lately. The ability to craft entire sonic worlds from samples and synths is incredibly empowering."},
+        {"role": "assistant", "content": "That creative control is what draws many producers to electronic music."},
+        {"role": "user", "content": "I love how you can build textures that don't exist in acoustic instruments."},
+        {"role": "assistant", "content": "That limitless palette is what makes electronic music so exciting—no rules, just imagination."},
+        {"role": "user", "content": "I'm experimenting with granular synthesis now."},
+        {"role": "assistant", "content": "Granular opens up amazing textural possibilities—like painting with sound particles."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Folk Storytelling",
+      "contains_fact": true,
+      "fact_id": "folk_storytelling_value",
+      "fact_quote": "Folk music resonates with me because of its storytelling tradition. The lyrics paint vivid pictures and carry cultural history in a way few other genres do",
+      "messages": [
+        {"role": "user", "content": "I've been listening to a lot of Simon & Garfunkel lately."},
+        {"role": "assistant", "content": "Their lyrical imagery is so cinematic."},
+        {"role": "user", "content": "Folk music resonates with me because of its storytelling tradition. The lyrics paint vivid pictures and carry cultural history in a way few other genres do."},
+        {"role": "assistant", "content": "Those narratives create emotional connections that transcend generations."},
+        {"role": "user", "content": "Modern music often feels disposable compared to these timeless stories."},
+        {"role": "assistant", "content": "Folk songs become part of our collective memory in a special way."},
+        {"role": "user", "content": "I find myself remembering every word of these songs years later."},
+        {"role": "assistant", "content": "That memorability is the hallmark of great storytelling in music."},
+        {"role": "user", "content": "The simplicity of the arrangements puts focus where it belongs—on the words."},
+        {"role": "assistant", "content": "When production serves the song rather than overshadowing it, magic happens."},
+        {"role": "user", "content": "I want my own songwriting to have that kind of lasting impact someday."},
+        {"role": "assistant", "content": "The best advice: write what you know, but feel deeply enough that others can connect."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Hip-Hop Beat Appreciation",
+      "contains_fact": true,
+      "fact_id": "hiphop_beat_appreciation",
+      "fact_quote": "I've grown to appreciate hip-hop primarily for its innovative beat production. The rhythmic complexity and sample manipulation show serious musical intelligence",
+      "messages": [
+        {"role": "user", "content": "Kendrick's album has such intricate production."},
+        {"role": "assistant", "content": "The beat switches and layered samples create constant surprise."},
+        {"role": "user", "content": "I've grown to appreciate hip-hop primarily for its innovative beat production. The rhythmic complexity and sample manipulation show serious musical intelligence."},
+        {"role": "assistant", "content": "Great producers like J Dilla approached rhythm with almost mathematical precision."},
+        {"role": "user", "content": "I've started analyzing the drum patterns in my DAW to understand the swing."},
+        {"role": "assistant", "content": "That micro-timing is what separates robotic quantization from human feel."},
+        {"role": "user", "content": "Even without understanding the lyrics, I can get lost in the instrumental textures."},
+        {"role": "assistant", "content": "The best hip-hop production works on multiple levels—rhythmic, textural, and emotional."},
+        {"role": "user", "content": "It's made me listen to rhythm differently in all genres now."},
+        {"role": "assistant", "content": "Hip-hop expanded the vocabulary of rhythm for the entire music world."},
+        {"role": "user", "content": "I catch myself tapping more complex patterns unconsciously now."},
+        {"role": "assistant", "content": "Your internal rhythm grid is expanding—soon you'll hear polyrhythms everywhere."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Weather Talk",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Finally got some sunshine after weeks of rain."},
+        {"role": "assistant", "content": "Perfect day to take a walk and clear your head."},
+        {"role": "user", "content": "I'm heading to the park with my sketchbook."},
+        {"role": "assistant", "content": "Natural light makes everything look more vibrant—great choice for drawing."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Blues Emotional Depth",
+      "contains_fact": true,
+      "fact_id": "blues_emotional_depth",
+      "fact_quote": "Blues music moves me because of its raw emotional honesty. There's no pretense—just pure feeling expressed through simple but powerful structures",
+      "messages": [
+        {"role": "user", "content": "B.B. King's vibrato makes me feel things I can't explain."},
+        {"role": "assistant", "content": "He could convey more emotion in one bent note than many singers do in entire songs."},
+        {"role": "user", "content": "Blues music moves me because of its raw emotional honesty. There's no pretense—just pure feeling expressed through simple but powerful structures."},
+        {"role": "assistant", "content": "That authenticity is why blues remains foundational to so much modern music."},
+        {"role": "user", "content": "Three chords and the truth—that simplicity forces you to mean every note."},
+        {"role": "assistant", "content": "When you can't hide behind complexity, your emotional intention has to be genuine."},
+        {"role": "user", "content": "I try to bring that same honesty to my own playing regardless of genre."},
+        {"role": "assistant", "content": "That's the universal lesson blues teaches every serious musician."},
+        {"role": "user", "content": "Even when I play rock or jazz, I think about that emotional directness."},
+        {"role": "assistant", "content": "Blues is less a genre and more an approach to musical expression."},
+        {"role": "user", "content": "It's the emotional foundation everything else gets built on."},
+        {"role": "assistant", "content": "And the beauty is, you can always come back to it when you need to reconnect with why you play."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Indie Authenticity",
+      "contains_fact": true,
+      "fact_id": "indie_authenticity_preference",
+      "fact_quote": "I gravitate toward indie artists because they often prioritize artistic vision over commercial appeal. That commitment to authenticity creates more meaningful connections",
+      "messages": [
+        {"role": "user", "content": "Discovered this amazing indie band from Portland last night."},
+        {"role": "assistant", "content": "What drew you to their sound?"},
+        {"role": "user", "content": "Their lyrics felt genuinely personal, not focus-grouped for radio."},
+        {"role": "assistant", "content": "That unfiltered perspective is increasingly rare in mainstream music."},
+        {"role": "user", "content": "I gravitate toward indie artists because they often prioritize artistic vision over commercial appeal. That commitment to authenticity creates more meaningful connections."},
+        {"role": "assistant", "content": "When artists make music for themselves first, listeners can feel that integrity."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Genre Exploration",
+      "contains_fact": true,
+      "fact_id": "genre_exploration_pattern",
+      "fact_quote": "I notice I'm drawn to genres that balance technical skill with emotional expression. Pure virtuosity without feeling leaves me cold, but raw emotion without craft feels unfinished",
+      "messages": [
+        {"role": "user", "content": "I've been exploring so many different genres this year."},
+        {"role": "assistant", "content": "What patterns have you noticed in what resonates with you?"},
+        {"role": "user", "content": "I notice I'm drawn to genres that balance technical skill with emotional expression. Pure virtuosity without feeling leaves me cold, but raw emotion without craft feels unfinished."},
+        {"role": "assistant", "content": "That balance is the sweet spot where music becomes both impressive and moving."},
+        {"role": "user", "content": "I think that's why I connect with artists who have clear technical mastery but never show off unnecessarily."},
+        {"role": "assistant", "content": "Technique in service of expression—that's the hallmark of mature musicianship."},
+        {"role": "user", "content": "It's also why I struggle with genres that prioritize one extreme over the other."},
+        {"role": "assistant", "content": "That self-knowledge will save you years of chasing music that isn't meant for you."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "Coffee Break",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Just brewed a fresh pot of Colombian roast."},
+        {"role": "assistant", "content": "Rich and chocolatey notes? Perfect for a focused practice session."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q01_top_genre_sentiment",
+      "question": "Based on our conversations, which genres receive the most consistently positive feedback from you, and which one stands out as the single most positively regarded?",
+      "reference_answer": {
+        "text": "Most of the genres you've discussed receive positive feedback, with approximately 10 out of 11 genre-specific conversations being positive. Blues, rock, folk, jazz, hip‑hop, electronic, indie, classical, and pop all garnered enthusiastic responses. The single most positively regarded genre, based on the depth of emotional connection you expressed, is blues. You described it as having 'raw emotional honesty' and called it 'the emotional foundation everything else gets built on.' Your praise for B.B. King's vibrato and the concept of 'three chords and the truth' shows a profound resonance that goes beyond casual appreciation.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "jazz_improvisation_interest", "hiphop_beat_appreciation", "electronic_production_fascination", "indie_authenticity_preference", "classical_violin_learning", "pop_melody_appreciation", "metal_vocal_dislike", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identifies blues as the most positively regarded genre",
+          "Notes that most other genres also received positive feedback",
+          "Uses user's specific descriptors ('raw emotional honesty', 'three chords and the truth')",
+          "Provides approximate positive count (10 out of 11)"
+        ]
+      }
+    },
+    {
+      "query_id": "q02_positive_negative_ratio",
+      "question": "What is the approximate ratio of positive to negative feedback across all your music-related conversations?",
+      "reference_answer": {
+        "text": "Across your 11 music‑focused conversations (excluding filler chats), approximately 10 were positive and 1 was negative, giving a positive‑to‑negative ratio of about 10:1, or roughly 91% positive overall. The only clearly negative session was about heavy metal, where you expressed discomfort with 'aggressive screaming vocals' that overshadow the musicianship. All other genres—blues, rock, folk, jazz, hip‑hop, electronic, indie, classical, and pop—received predominantly positive or at least appreciative feedback, reflecting your broad musical curiosity and your core value of emotional authenticity.",
+        "required_facts": ["metal_vocal_dislike", "blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "jazz_improvisation_interest", "hiphop_beat_appreciation", "electronic_production_fascination", "indie_authenticity_preference", "classical_violin_learning", "pop_melody_appreciation", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Provides approximate ratio (10:1) and percentage (≈91%)",
+          "Identifies metal as the sole negative outlier",
+          "Notes the widespread positivity across other genres",
+          "Connects to user's core value of emotional authenticity"
+        ]
+      }
+    },
+    {
+      "query_id": "q03_primary_instrument",
+      "question": "Based on all our conversations, which instrument appears most frequently in your musical interests and practice, and what role does it play in your musical identity?",
+      "reference_answer": {
+        "text": "Guitar is the instrument that appears most frequently in your conversations. It features in discussions about rock (where solos 'tell a story without words'), blues (where bending and vibrato convey deep emotion), folk (acoustic guitar accompanying storytelling), and even indirectly in your jazz interests (improvisation on guitar). You practice bending and vibrato for hours and study players like Gilmour and B.B. King. Violin also appears, but those conversations are more analytical—you're learning it to understand classical music better. Guitar is clearly your expressive voice, the instrument through which you seek to capture that 'emotional storytelling' you value so deeply.",
+        "required_facts": ["rock_guitar_preference", "blues_emotional_depth", "folk_storytelling_value", "jazz_improvisation_interest", "classical_violin_learning"],
+        "evaluation_criteria": [
+          "Correctly identifies guitar as the primary instrument",
+          "Distinguishes between expressive (guitar) and analytical (violin) roles",
+          "References specific practice elements (bending, vibrato, studying players)",
+          "Connects to user's core value of emotional storytelling"
+        ]
+      }
+    },
+    {
+      "query_id": "q04_genre_to_avoid",
+      "question": "Is there any genre you've discussed that you should probably avoid spending time on, and what specific aspects of that genre conflict with your musical values?",
+      "reference_answer": {
+        "text": "Based on your feedback, you should avoid death metal and similar subgenres with aggressive screamed vocals. You explicitly stated that you 'appreciate metal musicianship but can't get past the aggressive screaming vocals,' which 'feels like shouting over interesting music.' This directly conflicts with your core value of emotional expression through melody and your preference for 'technique in service of expression.' While you respect the technical skill, the vocal delivery undermines the emotional connection you seek. Your curiosity about instrumental metal (like Animals as Leaders) suggests you might still find value in metal that emphasizes composition over vocal aggression, but traditional death/black metal is unlikely to resonate.",
+        "required_facts": ["metal_vocal_dislike", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Identifies death metal / aggressive vocal metal as genre to avoid",
+          "Explains specific conflict (screaming vocals vs. melodic emotional expression)",
+          "Notes appreciation for musicianship but rejection of vocal style",
+          "Connects to user's core value of technique serving expression"
+        ]
+      }
+    },
+    {
+      "query_id": "q05_production_aesthetic",
+      "question": "What production or recording aesthetic seems to best match your musical personality based on your comments across genres?",
+      "reference_answer": {
+        "text": "Your ideal production aesthetic is warm, organic, and performance‑focused rather than clinically perfect. You've praised the 'analog warmth' of 70s rock recordings and the 'human imperfection' that makes solos 'breathe.' You value folk's 'simplicity of arrangements' that puts focus on the words, and you're drawn to hip‑hop's 'micro‑timing' that creates human feel. Even in electronic music, you're fascinated by texture and sonic exploration rather than sterile precision. You reject production that feels 'clinical' or 'processed.' Your sweet spot is recordings that preserve natural dynamics, room ambiance, and performance nuance—think Neil Young's rawness or Bon Iver's textured intimacy. Your philosophy: production should serve emotional authenticity, not mask it.",
+        "required_facts": ["rock_guitar_preference", "folk_storytelling_value", "hiphop_beat_appreciation", "electronic_production_fascination", "blues_emotional_depth"],
+        "evaluation_criteria": [
+          "Identifies warm/organic/performance‑focused as ideal aesthetic",
+          "References specific user comments (analog warmth, human imperfection, simplicity, micro‑timing)",
+          "Contrasts with rejected clinical/processed sound",
+          "Provides concrete examples of desired production qualities"
+        ]
+      }
+    },
+    {
+      "query_id": "q06_core_musical_values",
+      "question": "What three core values define your musical taste across all the genres we've discussed?",
+      "reference_answer": {
+        "text": "Your musical taste is defined by three interconnected values: 1) Emotional authenticity over technical display—you praise music where 'every note has purpose' and 'pure feeling expressed through simple but powerful structures,' while rejecting 'virtuosity without feeling.' 2) Human imperfection as expressive virtue—you value 'analog warmth,' the 'human feel' in hip‑hop's micro‑timing, and the 'raw emotional honesty' of blues, contrasting with 'clinical' modern production. 3) Artistic integrity over commercial calculation—you gravitate toward indie artists who 'prioritize artistic vision over commercial appeal' and folk music's timeless stories, while being wary of music that feels 'focus-grouped' or disposable. These values unify your love of blues, rock, folk, jazz, and hip‑hop, while explaining your resistance to aggressive metal vocals and overly polished pop.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "hiphop_beat_appreciation", "indie_authenticity_preference", "genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Distills three coherent core values",
+          "Provides evidence for each from multiple genres",
+          "Explains how values lead to genre preferences/rejections",
+          "Uses user's own phrasing where possible (e.g., 'every note has purpose', 'raw emotional honesty')"
+        ]
+      }
+    },
+    {
+      "query_id": "q07_positive_genre_count",
+      "question": "How many different music genres have you discussed positively in our conversations, and can you name them?",
+      "reference_answer": {
+        "text": "You've discussed approximately nine genres positively: blues, rock, folk, jazz, hip‑hop, electronic, indie, classical, and pop. Each received enthusiastic comments about their unique qualities—blues for its emotional honesty, rock for expressive solos, folk for storytelling, jazz for improvisational depth, hip‑hop for rhythmic innovation, electronic for sonic exploration, indie for authenticity, classical for technical mastery, and pop for catchy melodies. This wide embrace shows your curiosity and your ability to find value in diverse musical languages, all while maintaining a consistent focus on emotional connection and authenticity.",
+        "required_facts": ["blues_emotional_depth", "rock_guitar_preference", "folk_storytelling_value", "jazz_improvisation_interest", "hiphop_beat_appreciation", "electronic_production_fascination", "indie_authenticity_preference", "classical_violin_learning", "pop_melody_appreciation"],
+        "evaluation_criteria": [
+          "Counts approximately nine positively discussed genres",
+          "Lists them accurately",
+          "Summarizes what you appreciate in each",
+          "Notes the unifying thread of emotional connection"
+        ]
+      }
+    },
+    {
+      "query_id": "q08_blues_appreciation",
+      "question": "What is it about blues music that moves you so deeply, according to our conversations?",
+      "reference_answer": {
+        "text": "Blues moves you because of its 'raw emotional honesty' and the way it 'expresses pure feeling through simple but powerful structures.' You specifically mentioned B.B. King's vibrato as capable of conveying more emotion than many singers do in entire songs. The concept of 'three chords and the truth' resonates with you because that simplicity forces genuine intention—'when you can't hide behind complexity, your emotional intention has to be genuine.' You also see blues as foundational, calling it 'the emotional foundation everything else gets built on' and an approach that applies across genres. It's not just a style of music; for you, it's a philosophy of authentic expression.",
+        "required_facts": ["blues_emotional_depth"],
+        "evaluation_criteria": [
+          "Quotes user's key phrases ('raw emotional honesty', 'three chords and the truth', 'emotional foundation')",
+          "Explains why simplicity leads to authenticity",
+          "Connects blues to broader musical philosophy",
+          "Mentions B.B. King as a touchstone"
+        ]
+      }
+    },
+    {
+      "query_id": "q09_guitar_heroes",
+      "question": "Which guitarists have you mentioned as inspirations, and what qualities make them stand out to you?",
+      "reference_answer": {
+        "text": "You've mentioned David Gilmour and B.B. King as primary inspirations. Gilmour stands out for his 'phrasing' and the way 'every note has purpose'—his restraint and emotional storytelling resonate with you. B.B. King inspires you through his vibrato and ability to 'convey more emotion in one bent note than many singers do in entire songs.' Both players exemplify your ideal of technique serving expression: they don't rely on speed or flash, but on deep feeling and musicality. You practice bending and vibrato to capture that same soulful quality, showing that you're not just admiring them from afar but actively trying to absorb their approach.",
+        "required_facts": ["rock_guitar_preference", "blues_emotional_depth"],
+        "evaluation_criteria": [
+          "Correctly names Gilmour and B.B. King",
+          "Describes admired qualities (phrasing, restraint, vibrato, emotional storytelling)",
+          "Connects to user's own practice (bending, vibrato)",
+          "Emphasizes technique in service of expression"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_genre_exploration_pattern",
+      "question": "What overarching principle guides your exploration of different music genres, based on your own observations?",
+      "reference_answer": {
+        "text": "You've identified the principle yourself: you're drawn to genres that 'balance technical skill with emotional expression.' You noted that 'pure virtuosity without feeling leaves me cold, but raw emotion without craft feels unfinished.' This explains why you connect with blues (simple yet deeply felt), jazz (complex improvisation with emotional depth), rock (expressive solos within crafted songs), and folk (lyrical storytelling with acoustic simplicity). It also explains your resistance to genres that lean too far one way—death metal (technique overshadowed by aggression) or overly formulaic pop (craft without genuine feeling). This self‑awareness is a powerful guide for your musical journey, helping you seek out artists who embody that balance.",
+        "required_facts": ["genre_exploration_pattern"],
+        "evaluation_criteria": [
+          "Quotes user's own principle ('balance technical skill with emotional expression')",
+          "Provides examples of genres that satisfy this balance",
+          "Notes genres that fail due to imbalance",
+          "Connects principle to user's overall musical philosophy"
+        ]
+      }
+    }
+  ]
+}
