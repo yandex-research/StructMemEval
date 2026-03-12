@@ -186,7 +186,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         "api_key": experiment.api_key,
     }
     if experiment.base_url:
-        llm_config["openrouter_base_url"] = experiment.base_url
+        llm_config["openai_base_url"] = experiment.base_url
 
     print(llm_config)
     memory = Memory(
@@ -280,7 +280,7 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
     """
     user_messages = []
     for session in sessions:
-        for msg in session['messages'][start:end]:
+        for msg in session['messages'][start: end]:
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
@@ -292,11 +292,11 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
     print(f"✓ Loaded {len(user_messages)} messages")
 
 
-def load_user_messages_to_agent(agent: Agent, sessions: list, start=0, end=-1, verbose: bool = False):
+def load_user_messages_to_agent(agent: Agent, sessions: list, start: int = 0, end: int = -1, verbose: bool = False):
     """Load user messages into mem-agent"""
     user_messages = []
     for session in sessions:
-        for msg in session['messages'][start:end]:
+        for msg in session['messages'][start: end]:
             if msg['role'] == 'user':
                 user_messages.append(msg['content'])
 
@@ -623,7 +623,7 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
 
     user_messages = []
     for session in sessions:
-        for msg in session['messages'][start:end]:
+        for msg in session['messages'][start: end]:
             if msg['role'] == 'user':
                 user_messages.append(msg['content'])
 
