@@ -1,0 +1,11 @@
+# Paul Cézanne
+- period: Post-Impressionism
+- notable_works: The Basket of Apples, Mont Sainte-Victoire
+- technique: Tilted planes, constructive brushwork (passage), geometric forms
+- user_sentiment: Positive
+- user_insights:
+    - Sees apples as "geological forms testing gravity" rather than just fruit.
+    - Interprets tilted perspective not as error, but as "rebuilding it from human doubt."
+    - Values the weight and structural integrity of his forms.
+    - Believes Cézanne "proves that doubt can be more powerful than certainty" in art.
+    - Finds his apples "more real than photorealistic renderings" because they "acknowledge the struggle of perception".

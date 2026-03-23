@@ -1,0 +1,11 @@
+# Tom Cruise
+- occupation: Actor, Producer
+- role: Action Star
+- user_opinion: Considers him "the last real action star" due to his dedication to practical stunts and physical filmmaking.
+- traits: Obsessed with authenticity; demands real reactions from cast (e.g., G-force in Top Gun).
+- **Industry Impact**: Believes he is the reason we still get practical blockbusters; stated "without Cruise, we'd have CGI planes and actors pretending."
+- notable_stunts:
+    - HALO jump in *Mission: Impossible - Fallout* (one take).
+    - Broken ankle stunt in *Fallout*.
+    - Filmed in real F-18s for *Top Gun: Maverick*, with actors really flying.
+    - **Insisted** on this realism for the entire cast, despite the physical toll (vomiting).

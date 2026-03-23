@@ -1,0 +1,11 @@
+# B.B. King
+- role: Blues Musician (Guitarist/Singer)
+- technique: Legendary vibrato. Described by user as making one note cry; all about feeling.
+- instrument: Lucille (Gibson ES-355) - user is actively trying to replicate this tone.
+- signature_move: Bending into notes (microtonal phrasing vs direct hits).
+- technique_nuance: The "crying" quality of his single notes holds deep emotional weight (user values this over technical complexity).
+- style: Blues (emotional, expressive)
+- user_insight: Proved that speed isn't necessary to evoke deep emotion ("break hearts").
+- technique_comparison: A single bent note is more expressive than a "hundred fast scales." 
+- user_interest: Added to playlist (confirmed tonight)
+- user_activity: Digging into playing style (analyzing technique/phrasing)
