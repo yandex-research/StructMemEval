@@ -1,16 +1,22 @@
 input_path: eval_results/gemini-3-pro/results_mem_agent.json
 prompt_path: prompt.txt
-output_path: results/judge_output_mem_agent_small_hint_350.json
-model: google/gemini-3-pro-preview
+output_path: results/judge_output_mem_agent_no_hint_100.json
+model: google/gemini-3.1-flash-lite-preview
 api_key: ${ELIZA_API_KEY}
 openrouter_base_url: "https://api.eliza.yandex.net/raw/openrouter/v1"
 
 filter_case_id:
-  - recommendations_art_350
-  - recommendations_movies_350
-  - recommendations_music_350
+  - recommendations_art_100
+  - recommendations_movies_100
+  - recommendations_music_100
+  - recommendations_boardgames_100
+  - recommendations_books_100
+  - recommendations_series_100
 
 filter_prompt_path:
-  - prompts/system_prompt_art_small_hint.txt
-  - prompts/system_prompt_movies_small_hint.txt
-  - prompts/system_prompt_music_small_hint.txt
+  - system_prompt.txt
+  - system_prompt.txt
+  - system_prompt.txt
+  - system_prompt.txt
+  - system_prompt.txt
+  - system_prompt.txt

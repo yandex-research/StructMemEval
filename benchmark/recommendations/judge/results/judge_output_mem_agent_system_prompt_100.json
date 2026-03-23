@@ -11,15 +11,11 @@
         "prompt_path": "system_prompt.txt"
       },
       {
-        "case_id": "recommendations_boardgames_100",
-        "prompt_path": "system_prompt.txt"
-      },
-      {
         "case_id": "recommendations_art_100",
         "prompt_path": "system_prompt.txt"
       },
       {
-        "case_id": "recommendations_series_100",
+        "case_id": "recommendations_boardgames_100",
         "prompt_path": "system_prompt.txt"
       },
       {
@@ -28,8 +24,8 @@
       }
     ]
   },
-  "num_examples": 60,
-  "mean_score": 0.45,
+  "num_examples": 50,
+  "mean_score": 0.44,
   "details": [
     {
       "case_id": "recommendations_art_100",
@@ -164,7 +160,7 @@
       "question": "Which films have I called 'perfect' or used similar high praise for?",
       "llm_response": "\nBased on your notes, here are the films you've praised highly:\n\n*   **Die Hard**: You've called this the \"**perfect action movie**\" due to its real stakes and practical effects. You also regard Hans Gruber as the \"**perfect** villain.\"\n*   **The Grand Budapest Hotel**: You noted that it balances whimsy and heart \"**perfectly**\" and was even better on a rewatch.\n*   **Mad Max: Fury Road**: You described this as \"**pure cinema**\" and a visceral experience that still \"blows you away\" years later.\n",
       "reference_answer": "You've used 'perfect' explicitly for Die Hard ('perfect action movie'). You called Fury Road 'pure cinema' and Grand Budapest Hotel a perfect balance of 'whimsy and heart.' Shawshank earned praise for its 'earned emotional journey' and was held up as an example of a film where every minute earns its runtime. All four share your core values: character authenticity and emotional beats that feel earned rather than manufactured.",
-      "score": 0
+      "score": 1
     },
     {
       "case_id": "recommendations_movies_100",
@@ -290,7 +286,7 @@
       "question": "What's my personal rule for starting a new fantasy series without anxiety?",
       "llm_response": "\nYour personal rule for starting a new fantasy series without anxiety is that you **avoid starting unfinished sagas** and prefer series with a **guaranteed ending**.\n\nYou've explicitly stated a preference for \"multiple completed trilogies over a single unfinished decalogy\" due to past disappointments with unfinished works (like George R.R. Martin's books, which you abandoned). You also insist on feeling that the author had a destination and plan from the start before you commit.\n",
       "reference_answer": "Your rule, distilled from our talks about Malazan, Sanderson, and unfinished sagas: **Only start a series if (1) it's already complete, OR (2) the author has a proven track record of finishing series AND has publicly outlined the total length.** Sanderson qualifies on both counts—you trust him because he outlines everything from the start and honors your time. Avoid anyone with unfinished mega‑series (Martin, Rothfuss). For testing new authors, read their standalones first (*Warbreaker*, *The Emperor's Soul*). This rule protects your 80% fantasy satisfaction rate from abandonment anxiety.",
-      "score": 1
+      "score": 0
     },
     {
       "case_id": "recommendations_books_100",
@@ -479,96 +475,6 @@
       "question": "Based on all your feedback, what single question best predicts whether you will enjoy a game? How accurate is this predictor?",
       "llm_response": "\nBased on your feedback, the single question that best predicts whether you will enjoy a game is:\n\n**\"Does this game guarantee individual agency—by preventing both 'alpha players' and 'multiplayer solitaire'—without requiring a massive rulebook to learn?\"**\n\n### How Accurate is this Predictor?\nThis predictor is **highly accurate**, correctly aligning with nearly every specific game experience you've recorded:\n\n*   **Spirit Island & The Crew (Hits):** Both pass. They use hidden information or complex overlapping powers to prevent \"alpha gaming,\" creating the shared victory feeling you love.\n*   **Root (Hit):** Passes. Its total asymmetry ensures no one can \"solve\" the game for you, and high interaction prevents specific solitaire play.\n*   **Azul (Hit):** Passes. It balances simple rules with the \"take that\" interaction of tile drafting, avoiding solitaire play.\n*   **Pandemic Legacy (Correctly Rejected):** Fails the agency test. You disliked it because \"quarterbacking\" removed your individual agency.\n*   **Terraforming Mars (Correctly Rejected):** Fails the interaction test. You specifically noted it feels like \"multiplayer solitaire.\"\n*   **Twilight Imperium (Correctly Rejected):** Fails the rulebook test. While it has high agency, the \"massive rulebook\" was an immediate barrier.\n\n**The only outlier:** *Hive*. It passes this question (simple rules, high interaction, no alpha player), yet you eventually disliked it because it became \"solved/formulaic.\" A secondary question about \"long-term strategic variety\" would be needed to catch this one case.\n",
       "reference_answer": "The single best predictive question is: 'Does the game mechanically ensure every player has meaningful agency throughout, or does it allow one player to dominate or the game to become predictable?' This question perfectly predicts your enjoyment: all games where agency is mechanically enforced (Root, Spirit Island, The Crew, Azul, Wavelength) received positive feedback – roughly 8 sessions. All games where agency can be concentrated or the game becomes solved (Pandemic Legacy, Hive, Codenames, Twilight Imperium) received negative feedback – about 4 sessions. The predictor has near‑100% accuracy in your feedback history, because agency is the foundational lens through which you evaluate all other game qualities.",
-      "score": 0
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "Based on all my comments across our entire conversation, rank these genres from most to least aligned with my taste: sci-fi, detective, comedy, fantasy, reality.",
-      "llm_response": "\nBased on your viewing history and detailed opinions, here is the ranking of these genres from most to least aligned with your taste:\n\n1. **Sci-Fi**\n   This is your strongest match. You actively seek out \"smart\" sci-fi that challenges you (*Severance*, *Westworld* S1) or respects scientific accuracy (*The Expanse*). You value narratives that explore the human condition or philosophical questions over pure spectacle, as seen in your preference for *Westworld* over *Foundation*. You explicitly stated that you prefer even \"flawed sci-fi\" over other genres like reality TV.\n\n2. **Detective**\n   You have a very high appreciation for this genre, specifically when it leans into psychological realism and atmosphere. You praised *True Detective* (Season 1) and *Mindhunter* for their tension and grounded nature, while criticizing *Only Murders in the Building* when it became \"too silly.\" You value shows that respect the audience's intelligence (*Lupin*) rather than action tropes.\n\n3. **Comedy**\n   Your taste here is selective. You appreciate comedy with \"warmth\" (*Parks and Rec*) or \"gravity\" (*The Bear*), but you dislike shows that feel \"weightless\" or \"predictable\" (*Modern Family*, later *Ted Lasso*). You enjoy it, but it doesn't seem to drive your obsessive interest the way complex narratives do.\n\n4. **Fantasy**\n   You generally prefer \"grounded\" storytelling and often struggle with high fantasy elements. While you enjoyed the political intrigue of *Game of Thrones*, you found the lore/prophecies overwhelming and dropped *House of the Dragon* because it felt repetitive. You prefer shows like *The Last Kingdom* that walk the line between history and fantasy rather than diving into deep magic or \"mystical prophecies.\"\n\n5. **Reality**\n   This is clearly your least favorite. You have described it as having \"zero narrative purpose\" and consisting of \"manufactured conflict.\" You treat *Love Island* purely as background noise and have expressed a strong dislike for shows like *Big Brother*.\n",
-      "reference_answer": "Sci-fi (approximately 80-85% positive) > detective (approximately 75% positive) > comedy (approximately 50% positive) > fantasy (approximately 30-35% positive) > reality (0% positive). Percentages are approximate based on the ratio of praised to discussed shows in each genre. Sci-fi leads with praise for Stranger Things, Black Mirror, Westworld, and The Expanse—all celebrated for balancing intellectual concepts with human stakes. Detective shows like True Detective, Mindhunter, and Lupin earn respect for psychological realism. Comedy splits between depth-driven shows (Parks and Rec, The Bear) versus lightweight fare (Ted Lasso, Modern Family). Fantasy only works when grounded in history (The Last Kingdom); pure fantasy like Game of Thrones and House of the Dragon gets rejected for 'overwhelming lore.' Reality TV is uniformly rejected for lacking narrative purpose.",
-      "score": 1
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "Should I watch Foundation or The Expanse next?",
-      "llm_response": "\nAccording to my notes, you have actually watched both of these shows already!\n\nIf you are deciding which one to **rewatch**, I would strongly recommend **The Expanse**.\n\nHere is a comparison based on your past feedback:\n*   **The Expanse**: You praised this highly for getting the \"science right\" (specifically the orbital mechanics) and felt that attention to detail made the drama feel earned. You appreciated that it maintained a strong human story without \"hand-waving the physics.\"\n*   **Foundation**: While you admitted it was visually gorgeous, you found it \"emotionally cold\" and described it as \"all scale, no soul.\" You struggled to care about the characters because the focus felt too grandiose.\n\nGiven your meaningful connection to the grounded, scientific nature of *The Expanse*, it seems like the much better choice for you.\n",
-      "reference_answer": "Choose The Expanse. You praised it for 'getting the science right' while telling 'a human story,' contrasting sharply with Foundation which you called 'emotionally cold' with 'all scale, no soul.' Your sci-fi preferences consistently prioritize human stakes over visual spectacle—The Expanse delivers that; Foundation doesn’t. Approximately 80-85% of your sci-fi discussions praise shows that emphasize character over spectacle, aligning with this choice.",
-      "score": 1
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "What do all the detective shows I genuinely enjoy have in common?",
-      "llm_response": "\nBased on your viewing history, the detective shows you genuinely enjoy—specifically **True Detective (Season 1)**, **Mindhunter**, and **Lupin**—share a strong preference for **psychological realism and atmospheric tension over action tropes**.\n\nHere is the common thread connecting them:\n\n*   **Grounded Tension:** You praise *Mindhunter* for creating suspense without relying on car chases and *True Detective* for its intense atmosphere.\n*   **Intellectual Respect:** You like *Lupin* because it's clever and \"respects the audience's intelligence,\" whereas you dropped *Only Murders in the Building* precisely because it became \"too silly\" and treated the audience like they needed distraction.\n*   **Character Depth:** Your general entertainment preferences explicitly cite a love for \"psychological realism in detective stories\" and narratives driven by character psychology rather than fast-paced action sequences.\n",
-      "reference_answer": "They prioritize psychological realism and respect the audience’s intelligence. You praised True Detective for its 'intense atmosphere,' Mindhunter for feeling 'so real,' and Lupin for being 'fast-paced but clever.' Even your criticism of Only Murders—that it 'lost the detective vibe' for quirk—confirms you value tension derived from human behavior and logical deduction, not gimmicks.",
-      "score": 1
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "Is there any fantasy show I might actually enjoy long-term?",
-      "llm_response": "\nBased on your droplist (finding *House of the Dragon* repetitive and *Foundation* \"soul-less\") and your preference for **grounded politics**, **psychological realism**, and **real stakes**, typical \"High Fantasy\" might not be for you. You seem to prefer shows where the drama comes from human decisions rather than \"mystical prophecies.\"\n\nHere are two recommendations tailored to your \"Anti-Prophecy\" taste:\n\n### 1. **Arcane** (Netflix)\nDon't let the animated medium fool you; this is likely the closest match to your specific mix of preferences.\n*   **Why you'll like it:** You loved the \"real politics\" of early *Game of Thrones* and the \"grounded character development\" of *Stranger Things*. *Arcane* focuses heavily on a brutal class war and political maneuvering between two cities, rather than magical macguffins.\n*   **The Vibe:** It has the **visual scale** you appreciated in *Foundation* but with the **emotional weight** you felt was missing. Every action has tangible, often tragic consequences for the characters.\n\n### 2. **Shōgun** (Hulu/FX)\n<i>Technically historical fiction, but it fills the \"Fantasy\" void for people who liked early GoT.</i>\n*   **Why you'll like it:** You mentioned enjoying **The Last Kingdom** for walking the line between history and grounded storytelling. *Shōgun* is pure political chess—high stakes, brutal consequences, and zero hand-waving.\n*   **The hook:** It scratches that itch for \"complex world-building\" without the \"made-up prophecies\" you dislike.\n\n**Wildcard for a Rainy Day:**\nSince you love **True Detective S1** and atmospheric horror like **Mindhunter**, you might enjoy **Penny Dreadful**. It’s a \"fantasy\" show, but it treats vampires and Frankenstein’s monster with deep psychological realism and moody atmosphere rather than action tropes.\n",
-      "reference_answer": "Only if it's minimally fantastical and heavily grounded in historical reality. You explicitly praised The Last Kingdom because it 'walks the line between history and fantasy but feels grounded.' You rejected Game of Thrones and House of the Dragon for 'overwhelming lore' and 'made-up prophecies.' Historical settings with subtle mythological elements—not full mythologies—are your only fantasy exception.",
-      "score": 0
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "What makes a comedy truly satisfying versus forgettable for me?",
-      "llm_response": "...",
-      "reference_answer": "Emotional authenticity and thematic depth. You love Parks and Rec for its 'warmth' and never 'punching down,' and The Bear for exploring 'pressure and trauma.' You reject Ted Lasso as 'emotional cotton candy' and Modern Family as 'dated and predictable.' For you, comedies must have gravity and respect the audience’s intelligence—not just deliver jokes.",
-      "score": 0
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "Is my dislike of reality TV consistent across all formats, or are there exceptions?",
-      "llm_response": "\nYour dislike of reality TV is mostly consistent, but there is one functional exception.\n\ngenerally, you view the genre as having \"zero narrative purpose\" and consisting of \"manufactured conflict with no resolution.\" This is most evident in your strong dislike of *Big Brother*, which you described as just \"people yelling in a house with zero creativity and zero stakes.\"\n\nHowever, the exception is **Love Island**. While you do not seem to watch it for enjoyment, you admitted to leaving it on as **background noise** while doing chores, explicitly noting that you \"don't pay attention\" to it. It seems to serve a utilitarian function for you, whereas other reality shows like *Big Brother* actively annoy you.\n",
-      "reference_answer": "Your rejection is absolute and consistent. You dismissed Love Island as 'background noise,' Big Brother as having 'zero creativity, zero stakes,' and doubled down by saying you'd 'take even flawed sci-fi over reality TV any day.' You criticize the genre’s core: 'manufactured conflict with no resolution' and 'zero narrative purpose.' No exceptions exist in our entire conversation—0% positivity across all reality formats discussed.",
-      "score": 0
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "When should I choose a light comedy versus a serious sci-fi show?",
-      "llm_response": "\nBased on your viewing habits, here is a guide on when to choose between your two main genres:\n\n### Choose **Serious Sci-Fi** when:\n*   **The weather matches the mood:** You explicitly prefer watching atmospheric shows like *Severance* or *True Detective* on rainy or dark days.\n*   **You want intellectual stimulation:** You love sci-fi that \"challenges you without being pretentious\" (like *Westworld* S1) or gets the science right (*The Expanse*).\n*   **You can give it your full attention:** You've noted that shows like *Severance* \"demand attention,\" unlike background noise.\n*   **You want \"real stakes\":** You prefer narratives with tangible consequences and psychological realism over the \"manufactured conflict\" of reality TV or the \"made-up prophecies\" of high fantasy.\n\n### Choose **Light Comedy** when:\n*   **You need \"warmth\":** You value *Parks and Rec* because it's silly but never mean-spirited (\"never punches down\").\n*   **You want a quick mood lift:** You described *Ted Lasso* as \"emotional cotton candy\"—sweet and nice, even if it's not \"filling\" in the long run.\n*   **You are multitasking:** You use shows like *Love Island* purely as background noise while doing chores because they don't require focus.\n\n**A middle ground for you:**\nIf you want the brevity of a comedy but the \"gravity\" of a drama, you might turn to something like *The Bear*, which you value for exploring pressure and trauma without feeling \"weightless\" like standard sitcoms.\n",
-      "reference_answer": "Choose comedies like Parks and Rec when you need 'comfort' viewing with heart but low stakes. Choose sci-fi like Black Mirror or Westworld when you want intellectual engagement—shows that 'make you think' about human nature. Your context determines the genre: recovery (comedy) versus immersion (sci-fi). Never choose reality TV for either purpose.",
-      "score": 0
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "If I had to drop one entire genre from my viewing forever, which would hurt me least based on my feedback?",
-      "llm_response": "\nBased on your viewing habits and opinions, the genre you could drop with the least amount of pain is **Reality TV**.\n\nHere is why dropping it would hurt the least:\n\n*   **Active Dislike:** You explicitly stated that **Reality TV** has \"zero narrative purpose\" and consists of \"manufactured conflict with no resolution.\" You described *Big Brother* as just \"people yelling in a house with zero creativity and zero stakes.\"\n*   **Low Engagement:** While you do have *Love Island* on sometimes, you treat it strictly as \"background noise\" for chores and admit you \"don't pay attention\" to it.\n*   **Preference for Substance:** You mentioned you would prefer \"even flawed sci-fi over reality TV\" because at least sci-fi attempts to explore the human condition.\n\nYour preferences heavily lean toward psychological suspense, grounded sci-fi, and character-driven narratives, making Reality TV the clear choice to cut.\n",
-      "reference_answer": "Reality TV would be the painless choice. You’ve given it 0% positive reviews across multiple shows (Love Island, Big Brother), calling it 'background noise' with 'zero narrative purpose.' You even stated you'd 'take even flawed sci-fi over reality TV any day.' No other genre has such uniformly negative feedback—all others have at least 30% positivity.",
-      "score": 1
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "What's the single most important storytelling principle across all genres for me?",
-      "llm_response": "\nBased on your entertainment preferences across various genres—from sci-fi and fantasy to comedy and detective shows—the single most important storytelling principle for you is: **Grounded authenticity with tangible human stakes.** \n\nYou value \"soul over scale\" and \"gravity\" over empty spectacle. Here is how that principle shows up across everything you watch:\n\n*   **Real Stakes Over Grandiose Lore:** You prefer tangible consequences over mystical prophecies or overwhelming world-building. You liked the \"real politics\" of early *Game of Thrones* but disliked the high-fantasy lore, and you gave up on *House of the Dragon* and *Foundation* because they leaned too hard into grandiose scale while lacking emotional soul. \n*   **Earned Drama & Gravity:** Whether it's the strict orbital physics anchoring the drama in *The Expanse* or the exploration of pressure and trauma that gives *The Bear* its weight, you need situations and emotions to feel earned and grounded, not hand-waved or artificially manufactured.\n*   **Respecting the Audience's Intelligence:** You appreciate shows that make you think (*Westworld* Season 1, *Lupin*, *Mindhunter*) through psychological realism and smart moves. Conversely, you get frustrated when shows lose their tension to become quirky/silly (*Only Murders in the Building*), feel \"weightless\" (*Ted Lasso* becoming \"emotional cotton candy\"), or treat the audience like they need constant low-stakes distraction (Reality TV).\n\nIn short: **Actions must have real-world weight, the psychology must be realistic, and the characters must ground the narrative—regardless of whether the setting is a Michelin-star kitchen, a futuristic spaceship, or a fantasy kingdom.**\n",
-      "reference_answer": "Respect for the audience’s intelligence through emotional authenticity. You praise shows that 'respect intelligence' (Lupin), have 'real stakes' (The Last Kingdom), or balance ideas with humanity (Westworld, The Expanse). You reject 'manufactured drama' (reality TV), 'retreading old ground' (House of the Dragon), and 'emotional cotton candy' (Ted Lasso). Whether sci-fi, detective, or comedy—human truth matters most.",
-      "score": 1
-    },
-    {
-      "case_id": "recommendations_series_100",
-      "prompt_path": "system_prompt.txt",
-      "query_id": "",
-      "question": "Based on my preferences, which streaming platform should I prioritize for new content?",
-      "llm_response": "\nBased on your detailed viewing habits—specifically your love for **smart, atmospheric sci-fi**, **psychological realism**, and **grounded stakes**—and your dislike for high fantasy, manufactured reality drama, or shows that feel \"weightless,\" I recommend you prioritize **Apple TV+**.\n\nHere is the breakdown of why, along with specific recommendations based on your preferences:\n\n### **Primary Recommendation: Apple TV+**\nApple TV+ currently has the highest density of the specific type of \"thinking person's sci-fi\" and atmospheric thrillers you enjoy, with very little of the filler you dislike.\n\n*   **Why it fits:** It is the home of **Severance** (which you love for its moodiness and demand for attention). Their catalog leans heavily into \"what if\" sci-fi that deals with human consequences rather than just visual spectacle.\n*   **Shows to Watch:**\n    *   **Silo:** Since you liked *The Expanse* for its world-building and *Severance* for its mystery, this is a perfect fit. It’s grounded, tense, and deals with a contained society with \"real stakes.\"\n    *   **Dark Matter:** Hits that *Black Mirror*/*Westworld* sweet spot of \"sci-fi exploring life choices\" without getting too boggy in lore.\n    *   **Slow Horses:** You explicitly mentioned liking *Lupin* for being \"clever\" and *Mindhunter* for its lack of cliché action tropes. *Slow Horses* is a grimy, grounded spy thriller about screw-ups; it values intelligence and character flaws over explosions.\n\n### **Secondary Option: HBO / Max**\nWhile you bounced off *House of the Dragon* (disliking the repetitive fantasy politics), the platform is still the gold standard for the **\"detective storytelling done right\"** that you admired in *True Detective*.\n\n*   **Why it fits:** It excels at the \"grounded political dynamics\" you preferred in early *Game of Thrones*.\n*   **Shows to Watch:**\n    *   **Succession:** If you haven't seen it, this is the ultimate answer to your preference for \"real politics\" over \"made-up prophecies.\" It is pure psychological warfare with massive consequences.\n    *   **Mare of Easttown:** If you want to capture that *True Detective* Season 1 atmospheric/character-driven mystery vibe again.\n    *   **The Last of Us:** While it has \"zombies,\" it functions much more like *The Expanse* or *Mindhunter*—it is entirely character-focused, grounded, and emotional, steering clear of mindless action.\n\n**Verdict:** Stick to **Apple TV+** for your sci-fi/thriller fix. It respects your intelligence in the way you felt *Lupin* and *The Expanse* did, while avoiding the \"soul-less scale\" you hated in *Foundation*.\n",
-      "reference_answer": "Prioritize HBO/Max and Netflix. HBO hosts your highest-rated shows: Westworld and True Detective—praised for 'psychological realism' and 'grounded storytelling.' Netflix has The Last Kingdom, Black Mirror, and Lupin—but also produces reality TV you hate. Amazon has The Expanse but also The Lord of the Rings (fantasy you'd likely reject). HBO and Netflix together cover most of your preferences, with Netflix offering broader genre variety and HBO delivering concentrated quality.",
       "score": 0
     }
   ]
