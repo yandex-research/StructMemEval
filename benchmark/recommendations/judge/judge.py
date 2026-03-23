@@ -48,8 +48,16 @@ def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict)
         temperature=0,
         seed=42
     )
+    while response.choices[0].message.content is None:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "user", "content": filled_prompt}],
+            max_tokens=5,
+            temperature=1.0,
+            seed=42
+        )
     answer = response.choices[0].message.content.strip()
-    return 1 if answer == "1" else 0
+    return 1 if answer == "YES" else 0
 
 
 def main():

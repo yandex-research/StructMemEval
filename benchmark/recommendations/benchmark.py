@@ -166,7 +166,9 @@ def load_user_messages_to_agent(agent: Agent, sessions: list, verbose: bool = Fa
                 user_messages.append(msg['content'])
 
     print(f"\nLoading {len(user_messages)} user messages into mem-agent...")
-    for content in tqdm(user_messages, desc="mem-agent loading"):
+    for i, content in enumerate(tqdm(user_messages, desc="mem-agent loading")):
+        #if i < 13:
+        #    continue
         if verbose:
             print(f"USER: {content}")
         reply = agent.chat(content)

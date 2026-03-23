@@ -8,4 +8,4 @@ Model response:
 
 Does the model response convey the same key information and intent as the reference answer?
 
-Answer with ONLY "1" if yes, "0" if no.
+Answer with ONLY "YES" if yes, "NO" if no.
