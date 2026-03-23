@@ -1,0 +1,11 @@
+# Spirit Island
+- **Type**: Cooperative Strategy Game
+- **Complexity**: High
+- **Player Count**: 1-4
+- **Core Loop**: Hand management, area control, variable setup.
+- **Description**: Players assume roles of spirits defending their island from resource-harvesting invaders.
+- **User Experience**: Finally provided a good cooperative experience, overcoming previous issues with "quarterbacking" found in other co-ops. Finds "shared victory" emotionally satisfying when the cooperation succeeds.
+- **Collaboration Style**: Trusted the game design to force **active discussion** of strategy rather than allowing one player to dictate moves.
+- **Key Mechanics**: Unique powers and separate boards create sufficient complexity/asymmetry that no single player can "control everything," effectively solving the alpha gamer problem.
+- **Playstyle Insight**: High asymmetry (completely different abilities) forces players to **coordinate** high-level goals rather than one person **optimizing** every move.
+- **Discussion Dynamics**: Players focus on **probabilities and timing** (when powers activate relative to invaders) rather than calculating deterministic outcomes, fostering genuine dialogue.

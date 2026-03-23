@@ -1,0 +1,146 @@
+# User Information
+
+## Hobbies
+- Reading
+- Book Club: Attends meetings. [[entities/book_club.md]]
+- preferred_genre: Fantasy (captivated by world-building, feels like coming home; prefers over Sci-Fi due to boundless creativity vs scientific limits)
+- preferred_genre: Romance (enjoys the genre, but dislikes repetitive tropes and predictable endings which cause stories to blend together)
+- disliked_genre: Literary Fiction (misses sense of discovery)
+- disliked_subgenre: Regency Romance (couldn't connect with characters)
+- preferred_genre: Horror (prefers psychological tension and lasting unease over gore or jump scares; values stories that stay with the reader)
+- horror_style_preference: The Distorted Familiar (finds the sense of "something wrong in a familiar place" sticks for years, whereas gore fades)
+- horror_prose_preference: Appreciates "haunted" and "uneasy" sentence construction (e.g., [[entities/shirley_jackson.md]]), finding it unique and impactful
+- horror_value_preference: Profound unease without relying on shock value or victimization (specifically praises this in Jackson and King)
+- horror_boundary: "Unsettled, not traumatized" (Avoids content that crosses into trauma/exploitation; seeks lingering unease over psychological damage)
+- horror_subgenre_preference: Supernatural (values elements like ghosts/hauntings alongside psychological horror)
+- horror_atmosphere_preference: Values dread built through atmosphere and tension rather than explicit violence or gore
+- horror_trope_preference: The Unseen (finds the unseen more terrifying than explicit monsters; believes modern horror often fails by showing too much)
+- horror_character_preference: Grounded Realism (needs characters to feel real with mundane problems via jobs/marriages before the horror starts; validates the stakes). Specifically values "ordinary characters facing extraordinary circumstances" whom the user feels could be their neighbors.
+- narrative_structure_preference: Requires the "ordinary" to be established before the "extraordinary" occurs. Believes that "horror matters because the ordinary life mattered first"—the mundane setup provides the essential weight and contrast for the terror to be effective.
+- disliked_trope: Cliffhangers (specifically in fantasy series)
+- disliked_trope: Poor Communication/Misunderstanding (characters refusing to talk to prolong conflict)
+- disliked_trope: Artificial Drama (characters making stupid decisions solely to create conflict)
+- horror_constraint: Violence Against Women (Strict avoidance; avoids books with this content)
+- book_preference: Seeks satisfying conclusions where the author clearly had a destination in mind; dislikes aimless narratives, though loose ends are acceptable
+- magic_system_preference: logical, consistent, with costs/boundaries (makes victories feel earned; enjoys sense of wonder from impossible things made believable rules)
+- character_preference: Values deep character growth, moral struggles, and evolution over pure plot movement
+- representation_preference: Values authentic representation of chronic conditions (e.g., fibromyalgia) that shape a character's life without solely defining them; dislikes tokenism
+- narrative_tone_preference: Seeks joy and complexity in stories, specifically avoiding narratives defined solely by struggle
+- romance_preference: Requires characters to have strong individual arcs (e.g., career dreams) independent of the relationship; invests in personal success as much as romantic outcomes
+- romance_preference: Appreciates diverse characters and relationships; finds it refreshing when the genre expands beyond traditional tropes and demographics
+- romance_preference: Authenticity is key; believes memorable romances ("the ones that stick") require physical intimacy to grow from genuine emotional connection
+- romance_preference: Prioritizes writing quality and character development over steaminess; finds emotional depth more satisfying than explicit scenes without substance
+- romance_subgenre_preference: Contemporary over Historical or Paranormal (relationship dynamics feel more relatable to own experiences)
+- ideal_relationship_dynamic: Partners enhancing individual journeys rather than replacing them
+- narrative_element_preference: Connects most deeply with internal monologue
+- fantasy_style_preference: Prefers low fantasy set in our world with subtle magic over high fantasy; finds it more grounded and relatable. Appreciates not having to learn a completely new cosmology first.
+- **Mistborn**: Read 3 times. [[entities/mistborn.md]]
+- **Brandon Sanderson**: Admires his magic systems. [[entities/brandon_sanderson.md]]
+- **The Stormlight Archive**: Finished Book 5. Loves the magical wonder. [[entities/stormlight_archive.md]]
+- **Dune**: Considering reading. Appreciates the rich world-building. [[entities/dune.md]]
+- **A Court of Thorns and Roses**: Tried last month. [[entities/a_court_of_thorns_and_roses.md]]
+- **The Unhoneymooners**: Read recently. Strongly disliked it. [[entities/the_unhoneymooners.md]]
+- **The Flatshare**: Appreciated that individual goals (Tiffy's dream job) were as compelling as the romance; valued realistic obstacles vs manufactured misunderstandings. Specific love for strict "meet-cute delay" (300 pages of notes/shared space). [[entities/the_flatshare.md]]
+- reading_device: Kindle
+- reading_condition: Finds rainy days perfect for reading
+- reading_condition: Nature/Outdoors (specifically by a creek in a forest; found "perfect" spot while hiking)
+- reading_condition: Fireplace (defines "peak coziness" alongside a cup of tea; specifically loves how firelight makes pages glow for fantasy)
+- reading_experience: Fantasy Outdoors (Trees become part of the story; enhances escapism)
+- Hiking (enjoys forest trails)
+- browsing_habit: Enjoys spending time (e.g., an hour) simply browsing physical bookstores
+- shopping_habit: Occasional impulse book buying (finding books they "didn't know they needed")
+- **Malazan Book of the Fallen**: Currently reading *Gardens of the Moon*. Struggling with the overwhelming character count. [[entities/malazan.md]]
+- series_constraint: Avoids new 10+ book series; worries about time investment and completion status.
+- frustration: Unfinished series; resents investing years in narratives that don't conclude
+- status_preference: Finished/Complete series only
+- **The Kingkiller Chronicle**: Interested due to memes, but warned about unfinished status. [[entities/kingkiller_chronicle.md]]
+- **The Wheel of Time**: Watched the new season. [[entities/wheel_of_time.md]]
+- adaptation_opinion: Believes fantasy books rarely translate well to film (loss of internal thoughts and world-building)
+- adaptation_opinion: Regarding horror, explicitly finds that books rarely translate well to film because "what's terrifying on the page often looks silly on screen." Believes psychological horror loses its power visually. Cites *The Haunting of Hill House* as a prime example: the book's internal terror (Eleanor's mind) vs. the show's external ghosts.
+- adaptation_preference: Always reads the book first (especially horror). Views film adaptations as interesting companions, but never substitutes for the source material.
+- **Juliet Marillier**: User feels she understands the genre better than most. [[entities/juliet_marillier.md]]
+- fantasy_romance_preference: The 'sweet spot' is when romance enhances the fantasy world without replacing it; dislikes when romance overshadows world-building
+- liked_trope: Enemies-to-lovers (when done well)
+- liked_trope: Fake dating (when done well)
+- liked_trope: Slow Burn (strongly prefers tension building naturally over dozens of chapters; values payoff over immediate intimacy; loves "relationship before meeting" dynamics like in *The Flatshare*)
+- liked_trope: Emotional Resistance (valid reasons for resisting feelings makes the eventual surrender feel triumphant)
+- disliked_trope: Insta-love (feels unearned; lacks the natural tension buildup found in slow burn)
+- romance_preference: Values the process of falling in love alongside characters; growing trust within the story mirrors user's own emotional investment
+- narrative_preference: Believes buildup creates meaning; without it, steamy scenes feel hollow
+- cast_preference: Loves epic fantasy with large casts, but ONLY if each character has a distinct voice and purpose; finds undeveloped characters in large casts frustrating
+- complexity_preference: Complexity must serve the story, not obscure it
+- fantasy_element_role: Fantasy elements should enhance emotional stakes rather than add complexity
+- **The Invisible Life of Addie LaRue**: Currently reading. [[entities/the_invisible_life_of_addie_larue.md]]
+- **The House in the Cerulean Sea**: Considered reading. Fits "low fantasy" preference; magical but focused on character relationships. [[entities/the_house_in_the_cerulean_sea.md]]
+- **Talia Hibbert**: Appreciates that her characters have diverse experiences (e.g., chronic illness) that are integral to life, not just plot devices. [[entities/talia_hibbert.md]]
+- **Get a Life, Chloe Brown**: Finished. [[entities/get_a_life_chloe_brown.md]]
+- **The Shining**: Reread last October. [[entities/the_shining.md]]
+- **Stephen King**: User feels his horror "works" while other authors feel cheap. [[entities/stephen_king.md]]
+- recent_reading_history: Read three contemporary romances back-to-back last month. Resulted in 'trope fatigue' and confusion between couples by the third book.
+- reading_habit_constraint: Needs variety between books; spaces out genres to keep appreciation fresh and avoid plots blending together
+- narrative_barrier: Rigid social constraints (feels alien; struggles to project into characters' emotional reality)
+- narrative_barrier: Ancient setting/Roman power struggles (emotional landscape feels alien/disconnected from modern sensibilities)
+- preferred_genre_setting: Historical Fiction (20th Century) - provides "historical richness without emotional alienation"; finds emotional connection easier than with older eras
+- disliked_genre_setting: Ancient History - feels too emotionally distant; finds the process of "translating emotions across millennia" draining compared to more modern eras.
+- historical_setting_preference: WWII Fiction (stakes feel intuitive/immediate; no "translation" needed unlike ancient history)
+- narrative_barrier: Historical Romance settings; finds the "extra layer of imagination" required draining compared to contemporary settings
+- disliked_writing_style: Dense historical detail (pulls user out of the story)
+- disliked_writing_style: Complex sentence structures (pulls user out of the story)
+- historical_fiction_preference: Values immersion ("transported to another time") over linguistic accuracy ("stranded there"); prefers modern, accessible prose in historical settings.
+- historical_fiction_preference: Generally finds dense details challenging/draining, but considers it "completely worth the effort" when executed well (e.g., *The Book Thief*).
+- historical_fiction_preference: Requires emotional connection to characters (e.g., Liesel) first; this allows historical context to enhance rather than interrupt the narrative. Prefers *The Book Thief*'s approach over *Wolf Hall*'s "history with characters attached").
+- historical_fiction_preference: Values character authenticity over strict historical accuracy; characters must feel like "real people first, historical figures second."
+- historical_fiction_preference: Prioritizes emotional participation ("fighting alongside") over intellectual decoding ("solving a puzzle"); needs characters to feel like living people, not historical constructs.
+- historical_fiction_preference: Prefers experiencing history through "characters' hearts" rather than just their circumstances; values emotional resonance over situational facts.
+- historical_fiction_goal: Seeks to understand a historical period emotionally, not just factually; values books that leave a lingering sense of the era's human experience.
+- historical_fiction_philosophy: "I'd rather feel a period authentically than know it exhaustively." (Prioritizes emotional resonance and atmosphere over encyclopedic accuracy)
+- historical_fiction_preference: Creative Liberties (Explicitly prefers emotional truth over strict factuality; finds perfect accuracy "dry" if it sacrifices narrative flow)
+- **Markus Zusak**: Proven ability to honor history without sacrificing readability. [[entities/markus_zusak.md]]
+- **Kristin Hannah**: Proven ability to honor history without sacrificing readability. [[entities/kristin_hannah.md]]
+- narrative_exposition_preference: Believes details must emerge through character experience (e.g., "a food shortage affects hunger, not a textbook paragraph") rather than dry explanation.
+- liked_aspect: Vianne and Isabelle (from *The Nightingale*) represent ideal historical characters.
+- **Pachinko**: Currently reading. Praises the research as "evident but never intrusive" (successfully avoids the "history lesson" feel). [[entities/pachinko.md]]
+- research_preference: Values historical research that informs the story without interrupting it (e.g., [[entities/min_jin_lee.md]]'s style in *Pachinko*).
+- historical_fiction_preference: Appreciates evident research that doesn't overwhelm; specifically values when facts are woven seamlessly into the narrative rather than presented as info-dumps.
+- **The Book Thief**: Read. "Grief felt like grief I could recognize." Considered completely worth the effort despite the dense details. [[entities/the_book_thief.md]]
+- **Kristin Hannah**: Author whose characters feel intensely real ("people I'd fight alongside"). [[entities/kristin_hannah.md]]
+
+- **The Haunting of Hill House**: Abandoned after chapter three due to intensity (previously noted paranoia). [[entities/the_haunting_of_hill_house.md]]
+- **Wolf Hall**: Abandoned (3rd attempt). Describes Cromwell as a "historical puzzle to solve" rather than a relatable person; felt like "history with characters attached". [[entities/wolf_hall.md]]
+- disliked_writing_style: Stream-of-consciousness with period language (creates "constant friction"; feels like "decoding prose instead of living the story") -- specifically regarding [[entities/hilary_mantel.md]]
+- disliked_writing_style: Heavy period-appropriate language in historical fiction (makes story inaccessible/pulls out of narrative)
+- **The Nightingale**: Read. Deeply moved by the ending (cried through last 50 pages). Deep connection to the sisters ("people I'd fight alongside"). Worked where other WWII fiction failed due to focus on resilience/relationships. [[entities/the_nightingale.md]]
+- **All the Light We Cannot See**: Praised for how the war context shapes the narrative without halting the story. [[entities/all_the_light_we_cannot_see.md]]
+- **Anthony Doerr**: User appreciates his ability to integrate history seamlessly. [[entities/anthony_doerr.md]]
+- **I, Claudius**: Tried last month but couldn't finish it; felt detached ("watching chess pieces move"). [[entities/i_claudius.md]]
+- **The Hill We Climb**: Listened to audio performance instead of reading text. [[entities/amanda_gorman.md]]
+- **Mary Oliver**: Tried reading text again but hit a "familiar wall"; likely needs audio format to bypass analysis paralysis. [[entities/mary_oliver.md]]
+- poetry_preference: Strongly prefers audio format (listening to poets read) over print. Finds print collections overwhelming, while audio makes poetry accessible.
+- audio_learning_insight: Rhythm and Emphasis (Hearing the author's delivery unlocks meaning that would otherwise remain hidden in the text).
+- poetry_processing_style: "Receiving vs. Solving" (Views reading text poetry as an analytical task/puzzle that induces performance anxiety; audio allows for passive emotional reception without the pressure to intellectually "crack" the poem).
+- reading_anxiety: Perfectionism (Feels immense pressure to "decode everything perfectly on first read," treating every line as carrying heavy weight that must be instantly understood).
+- poetry_barrier: Intimidated by the "density of meaning" in few lines; struggles to connect compared to the expansiveness of novels.
+- emotional_processing_insight: "Novels let me ease into emotional connection. Poetry expects me to arrive already vulnerable." (Explains preference for gradual immersion of novels vs. immediate demand of poetry)
+- **The Slowdown**: Podcast that has user enjoying daily poetry for the first time. [[entities/the_slowdown.md]]
+- daily_routine: Listen to The Slowdown (poetry)
+- poetry_milestone: First time enjoying daily poetry (attributed to audio format/podcast delivery)
+- self_realization: "Maybe I'm not bad at poetry—I just needed the right format." (Shift from self-doubt to format-awareness regarding poetry consumption)
+- poetry_sentiment: Yearns to love poetry with the same ease and depth as novels
+- poetry_appreciation: "The craft is beautiful even when I can't fully access it." (Acknowledges aesthetic beauty despite comprehension barriers)
+
+## Home
+- **Bookshelf**: Recently installed to house a collection of unread books.
+- **Reading Nook**: Created in an apartment corner. Features a big armchair, a floor lamp with warm light, and a small table dedicated to the current book stack.
+
+## Plants
+- **Snake Plant**: Recently grew three new leaves at once.
+- care_habit: often forgets to water plants while reading; prefers low-maintenance/drought-tolerant options
+
+## Preferences
+- coffee_order: Oat milk latte with an extra shot (condition: planning to read fantasy)
+- beverage_preference: Tea (associated with reading and coziness)
+
+## Personal Context
+- struggle: Work-life balance
+- struggle: Navigating dating apps
+- media_connection: Relates deeply to characters dealing with modern dating and work constraints; sees these as reflections of own struggles

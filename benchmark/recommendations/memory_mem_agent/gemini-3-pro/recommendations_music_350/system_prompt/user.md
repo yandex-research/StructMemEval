@@ -1,0 +1,190 @@
+# User Information
+
+## Core Musical Principles
+- **The Human Imperative**: Prioritizes emotional vulnerability and "human errors" (bleed, slide noise, tempo fluctuations) over sterile perfection; implies a rejection of pitch correction and quantization in favor of raw authenticity.
+- **Narrative Complexity**: Values high "semantic density" in both lyrics and composition; music must tell a story or evolve structurally (like Classical or Prog), rejecting formulaic verse-chorus loops or empty virtuosity.
+- **Analog Warmth & Dynamics**: A sonic preference for the "physicality" of sound—warm tape saturation, tube amp sag, and distinct instrument separation—opposed to the "brickwall" compression and digital harshness of modern production.
+
+- current_project: Arranging Bach Cello Suite No. 1 (G Major) for guitar
+- musical_activity: Songwriting
+- current_project: Writing a new song (experimenting with new techniques)
+- project_insight: Finds the Prelude of Cello Suite No. 1 fits well with guitar fingerings
+- musical_skill: Arranging music
+- music_preference: [[entities/led_zeppelin.md]]
+- musical_insight: Perceives a clear musical lineage from Blues to [[entities/led_zeppelin.md]] to [[entities/pink_floyd.md]].
+- musical_insight: Playing guitar reveals bass lines missed when playing violin (appreciates structural depth).
+- musical_insight: Notices contrasting roles between instruments: classical guitar articulates harmony while violin sings the melody.
+- hobby: guitar
+- hobby: sketching
+- hobby: violin
+- hobby: gardening
+- hobby: hiking
+- hiking_preference: Enjoys the reward of summit views after a hard climb
+- gardening_milestone: Tomato plants are finally bearing fruit
+- gardening_observation: Enjoys the incredible smell of leaves when brushing against them
+- gardening_feeling: Finds tending to plants to be meditative (appreciates the slow growth)
+- current_challenge: Bach's Partita No. 3 (Preludio is demanding, but appreciating the genius)
+- current_strategy: Starting with simpler sonatas (to build up to complex pieces)
+- musical_inspiration: Classic rock (raw, emotional solos)
+- music_connection: Rock music (values raw emotional honesty, lack of pretense)
+- music_analysis: Classic rock structures (simple but powerful foundations)
+- sound_preference: Analog tape saturation (warm, soft)
+- specific_era_preference: 70s records (warmth, depth)
+- opinion_on_digital_audio: Plugins lack the character of real analog tape saturation
+- opinion_on_remasters: Critical of modern remasters losing original character/warmth
+- production_preference: Prefers raw, genuine sound over manufactured polish
+- production_preference_specific: Live studio recordings with minimal overdubs (human imperfections give soul)
+- production_philosophy: The energy of musicians playing together creates a magic that overdubbing cannot replicate
+- production_philosophy: Believes modern production often strips away the "human element" (imperfections/soul)
+- production_critique: Believes modern isolation recording techniques kill the natural interaction/chemistry between musicians
+- aesthetic_value: Slight imperfections in recordings provide the "human soul"
+- musical_appreciation: Admires musicians who handle mishaps (like broken strings) with grace; sees it as a raw, human moment. 
+- production_goal: Capture live energy in own recordings (inspired by classic rock/analog warmth) 
+- production_preference_specific: Lo-fi quality of early alternative rock (feels honest/authentic)
+- favorite_album_sound: [[entities/pink_floyd.md]]'s Dark Side of the Moon (warm production)
+- current_goal: Learning "Whole Lotta Love"
+- current_study: "Schism" rhythm patterns (9/8, 8/8)
+- practice_routine: Practices for hours
+- practice_drill: 10 minutes of scales
+- practice_philosophy: "Warm fingers, warm brain" 
+- past_practice_mistake: Skipped warm-up ("shredding" immediately), leading to early burnout
+- practice_focus: Capturing emotional quality in playing
+- current_practice_technique: Bending and vibrato (aiming for emotional feeling)
+- current_practice_specific: Mastering the "Lucille tone" (B.B. King's signature sound)
+- technique_refinement: Bending *into* notes rather than hitting them directly (focus on microtonal nuance)
+- technique_realization: Realized high coordination requirement between bow and fingers (violin)
+- technique_focus: Studying David Gilmour's vibrato width
+- musical_appreciation: Values melodic phrasing and tone choices over speed/shredding (David Gilmour, Mark Knopfler)
+- music_philosophy: "Three chords and the truth—that simplicity forces you to mean every note." (Values emotional honesty/simplicity)
+- blues_philosophy: "A single bent note can say more than a hundred fast scales." (Values emotional weight over technical speed)
+- bb_king_insight: Proved that speed isn't needed to break hearts. [[entities/bb_king.md]]
+- current_study: David Gilmour's solos
+- current_study: Digging into B.B. King's playing style. [[entities/bb_king.md]]
+- current_study: Albert King's string bending. [[entities/albert_king.md]]
+- musical_appreciation: B.B. King's vibrato - specifically how he makes one note cry with pure feeling.
+- current_exploration: Different classical music periods
+- current_exploration: Comparing live albums vs studio versions (analyzing production differences)
+- deferred_goal: Learning viola or cello (postponed to next year)
+- current_focus: Transcribing and arranging music for guitar
+- live_vs_studio_preference: Feels studio recordings often lose the "raw energy" found in live versions
+- music_preference: Romantic era composers (connects deeply due to clear emotional expression without lyrics)
+- music_exploration_interest: Late Romantic style (considering Rachmaninoff as a natural progression from Brahms/Tchaikovsky). [[entities/sergei_rachmaninoff.md]]
+- favorite_composer: [[entities/johannes_brahms.md]] (expresses clear emotions)
+- favorite_composer: [[entities/pyotr_ilyich_tchaikovsky.md]] (expresses clear emotions)
+- music_opinion: Finds Baroque style too mathematical and restrained (prefers less rigid/calculated feeling)
+- coffee_preference: Pour-over
+- favorite_coffee_bean: Ethiopian Yirgacheffe (floral notes, bright acidity)
+- coffee_preference: Colombian roast (smooth with a hint of caramel)
+- morning_routine_impact: Sets the tone for a productive day
+- morning_routine: Coffee, 15 min meditation, 30 min guitar
+- audio_perception_skill: Can immediately distinguish differences in A/B tests
+- recent_musical_discovery: Radiohead - OK Computer
+- recent_musical_discovery: Animals as Leaders (Instrumental progressive metal). [[entities/animals_as_leaders.md]]
+- recent_musical_discovery: Plini (Recommended and loved). [[entities/plini.md]]
+- recent_listening: [[entities/metallica.md]] - Nothing Else Matters
+- current_study: Tosin Abasi's extended range guitar and tapping techniques
+- current_study: Max Martin's production techniques. [[entities/max_martin.md]]
+- current_study: Max Martin's production techniques (studying how he builds anticipation in choruses and uses "melodic math"). [[entities/max_martin.md]]
+- current_study: [[entities/polyphia.md]] - G.O.A.T. (focus on hybrid picking)
+- technique_focus: Hybrid picking
+- music_analysis: Analyzing how pre-choruses build tension before the drop (focus on structural release).
+- music_preference: Instrumental Progressive Metal (enjoying technical complexity without distracting harsh vocals)
+- music_revelation: Realized metal can be melodic, complex, and completely vocal-free through bands like [[entities/plini.md]] and [[entities/polyphia.md]].
+- music_preference_quality: Seeks the "perfect blend" of technical mastery and emotional atmosphere.
+- aesthetic_ideal: Music that balances complexity with melody (found in [[entities/plini.md]] and [[entities/polyphia.md]]).
+- music_interest: Alternative rock (complex emotions, innovative soundscapes, non-formulaic)
+- music_preference_reason: Loves alternative rock for its raw authenticity over polished perfection
+- aesthetic_value: Finds unvarnished moments (room ambiance, slight mistakes) make music more emotionally resonant
+- music_reason_alt_rock: Resonates due to storytelling tradition; lyrics paint vivid pictures and carry emotional weight
+- music_value: Raw energy (essential quality they value in rock)
+- music_appreciation: Acoustic sections in metal (sees them as proof of range and relief from aggression)
+- music_preference_nuance: Appreciates aggression in music only when contrasted with vulnerability/softer moments
+- music_insight: Vulnerability gives meaning to aggression (essential for enjoying heavy genres)
+- lyrical_memory: Retains lyrics for years (indicates deep semantic connection and long-term retention of meaningful content)
+- music_preference_lyrics: Prefers poetic and thought-provoking lyrics in alternative rock (avoids simple love/relationship clichés)
+- music_dislike: Verse-chorus formula
+- music_dislike: Screaming vocals
+- music_interest: Math-like musical structures
+- music_interest: Odd time signatures
+- music_dislike: Metal (overwhelming/aggressive; distorted guitars/screaming obscure musicianship)
+- production_dislike: "Assaultive" production styles (often found in metal/thrash)
+- music_appreciation: Technical skill and complex musicianship
+- music_preference_reason: Enjoys instrumental metal (e.g. Animals as Leaders) for the focus on musicianship without aggressive vocals
+- preference_pattern: Generally dislikes Metal but makes exceptions for instrumental bands like [[entities/animals_as_leaders.md]] and melodic ballads like [[entities/metallica.md]]'s 'Nothing Else Matters'.
+- music_appreciation: Classical music (technical skill reveals depth in pieces previously found boring)
+- music_appreciation: Values music with high semantic density (songs that reveal new meaning/layers on repeated listens)
+- current_earworm: [[entities/dua_lipa.md]] song
+- music_guilty_pleasure: Hums catchy pop melodies despite intellectual critique (admits "earworm" factor works)
+- opinion_on_pop_music: Acknowledges catchy melodies but critiques the repetitive four-chord progressions and exhausted lyrical themes (love/heartbreak)
+- opinion_on_pop_music_structure: Finds it formulaic and manufactured ("designed by committee" rather than artistic vision)
+- opinion_on_pop_lyrics: Finds them shallow compared to the semantic density of alternative rock
+- music_appreciation: Respects the craftsmanship/structure of a perfect pop song (hooks, flow) even without emotional connection to lyrics
+- opinion_on_pop_music_structure: Finds it formulaic and manufactured ("designed by committee" rather than artistic vision)
+- music_opinion: Finds mainstream pop predictable
+- listening_habit: Analyzes production techniques even when listening casually
+- audio_production_observation: Notices microphone bleed in recordings (likely appreciates the authenticity it implies)
+- listening_habit: Analyzes lyrics like poetry
+- memorable_experience: Attended first symphony concert
+- memorable_experience: Attended a small club show for a local blues band (described as "intimate and raw," noting the visibility of the guitarists' fingers and sweat)
+- live_music_observation: Live classical performance dynamics are much more dramatic than recordings
+- live_music_observation: Watching conductor-musician communication was fascinating
+- live_music_observation: Physical presence of the sound and musician interactions made the music come alive
+- musical_perspective: Live performance changed perspective on classical music (recordings lack the physical/visual dimension)
+- musical_insight: Playing classical guitar enhances orchestral music appreciation by revealing guitar-like textures in string arrangements
+- musical_insight: Values instrumental tracks where guitar lines mimic vocal phrasing (e.g., Plini - Paper Moon). [[entities/plini.md]]
+- musical_insight: Understands compositional bridges between solo and ensemble works through classical guitar perspective
+- upcoming_event: Attending symphony concert next month
+- concert_strategy: Bringing the score to follow along to "connect the dots visually and sonically"
+- music_opinion: Disappointed when alternative bands sign to major labels (perceives loss of "edge")
+- music_preference: Challenging and unique compositions over safe, radio-friendly music 
+- culture_preference: Prefers the "underground scene" (aligns with taste for raw/authentic over mainstream)
+- music_perception: Finds Death, Black, and Doom metal to sound similar (likely due to the shared heavy distortion and aggressive vocals which they dislike)
+- music_learning_attempt: Tried listening to different metal subgenres to distinguish them but found them indistinguishable 
+- music_visual_critique: Observes that band names and album artwork often look identical, adding to the sense of homogeneity
+- music_attitude: Feeling resigned to the idea that metal as a whole isn't for them
+- music_preference: Metal bands with sonic range (wishes more bands embraced diversity rather than staying in one sonic territory) 
+
+- music_decision: Decided to stick with [[entities/tool.md]] and [[entities/animals_as_leaders.md]] for heavy music (rejecting other metal subgenres).
+- metal_enjoyment_strategy: Focus on Instrumental Progressive Metal (technicality without vocals) and Atmospheric/Post-Metal (cinematic textures similar to [[entities/pink_floyd.md]]).
+- metal_enjoyment_strategy: Approach metal analysis through the lens of classical composition (counterpoint, structure) rather than just "heaviness."
+- metal_enjoyment_strategy: Prioritize "audiophile" production or older analog recordings to avoid the "assaultive" modern brickwall mastering.
+- music_preference_mood: Seeks immediate emotional impact (music that makes them "feel something right away")
+- current_listening_habit: Simon & Garfunkel (matches preference for poetic lyrics/classic songwriting). [[entities/simon_and_garfunkel.md]]
+- journaling_style: Scenes instead of just feelings
+- writing_philosophy: Values structural depth but rejects superficiality (wants authentic frameworks, not formulas)
+- production_dislike: Overused [[entities/auto_tune.md]] (can always detect its artificiality, prefers natural pitch)
+- production_critique: Finds pitch correction/Auto-Tune makes music sound artificial and emotionless (strips away human connection)
+- music_value: Human vulnerability in vocals (imperfections = real expression)
+- music_dislike: Modern pop vocal production (too polished, lacks emotional vulnerability)
+- music_year_focus: Exploring many different genres
+- aesthetic_preference: Balances technical skill with emotional expression (dislikes pure virtuosity or unpolished emotion)
+- aesthetic_principle: Struggles with genres that prioritize one extreme over the other (seeks balance/contrast)
+- artistic_philosophy: Connects with artists who possess clear technical mastery but exercise restraint (never show off unnecessarily)
+- recent_listening: Early [[entities/pixies.md]] recordings (matches preference for raw/lo-fi production)
+- music_criteria: The rhythmic complexity must never overwhelm the emotion (essential balance finding).
+## Interests
+- **Metal Entry Point**: Finds the genre overwhelming due to similar vocal styles/tones; looking for entry points that align with taste for complexity and analog warmth.
+- **Current Comparison**: Comparing their albums; prefers their energy and rawness over polished modern rock. [[entities/the_rolling_stones.md]] vs [[entities/the_who.md]]
+- music_dislike: Modern rock production (too polished, lacks energy/rawness)
+- music_opinion: Modern music often feels disposable compared to timeless stories (values narrative longevity)
+- music_preference_past: Arctic Monkeys' early work (likely appreciates the raw energy). [[entities/arctic_monkeys.md]]
+- **Favorite Band**: Appreciates their innovative soundscapes. [[entities/radiohead.md]]
+- **Lyricist**: Loves his abstract lyrics. [[entities/thom_yorke.md]]
+- **Guitar Hero**: Admires tone and phrasing. [[entities/jimmy_page.md]]
+- **Musical Influence**: Studying vibrato technique. [[entities/david_gilmour.md]]
+- **Current Study**: Analyzing rhythm sections in "Schism". [[entities/tool.md]]
+- **Classical Study**: Struggling with Partita No. 3. [[entities/johann_sebastian_bach.md]]
+- **Musical Inspiration**: Admires melodic phrasing and tone choices. [[entities/mark_knopfler.md]]
+- **Album Comparison**: Notes Bleach sounds rawer than Nevermind. [[entities/nirvana.md]]
+- **Musical Inspiration**: B.B. King's vibrato (deep emotional resonance that defies explanation). [[entities/bb_king.md]]
+- **Playlist Addition**: Added B.B. King to playlist tonight. [[entities/bb_king.md]]
+
+## User Relationships
+
+## Recommendations
+- **Music**: Plini - Successful recommendation ("Wow"). Matches taste for instrumental progressive metal with melody. [[entities/plini.md]]
+- **Music**: Tool - Lateralus
+- **Music**: Master of Puppets - Tried, but found too intense/aggressive. [[entities/metallica.md]]
+
+## Reading
+- read_book: 'The Midnight Library' by Matt Haig. [[entities/the_midnight_library.md]]

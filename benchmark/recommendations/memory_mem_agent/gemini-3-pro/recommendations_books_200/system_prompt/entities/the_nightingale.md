@@ -1,0 +1,11 @@
+# The Nightingale
+- author: Kristin Hannah
+- genre: Historical Fiction (WWII)
+- key_elements:
+    - strong female protagonists (sisters)
+    - focus on domestic war effort / resistance
+    - emotional/character-driven narrative rather than military/strategy focus
+    - accessible, modern prose style
+- user_opinion: Praises prioritizing character authenticity over strict historical accuracy.
+- character_mention: Vianne and Isabelle felt like real women first, historical figures second.
+- user_sentiment: Feels a deep comradeship with the characters ("people I'd fight alongside").

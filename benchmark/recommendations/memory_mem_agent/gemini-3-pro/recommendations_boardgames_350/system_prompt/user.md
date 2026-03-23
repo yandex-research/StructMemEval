@@ -1,0 +1,138 @@
+# User Information
+
+## Hobbies & Activities
+- 7 Wonders: Card drafting game. [[entities/7_wonders.md]]
+  - **Status**: Recently acquired.
+  - **Reason**: Heard the rulebook is very clear (aligns with preference for efficient learning).
+- Gaia Project: Heavy Euro sci-fi game. [[entities/gaia_project.md]]
+  - **Status**: Planning to play as a shorter alternative to [[entities/twilight_imperium.md]] for the next heavy session.
+- Dead of Winter: Semi-cooperative survival game. [[entities/dead_of_winter.md]]
+  - **Sentiment**: Negative (based on experience).
+  - **Critique**: Suffered from extreme "quarterbacking," where one player commanded others to purely support their actions ("I'll take the action, you all feed the colony").
+- Board Games:
+  - **Preferences**: **Digital vs Physical**: Strictly uses digital versions (like [[entities/tabletop_simulator.md]]) for *learning* complex games, but **mandates physical components for game nights**. Finds digital play "sterile" after a few sessions and values the tactile experience. **Duration Sweet Spot**: 90 minutes is ideal for deep strategy, though specifically appreciates shorter games that offer meaningful decisions without filler (respects player time). **Collection Gap**: specifically lacks high-quality 30-minute games for weeknights (has plenty of 90-minute options). Values **Thematic Cohesion**, where theme and mechanics reinforce each other to create a cohesive experience. Loves strategy games defined by deep thinking and long-term planning, but **strictly avoids "unnecessary complexity"** (e.g., rulebooks the size of novels). Demands a high **depth-to-complexity ratio**: games must be easy to learn but hard to master. **Learning Style**: Strong preference for "learning by doing" (playing repeatedly to discover depth) rather than front-loading rules study; explicitly rejects games requiring hours of reading before the first turn (Cites **Wingspan** as the ideal counter-example for efficient learning). **Prioritizes variable setup or asymmetric factions** to ensure freshness. Strongly prefers meaningful player interaction where moves force opponents to adapt their strategy (defines this as "engagement"); dislikes "multiplayer solitaire". **Favors the focused interaction of smaller groups** over the chaos of larger player counts; specifically finds 6-player games frustrating due to excessive downtime between turns. Appreciates mechanics where early decisions compound into late-game power (earned progression). Enjoys **Abstract Games** (like Azul, Santorini) for their perfect balance of simple rules and deep strategy. Values the **tactile experience** and **visual design**, believing beautiful components make gameplay significantly more satisfying (e.g., placing high-quality tiles). Appreciates **Economic Games** where money represents meaningful trade-offs (creating genuine tension) rather than just victory points. Specifically within **Area Control**, enjoys games where controlling territory confers **strategic advantages** (resources, positioning, abilities) rather than just accumulating victory points. Specifically within **Deck-Builders**, dislikes the "point salad" problem (where cards just add VPs) and favors systems with meaningful trade-offs. generally finds **Party Games** too shallow and repetitive after a few plays, lacking the desired **strategic satisfaction**. **Legacy Games**: Skeptical of legacy mechanics (permanent changes) unless they **meaningfully transform gameplay**. Rejects changes that feel like "stickers on a board" or gimmicks; demands that permanent consequences fundamentally alter the strategic landscape. **Contextual Preference**: With serious gamers, explicitly prefers strategy games over party games.
+  - **Philosophy**: Views each game as a unique puzzle shaped by player choices. **Core Mandate**: Demands player agency throughout the entire game; specifically, no player should ever feel like they are just executing another player's plan or waiting for their turn to matter. Believes **complexity without agency distribution is just intellectual gatekeeping**. Believes the **adversary system creates tension without desperation** when calibrated properly. Defines the **Cooperative Ideal** as "solving a puzzle together". Believes **partial asymmetry without full role differentiation just creates hierarchy**, failing to foster true collaboration.
+  - **Pet Peeves**: Sticky cards (hampers shuffling). "Quarterbacking" in cooperative games (where experience gaps turn one player into a "dictator" calculating optimal moves for everyone else, leaving others just "moving tokens on command" or simply **nodding and executing instructions**). **Excessive downtime for rule-reading**: Frustrated by sessions requiring long periods (e.g., 45 mins) of study before gameplay can begin.
+  - **Habits**: Brings own card sleeves to ensure component protection and smooth shuffling. **Pre-Purchase Vetting**: Strictly checks reviews for **rulebook quality** before buying any game to avoid bad learning experiences.
+  - Terraforming Mars: Engine building game. [[entities/terraforming_mars.md]]
+    - **Preference**: Prefers 4 players (less downtime).
+    - **Critique**: Struggles with significant downtime during opponents' long turns, which breaks engagement.
+    - **Events**: Participating in an upcoming marathon session.
+  - Root: Asymmetric strategy game where factions play entirely differently. [[entities/root.md]]
+    - **Current Activity**: Learning new factions via [[entities/tabletop_simulator.md]].
+    - **Recent Insight**: Playing Vagabond feels completely different from Marquise de Cat.
+    - **Components**: Specifically mentioned the Vagabond's gear tokens are satisfying to handle physically, validating the preference for tactile experiences over digital play.
+  - Azul
+    - **Usage**: Evening wind-down game.
+    - **Components**: Finds the weight and color of the tiles satisfying.
+  - Santorini
+    - **Genre**: Abstract Strategy.
+    - **Sentiment**: Highly replayable; perfect balance of simple rules and deep strategy.
+    - **Mechanics**: Appreciates the "god powers" for adding variability and preventing formulaic openings.
+    - **Components**: Miniatures add significantly to the immersion, which perfectly aligns with a love for high-quality tactile/visual components in games.
+  - Friday
+    - **Type**: Solo Game
+    - **Sentiment**: Negative. Feels like a solvable optimization puzzle after repeated plays, lacking replayability.
+  - Spirit Island: [[entities/spirit_island.md]]
+    - **Type**: Cooperative / Solo Strategy Game
+    - **Status**: Selected as primary solo game.
+    - **Sentiment**: Positive. Finally delivered a good cooperative experience (overcoming past dislikes of "quarterbacking" in other games). Specifically appreciates how **unique powers and separate boards** create enough complexity that no single player can control the entire game state. Valued the dynamic where players **had to discuss strategy** rather than one person dictating moves.
+    - **Multiplayer Experience**: Enjoyed playing with a partner where the clash of **completely different abilities** forced coordination over optimization. Found that discussion naturally shifted to **probabilities and timing**, preventing the "calculated optimal solution" problem found in other co-ops.
+    - **Habit**: Planned session after Root (energy permitting).
+  - Pandemic: [[entities/pandemic.md]]
+    - **Sentiment**: Negative. Feels like a spreadsheet exercise rather than a game.
+    - **Critique**: Hated the lack of agency; one player calculated optimal moves ("quarterbacking") leaving others with zero meaningful decisions.
+  - Pandemic Legacy: [[entities/pandemic_legacy.md]]
+    - **Status**: Tried recently with a gaming group.
+    - **Sentiment**: Negative.
+    - **Critique**: Experienced severe "quarterbacking" where one player made all decisions, making it feel like "playing solo with spectators." Found that the "stickers and envelopes" (legacy mechanics) failed to compensate for the core gameplay issues; strictly adding novelty without meaningful player engagement was insufficient.
+  - Forbidden Island: [[entities/forbidden_island.md]]
+    - **Sentiment**: Negative.
+    - **Critique**: Suffered from the same "quarterbacking" fate as its successor due to simple mechanics and open information.
+  - Forbidden Desert: [[entities/forbidden_desert.md]]
+    - **Context**: User notes it was designed to fix the issues found in Forbidden Island, but failed.
+    - **Sentiment**: Negative.
+    - **Critique**: Even worse than Pandemic for "quarterbacking". **Simple mechanics with open information** created a "single-player puzzle with bystanders," where one player solves the optimal moves and others just execute commands. specifically noted that the **sand movement** mechanic simply became another variable for the alpha player to optimize rather than adding unpredictability.
+  - Hive
+    - **Status**: Played 10 times.
+    - **Sentiment**: Negative.
+    - **Critique**: BEGAN LOSING APPEAL AFTER GAME 5. Play devolved into executing memorized sequences (formulaic openings), making it feel predictable with "not much left to discover."
+  - Brass: Birmingham
+    - **Status**: Tried last weekend.
+    - **Sentiment**: Found the canal/railroad transition brutal but satisfying.
+    - **Mechanics**: Appreciates the "tea mechanic" for softening the game's harshness compared to Lancashire.
+  - Brass: Lancashire
+    - **Sentiment**: Felt more punishing than Birmingham.
+  - Dominion
+    - **Status**: Retried after years away.
+    - **Sentiment**: Core loop satisfying, but found the **Base Set** repetitive over time.
+    - **Preferences**: Looking for expansions that add "interesting decisions".
+    - **Plans**: Intends to buy **Prosperity** expansion next.
+  - Ascension: [[entities/ascension.md]]
+    - **Sentiment**: Negative.
+    - **Critique**: Feels like "optimizing a spreadsheet" once combos are learned.
+  - Flash Point: [[entities/flash_point.md]]
+    - **Status**: Tried last weekend with new players.
+    - **Sentiment**: Negative.
+    - **Critique**: Found it **tedious** due to severe "quarterbacking". The most experienced player directed every action, eliminating meaningful choice for others; specifically cited spending three turns just moving a firefighter where told. Described the experience as "might as well have been watching a YouTube playthrough."
+  - Robinson Crusoe: [[entities/robinson_crusoe.md]]
+    - **Critique**: The rulebook intimidated half the gaming group. Complexity actually worsened "quarterbacking," forcing the alpha player to calculate optimal actions for everyone.
+  - Codenames: [[entities/codenames.md]]
+    - **Status**: Plays with a regular group.
+    - **Sentiment**: Negative (Stale).
+    - **Critique**: Suffers from players memorizing optimal strategies after repeated plays, significantly reducing replayability.
+  - Just One: [[entities/just_one.md]]
+- Catan: Strategy / Resource Management. [[entities/catan.md]]
+  - **Critique**: Uses it as the archetypal example of *failed* thematic cohesion, stating the theme is 'basically irrelevant to the mechanics'.
+- Scythe: [[entities/scythe.md]]
+  - **Status**: played recently.
+  - **Sentiment**: Positive.
+  - **Impressions**: Surprisingly well—specifically praised the "resource gathering" mechanic for feeling like "building an industrial empire".
+- Twilight Imperium: [[entities/twilight_imperium.md]]
+  - **Sentiment**: Intimidated by the rulebook.
+- Gloomhaven: [[entities/gloomhaven.md]]
+  - **Status**: Recommended by friends, but hesitant.
+  - **Blocker**: Specifically intimidated by the **100+ hour campaign commitment**, fearing it will become a chore rather than a game.
+  - **Context**: User is considering it but has strong preferences against "quarterbacking" and excessive rule-reading.
+  - **Start-up Friction**: Dislikes long learning phases before meaningful play begins.
+  - **Duration**: Noted that sessions always run 5+ hours, even with experienced players (conflicts with general 90-minute preference).
+  - **Strategy**: Considering **Jaws of the Lion** as a gateway (standalone prequel) to test the system with lower commitment and better onboarding. [[entities/gloomhaven_jaws_of_the_lion.md]]
+- The Crew: [[entities/the_crew.md]]
+  - **Sentiment**: Positive.
+  - **Description**: Found it to be a refreshing cooperative experience where hidden information forces **genuine collaboration**.
+  - **Critique**: Worked perfectly with mixed experience levels. Praised the **clue-giving restriction** and **distributed information** (hidden hands) for forcing every player to contribute, effectively solving the "quarterbacking" problem found in games with open information. This mechanical innovation successfully bypasses the user's usual dislike of shallow party games.
+- Mysterium: [[entities/mysterium.md]]
+  - **Sentiment**: Negative.
+  - **Critique**: Explicitly noted that **hidden roles did not fix the quarterbacking issue**. The experience was dominated by a single "medium" role holding all the **interpretive power**, while "ghost" players were relegated to **execution-only tasks**, leaving them passive and disengaged.
+- Wingspan: Engine-building board game with birds. [[entities/wingspan.md]]
+  - **Sentiment**: Positive.
+  - **Critique**: Specifically praised the rulebook for its efficiency ("learned everything in 10 minutes"), satisfying the requirement for games that avoid excessive front-loaded reading.
+- Blood Rage: Area control game with Viking theme. Preferred over Rising Sun for now. [[entities/blood_rage.md]]
+- Rising Sun: Feudal Japan area control game by the same designer (Eric Lang). [[entities/rising_sun.md]]
+  - **Status**: Shelved for now; plans to revisit later with the "right group".
+  - **Recent Insight**: Found the **card drafting phase often more impactful than the battles themselves**, highlighting the strategic depth required before combat begins.
+
+## Current Context
+- **Upcoming Event**: Teaching board games to complete beginners this weekend. Describes group as completely new players who think [[entities/monopoly.md]] is the standard board game experience.
+  - **Anxiety**: Two-fold problem:
+    1.  Worried that **any** strategy game will feel overwhelming to the "total non-gamer" group.
+    2.  Conversely worried that playing simple "fillers" to accommodate them will fail to satisfy their own need for **strategic depth** and meaningful decisions.
+  - **Strategy Goals**: Needs "Bridge Games" — specifically titles with high depth-to-complexity ratios (like *Azul*) that are accessible to beginners but remain mentally stimulating for the veteran. Prioritizing "learning by doing" and avoiding "quarterbacking".
+  - **Round One Approach**: Explicitly keeping the first session "positive and simple" to build confidence.
+  - **Teaching Philosophy**: Adopted the mantra "Start simple, build enthusiasm, then deepen over time." Applies to introducing new players to the hobby.
+
+## Gaming Habits
+- **Buying Habits**: Frequently buys games with the intention of playing them but often leaves them unplayed (classic "shelf of shame" or backlog behavior).
+- **Goal**: Resolved to play owned games before purchasing new ones.
+- **Solo Gaming**: Interested in playing more solo games during weekdays.
+  - **Motivation**: To learn complex systems without social pressure.
+  - **Preferences**: Dislikes games that feel like puzzles with optimal solutions.
+- **Storage Issues**: Shelf is currently overflowing. considering a second shelf vs better organization. specifically struggles with an accumulation of small card games.
+- **Setup Preference**: Believes easier setup acts as a catalyst for more frequent play sessions.
+- **Simulation Games**:
+  - **Sentiment**: Neutral/Utilitarian.
+  - **Perspective**: Views them as "useful tools for specific situations" rather than games for personal enjoyment.
+- **Dietary**: Avoids caffeine for 3+ hour sessions.
+- **Session Duration**: Recent game night ran 4 hours including setup/breakdown.
+- **Collection Statistics**: Owns approximately 40 games.
+  - **Play Distribution**: Heavily skewed; the top 10 games account for 80% of all playtime.

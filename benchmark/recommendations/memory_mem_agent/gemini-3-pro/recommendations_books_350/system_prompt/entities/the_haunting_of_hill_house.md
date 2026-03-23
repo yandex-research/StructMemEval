@@ -1,0 +1,13 @@
+# The Haunting of Hill House
+- author: Shirley Jackson
+- genre: Horror, Gothic Fiction
+- status: Abandoned
+- current_page: Chapter 3 (approx. page 50)
+- abandonment_reason: Abandoned after chapter three.
+- reaction: By page 50, felt physically watched and checked own house corners; noted no ghosts appeared yet but atmosphere was effective.
+- first_read: True
+- prose_opinion: Finds the sentences themselves "haunted" and "uneasy in their construction"; distinct from anything else read before.
+- user_opinion: Cited as a perfect example of preferred horror style (dread through atmosphere vs explicit violence)
+- adaptation_status: Watched Netflix series
+- adaptation_opinion: Good TV, but missed the novel's psychological subtlety. Believes visual horror requires different tools than the written word.
+- specific_comparison: Contrasts the book's terror (rooted in Eleanor's deteriorating mind) with the show's reliance on visual ghosts in hallways to satisfy viewers.
