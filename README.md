@@ -28,7 +28,7 @@ nano .env # !!! ACTION REQUIRED: !!! manually edit the copied .env to use your A
 
 # 3. (optional)for jupyter exps
 pip install ipykernel
-python -m ipykernel install --user --name=mem-agent --display-name="Python (mem-agent)
+python -m ipykernel install --user --name=mem-agent --display-name="Python (mem-agent)"
 
 cd ..
 cp mem-agent/.env .env
