@@ -7,11 +7,15 @@ mem0:
     provider: openai
     model: gpt-4o-mini
     api_key: ${OPENAI_API_KEY}
+    openrouter_base_url: ${LLM_BASE_URL}
+    
   embedder:
     provider: openai
     model: text-embedding-3-large
     api_key: ${OPENAI_API_KEY}
     embedding_dims: 3072
+    openai_base_url: ${OPENAI_BASE_URL}
+    
   vector_db:
     provider: qdrant
     path: ./qdrant_data_test
