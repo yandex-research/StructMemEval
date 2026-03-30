@@ -1,2 +1,0 @@
-# Steven Spielberg
-- role: Director

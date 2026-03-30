@@ -1,1 +1,0 @@
-# Robinson Crusoe: Adventures on the Cursed Island

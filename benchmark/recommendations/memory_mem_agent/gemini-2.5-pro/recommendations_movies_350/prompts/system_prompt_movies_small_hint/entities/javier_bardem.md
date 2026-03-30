@@ -1,2 +1,0 @@
-# Javier Bardem
-- profession: Actor

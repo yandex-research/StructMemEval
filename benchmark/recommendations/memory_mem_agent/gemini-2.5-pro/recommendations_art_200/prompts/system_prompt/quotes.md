@@ -1,1 +1,0 @@
-- I'd rather have an imperfect truth than a perfect lie in art.

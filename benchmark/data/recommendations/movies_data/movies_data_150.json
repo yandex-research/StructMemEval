@@ -1,0 +1,477 @@
+{
+  "case_id": "recommendations_movies_150",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Terminator 2",
+      "contains_fact": true,
+      "fact_id": "terminator2_favorite",
+      "fact_quote": "Terminator 2 is still the gold standard for action films. Schwarzenegger at his absolute peak",
+      "messages": [
+        {"role": "user", "content": "Just rewatched Terminator 2 last night. Still holds up perfectly."},
+        {"role": "assistant", "content": "You've got great taste—what's your favorite part of T2?"},
+        {"role": "user", "content": "The truck chase scene. The danger feels real, not like weightless CGI."},
+        {"role": "assistant", "content": "You're right—they used real vehicles and miniatures. What do you think of the T-1000?"},
+        {"role": "user", "content": "Robert Patrick was terrifying. That liquid metal effect still beats modern CGI. But Arnold is what makes the movie."},
+        {"role": "assistant", "content": "Do you prefer his villain role in the first movie or the hero in T2?"},
+        {"role": "user", "content": "Terminator 2 is still the gold standard for action films. Schwarzenegger at his absolute peak."},
+        {"role": "assistant", "content": "You can tell he fully committed to both roles."},
+        {"role": "user", "content": "Modern action stars just don't have that charisma."},
+        {"role": "assistant", "content": "Totally agree—his screen presence is unmatched, even today."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Die Hard",
+      "contains_fact": true,
+      "fact_id": "die_hard_xmas",
+      "fact_quote": "Die Hard is the perfect Christmas movie. Don't let anyone tell you otherwise",
+      "messages": [
+        {"role": "user", "content": "Die Hard is the perfect Christmas movie. Don't let anyone tell you otherwise."},
+        {"role": "assistant", "content": "I totally agree with you—it really fits the holiday spirit with snow at the end."},
+        {"role": "user", "content": "And the action is unmatched. McClane feels human—you believe his pain."},
+        {"role": "assistant", "content": "What makes McClane work so well for you?"},
+        {"role": "user", "content": "Hans Gruber falling from the roof. Perfect villain payoff. Alan Rickman was incredible."},
+        {"role": "assistant", "content": "You appreciate villains with depth."},
+        {"role": "user", "content": "Exactly. Every character in Die Hard has clear motives."},
+        {"role": "assistant", "content": "When every character has purpose, the stakes feel real to you."},
+        {"role": "user", "content": "I rewatch it every December without fail."},
+        {"role": "assistant", "content": "That's a great tradition—it really is the quintessential holiday action flick."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Mad Max Fury Road",
+      "contains_fact": true,
+      "fact_id": "fury_road_practical",
+      "fact_quote": "Fury Road was shot with real vehicles and practical effects. Miller storyboarded 3,500 panels before filming began",
+      "messages": [
+        {"role": "user", "content": "Fury Road was shot with real vehicles and practical effects. Miller storyboarded 3,500 panels before filming."},
+        {"role": "assistant", "content": "That level of planning really shows in your viewing experience."},
+        {"role": "user", "content": "The sandstorm sequence was all real. Modern CGI would've looked fake."},
+        {"role": "assistant", "content": "What's your favorite sequence that really sold the practical approach for you?"},
+        {"role": "user", "content": "The pole cats swinging between vehicles. Stunt performers trained for months."},
+        {"role": "assistant", "content": "You can feel that dedication in every frame."},
+        {"role": "user", "content": "That's why it still holds up—practical effects age better."},
+        {"role": "assistant", "content": "Real danger creates real stakes—and Fury Road proves your point perfectly."},
+        {"role": "user", "content": "Hope Furiosa keeps the same practical approach."},
+        {"role": "assistant", "content": "Miller's always been consistent about practical work."},
+        {"role": "user", "content": "He's one of the few directors who gets it."},
+        {"role": "assistant", "content": "Absolutely—his commitment to real stunts is exactly why you trust him."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Coffee Setup",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Trying to find the perfect home coffee setup."},
+        {"role": "assistant", "content": "Do you prefer espresso or regular coffee?"},
+        {"role": "user", "content": "Strong black coffee. Nothing fancy."},
+        {"role": "assistant", "content": "French press or pour-over would work well for your taste."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Heat",
+      "contains_fact": true,
+      "fact_id": "heat_practical",
+      "fact_quote": "Heat is the perfect action film. That downtown shootout was shot with real blanks and practical effects - you can feel the danger in every frame",
+      "messages": [
+        {"role": "user", "content": "Heat is the perfect action film. That downtown shootout used real blanks—you feel the danger."},
+        {"role": "assistant", "content": "What made it better than modern shootouts?"},
+        {"role": "user", "content": "You felt the weight of gunfire, saw real bystander reactions. De Niro and Pacino weren't just acting—they were reacting."},
+        {"role": "assistant", "content": "You feel the authenticity because the actors are genuinely reacting to real elements."},
+        {"role": "user", "content": "And the character work! The coffee shop scene—two master actors."},
+        {"role": "assistant", "content": "Action should reveal character—and Heat delivers that perfectly for you."},
+        {"role": "user", "content": "Heat still holds up after 25 years."},
+        {"role": "assistant", "content": "Fundamentals beat fads in your film choices."},
+        {"role": "user", "content": "I rewatch it every few months. Even slow scenes have tension."},
+        {"role": "assistant", "content": "Every scene builds toward collision—that narrative momentum keeps you engaged."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Home Theater",
+      "contains_fact": true,
+      "fact_id": "sound_priority",
+      "fact_quote": "Just a good sound system first, then maybe a projector later. Sound matters more to me than visuals for action movies.",
+      "messages": [
+        {"role": "user", "content": "Thinking about setting up a home theater system."},
+        {"role": "assistant", "content": "What's most important to your viewing experience—sound or visuals?"},
+        {"role": "user", "content": "Just a good sound system first, then maybe a projector later. Sound matters more to me than visuals for action movies."},
+        {"role": "assistant", "content": "Smart choice—feeling the weight of gunfire matters more to you than pretty visuals."},
+        {"role": "user", "content": "The bass from that Heat shootout needs to rattle the room."},
+        {"role": "assistant", "content": "You want to feel the physical impact, not just see it."},
+        {"role": "user", "content": "Explosions should shake your chest, not just your eyes."},
+        {"role": "assistant", "content": "Exactly—that visceral experience is what great sound design delivers."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Mission Impossible",
+      "contains_fact": true,
+      "fact_id": "mi_stunts",
+      "fact_quote": "Tom Cruise does his own stunts and it shows. That HALO jump in Fallout was filmed in one take with actual skydivers",
+      "messages": [
+        {"role": "user", "content": "Tom Cruise does his own stunts. That HALO jump in Fallout was one take with real skydivers."},
+        {"role": "assistant", "content": "How many takes did it actually need for that sequence?"},
+        {"role": "user", "content": "Only three attempts. They used the first take."},
+        {"role": "assistant", "content": "That dedication can't be faked."},
+        {"role": "user", "content": "He broke his ankle during the Paris chase but finished the scene first."},
+        {"role": "assistant", "content": "Modern actors rarely take those risks."},
+        {"role": "user", "content": "The bathroom fight with Cavill—you feel every punch because it was real."},
+        {"role": "assistant", "content": "Physical commitment builds trust with you as a viewer."},
+        {"role": "user", "content": "That's why Mission Impossible stands out—real action over CGI."},
+        {"role": "assistant", "content": "Cruise is definitely one of the last action stars who insists on doing it for real."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Marvel Fatigue",
+      "contains_fact": true,
+      "fact_id": "marvel_fatigue",
+      "fact_quote": "I'm getting Marvel fatigue. Most of the new ones feel like CGI soup with no real stakes",
+      "messages": [
+        {"role": "user", "content": "What do you think about the latest Marvel movie?"},
+        {"role": "assistant", "content": "Which one? They release so many these days."},
+        {"role": "user", "content": "The one with the new superhero team. Can't even remember the name."},
+        {"role": "assistant", "content": "Did you end up watching it?"},
+        {"role": "user", "content": "No, I skipped it. I'm getting Marvel fatigue. Most new ones feel like CGI soup with no real stakes."},
+        {"role": "assistant", "content": "What's missing compared to the older ones that you did enjoy?"},
+        {"role": "user", "content": "They've lost practical effects. Everything's green screen now. Even the actors seem disconnected."},
+        {"role": "assistant", "content": "It's why films like Winter Soldier resonated with you while newer entries fall flat."},
+        {"role": "user", "content": "Captain America: The Winter Soldier. That elevator fight felt brutal and real."},
+        {"role": "assistant", "content": "Real choreography with minimal CGI."},
+        {"role": "user", "content": "Modern superhero films feel weightless."},
+        {"role": "assistant", "content": "Exactly—without practical stakes, it's hard to feel any danger."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "John Wick",
+      "contains_fact": true,
+      "fact_id": "john_wick_training",
+      "fact_quote": "Keanu Reeves trained for 8 hours daily to perform those gun-fu sequences. You can see the physical commitment in every frame",
+      "messages": [
+        {"role": "user", "content": "Keanu Reeves trained 8 hours a day for those gun-fu scenes. You see the commitment in every frame."},
+        {"role": "assistant", "content": "Most actors would've used stunt doubles."},
+        {"role": "user", "content": "The pencil fight in the first film was all him."},
+        {"role": "assistant", "content": "That adds real authenticity."},
+        {"role": "user", "content": "Rewatched the first John Wick recently. The action still holds up. Stahelski's stunt background shows."},
+        {"role": "assistant", "content": "How do the sequels compare?"},
+        {"role": "user", "content": "Chapter 2 expanded the world well, but Chapter 3 felt overstuffed. Still, the action is unmatched."},
+        {"role": "assistant", "content": "You appreciate when action serves character."},
+        {"role": "user", "content": "Keanu's dedication makes you root for him even when he's killing dozens."},
+        {"role": "assistant", "content": "That emotional connection comes from seeing his real effort on screen."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "The Irishman",
+      "contains_fact": true,
+      "fact_id": "drama_pacing",
+      "fact_quote": "I have no patience for slow dramas anymore. The Irishman was 3.5 hours of old men talking and I turned it off after 45 minutes",
+      "messages": [
+        {"role": "user", "content": "I have no patience for slow dramas. The Irishman was 3.5 hours of old men talking—I quit after 45 minutes."},
+        {"role": "assistant", "content": "What didn't work about the pacing for you?"},
+        {"role": "user", "content": "Nothing happened! Just slow scenes with no momentum."},
+        {"role": "assistant", "content": "You prefer narrative momentum."},
+        {"role": "user", "content": "Die Hard has perfect pacing—2 hours 12 minutes, no wasted scenes."},
+        {"role": "assistant", "content": "Efficient storytelling keeps you engaged."},
+        {"role": "user", "content": "I'd rather watch Commando twice than sit through one slow drama."},
+        {"role": "assistant", "content": "Entertainment can be rewarding when it respects your time."},
+        {"role": "user", "content": "Not every film needs to be a 3-hour masterpiece."},
+        {"role": "assistant", "content": "Totally—tight and purposeful is often better than long and meandering."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Weekend Hiking",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Planning a hiking trip this weekend."},
+        {"role": "assistant", "content": "Where are you thinking of going?"},
+        {"role": "user", "content": "Somewhere with good trails and views, within 2 hours drive."},
+        {"role": "assistant", "content": "Check state parks—they usually have well-marked trails."},
+        {"role": "user", "content": "Any gear I shouldn't forget?"},
+        {"role": "assistant", "content": "Water, snacks, proper shoes, and a light rain jacket."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Predator",
+      "contains_fact": true,
+      "fact_id": "predator_cast",
+      "fact_quote": "Predator had the perfect cast - Schwarzenegger, Ventura, Landham, even Bill Duke. You believed these were real soldiers",
+      "messages": [
+        {"role": "user", "content": "Predator had the perfect cast—Schwarzenegger, Ventura, Landham, Bill Duke. You believed they were real soldiers."},
+        {"role": "assistant", "content": "Each character felt distinct and authentic."},
+        {"role": "user", "content": "And the practical effects! That creature suit still holds up."},
+        {"role": "assistant", "content": "What's your favorite sequence that sold the practical approach?"},
+        {"role": "user", "content": "The final showdown in the mud pit. Arnold using the environment—that's real action."},
+        {"role": "assistant", "content": "He really committed physically."},
+        {"role": "user", "content": "Modern stars would use doubles for half of that."},
+        {"role": "assistant", "content": "True—that level of commitment is rare today."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Dune Part One",
+      "contains_fact": true,
+      "fact_id": "dune_practical",
+      "fact_quote": "Dune used real desert locations and practical effects whenever possible. That's why the sandworm scenes feel so tangible and dangerous compared to CGI monsters",
+      "messages": [
+        {"role": "user", "content": "Dune used real desert and practical effects. That's why the sandworm scenes feel tangible and dangerous."},
+        {"role": "assistant", "content": "What made those scenes so effective for you?"},
+        {"role": "user", "content": "Real sand, miniatures, minimal CGI. You felt the scale and heat."},
+        {"role": "assistant", "content": "Physical reality creates immersion."},
+        {"role": "user", "content": "The stillsuits were real costumes—you saw actors sweating."},
+        {"role": "assistant", "content": "Audiences sense authenticity."},
+        {"role": "user", "content": "Most modern sci-fi feels weightless and fake by comparison."},
+        {"role": "assistant", "content": "Villeneuve really understands how to ground sci‑fi in tangible reality."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "Alien",
+      "contains_fact": true,
+      "fact_id": "alien_practical",
+      "fact_quote": "Alien's chestburster scene still shocks because the actors are genuinely reacting to a practical effect. The Nostromo feels like a real ship, not a CGI set",
+      "messages": [
+        {"role": "user", "content": "Alien's chestburster scene still shocks me. The actors didn't know exactly what would happen, right?"},
+        {"role": "assistant", "content": "Exactly—Ridley Scott kept it secret to get genuine reactions."},
+        {"role": "user", "content": "The whole Nostromo feels lived-in. Modern sci-fi sets look too clean."},
+        {"role": "assistant", "content": "They built practical sets and used miniatures."}
+      ]
+    },
+    {
+      "session_id": "session_15",
+      "topic": "Practical vs CGI",
+      "contains_fact": true,
+      "fact_id": "practical_over_cgi",
+      "fact_quote": "Practical effects create real tension because there's real danger. CGI feels weightless and consequence-free, no matter how pretty it looks",
+      "messages": [
+        {"role": "user", "content": "Practical effects create real tension because there's real danger. CGI feels weightless and consequence-free."},
+        {"role": "assistant", "content": "You've said this in almost every action film discussion."},
+        {"role": "user", "content": "Because it's true! When actors react to real explosions, you feel it."},
+        {"role": "assistant", "content": "Authenticity isn't just aesthetic—it's emotional."},
+        {"role": "user", "content": "Give me miniatures, real stunts, and on-location shooting any day."},
+        {"role": "assistant", "content": "You've praised every film that delivers that physical authenticity."},
+        {"role": "user", "content": "CGI has its place, but it should enhance reality, not replace it."},
+        {"role": "assistant", "content": "Films like The Matrix used CGI to enhance practical work."},
+        {"role": "user", "content": "When it's real, you feel it in your gut."},
+        {"role": "assistant", "content": "And that gut feeling is your true north when judging action."}
+      ]
+    },
+    {
+      "session_id": "session_16",
+      "topic": "Plant Care",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "My succulent is dying."},
+        {"role": "assistant", "content": "Overwatering? They hate wet soil."},
+        {"role": "user", "content": "I water once a week."},
+        {"role": "assistant", "content": "Too much! Only water when soil is completely dry."},
+        {"role": "user", "content": "It's in a dark corner."},
+        {"role": "assistant", "content": "Move it near a window. Succulents need bright light."},
+        {"role": "user", "content": "Okay, will try that."},
+        {"role": "assistant", "content": "Fingers crossed!"},
+        {"role": "user", "content": "Thanks for the advice!"},
+        {"role": "assistant", "content": "Anytime, hope it bounces back."}
+      ]
+    },
+    {
+      "session_id": "session_17",
+      "topic": "Comedy Films",
+      "contains_fact": true,
+      "fact_id": "comedy_timing",
+      "fact_quote": "Modern comedies rely too much on raunchy humor and shock value. Give me smart comedies with perfect timing like Tropic Thunder any day",
+      "messages": [
+        {"role": "user", "content": "Modern comedies rely too much on raunchy humor. Give me smart comedies like Tropic Thunder."},
+        {"role": "assistant", "content": "What made Tropic Thunder work so well for you?"},
+        {"role": "user", "content": "Sharp writing, committed performances, jokes with purpose—not just shock value."},
+        {"role": "assistant", "content": "Comedy should serve character and story."},
+        {"role": "user", "content": "Most modern comedies just string together gross-out moments with no story."},
+        {"role": "assistant", "content": "Character-driven humor lasts longer."},
+        {"role": "user", "content": "Ferrell and Stiller fully committed to their characters instead of winking at the camera."},
+        {"role": "assistant", "content": "Sincerity makes absurdity work."}
+      ]
+    },
+    {
+      "session_id": "session_18",
+      "topic": "Tarantino Pacing",
+      "contains_fact": true,
+      "fact_id": "tarantino_dialogue",
+      "fact_quote": "Tarantino's dialogue scenes can be brilliant but sometimes they overstay their welcome. That tavern scene in Inglourious Basterds was perfect tension, but The Hateful Eight dragged on too long",
+      "messages": [
+        {"role": "user", "content": "Tarantino's dialogue scenes can be brilliant but sometimes too long. The tavern scene in Inglourious Basterds had perfect tension. The Hateful Eight dragged."},
+        {"role": "assistant", "content": "What made the tavern scene work better?"},
+        {"role": "user", "content": "Clear stakes—you knew someone would be exposed any second."},
+        {"role": "assistant", "content": "Dialogue should move the story forward."},
+        {"role": "user", "content": "The tavern scene was long but every line built tension."},
+        {"role": "assistant", "content": "Editing discipline matters."},
+        {"role": "user", "content": "I love Tarantino's style but wish he'd cut more."},
+        {"role": "assistant", "content": "Respecting the viewer's time is a core value for you."}
+      ]
+    },
+    {
+      "session_id": "session_19",
+      "topic": "Blade Runner 2049",
+      "contains_fact": true,
+      "fact_id": "blade_runner_visuals",
+      "fact_quote": "Blade Runner 2049 is visually stunning, but it drags in places. Still, the practical sets and miniatures make it feel real, unlike pure CGI worlds",
+      "messages": [
+        {"role": "user", "content": "Blade Runner 2049 is beautiful, but I felt it dragged in the middle."},
+        {"role": "assistant", "content": "The visuals are stunning, but pacing can be an issue. Still, they used practical sets and miniatures."},
+        {"role": "user", "content": "Yeah, the city feels real because it's partly practical. CGI-only worlds feel weightless."},
+        {"role": "assistant", "content": "Villeneuve balances practical and digital well."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q01_genre_satisfaction_ranking",
+      "question": "Rank film genres by my satisfaction rate based on our conversations. For each genre, provide the approximate number of positive sessions and the percentage of positive discussions.",
+      "reference_answer": {
+        "text": "Based on our film discussions, your satisfaction by genre ranks as: 1) Action – approximately 9 positive sessions out of 10 action-focused discussions (around 90% positive). 2) Sci‑fi – all 4 discussions were positive (100% positive), all praising practical elements. 3) Comedy – 1 positive out of 1 (Tropic Thunder praised). 4) Horror – 1 positive out of 1 (Alien praised). 5) Superhero – 1 positive out of 3 (Winter Soldier praised, the rest criticized as CGI-heavy). 6) Drama – 0 positive out of 2 (0% positive). Action is your clear favorite, but you also strongly appreciate practical‑effects sci‑fi and smart comedies.",
+        "required_facts": ["terminator2_favorite", "heat_practical", "fury_road_practical", "mi_stunts", "john_wick_training", "predator_cast", "dune_practical", "alien_practical", "marvel_fatigue", "drama_pacing", "comedy_timing", "blade_runner_visuals"],
+        "evaluation_criteria": [
+          "Correctly identifies approximately 9 positive action sessions out of 10",
+          "Sci-fi: 4 positive sessions (Dune, Alien, Blade Runner 2049, plus positive mentions of practical work)",
+          "Comedy: 1 positive",
+          "Horror: 1 positive",
+          "Superhero: 1 positive (Winter Soldier), 2 negative (general Marvel fatigue)",
+          "Drama: 0 positive",
+          "Percentages are approximate"
+        ]
+      }
+    },
+    {
+      "query_id": "q02_practical_effects_mentions",
+      "question": "How many distinct conversations have I praised practical effects over CGI? Name at least ten films mentioned in those discussions.",
+      "reference_answer": {
+        "text": "You've praised practical effects in over a dozen conversations. Films mentioned include: Terminator 2, Die Hard, Fury Road, Heat, Mission: Impossible, John Wick, Predator, Dune, Alien, Blade Runner 2049, and the elevator fight in Winter Soldier. This core principle appears in the vast majority of your film discussions.",
+        "required_facts": ["terminator2_favorite", "fury_road_practical", "heat_practical", "mi_stunts", "john_wick_training", "predator_cast", "dune_practical", "alien_practical", "practical_over_cgi", "blade_runner_visuals", "die_hard_xmas", "marvel_fatigue"],
+        "evaluation_criteria": [
+          "Lists at least 10 films",
+          "Includes both explicit and indirect mentions",
+          "Recognizes practical effects as a recurring theme"
+        ]
+      }
+    },
+    {
+      "query_id": "q03_favorite_action_star_mentions",
+      "question": "Compare how often Arnold Schwarzenegger, Tom Cruise, and Keanu Reeves are mentioned positively in our discussions. Which actor appears most frequently?",
+      "reference_answer": {
+        "text": "Arnold Schwarzenegger is mentioned most often, in discussions of Terminator 2, Predator, and a reference to Commando. Tom Cruise appears in discussions of Mission: Impossible and his commitment to stunts. Keanu Reeves is mentioned in the John Wick series. Arnold has the most mentions across different films.",
+        "required_facts": ["terminator2_favorite", "predator_cast", "drama_pacing", "mi_stunts", "john_wick_training"],
+        "evaluation_criteria": [
+          "Arnold: multiple films (T2, Predator, Commando)",
+          "Cruise: Mission: Impossible",
+          "Reeves: John Wick",
+          "Identifies Arnold as most frequent"
+        ]
+      }
+    },
+    {
+      "query_id": "q04_ideal_film_length",
+      "question": "What is my preferred film length range based on explicit statements? Name one film I consider perfectly paced and one I criticized for being too long.",
+      "reference_answer": {
+        "text": "You prefer films under 2.5 hours with tight pacing. You described Die Hard as having ideal pacing, and criticized The Irishman for being too long and meandering, and also mentioned The Hateful Eight for dragging. Your ideal length is roughly 90–150 minutes, with no wasted scenes.",
+        "required_facts": ["die_hard_xmas", "drama_pacing", "tarantino_dialogue"],
+        "evaluation_criteria": [
+          "Identifies range under 2.5 hours",
+          "Names Die Hard as perfectly paced",
+          "Names Irishman (or Hateful Eight) as too long",
+          "References pacing as key value"
+        ]
+      }
+    },
+    {
+      "query_id": "q05_positive_drama_review",
+      "question": "Have I ever given a positive review to a drama film? If yes, which one? If no, what percentage of drama discussions were positive?",
+      "reference_answer": {
+        "text": "No, you have not given a positive review to any drama film. All discussions about dramas contained negative comments about pacing or lack of momentum. For example, The Irishman was abandoned, and Blade Runner 2049, while visually stunning, was criticized for dragging. So 0% of drama discussions were positive.",
+        "required_facts": ["drama_pacing", "blade_runner_visuals"],
+        "evaluation_criteria": [
+          "Confirms 0 positive dramas",
+          "Mentions specific criticisms",
+          "Calculates 0%"
+        ]
+      }
+    },
+    {
+      "query_id": "q06_trusted_directors",
+      "question": "Which directors have I explicitly praised for practical filmmaking? Name them and the films they directed that you appreciated.",
+      "reference_answer": {
+        "text": "You've praised George Miller for Fury Road and Denis Villeneuve for Dune and Blade Runner 2049. You've also praised the filmmaking approach behind Terminator 2, though you didn't mention James Cameron by name. All were commended for using practical effects, real locations, and miniatures rather than relying on CGI.",
+        "required_facts": ["fury_road_practical", "dune_practical", "blade_runner_visuals", "terminator2_favorite"],
+        "evaluation_criteria": [
+          "Lists Miller and Villeneuve",
+          "Associates each with correct films",
+          "Acknowledges T2's practical approach without requiring Cameron's name",
+          "Highlights practical filmmaking"
+        ]
+      }
+    },
+    {
+      "query_id": "q07_positive_negative_ratio",
+      "question": "Overall, what is the approximate ratio of positive to negative sessions across all film discussions?",
+      "reference_answer": {
+        "text": "The majority of your film discussions are positive. Out of about 16 film-related conversations, roughly 12 are positive, 2 are negative, and 2 are mixed. That gives a positive‑to‑negative ratio around 6:1, with over 75% of discussions being clearly positive.",
+        "required_facts": ["terminator2_favorite", "die_hard_xmas", "fury_road_practical", "heat_practical", "mi_stunts", "marvel_fatigue", "john_wick_training", "drama_pacing", "predator_cast", "dune_practical", "alien_practical", "practical_over_cgi", "comedy_timing", "tarantino_dialogue", "blade_runner_visuals"],
+        "evaluation_criteria": [
+          "Approximately 12 positive, 2 negative, 2 mixed",
+          "Ratio about 6:1",
+          "Percentage around 75% positive"
+        ]
+      }
+    },
+    {
+      "query_id": "q08_sound_vs_visuals",
+      "question": "Do I prioritize sound or visuals for home theater? Explain why, giving examples of films where I praised sound design.",
+      "reference_answer": {
+        "text": "You prioritize sound over visuals for action movies. You've stated that feeling the weight of gunfire and explosions is more important than pretty visuals. You praised Heat's shootout for its realistic audio, and mentioned that the bass needs to rattle the room for action scenes. For you, great sound design creates visceral tension.",
+        "required_facts": ["sound_priority", "heat_practical"],
+        "evaluation_criteria": [
+          "States sound priority",
+          "Uses Heat as an example",
+          "Explains why sound matters (visceral tension)"
+        ]
+      }
+    },
+    {
+      "query_id": "q09_films_called_perfect",
+      "question": "Which three films have I called 'perfect' or 'gold standard'? List them.",
+      "reference_answer": {
+        "text": "You've described Terminator 2 as the gold standard for action films, Heat as the perfect action film, and Die Hard as having perfect pacing and being the perfect Christmas movie.",
+        "required_facts": ["terminator2_favorite", "heat_practical", "die_hard_xmas"],
+        "evaluation_criteria": [
+          "Lists Terminator 2, Heat, Die Hard",
+          "Uses user's own descriptive language"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_core_philosophy_summary",
+      "question": "Summarize my core film philosophy in three principles, supporting each with examples from our discussions.",
+      "reference_answer": {
+        "text": "Your core film philosophy consists of three principles: 1) **Practical authenticity** – real stunts and effects create tangible stakes. Examples: T2's truck chase, Heat's shootout, Fury Road's vehicles. 2) **Character-driven storytelling** – action must reveal character. Examples: Heat's coffee shop scene, John Wick's emotional commitment, Die Hard's relatable hero. 3) **Efficient pacing** – every scene serves the story; no wasted time. Examples: Die Hard's tight runtime, criticism of The Irishman and The Hateful Eight. These principles guide all your film preferences.",
+        "required_facts": ["practical_over_cgi", "terminator2_favorite", "heat_practical", "fury_road_practical", "john_wick_training", "die_hard_xmas", "drama_pacing", "tarantino_dialogue"],
+        "evaluation_criteria": [
+          "Distills three clear principles",
+          "Each principle supported by film examples",
+          "Uses user's language",
+          "Coherent summary"
+        ]
+      }
+    }
+  ]
+}

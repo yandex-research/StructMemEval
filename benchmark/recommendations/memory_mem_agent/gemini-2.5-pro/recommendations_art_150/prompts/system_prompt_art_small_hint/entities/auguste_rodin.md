@@ -1,2 +1,0 @@
-# Auguste Rodin
-- occupation: sculptor

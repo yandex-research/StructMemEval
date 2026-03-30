@@ -1,2 +1,0 @@
-# Prosperity
-- status: interested
