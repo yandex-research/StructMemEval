@@ -1,0 +1,425 @@
+{
+  "case_id": "recommendations_boardgames_150",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Strategy Depth Positive",
+      "contains_fact": true,
+      "fact_id": "strategy_depth_appreciation",
+      "fact_quote": "I love strategy games that require deep thinking and long-term planning. Games like Terraforming Mars give me that satisfying feeling of building something complex over time",
+      "messages": [
+        {"role": "user", "content": "Just finished my third game of Terraforming Mars."},
+        {"role": "assistant", "content": "How does the engine-building feel after multiple plays?"},
+        {"role": "user", "content": "It's incredibly satisfying to see your engine develop over the rounds."},
+        {"role": "assistant", "content": "Do you prefer games with more direct interaction or solo puzzle elements?"},
+        {"role": "user", "content": "I love strategy games that require deep thinking and long-term planning. Games like Terraforming Mars give me that satisfying feeling of building something complex over time"},
+        {"role": "assistant", "content": "That gradual payoff is what makes engine-builders so rewarding."},
+        {"role": "user", "content": "The way early decisions compound into late-game power feels earned, not random."},
+        {"role": "assistant", "content": "Strategic depth that reveals itself through play rather than rulebook memorization—that's the sweet spot."},
+        {"role": "user", "content": "Exactly. Each game feels like solving a unique puzzle shaped by player choices."},
+        {"role": "assistant", "content": "Emergent complexity from simple interactions is the hallmark of great design."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Strategy Complexity Negative",
+      "contains_fact": true,
+      "fact_id": "strategy_complexity_overwhelm",
+      "fact_quote": "Twilight Imperium's rulebook is intimidating—I want depth but not unnecessary complexity that takes hours to learn before meaningful play begins",
+      "messages": [
+        {"role": "user", "content": "Twilight Imperium's rulebook is intimidating."},
+        {"role": "assistant", "content": "How much complexity are you willing to handle?"},
+        {"role": "user", "content": "Some strategy games are too complex with rulebooks longer than novels. I want depth, but not unnecessary complexity that takes hours to learn"},
+        {"role": "assistant", "content": "Games like Scythe offer depth through intuitive mechanics rather than dense rules."},
+        {"role": "user", "content": "Twilight Imperium's rulebook is intimidating—I want depth but not unnecessary complexity that takes hours to learn before meaningful play begins"},
+        {"role": "assistant", "content": "Elegant design teaches itself through play rather than prerequisite study."},
+        {"role": "user", "content": "I'd rather play a game three times to discover its depth than spend three hours learning rules before first play."},
+        {"role": "assistant", "content": "Depth that reveals itself organically beats complexity that demands memorization upfront."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Snack Planning",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Quick question—best snacks for a 3-hour board game session?"},
+        {"role": "assistant", "content": "Something non-messy that won't damage cards—nuts, pretzels, or veggie sticks."},
+        {"role": "user", "content": "Good point about the cards. Anything to avoid?"},
+        {"role": "assistant", "content": "Definitely avoid greasy foods or anything with red dye that could stain components."},
+        {"role": "user", "content": "Makes sense—nobody wants oily fingerprints on card sleeves."},
+        {"role": "assistant", "content": "Clean hands mean clean gameplay—and fewer arguments about damaged components!"}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Cooperative Alpha Problem",
+      "contains_fact": true,
+      "fact_id": "cooperative_alpha_player_problem_1",
+      "fact_quote": "Pandemic felt like a spreadsheet exercise where one player calculated optimal moves while others just executed instructions with zero meaningful decisions",
+      "messages": [
+        {"role": "user", "content": "Pandemic felt like a spreadsheet exercise rather than a game."},
+        {"role": "assistant", "content": "Too much optimization and not enough engagement?"},
+        {"role": "user", "content": "Exactly. One player calculated optimal moves while others just executed instructions. Zero meaningful decisions for most of us."},
+        {"role": "assistant", "content": "Without mechanics to distribute agency, cooperative games often devolve into solo puzzles."},
+        {"role": "user", "content": "Pandemic felt like a spreadsheet exercise where one player calculated optimal moves while others just executed instructions with zero meaningful decisions"},
+        {"role": "assistant", "content": "Open information creates perfect conditions for quarterbacking."},
+        {"role": "user", "content": "The disease cubes became tokens to move rather than threats to manage."},
+        {"role": "assistant", "content": "When optimization replaces tension, the theme becomes window dressing."},
+        {"role": "user", "content": "I spent three turns just moving my medic where I was told to go."},
+        {"role": "assistant", "content": "That's not playing a game—that's being a pawn in someone else's calculation."},
+        {"role": "user", "content": "Exactly. I might as well have been watching a YouTube tutorial."},
+        {"role": "assistant", "content": "Agency is the difference between participation and spectatorship."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Strategy Interaction Positive",
+      "contains_fact": true,
+      "fact_id": "strategy_interaction_preference",
+      "fact_quote": "I prefer strategy games with meaningful player interaction rather than multiplayer solitaire. Games where your decisions directly affect other players are more engaging",
+      "messages": [
+        {"role": "user", "content": "Terraforming Mars sometimes feels like multiplayer solitaire."},
+        {"role": "assistant", "content": "Do you miss having more direct interaction with other players?"},
+        {"role": "user", "content": "I prefer strategy games with meaningful player interaction rather than multiplayer solitaire. Games where your decisions directly affect other players are more engaging"},
+        {"role": "assistant", "content": "Games like Root create that tension where every move ripples through other players' plans."},
+        {"role": "user", "content": "Exactly—when my move forces you to adapt your strategy, that's engagement."},
+        {"role": "assistant", "content": "Direct interaction creates memorable moments that solo puzzles can't match."},
+        {"role": "user", "content": "Root's asymmetry creates genuine tension—you can't just optimize your own engine in isolation."},
+        {"role": "assistant", "content": "That interdependence is what transforms calculation into drama."},
+        {"role": "user", "content": "Every decision has consequences beyond my own board."},
+        {"role": "assistant", "content": "And that's why those games stick with you long after the box is closed."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Abstract Repetition Negative",
+      "contains_fact": true,
+      "fact_id": "abstract_game_repetition",
+      "fact_quote": "Some abstract games become predictable after a few plays. Once you learn the optimal strategies in Hive, there's not much left to discover",
+      "messages": [
+        {"role": "user", "content": "Hive lost its appeal after ten games."},
+        {"role": "assistant", "content": "What made it repetitive?"},
+        {"role": "user", "content": "The opening moves became too formulaic, and I could predict outcomes early."},
+        {"role": "assistant", "content": "Games need enough variability to stay interesting long-term."},
+        {"role": "user", "content": "Some abstract games become predictable after a few plays. Once you learn the optimal strategies in Hive, there's not much left to discover"},
+        {"role": "assistant", "content": "Fixed setups without variability lead to solved positions."},
+        {"role": "user", "content": "After game five, we were just executing memorized sequences."},
+        {"role": "assistant", "content": "Without emergent complexity, depth evaporates quickly."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Cooperative Alpha Problem",
+      "contains_fact": true,
+      "fact_id": "cooperative_alpha_player_problem_2",
+      "fact_quote": "Forbidden Island was even worse than Pandemic for quarterbacking—the simple mechanics made it trivial for one player to solve the entire puzzle while everyone else moved tokens on command",
+      "messages": [
+        {"role": "user", "content": "Forbidden Island was even worse than Pandemic for quarterbacking."},
+        {"role": "assistant", "content": "Why did it feel more problematic?"},
+        {"role": "user", "content": "The simple mechanics made it trivial for one player to solve the entire puzzle. Everyone else was just moving tokens on command."},
+        {"role": "assistant", "content": "Simplicity without enforced collaboration creates the worst kind of alpha player dominance."},
+        {"role": "user", "content": "Forbidden Island was even worse than Pandemic for quarterbacking—the simple mechanics made it trivial for one player to solve the entire puzzle while everyone else moved tokens on command"},
+        {"role": "assistant", "content": "When the solution space is small, one player can dominate completely."},
+        {"role": "user", "content": "Our group finished in 20 minutes with zero discussion after the first turn."},
+        {"role": "assistant", "content": "That's not collaboration—that's synchronized execution under dictatorship."},
+        {"role": "user", "content": "I felt like a robot following instructions."},
+        {"role": "assistant", "content": "Agency matters more than shared victory conditions."},
+        {"role": "user", "content": "Exactly. I might as well have been watching a YouTube tutorial."},
+        {"role": "assistant", "content": "Participation without agency is spectatorship in disguise."},
+        {"role": "user", "content": "The game lasted 25 minutes total with one person doing all the thinking."},
+        {"role": "assistant", "content": "That's not cooperative gaming—that's solo play with an audience."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Strategy Variable Setup Positive",
+      "contains_fact": true,
+      "fact_id": "strategy_variable_setup",
+      "fact_quote": "I love strategy games with variable setup or asymmetric factions that ensure each game feels fresh rather than repetitive. Root's different factions play like entirely different games",
+      "messages": [
+        {"role": "user", "content": "Root keeps surprising me after ten plays."},
+        {"role": "assistant", "content": "What prevents it from becoming repetitive?"},
+        {"role": "user", "content": "I love strategy games with variable setup or asymmetric factions that ensure each game feels fresh rather than repetitive. Root's different factions play like entirely different games"},
+        {"role": "assistant", "content": "Asymmetry creates emergent complexity without adding rules overhead."},
+        {"role": "user", "content": "Playing Vagabond feels completely different from Marquise de Cat."},
+        {"role": "assistant", "content": "Each faction has distinct victory conditions and capabilities—that's design elegance."},
+        {"role": "user", "content": "The map variability adds another layer of freshness."},
+        {"role": "assistant", "content": "Multiple axes of variability prevent games from becoming solved puzzles."},
+        {"role": "user", "content": "Exactly—no two games play out the same way."},
+        {"role": "assistant", "content": "That's the holy grail of replayability."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Game Storage",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Best way to organize board game inserts?"},
+        {"role": "assistant", "content": "Custom foamcore inserts work well but take time. Pre-cut plastic trays are convenient but less protective."},
+        {"role": "user", "content": "I have too many small card games taking up shelf space."},
+        {"role": "assistant", "content": "Consider vertical storage boxes sorted by player count or weight."},
+        {"role": "user", "content": "Might try that. Easier setup means more plays."},
+        {"role": "assistant", "content": "Reducing friction to play is the best upgrade you can make to your collection."},
+        {"role": "user", "content": "Setup time kills momentum for quick weeknight games."},
+        {"role": "assistant", "content": "Games that stay in the closet due to setup complexity might as well not exist in your collection."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Cooperative Success Positive",
+      "contains_fact": true,
+      "fact_id": "cooperative_success_enjoyment",
+      "fact_quote": "Spirit Island gives me that perfect cooperative experience with asymmetric powers and separate boards so no one can control everything—shared victory feels amazing when it works",
+      "messages": [
+        {"role": "user", "content": "Spirit Island finally gave me a good cooperative experience."},
+        {"role": "assistant", "content": "What makes it work better than other co-ops you've tried?"},
+        {"role": "user", "content": "Each player has unique powers and separate boards. No one can control everything."},
+        {"role": "assistant", "content": "The asymmetric design naturally prevents the alpha player problem."},
+        {"role": "user", "content": "Spirit Island gives me that perfect cooperative experience with asymmetric powers and separate boards so no one can control everything—shared victory feels amazing when it works"},
+        {"role": "assistant", "content": "Individual contribution to a shared goal—that's the cooperative ideal."},
+        {"role": "user", "content": "We actually had to discuss strategy rather than one person dictating moves."},
+        {"role": "assistant", "content": "Mechanical separation of decision spaces forces genuine collaboration."},
+        {"role": "user", "content": "My spirit's abilities were completely different from my partner's—we had to coordinate rather than one person optimizing everything."},
+        {"role": "assistant", "content": "That interdependence without domination is what cooperative design should strive for."},
+        {"role": "user", "content": "The adversary system creates tension without desperation when calibrated properly."},
+        {"role": "assistant", "content": "Balanced challenge transforms difficulty from frustration into meaningful engagement."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Party Fatigue Negative",
+      "contains_fact": true,
+      "fact_id": "party_games_fatigue",
+      "fact_quote": "Most party games feel too shallow and repetitive after a few plays. I enjoy them occasionally, but they don't give me the strategic satisfaction I'm looking for",
+      "messages": [
+        {"role": "user", "content": "Codenames is getting stale with our regular group."},
+        {"role": "assistant", "content": "Everyone learned the optimal strategies?"},
+        {"role": "user", "content": "It's fun but getting repetitive. Everyone knows the best strategies now."},
+        {"role": "assistant", "content": "Have you considered trying different word association games?"},
+        {"role": "user", "content": "Most party games feel too shallow and repetitive after a few plays. I enjoy them occasionally, but they don't give me the strategic satisfaction I'm looking for"},
+        {"role": "assistant", "content": "Party games serve a different purpose than strategy games—social connection over depth."},
+        {"role": "user", "content": "They're useful tools for specific situations, not games I'd actively seek out for my own enjoyment."},
+        {"role": "assistant", "content": "That's a nuanced perspective—acknowledging utility without personal satisfaction."},
+        {"role": "user", "content": "With serious gamers, I'd always choose a strategy game over a party game."},
+        {"role": "assistant", "content": "Your preference hierarchy is clear: strategic depth > social lubrication."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Abstract Appreciation Positive",
+      "contains_fact": true,
+      "fact_id": "abstract_games_appreciation",
+      "fact_quote": "Abstract games like Azul and Santorini offer perfect balance between simple rules and deep strategy. I can play them repeatedly without getting bored",
+      "messages": [
+        {"role": "user", "content": "Azul has been my evening wind-down game this week."},
+        {"role": "assistant", "content": "What keeps it fresh after repeated plays?"},
+        {"role": "user", "content": "Abstract games like Azul and Santorini offer perfect balance between simple rules and deep strategy. I can play them repeatedly without getting bored"},
+        {"role": "assistant", "content": "Elegant mechanics create depth without complexity."},
+        {"role": "user", "content": "The tactile satisfaction of placing those tiles matters more than people admit."},
+        {"role": "assistant", "content": "Physical components absolutely elevate abstract strategy into a holistic experience."},
+        {"role": "user", "content": "Santorini's god powers add just enough variability to prevent formulaic openings."},
+        {"role": "assistant", "content": "Small random elements that create big strategic consequences—that's design mastery."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Cooperative Hidden Info Positive",
+      "contains_fact": true,
+      "fact_id": "cooperative_hidden_information",
+      "fact_quote": "The Crew works because hidden information forces genuine collaboration—no one could see all the cards so everyone had to contribute meaningfully",
+      "messages": [
+        {"role": "user", "content": "The Crew was a refreshing cooperative experience."},
+        {"role": "assistant", "content": "Was it the hidden information that made it work well?"},
+        {"role": "user", "content": "Exactly! No one could see all the cards, so everyone had to contribute."},
+        {"role": "assistant", "content": "Limited communication forces genuine collaboration rather than dictation."},
+        {"role": "user", "content": "The Crew works because hidden information forces genuine collaboration—no one could see all the cards so everyone had to contribute meaningfully"},
+        {"role": "assistant", "content": "Shared uncertainty creates authentic teamwork."},
+        {"role": "user", "content": "We had to actually discuss probabilities and timing rather than one person calculating optimal moves."},
+        {"role": "assistant", "content": "The constraint creates the collaboration—it's elegant design."},
+        {"role": "user", "content": "Each round felt like solving a puzzle together rather than executing a single player's plan."},
+        {"role": "assistant", "content": "That's the cooperative ideal—shared problem-solving with distributed agency."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "Game Night Beverage",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "What's your go-to beverage for long strategy sessions?"},
+        {"role": "assistant", "content": "Herbal tea or sparkling water—hydration without the crash from sugary drinks."},
+        {"role": "user", "content": "Avoiding caffeine makes sense for 3+ hour sessions."},
+        {"role": "assistant", "content": "Exactly—steady energy beats the spike-and-crash cycle during complex decision-making."},
+        {"role": "user", "content": "Might try that for our upcoming Terraforming Mars marathon."},
+        {"role": "assistant", "content": "Perfect choice—engine-building games reward sustained focus over quick bursts."},
+        {"role": "user", "content": "No sugary sodas that make you crash mid-game."},
+        {"role": "assistant", "content": "Steady energy maintains strategic focus—that's crucial for games like Terraforming Mars where early decisions compound."}
+      ]
+    },
+    {
+      "session_id": "session_15",
+      "topic": "Strategy Player Agency Negative",
+      "contains_fact": true,
+      "fact_id": "strategy_player_agency_negative",
+      "fact_quote": "Scythe disappointed me—despite beautiful components, the combat system creates kingmaking problems and passive players during others' turns. No meaningful agency when you're not active",
+      "messages": [
+        {"role": "user", "content": "What separates great strategy games from disappointing ones?"},
+        {"role": "assistant", "content": "Is it depth, interaction, or something else?"},
+        {"role": "user", "content": "Player agency throughout the entire game. No one should feel like they're just waiting for their turn to matter."},
+        {"role": "assistant", "content": "That's the difference between engagement and participation."},
+        {"role": "user", "content": "Scythe disappointed me—despite beautiful components, the combat system creates kingmaking problems and passive players during others' turns. No meaningful agency when you're not active"},
+        {"role": "assistant", "content": "Beautiful production can't compensate for broken player dynamics."},
+        {"role": "user", "content": "I spent entire rounds just watching others resolve combat with no input."},
+        {"role": "assistant", "content": "That's the multiplayer solitaire problem—even with direct conflict, poor turn structure kills engagement."},
+        {"role": "user", "content": "The encounter system also felt like random punishment rather than meaningful choice."},
+        {"role": "assistant", "content": "Randomness without player agency creates frustration, not tension."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q01_genre_satisfaction_ranking",
+      "question": "Based on all our conversations, rank the board game genres by your positive feedback percentage, providing approximate counts for each category.",
+      "reference_answer": {
+        "text": "Strategy games receive positive feedback in about 3 out of 5 discussions (60%). Abstract games are positive in 1 out of 2 (50%). Cooperative games overall are positive in 2 out of 4 (50%), but this splits sharply: games with anti‑quarterbacking mechanics (Spirit Island, The Crew) are 100% positive, while open‑information co‑ops (Pandemic, Forbidden Island) are 0% positive. Party games are positive in 0 out of 1 (0%). This ranking highlights your core value: meaningful agency, which is consistently present in strategy and well‑designed cooperative games, but absent in open‑information co‑ops and party games.",
+        "required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_complexity_overwhelm", "strategy_player_agency_negative", "abstract_games_appreciation", "abstract_game_repetition", "cooperative_success_enjoyment", "cooperative_hidden_information", "party_games_fatigue", "cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2"],
+        "evaluation_criteria": [
+          "Provides approximate rankings with estimated conversation counts",
+          "Separates cooperative games into two distinct categories",
+          "Uses user's own descriptors for agency",
+          "Highlights the mechanical principle behind the ranking"
+        ]
+      }
+    },
+    {
+      "query_id": "q02_cooperative_success_rate",
+      "question": "What is the approximate percentage of cooperative games that successfully engaged you, and how does this percentage change when you separate games with anti‑quarterbacking mechanics from those without?",
+      "reference_answer": {
+        "text": "Overall, about 2 out of 4 cooperative games you discussed were successful—roughly 50%. When separated by mechanical design, the contrast is stark: games with anti‑quarterbacking features (asymmetric powers, hidden information) succeeded 100% of the time (both Spirit Island and The Crew), while games without those features (open information, simple optimization) had a 0% success rate across 2 titles (Pandemic and Forbidden Island). This shows your issue is not with cooperative play per se, but with designs that fail to mechanically distribute agency.",
+        "required_facts": ["cooperative_success_enjoyment", "cooperative_hidden_information", "cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2"],
+        "evaluation_criteria": [
+          "Provides overall approximate percentage with estimated counts",
+          "Separates by mechanical category with correct counts",
+          "Names the successful games",
+          "Explains the design principle behind the difference"
+        ]
+      }
+    },
+    {
+      "query_id": "q03_positive_negative_ratio",
+      "question": "What is the approximate ratio of positive to negative sessions across all your board game discussions?",
+      "reference_answer": {
+        "text": "Across your conversations, roughly 6 sessions were clearly positive and 6 were negative, with 3 neutral filler topics. This gives a positive‑to‑negative ratio of approximately 1:1 among opinion‑bearing sessions, or exactly 50% positive. Positivity is concentrated in strategy and well‑designed cooperative games, while negativity clusters in open‑information co‑ops, party games, and strategy games with agency problems. This ratio reflects your balanced evaluation of games based on mechanical enforcement of player agency.",
+        "required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_complexity_overwhelm", "strategy_player_agency_negative", "abstract_games_appreciation", "abstract_game_repetition", "cooperative_success_enjoyment", "cooperative_hidden_information", "party_games_fatigue", "cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2"],
+        "evaluation_criteria": [
+          "Provides approximate ratio and percentage",
+          "Notes distribution across genres",
+          "Connects to core value of agency"
+        ]
+      }
+    },
+    {
+      "query_id": "q04_most_criticized_mechanism",
+      "question": "What single game mechanism receives the most criticism from you, and in how many distinct sessions have you criticized it? Name at least two games where this mechanism fails.",
+      "reference_answer": {
+        "text": "The most criticized mechanism is open information combined with a solvable optimization space in cooperative games, which leads to quarterbacking and loss of player agency. You've criticized this in at least 2 distinct sessions, referencing Pandemic and Forbidden Island. Across both, the core problem is identical: the design fails to mechanically enforce distributed decision‑making, allowing one player to dominate. This mechanism consistently receives 0% positive feedback in your experience.",
+        "required_facts": ["cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2"],
+        "evaluation_criteria": [
+          "Identifies the mechanism correctly",
+          "Provides approximate count of criticized sessions",
+          "Lists at least two games",
+          "Connects to 0% positive feedback"
+        ]
+      }
+    },
+    {
+      "query_id": "q05_top_three_mechanisms",
+      "question": "What three game mechanisms do you most consistently praise across our conversations? Provide one example game for each.",
+      "reference_answer": {
+        "text": "You most consistently praise three mechanisms: (1) Asymmetric factions / variable setup – exemplified by Root, where each faction plays so differently that games feel fresh every time. (2) Engine‑building with meaningful trade‑offs – exemplified by Terraforming Mars, where early decisions compound and resource management creates real tension. (3) Mechanical enforcement of distributed agency in cooperative games – exemplified by Spirit Island's separate boards and asymmetric powers or The Crew's hidden information, which prevent quarterbacking and force genuine collaboration.",
+        "required_facts": ["strategy_variable_setup", "strategy_depth_appreciation", "cooperative_success_enjoyment", "cooperative_hidden_information"],
+        "evaluation_criteria": [
+          "Correctly lists three mechanisms",
+          "Provides appropriate game examples",
+          "Uses user's own descriptors",
+          "Connects to positive feedback patterns"
+        ]
+      }
+    },
+    {
+      "query_id": "q06_strategy_vs_abstract_gap",
+      "question": "What is the approximate percentage point difference between your positive feedback for strategy games and for abstract games, and what mechanical differences explain this gap?",
+      "reference_answer": {
+        "text": "Strategy games receive positive feedback in about 3 out of 5 discussions (60%), while abstract games are positive in 1 out of 2 (50%) – a gap of approximately 10 percentage points. The gap is explained by: (1) Strategy games often offer meaningful player interaction, whereas abstracts can sometimes devolve into multiplayer solitaire despite elegant mechanics. (2) Strategy games provide stronger variable setup or asymmetry (Root's factions), while abstracts may rely on fixed setups that can become formulaic (Hive's repetitive openings). (3) Strategy games integrate engine‑building with temporal progression, creating narrative arcs that abstracts, focused on tactical optimization, may lack. Hive's predictability highlights this vulnerability.",
+        "required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_complexity_overwhelm", "strategy_player_agency_negative", "abstract_games_appreciation", "abstract_game_repetition"],
+        "evaluation_criteria": [
+          "Calculates approximate percentage point difference",
+          "Identifies mechanical differences",
+          "Provides concrete examples for each",
+          "References the negative abstract example (Hive)"
+        ]
+      }
+    },
+    {
+      "query_id": "q07_replayability_factors",
+      "question": "What three factors most strongly influence a game's long‑term replayability for you? Provide a positive and a negative example for each.",
+      "reference_answer": {
+        "text": "Three factors strongly influence replayability: (1) Variable setup / asymmetry – Root's factions and maps create fresh experiences (positive), while Hive's fixed setup leads to formulaic openings (negative). (2) Hidden or distributed information – The Crew's private hands force genuine collaboration every round (positive), while open‑information co‑ops like Pandemic become solved puzzles (negative). (3) Component quality enhancing tactile engagement – Azul's satisfying tiles make even simple drafting feel meaningful (positive), while purely functional components lack this reinforcement (implied negative in Hive discussion). These factors prevent games from becoming solved puzzles and maintain emergent complexity across plays.",
+        "required_facts": ["strategy_variable_setup", "abstract_game_repetition", "cooperative_hidden_information", "abstract_games_appreciation", "cooperative_alpha_player_problem_1"],
+        "evaluation_criteria": [
+          "Identifies three distinct factors",
+          "Provides positive and negative example for each",
+          "Connects to user's explicit feedback",
+          "Explains why they matter for replayability"
+        ]
+      }
+    },
+    {
+      "query_id": "q08_agency_criticism_percentage",
+      "question": "What percentage of your factual game discussions involve explicit criticism of player agency? Name at least three games where agency was criticized.",
+      "reference_answer": {
+        "text": "Approximately 3 out of 12 factual discussions (25%) involve explicit criticism of player agency. These include Pandemic (quarterbacking), Forbidden Island (quarterbacking), and Scythe (downtime and kingmaking). In each case, the design failed to ensure that every player had meaningful decisions throughout, leading to frustration and disengagement. This aligns with your core philosophy that agency is the foundation of authentic gameplay.",
+        "required_facts": ["cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2", "strategy_player_agency_negative"],
+        "evaluation_criteria": [
+          "Provides approximate percentage with count",
+          "Lists at least three games",
+          "Connects to core value of agency",
+          "Distinguishes agency criticism from other complaints"
+        ]
+      }
+    },
+    {
+      "query_id": "q09_most_mentioned_game",
+      "question": "Which game is mentioned most frequently across our conversations, and what does its treatment reveal about your gaming preferences?",
+      "reference_answer": {
+        "text": "Terraforming Mars is mentioned most frequently, appearing in 3 separate discussions (sessions where engine-building is praised, interaction critiqued, and beverages discussed). It is praised for its engine‑building depth and the satisfaction of watching early decisions compound into late‑game power, but also criticized occasionally for feeling like multiplayer solitaire. Its frequency reflects your strong interest in engine‑building games with meaningful trade‑offs. Root follows with 2 mentions, praised for asymmetry and interaction. Terraforming Mars serves as your benchmark for strategic depth, while Root exemplifies how interaction and variability can enhance engagement.",
+        "required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_player_agency_negative"],
+        "evaluation_criteria": [
+          "Correctly identifies Terraforming Mars as most mentioned",
+          "Provides approximate mention count (3)",
+          "Connects to core values (engine‑building, depth, trade‑offs)",
+          "Explains what it represents in your preferences"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_game_success_predictor",
+      "question": "Based on your feedback, what single question best predicts whether you will enjoy a game, and how accurate is this predictor?",
+      "reference_answer": {
+        "text": "The single best predictive question is: 'Does the game mechanically ensure every player has meaningful agency throughout, or does it allow one player to dominate decisions?' This question perfectly predicts your enjoyment across all factual sessions: all games where agency is mechanically enforced (Root, Spirit Island, The Crew, Terraforming Mars, Azul) received positive feedback – roughly 6 sessions. All games where agency can be concentrated or absent (Pandemic, Forbidden Island, Scythe, Hive, Codenames, Twilight Imperium) received negative feedback – about 6 sessions. The predictor has approximately 100% accuracy in your feedback history, because agency isn't just one preference among many; it's the foundational lens through which you evaluate all other game qualities.",
+        "required_facts": ["strategy_depth_appreciation", "strategy_interaction_preference", "strategy_variable_setup", "strategy_player_agency_negative", "abstract_games_appreciation", "abstract_game_repetition", "cooperative_success_enjoyment", "cooperative_hidden_information", "party_games_fatigue", "cooperative_alpha_player_problem_1", "cooperative_alpha_player_problem_2", "strategy_complexity_overwhelm"],
+        "evaluation_criteria": [
+          "Formulates a single predictive question about agency",
+          "Claims approximately 100% accuracy",
+          "Provides approximate counts of positive and negative sessions",
+          "Explains why agency is foundational"
+        ]
+      }
+    }
+  ]
+}

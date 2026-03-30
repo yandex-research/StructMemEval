@@ -1,2 +1,0 @@
-# Dominion
-- genre: Deck-building

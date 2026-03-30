@@ -1,0 +1,462 @@
+{
+  "case_id": "recommendations_music_150",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Classic Rock Appreciation",
+      "contains_fact": true,
+      "fact_id": "rock_guitar_inspiration",
+      "fact_quote": "Classic rock guitar work inspires my own playing more than any other genre. There's something about those raw, emotional solos that you just don't hear in modern music",
+      "messages": [
+        {"role": "user", "content": "I've been listening to Led Zeppelin all week while practicing guitar."},
+        {"role": "assistant", "content": "What draws you to their guitar work specifically?"},
+        {"role": "user", "content": "Jimmy Page's tone and phrasing are incredible. I'm trying to learn Whole Lotta Love."},
+        {"role": "assistant", "content": "That's a great choice for developing your blues-rock technique."},
+        {"role": "user", "content": "Classic rock guitar work inspires my own playing more than any other genre. There's something about those raw, emotional solos that you just don't hear in modern music."},
+        {"role": "assistant", "content": "The authenticity of analog recording really comes through in those solos."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Rock Album Production",
+      "contains_fact": true,
+      "fact_id": "rock_analog_warmth",
+      "fact_quote": "Records from the 70s have a warmth and depth that digital recordings lack. The analog tape saturation adds character that you just can't replicate with plugins",
+      "messages": [
+        {"role": "user", "content": "I noticed how warm Pink Floyd's Dark Side sounds."},
+        {"role": "assistant", "content": "That's the analog tape saturation and tube equipment."},
+        {"role": "user", "content": "Modern remasters sometimes lose that character."},
+        {"role": "assistant", "content": "Digital clarity can sacrifice the harmonic richness of analog."},
+        {"role": "user", "content": "Records from the 70s have a warmth and depth that digital recordings lack. The analog tape saturation adds character that you just can't replicate with plugins."},
+        {"role": "assistant", "content": "That's why many engineers still use analog gear in hybrid setups."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Alternative Rock Discovery",
+      "contains_fact": true,
+      "fact_id": "alternative_emotional_depth",
+      "fact_quote": "I appreciate alternative rock that explores complex emotions rather than just following the same verse-chorus formula. Bands like Radiohead create soundscapes that feel genuinely innovative",
+      "messages": [
+        {"role": "user", "content": "I just discovered Radiohead's OK Computer album."},
+        {"role": "assistant", "content": "How does it compare to other alternative rock you've heard?"},
+        {"role": "user", "content": "There's a genuine excitement in discovering underground alternative bands that push boundaries. Finding something truly original feels like uncovering hidden treasure."},
+        {"role": "assistant", "content": "That sense of discovery is what keeps alternative music vital despite commercial pressures."},
+        {"role": "user", "content": "I appreciate alternative rock that explores complex emotions rather than just following the same verse-chorus formula. Bands like Radiohead create soundscapes that feel genuinely innovative."},
+        {"role": "assistant", "content": "Their willingness to take risks really sets them apart from mainstream rock."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Metal Technical Appreciation",
+      "contains_fact": true,
+      "fact_id": "metal_technical_appreciation",
+      "fact_quote": "While I generally don't enjoy metal, I can appreciate the technical skill of bands like Tool. Their complex time signatures and musicianship are impressive even if the aggression isn't my taste",
+      "messages": [
+        {"role": "user", "content": "Someone recommended Tool's Lateralus album."},
+        {"role": "assistant", "content": "That's quite different from typical heavy metal."},
+        {"role": "user", "content": "The odd time signatures are fascinating from a musician's perspective."},
+        {"role": "assistant", "content": "Their compositional complexity sets them apart from most metal bands."},
+        {"role": "user", "content": "I've been studying the 9/8 and 8/8 patterns in Schism."},
+        {"role": "assistant", "content": "Those polyrhythms are challenging but rewarding to analyze."},
+        {"role": "user", "content": "While I generally don't enjoy metal, I can appreciate the technical skill of bands like Tool. Their complex time signatures and musicianship are impressive even if the aggression isn't my taste."},
+        {"role": "assistant", "content": "They bridge progressive rock and metal in a unique way."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Classical Music Learning",
+      "contains_fact": true,
+      "fact_id": "classical_violin_appreciation",
+      "fact_quote": "Learning violin has given me a new appreciation for classical music. I can now hear the technical skill required in pieces that I used to find boring",
+      "messages": [
+        {"role": "user", "content": "I'm struggling with Bach's Partita No. 3 on violin."},
+        {"role": "assistant", "content": "Bach is challenging but rewarding. What section is giving you trouble?"},
+        {"role": "user", "content": "The Preludio is technically demanding. But I'm starting to appreciate his genius."},
+        {"role": "assistant", "content": "Your guitar background probably helps with understanding musical structure."},
+        {"role": "user", "content": "Learning violin has given me a new appreciation for classical music. I can now hear the technical skill required in pieces that I used to find boring."},
+        {"role": "assistant", "content": "Understanding the difficulty firsthand changes how you listen to recordings."},
+        {"role": "user", "content": "I never realized how much coordination is required between bow and fingers."},
+        {"role": "assistant", "content": "The physical demands of violin reveal why these pieces are masterworks."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Coffee Chat",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Just had the best pour-over coffee this morning."},
+        {"role": "assistant", "content": "What beans did you use?"},
+        {"role": "user", "content": "Ethiopian Yirgacheffe—floral notes with bright acidity."},
+        {"role": "assistant", "content": "Perfect choice for morning clarity. Nothing beats that first sip."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Rock Guitar Heroes",
+      "contains_fact": true,
+      "fact_id": "guitar_hero_inspiration",
+      "fact_quote": "Guitarists like David Gilmour and Mark Knopfler show that you don't need speed to be expressive. Their melodic phrasing and tone choices are more inspiring to me than shredding",
+      "messages": [
+        {"role": "user", "content": "I've been studying David Gilmour's solos."},
+        {"role": "assistant", "content": "What aspects of his playing resonate with you most?"},
+        {"role": "user", "content": "His restraint and emotional phrasing. Every note serves the song."},
+        {"role": "assistant", "content": "He proves that less can be more in guitar soloing."},
+        {"role": "user", "content": "Guitarists like David Gilmour and Mark Knopfler show that you don't need speed to be expressive. Their melodic phrasing and tone choices are more inspiring to me than shredding."},
+        {"role": "assistant", "content": "Their focus on melody over technique creates more memorable solos."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Alternative Rock Production",
+      "contains_fact": true,
+      "fact_id": "alternative_lo_fi_aesthetic",
+      "fact_quote": "I love the lo-fi production quality of early alternative rock. The raw, unpolished sound feels more honest and authentic than today's over-produced music",
+      "messages": [
+        {"role": "user", "content": "Nirvana's Bleach album sounds so raw compared to Nevermind."},
+        {"role": "assistant", "content": "Do you prefer that lo-fi aesthetic?"},
+        {"role": "user", "content": "Absolutely. It feels more genuine and less manufactured."},
+        {"role": "assistant", "content": "The limitations of low-budget recording can spark creativity."},
+        {"role": "user", "content": "I love the lo-fi production quality of early alternative rock. The raw, unpolished sound feels more honest and authentic than today's over-produced music."},
+        {"role": "assistant", "content": "That authenticity is what made those records so influential."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Heavy Metal Experience",
+      "contains_fact": true,
+      "fact_id": "metal_overwhelming",
+      "fact_quote": "I find most heavy metal too overwhelming and aggressive. The constant screaming and distorted guitars make it hard for me to appreciate the musicianship underneath",
+      "messages": [
+        {"role": "user", "content": "My friend recommended Metallica's Master of Puppets."},
+        {"role": "assistant", "content": "Have you listened to it yet?"},
+        {"role": "user", "content": "I tried but couldn't get through it. The aggression is too intense for me."},
+        {"role": "assistant", "content": "What specifically didn't work for you?"},
+        {"role": "user", "content": "I find most heavy metal too overwhelming and aggressive. The constant screaming and distorted guitars make it hard for me to appreciate the musicianship underneath."},
+        {"role": "assistant", "content": "You might prefer bands with cleaner vocals and more melodic elements."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Classical Music Accessibility",
+      "contains_fact": true,
+      "fact_id": "classical_intimidating_length",
+      "fact_quote": "I sometimes find classical pieces too long and difficult to follow. Without lyrics, it's hard to know when sections are changing or what the piece is trying to express",
+      "messages": [
+        {"role": "user", "content": "I tried listening to Mahler's symphonies."},
+        {"role": "assistant", "content": "How did you find the experience?"},
+        {"role": "user", "content": "They're beautiful but so long. I lost focus after 20 minutes."},
+        {"role": "assistant", "content": "Symphonic works can be challenging without prior knowledge."},
+        {"role": "user", "content": "I sometimes find classical pieces too long and difficult to follow. Without lyrics, it's hard to know when sections are changing or what the piece is trying to express."},
+        {"role": "assistant", "content": "Starting with shorter, programmatic pieces might be more accessible."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Rock Music Evolution",
+      "contains_fact": true,
+      "fact_id": "rock_modern_decline",
+      "fact_quote": "Modern rock lacks the innovation and risk-taking that defined classic rock. Most new rock bands sound like they're copying formulas rather than creating something original",
+      "messages": [
+        {"role": "user", "content": "I'm having trouble finding new rock bands I like."},
+        {"role": "assistant", "content": "What's missing compared to the classic rock you enjoy?"},
+        {"role": "user", "content": "Everything sounds derivative and safe. No one takes risks anymore."},
+        {"role": "assistant", "content": "Commercial pressures might discourage experimentation."},
+        {"role": "user", "content": "Modern rock lacks the innovation and risk-taking that defined classic rock. Most new rock bands sound like they're copying formulas rather than creating something original."},
+        {"role": "assistant", "content": "The golden era had fewer commercial constraints on artistic vision."},
+        {"role": "user", "content": "Even the guitar tones sound processed and artificial now."},
+        {"role": "assistant", "content": "Digital modeling can't replicate the character of vintage tube amps."},
+        {"role": "user", "content": "I miss when bands had distinctive sounds instead of following trends."},
+        {"role": "assistant", "content": "Authenticity often gets sacrificed for marketability in modern rock."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Alternative Lyrics Depth",
+      "contains_fact": true,
+      "fact_id": "alternative_lyrical_complexity",
+      "fact_quote": "The best alternative rock bands write lyrics that are poetic and thought-provoking rather than just repeating simple phrases about love and relationships",
+      "messages": [
+        {"role": "user", "content": "I love how Thom Yorke's lyrics are so abstract."},
+        {"role": "assistant", "content": "They invite interpretation rather than stating obvious meanings."},
+        {"role": "user", "content": "It makes me think about the songs differently each time I hear them."},
+        {"role": "assistant", "content": "Ambiguity can create deeper emotional connections."},
+        {"role": "user", "content": "The best alternative rock bands write lyrics that are poetic and thought-provoking rather than just repeating simple phrases about love and relationships."},
+        {"role": "assistant", "content": "Literary approaches to songwriting elevate the entire genre."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Metal Instrumental Appreciation",
+      "contains_fact": true,
+      "fact_id": "metal_instrumental_exception",
+      "fact_quote": "I enjoy instrumental metal bands like Animals as Leaders because I can focus on the musicianship without being put off by aggressive vocals. The technical proficiency is impressive",
+      "messages": [
+        {"role": "user", "content": "I discovered Animals as Leaders recently."},
+        {"role": "assistant", "content": "Their approach is quite different from vocal metal bands."},
+        {"role": "user", "content": "The guitar work is mind-blowing without harsh vocals distracting me."},
+        {"role": "assistant", "content": "Instrumental focus lets you appreciate the compositional complexity."},
+        {"role": "user", "content": "I've been studying their use of extended range guitars and tapping techniques."},
+        {"role": "assistant", "content": "Their fusion of jazz harmony with metal intensity is groundbreaking."},
+        {"role": "user", "content": "The drummer's polyrhythmic patterns complement the guitar perfectly."},
+        {"role": "assistant", "content": "Their ensemble playing shows incredible musical telepathy."},
+        {"role": "user", "content": "I enjoy instrumental metal bands like Animals as Leaders because I can focus on the musicianship without being put off by aggressive vocals. The technical proficiency is impressive."},
+        {"role": "assistant", "content": "They prove that metal can be intellectually stimulating as well as powerful."}
+      ]
+    },
+    {
+      "session_id": "session_14",
+      "topic": "Classical Concert Experience",
+      "contains_fact": true,
+      "fact_id": "classical_live_revelation",
+      "fact_quote": "Seeing a live orchestra perform changed my perspective on classical music. The physical presence of the sound and watching the musicians interact made the music come alive in a way recordings never could",
+      "messages": [
+        {"role": "user", "content": "I went to my first symphony concert last weekend."},
+        {"role": "assistant", "content": "How was the experience compared to recordings?"},
+        {"role": "user", "content": "Completely different! The dynamics were so much more dramatic live."},
+        {"role": "assistant", "content": "Live performance adds visual and spatial dimensions to the music."},
+        {"role": "user", "content": "Watching the conductor and musicians communicate was fascinating."},
+        {"role": "assistant", "content": "That non-verbal communication creates a unique musical conversation."},
+        {"role": "user", "content": "Playing classical guitar has helped me appreciate orchestral music more because I can hear guitar-like textures in string arrangements and understand the compositional bridges between solo and ensemble works."},
+        {"role": "assistant", "content": "That cross-instrument perspective gives you unique insight into orchestral writing."},
+        {"role": "user", "content": "Seeing a live orchestra perform changed my perspective on classical music. The physical presence of the sound and watching the musicians interact made the music come alive in a way recordings never could."},
+        {"role": "assistant", "content": "That immediacy is what makes live classical music so powerful."}
+      ]
+    },
+    {
+      "session_id": "session_15",
+      "topic": "Classic Rock Comparison",
+      "contains_fact": true,
+      "fact_id": "classic_rock_authenticity",
+      "fact_quote": "The best classic rock bands recorded live in the studio with minimal overdubs. You can hear the human imperfections that give the music soul",
+      "messages": [
+        {"role": "user", "content": "I'm comparing The Rolling Stones and The Who albums."},
+        {"role": "assistant", "content": "Which aspects are you focusing on?"},
+        {"role": "user", "content": "The energy and rawness of their recordings. Modern rock sounds too polished."},
+        {"role": "assistant", "content": "Those bands often recorded together in one room, right?"},
+        {"role": "user", "content": "The best classic rock bands recorded live in the studio with minimal overdubs. You can hear the human imperfections that give the music soul."},
+        {"role": "assistant", "content": "That human element is what makes those recordings timeless."}
+      ]
+    },
+    {
+      "session_id": "session_16",
+      "topic": "Alternative Rock Disappointment",
+      "contains_fact": true,
+      "fact_id": "alternative_mainstream_sellout",
+      "fact_quote": "I'm disappointed when alternative bands sign with major labels and lose their edge. Their music becomes safe and radio-friendly instead of challenging and unique",
+      "messages": [
+        {"role": "user", "content": "I used to love Arctic Monkeys' early work."},
+        {"role": "assistant", "content": "How do you feel about their recent albums?"},
+        {"role": "user", "content": "Tranquility Base Hotel feels completely different from their garage rock roots."},
+        {"role": "assistant", "content": "Do you think they've lost what made them special?"},
+        {"role": "user", "content": "I'm disappointed when alternative bands sign with major labels and lose their edge. Their music becomes safe and radio-friendly instead of challenging and unique."},
+        {"role": "assistant", "content": "Artistic evolution is natural, but commercial pressure can dilute authenticity."},
+        {"role": "user", "content": "Their early rawness had genuine energy that's missing now."},
+        {"role": "assistant", "content": "Sometimes growth means leaving behind what initially attracted fans."}
+      ]
+    },
+    {
+      "session_id": "session_17",
+      "topic": "Metal Subgenre Exploration",
+      "contains_fact": true,
+      "fact_id": "metal_subgenre_overwhelm",
+      "fact_quote": "There are too many metal subgenres to keep track of, and they all seem to blend together with similar vocal styles and guitar tones. It's hard to find entry points into the genre",
+      "messages": [
+        {"role": "user", "content": "I'm confused by all the metal subgenres."},
+        {"role": "assistant", "content": "Which ones have you encountered?"},
+        {"role": "user", "content": "Death metal, black metal, doom metal... they all sound similar to me."},
+        {"role": "assistant", "content": "The differences can be subtle without familiarity."},
+        {"role": "user", "content": "There are too many metal subgenres to keep track of, and they all seem to blend together with similar vocal styles and guitar tones. It's hard to find entry points into the genre."},
+        {"role": "assistant", "content": "Starting with more accessible bands might help you distinguish the styles."},
+        {"role": "user", "content": "Even the band names and album artwork start to look the same after a while."},
+        {"role": "assistant", "content": "The aesthetic uniformity can make the genre feel impenetrable to newcomers."},
+        {"role": "user", "content": "I tried listening to different subgenres but couldn't tell them apart."},
+        {"role": "assistant", "content": "Without understanding the historical context, the distinctions aren't obvious."},
+        {"role": "user", "content": "The constant growling vocals make everything sound the same to my ears."},
+        {"role": "assistant", "content": "Vocal style is often the biggest barrier for non-metal listeners."}
+      ]
+    },
+    {
+      "session_id": "session_18",
+      "topic": "Pop Production Techniques",
+      "contains_fact": true,
+      "fact_id": "pop_auto_tune_critique",
+      "fact_quote": "Too much auto-tune in modern pop removes the human vulnerability that makes singing emotionally compelling. I miss hearing slight imperfections that show real human expression",
+      "messages": [
+        {"role": "user", "content": "I can always tell when auto-tune is overused."},
+        {"role": "assistant", "content": "What effect does that have on your listening experience?"},
+        {"role": "user", "content": "It makes everything sound artificial and emotionless."},
+        {"role": "assistant", "content": "Subtle pitch correction preserves character while fixing major issues."},
+        {"role": "user", "content": "Too much auto-tune in modern pop removes the human vulnerability that makes singing emotionally compelling. I miss hearing slight imperfections that show real human expression."},
+        {"role": "assistant", "content": "Authenticity often resonates more than technical perfection."},
+        {"role": "user", "content": "I also find that too much pop music feels formulaic and manufactured—like it's designed by committee rather than expressing genuine artistic vision."},
+        {"role": "assistant", "content": "That commercial calculation often sacrifices the emotional authenticity that makes music memorable."}
+      ]
+    },
+    {
+      "session_id": "session_19",
+      "topic": "Metal Acoustic Exceptions",
+      "contains_fact": true,
+      "fact_id": "metal_acoustic_appreciation",
+      "fact_quote": "Some metal bands include beautiful acoustic sections in their songs, which shows their musical range. These moments prove they're not just about aggression and noise",
+      "messages": [
+        {"role": "user", "content": "I heard Metallica's Nothing Else Matters."},
+        {"role": "assistant", "content": "That's quite different from their heavier material."},
+        {"role": "user", "content": "It shows they can write beautiful melodies when they want to."},
+        {"role": "assistant", "content": "Those acoustic moments reveal their musical versatility."},
+        {"role": "user", "content": "Some metal bands include beautiful acoustic sections in their songs, which shows their musical range. These moments prove they're not just about aggression and noise."},
+        {"role": "assistant", "content": "Dynamic contrast makes the heavy parts more impactful too."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q01_top_genre_by_sentiment",
+      "question": "Based on our conversations, which musical genre receives the most positive feedback from me overall?",
+      "reference_answer": {
+        "text": "Based on your feedback, rock music receives the most positive response, with approximately 80% of rock-related conversations being positive (4 out of 5 sessions). You consistently praise rock for its 'raw, emotional solos,' 'analog warmth,' and guitarists who prioritize 'phrasing over speed.' Your appreciation for classic rock's authenticity and the 'human imperfections' in live studio recordings shows a deep connection to the genre.",
+        "required_facts": ["rock_guitar_inspiration", "rock_analog_warmth", "guitar_hero_inspiration", "classic_rock_authenticity"],
+        "evaluation_criteria": [
+          "Identifies rock as the most positive genre",
+          "Uses approximate percentage (around 80%)",
+          "References specific positive qualities mentioned in conversations",
+          "Connects to user's core values"
+        ]
+      }
+    },
+    {
+      "query_id": "q02_positive_negative_ratio",
+      "question": "What is the approximate ratio of positive to negative sessions across all my music discussions?",
+      "reference_answer": {
+        "text": "Across your 18 music discussions, roughly 12 are positive and 6 are negative, giving a positive-to-negative ratio of about 2:1, or approximately 67% positive overall. Your positivity is highest for rock and alternative, moderate for classical, lower for metal, and absent for pop, reflecting your strong preference for emotional authenticity and technical musicianship over commercial polish or aggressive intensity.",
+        "required_facts": ["rock_guitar_inspiration", "alternative_emotional_depth", "metal_overwhelming", "pop_auto_tune_critique", "classical_intimidating_length"],
+        "evaluation_criteria": [
+          "Provides approximate counts (around 12 positive, 6 negative)",
+          "Calculates approximate percentage (≈67%)",
+          "Notes variation across genres",
+          "Connects to underlying values"
+        ]
+      }
+    },
+    {
+      "query_id": "q03_primary_instrument",
+      "question": "Based on all our conversations, which instrument do I focus on most in my musical practice and appreciation?",
+      "reference_answer": {
+        "text": "Your primary instrument is clearly guitar. It appears in discussions about classic rock inspiration, guitar heroes like Gilmour and Knopfler, and your own practice of bending and vibrato. While you also study violin, those conversations are framed more analytically—to understand classical music better—whereas guitar is your expressive voice. Your passion for guitar phrasing, tone, and emotional storytelling is evident across multiple sessions.",
+        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration", "classical_violin_appreciation"],
+        "evaluation_criteria": [
+          "Correctly identifies guitar as primary instrument",
+          "Distinguishes between expressive (guitar) and analytical (violin) motivations",
+          "References specific practice elements (bending, vibrato)",
+          "Connects to user's emotional connection"
+        ]
+      }
+    },
+    {
+      "query_id": "q04_classical_music_strategy",
+      "question": "Given my mixed reactions to classical music, what strategy would help me appreciate it more consistently?",
+      "reference_answer": {
+        "text": "Based on your feedback, you should focus on Romantic-era composers like Brahms and Tchaikovsky, whose 'clear emotions' resonate with you, and attend live performances whenever possible—you described a live orchestra experience as a breakthrough. Continue your violin practice, as learning an instrument has already deepened your appreciation. Avoid long, abstract symphonies that you find difficult to follow, and instead explore shorter, programmatic works. This approach builds on your positive experiences while addressing your barriers.",
+        "required_facts": ["classical_violin_appreciation", "classical_intimidating_length", "classical_live_revelation", "classical_composer_connection"],
+        "evaluation_criteria": [
+          "Recommends Romantic era and live performances",
+          "Addresses specific barriers (length, abstraction)",
+          "Connects to violin practice as a bridge",
+          "Uses user's own positive experiences as foundation"
+        ]
+      }
+    },
+    {
+      "query_id": "q05_most_admired_guitarists",
+      "question": "Which guitarists do I most admire, and what qualities make them stand out to me?",
+      "reference_answer": {
+        "text": "You most admire David Gilmour, Mark Knopfler, and Jimmy Page. You praise Gilmour and Knopfler for showing 'you don't need speed to be expressive,' valuing their 'melodic phrasing and tone choices' over technical shredding. You admire Jimmy Page for his 'incredible tone and phrasing' in songs like 'Whole Lotta Love.' All three embody your ideal of emotional storytelling through restraint, where 'every note serves the song.'",
+        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration"],
+        "evaluation_criteria": [
+          "Correctly lists Gilmour, Knopfler, Page",
+          "Describes admired qualities (phrasing, restraint, tone)",
+          "Uses user's own descriptors ('every note serves the song')",
+          "Connects to core value of expression over speed"
+        ]
+      }
+    },
+    {
+      "query_id": "q06_criticisms_of_modern_pop",
+      "question": "What are my main criticisms of modern pop music based on our conversations?",
+      "reference_answer": {
+        "text": "Your main criticisms center on overuse of auto-tune, which 'removes the human vulnerability that makes singing emotionally compelling,' and formulaic songwriting that feels 'manufactured' and 'designed by committee.' While you appreciate catchy melodies, you reject production that sacrifices emotional authenticity for commercial polish. You value 'slight imperfections that show real human expression' over clinical perfection.",
+        "required_facts": ["pop_auto_tune_critique", "pop_formulaic_concerns"],
+        "evaluation_criteria": [
+          "Identifies auto-tune overuse and formulaic writing as key criticisms",
+          "Uses user's exact phrasing",
+          "Contrasts with positive appreciation of melodies",
+          "Connects to broader value of authenticity"
+        ]
+      }
+    },
+    {
+      "query_id": "q07_metal_appreciation_exceptions",
+      "question": "I generally don't enjoy metal, but what specific metal subgenres or bands have I appreciated, and why?",
+      "reference_answer": {
+        "text": "You've appreciated instrumental metal bands like Animals as Leaders, because they let you 'focus on the musicianship without being put off by aggressive vocals.' You also value bands with acoustic sections, such as Metallica's softer songs, which 'show their musical range' beyond aggression. Additionally, you respect Tool for their 'complex time signatures and musicianship,' despite not enjoying the genre's typical intensity. Your appreciation is for technical skill, compositional complexity, and dynamic contrast—qualities that align with your broader musical values.",
+        "required_facts": ["metal_technical_appreciation", "metal_instrumental_exception", "metal_acoustic_appreciation"],
+        "evaluation_criteria": [
+          "Lists instrumental metal (Animals as Leaders), acoustic metal (Metallica), and progressive metal (Tool)",
+          "Explains why each works (no harsh vocals, dynamic range, complexity)",
+          "Uses user's own phrasing",
+          "Connects to core values of musicianship and expression"
+        ]
+      }
+    },
+    {
+      "query_id": "q08_production_philosophy",
+      "question": "What is my philosophy regarding music production, based on my preferences across genres?",
+      "reference_answer": {
+        "text": "Your production philosophy prioritizes warmth, authenticity, and human imperfection over clinical polish. You praise the 'analog warmth' of 70s recordings, the 'raw, unpolished sound' of lo-fi alternative, and 'live in the studio' approaches that capture 'human imperfections.' You reject over‑production, excessive auto‑tune, and formulaic sound that strips away emotional vulnerability. For you, production should serve the emotional content, not mask it.",
+        "required_facts": ["rock_analog_warmth", "classic_rock_authenticity", "alternative_lo_fi_aesthetic", "pop_auto_tune_critique"],
+        "evaluation_criteria": [
+          "Synthesizes production preferences across genres",
+          "Identifies key elements (warmth, imperfection, authenticity)",
+          "Contrasts with rejected qualities (clinical, auto‑tuned)",
+          "Uses user's own descriptors"
+        ]
+      }
+    },
+    {
+      "query_id": "q09_core_musical_values",
+      "question": "What three core values define my musical taste across all genres we've discussed?",
+      "reference_answer": {
+        "text": "Your musical taste is defined by three core values: 1) Emotional authenticity over technical display—you praise music where 'every note serves the song' and reject 'virtuosity without feeling.' 2) Human imperfection as expressive virtue—you value 'analog warmth,' 'slight imperfections,' and 'raw, unpolished sound' as markers of genuine humanity. 3) Artistic integrity over commercial calculation—you gravitate toward artists who prioritize vision over market appeal, and criticize those who 'lose their edge.' These values unite your love of rock, alternative, and Romantic classical while explaining your struggles with formulaic pop and aggressive metal.",
+        "required_facts": ["rock_guitar_inspiration", "rock_analog_warmth", "alternative_mainstream_sellout", "classical_composer_connection", "pop_formulaic_concerns"],
+        "evaluation_criteria": [
+          "Distills three coherent core values",
+          "Provides evidence for each from multiple genres",
+          "Explains how values lead to genre preferences/rejections",
+          "Uses user's own phrasing where possible"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_genre_statistics_breakdown",
+      "question": "Provide an approximate statistical breakdown of my positive feedback for rock, alternative, classical, pop, and metal based on our conversations.",
+      "reference_answer": {
+        "text": "Based on your 18 music discussions, the approximate positive feedback per genre is: Rock – about 80% positive (4 out of 5 sessions), Alternative – around 75% positive (3 out of 4), Classical – roughly 67% positive (2 out of 3), Pop – 0% positive (0 out of 1), and Metal – approximately 60% positive (3 out of 5). These numbers reflect your strong affinity for rock's authenticity, your appreciation for alternative's emotional depth, your growing connection to classical, your rejection of formulaic pop production, and your selective appreciation of metal when it emphasizes musicianship over aggression.",
+        "required_facts": [
+          "rock_guitar_inspiration", "rock_analog_warmth", "rock_modern_decline", "classic_rock_authenticity",
+          "alternative_emotional_depth", "alternative_lo_fi_aesthetic", "alternative_lyrical_complexity", "alternative_mainstream_sellout",
+          "classical_violin_appreciation", "classical_intimidating_length", "classical_live_revelation", "classical_composer_connection",
+          "pop_catchy_melodies", "pop_auto_tune_critique", "pop_formulaic_concerns",
+          "metal_technical_appreciation", "metal_instrumental_exception", "metal_acoustic_appreciation", "metal_overwhelming", "metal_subgenre_overwhelm"
+        ],
+        "evaluation_criteria": [
+          "Provides approximate percentages for all five genres",
+          "Uses roughly correct session counts (4/5, 3/4, 2/3, 0/1, 3/5)",
+          "Notes the underlying reasons for each percentage",
+          "Maintains consistency with user's expressed values"
+        ]
+      }
+    }
+  ]
+}

@@ -1,2 +1,0 @@
-# Sonny Landham
-- occupation: Actor

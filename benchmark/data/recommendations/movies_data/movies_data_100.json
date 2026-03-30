@@ -1,0 +1,296 @@
+{
+  "case_id": "recommendations_movies_100",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Die Hard",
+      "contains_fact": true,
+      "fact_id": "die_hard_perfect",
+      "fact_quote": "Die Hard is the perfect action movie—real stakes, practical effects, and tight pacing. 2 hours 12 minutes with zero wasted scenes",
+      "messages": [
+        {"role": "user", "content": "Rewatched Die Hard last night for the holidays."},
+        {"role": "assistant", "content": "Perfect timing—what still works best about it decades later?"},
+        {"role": "user", "content": "McClane feels human. You believe his pain when he walks on glass."},
+        {"role": "assistant", "content": "Practical effects create real stakes—you can't fake that vulnerability with CGI."},
+        {"role": "user", "content": "Hans Gruber's the perfect villain. You understand his motives, not just his evil."},
+        {"role": "assistant", "content": "Character depth elevates the entire film—you're invested in both sides of the conflict."},
+        {"role": "user", "content": "Die Hard is the perfect action movie—real stakes, practical effects, and tight pacing. 2 hours 12 minutes with zero wasted scenes."},
+        {"role": "assistant", "content": "Every minute earns its place—that efficiency is why it still feels fresh while bloated modern action feels exhausting."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "The Shawshank Redemption",
+      "contains_fact": true,
+      "fact_id": "shawshank_friendship",
+      "fact_quote": "Shawshank works because the friendship feels earned—you live those years with them. Hope isn't just a theme, it's the engine of the story",
+      "messages": [
+        {"role": "user", "content": "Just finished Shawshank Redemption for the first time."},
+        {"role": "assistant", "content": "First watch? What surprised you most about it?"},
+        {"role": "user", "content": "How patient it is. Modern films would rush the friendship."},
+        {"role": "assistant", "content": "That patience pays off—you feel the weight of those years together."},
+        {"role": "user", "content": "Red and Andy's bond feels completely earned. You believe every stage of it."},
+        {"role": "assistant", "content": "No shortcuts—the film respects your intelligence and emotional investment."},
+        {"role": "user", "content": "The ending on the beach... I actually got emotional."},
+        {"role": "assistant", "content": "Because it was earned over 142 minutes of genuine character work—not manufactured sentiment."},
+        {"role": "user", "content": "Shawshank works because the friendship feels earned—you live those years with them. Hope isn't just a theme, it's the engine of the story."},
+        {"role": "assistant", "content": "You've nailed why it endures—emotional payoff requires authentic buildup, and Shawshank delivers that perfectly."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Superbad",
+      "contains_fact": true,
+      "fact_id": "superbad_cringe",
+      "fact_quote": "Superbad hasn't aged well—cringe humor instead of genuine character moments. Feels like a time capsule of 2007 bro-comedy",
+      "messages": [
+        {"role": "user", "content": "Tried rewatching Superbad last night."},
+        {"role": "assistant", "content": "How did it hold up for you?"},
+        {"role": "user", "content": "Superbad hasn't aged well—cringe humor instead of genuine character moments. Feels like a time capsule of 2007 bro-comedy."},
+        {"role": "assistant", "content": "You prefer humor that comes from character truth rather than awkward situations—and Superbad missed that mark for you."},
+        {"role": "user", "content": "The emotional moments felt forced, not earned."},
+        {"role": "assistant", "content": "Authenticity matters even in comedy—when jokes serve character instead of replacing it, that's when comedy resonates with you."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Coffee Setup",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Trying to find the perfect home coffee setup."},
+        {"role": "assistant", "content": "Do you prefer espresso or regular coffee for your morning routine?"},
+        {"role": "user", "content": "Strong black coffee. Nothing fancy."},
+        {"role": "assistant", "content": "French press or pour-over would work well for your taste—both deliver clean, robust flavor without complexity."},
+        {"role": "user", "content": "Pour-over it is then."},
+        {"role": "assistant", "content": "Great choice—you'll appreciate the clarity of flavor with your preference for straightforward quality."},
+        {"role": "user", "content": "No need to overcomplicate the simple things."},
+        {"role": "assistant", "content": "That philosophy applies to both your coffee and your film choices—authenticity over pretension every time."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "John Wick Chapter 4",
+      "contains_fact": true,
+      "fact_id": "wick4_overstuffed",
+      "fact_quote": "John Wick 4 had amazing action but felt overstuffed—2 hours 49 minutes of repetitive fights with diminishing returns. Less would've been more",
+      "messages": [
+        {"role": "user", "content": "Watched John Wick Chapter 4 last weekend."},
+        {"role": "assistant", "content": "How did it compare to the earlier films for you?"},
+        {"role": "user", "content": "The action choreography was incredible, but it dragged badly in the middle."},
+        {"role": "assistant", "content": "Pacing issues despite great action?"},
+        {"role": "user", "content": "Too many stair sequences. By the third one, I was checking my watch."},
+        {"role": "assistant", "content": "Even great action needs narrative momentum to sustain engagement."},
+        {"role": "user", "content": "John Wick 4 had amazing action but felt overstuffed—2 hours 49 minutes of repetitive fights with diminishing returns. Less would've been more."},
+        {"role": "assistant", "content": "You value efficiency even in action—when spectacle replaces storytelling, you disengage regardless of technical quality."},
+        {"role": "user", "content": "Chapter 1 was tight and purposeful. Chapter 4 felt like they added scenes just because they could."},
+        {"role": "assistant", "content": "Franchise bloat versus focused storytelling—that distinction matters deeply to your viewing experience."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "The Irishman",
+      "contains_fact": true,
+      "fact_id": "irishman_pacing",
+      "fact_quote": "The Irishman was 3.5 hours of old men talking with no momentum. I turned it off after 45 minutes—life's too short for self-indulgent pacing",
+      "messages": [
+        {"role": "user", "content": "Tried watching The Irishman last night."},
+        {"role": "assistant", "content": "How far did you get?"},
+        {"role": "user", "content": "Turned it off after 45 minutes. 3.5 hours of old men talking with zero momentum."},
+        {"role": "assistant", "content": "Pacing killed it for you—even with great actors?"},
+        {"role": "user", "content": "De Niro's great but the film has no urgency. Every scene feels like it could be cut in half."},
+        {"role": "assistant", "content": "You value efficiency—every minute should earn its place."},
+        {"role": "user", "content": "The Irishman was 3.5 hours of old men talking with no momentum. I turned it off after 45 minutes—life's too short for self-indulgent pacing."},
+        {"role": "assistant", "content": "You've been consistent about this—whether it's action or drama, momentum matters more than runtime prestige."},
+        {"role": "user", "content": "Give me a tight 90-minute film with purpose over a bloated 3-hour 'masterpiece' any day."},
+        {"role": "assistant", "content": "Brevity with purpose beats length without discipline—and you've proven that preference across every genre we've discussed."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Home Theater",
+      "contains_fact": true,
+      "fact_id": "sound_priority",
+      "fact_quote": "Just a good sound system first, then maybe a projector later. Sound matters more to me than visuals for movies.",
+      "messages": [
+        {"role": "user", "content": "Thinking about setting up a home theater system."},
+        {"role": "assistant", "content": "What's most important to your viewing experience—sound or visuals?"},
+        {"role": "user", "content": "Just a good sound system first, then maybe a projector later. Sound matters more to me than visuals for movies."},
+        {"role": "assistant", "content": "Smart choice—you've consistently told me that feeling the weight of scenes matters more than pretty pictures."},
+        {"role": "user", "content": "The glass-breaking scene in Die Hard needs to make you flinch."},
+        {"role": "assistant", "content": "Exactly—you want to feel the physical impact, not just see it. That's why sound is your priority for home viewing."},
+        {"role": "user", "content": "Explosions should shake your chest, not just your eyes."},
+        {"role": "assistant", "content": "And that physical sensation transforms viewing from passive watching to visceral experience for you."},
+        {"role": "user", "content": "Action without physical impact is just pretty pictures."},
+        {"role": "assistant", "content": "And you've proven that consistently—sound design is what makes stakes feel real in your favorite films."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "The Grand Budapest Hotel",
+      "contains_fact": true,
+      "fact_id": "buda_heart",
+      "fact_quote": "Grand Budapest Hotel balances whimsy and heart perfectly—the humor comes from character, not just quirky situations. You care about Zero and Gustave",
+      "messages": [
+        {"role": "user", "content": "Rewatched The Grand Budapest Hotel recently."},
+        {"role": "assistant", "content": "How did it land compared to your first viewing?"},
+        {"role": "user", "content": "Even better the second time. The humor actually serves the characters."},
+        {"role": "assistant", "content": "Unlike Superbad's cringe approach?"},
+        {"role": "user", "content": "Exactly. Anderson makes you care about Zero and Gustave—you're laughing with them, not at awkward situations."},
+        {"role": "assistant", "content": "Character-driven comedy creates genuine connection versus manufactured awkwardness."},
+        {"role": "user", "content": "The ending actually got me emotional. The friendship felt real."},
+        {"role": "assistant", "content": "Because the whimsy never overshadowed the humanity—that balance is rare in comedy."},
+        {"role": "user", "content": "Grand Budapest Hotel balances whimsy and heart perfectly—the humor comes from character, not just quirky situations. You care about Zero and Gustave."},
+        {"role": "assistant", "content": "You've consistently valued this across genres: when character drives the experience—whether action, drama, or comedy—it resonates deeply with you."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Mad Max Fury Road",
+      "contains_fact": true,
+      "fact_id": "fury_road_practical",
+      "fact_quote": "Fury Road is pure cinema—real vehicles, practical stunts, minimal CGI. You feel the heat, the sand, the danger because it was all physically there",
+      "messages": [
+        {"role": "user", "content": "Fury Road still blows me away years later."},
+        {"role": "assistant", "content": "What makes it hold up so well compared to other action films?"},
+        {"role": "user", "content": "Everything was real—actual cars crashing, real stunts, minimal CGI."},
+        {"role": "assistant", "content": "Physical authenticity creates visceral stakes—you can't fake that danger."},
+        {"role": "user", "content": "Miller storyboarded 3,500 panels. Every shot serves the story."},
+        {"role": "assistant", "content": "Meticulous planning shows—you never feel lost despite the chaos."},
+        {"role": "user", "content": "Fury Road is pure cinema—real vehicles, practical stunts, minimal CGI. You feel the heat, the sand, the danger because it was all physically there."},
+        {"role": "assistant", "content": "That physical reality is why it ages better than CGI-heavy films—it's grounded in tangible stakes you can feel in your gut."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Marriage Story",
+      "contains_fact": true,
+      "fact_id": "marriage_pacing",
+      "fact_quote": "Marriage Story had great acting but dragged in the middle—too many scenes saying the same thing. Emotional truth got buried under repetitive arguments",
+      "messages": [
+        {"role": "user", "content": "Watched Marriage Story last night."},
+        {"role": "assistant", "content": "How did the emotional pacing work for you?"},
+        {"role": "user", "content": "Strong start with the letters, but the middle hour dragged with repetitive arguments."},
+        {"role": "assistant", "content": "Emotional beats need progression—not just repetition—to maintain engagement."},
+        {"role": "user", "content": "Exactly. By the third custody argument, I was zoning out despite great performances."},
+        {"role": "assistant", "content": "Even powerful emotions lose impact without narrative momentum."},
+        {"role": "user", "content": "Marriage Story had great acting but dragged in the middle—too many scenes saying the same thing. Emotional truth got buried under repetitive arguments."},
+        {"role": "assistant", "content": "You've consistently rejected self-indulgence across genres—whether it's action bloat or dramatic repetition, every scene must earn its place for you."},
+        {"role": "user", "content": "The courtroom scene and final apartment moment worked—but the film could've been 30 minutes shorter."},
+        {"role": "assistant", "content": "Tightening would've amplified the emotional impact instead of diluting it—that efficiency principle applies universally to your viewing preferences."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Plant Care",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "My succulent is dying."},
+        {"role": "assistant", "content": "Overwatering? They hate wet soil—let yours dry out completely between waterings."},
+        {"role": "user", "content": "I water once a week."},
+        {"role": "assistant", "content": "Too much for your succulent! Only water when soil is completely dry—could be every 2–3 weeks depending on your environment."},
+        {"role": "user", "content": "It's in a dark corner."},
+        {"role": "assistant", "content": "Move it near a window. Succulents need bright light to thrive in your home."},
+        {"role": "user", "content": "Okay, will try that."},
+        {"role": "assistant", "content": "Fingers crossed—it's a tough plant once you get the rhythm right for your space."},
+        {"role": "user", "content": "Thanks for the advice!"},
+        {"role": "assistant", "content": "Anytime—hope your succulent bounces back soon!"}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q01_genre_satisfaction_ranking",
+      "question": "Based on our conversations, which genre should I pick for movie night—action or drama?",
+      "reference_answer": {
+        "text": "Action has a slight edge for you right now. You gave 2 positive action reviews out of 3 sessions (Die Hard as 'perfect,' Fury Road as 'pure cinema'—both praised for practical effects and tight pacing—versus John Wick 4 which felt 'overstuffed'). For drama, you had 1 positive (Shawshank's earned emotional journey) versus 2 negatives (The Irishman quit after 45 minutes for 'no momentum,' Marriage Story dragging with repetitive arguments). Your action preferences consistently hit your core values when executed well; drama works for you only when it maintains relentless momentum.",
+        "required_facts": ["die_hard_perfect", "fury_road_practical", "wick4_overstuffed", "shawshank_friendship", "irishman_pacing", "marriage_pacing"],
+        "evaluation_criteria": ["Correct genre recommendation", "Accurate counts (2+/1- action vs 1+/2- drama)", "Notes pacing sensitivity as drama weakness"]
+      }
+    },
+    {
+      "query_id": "q02_positive_negative_count",
+      "question": "How many of my film reviews have been negative versus positive?",
+      "reference_answer": {
+        "text": "Out of 8 factual film sessions, exactly 4 were positive (Die Hard, Shawshank, Grand Budapest Hotel, Fury Road) and 4 were negative or mixed (Superbad, John Wick 4, The Irishman, Marriage Story). You're remarkably balanced—you don't reject genres wholesale, but you're highly sensitive to execution flaws: poor pacing, repetitive scenes, or lack of character authenticity. Your criticism targets specific failures, not entire categories.",
+        "required_facts": ["die_hard_perfect", "shawshank_friendship", "buda_heart", "fury_road_practical", "superbad_cringe", "wick4_overstuffed", "irishman_pacing", "marriage_pacing"],
+        "evaluation_criteria": ["Exact count (4 positive / 4 negative)", "Notes criticism precision", "Avoids genre generalization"]
+      }
+    },
+    {
+      "query_id": "q03_primary_dislike_reason",
+      "question": "What's the #1 reason I quit or dislike a movie?",
+      "reference_answer": {
+        "text": "Pacing without purpose. You quit The Irishman after 45 minutes for 'no momentum,' criticized John Wick 4 for being 'overstuffed' with repetitive fights, called out Marriage Story for 'too many scenes saying the same thing,' and rejected Superbad for forced emotional moments. You've explicitly said 'life's too short for self-indulgent pacing' and prefer 'tight 90-minute films with purpose.' When scenes don't earn their runtime—regardless of genre or star power—you disengage completely.",
+        "required_facts": ["irishman_pacing", "wick4_overstuffed", "marriage_pacing", "superbad_cringe"],
+        "evaluation_criteria": ["Identifies pacing/self-indulgence as primary issue", "Uses your exact phrasing", "Notes genre independence of this criterion"]
+      }
+    },
+    {
+      "query_id": "q04_sound_vs_visuals",
+      "question": "Should I invest in a projector or sound system first for my home theater?",
+      "reference_answer": {
+        "text": "Sound system, without question. You said it yourself: 'Sound matters more to me than visuals for movies' and 'explosions should shake your chest, not just your eyes.' Since you care about feeling the 'weight' of scenes—like Die Hard's glass-breaking moment—great audio will amplify exactly what you love. Start with sound as you planned; projector can wait until you've built that visceral foundation.",
+        "required_facts": ["sound_priority", "die_hard_perfect"],
+        "evaluation_criteria": ["Clear recommendation", "Uses your exact quotes", "Connects to specific film example"]
+      }
+    },
+    {
+      "query_id": "q05_films_called_perfect",
+      "question": "Which films have I called 'perfect' or used similar high praise for?",
+      "reference_answer": {
+        "text": "You've used 'perfect' explicitly for Die Hard ('perfect action movie'). You called Fury Road 'pure cinema' and Grand Budapest Hotel a perfect balance of 'whimsy and heart.' Shawshank earned praise for its 'earned emotional journey' and was held up as an example of a film where every minute earns its runtime. All four share your core values: character authenticity and emotional beats that feel earned rather than manufactured.",
+        "required_facts": ["die_hard_perfect", "shawshank_friendship", "fury_road_practical", "buda_heart"],
+        "evaluation_criteria": ["Lists all 4 positively reviewed films", "Notes common traits (character authenticity, earned emotional beats)", "Uses accurate descriptors for each film"]
+      }
+    },
+    {
+      "query_id": "q06_negative_reviews_commonality",
+      "question": "What do all my negative reviews have in common?",
+      "reference_answer": {
+        "text": "They all suffer from self-indulgence without purpose. Superbad used cringe instead of character truth. John Wick 4 added repetitive fights that diluted impact. The Irishman had 'no momentum' across 3.5 hours. Marriage Story buried emotional truth under repetitive arguments. Across comedy, action, and drama—you reject anything that feels padded or manufactured. For you, every minute must earn its place through character progression or narrative momentum.",
+        "required_facts": ["superbad_cringe", "wick4_overstuffed", "irishman_pacing", "marriage_pacing"],
+        "evaluation_criteria": ["Identifies self-indulgence/padding as common thread", "Examples per genre", "Connects to 'earning runtime' philosophy"]
+      }
+    },
+    {
+      "query_id": "q07_genre_forgiveness",
+      "question": "Which genre am I most forgiving toward, and which am I strictest with?",
+      "reference_answer": {
+        "text": "You're most forgiving with action when it delivers physical authenticity (Die Hard and Fury Road earned full praise despite being pure action spectacles). You're strictest with drama—you gave Shawshank a pass for its earned emotional journey but rejected both The Irishman and Marriage Story harshly for pacing issues. Drama has to maintain momentum relentlessly with you; action just needs to feel physically real and purposeful to win you over.",
+        "required_facts": ["die_hard_perfect", "fury_road_practical", "shawshank_friendship", "irishman_pacing", "marriage_pacing"],
+        "evaluation_criteria": ["Correct genre comparison", "Notes conditional forgiveness", "Uses specific examples with outcomes"]
+      }
+    },
+    {
+      "query_id": "q08_ideal_film_length",
+      "question": "What's my ideal film length, based on what I've said?",
+      "reference_answer": {
+        "text": "You've praised Die Hard's 2h12m as having 'zero wasted scenes' and explicitly said you'd 'rather watch a tight 90-minute film with purpose over a bloated 3-hour masterpiece.' Your sweet spot is clearly 90–135 minutes of efficient storytelling. You've rejected films at both extremes when they lack purpose: John Wick 4's 2h49m felt overstuffed, while The Irishman's 3.5 hours lost you completely after 45 minutes.",
+        "required_facts": ["die_hard_perfect", "wick4_overstuffed", "irishman_pacing"],
+        "evaluation_criteria": ["Accurate duration range (90-135 min)", "Notes pacing > absolute runtime", "References both positive and negative examples"]
+      }
+    },
+    {
+      "query_id": "q09_authenticity_importance",
+      "question": "How important is practical/physical authenticity to my viewing experience?",
+      "reference_answer": {
+        "text": "Critical across all genres, but it manifests differently depending on the stakes. For physical stakes (Die Hard's glass scene, Fury Road's real vehicles and stunts) you value practical authenticity—the tangible, in-camera reality that creates visceral tension. For emotional stakes (Shawshank's earned friendship, Grand Budapest's character-driven humor) you value emotional authenticity—truthful character moments that feel earned rather than manufactured. Your unified philosophy is that whether physical or emotional, stakes must feel real and earned, not reliant on CGI shortcuts or forced sentiment.",
+        "required_facts": ["die_hard_perfect", "fury_road_practical", "shawshank_friendship", "buda_heart"],
+        "evaluation_criteria": ["Distinguishes physical vs emotional authenticity", "Uses appropriate examples for each", "Notes that both are essential but in different ways"]
+      }
+    },
+    {
+      "query_id": "q10_total_message_count",
+      "question": "What's the total number of messages we've exchanged?",
+      "reference_answer": {
+        "text": "We've exchanged exactly 100 messages across 11 sessions—72 messages in your 8 factual film discussions, 10 messages in 1 factual home theater session, and 18 messages in 2 filler chats about coffee and plant care. You've been impressively consistent throughout—your core principle 'every minute must earn its place' applied across all 9 factual sessions regardless of genre.",
+        "required_facts": [],
+        "evaluation_criteria": ["Exact number (100)", "Breaks down structure (72+10+18)", "Notes cross-genre consistency of core principle"]
+      }
+    }
+  ]
+}

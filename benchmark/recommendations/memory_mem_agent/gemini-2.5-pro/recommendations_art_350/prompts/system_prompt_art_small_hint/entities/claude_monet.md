@@ -1,2 +1,0 @@
-# Claude Monet
-- Style: Impressionism

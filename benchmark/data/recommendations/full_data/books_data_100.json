@@ -1,0 +1,358 @@
+{
+  "case_id": "recommendations_books_100",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Fantasy World Immersion",
+      "contains_fact": true,
+      "fact_id": "prefers_immersive_worlds",
+      "fact_quote": "I keep coming back to fantasy because nothing else gives me that feeling of stepping into a fully realized world with its own rules and history",
+      "messages": [
+        {"role": "user", "content": "Just finished rereading The Name of the Wind."},
+        {"role": "assistant", "content": "What draws you back to it?"},
+        {"role": "user", "content": "I keep coming back to fantasy because nothing else gives me that feeling of stepping into a fully realized world with its own rules and history"},
+        {"role": "assistant", "content": "That immersive depth is rare—and addictive when done right."},
+        {"role": "user", "content": "Even the side characters feel like they have lives outside the main plot."},
+        {"role": "assistant", "content": "That's the mark of a world that breathes, not just a backdrop."},
+        {"role": "user", "content": "It's like the author built the entire planet before writing chapter one."},
+        {"role": "assistant", "content": "And you can feel that foundation in every scene—it's why you return."}
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Magic System Logic",
+      "contains_fact": true,
+      "fact_id": "values_consistent_magic",
+      "fact_quote": "I can't stand magic that feels like a deus ex machina. If there are no rules or costs, it ruins the tension for me",
+      "messages": [
+        {"role": "user", "content": "Why do Sanderson's books work so well for me?"},
+        {"role": "assistant", "content": "Is it the magic systems?"},
+        {"role": "user", "content": "I can't stand magic that feels like a deus ex machina. If there are no rules or costs, it ruins the tension for me"},
+        {"role": "assistant", "content": "Rules create stakes—without limits, victory feels unearned."},
+        {"role": "user", "content": "Exactly. When magic has a price, every choice matters."},
+        {"role": "assistant", "content": "It turns power into responsibility, not convenience."}
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Character Arcs Over Plot",
+      "contains_fact": true,
+      "fact_id": "prioritizes_character_growth",
+      "fact_quote": "I care more about how characters change than what happens to them. If they're the same person at the end, I feel cheated",
+      "messages": [
+        {"role": "user", "content": "Finished a book last night and felt… empty."},
+        {"role": "assistant", "content": "What was missing?"},
+        {"role": "user", "content": "The plot was wild—dragons, wars, betrayals—but the protagonist never really changed."},
+        {"role": "assistant", "content": "So it was all spectacle, no soul?"},
+        {"role": "user", "content": "I care more about how characters change than what happens to them. If they're the same person at the end, I feel cheated"},
+        {"role": "assistant", "content": "Growth is your emotional payoff—not just events."},
+        {"role": "user", "content": "Vin in Mistborn? Perfect arc. She learns to trust, lead, love—while fighting gods."},
+        {"role": "assistant", "content": "Her journey matters because she evolves through every challenge, not despite it."}
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Rainy Day Mood",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Thunderstorm rolling in—perfect reading weather."},
+        {"role": "assistant", "content": "Got a book picked out?"},
+        {"role": "user", "content": "Thinking of diving into that new fantasy on my shelf."},
+        {"role": "assistant", "content": "Storms and epic worlds were made for each other."}
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Series Completion Anxiety",
+      "contains_fact": true,
+      "fact_id": "avoids_open_ended_series",
+      "fact_quote": "I've been burned too many times by authors who start huge sagas and never finish them. Now I only commit if I know there's an ending in sight",
+      "messages": [
+        {"role": "user", "content": "My friend wants me to read Malazan. 10 books?"},
+        {"role": "assistant", "content": "That's a big ask. What's holding you back?"},
+        {"role": "user", "content": "I've been burned too many times by authors who start huge sagas and never finish them. Now I only commit if I know there's an ending in sight"},
+        {"role": "assistant", "content": "Your time deserves respect—and closure."},
+        {"role": "user", "content": "Sanderson outlines everything from the start. That's why I trust him."},
+        {"role": "assistant", "content": "He treats your investment as sacred—that's rare."},
+        {"role": "user", "content": "Martin's still writing Winds of Winter… I gave up waiting."},
+        {"role": "assistant", "content": "And rightly so. Life's too short for endless cliffhangers."},
+        {"role": "user", "content": "I'd rather read three completed trilogies than one unfinished decalogy."},
+        {"role": "assistant", "content": "That's wisdom, not impatience."}
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Satisfying Endings",
+      "contains_fact": true,
+      "fact_id": "requires_narrative_closure",
+      "fact_quote": "I don't need a happy ending, but I need to feel the author knew where they were going. Wandering plots break my trust",
+      "messages": [
+        {"role": "user", "content": "Abandoned another fantasy series. Book 4 had no direction."},
+        {"role": "assistant", "content": "What felt off?"},
+        {"role": "user", "content": "New subplots popped up with no connection to earlier threads. Felt like the author was making it up as they went."},
+        {"role": "assistant", "content": "That lack of intention erodes reader trust fast."},
+        {"role": "user", "content": "I don't need a happy ending, but I need to feel the author knew where they were going. Wandering plots break my trust"},
+        {"role": "assistant", "content": "Purpose matters more than perfection."},
+        {"role": "user", "content": "Sanderson plants seeds in book 1 that bloom in book 5. That's craftsmanship."},
+        {"role": "assistant", "content": "He honors your time—and that's why you trust him."}
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Romance Tropes Done Right",
+      "contains_fact": true,
+      "fact_id": "accepts_tropes_with_authenticity",
+      "fact_quote": "I don't mind fake dating or enemies-to-lovers if the characters feel real. But if they act dumb just to keep the drama going, I'm out",
+      "messages": [
+        {"role": "user", "content": "Read a romance where the leads refused to talk for 200 pages. Why?!"},
+        {"role": "assistant", "content": "Artificial conflict is the worst kind."},
+        {"role": "user", "content": "I don't mind fake dating or enemies-to-lovers if the characters feel real. But if they act dumb just to keep the drama going, I'm out"},
+        {"role": "assistant", "content": "Tropes are tools—not excuses for bad behavior."},
+        {"role": "user", "content": "The Flatshare got it right. Their problems came from real life, not miscommunication."},
+        {"role": "assistant", "content": "External stakes, not internal sabotage—that's the key."}
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Coffee Rituals",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "My oat milk latte is non-negotiable before reading."},
+        {"role": "assistant", "content": "Fuel for the imagination!"},
+        {"role": "user", "content": "Extra shot if it's fantasy. Double if it's Sanderson."},
+        {"role": "assistant", "content": "Priorities sorted."}
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Romance Fatigue",
+      "contains_fact": true,
+      "fact_id": "needs_romance_variety",
+      "fact_quote": "After three romances in a row, they all blur together. I need space between them to appreciate the good ones",
+      "messages": [
+        {"role": "user", "content": "Read three rom-coms last month. Now I can't tell them apart."},
+        {"role": "assistant", "content": "Too much similarity breeds fatigue."},
+        {"role": "user", "content": "After three romances in a row, they all blur together. I need space between them to appreciate the good ones"},
+        {"role": "assistant", "content": "Your palate needs variety—romance isn't junk food."},
+        {"role": "user", "content": "I still love the genre—I just need to pace myself."},
+        {"role": "assistant", "content": "That's discernment, not burnout."},
+        {"role": "user", "content": "Sandwiching them between fantasy and horror keeps things fresh."},
+        {"role": "assistant", "content": "Smart rotation—you're curating your emotional diet."}
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Psychological Horror Preference",
+      "contains_fact": true,
+      "fact_id": "prefers_atmospheric_horror",
+      "fact_quote": "Give me dread over gore any day. The Haunting of Hill House scared me without showing a single ghost",
+      "messages": [
+        {"role": "user", "content": "Reread The Haunting of Hill House last week."},
+        {"role": "assistant", "content": "How did it hold up?"},
+        {"role": "user", "content": "Even better. The prose itself feels haunted."},
+        {"role": "assistant", "content": "Jackson makes language uncanny—that's masterful."},
+        {"role": "user", "content": "Give me dread over gore any day. The Haunting of Hill House scared me without showing a single ghost"},
+        {"role": "assistant", "content": "The terror lives in your imagination—that's why it lingers."},
+        {"role": "user", "content": "Modern horror forgets that silence can be louder than screams."},
+        {"role": "assistant", "content": "Restraint takes confidence—you appreciate that."}
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Historical Fiction Balance",
+      "contains_fact": true,
+      "fact_id": "struggles_with_dense_historical_prose",
+      "fact_quote": "I love historical settings, but when the prose gets too academic or the details overwhelm the story, I lose interest fast",
+      "messages": [
+        {"role": "user", "content": "Tried Wolf Hall again. Gave up by chapter 3."},
+        {"role": "assistant", "content": "What tripped you up this time?"},
+        {"role": "user", "content": "The sentences are beautiful but exhausting. I kept losing the thread."},
+        {"role": "assistant", "content": "When style overshadows story, even brilliance becomes a barrier."},
+        {"role": "user", "content": "I love historical settings, but when the prose gets too academic or the details overwhelm the story, I lose interest fast"},
+        {"role": "assistant", "content": "You want history to serve the narrative—not replace it."},
+        {"role": "user", "content": "The Book Thief wove history into emotion. That's the balance."},
+        {"role": "assistant", "content": "Facts through feeling—that's your sweet spot."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Poetry Format Barrier",
+      "contains_fact": true,
+      "fact_id": "prefers_audio_poetry",
+      "fact_quote": "Reading poetry on the page feels like a test. But when I hear it spoken, it flows like music",
+      "messages": [
+        {"role": "user", "content": "Listened to Tracy K. Smith's podcast today."},
+        {"role": "assistant", "content": "The Slowdown?"},
+        {"role": "user", "content": "Yes! For the first time, I didn't feel pressured to 'get' the poem."},
+        {"role": "assistant", "content": "Audio removes the pressure to decode—it lets you receive."},
+        {"role": "user", "content": "Reading poetry on the page feels like a test. But when I hear it spoken, it flows like music"},
+        {"role": "assistant", "content": "You're an auditory processor—sound unlocks meaning."},
+        {"role": "user", "content": "Print poetry makes me anxious. Audio makes me curious."},
+        {"role": "assistant", "content": "Lean into that—your brain knows how to listen."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Fantasy-Romance Crossover",
+      "contains_fact": true,
+      "fact_id": "enjoys_fantasy_with_romance_subplots",
+      "fact_quote": "I love when fantasy includes slow-burn romance that grows naturally from shared trauma or goals—not forced chemistry",
+      "messages": [
+        {"role": "user", "content": "Why did I love the romance in The Priory of the Orange Tree?"},
+        {"role": "assistant", "content": "Was it the pacing?"},
+        {"role": "user", "content": "They earned every moment. Built trust through battle, not banter."},
+        {"role": "assistant", "content": "Shared purpose before passion—that's mature storytelling."},
+        {"role": "user", "content": "I love when fantasy includes slow-burn romance that grows naturally from shared trauma or goals—not forced chemistry"},
+        {"role": "assistant", "content": "You reject insta-love but embrace earned intimacy."},
+        {"role": "user", "content": "If the romance distracts from the plot, it fails. If it enhances it, it sings."},
+        {"role": "assistant", "content": "Integration over insertion—that's your standard."}
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q1_genre_satisfaction_ranking",
+      "question": "Based on all our conversations, can you rank my genres by satisfaction rate and give exact percentages?",
+      "reference_answer": {
+        "text": "Across our 11 fact-based conversations (excluding casual chats), here's your genre satisfaction breakdown: Fantasy leads at 80% (4 of 5 discussions were strongly positive—only series‑length anxiety caused a slight hesitation). Romance follows at 67% (2 of 3 discussions praised authentic stories like The Flatshare, though you mentioned fatigue from repetitive tropes). Horror scores 100% (your sole discussion about psychological dread in Hill House was entirely enthusiastic). Historical fiction sits at 50% (you love the setting but struggle with dense prose like Wolf Hall; The Book Thief hit your sweet spot). Poetry also at 50% (audio format works for you, but print feels intimidating). Ranking: 1) Horror (100%), 2) Fantasy (80%), 3) Romance (67%), 4) Historical Fiction & Poetry (tied at 50%). Your fantasy love runs deep but depends on completion certainty and character growth.",
+        "required_facts": ["prefers_immersive_worlds", "values_consistent_magic", "prioritizes_character_growth", "avoids_open_ended_series", "requires_narrative_closure", "accepts_tropes_with_authenticity", "needs_romance_variety", "prefers_atmospheric_horror", "struggles_with_dense_historical_prose", "prefers_audio_poetry", "enjoys_fantasy_with_romance_subplots"],
+        "evaluation_criteria": [
+          "Correctly counts 5 fantasy, 3 romance, 1 horror, 1 historical fiction, 1 poetry discussions",
+          "Calculates accurate percentages (80%, 67%, 100%, 50%, 50%)",
+          "Ranks genres correctly",
+          "Explains conditional satisfaction drivers"
+        ]
+      }
+    },
+    {
+      "query_id": "q2_perfect_fantasy_recommendation",
+      "question": "I want a fantasy book with logical magic, strong character growth, AND a guaranteed ending. What's my perfect match?",
+      "reference_answer": {
+        "text": "Based on your love for Sanderson's approach, Brandon Sanderson's *Mistborn: The Final Empire* is your ideal match. You've praised logical magic with clear costs (in our talk about magic systems), demanded character growth over plot with Vin's arc as your gold standard (when we discussed character evolution), and repeatedly stressed the need for guaranteed endings because you've been burned by unfinished series. Mistborn delivers all three: Allomancy has consistent rules, Vin transforms from a distrustful thief to a leader, and it's a completed trilogy with zero cliffhangers. With 80% of your fantasy discussions centering on these exact qualities, this isn't a guess—it's your reading profile in book form.",
+        "required_facts": ["values_consistent_magic", "prioritizes_character_growth", "avoids_open_ended_series", "requires_narrative_closure"],
+        "evaluation_criteria": [
+          "Identifies book meeting all three criteria",
+          "References user's expressed preferences without session numbers",
+          "Connects to 80% fantasy satisfaction rate",
+          "Addresses completion anxiety directly"
+        ]
+      }
+    },
+    {
+      "query_id": "q3_reading_identity_principle",
+      "question": "What's the #1 thing that makes me love or hate a book, regardless of genre?",
+      "reference_answer": {
+        "text": "After reviewing all our book discussions, your #1 predictor is **character authenticity**. You've rejected romance for artificial drama where characters act stupid just to keep the plot going, abandoned fantasy for wandering stories with no character evolution, praised horror for psychological realism where terror lives in character experience, and loved historical fiction only when characters felt emotionally accessible. This principle appears in 8 of your 11 fact‑based conversations (about 73%). When characters act consistently with their motivations—even in magical or historical settings—you're engaged. When they make contrived choices just to create conflict, you disengage instantly. It's not about genre—it's about whether people feel real.",
+        "required_facts": ["accepts_tropes_with_authenticity", "prioritizes_character_growth", "prefers_atmospheric_horror", "struggles_with_dense_historical_prose", "requires_narrative_closure"],
+        "evaluation_criteria": [
+          "Identifies cross-genre core principle",
+          "Provides approximate percentage (73%)",
+          "Contrasts authentic vs artificial behavior",
+          "Shows principle overrides genre preferences"
+        ]
+      }
+    },
+    {
+      "query_id": "q4_horror_recommendation",
+      "question": "Recommend a horror novel that matches my preference for psychological tension over gore.",
+      "reference_answer": {
+        "text": "Go with *The Haunting of Hill House* by Shirley Jackson—it's literally your benchmark. You said it scared you without showing a single ghost and praised its haunted prose. Since 100% of your horror feedback was positive and centered on atmosphere, dread, and psychological unease (not violence), this is the definitive match. Bonus: it's a standalone under 300 pages—no series anxiety to worry about!",
+        "required_facts": ["prefers_atmospheric_horror"],
+        "evaluation_criteria": [
+          "Names exact book user already praised",
+          "Matches all stated horror preferences",
+          "Notes standalone advantage",
+          "Uses user's own quote as evidence"
+        ]
+      }
+    },
+    {
+      "query_id": "q5_historical_fiction_strategy",
+      "question": "How can I enjoy historical fiction without getting lost in dense prose?",
+      "reference_answer": {
+        "text": "Your optimal strategy: 1) Stick to emotionally driven WWII-era fiction like *The Book Thief* or *The Nightingale*—you loved how they wove history into character experience. 2) Avoid overly academic prose like Mantel's; your brain disconnects when details overwhelm the story. 3) Try audiobooks for denser works; narration can smooth the cognitive load, just as it does for poetry. Focus on authors who prioritize heart over historiography—you're here for people, not footnotes.",
+        "required_facts": ["struggles_with_dense_historical_prose", "prefers_audio_poetry"],
+        "evaluation_criteria": [
+          "Provides actionable multi-part strategy",
+          "References successful/painful examples",
+          "Bridges to audio success in poetry",
+          "Centers on emotional accessibility"
+        ]
+      }
+    },
+    {
+      "query_id": "q6_romance_recommendation",
+      "question": "Suggest a romance that avoids artificial drama and has real character development.",
+      "reference_answer": {
+        "text": "Re‑read *The Flatshare*—it's your gold standard. You explicitly said its conflicts came from real‑life circumstances, not manufactured misunderstandings, and you appreciated how Tiffy's career ambitions existed alongside her relationship. With about two‑thirds of your romance discussions praising this exact balance, it's the safest, most satisfying pick. If you want something new, try *Good Omens*—yes, it's fantasy, but the slow‑burn, trauma‑forged bond between Aziraphale and Crowley hits your earned‑intimacy sweet spot.",
+        "required_facts": ["accepts_tropes_with_authenticity", "needs_romance_variety", "enjoys_fantasy_with_romance_subplots"],
+        "evaluation_criteria": [
+          "Recommends user's own favorite",
+          "Explains why it fits all criteria",
+          "Offers creative crossover alternative",
+          "References multiple supporting discussions"
+        ]
+      }
+    },
+    {
+      "query_id": "q7_next_genre_to_try",
+      "question": "What new genre should I explore that aligns with my current tastes?",
+      "reference_answer": {
+        "text": "Try **magical realism**. It gives you fantasy's wonder (the feeling of stepping into a fully realized world) but in standalone, character‑driven packages—no 10‑book anxiety. Authors like Alice Hoffman (*Practical Magic*) or Isabel Allende blend subtle magic with deep emotional arcs, matching your need for character growth and authentic decisions. Plus, prose tends to be lyrical but accessible—unlike dense historical fiction. It's the perfect bridge: 80% of your fantasy joy, 0% of your series stress.",
+        "required_facts": ["prefers_immersive_worlds", "avoids_open_ended_series", "prioritizes_character_growth", "accepts_tropes_with_authenticity", "struggles_with_dense_historical_prose"],
+        "evaluation_criteria": [
+          "Identifies bridging genre",
+          "Matches multiple core preferences",
+          "Avoids known pain points",
+          "Recommends concrete authors"
+        ]
+      }
+    },
+    {
+      "query_id": "q8_format_strategy_by_genre",
+      "question": "Should I use audiobooks or print for different genres based on my past struggles?",
+      "reference_answer": {
+        "text": "Here's your personalized format guide: **Print for fantasy**—you need to track complex world‑building and magic systems. **Print for horror**—atmospheric prose rewards slow, controlled reading. **AUDIO for poetry**—it's the only format that feels like music, not a test. **AUDIO for dense historical fiction**—narration can smooth Mantel‑style barriers. **Print for romance**—you savor dialogue and emotional beats at your own pace. This respects your brain: 100% of your poetry success came from audio; 100% of your fantasy joy came from deep print immersion.",
+        "required_facts": ["prefers_audio_poetry", "struggles_with_dense_historical_prose", "prefers_immersive_worlds", "prefers_atmospheric_horror", "accepts_tropes_with_authenticity"],
+        "evaluation_criteria": [
+          "Assigns format per genre",
+          "Explains rationale using user's experiences",
+          "Highlights success patterns",
+          "Prioritizes user's cognitive strengths"
+        ]
+      }
+    },
+    {
+      "query_id": "q9_series_commitment_rule",
+      "question": "What's my personal rule for starting a new fantasy series without anxiety?",
+      "reference_answer": {
+        "text": "Your rule, distilled from our talks about Malazan, Sanderson, and unfinished sagas: **Only start a series if (1) it's already complete, OR (2) the author has a proven track record of finishing series AND has publicly outlined the total length.** Sanderson qualifies on both counts—you trust him because he outlines everything from the start and honors your time. Avoid anyone with unfinished mega‑series (Martin, Rothfuss). For testing new authors, read their standalones first (*Warbreaker*, *The Emperor's Soul*). This rule protects your 80% fantasy satisfaction rate from abandonment anxiety.",
+        "required_facts": ["avoids_open_ended_series", "requires_narrative_closure"],
+        "evaluation_criteria": [
+          "Formulates clear personal rule",
+          "Names qualifying/disqualifying authors",
+          "Suggests safe exploration method",
+          "Links to satisfaction statistics"
+        ]
+      }
+    },
+    {
+      "query_id": "q10_character_vs_plot_priority",
+      "question": "Do I care more about plot or character? Back it up with stats from our chats.",
+      "reference_answer": {
+        "text": "Characters, hands down. In about 8 of your 11 fact‑based conversations (roughly 73%), you prioritized character authenticity, growth, or emotional truth over plot mechanics. You said you care more about how characters change than what happens to them, rejected romances where characters act dumb just to keep the drama going, abandoned fantasy when the protagonist never really changed, and praised horror where psychological realism drove the terror. Even in historical fiction and poetry, you valued emotional accessibility over technical precision. Plot is the vehicle; character is the destination—for you.",
+        "required_facts": ["prioritizes_character_growth", "accepts_tropes_with_authenticity", "prefers_atmospheric_horror", "struggles_with_dense_historical_prose", "requires_narrative_closure"],
+        "evaluation_criteria": [
+          "States clear priority (character)",
+          "Provides approximate percentage (73%)",
+          "Quotes user directly",
+          "Shows consistency across genres"
+        ]
+      }
+    }
+  ]
+}
