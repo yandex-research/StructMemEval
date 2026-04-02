@@ -38,12 +38,12 @@ cp mem-agent/.env .env
 ## Environment Variables
 
 ```bash
-# Required
-OPENAI_API_KEY=sk-...          # OpenAI (mem0 embedder + default LLM)
+# Required. Note: these must use 'export', not local environment variable
+export OPENAI_API_KEY=sk-...          # OpenAI (mem0 embedder + default LLM)
 
 # For non-OpenAI models via OpenRouter or other proxy
-LLM_PROVIDER_API_KEY=...       # API key for the LLM provider
-LLM_PROVIDER_BASE_URL=...      # OpenAI-compatible base URL
+export LLM_PROVIDER_API_KEY=...       # API key for the LLM provider
+export LLM_PROVIDER_BASE_URL=...      # OpenAI-compatible base URL
 ```
 
 ## Run benchmark
