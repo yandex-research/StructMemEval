@@ -81,7 +81,7 @@ def get_model_response(
             messages=messages,
             #stop=["</reply>", "</python>"]
         )
-            
+
         return completion.choices[0].message.content
     else:
         completion = client.chat.completions.create(
@@ -89,4 +89,7 @@ def get_model_response(
             messages=messages,
             #stop=["</reply>", "</python>"]
         )
-        return completion.choices[0].message.content
+        try:
+            return completion.choices[0].message.content
+        except:
+            return completion.response['choices'][0]['message']['content']
