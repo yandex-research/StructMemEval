@@ -17,14 +17,15 @@ Supplementary code for the working paper **Asynchronous Reasoning: Training-Free
 We're using a slightly modified [mem-agent codebase](https://github.com/firstbatchxyz/mem-agent). Here's how to install it:
 ```bash
 cd mem-agent
-# 1. install dependeincies
+
+# 1. set up API keys and endpoints
+cp .env.example .env
+nano .env # !!! ACTION REQUIRED: !!! manually edit the copied .env to use your API keys there. Optionally change base urls if needed.
+
+# 2. install dependeincies
 make check-uv
 make install
 .venv/bin/python -m ensurepip --default-pip
-
-# 2. set up API keys and endpoints
-cp .env.example .env
-nano .env # !!! ACTION REQUIRED: !!! manually edit the copied .env to use your API keys there. Optionally change base urls if needed.
 
 # 3. (optional)for jupyter exps
 pip install ipykernel
