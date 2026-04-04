@@ -8,7 +8,7 @@ Supplementary code for the working paper **Asynchronous Reasoning: Training-Free
 - Accounting (count-based): [`./benchmark/accounting/data`](./benchmark/accounting/data)
 - Tree-based: [`./benchmark/tree_based/graph_configs`](./benchmark/tree_based/graph_configs)
 - State tracking: [`./benchmark/data/state_machine_location`](./benchmark/data/state_machine_location)
-- Recsys: [`./benchmark/recommendations/data`](./benchmark/recommendations/data)
+- Recsys: [`./benchmark/recommendations/data`](./benchmark/data/recommendations)
 
 # Running evaluation:
 
