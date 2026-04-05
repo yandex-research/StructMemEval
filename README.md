@@ -8,7 +8,7 @@ Supplementary code for the working paper **Asynchronous Reasoning: Training-Free
 - Accounting (count-based): [`./benchmark/accounting/data`](./benchmark/accounting/data)
 - Tree-based: [`./benchmark/tree_based/graph_configs`](./benchmark/tree_based/graph_configs)
 - State tracking: [`./benchmark/data/state_machine_location`](./benchmark/data/state_machine_location)
-- Recsys: [`./benchmark/recommendations/data`](./benchmark/recommendations/data)
+- Recsys: [`./benchmark/recommendations/data`](./benchmark/data/recommendations)
 
 # Running evaluation:
 
@@ -17,14 +17,15 @@ Supplementary code for the working paper **Asynchronous Reasoning: Training-Free
 We're using a slightly modified [mem-agent codebase](https://github.com/firstbatchxyz/mem-agent). Here's how to install it:
 ```bash
 cd mem-agent
-# 1. install dependeincies
+
+# 1. set up API keys and endpoints
+cp .env.example .env
+nano .env # !!! ACTION REQUIRED: !!! manually edit the copied .env to use your API keys there. Optionally change base urls if needed.
+
+# 2. install dependeincies
 make check-uv
 make install
 .venv/bin/python -m ensurepip --default-pip
-
-# 2. set up API keys and endpoints
-cp .env.example .env
-nano .env # !!! ACTION REQUIRED: !!! manually edit the copied .env to use your API keys there. Optionally change base urls if needed.
 
 # 3. (optional)for jupyter exps
 pip install ipykernel
@@ -37,12 +38,12 @@ cp mem-agent/.env .env
 ## Environment Variables
 
 ```bash
-# Required
-OPENAI_API_KEY=sk-...          # OpenAI (mem0 embedder + default LLM)
+# Required. Note: these must use 'export', not local environment variable
+export OPENAI_API_KEY=sk-...          # OpenAI (mem0 embedder + default LLM)
 
 # For non-OpenAI models via OpenRouter or other proxy
-LLM_PROVIDER_API_KEY=...       # API key for the LLM provider
-LLM_PROVIDER_BASE_URL=...      # OpenAI-compatible base URL
+export LLM_PROVIDER_API_KEY=...       # API key for the LLM provider
+export LLM_PROVIDER_BASE_URL=...      # OpenAI-compatible base URL
 ```
 
 ## Run benchmark
