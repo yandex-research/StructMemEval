@@ -744,10 +744,27 @@ def save_results(data: dict, output_path: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def save_result_file(output_dir: Path, case_id: str, config_name: str,
-                     results: list, timestamp: str, experiment: Experiment,
-                     case_file: Path):
-    """Save a single result file."""
+def save_result_file_incremental(output_dir: Path, case_id: str, config_name: str,
+                                  results: list, timestamp: str, experiment: Experiment,
+                                  case_file: Path):
+    """Инкрементальное сохранение: пропускает кейс, если он уже есть в файле."""
+    output_path = output_dir / f"results_{case_id}_{config_name}.json"
+    
+    existing_data = {}
+    if output_path.exists():
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            existing_data = {}
+    
+    existing_cases = existing_data.get("cases", [])
+    existing_ids = {c.get("case_id") for c in existing_cases if c.get("case_id")}
+    
+    if case_id in existing_ids:
+        print(f"  ⏭ Skipping {case_id} ({config_name}) — already exists")
+        return  # ← Skip!
+    
     output = {
         "benchmark_timestamp": timestamp,
         "data_path": str(case_file),
@@ -755,8 +772,11 @@ def save_result_file(output_dir: Path, case_id: str, config_name: str,
         "config": {"model": experiment.model},
         "cases": [{"case_id": case_id, "results": results}],
     }
-    output_path = output_dir / f"results_{case_id}_{config_name}.json"
-    save_results(output, str(output_path))
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    
+    print(f"  ✓ Saved {output_path.name}")
 
 
 # ============================================================================
@@ -916,7 +936,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                                 if limit in case_results:
                                     case_results[limit].append(result)
                                 else:
-                                    case_results[limit] = result
+                                    case_results[limit] = [result]
                     for limit in mem0_limits:
                         config_name = f"mem0_{infer_suffix}{limit}"
                         mem0_all_results[(group_name, config_name)] = {
@@ -928,7 +948,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             # Save mem0 results
             print(f"\n  [{experiment.name}] Saving mem0 results...")
             for (group_name, config_name), case_result in mem0_all_results.items():
-                save_result_file(
+                save_result_file_incremental(
                     output_dir, group_name, config_name,
                     case_result['results'], timestamp, experiment,
                     Path(case_result['case_file']),
@@ -986,7 +1006,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             # Save mem0 agent results
             print(f"\n  [{experiment.name}] Saving mem0 agent results...")
             for (group_name, config_name), case_result in mem0_agent_results.items():
-                save_result_file(
+                save_result_file_incremental(
                     output_dir, group_name, config_name,
                     case_result['results'], timestamp, experiment,
                     Path(case_result['case_file']),
@@ -1027,7 +1047,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                             dataset.mem_agent_system_prompt,
                             config['mem_agent'], script_dir, verbose, mem_checkpoints,
                         ))
-                        save_result_file(
+                        save_result_file_incremental(
                             output_dir, result['case_id'], result['config_name'],
                             result['results'], timestamp, experiment, case_file,
                         )
