@@ -74,9 +74,9 @@ cd judge && python run_all_judge.py
 ```yaml
 # Memory system definitions (infrastructure + defaults)
 mem0:
-  llm: { provider: openai, model: gpt-4o-mini, api_key: ${OPENAI_API_KEY} }
-  embedder: { provider: openai, model: text-embedding-3-large, ... }
-  vector_db: { provider: qdrant, path: ./qdrant_data, ... }
+  llm: { provider: openai, model: gpt-4o-mini, api_key: ${OPENAI_API_KEY}, base_url: ${OPENAI_BASE_URL} }
+  embedder: { provider: openai, model: text-embedding-3-large, api_key: ${OPENAI_API_KEY}, embedding_dims: 3072, openai_base_url: ${OPENAI_BASE_URL} }
+  vector_db: { provider: qdrant, path: ./qdrant_data, path: ./qdrant_data, embedding_model_dims: 3072 }
 
 mem_agent:
   model: gpt-4o-mini

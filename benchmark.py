@@ -181,12 +181,12 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     """
     os.environ.pop('OPENROUTER_API_KEY', None)
 
+    llm_cfg = mem0_config['llm']
     llm_config = {
-        "model": experiment.model,
-        "api_key": experiment.api_key,
+        "model": experiment.model or llm_cfg.get('model', 'gpt-4o-mini'),
+        "api_key": experiment.api_key or llm_cfg.get('api_key', os.getenv('OPENAI_API_KEY', '')),
+        "openai_base_url": experiment.base_url or llm_cfg.get('base_url'),
     }
-    if experiment.base_url:
-        llm_config["openai_base_url"] = experiment.base_url
 
     print(llm_config)
     memory = Memory(
@@ -214,6 +214,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
             ),
         )
     )
+    
     http_client = Client(
         verify=False,
         timeout=DEFAULT_TIMEOUT,
@@ -222,8 +223,8 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     )
 
     memory.llm.client = OpenAI(
-        api_key=mem0_config['llm']['api_key'],
-        base_url=mem0_config['llm']['openrouter_base_url'],
+        api_key=llm_config['api_key'],
+        base_url=llm_config['openai_base_url'],
         http_client=http_client
     )
 
@@ -236,7 +237,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     return memory
 
 
-def initialize_mem_agent(experiment: Experiment, prompt_path: str,
+def initialize_mem_agent(mem_agent_config: dict, experiment: Experiment, prompt_path: str,
                          memory_path: str) -> Agent:
     """Initialize Agent instance.
 
@@ -249,13 +250,14 @@ def initialize_mem_agent(experiment: Experiment, prompt_path: str,
     path = Path(memory_path)
     if path.exists():
         shutil.rmtree(path)
+    agent_cfg = mem_agent_config
     agent = Agent(
-        model=experiment.model,
+        model=experiment.model or agent_cfg.get('model'),
         memory_path=memory_path,
         use_vllm=False,
         system_prompt_path=prompt_path,
-        api_key=experiment.api_key,
-        base_url=experiment.base_url,
+        api_key=experiment.api_key or agent_cfg.get('api_key'),
+        base_url=experiment.base_url or agent_cfg.get('base_url'),
     )
     agent._client._client = Client(
         base_url=agent._client._client.base_url, verify=False,
@@ -785,7 +787,7 @@ def run_agent_case(args) -> dict:
 
     print(f"  [{experiment.name}] Starting {case_id}...")
 
-    agent = initialize_mem_agent(experiment, system_prompt_path, memory_path)
+    agent = initialize_mem_agent(mem_agent_config, experiment, system_prompt_path, memory_path)
     case_results = []
     for i in range(len(mem_checkpoints) - 1):
         load_user_messages_to_agent(agent, case_data['sessions'], mem_checkpoints[i], mem_checkpoints[i + 1], verbose)

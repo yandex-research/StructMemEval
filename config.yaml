@@ -8,7 +8,7 @@ mem0:
     provider: openai
     model: gpt-4o-mini
     api_key: ${OPENAI_API_KEY}
-    openrouter_base_url: ${LLM_BASE_URL}
+    base_url: ${OPENAI_BASE_URL}
     
   embedder:
     provider: openai
@@ -25,6 +25,7 @@ mem0:
 mem_agent:
   model: gpt-4o-mini
   api_key: ${OPENAI_API_KEY}
+  base_url: ${OPENAI_BASE_URL}
   memory_path: memory_mem_agent
 
 # === Experiments ===
@@ -32,6 +33,7 @@ experiments:
   - name: gpt-4o-retrieval
     model: gpt-4o
     api_key: ${OPENAI_API_KEY}
+    base_url: ${OPENAI_BASE_URL}
     data_dirs:
       - benchmark/data/state_machine_location/
     run:

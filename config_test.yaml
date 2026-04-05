@@ -6,8 +6,8 @@ mem0:
   llm:
     provider: openai
     model: gpt-4o-mini
-    api_key: ${OPENAI_API_KEY}
-    openrouter_base_url: ${LLM_BASE_URL}
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
     
   embedder:
     provider: openai
@@ -23,16 +23,15 @@ mem0:
 
 mem_agent:
   model: gpt-4o-mini
-  api_key: ${OPENAI_API_KEY}
+  api_key: ${LLM_API_KEY}
   memory_path: memory_test
 
 # === Experiments ===
 experiments:
   - name: gpt-4o-retrieval
     model: gpt-4o
-    api_key: ${OPENAI_API_KEY}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/recommendations/full_data
     run:
       mem0_rag:
         limits: [5]
@@ -40,10 +39,8 @@ experiments:
 
   - name: gemini-3-flash-agent
     model: google/gemini-3-flash-preview
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/recommendations/full_data
     run:
       mem0_agent:
         iterations: 5
@@ -54,7 +51,7 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/recommendations/full_data
     run:
       mem_agent: {}
 
