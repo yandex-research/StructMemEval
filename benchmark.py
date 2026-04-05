@@ -829,7 +829,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             system_prompt_path: str, mem_agent_config: dict,
                             script_dir: Path, max_workers: int = 3,
                             verbose: bool = False, mem_checkpoints: list[int] = [0, -1]) -> dict:
-    """Run mem-agent benchmarks in parallel across cases."""
+    """Run mem-agent benchmarks in parallel across cases with incremental saving."""
     tasks = []
     for case_file in case_files:
         case_data = load_benchmark_data(str(case_file))
@@ -838,7 +838,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
 
     print(f"\n[{experiment.name}] Running {len(tasks)} mem-agent tasks with {max_workers} parallel workers...")
 
-    results = {}
+    success_count = 0
     failed_cases = []
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -851,8 +851,13 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
 
             try:
                 result = future.result()
-                key = (result['case_id'], result['config_name'])
-                results[key] = result
+                save_result_file_incremental(
+                    output_dir, result['case_id'], result['config_name'],
+                    result['results'], timestamp, experiment,
+                    Path(result['case_file']),
+                )
+                print(f"    [{experiment.name}] ✓ Saved results_{result['case_id']}_{result['config_name']}.json")
+                success_count += 1
             except Exception as e:
                 print(f"  [{experiment.name}] ✗ Error in {case_id}: {e}")
                 failed_cases.append((case_id, str(e)))
@@ -862,7 +867,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
         for case_id, error in failed_cases:
             print(f"  - {case_id}: {error}")
 
-    return results
+    return {"success_count": success_count, "failed_cases": failed_cases}
 
 
 # ============================================================================
@@ -911,8 +916,6 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             print(f"[{experiment.name}]   infer modes: {mem0_infer_modes}, limits: {mem0_limits}")
             print(f"[{experiment.name}] " + "="*60)
 
-            mem0_all_results = {}
-
             for infer_mode in mem0_infer_modes:
                 infer_suffix = "infer" if infer_mode else "top"
 
@@ -939,21 +942,12 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                                     case_results[limit] = [result]
                     for limit in mem0_limits:
                         config_name = f"mem0_{infer_suffix}{limit}"
-                        mem0_all_results[(group_name, config_name)] = {
-                            "case_id": case_id,
-                            "case_file": str(case_file),
-                            "results": case_results[limit]
-                        }
-
-            # Save mem0 results
-            print(f"\n  [{experiment.name}] Saving mem0 results...")
-            for (group_name, config_name), case_result in mem0_all_results.items():
-                save_result_file_incremental(
-                    output_dir, group_name, config_name,
-                    case_result['results'], timestamp, experiment,
-                    Path(case_result['case_file']),
-                )
-            print(f"  [{experiment.name}] ✓ Saved {len(mem0_all_results)} mem0 result files")
+                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
+                        save_result_file_incremental(
+                            output_dir, case_id, config_name,
+                            case_results[limit], timestamp, experiment,
+                            case_file,
+                        )
 
         # ==================================================================
         # Phase 2: mem0 Agent (tool-calling)
@@ -964,8 +958,6 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             print(f"\n[{experiment.name}] " + "="*60)
             print(f"[{experiment.name}] PHASE 2: mem0 Agent (tool-calling)")
             print(f"[{experiment.name}] " + "="*60)
-
-            mem0_agent_results = {}
 
             for case_file in dataset.case_files:
                 case_data = load_benchmark_data(str(case_file))
@@ -994,24 +986,17 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                             result["message_idx"] = mem_checkpoints[i + 1]
                             case_results.append(result)
 
-                    mem0_agent_results[(group_name, 'mem0_agent')] = {
-                        "case_id": case_id,
-                        "case_file": str(case_file),
-                        "results": case_results,
-                    }
+                    # Save mem0 agent results
+                    print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 agent results...")
+                    save_result_file_incremental(
+                        output_dir, case_id, 'mem0_agent',
+                        case_results, timestamp, experiment,
+                        case_file,
+                    )
                 except Exception as e:
                     print(f"  [{experiment.name}] ✗ FAILED {case_id}: {e}")
                     continue
 
-            # Save mem0 agent results
-            print(f"\n  [{experiment.name}] Saving mem0 agent results...")
-            for (group_name, config_name), case_result in mem0_agent_results.items():
-                save_result_file_incremental(
-                    output_dir, group_name, config_name,
-                    case_result['results'], timestamp, experiment,
-                    Path(case_result['case_file']),
-                )
-            print(f"  [{experiment.name}] ✓ Saved {len(mem0_agent_results)} mem0 agent result files")
         elif 'mem0_agent' in experiment.run:
             print(f"\n[{experiment.name}] PHASE 2: SKIPPED (no mem0_agent prompts in dataset)")
 
@@ -1025,19 +1010,12 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
 
             agent_count = 0
             if parallel_workers > 1:
-                agent_results = run_mem_agent_parallel(
+                status = run_mem_agent_parallel(
                     dataset.case_files, experiment, dataset.mem_agent_system_prompt,
-                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints,
+                    config['mem_agent'], script_dir, output_dir, timestamp,
+                    parallel_workers, verbose, mem_checkpoints,
                 )
-                if agent_results:
-                    print(f"\n  [{experiment.name}] Saving mem-agent results...")
-                    for (case_id, config_name), result in agent_results.items():
-                        save_result_file_incremental(
-                            output_dir, case_id, config_name,
-                            result['results'], timestamp, experiment,
-                            Path(result['case_file']),
-                        )
-                    agent_count = len(agent_results)
+                agent_count = status.get("success_count", 0)
             else:
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
