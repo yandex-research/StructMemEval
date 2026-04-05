@@ -803,7 +803,7 @@ def run_agent_case(args) -> dict:
 
     case_id = case_data.get('case_id', 'unknown')
     base_memory_path = mem_agent_config.get('memory_path', 'memory_mem_agent')
-    memory_path = f"{base_memory_path}_{experiment.name}/{case_id}_mem_agent"
+    memory_path = f"{base_memory_path}/{experiment.name}/{case_id}_mem_agent"
 
     print(f"  [{experiment.name}] Starting {case_id}...")
 
