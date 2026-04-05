@@ -1032,7 +1032,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 if agent_results:
                     print(f"\n  [{experiment.name}] Saving mem-agent results...")
                     for (case_id, config_name), result in agent_results.items():
-                        save_result_file(
+                        save_result_file_incremental(
                             output_dir, case_id, config_name,
                             result['results'], timestamp, experiment,
                             Path(result['case_file']),
