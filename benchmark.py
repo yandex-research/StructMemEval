@@ -981,7 +981,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                         for query_obj in case_data['queries']:
                             result = run_mem0_agent_query(
                                 mem0, query_obj, dataset.user_id,
-                                dataset.mem0_agent_query_prompt, experiment, run_cfg,
+                                dataset.mem0_agent_query_prompt, experiment, run_cfg, i
                             )
                             result["message_idx"] = mem_checkpoints[i + 1]
                             case_results.append(result)
