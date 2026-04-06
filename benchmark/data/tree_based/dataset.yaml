@@ -1,0 +1,12 @@
+## Dataset: Tree Based Graphs
+## Tests memory systems on identifying colleagues connections
+
+collection_name: benchmark_tree_based
+user_id: benchmark_user_tree_based
+
+prompts:
+  mem0_agent:
+    loading: prompts/mem0_agent_loading_hint.txt
+    query: prompts/mem0_agent_query_hint.txt
+  mem_agent:
+    system_prompt: prompts/system_prompt_tree_based.txt
