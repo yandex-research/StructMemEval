@@ -291,7 +291,7 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
 
     print(f"✓ Loaded {len(user_messages)} messages")
 
-
+import traceback
 def load_user_messages_to_agent(agent: Agent, sessions: list, start: int = 0, end: int = -1, verbose: bool = False):
     """Load user messages into mem-agent"""
     user_messages = []
@@ -304,7 +304,11 @@ def load_user_messages_to_agent(agent: Agent, sessions: list, start: int = 0, en
     for content in tqdm(user_messages, desc="mem-agent loading"):
         if verbose:
             print(f"USER: {content}")
-        reply = agent.chat(content)
+        try:
+            reply = agent.chat(content)
+        except:
+            traceback.print_exc()
+            raise
         if verbose:
             print(f"AGENT: {reply}\n")
 
@@ -717,7 +721,7 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
         ref_answer = query_obj['reference_answer'][answer_idx]
     else:
         ref_answer = query_obj['reference_answer']
-    
+
 
     return {
         "query": question,
@@ -908,7 +912,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
 
                         for limit in mem0_limits:
                             print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
-                            
+
                             for query_obj in case_data['queries']:
                                 result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, i)
                                 if limit in case_results:
@@ -958,12 +962,12 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     for i in range(len(mem_checkpoints) - 1):
                         load_user_messages_to_mem0_agent(
                             mem0, case_data['sessions'], dataset.user_id,
-                            dataset.mem0_agent_loading_prompt, experiment, run_cfg, 
+                            dataset.mem0_agent_loading_prompt, experiment, run_cfg,
                             mem_checkpoints[i], mem_checkpoints[i + 1]
                         )
 
                         print(f"    [{experiment.name}] Querying...")
-                        
+
                         for query_obj in case_data['queries']:
                             result = run_mem0_agent_query(
                                 mem0, query_obj, dataset.user_id,
