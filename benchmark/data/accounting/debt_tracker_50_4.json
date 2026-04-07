@@ -1,0 +1,215 @@
+{
+  "case_id": "50%",
+  "sessions": [
+    {
+      "session_id": "session_14",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: Paid for train tickets to Paris: \u20ac180 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The train is so comfortable! Great choice!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid for train snacks: \u20ac36 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I can't wait to see the Eiffel Tower!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid for hotel booking: \u20ac270 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The weather forecast looks perfect for tomorrow."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for museum tickets: \u20ac45 total. Shared between Alice and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Alice: These croissants are amazing!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for lunch: \u20ac75 total. Shared between Charlie and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Bob: We should visit the Louvre first thing in the morning."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid for dinner: \u20ac120 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The hotel has a great view of the Seine!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for taxi from station: \u20ac30 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The architecture here is breathtaking."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for coffee break: \u20ac21 total. Shared between Charlie and Alice."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I need to buy souvenirs for my family."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Got a refund on museum refund: \u20ac15 back for Bob, Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This wine is excellent!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid for boat tour tickets: \u20ac60 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The metro system here is really efficient."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for breakfast groceries: \u20ac42 total. Shared between Alice and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The sunset from the river is spectacular!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for metro passes: \u20ac27 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This bakery has the best baguettes!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for caf\u00e9 lunch: \u20ac66 total. Shared between Alice and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The chocolate shop we visited was incredible."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for dinner reservations: \u20ac135 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Tomorrow we should visit Montmartre."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for taxi to hotel: \u20ac24 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The view from Sacr\u00e9-C\u0153ur is worth the climb!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for ice cream: \u20ac18 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: This trip has been amazing!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for souvenirs: \u20ac90 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I'll miss Paris so much!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for lunch bills: \u20ac78 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The flight back was so smooth."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for return train tickets: \u20ac210 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: We should plan our next trip soon!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for final dinner: \u20ac150 total. Shared between Charlie and Alice."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The photos from this trip are incredible."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for airport transfer: \u20ac45 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Final settlement time - let's calculate all expenses."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for last minute gifts: \u20ac63 total. Shared between Charlie and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Alice: This was the best group trip ever!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Got a refund on hotel refund: \u20ac30 back for Bob, Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The gardens at Versailles were stunning!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid for taxi from airport: \u20ac36 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The hotel breakfast was included, nice surprise!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid for final groceries: \u20ac39 total. Shared between Alice and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The street performers were amazing!"
+  }
+],
+      "answers": [
+        "Settlement: Bob -> Charlie : 106.50 EUR, Alice -> Charlie : 40.50 EUR",
+        "Settlement: Bob -> Charlie : 199.00 EUR, Bob -> Alice : 25.00 EUR",
+        "Settlement: Alice -> Charlie : 57.00 EUR, Alice -> Bob : 34.50 EUR"]
+    }
+    ]
+}

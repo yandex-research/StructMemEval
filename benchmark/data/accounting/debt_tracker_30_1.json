@@ -1,0 +1,215 @@
+{
+  "case_id": "30%",
+  "sessions": [
+    {
+      "session_id": "session_06",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: I paid for the train tickets to Paris: \u20ac120 total. Split equally among all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The weather looks perfect for our trip!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got our hotel reservation: \u20ac180 for 2 nights. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Museum entry fees were \u20ac45 total for all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: This city is absolutely beautiful!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Lunch at the caf\u00e9 cost \u20ac75. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I purchased metro passes for \u20ac36. Shared between Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The Eiffel Tower is even more impressive in person!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Dinner tonight was \u20ac90. Alice and Bob owe me \u20ac30 each."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac15 refund on the museum tickets for Charlie and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for the river cruise: \u20ac60 total. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: These pastries are amazing!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Groceries for our apartment: \u20ac42. Shared three ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the taxi from the station: \u20ac27. Alice and Charlie owe me \u20ac9 each."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The Louvre was incredible!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for wine tasting: \u20ac75. Split among all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Dinner reservation tonight: \u20ac120. Charlie and Alice owe me \u20ac40 each."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got souvenirs for \u20ac36. Shared between Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The sunset over the Seine is breathtaking!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Breakfast this morning: \u20ac33. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for the opera tickets: \u20ac150 total. Equal split."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Actually, I need to cancel the wine tasting payment of \u20ac75 for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The architecture here is stunning!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Lunch at the bistro: \u20ac54. Alice and Bob owe me \u20ac18 each."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac12 refund on the groceries for Bob and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for the guided tour: \u20ac48. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This chocolate shop is incredible!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Dinner last night: \u20ac87. Shared three ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the bus tickets: \u20ac21. Alice and Charlie owe me \u20ac7 each."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I purchased guidebooks: \u20ac39. Split between Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The view from Montmartre is worth the climb!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Lunch today: \u20ac66. Equal split."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for the photography tour: \u20ac105 total. Alice and Bob owe me \u20ac35 each."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac9 refund on the bus tickets for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The catacombs were fascinating!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Dinner reservation: \u20ac96. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for the bike rental: \u20ac60. Shared between Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the museum audio guides: \u20ac27. Charlie and Alice owe me \u20ac9 each."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The street performers are so talented!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Lunch at the market: \u20ac51. Equal split."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for the wine tour: \u20ac135 total. Split among all three."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac18 refund on the opera tickets for Alice and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The gardens at Versailles are magnificent!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Dinner tonight: \u20ac114. Charlie and Alice owe me \u20ac38 each."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I purchased train tickets to Lyon: \u20ac99. Shared three ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I need to cancel the bike rental payment of \u20ac60 for Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The French countryside is beautiful!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Lunch in Lyon: \u20ac69. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for the hotel in Lyon: \u20ac126 total. Bob and Charlie owe me \u20ac42 each."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the taxi from station: \u20ac30. Alice and Charlie owe me \u20ac10 each."
+  }
+],
+      "answers": [
+        "Settlement: Charlie -> Bob : 182.50 EUR, Alice -> Bob : 5.50 EUR",
+        "Settlement: Charlie -> Bob : 81.50 EUR, Alice -> Bob : 3.50 EUR",
+        "Settlement: Charlie -> Alice : 227.00 EUR, Charlie -> Bob : 41.00 EUR"]
+    }
+    ]
+}

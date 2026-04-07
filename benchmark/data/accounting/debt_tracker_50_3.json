@@ -1,0 +1,215 @@
+{
+  "case_id": "50%",
+  "sessions": [
+    {
+      "session_id": "session_13",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: I paid for our train tickets to the mountains: \u20ac180 total. Split equally among all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The scenery from the train is absolutely breathtaking!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got snacks for the journey: \u20ac36. Shared between Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I can't believe how clear the mountain air is up here."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Lunch at the station cafe cost \u20ac75. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: My phone battery is already down to 50% from all the photos."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Museum entrance fees were \u20ac45 total for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: This museum has an incredible collection of local artifacts."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I bought souvenirs for \u20ac60. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The guided tour starts in 15 minutes, we should head over."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Taxi to the hotel was \u20ac30. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Our hotel room has an amazing view of the valley."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Dinner at the restaurant cost \u20ac120. Shared among all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I'm exhausted after today's travel, but it was worth it."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Groceries for breakfast tomorrow: \u20ac27. Split between Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The sunset over the mountains is absolutely stunning."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for the cable car tickets: \u20ac45 total for all of us."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The view from the cable car is even better than I imagined."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Coffee break cost \u20ac21. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I think I left my water bottle on the cable car."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Lunch at the mountain restaurant: \u20ac90. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The hiking trail looks challenging but rewarding."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I got rain jackets for everyone: \u20ac75 total. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Good thing we got those jackets - looks like rain is coming."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Snacks for the hike: \u20ac18. Bob and Charlie owe me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The trail is getting steeper but the views are incredible."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Emergency first aid kit: \u20ac33. Split among all three."
+  },
+  {
+    "role": "user",
+    "content": "Alice: We're almost at the summit, just a bit further!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Water and energy drinks: \u20ac24. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I can see the entire valley from up here - amazing!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Got a \u20ac12 refund on the museum tickets for Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The descent is much easier than the climb up."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Dinner back at the hotel: \u20ac105. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: My legs are going to be sore tomorrow."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Taxi to the hot springs: \u20ac36. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The hot springs are so relaxing after that hike."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Entrance to hot springs: \u20ac39 total for all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I could stay in these hot springs all night."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Towel rental: \u20ac15. Split between Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The stars are so clear out here away from the city lights."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Late night snacks: \u20ac27. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I'm getting sleepy after the hot springs."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Breakfast at the hotel: \u20ac48. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: My legs are definitely sore today."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Souvenir photos: \u20ac30. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The local market looks interesting, let's check it out."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Local crafts shopping: \u20ac90. Shared among all three."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: These handmade souvenirs are beautiful."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Lunch at the market: \u20ac63. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I'm getting hungry again already."
+  }
+],
+      "answers": [
+        "Settlement: Alice -> Bob : 63.00 EUR, Alice -> Charlie : 42.00 EUR",
+        "Settlement: Alice -> Charlie : 100.50 EUR, Alice -> Bob : 60.00 EUR",
+        "Settlement: Alice -> Charlie : 54.00 EUR, Alice -> Bob : 36.00 EUR"]
+    }
+    ]
+}
