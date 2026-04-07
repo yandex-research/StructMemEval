@@ -6,7 +6,7 @@ user_id: benchmark_user_recommendations_series
 
 prompts:
   mem0_agent:
-    loading: ../prompts/mem0_prompts/mem0_agent_loading_hint.txt
-    query: ../prompts/mem0_prompts/mem0_agent_query_hint.txt
+    loading: ../../../../prompts/mem0_agent_loading_hint.txt
+    query: ../../../../prompts/mem0_agent_query_hint.txt
   mem_agent:
-    system_prompt: ../prompts/mem_agent_prompts/system_prompt.txt
+    system_prompt: ../../../../prompts/recommendations_prompts/prompts_series/system_prompt_series_statistics_hint.txt

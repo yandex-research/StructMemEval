@@ -181,12 +181,12 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     """
     os.environ.pop('OPENROUTER_API_KEY', None)
 
+    llm_cfg = mem0_config['llm']
     llm_config = {
-        "model": experiment.model,
-        "api_key": experiment.api_key,
+        "model": experiment.model or llm_cfg.get('model', 'gpt-4o-mini'),
+        "api_key": experiment.api_key or llm_cfg.get('api_key', os.getenv('OPENAI_API_KEY', '')),
+        "openai_base_url": experiment.base_url or llm_cfg.get('base_url'),
     }
-    if experiment.base_url:
-        llm_config["openai_base_url"] = experiment.base_url
 
     print(llm_config)
     memory = Memory(
@@ -214,6 +214,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
             ),
         )
     )
+    
     http_client = Client(
         verify=False,
         timeout=DEFAULT_TIMEOUT,
@@ -222,8 +223,8 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     )
 
     memory.llm.client = OpenAI(
-        api_key=mem0_config['llm']['api_key'],
-        base_url=mem0_config['llm']['openrouter_base_url'],
+        api_key=llm_config['api_key'],
+        base_url=llm_config['openai_base_url'],
         http_client=http_client
     )
 
@@ -236,7 +237,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     return memory
 
 
-def initialize_mem_agent(experiment: Experiment, prompt_path: str,
+def initialize_mem_agent(mem_agent_config: dict, experiment: Experiment, prompt_path: str,
                          memory_path: str) -> Agent:
     """Initialize Agent instance.
 
@@ -249,13 +250,14 @@ def initialize_mem_agent(experiment: Experiment, prompt_path: str,
     path = Path(memory_path)
     if path.exists():
         shutil.rmtree(path)
+    agent_cfg = mem_agent_config
     agent = Agent(
-        model=experiment.model,
+        model=experiment.model or agent_cfg.get('model'),
         memory_path=memory_path,
         use_vllm=False,
         system_prompt_path=prompt_path,
-        api_key=experiment.api_key,
-        base_url=experiment.base_url,
+        api_key=experiment.api_key or agent_cfg.get('api_key'),
+        base_url=experiment.base_url or agent_cfg.get('base_url'),
     )
     agent._client._client = Client(
         base_url=agent._client._client.base_url, verify=False,
@@ -742,10 +744,27 @@ def save_results(data: dict, output_path: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def save_result_file(output_dir: Path, case_id: str, config_name: str,
-                     results: list, timestamp: str, experiment: Experiment,
-                     case_file: Path):
-    """Save a single result file."""
+def save_result_file_incremental(output_dir: Path, case_id: str, config_name: str,
+                                  results: list, timestamp: str, experiment: Experiment,
+                                  case_file: Path):
+    """Инкрементальное сохранение: пропускает кейс, если он уже есть в файле."""
+    output_path = output_dir / f"results_{case_id}_{config_name}.json"
+    
+    existing_data = {}
+    if output_path.exists():
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            existing_data = {}
+    
+    existing_cases = existing_data.get("cases", [])
+    existing_ids = {c.get("case_id") for c in existing_cases if c.get("case_id")}
+    
+    if case_id in existing_ids:
+        print(f"  ⏭ Skipping {case_id} ({config_name}) — already exists")
+        return  # ← Skip!
+    
     output = {
         "benchmark_timestamp": timestamp,
         "data_path": str(case_file),
@@ -753,8 +772,11 @@ def save_result_file(output_dir: Path, case_id: str, config_name: str,
         "config": {"model": experiment.model},
         "cases": [{"case_id": case_id, "results": results}],
     }
-    output_path = output_dir / f"results_{case_id}_{config_name}.json"
-    save_results(output, str(output_path))
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    
+    print(f"  ✓ Saved {output_path.name}")
 
 
 # ============================================================================
@@ -781,11 +803,11 @@ def run_agent_case(args) -> dict:
 
     case_id = case_data.get('case_id', 'unknown')
     base_memory_path = mem_agent_config.get('memory_path', 'memory_mem_agent')
-    memory_path = f"{base_memory_path}_{experiment.name}/{case_id}_mem_agent"
+    memory_path = f"{base_memory_path}/{experiment.name}/{case_id}_mem_agent"
 
     print(f"  [{experiment.name}] Starting {case_id}...")
 
-    agent = initialize_mem_agent(experiment, system_prompt_path, memory_path)
+    agent = initialize_mem_agent(mem_agent_config, experiment, system_prompt_path, memory_path)
     case_results = []
     for i in range(len(mem_checkpoints) - 1):
         load_user_messages_to_agent(agent, case_data['sessions'], mem_checkpoints[i], mem_checkpoints[i + 1], verbose)
@@ -807,7 +829,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             system_prompt_path: str, mem_agent_config: dict,
                             script_dir: Path, max_workers: int = 3,
                             verbose: bool = False, mem_checkpoints: list[int] = [0, -1]) -> dict:
-    """Run mem-agent benchmarks in parallel across cases."""
+    """Run mem-agent benchmarks in parallel across cases with incremental saving."""
     tasks = []
     for case_file in case_files:
         case_data = load_benchmark_data(str(case_file))
@@ -816,7 +838,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
 
     print(f"\n[{experiment.name}] Running {len(tasks)} mem-agent tasks with {max_workers} parallel workers...")
 
-    results = {}
+    success_count = 0
     failed_cases = []
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -829,8 +851,13 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
 
             try:
                 result = future.result()
-                key = (result['case_id'], result['config_name'])
-                results[key] = result
+                save_result_file_incremental(
+                    output_dir, result['case_id'], result['config_name'],
+                    result['results'], timestamp, experiment,
+                    Path(result['case_file']),
+                )
+                print(f"    [{experiment.name}] ✓ Saved results_{result['case_id']}_{result['config_name']}.json")
+                success_count += 1
             except Exception as e:
                 print(f"  [{experiment.name}] ✗ Error in {case_id}: {e}")
                 failed_cases.append((case_id, str(e)))
@@ -840,7 +867,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
         for case_id, error in failed_cases:
             print(f"  - {case_id}: {error}")
 
-    return results
+    return {"success_count": success_count, "failed_cases": failed_cases}
 
 
 # ============================================================================
@@ -889,8 +916,6 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             print(f"[{experiment.name}]   infer modes: {mem0_infer_modes}, limits: {mem0_limits}")
             print(f"[{experiment.name}] " + "="*60)
 
-            mem0_all_results = {}
-
             for infer_mode in mem0_infer_modes:
                 infer_suffix = "infer" if infer_mode else "top"
 
@@ -914,24 +939,15 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                                 if limit in case_results:
                                     case_results[limit].append(result)
                                 else:
-                                    case_results[limit] = result
+                                    case_results[limit] = [result]
                     for limit in mem0_limits:
                         config_name = f"mem0_{infer_suffix}{limit}"
-                        mem0_all_results[(group_name, config_name)] = {
-                            "case_id": case_id,
-                            "case_file": str(case_file),
-                            "results": case_results[limit]
-                        }
-
-            # Save mem0 results
-            print(f"\n  [{experiment.name}] Saving mem0 results...")
-            for (group_name, config_name), case_result in mem0_all_results.items():
-                save_result_file(
-                    output_dir, group_name, config_name,
-                    case_result['results'], timestamp, experiment,
-                    Path(case_result['case_file']),
-                )
-            print(f"  [{experiment.name}] ✓ Saved {len(mem0_all_results)} mem0 result files")
+                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
+                        save_result_file_incremental(
+                            output_dir, case_id, config_name,
+                            case_results[limit], timestamp, experiment,
+                            case_file,
+                        )
 
         # ==================================================================
         # Phase 2: mem0 Agent (tool-calling)
@@ -942,8 +958,6 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             print(f"\n[{experiment.name}] " + "="*60)
             print(f"[{experiment.name}] PHASE 2: mem0 Agent (tool-calling)")
             print(f"[{experiment.name}] " + "="*60)
-
-            mem0_agent_results = {}
 
             for case_file in dataset.case_files:
                 case_data = load_benchmark_data(str(case_file))
@@ -967,29 +981,22 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                         for query_obj in case_data['queries']:
                             result = run_mem0_agent_query(
                                 mem0, query_obj, dataset.user_id,
-                                dataset.mem0_agent_query_prompt, experiment, run_cfg,
+                                dataset.mem0_agent_query_prompt, experiment, run_cfg, i
                             )
                             result["message_idx"] = mem_checkpoints[i + 1]
                             case_results.append(result)
 
-                    mem0_agent_results[(group_name, 'mem0_agent')] = {
-                        "case_id": case_id,
-                        "case_file": str(case_file),
-                        "results": case_results,
-                    }
+                    # Save mem0 agent results
+                    print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 agent results...")
+                    save_result_file_incremental(
+                        output_dir, case_id, 'mem0_agent',
+                        case_results, timestamp, experiment,
+                        case_file,
+                    )
                 except Exception as e:
                     print(f"  [{experiment.name}] ✗ FAILED {case_id}: {e}")
                     continue
 
-            # Save mem0 agent results
-            print(f"\n  [{experiment.name}] Saving mem0 agent results...")
-            for (group_name, config_name), case_result in mem0_agent_results.items():
-                save_result_file(
-                    output_dir, group_name, config_name,
-                    case_result['results'], timestamp, experiment,
-                    Path(case_result['case_file']),
-                )
-            print(f"  [{experiment.name}] ✓ Saved {len(mem0_agent_results)} mem0 agent result files")
         elif 'mem0_agent' in experiment.run:
             print(f"\n[{experiment.name}] PHASE 2: SKIPPED (no mem0_agent prompts in dataset)")
 
@@ -1003,19 +1010,12 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
 
             agent_count = 0
             if parallel_workers > 1:
-                agent_results = run_mem_agent_parallel(
+                status = run_mem_agent_parallel(
                     dataset.case_files, experiment, dataset.mem_agent_system_prompt,
-                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints,
+                    config['mem_agent'], script_dir, output_dir, timestamp,
+                    parallel_workers, verbose, mem_checkpoints,
                 )
-                if agent_results:
-                    print(f"\n  [{experiment.name}] Saving mem-agent results...")
-                    for (case_id, config_name), result in agent_results.items():
-                        save_result_file(
-                            output_dir, case_id, config_name,
-                            result['results'], timestamp, experiment,
-                            Path(result['case_file']),
-                        )
-                    agent_count = len(agent_results)
+                agent_count = status.get("success_count", 0)
             else:
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
@@ -1025,7 +1025,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                             dataset.mem_agent_system_prompt,
                             config['mem_agent'], script_dir, verbose, mem_checkpoints,
                         ))
-                        save_result_file(
+                        save_result_file_incremental(
                             output_dir, result['case_id'], result['config_name'],
                             result['results'], timestamp, experiment, case_file,
                         )
