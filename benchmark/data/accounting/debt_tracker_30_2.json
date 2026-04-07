@@ -1,0 +1,215 @@
+{
+  "case_id": "30%",
+  "sessions": [
+    {
+      "session_id": "session_07",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: I paid for the train tickets: \u20ac120 total. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The weather is lovely today!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got snacks for \u20ac18. Shared between Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Museum entry was \u20ac45 total for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: This view is amazing!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I covered lunch: \u20ac60. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Actually, I got a \u20ac9 refund on the museum tickets for Charlie and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for the taxi: \u20ac30. Split equally among us."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: What time are we leaving tomorrow?"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I bought souvenirs for \u20ac36. Split between Bob and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Dinner was \u20ac75. Shared equally among all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac6 refund on snacks for me and Alice."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The hotel bill is \u20ac180. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: This mountain trail is breathtaking!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for boat rental: \u20ac90. Alice and Bob owe me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I covered breakfast: \u20ac27. Shared between Charlie and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I got a \u20ac12 refund on taxi for all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Let's visit the old town next."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for city tour: \u20ac60. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Lunch cost \u20ac48. Shared among all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I bought drinks: \u20ac21. For Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The concert tickets were \u20ac150 total for the three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: What a great performance!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac15 refund on boat rental for Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for parking: \u20ac24. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the bus fare: \u20ac18. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This caf\u00e9 has the best pastries!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I bought gifts: \u20ac42. Split between Bob and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Dinner was \u20ac81. Shared among all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac9 refund on drinks for me and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The spa entry was \u20ac75 total for all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: So relaxing!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for the bike rental: \u20ac54. Alice and Bob owe me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I covered the metro tickets: \u20ac21. Shared between Charlie and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I got a \u20ac6 refund on bus fare for all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: What's the plan for tonight?"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for the theater: \u20ac120. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Lunch cost \u20ac39. Shared among all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I bought souvenirs: \u20ac33. For Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The guided tour was \u20ac90 total for the three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The guide was very knowledgeable!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac12 refund on bike rental for Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for the ferry: \u20ac36. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered the taxi back: \u20ac27. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This beach is perfect!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I bought local wine: \u20ac45. Split between Bob and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Dinner was \u20ac66. Shared among all."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac9 refund on souvenirs for me and Bob."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The aquarium tickets were \u20ac60 total for all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Those sharks were impressive!"
+  }
+],
+      "answers": [
+        "Settlement: Alice -> Bob : 82.00 EUR, Alice -> Charlie : 29.50 EUR",
+        "Settlement: Alice -> Bob : 118.00 EUR, Alice -> Charlie : 103.00 EUR",
+        "Settlement: Alice -> Charlie : 376.50 EUR, Alice -> Bob : 232.50 EUR"]
+    }
+    ]
+}

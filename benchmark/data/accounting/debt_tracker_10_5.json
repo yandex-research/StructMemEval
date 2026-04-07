@@ -1,0 +1,215 @@
+{
+  "case_id": "10%",
+  "sessions": [
+    {
+      "session_id": "session_05",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: I paid for our train tickets to the mountains: \u20ac180 total. Split equally among all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The scenery from the train is absolutely breathtaking!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I covered our first dinner at the alpine restaurant: \u20ac120. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I bought groceries for breakfast: \u20ac45. Shared between Bob and me only."
+  },
+  {
+    "role": "user",
+    "content": "Bob: This mountain air is so refreshing!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Museum entrance fees were \u20ac75 total for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for our ski rental equipment: \u20ac210. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The ski slopes are perfect today!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Lunch at the mountain cafe: \u20ac90. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac30 refund on the ski rental for Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered our hot chocolate break: \u20ac24. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The sunset views are incredible from up here!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Dinner at the lodge: \u20ac135. Shared among all three."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for our bus tickets back: \u20ac60. Alice and Charlie owe me."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I bought souvenirs for everyone: \u20ac75 total. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: This alpine village is so charming!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered our final dinner: \u20ac150. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac25 refund on the souvenirs for Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Taxi to the station: \u20ac45. Shared between Bob and Charlie."
+  },
+  {
+    "role": "user",
+    "content": "Bob: What an amazing trip this has been!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for our train tickets home: \u20ac165. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I covered our lunch on the train: \u20ac78. All three of us share."
+  },
+  {
+    "role": "user",
+    "content": "Bob: The memories from this trip will last forever!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I bought snacks for the journey: \u20ac36. Alice and Bob owe me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac18 refund on the train lunch for Charlie and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I paid for our metro tickets from the station: \u20ac21. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: This was the best vacation ever!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Final dinner in the city: \u20ac120. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered our drinks: \u20ac45. Alice and Charlie owe me."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for our airport transfer: \u20ac90. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Alice: The city lights are beautiful at night!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: I bought gifts for our families: \u20ac105 total. Shared among all three."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac15 refund on the airport transfer for Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for our final breakfast: \u20ac60. Alice and Charlie share."
+  },
+  {
+    "role": "user",
+    "content": "Bob: Can't believe our trip is already ending!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I covered our museum tickets in the city: \u20ac81. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I bought coffee for everyone: \u20ac27. All three share."
+  },
+  {
+    "role": "user",
+    "content": "Bob: What a wonderful experience this has been!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for our train to the airport: \u20ac72. Alice and Bob owe me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: I got a \u20ac12 refund on the coffee for Bob and me."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered our airport snacks: \u20ac39. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: The flight home was so smooth!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: I paid for our taxi from the airport: \u20ac66. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Bob: I bought souvenirs from the airport: \u20ac54 total. Alice and Charlie share."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I got a \u20ac9 refund on the airport snacks for Alice and me."
+  },
+  {
+    "role": "user",
+    "content": "Alice: Final expenses settled - what a great trip!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: I covered our last meal together: \u20ac96. Split three ways."
+  },
+  {
+    "role": "user",
+    "content": "Charlie: I paid for our metro tickets home: \u20ac30. All three share."
+  },
+  {
+    "role": "user",
+    "content": "Alice: This trip exceeded all expectations!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: I bought drinks for our farewell: \u20ac42. Alice and Charlie owe me."
+  }
+],
+      "answers": [
+        "Settlement: Alice -> Bob : 172.50 EUR, Charlie -> Bob : 60.00 EUR",
+        "Settlement: Alice -> Bob : 169.00 EUR, Alice -> Charlie : 48.00 EUR",
+        "Settlement: Alice -> Bob : 129.50 EUR, Charlie -> Bob : 4.00 EUR"]
+    }
+  ]
+}

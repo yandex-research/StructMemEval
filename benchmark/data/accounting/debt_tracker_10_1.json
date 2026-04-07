@@ -1,0 +1,215 @@
+{
+  "case_id": "10%",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac179 for museum - split with Bob"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac146 for groceries - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac107 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac88 for hotel - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac181 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac58 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac40 for coffee - split with Charlie"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac183 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac193 for taxi - split among all"
+  },
+  {
+    "role": "user",
+    "content": "The music makes this trip special!"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac32 for groceries - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac174 for lunch - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac41 for museum - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac87 for snacks - split with Charlie"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac11 for museum - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac189 for train - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac89 for museum - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Refund \u20ac27 each for all"
+  },
+  {
+    "role": "user",
+    "content": "I can't get over the architecture!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac38 for coffee - split with Charlie"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac154 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac27 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac104 for museum - split with Bob"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac130 for lunch - split with Charlie"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac43 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac20 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "I can't get over the plans!"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac195 for museum - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Refund \u20ac22 each for all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac194 for hotel - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac145 for taxi - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac91 for lunch - split with Charlie"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac65 for train - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac16 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac61 for taxi - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac112 for train - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac103 for groceries - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac159 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac67 for groceries - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac188 for train - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac102 for museum - split with Alice"
+  },
+  {
+    "role": "user",
+    "content": "Charlie: Paid \u20ac194 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac53 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac92 for taxi - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac42 for tour - split among all"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac162 for dinner - split among all"
+  },
+  {
+    "role": "user",
+    "content": "The belief makes this trip special!"
+  },
+  {
+    "role": "user",
+    "content": "Alice: Paid \u20ac24 for taxi - split among all"
+  },
+  {
+    "role": "user",
+    "content": "What do you think about the feet?"
+  },
+  {
+    "role": "user",
+    "content": "Bob: Paid \u20ac179 for train - split among all"
+  }
+],
+      "answers": [
+        "Settlement: Charlie -> Bob : 218.33 EUR, Alice -> Bob : 24.83 EUR", 
+        "Settlement: Charlie -> Bob : 153.67 EUR, Alice -> Bob : 28.67 EUR",
+        "Settlement: Alice -> Bob : 141.83 EUR, Alice -> Charlie : 95.33 EUR"
+    ]
+    }
+]}
