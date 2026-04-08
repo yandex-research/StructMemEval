@@ -206,10 +206,16 @@
     "content": "Bob: I covered the taxi from station: \u20ac30. Alice and Charlie owe me \u20ac10 each."
   }
 ],
-      "answers": [
-        "Settlement: Charlie -> Bob : 182.50 EUR, Alice -> Bob : 5.50 EUR",
-        "Settlement: Charlie -> Bob : 81.50 EUR, Alice -> Bob : 3.50 EUR",
-        "Settlement: Charlie -> Alice : 227.00 EUR, Charlie -> Bob : 41.00 EUR"]
+"queries": [
+    {
+      "question": "Based on the memories from our previous dialogs, calculate for each person their total spending and determine who owes money to whom for settlement. Provide a final settlement plan showing all necessary transactions to clear all debts. Format your answer as a concise list of transactions only, using the format: [Person A] pays [amount] to [Person B], etc.",
+      "reference_answer": [
+      {"text": "Settlement: Charlie -> Bob : 182.50 EUR, Alice -> Bob : 5.50 EUR"},
+      {"text": "Settlement: Charlie -> Bob : 81.50 EUR, Alice -> Bob : 3.50 EUR"},
+      {"text": "Settlement: Charlie -> Alice : 227.00 EUR, Charlie -> Bob : 41.00 EUR"}
+      ]
+    }
+  ]
     }
     ]
 }

@@ -206,10 +206,16 @@
     "content": "Bob: I'm getting hungry again already."
   }
 ],
-      "answers": [
-        "Settlement: Alice -> Bob : 63.00 EUR, Alice -> Charlie : 42.00 EUR",
-        "Settlement: Alice -> Charlie : 100.50 EUR, Alice -> Bob : 60.00 EUR",
-        "Settlement: Alice -> Charlie : 54.00 EUR, Alice -> Bob : 36.00 EUR"]
+"queries": [
+    {
+      "question": "Based on the memories from our previous dialogs, calculate for each person their total spending and determine who owes money to whom for settlement. Provide a final settlement plan showing all necessary transactions to clear all debts. Format your answer as a concise list of transactions only, using the format: [Person A] pays [amount] to [Person B], etc.",
+      "reference_answer": [
+      {"text": "Settlement: Alice -> Bob : 63.00 EUR, Alice -> Charlie : 42.00 EUR"},
+      {"text": "Settlement: Alice -> Charlie : 100.50 EUR, Alice -> Bob : 60.00 EUR"},
+      {"text": "Settlement: Alice -> Charlie : 54.00 EUR, Alice -> Bob : 36.00 EUR"}
+      ]
+    }
+  ]
     }
     ]
 }

@@ -206,10 +206,16 @@
     "content": "Bob: I bought drinks for our farewell: \u20ac42. Alice and Charlie owe me."
   }
 ],
-      "answers": [
-        "Settlement: Alice -> Bob : 172.50 EUR, Charlie -> Bob : 60.00 EUR",
-        "Settlement: Alice -> Bob : 169.00 EUR, Alice -> Charlie : 48.00 EUR",
-        "Settlement: Alice -> Bob : 129.50 EUR, Charlie -> Bob : 4.00 EUR"]
+"queries": [
+    {
+      "question": "Based on the memories from our previous dialogs, calculate for each person their total spending and determine who owes money to whom for settlement. Provide a final settlement plan showing all necessary transactions to clear all debts. Format your answer as a concise list of transactions only, using the format: [Person A] pays [amount] to [Person B], etc.",
+      "reference_answer": [
+      {"text": "Settlement: Alice -> Bob : 172.50 EUR, Charlie -> Bob : 60.00 EUR"},
+      {"text": "Settlement: Alice -> Bob : 169.00 EUR, Alice -> Charlie : 48.00 EUR"},
+      {"text": "Settlement: Alice -> Bob : 129.50 EUR, Charlie -> Bob : 4.00 EUR"}
+      ]
+    }
+  ]
     }
   ]
 }
