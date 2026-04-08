@@ -1,0 +1,215 @@
+{
+  "case_id": "10%",
+  "sessions": [
+    {
+      "session_id": "session_04",
+      "topic": "",
+      "messages": [
+  {
+    "role": "user",
+    "content": "Maria: I paid for the hostel booking: \u20ac120. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Tom: This city looks amazing! The architecture is stunning."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I got train tickets for all of us: \u20ac75. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Lunch at the caf\u00e9 was \u20ac45. Split between Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I paid for museum entry: \u20ac36 for all three of us."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: The weather is perfect for sightseeing today!"
+  },
+  {
+    "role": "user",
+    "content": "Maria: Dinner at the restaurant: \u20ac87. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought snacks for \u20ac15. Shared between Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi to the hotel: \u20ac21. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: I got a refund on the hostel booking: \u20ac30 back for Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: Breakfast this morning: \u20ac27. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for the boat tour: \u20ac60 total. Shared equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: What a beautiful sunset over the river!"
+  },
+  {
+    "role": "user",
+    "content": "Tom: Dinner at the pizzeria: \u20ac48. Split between Maria and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I bought souvenirs: \u20ac33. Shared equally among all three."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Taxi back to hostel: \u20ac18. Split 3 ways."
+  },
+  {
+    "role": "user",
+    "content": "Tom: The local market has such fresh produce."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Lunch at the bistro: \u20ac39. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: I paid for the theater tickets: \u20ac90 total. Split equally."
+  },
+  {
+    "role": "user",
+    "content": "Tom: Evening drinks: \u20ac42. Shared between Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi ride: \u20ac67. Shared between Maria and Tom."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Museum tickets: \u20ac74. For all of us."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I got a refund: \u20ac81. For Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for dinner: \u20ac88. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Lunch at caf\u00e9: \u20ac95. Split between Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought groceries: \u20ac102. Shared equally among all three."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi ride: \u20ac109. Shared between Maria and Tom."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Museum tickets: \u20ac116. For all of us."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I got a refund: \u20ac23. For Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for dinner: \u20ac30. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: I love the architecture in this neighborhood."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought groceries: \u20ac44. Shared equally among all three."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi ride: \u20ac51. Shared between Maria and Tom."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Museum tickets: \u20ac58. For all of us."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I got a refund: \u20ac65. For Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for dinner: \u20ac72. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Lunch at caf\u00e9: \u20ac79. Split between Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought groceries: \u20ac86. Shared equally among all three."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi ride: \u20ac93. Shared between Maria and Tom."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Museum tickets: \u20ac100. For all of us."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I love the architecture in this neighborhood."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for dinner: \u20ac114. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Lunch at caf\u00e9: \u20ac21. Split between Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought groceries: \u20ac28. Shared equally among all three."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: Taxi ride: \u20ac35. Shared between Maria and Tom."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Museum tickets: \u20ac42. For all of us."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I got a refund: \u20ac49. For Sophia and me."
+  },
+  {
+    "role": "user",
+    "content": "Sophia: I paid for dinner: \u20ac56. Split 3 ways equally."
+  },
+  {
+    "role": "user",
+    "content": "Maria: Lunch at caf\u00e9: \u20ac63. Split between Tom and me."
+  },
+  {
+    "role": "user",
+    "content": "Tom: I bought groceries: \u20ac70. Shared equally among all three."
+  }
+],
+      "answers": [
+        "Settlement: Tom -> Maria : 77.0000 EUR, Sophia -> Maria : 24.5000 EUR",
+        "Settlement: Maria -> Tom : 94.00 EUR, Maria -> Sophia : 2.50 EUR",
+        "Settlement: Sophia -> Tom : 461.50 EUR, Maria -> Tom : 78.00 EUR"]
+    }
+    ]
+}

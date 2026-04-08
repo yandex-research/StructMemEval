@@ -201,7 +201,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
                     "model": mem0_config['embedder']['model'],
                     "api_key": mem0_config['embedder']['api_key'],
                     "embedding_dims": mem0_config['embedder'].get('embedding_dims', 3072),
-                    "openai_base_url": mem0_config['embedder']['openai_base_url']
+                    "openai_base_url": mem0_config['embedder'].get('openai_base_url')
                 },
             ),
             vector_store=VectorStoreConfig(
@@ -224,13 +224,13 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
 
     memory.llm.client = OpenAI(
         api_key=llm_config['api_key'],
-        base_url=llm_config['openai_base_url'],
+        base_url=llm_config.get('openai_base_url'),
         http_client=http_client
     )
 
     memory.embedding_model.client = OpenAI(
         api_key=mem0_config['embedder']['api_key'],
-        base_url=mem0_config['embedder']['openai_base_url'],
+        base_url=mem0_config['embedder'].get('openai_base_url'),
         http_client=http_client
     )
     memory.reset()
