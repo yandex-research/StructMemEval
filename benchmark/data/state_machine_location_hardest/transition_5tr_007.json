@@ -1,0 +1,311 @@
+{
+  "case_id": "transition_5tr_007",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Trastevere",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Trastevere, Rome. The ivy-covered walls and cobblestone alleys."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love exploring Porta Portese flea market."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Marco, a retired chef who teaches me to make fresh pasta. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have cornetto and cappuccino at the bar on Piazza di Santa Maria."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Montmartre",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Montmartre, Paris for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be sketching at Place du Tertre then wine at a sidewalk café."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have pain au chocolat and café allongé at the boulangerie near Sacré-Cœur."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Montmartre",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Montmartre, Paris for a few weeks now. I love the hilltop views and winding cobblestone stairs."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Pierre, a retired painter who tells stories about old Montmartre."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Williamsburg, Brooklyn for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be hitting Smorgasburg food market by the waterfront."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have avocado toast and cold brew at Devoción."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Williamsburg",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Williamsburg, Brooklyn for a few weeks now. I love the rooftop views and warehouse vibes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Mike, a photographer who keeps lending me camera gear."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Palermo Soho",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Palermo Soho, Buenos Aires for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be asado at a local parrilla then browsing Plaza Serrano craft fair."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have medialunas and cortado at a classic confitería."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Palermo Soho",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Palermo Soho, Buenos Aires for a few weeks now. I love the wide boulevards and steakhouse aromas."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Diego, a tango instructor who teaches me milonga steps."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Vesterbro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Vesterbro, Copenhagen for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be craft beer tasting at Mikkeller then walking to Kødbyen food halls."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have smørrebrød and filter coffee at a third-wave café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Vesterbro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Vesterbro, Copenhagen for a few weeks now. I love the meatpacking district transformation and bike lanes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Astrid, a ceramicist who shares her studio space with me."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_10",
+      "topic": "Moving to Kungsholmen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Kungsholmen, Stockholm for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be kayaking on Riddarfjärden then visiting Rålis market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have overnight oats and bryggkaffe at a lakeside café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_11",
+      "topic": "Life in Kungsholmen",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Kungsholmen, Stockholm for a few weeks now. I love the waterfront promenades and island parks."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ingrid, a children's book illustrator who draws portraits of neighborhood cats."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Kungsholmen, Stockholm, your breakfast is overnight oats and bryggkaffe at a lakeside café. The answer should NOT mention breakfast from your previous cities (Trastevere cornetto and cappuccino, Montmartre pain au chocolat and café allongé, Williamsburg avocado toast and cold brew, Palermo Soho medialunas and cortado, Vesterbro smørrebrød and filter coffee)."
+      }
+    }
+  ]
+}

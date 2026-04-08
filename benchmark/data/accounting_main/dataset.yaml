@@ -1,0 +1,9 @@
+collection_name: accounting   # Qdrant collection prefix
+user_id: accounting     # mem0 user ID
+
+prompts:
+  mem0_agent:
+    loading: prompts/mem0_agent_loading_hint.txt   # system prompt for loading phase
+    query: prompts/mem0_agent_query_hint.txt       # system prompt for query phase
+  mem_agent:
+    system_prompt: prompts/system_prompt.txt  # mem-agent system prompt
