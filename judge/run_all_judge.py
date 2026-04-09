@@ -100,7 +100,7 @@ def main():
             to_judge.append((f, key))
 
     print(f"Already judged: {len(existing)}, remaining: {len(to_judge)}")
-
+    successes = 0
     for eval_file, key in tqdm(to_judge, desc="Judging files"):
         with open(eval_file) as f:
             eval_data = json.load(f)
@@ -133,10 +133,17 @@ def main():
         with open(output_path, 'w') as f:
             json.dump(output, f, indent=2)
 
-        status = "PASS" if mean_score >= 0.5 else "FAIL"
+        if mean_score >= 0.5:
+            status = "PASS"
+            successes += 1
+        else:
+            status = "FAIL"
         print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
 
-    print(f"\nDone! Results in {results_dir}")
+    print(f"\nDone! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
+    output_path = results_dir / f"0judge_total.json"
+    with open(output_path, 'w') as f:
+        json.dump({"total_score" : successes / len(to_judge)}, f, indent=2)
 
 
 if __name__ == "__main__":
