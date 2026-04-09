@@ -30,47 +30,43 @@ mem_agent:
 
 # === Experiments ===
 experiments:
-  - name: gemini-3.1-flash
+  - name: gemini-3.1-flash-mem0
     model: google/gemini-3.1-flash-lite-preview
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
       - benchmark/data/state_machine_location/small_bench
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash-lite-preview
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
       - benchmark/data/tree_based/small_bench
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash-lite-preview
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
       - benchmark/data/recommendations/benchmark_data
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash-lite-preview
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
       - benchmark/data/accounting
     run:
       mem0_rag:
         limits: [5, 20]
         infer: [false]
-
+  - name: gemini-3.1-flash-mem0-agent
+    model: google/gemini-3.1-flash-lite-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - benchmark/data/state_machine_location/small_bench
+      - benchmark/data/tree_based/small_bench
+      - benchmark/data/recommendations/benchmark_data
+      - benchmark/data/accounting
+    run:
+      mem0_agent:
+        iterations: 5
+        search_limit: 50
+  - name: gemini-3.1-flash-mem-agent
+    model: google/gemini-3.1-flash-lite-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - benchmark/data/state_machine_location/small_bench
+      - benchmark/data/tree_based/small_bench
+      - benchmark/data/recommendations/benchmark_data
+      - benchmark/data/accounting
+    run:
+      mem0_agent: {}
 
 # === Execution ===
 max_cases: null
