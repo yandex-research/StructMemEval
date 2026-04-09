@@ -14,6 +14,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from openai import OpenAI
+from httpx import Client
+from openai._base_client import DEFAULT_TIMEOUT, DEFAULT_CONNECTION_LIMITS
 from tqdm import tqdm
 
 # Load .env from project root
@@ -50,7 +52,13 @@ def main():
     model = os.environ.get('JUDGE_MODEL', 'gpt-4o')
     api_key = os.environ.get('OPENAI_API_KEY')
     base_url = os.environ.get('OPENAI_BASE_URL') or None
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    http_client = Client(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+    client = OpenAI(api_key=api_key, base_url=base_url, http_client=http_client)
     print(f"Using judge model: {model}")
 
     # Scan all eval_results* directories (supports nested experiment subdirs)
