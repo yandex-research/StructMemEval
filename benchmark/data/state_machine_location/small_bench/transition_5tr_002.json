@@ -1,0 +1,167 @@
+{
+  "case_id": "transition_5tr_002",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Edinburgh",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in New Town, Edinburgh. The Georgian architecture is stunning!"
+        },
+        {
+          "role": "assistant",
+          "content": "Edinburgh is beautiful! What's your breakfast like?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine is porridge with honey at The Pantry on Stockbridge."
+        },
+        {
+          "role": "assistant",
+          "content": "Scottish porridge - the perfect start!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Havana",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Vedado, Havana for a music documentary!"
+        },
+        {
+          "role": "assistant",
+          "content": "Havana! What's breakfast there?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be Cuban coffee and tostadas at a local cafeteria."
+        },
+        {
+          "role": "assistant",
+          "content": "Cuban coffee is the strongest!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Moving to Reykjavik",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Laugavegur, Reykjavik for a nature photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Iceland! Breakfast plans?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be skyr with berries at Sandholt Bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "Icelandic skyr is so healthy!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Mumbai",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Bandra, Mumbai for a Bollywood research project!"
+        },
+        {
+          "role": "assistant",
+          "content": "Mumbai! What's your breakfast?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be vada pav and cutting chai at a street stall."
+        },
+        {
+          "role": "assistant",
+          "content": "Mumbai street food for breakfast - authentic!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Moving to Lima",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Miraflores, Lima for a gastronomy course!"
+        },
+        {
+          "role": "assistant",
+          "content": "Peru's food capital! Breakfast?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be chicharrón sandwich at Panchita every morning."
+        },
+        {
+          "role": "assistant",
+          "content": "Chicharrón for breakfast - so Peruvian!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Auckland",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm moving to Ponsonby, Auckland for a marine biology program!"
+        },
+        {
+          "role": "assistant",
+          "content": "New Zealand! What's breakfast like?"
+        },
+        {
+          "role": "user",
+          "content": "My breakfast routine will be flat white and eggs benedict at Dizengoff!"
+        },
+        {
+          "role": "assistant",
+          "content": "Kiwi brunch culture is amazing!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Auckland",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Auckland is gorgeous! Water everywhere you look."
+        },
+        {
+          "role": "assistant",
+          "content": "How's Ponsonby?"
+        },
+        {
+          "role": "user",
+          "content": "Love it! My neighbor Aroha teaches me about Maori culture and history."
+        },
+        {
+          "role": "assistant",
+          "content": "What wonderful cultural exchange!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Auckland (Ponsonby), your breakfast is flat white and eggs benedict at Dizengoff. The answer should NOT mention breakfast from your previous cities (Edinburgh porridge, Havana Cuban coffee, Reykjavik skyr, Mumbai vada pav, or Lima chicharrón)."
+      }
+    }
+  ]
+}

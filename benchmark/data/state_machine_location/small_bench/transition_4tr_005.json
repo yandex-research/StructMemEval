@@ -1,0 +1,259 @@
+{
+  "case_id": "transition_4tr_005",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in El Born",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in El Born, Barcelona. The gothic architecture and beach sunsets."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love morning at La Boqueria market then walking to Barceloneta beach."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Jordi, a chef who brings me leftover tapas from his restaurant. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have cortado and pan con tomate at a tiny bar on Passeig del Born."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Gamla Stan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gamla Stan, Stockholm for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring antique shops in the old town then fika at Stortorget."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have kanelbulle and bryggkaffe at a tiny café on Prästgatan."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Gamla Stan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gamla Stan, Stockholm for a few weeks now. I love the colorful 17th-century buildings and narrow alleys."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Erik, an architect who shows me hidden medieval passages."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Coyoacán",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Coyoacán, Mexico City for a language immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Coyoacán market for handcrafts and street food."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chilaquiles verdes and café de olla at a local fonda."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Coyoacán",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Coyoacán, Mexico City for a few weeks now. I love the colorful colonial houses and Frida Kahlo museum nearby."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Elena, a muralist who shows me hidden street art around the barrio."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Bondi",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Bondi, Sydney for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be sunrise yoga on Bondi Beach followed by brunch at Bills."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have açaí bowl and flat white at a beachside café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Bondi",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Bondi, Sydney for a few weeks now. I love the coastal walk and beach lifestyle."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Liam, a surf instructor who is teaching me to ride waves."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Shimokitazawa",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shimokitazawa, Tokyo for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be thrift shopping for vintage denim then live jazz at a tiny bar."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have onigiri and cold brew from a hidden café on a back alley."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Shimokitazawa",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Shimokitazawa, Tokyo for a few weeks now. I love the indie record shops and narrow bohemian lanes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Yuki, a manga artist who shows me her studio above a ramen shop."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "Who is my neighbor based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Shimokitazawa, Tokyo, your neighbor is Yuki, a manga artist who shows me her studio above a ramen shop. The answer should NOT mention neighbors from your previous cities (El Born Jordi, Gamla Stan Erik, Coyoacán Elena, Bondi Liam)."
+      }
+    }
+  ]
+}

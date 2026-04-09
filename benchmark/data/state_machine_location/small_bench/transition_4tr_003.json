@@ -1,0 +1,259 @@
+{
+  "case_id": "transition_4tr_003",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Le Marais",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Le Marais, Paris. The old buildings and hidden courtyards."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love visiting Marché des Enfants Rouges for fresh crêpes."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Madame Dupont, an artist who invites me for wine evenings. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have croissant and café crème at the boulangerie on Rue des Rosiers."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Alfama",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Alfama, Lisbon for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing Feira da Ladra flea market for vintage records."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have pastel de nata and galão at the corner bakery."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Alfama",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Alfama, Lisbon for a few weeks now. I love the cobblestone streets and tram sounds."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Maria, a retired Fado singer who teaches me Portuguese slang."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Gracia",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Gracia, Barcelona for a language immersion program!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Mercat de l'Abaceria then walking to Park Güell."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have bikini sandwich and café con leche at a plaça terrace."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Gracia",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Gracia, Barcelona for a few weeks now. I love the village-like plazas and Gaudí mosaics nearby."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Montse, a flamenco dancer who practices on the rooftop."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Recoleta",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Recoleta, Buenos Aires for a startup opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing the Feria de Recoleta artisan market by the cemetery."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have facturas and submarino at a grand confitería on Avenida Alvear."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Recoleta",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Recoleta, Buenos Aires for a few weeks now. I love the French-style mansions and jacaranda-lined streets."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Valentina, a psychoanalyst who explains Argentine culture over mate."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Shoreditch",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Shoreditch, London for a research fellowship!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing Columbia Road Flower Market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have full English and flat white at Allpress Espresso."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Shoreditch",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Shoreditch, London for a few weeks now. I love the mix of old pubs and trendy coffee shops."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor James, a DJ who plays records at weird hours but shares great music."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What do I usually have for breakfast based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Shoreditch, London, your breakfast is full English and flat white at Allpress Espresso. The answer should NOT mention breakfast from your previous cities (Le Marais croissant and café crème, Alfama pastel de nata and galão, Gracia bikini sandwich and café con leche, Recoleta facturas and submarino)."
+      }
+    }
+  ]
+}

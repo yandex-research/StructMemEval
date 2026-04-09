@@ -1,0 +1,259 @@
+{
+  "case_id": "transition_4tr_004",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in Fitzroy",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in Fitzroy, Melbourne. The laneway street art and amazing coffee culture."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love visiting Rose Street Artists Market then hitting Brunswick Street."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Liam, a barista who gets me into secret coffee tastings. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have smashed avo and long black at Industry Beans."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Jordaan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Jordaan, Amsterdam for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting Noordermarkt for organic cheese and flowers."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have stroopwafel and espresso at Winkel 43."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Jordaan",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Jordaan, Amsterdam for a few weeks now. I love the narrow houses and canal bridges."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Anna, who has a houseboat and takes me on canal trips."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Hongdae",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Hongdae, Seoul for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be browsing independent record shops and catching busker performances."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have kimchi jjigae and rice at a 24-hour jjigaezip."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Hongdae",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Hongdae, Seoul for a few weeks now. I love the neon-lit streets and live music scene."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ji-woo, a K-indie musician who takes me to underground gigs."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Palermo Soho",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Palermo Soho, Buenos Aires for a photography project!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be asado at a local parrilla then browsing Plaza Serrano craft fair."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have medialunas and cortado at a classic confitería."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Palermo Soho",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Palermo Soho, Buenos Aires for a few weeks now. I love the wide boulevards and steakhouse aromas."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Diego, a tango instructor who teaches me milonga steps."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Bondi",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Bondi, Sydney for a consulting contract!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be sunrise yoga on Bondi Beach followed by brunch at Bills."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have açaí bowl and flat white at a beachside café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Bondi",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Bondi, Sydney for a few weeks now. I love the coastal walk and beach lifestyle."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Liam, a surf instructor who is teaching me to ride waves."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Bondi, Sydney, your Saturday activity is sunrise yoga on Bondi Beach followed by brunch at Bills. The answer should NOT mention activities from your previous cities (Fitzroy visiting Rose Street Artists Market, Jordaan visiting Noordermarkt for organic cheese, Hongdae browsing independent record shops and ca, Palermo Soho asado at a local parrilla)."
+      }
+    }
+  ]
+}
