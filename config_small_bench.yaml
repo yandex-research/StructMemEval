@@ -31,37 +31,7 @@ mem_agent:
 # === Experiments ===
 experiments:
   - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
-      - benchmark/data/state_machine_location/small_bench
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
-      - benchmark/data/tree_based/small_bench
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash
-    api_key: ${LLM_PROVIDER_API_KEY}
-    base_url: ${LLM_PROVIDER_BASE_URL}
-    data_dirs:
-      - benchmark/data/recommendations/benchmark_data
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-  - name: gemini-3.1-flash
-    model: google/gemini-3.1-flash
+    model: google/gemini-3.1-flash-lite-preview
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:

@@ -205,6 +205,8 @@
     "role": "user",
     "content": "Bob: Breakfast tomorrow is included with our hotel stay."
   }
+]
+}
 ],
 "queries": [
     {
@@ -214,8 +216,6 @@
       {"text": "Settlement: Charlie -> Bob : 198.00 EUR, Alice -> Bob : 12.00 EUR"},
       {"text": "Settlement: Alice -> Bob : 176.50 EUR, Charlie -> Bob : 65.50 EUR"}
       ]
-    }
-  ]
     }
   ]
 }
