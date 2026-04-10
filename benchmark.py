@@ -271,7 +271,7 @@ def initialize_mem_agent(mem_agent_config: dict, experiment: Experiment, prompt_
 # ============================================================================
 
 def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
-                                start: int = 0, end: int = -1, infer: bool = False):
+                                start: int = 0, end: int = None, infer: bool = False):
     """Load user messages into mem0.
 
     Args:
@@ -294,7 +294,7 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
     print(f"✓ Loaded {len(user_messages)} messages")
 
 import traceback
-def load_user_messages_to_agent(agent: Agent, sessions: list, start: int = 0, end: int = -1, verbose: bool = False):
+def load_user_messages_to_agent(agent: Agent, sessions: list, start: int = 0, end: int = None, verbose: bool = False):
     """Load user messages into mem-agent"""
     user_messages = []
     for session in sessions:
@@ -615,7 +615,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
 
 def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: str,
                                       loading_prompt: str, experiment: Experiment,
-                                      run_config: dict, start: int = 0, end: int = -1):
+                                      run_config: dict, start: int = 0, end: int = None):
     """Load user messages into mem0 via agent with add_memory tool.
 
     Args:
@@ -832,7 +832,7 @@ def run_agent_case(args) -> dict:
 def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             system_prompt_path: str, mem_agent_config: dict,
                             script_dir: Path, max_workers: int = 3,
-                            verbose: bool = False, mem_checkpoints: list[int] = [0, -1]) -> dict:
+                            verbose: bool = False, mem_checkpoints: list[int] = [0, None]) -> dict:
     """Run mem-agent benchmarks in parallel across cases with incremental saving."""
     tasks = []
     for case_file in case_files:
@@ -889,7 +889,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
     max_cases = config.get('max_cases')
     parallel_workers = config.get('parallel_workers', 1)
     verbose = config.get('verbose', False)
-    mem_checkpoints = config.get('mem_checkpoints', [0, -1])
+    mem_checkpoints = config.get('mem_checkpoints', [0, None])
     if mem_checkpoints[0] != 0:
         mem_checkpoints = [0] + mem_checkpoints
 

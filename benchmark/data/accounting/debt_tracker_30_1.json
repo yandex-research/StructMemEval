@@ -1,5 +1,5 @@
 {
-  "case_id": "30%",
+  "case_id": "accounting_30%_1",
   "sessions": [
     {
       "session_id": "session_06",
@@ -205,7 +205,9 @@
     "role": "user",
     "content": "Bob: I covered the taxi from station: \u20ac30. Alice and Charlie owe me \u20ac10 each."
   }
-],
+]
+    }
+  ],
 "queries": [
     {
       "question": "Based on the memories from our previous dialogs, calculate for each person their total spending and determine who owes money to whom for settlement. Provide a final settlement plan showing all necessary transactions to clear all debts. Format your answer as a concise list of transactions only, using the format: [Person A] pays [amount] to [Person B], etc.",
@@ -217,5 +219,3 @@
     }
   ]
     }
-    ]
-}

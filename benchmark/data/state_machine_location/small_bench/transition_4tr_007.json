@@ -1,0 +1,259 @@
+{
+  "case_id": "transition_4tr_007",
+  "sessions": [
+    {
+      "session_id": "session_01",
+      "topic": "Living in San Telmo",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I live in San Telmo, Buenos Aires. The antique shops and cobblestone streets."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds wonderful! What do you enjoy most about living there?"
+        },
+        {
+          "role": "user",
+          "content": "Every Saturday I love exploring the San Telmo Sunday antique fair then watching street tango."
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds like a great weekend routine!"
+        },
+        {
+          "role": "user",
+          "content": "My neighbor Martín, a vintage record collector who hosts milonga nights. We've become good friends."
+        },
+        {
+          "role": "assistant",
+          "content": "It's nice to have friendly neighbors!"
+        },
+        {
+          "role": "user",
+          "content": "For breakfast I usually have empanadas and mate at a parrilla on Defensa street."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds delicious!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_02",
+      "topic": "Moving to Barranco",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Barranco, Lima for a remote work opportunity!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be visiting the Barranco street art walk then ceviche at La Mar."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have chicharrón sandwich and emoliente at a corner cart."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_03",
+      "topic": "Life in Barranco",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Barranco, Lima for a few weeks now. I love the colorful bohemian houses and Pacific Ocean cliffs."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Rosa, a poet who runs open-mic nights at a local peña."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_04",
+      "topic": "Moving to Ubud",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Ubud, Bali for a company transfer!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be morning yoga class then exploring the Ubud Art Market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have nasi goreng and Balinese coffee at a warung overlooking rice terraces."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_05",
+      "topic": "Life in Ubud",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Ubud, Bali for a few weeks now. I love the rice paddies and gamelan music drifting from temples."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Ketut, a woodcarver who takes me to temple ceremonies."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_06",
+      "topic": "Moving to Vesterbro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Vesterbro, Copenhagen for an art residency!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be craft beer tasting at Mikkeller then walking to Kødbyen food halls."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have smørrebrød and filter coffee at a third-wave café."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_07",
+      "topic": "Life in Vesterbro",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Vesterbro, Copenhagen for a few weeks now. I love the meatpacking district transformation and bike lanes."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Astrid, a ceramicist who shares her studio space with me."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_08",
+      "topic": "Moving to Trastevere",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm relocating to Trastevere, Rome for a teaching position!"
+        },
+        {
+          "role": "assistant",
+          "content": "That's exciting! What are you looking forward to?"
+        },
+        {
+          "role": "user",
+          "content": "My Saturday routine will be exploring Porta Portese flea market."
+        },
+        {
+          "role": "assistant",
+          "content": "Sounds amazing!"
+        },
+        {
+          "role": "user",
+          "content": "I hear the breakfast scene is great — I plan to have cornetto and cappuccino at the bar on Piazza di Santa Maria."
+        },
+        {
+          "role": "assistant",
+          "content": "You'll love it there!"
+        }
+      ]
+    },
+    {
+      "session_id": "session_09",
+      "topic": "Life in Trastevere",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I've been in Trastevere, Rome for a few weeks now. I love the ivy-covered walls and cobblestone alleys."
+        },
+        {
+          "role": "assistant",
+          "content": "How are you settling in?"
+        },
+        {
+          "role": "user",
+          "content": "Great! My neighbor Marco, a retired chef who teaches me to make fresh pasta."
+        },
+        {
+          "role": "assistant",
+          "content": "What a wonderful connection!"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "question": "What should I do this Saturday based on where I live now?",
+      "reference_answer": {
+        "text": "Since you currently live in Trastevere, Rome, your Saturday activity is exploring Porta Portese flea market. The answer should NOT mention activities from your previous cities (San Telmo exploring the San Telmo Sunday antique fair, Barranco visiting the Barranco street art walk, Ubud morning yoga class, Vesterbro craft beer tasting at Mikkeller)."
+      }
+    }
+  ]
+}

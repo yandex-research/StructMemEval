@@ -14,6 +14,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from openai import OpenAI
+from httpx import Client
+from openai._base_client import DEFAULT_TIMEOUT, DEFAULT_CONNECTION_LIMITS
 from tqdm import tqdm
 
 # Load .env from project root
@@ -50,7 +52,13 @@ def main():
     model = os.environ.get('JUDGE_MODEL', 'gpt-4o')
     api_key = os.environ.get('OPENAI_API_KEY')
     base_url = os.environ.get('OPENAI_BASE_URL') or None
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    http_client = Client(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+    client = OpenAI(api_key=api_key, base_url=base_url, http_client=http_client)
     print(f"Using judge model: {model}")
 
     # Scan all eval_results* directories (supports nested experiment subdirs)
@@ -92,7 +100,7 @@ def main():
             to_judge.append((f, key))
 
     print(f"Already judged: {len(existing)}, remaining: {len(to_judge)}")
-
+    successes = 0
     for eval_file, key in tqdm(to_judge, desc="Judging files"):
         with open(eval_file) as f:
             eval_data = json.load(f)
@@ -125,10 +133,17 @@ def main():
         with open(output_path, 'w') as f:
             json.dump(output, f, indent=2)
 
-        status = "PASS" if mean_score >= 0.5 else "FAIL"
+        if mean_score >= 0.5:
+            status = "PASS"
+            successes += 1
+        else:
+            status = "FAIL"
         print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
 
-    print(f"\nDone! Results in {results_dir}")
+    print(f"\nDone! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
+    output_path = results_dir / f"0judge_total.json"
+    with open(output_path, 'w') as f:
+        json.dump({"total_score" : successes / len(to_judge)}, f, indent=2)
 
 
 if __name__ == "__main__":

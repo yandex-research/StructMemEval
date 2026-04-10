@@ -6,7 +6,7 @@ user_id: benchmark_user_tree_based
 
 prompts:
   mem0_agent:
-    loading: prompts/mem0_agent_loading_hint.txt
-    query: prompts/mem0_agent_query_hint.txt
+    loading: ../prompts/mem0_agent_loading_hint.txt
+    query: ../prompts/mem0_agent_query_hint.txt
   mem_agent:
-    system_prompt: prompts/system_prompt_tree_based.txt
+    system_prompt: ../prompts/system_prompt_tree_based.txt
