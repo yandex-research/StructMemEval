@@ -1016,8 +1016,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             if parallel_workers > 1:
                 status = run_mem_agent_parallel(
                     dataset.case_files, experiment, dataset.mem_agent_system_prompt,
-                    config['mem_agent'], script_dir, output_dir, timestamp,
-                    parallel_workers, verbose, mem_checkpoints,
+                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints,
                 )
                 agent_count = status.get("success_count", 0)
             else:
