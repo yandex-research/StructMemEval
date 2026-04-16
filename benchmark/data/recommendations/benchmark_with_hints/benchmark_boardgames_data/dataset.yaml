@@ -1,0 +1,12 @@
+## Dataset: RecSys Boardgames
+## Tests memory systems on recommendations and preferences statistics over dialogue
+
+collection_name: benchmark_recommendations_boardgames
+user_id: benchmark_user_recommendations_boardgames
+
+prompts:
+  mem0_agent:
+    loading: ../../../../prompts/mem0_agent_loading_hint.txt
+    query: ../../../../prompts/mem0_agent_query_hint.txt
+  mem_agent:
+    system_prompt: ../../../../prompts/recommendations_prompts/prompts_boardgames/system_prompt_boardgames_statistics_hint.txt
