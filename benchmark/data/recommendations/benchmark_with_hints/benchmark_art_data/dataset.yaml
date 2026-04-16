@@ -1,0 +1,12 @@
+## Dataset: RecSys Art
+## Tests memory systems on recommendations and preferences statistics over dialogue
+
+collection_name: benchmark_recommendations_art
+user_id: benchmark_user_recommendations_art
+
+prompts:
+  mem0_agent:
+    loading: ../../../../prompts/mem0_agent_loading_hint.txt
+    query: ../../../../prompts/mem0_agent_query_hint.txt
+  mem_agent:
+    system_prompt: ../../../../prompts/recommendations_prompts/prompts_art/system_prompt_art_statistics_hint.txt
