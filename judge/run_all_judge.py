@@ -43,7 +43,7 @@ def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict)
 
 def main():
     script_dir = Path(__file__).parent
-    results_dir = script_dir / "results_test"
+    results_dir = script_dir / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
 
     prompt_template = load_prompt(script_dir / "prompt.txt")
