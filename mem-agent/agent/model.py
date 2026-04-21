@@ -1,3 +1,5 @@
+import time
+import sys
 from openai import OpenAI
 from pydantic import BaseModel
 
@@ -40,6 +42,7 @@ def get_model_response(
         model: str = OPENROUTER_STRONG_MODEL,
         client: Optional[OpenAI] = None,
         use_vllm: bool = False,
+        max_retries: int = 10
 ) -> Union[str, BaseModel]:
     """
     Get a response from a model using OpenRouter or vLLM, with optional schema for structured output.
@@ -74,22 +77,27 @@ def get_model_response(
         messages.append(_as_dict(ChatMessage(role=Role.USER, content=message)))
     else:
         messages = [_as_dict(m) for m in messages]
+    for attempt in range(max_retries):
+        if use_vllm:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                #stop=["</reply>", "</python>"]
+            )
 
-    if use_vllm:
-        completion = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            #stop=["</reply>", "</python>"]
-        )
-
-        return completion.choices[0].message.content
-    else:
-        completion = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            #stop=["</reply>", "</python>"]
-        )
-        try:
             return completion.choices[0].message.content
-        except:
-            return completion.response['choices'][0]['message']['content']
+        else:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                #stop=["</reply>", "</python>"]
+            )
+            try:
+                response = completion.choices[0].message.content
+            except:
+                response = completion.response['choices'][0]['message']['content']
+            if response is not None:
+                return response
+
+            print("BAD COMPLETION", completion, f"retrying in {2 ** (attempt + 1)} s", file=sys.stderr)
+            time.sleep(2 ** (attempt + 1))
