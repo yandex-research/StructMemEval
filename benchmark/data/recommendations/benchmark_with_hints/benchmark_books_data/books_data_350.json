@@ -722,201 +722,245 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q1_unanimous_praise",
-      "question": "Which authors or books did I praise in every single conversation where they were mentioned, with no negative comments at all?",
-      "reference_answer": {
-        "text": "Seven authors/books received unanimous praise: Brandon Sanderson (praised for magic systems, reliable endings, character depth), Stephen King (praised for ordinary characters and psychological horror), Kristin Hannah (The Nightingale praised for emotional truth), Markus Zusak (The Book Thief praised for weaving history into character experience), TJ Klune (The House in the Cerulean Sea recommended as a bridge book), Beth O'Leary (The Flatshare praised for avoiding artificial drama and slow-burn romance), and Shirley Jackson (The Haunting of Hill House praised as perfect atmospheric horror). All share a focus on authentic characters serving emotional truth.",
-        "required_facts": ["sanderson_preference", "king_appreciation", "historical_accuracy_balance", "historical_fiction_balance", "romance_bookclub", "romance_character_development", "horror_atmosphere"],
-        "evaluation_criteria": [
-          "Lists all seven correctly",
-          "Identifies common thread (character authenticity)"
-        ]
+      {
+        "query_id": "q01_adaptation_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the five main literary genres I discussed (Fantasy, Romance, Horror, Historical Fiction, Poetry) where I explicitly stated that film or television adaptations struggle to capture the internal thoughts or psychological elements of the books?",
+        "reference_answer": {
+          "text": "The exact fraction is 2/5. You explicitly discussed this struggle for Fantasy and Horror adaptations.",
+          "required_facts": [
+            "fantasy_adaptation_quality",
+            "horror_adaptation",
+            "romance_subgenre_preference",
+            "historical_fiction_balance",
+            "poetry_format_preference"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact fraction 2/5"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_familiar_settings_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the four main fiction genres I discussed (Fantasy, Romance, Horror, Historical Fiction) where I explicitly stated a preference for settings, characters, or elements that are grounded in familiar, everyday, or modern reality over distant, alien, or ancient ones?",
+        "reference_answer": {
+          "text": "The exact fraction is 4/4. You preferred low fantasy in our world, contemporary romance, horror with ordinary neighbors, and 20th-century historical fiction over ancient settings.",
+          "required_facts": [
+            "low_fantasy_preference",
+            "romance_subgenre_preference",
+            "king_appreciation",
+            "historical_setting_preference"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact fraction 4/4"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_abandonment_fraction",
+        "question": "Based on my discussions, what is the exact fraction (e.g., X/Y) of the specific instances where I explicitly stated I abandoned, gave up on, couldn't finish, or wanted to throw a book, where the reason was specifically due to either graphic violence or characters making stupid decisions to create artificial drama?",
+        "reference_answer": {
+          "text": "The exact fraction is 2/5. Out of 5 mentioned instances of abandoning or throwing a book, exactly 2 were for graphic violence or artificial drama.",
+          "required_facts": [
+            "fantasy_satisfaction",
+            "romance_tropes",
+            "horror_content_preferences",
+            "historical_setting_preference",
+            "historical_language_barrier"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact fraction 2/5"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_independent_characters_count",
+        "question": "How many distinct fiction genres did I explicitly praise because their best stories focus on characters who possess their own distinct voices, independent goals, or ordinary relatable lives before or alongside the main plot, history, or relationship? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 4 genres (Epic Fantasy, Romance, Horror, and Historical Fiction).",
+          "required_facts": [
+            "epic_fantasy_preference",
+            "romance_character_development",
+            "king_appreciation",
+            "historical_fiction_balance"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact count of 4"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_reading_struggles_count",
+        "question": "In how many distinct genres did I explicitly mention struggling with, abandoning, or feeling hesitant to read certain works due to their length, density, repetitive tropes, or graphic content? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 5 genres (Fantasy, Historical Fiction, Romance, Horror, and Poetry).",
+          "required_facts": [
+            "fantasy_completion_anxiety",
+            "historical_fiction_challenge",
+            "romance_fatigue",
+            "horror_content_preferences",
+            "poetry_struggle"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact count of 5"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_emotional_depth_count",
+        "question": "Across all my discussions, how many distinct genres did I explicitly state a preference for emotional depth, internal thoughts, or psychological tension over explicit, graphic, factual, or highly scientific details? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 4 genres (Fantasy, Romance, Horror, and Historical Fiction).",
+          "required_facts": [
+            "fantasy_vs_sci_fi",
+            "romance_writing_quality",
+            "horror_appreciation",
+            "historical_accuracy_balance"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact count of 4"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_trusted_author_reasons_count",
+        "question": "Provide the exact count of specific reasons I explicitly gave for why I trust and enjoy the epic fantasy author known for his reliable endings and massive crossover series.",
+        "reference_answer": {
+          "text": "Exactly 3 reasons (he creates logical/consistent magic systems, he ties up loose ends/delivers on promises without cliffhangers, and his characters all feel distinct even with dozens of viewpoints).",
+          "required_facts": [
+            "fantasy_world_building",
+            "sanderson_preference",
+            "epic_fantasy_preference"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact count of 3"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_density_struggle_mc",
+        "question": "Which of the following ranges represents the exact number of genres I explicitly mentioned struggling with or avoiding due to 'dense' details, 'overwhelming' character counts, or 'intimidating' density of meaning? A) 0-1. B) 2-3. C) 4-5.",
+        "reference_answer": {
+          "text": "The correct option is B (2-3). You explicitly mentioned struggling with density or overwhelming amounts in exactly 3 genres: Epic Fantasy, Historical Fiction, and Poetry.",
+          "required_facts": [
+            "epic_fantasy_preference",
+            "historical_fiction_challenge",
+            "poetry_struggle"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_adaptation_critique_mc",
+        "question": "Based on my discussions, which of the following best describes my consistent critique of film and television adaptations across multiple genres? A) They frequently change the historical setting to appeal to modern audiences. B) They struggle to translate internal monologues, interior dread, and complex world-building into a visual medium. C) They often replace slow-burn romance with insta-love to save screen time.",
+        "reference_answer": {
+          "text": "The correct option is B. You explicitly stated that visual media struggles with the internal thoughts and complex world-building in fantasy, and misses the psychological subtlety and interior dread in horror.",
+          "required_facts": [
+            "fantasy_adaptation_quality",
+            "horror_adaptation",
+            "horror_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_pacing_preference_mc",
+        "question": "Which of the following best summarizes my explicitly stated preferences for pacing and character development across fantasy, romance, and horror? A) I prefer fast-paced, action-heavy plots with instant connections to keep me hooked. B) I prioritize slow, earned character evolution, whether it's building trust, developing a slow-burn romance, or establishing ordinary lives before introducing terror. C) I enjoy when authors skip the mundane details and immediately introduce the main conflict or magical elements.",
+        "reference_answer": {
+          "text": "The correct option is B. You praised a fantasy character for slowly learning to trust, preferred slow-burn romance over insta-love, and valued horror that establishes believable, ordinary lives before the horror starts.",
+          "required_facts": [
+            "fantasy_character_depth",
+            "slow_burn_preference",
+            "king_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_worldbuilding_philosophy_mc",
+        "question": "Which of the following best describes my philosophy on how authors should handle complex world-building, historical research, and magic systems? A) They should be as detailed and prominent as possible, even if it slows down the plot. B) They should be entirely replaced by emotional character arcs to avoid confusing the reader. C) They should feel consistent and grounded, but seamlessly serve the character's emotional journey rather than overwhelming the narrative.",
+        "reference_answer": {
+          "text": "The correct option is C. You praised magic systems that are logical but grounded, appreciated historical research woven seamlessly into the narrative rather than reading like a textbook, and disliked when world-building overshadowed romance.",
+          "required_facts": [
+            "fantasy_world_building",
+            "historical_research_appreciation",
+            "fantasy_romance_blend"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_dealbreakers_mc",
+        "question": "Which of the following combinations of elements represents strict 'dealbreakers' that will cause me to avoid or abandon a book, based on my explicit statements? A) Unfinished series, graphic violence against women, and artificial drama caused by stupid decisions. B) Slow-burn romance, 20th-century settings, and ordinary characters. C) Magical realism, audio poetry, and standalone novels.",
+        "reference_answer": {
+          "text": "The correct option is A. You explicitly stated you avoid or abandon books due to unfinished series, graphic violence against women, and characters making stupid decisions for artificial drama.",
+          "required_facts": [
+            "fantasy_completion_anxiety",
+            "horror_content_preferences",
+            "romance_tropes"
+          ],
+          "evaluation_criteria": [
+            "Selects Option A"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_familiar_settings_list",
+        "question": "Name 3 distinct genres where I explicitly stated a preference for stories grounded in modern, familiar, or 20th-century reality rather than entirely new, alien, or ancient settings.",
+        "reference_answer": {
+          "text": "1) Fantasy (low fantasy in our world). 2) Romance (contemporary romance). 3) Historical Fiction (20th-century settings).",
+          "required_facts": [
+            "low_fantasy_preference",
+            "romance_subgenre_preference",
+            "historical_setting_preference"
+          ],
+          "evaluation_criteria": [
+            "Names Fantasy",
+            "Names Romance",
+            "Names Historical Fiction"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_obscured_emotion_list",
+        "question": "Name 3 specific literary genres where I explicitly criticized authors or specific books for allowing the sheer volume of details, characters, or repetitive tropes to obscure the emotional connection or resolution of the story.",
+        "reference_answer": {
+          "text": "1) Epic Fantasy (too many characters/meandering plots). 2) Historical Fiction (dense historical details/language). 3) Romance (tropes blending together causing romance fatigue).",
+          "required_facts": [
+            "epic_fantasy_preference",
+            "historical_fiction_challenge",
+            "romance_fatigue"
+          ],
+          "evaluation_criteria": [
+            "Names Epic Fantasy",
+            "Names Historical Fiction",
+            "Names Romance"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_internal_experience_list",
+        "question": "Name 3 distinct genres where I emphasized that the internal or emotional experience of the characters is more important to me than explicit, external, or scientifically accurate details.",
+        "reference_answer": {
+          "text": "1) Horror (psychological tension over explicit gore). 2) Romance (emotional depth over steamy scenes). 3) Historical Fiction (emotional truth over perfect historical accuracy).",
+          "required_facts": [
+            "horror_appreciation",
+            "romance_writing_quality",
+            "historical_accuracy_balance"
+          ],
+          "evaluation_criteria": [
+            "Names Horror",
+            "Names Romance",
+            "Names Historical Fiction"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q2_complete_rejection",
-      "question": "Which authors or books did I mention only to criticize, with no redeeming qualities noted?",
-      "reference_answer": {
-        "text": "Four received exclusively negative comments: Patrick Rothfuss (you refuse to start Kingkiller Chronicle due to being unfinished), Hilary Mantel (Wolf Hall criticized for dense prose and period language), Sarah J. Maas's A Court of Thorns and Roses (romance overshadowed fantasy), and Christina Lauren's The Unhoneymooners (characters made stupid decisions for artificial drama). Additionally, ancient historical fiction as a category was called 'emotionally distant' with no positive examples.",
-        "required_facts": ["fantasy_completion_anxiety", "historical_language_barrier", "fantasy_romance_blend", "romance_tropes", "historical_setting_preference"],
-        "evaluation_criteria": [
-          "Lists all four rejected",
-          "Includes ancient historical fiction category",
-          "Notes zero positive pattern"
-        ]
-      }
-    },
-    {
-      "query_id": "q3_mixed_reviews",
-      "question": "Which authors or books received both positive and negative feedback in different conversations? What was the nature of the praise and criticism?",
-      "reference_answer": {
-        "text": "One author received clearly mixed reviews: Hilary Mantel's Wolf Hall (praised for beautiful prose but criticized for being exhausting and dense). Romance novels as a category also received mixed treatment: you enjoy them when character‑driven, but criticize them for blending together with the same tropes, leading to 'romance fatigue.'",
-        "required_facts": ["historical_fiction_challenge", "historical_language_barrier", "romance_fatigue"],
-        "evaluation_criteria": [
-          "Identifies Wolf Hall and romance category",
-          "Summarizes both praise and criticism",
-          "Distinguishes from purely positive/negative"
-        ]
-      }
-    },
-    {
-      "query_id": "q4_logical_magic_systems",
-      "question": "Which authors did I praise for creating logical, consistent magic systems? What specific qualities did I highlight?",
-      "reference_answer": {
-        "text": "You praised Brandon Sanderson for magic systems that feel 'logical and consistent,' with costs and boundaries that make victories feel earned. You also mentioned Juliet Marillier for balancing world‑building with romance. You contrasted this with science fiction, saying magic feels more boundless than scientific explanations.",
-        "required_facts": ["fantasy_world_building", "fantasy_vs_sci_fi", "fantasy_romance_blend"],
-        "evaluation_criteria": [
-          "Names Sanderson as primary example",
-          "Mentions logical consistency and earned victories",
-          "Notes contrast with sci‑fi"
-        ]
-      }
-    },
-    {
-      "query_id": "q5_authentic_evolution_criterion",
-      "question": "What is the key factor that makes character development feel 'earned' to me, and which character exemplifies this?",
-      "reference_answer": {
-        "text": "The key factor is that you get to witness the character's growth over time—their decisions and struggles must be shown, not just announced. You cited Vin from Mistborn as the perfect example: she doesn't just learn magic; she learns to trust people through small moral choices, making her journey from street urchin to leader feel earned. This contrasts with insta‑love or sudden changes without buildup.",
-        "required_facts": ["slow_burn_preference", "fantasy_character_depth", "romance_tropes"],
-        "evaluation_criteria": [
-          "Identifies witnessing/showing vs. telling",
-          "Names Vin as example",
-          "Explains why it feels earned"
-        ]
-      }
-    },
-    {
-      "query_id": "q6_biography_necessity",
-      "question": "In your view, is it necessary to know an author's biography or intent to appreciate a book? What examples support your view?",
-      "reference_answer": {
-        "text": "You believe authorial intent is helpful but never necessary. Great books should work on their own. You praised adaptations that capture the 'emotional spirit' without replicating every detail, and you value horror authors like Jackson and King who trust readers to feel fear without explicit instruction. Conversely, you dislike books where you feel the author didn't have a clear destination—you want the story itself to convey purpose without external explanation.",
-        "required_facts": ["fantasy_adaptation_quality", "horror_adaptation", "fantasy_satisfaction", "horror_content_preferences"],
-        "evaluation_criteria": [
-          "States 'helpful never necessary'",
-          "Uses adaptation and horror examples",
-          "Contrasts with aimless storytelling"
-        ]
-      }
-    },
-    {
-      "query_id": "q7_standalone_vs_series",
-      "question": "How do you decide whether to commit to a long series versus a standalone novel? Which authors fit each category?",
-      "reference_answer": {
-        "text": "You are hesitant to start long series (10+ books) because you worry they might never be completed. For series, you require proven reliability—Sanderson's Stormlight Archive is acceptable because he ties up loose ends and has a track record. Standalones like The Nightingale, The Book Thief, and The House in the Cerulean Sea are safe choices because they deliver complete arcs without multi‑year commitment.",
-        "required_facts": ["fantasy_series_length", "fantasy_completion_anxiety", "sanderson_preference", "historical_accuracy_balance", "romance_bookclub"],
-        "evaluation_criteria": [
-          "Explains trust‑based distinction",
-          "Names appropriate authors for each",
-          "Includes anxiety about unfinished series"
-        ]
-      }
-    },
-    {
-      "query_id": "q8_format_essentialism",
-      "question": "For which genres did you explicitly state that audio format significantly improved your experience, and why?",
-      "reference_answer": {
-        "text": "Only for poetry did you explicitly state that audio is essential. You found print poetry overwhelming and intimidating due to density, but audio made it accessible by letting you receive the poem's rhythm without pressure to decode. For fantasy and horror, you prefer print to absorb world‑building and control pacing for atmosphere.",
-        "required_facts": ["poetry_format_preference", "fantasy_preference", "horror_atmosphere"],
-        "evaluation_criteria": [
-          "Identifies poetry as the key genre",
-          "Explains why audio helps (removes decoding pressure)",
-          "Notes preference for print in other genres"
-        ]
-      }
-    },
-    {
-      "query_id": "q9_slow_engagement_activities",
-      "question": "What habits or preferences reveal that you value slow, immersive reading? Give examples from our talks.",
-      "reference_answer": {
-        "text": "You reread favorite books (Mistborn three times), you return to challenging prose (Wolf Hall despite struggles), and you create dedicated reading time (rainy Saturdays, fireplace, reading nook). You also emphasize connecting with characters' internal monologues and absorbing complex world‑building, which require uninterrupted attention.",
-        "required_facts": ["fantasy_preference", "historical_fiction_challenge", "fantasy_adaptation_quality"],
-        "evaluation_criteria": [
-          "Lists rereading, persistence, dedicated time",
-          "Connects to specific examples",
-          "Highlights need for deep attention"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_truth_mentions",
-      "question": "I often use words like 'truth' or 'authentic' to describe what I value. Can you give three examples of books or authors where I emphasized this quality?",
-      "reference_answer": {
-        "text": "You used these concepts for: 1) Historical fiction (The Nightingale and The Book Thief) where you value 'emotional truth' over strict accuracy. 2) Character‑driven romance (The Flatshare) where characters have independent goals, making the romance feel authentic. 3) Horror (Stephen King) whose ordinary, believable characters make the terror feel real. In each case, you contrast authenticity with artificial drama or dry facts.",
-        "required_facts": ["historical_accuracy_balance", "romance_character_development", "king_appreciation"],
-        "evaluation_criteria": [
-          "Provides three distinct examples",
-          "Explains what made them authentic",
-          "Notes contrast with artificial alternatives"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_complete_philosophy",
-      "question": "Based on everything you've shared, what are the core principles of your reading philosophy? Summarize in your own words.",
-      "reference_answer": {
-        "text": "Your reading philosophy rests on three pillars: 1) Character authenticity above all—characters must make believable choices and evolve; artificial drama ruins any book. 2) Emotional accessibility over technical precision—you prefer stories that connect emotionally, even if they take liberties with facts or world‑building complexity. 3) For long series, you require confidence in completion—you won't invest time in unfinished or open‑ended epics. These principles apply across all genres and predict whether you'll love or abandon a book.",
-        "required_facts": ["romance_tropes", "fantasy_character_depth", "historical_accuracy_balance", "fantasy_completion_anxiety"],
-        "evaluation_criteria": [
-          "Identifies character authenticity",
-          "Identifies emotional accessibility",
-          "Identifies completion reliability for series",
-          "Shows cross‑genre applicability"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_rank_genres_by_consistency",
-      "question": "Rank your top four genres by how consistently they satisfy you. Use the number of positive vs. negative conversations as evidence.",
-      "reference_answer": {
-        "text": "Ranking by positive/negative ratio (counting sessions where the overall takeaway was favorable, even with minor critiques): 1) Fantasy (10 positive, 2 negative) – highest satisfaction due to reliable authors like Sanderson. 2) Horror (4 positive, 1 negative) – strong preference for psychological over gore. 3) Romance (6 positive, 2 negative) – high when character‑driven, but sometimes suffers from trope fatigue. 4) Historical Fiction (4 positive, 2 negative) – works only when emotionally accessible (20th century) and fails when dense (Wolf Hall). Poetry is too few sessions to rank but is challenging (1 positive, 1 negative).",
-        "required_facts": ["fantasy_preference", "fantasy_satisfaction", "fantasy_series_length", "horror_appreciation", "horror_content_preferences", "romance_character_development", "romance_fatigue", "historical_fiction_balance", "historical_fiction_challenge", "poetry_struggle", "poetry_format_preference"],
-        "evaluation_criteria": [
-          "Provides correct order",
-          "Gives approximate positive/negative counts",
-          "Explains reasons for each genre",
-          "Notes methodology for counting"
-        ]
-      }
-    },
-    {
-      "query_id": "q13_recommend_next_read",
-      "question": "If you could only read one book next month by either Sanderson, King, or Hannah, which would you choose and why, based on your stated preferences?",
-      "reference_answer": {
-        "text": "Choose Sanderson. He uniquely combines your top criteria: logical magic systems, authentic character evolution (Vin in Mistborn), and guaranteed satisfying conclusions. King excels at psychological horror but is a narrower genre. Hannah delivers emotional truth in historical fiction, but that genre has a lower success rate for you. Sanderson delivers all your core values in one package.",
-        "required_facts": ["sanderson_preference", "fantasy_world_building", "fantasy_character_depth", "fantasy_satisfaction", "king_appreciation", "historical_accuracy_balance"],
-        "evaluation_criteria": [
-          "Recommends Sanderson",
-          "Cites specific preferred qualities",
-          "Compares with other authors"
-        ]
-      }
-    },
-    {
-      "query_id": "q14_most_transformative_language",
-      "question": "Which authors or books did you describe as showing profound character transformation or growth? Give examples.",
-      "reference_answer": {
-        "text": "You highlighted: 1) Vin in Mistborn (Sanderson) – she evolves from street urchin to leader through moral choices. 2) The Nightingale (Hannah) – the sisters grow through wartime struggles. 3) Your general principle that you want characters to 'grow and change' through moral struggles. These all emphasize transformation earned through authentic experience.",
-        "required_facts": ["fantasy_character_depth", "historical_accuracy_balance"],
-        "evaluation_criteria": [
-          "Names Vin and The Nightingale",
-          "Describes the nature of transformation",
-          "Connects to general principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_recommend_blind_buy",
-      "question": "Which author would you trust most to buy a new book from without reading any reviews? Justify with your trust criteria.",
-      "reference_answer": {
-        "text": "Brandon Sanderson is your most trusted author. He meets all your trust criteria: 100% completion reliability (ties up loose ends), consistent quality praised across multiple conversations, and alignment with your core values (logical magic, character growth, satisfying conclusions). No other author combines all three—King is genre‑specific, Hannah is genre‑specific, and Rothfuss has zero trust due to unfinished series. A blind buy of Sanderson has the highest probability of satisfaction.",
-        "required_facts": ["sanderson_preference", "fantasy_completion_anxiety", "fantasy_world_building", "fantasy_character_depth"],
-        "evaluation_criteria": [
-          "Selects Sanderson",
-          "Lists three trust criteria",
-          "Compares with others to justify"
-        ]
-      }
-    }
-  ]
+    ]
 }
