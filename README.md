@@ -35,6 +35,20 @@ cd ..
 cp mem-agent/.env .env
 ```
 
+## Install EMem
+
+```bash
+cd EMem
+
+# install dependencies
+make install
+pip install rouge_score igraph gritlm --extra-index-url https://pypi.org/simple/
+
+# set SUPPORT_JSON_SCHEMA to false
+export SUPPORT_JSON_SCHEMA=true
+
+cd ..
+```
 ## Environment Variables
 
 ```bash
