@@ -530,7 +530,7 @@
   "queries": [
       {
         "query_id": "q01_fraction_sculptors_praised",
-        "question": "What is the exact fraction (e.g., X/Y) of sculptors creating three-dimensional physical artworks I discussed whose work I evaluated purely positively, compared to the total number of such sculptors I mentioned?",
+        "question": "What is the exact fraction (e.g., X/Y) of sculptors I explicitly discussed where I praised their work positively?",
         "reference_answer": {
           "text": "You evaluated exactly 3/4 of these sculptors positively. You praised Rodin, Michelangelo, and Brancusi, but completely rejected Richard Serra.",
           "required_facts": [
@@ -631,7 +631,7 @@
       },
       {
         "query_id": "q07_count_visible_texture",
-        "question": "How many creators did I explicitly praise because their physical technique—such as visible brushstrokes, thick impasto, or rough-hewn materials—revealed the struggle, depth, or honest effort of creation? Provide the exact count.",
+        "question": "How many artists did I explicitly praise for their specific use of visible texture, thick impasto, or rough, unpolished materials? Provide the exact count.",
         "reference_answer": {
           "text": "You explicitly praised exactly 5 creators for this: Auguste Rodin, Vincent Van Gogh, Rembrandt, Paul Cézanne, and Claude Monet.",
           "required_facts": [
@@ -649,7 +649,7 @@
       },
       {
         "query_id": "q08_mc_digital_contrast",
-        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital art, screens, renders, or reproductions) as a negative contrast to praise physical, traditional artworks? A) 1-2. B) 3-5. C) 6-8.",
+        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital art, screens, renders, or reproductions) as a negative contrast to praise physical, traditional artworks? A) 1-2. B) 3-5. C) 6-8. D) 9-10",
         "reference_answer": {
           "text": "The correct option is C (6-8). You used digital technology as a negative contrast exactly 6 times across discussions about Claude Monet, Edward Hopper, Michelangelo, Vincent Van Gogh, Mark Rothko, and Paul Cézanne.",
           "required_facts": [
@@ -667,7 +667,7 @@
       },
       {
         "query_id": "q09_mc_rejected_artists",
-        "question": "Which of the following ranges represents the exact count of specific creators whose work I explicitly rejected or thoroughly criticized without expressing any mixed or positive feelings? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact count of specific creators whose work I explicitly rejected or thoroughly criticized without expressing any mixed or positive feelings? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
         "reference_answer": {
           "text": "The correct option is C (4-5). You completely rejected exactly 4 creators: Pierre-Auguste Renoir, Damien Hirst, Richard Serra, and Ai Weiwei.",
           "required_facts": [
@@ -715,21 +715,22 @@
         }
       },
       {
-        "query_id": "q12_list_sculptors_exclusion",
-        "question": "Name 3 sculptors whose physical, three-dimensional artworks I explicitly praised, ensuring that none of them are known for creating massive, immersive steel barriers that physically trap the viewer.",
-        "reference_answer": {
-          "text": "Three sculptors you praised are Auguste Rodin, Michelangelo, and Constantin Brancusi. (Richard Serra is excluded because you explicitly criticized his steel barriers).",
-          "required_facts": [
-            "rodin_positive",
-            "david_positive",
-            "brancusi_positive",
-            "serra_negative"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 correct sculptors",
-            "Excludes Richard Serra based on the negative constraint"
-          ]
-        }
+          "query_id": "q12_list_rather_than_artists",
+          "question": "Name 5 specific artists I explicitly favored using a comparative 'rather... than...' or 'give me X over Y' statement.",
+          "reference_answer": {
+            "text": "You used such comparative statements for exactly 5 artists: Auguste Rodin ('rough-hewn truth over polished lies'), Gustav Klimt ('one Klimt that overwhelms me than ten minimal pieces'), Vincent Van Gogh ('one original Van Gogh than a thousand perfect prints'), Constantin Brancusi ('Brancusi's Bird in Space over Serra's walls'), and Rembrandt ('one honest Rembrandt than a hundred perfected Instagram faces').",
+            "required_facts": [
+              "rodin_positive",
+              "klimt_positive",
+              "vangogh_positive",
+              "brancusi_positive",
+              "rembrandt_positive"
+            ],
+            "evaluation_criteria": [
+              "Names exactly 5 correct artists",
+              "Lists Rodin, Klimt, Van Gogh, Brancusi, and Rembrandt"
+            ]
+          }
       },
       {
         "query_id": "q13_list_struggle_fatigue",

@@ -762,7 +762,7 @@
         "query_id": "q03_historical_20th_century_fraction",
         "question": "What is the exact fraction (e.g., X/Y) of the explicitly named historical fiction novels I discussed that are set during the 20th century and which I praised for their emotional accessibility, compared to the total number of historical fiction novels I mentioned by name?",
         "reference_answer": {
-          "text": "The exact fraction is 4/6. Out of 6 named historical fiction novels, you praised four 20th-century novels (The Book Thief, The Nightingale, Pachinko, and All the Light We Cannot See), while criticizing the emotional distance or density of two novels set in older periods (Wolf Hall and I, Claudius).",
+          "text": "The exact fraction is 4/6 or 2/3. Out of 6 named historical fiction novels, you praised four 20th-century novels (The Book Thief, The Nightingale, Pachinko, and All the Light We Cannot See), while criticizing the emotional distance or density of two novels set in older periods (Wolf Hall and I, Claudius).",
           "required_facts": [
             "book_thief_20th_century",
             "nightingale_20th_century",
@@ -772,7 +772,7 @@
             "i_claudius_older_period"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 4/6",
+            "Provides exact fraction 4/6 or 2/3",
             "Names all 6 historical fiction novels correctly categorized by praise and period"
           ]
         }
@@ -848,9 +848,9 @@
       },
       {
         "query_id": "q08_purely_praised_mc",
-        "question": "Which of the following ranges represents the exact count of specific, named fiction books or series that I evaluated purely positively, praising their execution without expressing any struggle, abandonment, or criticism? A) 4-7. B) 8-11. C) 12-15.",
+        "question": "Which of the following ranges represents the exact count of specific, named fiction books or series that I evaluated purely positively, praising their execution without expressing any struggle, abandonment, or criticism? A) 4-6. B) 7-9. C) 10-11. D) 12-15.",
         "reference_answer": {
-          "text": "The correct option is C (12-15). You fully praised exactly 12 named books or series: Mistborn, Stormlight Archive, The Invisible Life of Addie LaRue, The Flatshare, The House in the Cerulean Sea, Get a Life, Chloe Brown, The Shining, The Haunting of Hill House, The Book Thief, The Nightingale, Pachinko, and All the Light We Cannot See.",
+          "text": "The correct option is D (12-15). You fully praised exactly 12 named books or series: Mistborn, Stormlight Archive, The Invisible Life of Addie LaRue, The Flatshare, The House in the Cerulean Sea, Get a Life, Chloe Brown, The Shining, The Haunting of Hill House, The Book Thief, The Nightingale, Pachinko, and All the Light We Cannot See.",
           "required_facts": [
             "mistborn_praised",
             "stormlight_praised",
@@ -873,7 +873,7 @@
       },
       {
         "query_id": "q09_artificial_content_mc",
-        "question": "Which of the following ranges represents the exact number of distinct instances where I explicitly criticized authors, books, or entire genres for relying on artificial, contrived, or purely explicit content rather than genuine emotional depth? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of distinct instances where I explicitly criticized authors, books, or entire genres for relying on artificial, contrived, or purely explicit content rather than genuine emotional depth? A) 1-2. B) 3-4. C) 5-6. D) 7-8",
         "reference_answer": {
           "text": "The correct option is B (3-4). You criticized exactly 3 elements for this: romance tropes creating artificial drama, steamy romance scenes lacking emotional substance, and horror relying on excessive gore or shock value.",
           "required_facts": [
@@ -937,9 +937,9 @@
       },
       {
         "query_id": "q13_fictional_characters_list",
-        "question": "Name 5 specific fictional characters I explicitly mentioned by name whose personal struggles, ambitions, or grief successfully anchored my emotional connection to their respective novels.",
+        "question": "Name 6 specific fictional characters I explicitly mentioned by name whose personal struggles, ambitions, or grief successfully anchored my emotional connection to their respective novels.",
         "reference_answer": {
-          "text": "Five characters you praised for anchoring your emotional connection are Vin, Tiffy, Leon, Danny Torrance, and Liesel. (Eleanor, Vianne, or Isabelle are also correct).",
+          "text": "Six characters you praised for anchoring your emotional connection are Vin, Tiffy, Leon, Danny Torrance, Eleanor and Liesel. (Vianne, or Isabelle are also correct).",
           "required_facts": [
             "vin_character_growth",
             "tiffy_character_ambitions",
@@ -948,16 +948,16 @@
             "liesel_grief"
           ],
           "evaluation_criteria": [
-            "Names exactly 5 characters",
+            "Names exactly 6 characters",
             "Ensures all characters were explicitly named and praised for emotional connection"
           ]
         }
       },
       {
         "query_id": "q14_alienating_conventions_list",
-        "question": "Name 4 distinct fictional genres I discussed where I explicitly identified a specific storytelling trope, structural convention, or formatting norm that frequently causes me to abandon books, experience reading fatigue, or lose emotional connection.",
+        "question": "Name 5 distinct fictional genres I discussed where I explicitly identified a specific storytelling trope, structural convention, or formatting norm that frequently causes me to abandon books, experience reading fatigue, or lose emotional connection.",
         "reference_answer": {
-          "text": "Four genres where you identified alienating conventions are Fantasy (unfinished mega-series), Romance (artificial miscommunication/repetitive tropes), Horror (excessive gore/violence against women), and Historical Fiction (dense factual dumps/period language). Poetry (dense print collections) is also acceptable.",
+          "text": "Five genres where you identified alienating conventions are Fantasy (unfinished mega-series), Romance (artificial miscommunication/repetitive tropes), Horror (excessive gore/violence against women), Historical Fiction (dense factual dumps/period language) and Poetry (dense print collections).",
           "required_facts": [
             "fantasy_completion_anxiety",
             "romance_tropes_fatigue",
@@ -966,7 +966,7 @@
             "poetry_print_barrier"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 genres",
+            "Names exactly 5 genres",
             "Maps each genre to the negative structural/formatting convention discussed"
           ]
         }

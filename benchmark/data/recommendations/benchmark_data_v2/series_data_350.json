@@ -831,7 +831,7 @@
       },
       {
         "query_id": "q09_gritty_detective_mc",
-        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
         "reference_answer": {
           "text": "The correct option is C (4-5). You explicitly praised exactly 4 series for their gritty or unglamorous bureaucratic realism: True Detective, Mindhunter, Bosch, and Slow Horses.",
           "required_facts": [
@@ -847,7 +847,7 @@
       },
       {
         "query_id": "q10_comedy_warmth_mc",
-        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You explicitly praised exactly 4 comedies for these specific traits: Parks and Recreation, The Bear, Hacks, and Fleabag.",
           "required_facts": [
@@ -895,9 +895,9 @@
       },
       {
         "query_id": "q13_scifi_emotional_list",
-        "question": "Name exactly 4 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
+        "question": "Name exactly 5 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
         "reference_answer": {
-          "text": "Four series you praised for this focus are Station Eleven, Black Mirror, Severance, and The Expanse. (Dark and Westworld are also acceptable.)",
+          "text": "Five series you praised for this focus are Station Eleven, Black Mirror, Severance, Dark and Westworld, and The Expanse.",
           "required_facts": [
             "station_eleven_positive",
             "bm_positive",
@@ -905,8 +905,8 @@
             "expanse_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 series",
-            "Ensures all 4 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
+            "Names exactly 5 series",
+            "Ensures all 5 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
           ]
         }
       },

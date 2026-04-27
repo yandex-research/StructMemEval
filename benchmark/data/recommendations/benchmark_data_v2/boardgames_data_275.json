@@ -507,9 +507,9 @@
     {
       "session_id": "session_28",
       "topic": "Rulebook Clarity",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
+      "contains_fact": true,
+      "fact_id": "rulebook_clarity_wingspan_praise",
+      "fact_quote": "Wingspan's rulebook was actually great—learned everything in 10 minutes.",
       "messages": [
         {"role": "user", "content": "Spent 45 minutes just reading the rules for a new game before we could start."},
         {"role": "assistant", "content": "That's a major friction point—did the complexity feel justified once you started playing?"},
@@ -564,9 +564,9 @@
     {
       "session_id": "session_31",
       "topic": "Component Upgrades",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
+      "contains_fact": true,
+      "fact_id": "component_praise_scythe",
+      "fact_quote": "Same reason I love the resin resource bits in Scythe.",
       "messages": [
         {"role": "user", "content": "Thinking about buying metal coins for Brass. Worth the splurge?"},
         {"role": "assistant", "content": "If you play it often, absolutely—the tactile feedback of heavy coins reinforces the economic theme."},
@@ -668,51 +668,52 @@
         }
       },
       {
-        "query_id": "q03_abstract_criticism_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of abstract strategy games I discussed that I explicitly criticized for becoming predictable or formulaic after a few plays?",
+        "query_id": "q03_complexity_depth_games",
+        "question": "Name 4 games where I explicitly discussed the relationship between rules complexity and strategic depth, either praising intuitive design or criticizing rulebook overload.",
         "reference_answer": {
-          "text": "The exact fraction is 1/3. You criticized Hive for becoming predictable, while praising the other two abstract games you discussed (Azul and Santorini).",
+          "text": "Four games discussed in this context are Twilight Imperium (intimidating rulebook), Wingspan (excellent rulebook), Robinson Crusoe (complex rulebook enabled quarterbacking) and Terraforming Mars (depth revealing through play), Scythe is also acceptable.",
           "required_facts": [
-            "abstract_game_repetition",
-            "abstract_games_appreciation",
-            "abstract_aesthetic_importance"
+            "strategy_complexity_overwhelm",
+            "rulebook_clarity_wingspan_praise",
+            "cooperative_alpha_player_problem_5",
+            "strategy_depth_appreciation"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 1/3",
-            "Identifies Hive as the criticized game and Azul/Santorini as praised"
+            "Names exactly 4 games",
+            "All named games are from {Twilight Imperium, Scythe, Wingspan, Robinson Crusoe, Terraforming Mars}",
+            "Mentions both positive and negative examples appropriately"
           ]
         }
       },
       {
-        "query_id": "q04_asymmetric_games_list",
-        "question": "Name 3 distinct strategy or cooperative games that I explicitly praised for featuring asymmetric player powers, variable factions, or separate decision boards that keep the experience fresh.",
+        "query_id": "q04_asymmetry_variability_games",
+        "question": "Name 4 games where I discussed the role of asymmetry, variable factions, or unique player powers in creating fresh experiences.",
         "reference_answer": {
-          "text": "Three games you praised for these asymmetric features are Root, Scythe, and Spirit Island.",
+          "text": "Four games are Root (asymmetric factions), Scythe (faction abilities and expansion), Spirit Island (asymmetric spirits), and Santorini (god powers variability).",
           "required_facts": [
             "strategy_variable_setup",
             "thematic_immersion_preference",
-            "cooperative_success_enjoyment"
+            "cooperative_success_enjoyment",
+            "abstract_games_appreciation"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 games",
-            "Lists Root, Scythe, and Spirit Island"
+            "Names exactly 4 games: Root, Scythe, Spirit Island, Santorini"
           ]
         }
       },
       {
-        "query_id": "q05_component_praise_mc",
-        "question": "Which of the following ranges represents the exact number of games where I or the assistant explicitly praised the quality of specific physical components (such as tiles, miniatures, resin bits, or heavy metal coins) for enhancing the tactile or thematic experience? A) 1-2. B) 3-4. C) 5-7.",
+        "query_id": "q05_engine_building_satisfaction",
+        "question": "Name 4 games where I explicitly discussed the satisfaction derived from building an engine or economy over time.",
         "reference_answer": {
-          "text": "Option B. You and the assistant explicitly praised physical components in exactly 4 games: Azul (tiles), Santorini (miniatures), Scythe (resin resource bits), and Brass (metal coins).",
+          "text": "Four games are Terraforming Mars (gradual engine payoff), Dominion (deck-building trade-offs), Brass (production chains), and Scythe (engine-building with theme).",
           "required_facts": [
-            "abstract_aesthetic_importance",
-            "abstract_games_appreciation",
-            "thematic_immersion_preference",
-            "economic_engine_appreciation_components"
+            "strategy_depth_appreciation",
+            "deck_building_appreciation",
+            "economic_engine_appreciation",
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "Selects Option B",
-            "Names Azul, Santorini, Scythe, and Brass"
+            "Names exactly 4 games: Terraforming Mars, Dominion, Brass, Scythe"
           ]
         }
       },
@@ -737,17 +738,15 @@
       },
       {
         "query_id": "q07_worker_placement_exclusion_list",
-        "question": "Name 3 worker placement games mentioned during our conversations that do NOT feature a 1920s alt-history or dieselpunk theme.",
+        "question": "Name 4 worker placement games mentioned during our conversations that do NOT feature a 1920s alt-history or dieselpunk theme.",
         "reference_answer": {
-          "text": "Three worker placement games mentioned that do not have that theme are Agricola, Caverna, and Caylus. (Lords of Waterdeep is also acceptable; Scythe is correctly excluded).",
+          "text": "Three worker placement games mentioned that do not have that theme are Agricola, Caverna, Lords of Waterdeep and Caylus. (Scythe is correctly excluded).",
           "required_facts": [
             "worker_placement_appreciation",
-            "worker_placement_caverna",
-            "worker_placement_caylus_lords",
             "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 games",
+            "Names exactly 4 games",
             "Only names Agricola, Caverna, Caylus, or Lords of Waterdeep",
             "Ensures Scythe is excluded"
           ]
@@ -770,17 +769,14 @@
           ]
         }
       },
-      {
+       {
         "query_id": "q09_worker_placement_fraction",
         "question": "What is the exact fraction (e.g., X/Y) of worker placement games discussed that I explicitly stated I had played, compared to the total number of worker placement games mentioned in our conversations?",
         "reference_answer": {
           "text": "The exact fraction is 2/5. You explicitly mentioned playing Scythe and Agricola, while the assistant recommended Caverna, Caylus, and Lords of Waterdeep, which you had not yet played.",
           "required_facts": [
             "worker_placement_appreciation",
-            "thematic_immersion_preference",
-            "worker_placement_caverna",
-            "worker_placement_caylus_lords",
-            "worker_placement_recommendations"
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
             "Provides exact fraction 2/5",
@@ -789,36 +785,36 @@
         }
       },
       {
-        "query_id": "q10_expansions_list",
-        "question": "Name 3 specific strategy games where expansions were explicitly mentioned by me or the assistant as adding meaningful decisions, new factions, or improved gameplay depth.",
+        "query_id": "q10_interaction_quality_games",
+        "question": "Name 4 games where the quality of player interaction (or lack thereof) was a key point of discussion.",
         "reference_answer": {
-          "text": "Three games where expansions were explicitly mentioned are Dominion, Scythe, and Lords of Waterdeep.",
+          "text": "Four games discussed in this context are Terraforming Mars (criticized as multiplayer solitaire), Root (praised for meaningful interaction), Spirit Island (praised for cooperative interaction), and Pandemic (criticized as a spreadsheet with no real interaction).",
           "required_facts": [
-            "deck_building_appreciation",
-            "thematic_immersion_preference",
-            "worker_placement_caylus_lords"
+            "strategy_interaction_preference",
+            "cooperative_success_enjoyment",
+            "cooperative_alpha_player_problem_1",
+            "strategy_player_agency"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 games",
-            "Lists Dominion, Scythe, and Lords of Waterdeep"
+            "Names exactly 4 games including Terraforming Mars, Root, Spirit Island, and Pandemic",
+            "Accurately identifies the nature of interaction discussed for each"
           ]
         }
       },
       {
-        "query_id": "q11_rulebook_clarity_mc",
-        "question": "Which of the following ranges represents the exact number of specific games that I explicitly discussed regarding their rulebooks or teaching experiences being either highly positive (intuitive, fast) or highly negative (intimidating, tedious)? A) 1-2. B) 3-4. C) 5-6.",
+        "query_id": "q11_learning_curve_games",
+        "question": "Name 4 games where I discussed the learning process, rulebook clarity, or how complexity affects the initial experience.",
         "reference_answer": {
-          "text": "Option C. We discussed exactly 5 specific named games regarding their rulebooks or teaching flow: Robinson Crusoe and Twilight Imperium (intimidating/negative), and Wingspan, Cascadia, and Scythe (intuitive/positive).",
+          "text": "Four games are Robinson Crusoe (intimidating rulebook), Twilight Imperium (intimidating rulebook), Wingspan (excellent rulebook), and Terraforming Mars (depth reveals itself through play rather than upfront memorization).",
           "required_facts": [
             "cooperative_alpha_player_problem_5",
             "strategy_complexity_overwhelm",
-            "strategy_depth_appreciation",
-            "rulebook_clarity_wingspan",
-            "rulebook_clarity_cascadia"
+            "rulebook_clarity_wingspan_praise",
+            "strategy_depth_appreciation"
           ],
           "evaluation_criteria": [
-            "Selects Option C",
-            "Identifies the 5 named games associated with rulebook discussions"
+            "Names exactly 4 games including Robinson Crusoe, Twilight Imperium, Wingspan, and Terraforming Mars",
+            "Captures the contrast between negative and positive learning experiences"
           ]
         }
       },
@@ -828,9 +824,7 @@
         "reference_answer": {
           "text": "You explicitly discussed the solo modes of exactly 3 games: Gaia Project, Spirit Island, and Terraforming Mars.",
           "required_facts": [
-            "solo_mode_success_gaia",
-            "solo_mode_success_spirit_island",
-            "solo_mode_terraforming_mars"
+            "solo_mode_success"
           ],
           "evaluation_criteria": [
             "Provides the exact count of 3",
@@ -840,14 +834,13 @@
       },
       {
         "query_id": "q13_optimal_player_count_mc",
-        "question": "Which of the following ranges represents the exact number of specific board games that I explicitly discussed as playing well at exactly 4 players (either as a specific recommendation or as part of a recommended range)? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of specific board games that I explicitly discussed as playing well at exactly 4 players (either as a specific recommendation or as part of a recommended range)? A) 1-2. B) 3-4. C) 5-6. D) 7-8.",
         "reference_answer": {
           "text": "Option B (3-4). You explicitly noted or were recommended exactly 4 specific games for a 4-player count: Dominion, Root, Terraforming Mars, and Just One.",
           "required_facts": [
             "deck_building_appreciation",
             "player_count_sensitivity",
-            "player_count_terraforming",
-            "party_innovation"
+            "party_game_mechanical_innovation"
           ],
           "evaluation_criteria": [
             "Selects Option B",
@@ -865,7 +858,8 @@
             "cooperative_alpha_player_problem_2",
             "cooperative_alpha_player_problem_3",
             "cooperative_alpha_player_problem_5",
-            "cooperative_alpha_player_problem_4"
+            "cooperative_alpha_player_problem_6",
+            "cooperative_alpha_player_problem_7"
           ],
           "evaluation_criteria": [
             "Names exactly 4 games",
@@ -881,8 +875,8 @@
           "text": "Three games you praised for physical components are Azul, Santorini, and Scythe. (Brass is correctly excluded due to the economic network constraint).",
           "required_facts": [
             "abstract_aesthetic_importance",
-            "abstract_aesthetic_santorini",
-            "component_upgrades_scythe",
+            "abstract_games_appreciation",
+            "component_praise_scythe",
             "economic_engine_appreciation"
           ],
           "evaluation_criteria": [

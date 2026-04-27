@@ -842,7 +842,7 @@
       },
       {
         "query_id": "q09_metal_evolution_mc",
-        "question": "Which of the following ranges represents the exact number of progressive or heavy metal bands I explicitly praised for their instrumental proficiency, melodic complexity, and lack of screaming? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of progressive or heavy metal bands I explicitly praised for their instrumental proficiency, melodic complexity, and lack of screaming? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You praised exactly 4 instrumental or progressive bands for these qualities: Animals as Leaders, Plini, Polyphia, and Intervals (acknowledged and added to your list).",
           "required_facts": [
@@ -859,7 +859,7 @@
       },
       {
         "query_id": "q10_alternative_praise_mc",
-        "question": "Which of the following ranges represents the exact number of alternative rock bands or musical duos I explicitly praised for their raw authenticity, storytelling, or emotional depth? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact number of alternative rock bands or musical duos I explicitly praised for their raw authenticity, storytelling, or emotional depth? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
         "reference_answer": {
           "text": "The correct option is C (4-5). You explicitly praised exactly 4 alternative bands or duos for these qualities: Radiohead, Nirvana, Pixies, and Simon & Garfunkel.",
           "required_facts": [
@@ -876,7 +876,7 @@
       },
       {
         "query_id": "q11_morning_routine_mc",
-        "question": "Which of the following ranges represents the exact number of distinct activities (both musical and non-musical) that I explicitly stated make up my morning routines? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of distinct activities (both musical and non-musical) that I explicitly stated make up my morning routines? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You explicitly mentioned exactly 4 activities across your morning routines: brewing pour-over coffee, playing guitar scales/chromatics, meditating, and practicing guitar for 30 minutes.",
           "required_facts": [
@@ -893,17 +893,17 @@
       },
       {
         "query_id": "q12_metal_bands_exclusionary_list",
-        "question": "Name 3 specific heavy metal or progressive rock bands I explicitly praised that do NOT feature aggressive screaming or harsh vocals.",
+        "question": "Name 4 specific heavy metal or progressive rock bands I explicitly praised that do NOT feature aggressive screaming or harsh vocals.",
         "reference_answer": {
-          "text": "Three bands you praised that do not feature harsh vocals are Animals as Leaders, Plini, and Polyphia. (Intervals is also an acceptable answer).",
+          "text": "Four bands you praised that do not feature harsh vocals are Animals as Leaders, Plini, Intervals and Polyphia.",
           "required_facts": [
             "animals_as_leaders_instrumental",
             "plini_melodic",
             "polyphia_instrumental"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 bands",
-            "Ensures all 3 bands map to the instrumental/no-screaming criteria"
+            "Names exactly 4 bands",
+            "Ensures all 4 bands map to the instrumental/no-screaming criteria"
           ]
         }
       },

@@ -737,7 +737,7 @@
       },
       {
         "query_id": "q09_metal_versatility_mc",
-        "question": "Which of the following ranges represents the exact number of highly technical or aggressive bands I explicitly praised for their musical versatility, dynamic range, acoustic integration, or lack of distracting harsh vocals? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact number of highly technical or aggressive bands I explicitly praised for their musical versatility, dynamic range, acoustic integration, or lack of distracting harsh vocals? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
         "reference_answer": {
           "text": "The correct option is C (4-5). You explicitly praised exactly 4 heavy bands for these traits: Tool, Animals as Leaders, Metallica (specifically for acoustic sections), and Mastodon.",
           "required_facts": [
@@ -770,7 +770,7 @@
       },
       {
         "query_id": "q11_commercial_complaint_mc",
-        "question": "Which of the following ranges represents the exact number of separate sessions where I explicitly complained about modern music feeling too safe, derivative, manufactured, or designed by a committee? A) 1-2. B) 3-5. C) 6-8.",
+        "question": "Which of the following ranges represents the exact number of separate sessions where I explicitly complained about modern music feeling too safe, derivative, manufactured, or designed by a committee? A) 1-2. B) 3-5. C) 6-8. D) 9-12",
         "reference_answer": {
           "text": "The correct option is B (3-5). You explicitly expressed this exact complaint across 4 different sessions (regarding modern rock lacking risk, alternative bands losing their edge on major labels, auto-tune removing vulnerability, and mainstream pop being formulaic).",
           "required_facts": [
@@ -804,9 +804,9 @@
       },
       {
         "query_id": "q13_live_raw_bands_list",
-        "question": "Name 4 specific bands whose recordings I explicitly praised because they captured raw, live-in-the-studio energy, analog warmth, or unvarnished human imperfections.",
+        "question": "Name 5 specific bands whose recordings I explicitly praised because they captured raw, live-in-the-studio energy, analog warmth, or unvarnished human imperfections.",
         "reference_answer": {
-          "text": "Four bands you praised for capturing raw, analog, or live energy are Pink Floyd, Nirvana, The Rolling Stones, and The Who. (Pixies is also acceptable).",
+          "text": "Five bands you praised for capturing raw, analog, or live energy are Pink Floyd, Nirvana, The Rolling Stones, The Who and Pixies.",
           "required_facts": [
             "rock_analog_warmth",
             "alternative_lo_fi_aesthetic",
@@ -814,8 +814,8 @@
             "alternative_raw_authenticity"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 bands",
-            "All 4 bands map to discussions of analog, live, or lo-fi praise"
+            "Names exactly 5 bands",
+            "All 5 bands map to discussions of analog, live, or lo-fi praise"
           ]
         }
       },
@@ -839,16 +839,16 @@
       },
       {
         "query_id": "q15_classical_composers_list",
-        "question": "Name 3 specific historical composers I mentioned, identifying at least one whose symphonies I explicitly found too long and at least one from the Romantic era whose emotional directness I praised.",
+        "question": "Name 4 specific historical composers I mentioned, identifying at least one whose symphonies I explicitly found too long and at least one from the Romantic era whose emotional directness I praised.",
         "reference_answer": {
-          "text": "Three classical composers you mentioned are Mahler (whose symphonies you found too long), Brahms, and Tchaikovsky (both of whom you praised for Romantic emotional directness). (Bach is also a valid inclusion).",
+          "text": "Four classical composers you mentioned are Mahler (whose symphonies you found too long), Brahms, Tchaikovsky and Bach (both of whom you praised for Romantic emotional directness).",
           "required_facts": [
             "classical_intimidating_length",
             "classical_composer_connection",
             "classical_violin_appreciation"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 composers",
+            "Names exactly 4 composers",
             "Ensures Mahler is tied to the length critique",
             "Ensures Brahms or Tchaikovsky is tied to Romantic emotional praise"
           ]

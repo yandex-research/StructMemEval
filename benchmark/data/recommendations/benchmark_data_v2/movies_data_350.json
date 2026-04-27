@@ -931,7 +931,7 @@
       },
       {
         "query_id": "q09_actor_injuries_mc",
-        "question": "Which of the following ranges represents the exact number of times I mentioned an actor suffering a real physical injury (e.g., breaking a bone) or severe physical sickness (e.g., throwing up) while performing a practical stunt or sequence? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of times I mentioned an actor suffering a real physical injury (e.g., breaking a bone) or severe physical sickness (e.g., throwing up) while performing a practical stunt or sequence? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
         "reference_answer": {
           "text": "The correct option is B (3-4). You mentioned exactly 4 instances: Tom Cruise breaking his ankle, Henry Cavill breaking his finger, Chris Hemsworth getting injured, and the actors in Top Gun: Maverick throwing up.",
           "required_facts": [
@@ -979,9 +979,9 @@
       },
       {
         "query_id": "q12_practical_scifi_list",
-        "question": "Name 4 specific science-fiction movies I praised for using practical effects, real sets, miniatures, or authentic locations instead of relying entirely on green screens or CGI.",
+        "question": "Name 5 specific science-fiction movies I praised for using practical effects, real sets, miniatures, or authentic locations instead of relying entirely on green screens or CGI.",
         "reference_answer": {
-          "text": "Four specific science-fiction movies you praised for practical elements are Dune, Alien, District 9, and The Matrix. (Terminator 2 is also acceptable).",
+          "text": "Five specific science-fiction movies you praised for practical elements are Dune, Alien, District 9, The Matrix and Terminator 2.",
           "required_facts": [
             "dune_practical",
             "alien_atmosphere",
@@ -990,7 +990,7 @@
             "terminator2_favorite"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 movies",
+            "Names exactly 5 movies",
             "All named movies are science fiction films matching the practical effects praise"
           ]
         }

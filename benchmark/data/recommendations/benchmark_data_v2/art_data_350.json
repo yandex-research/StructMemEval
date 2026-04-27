@@ -681,9 +681,9 @@
       },
       {
         "query_id": "q02_rejected_artists_list",
-        "question": "Name 4 specific artists I explicitly rejected for producing work that felt emotionally empty, overly polished, or reliant on gimmicks.",
+        "question": "Name 5 specific artists I explicitly rejected for producing work that felt emotionally empty, overly polished, or reliant on gimmicks.",
         "reference_answer": {
-          "text": "Four artists you completely rejected for these reasons are Warhol, Renoir, Hirst, and Ai Weiwei. (Serra is also acceptable).",
+          "text": "Four artists you completely rejected for these reasons are Warhol, Renoir, Hirst, Serra and Ai Weiwei.",
           "required_facts": [
             "warhol_negative",
             "renoir_negative",
@@ -692,7 +692,7 @@
             "serra_negative"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 artists",
+            "Names exactly 5 artists",
             "Ensures all named artists received completely negative evaluations in the text"
           ]
         }
@@ -733,9 +733,9 @@
       },
       {
         "query_id": "q05_texture_list",
-        "question": "Name 3 specific artists whose work I explicitly praised for featuring rough textures, visible seams, or thick impasto, reflecting a sense of physical struggle or honest effort.",
+        "question": "Name 4 specific artists whose work I explicitly praised for featuring rough textures, visible seams, or thick impasto, reflecting a sense of physical struggle or honest effort.",
         "reference_answer": {
-          "text": "Three artists you praised for these qualities are Rodin, Van Gogh, and Rembrandt. (Cézanne is also acceptable).",
+          "text": "Three artists you praised for these qualities are Rodin, Van Gogh, Cézanne and Rembrandt.",
           "required_facts": [
             "rodin_positive",
             "vangogh_positive",
@@ -743,7 +743,7 @@
             "cezanne_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 artists",
+            "Names exactly 4 artists",
             "All named artists map to praised textural techniques and physical effort"
           ]
         }
@@ -786,29 +786,34 @@
         }
       },
       {
-        "query_id": "q08_positive_excluding_sanctuary_list",
-        "question": "Name 4 specific painters or sculptors I explicitly praised, making sure NOT to include any of the artists whose work I specifically described as a quiet \"sanctuary\" or a tool for \"daily meditation\".",
-        "reference_answer": {
-          "text": "Four artists you praised who do not fit the excluded \"sanctuary/meditation\" descriptions are Van Gogh, Kahlo, Matisse, and Rodin. (Monet, Michelangelo, Klimt, Degas, Brancusi, Rembrandt, O'Keeffe, and Cézanne are also acceptable. Hopper, Vermeer, and Rothko must be excluded).",
-          "required_facts": [
-            "vangogh_positive",
-            "kahlo_positive",
-            "matisse_positive",
-            "rodin_positive",
-            "hopper_positive",
-            "vermeer_positive",
-            "rothko_positive"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 4 artists",
-            "Ensures Hopper, Vermeer, and Rothko are excluded from the list",
-            "All named artists received positive reviews in the text"
-          ]
-        }
+          "query_id": "q08_positive_excluding_sanctuary_list",
+          "question": "Name 9 specific painters or sculptors I explicitly praised, making sure NOT to include any of the artists whose work I specifically described as a quiet \"sanctuary\" or a tool for \"daily meditation\".",
+          "reference_answer": {
+            "text": "Nine artists you praised who do not fit the excluded \"sanctuary/meditation\" descriptions are Van Gogh, Kahlo, Matisse, Monet, Michelangelo, Klimt, Degas, Brancusi and Rodin. (Rembrandt, O'Keeffe, and Cézanne are also acceptable. Hopper, Vermeer, Rothko, and Botticelli must be excluded).",
+            "required_facts": [
+              "monet_positive",
+              "rodin_positive",
+              "david_positive",
+              "klimt_positive",
+              "vangogh_positive",
+              "degas_positive",
+              "brancusi_positive",
+              "kahlo_positive",
+              "rembrandt_positive",
+              "okeeffe_positive",
+              "matisse_positive",
+              "cezanne_positive"
+            ],
+            "evaluation_criteria": [
+              "Names exactly 9 artists",
+              "All named artists belong to the allowed set (i.e., are explicitly praised and not described as sanctuary or daily meditation)",
+              "Hopper, Vermeer, Rothko, and Botticelli are excluded from the answer"
+            ]
+          }
       },
       {
         "query_id": "q09_restraint_mc",
-        "question": "Which of the following ranges represents the exact number of artists I explicitly praised for utilizing aesthetic restraint, understatement, or economy of form (e.g., whispering instead of shouting) to achieve emotional resonance? A) 0-1. B) 2-4. C) 5-7.",
+        "question": "Which of the following ranges represents the exact number of artists I explicitly praised for utilizing aesthetic restraint, understatement, or economy of form (e.g., whispering instead of shouting) to achieve emotional resonance? A) 0-1. B) 2-4. C) 5-6. D) 7-8.",
         "reference_answer": {
           "text": "The correct option is B (2-4). You praised exactly 3 artists for this quality: Hopper, Botticelli, and Brancusi.",
           "required_facts": [
@@ -841,9 +846,9 @@
       },
       {
         "query_id": "q11_light_painters_list",
-        "question": "Name 3 specific painters I explicitly praised for their masterful rendering or dynamic use of light (whether natural, artificial, or changing) to create emotional depth.",
+        "question": "Name 4 specific painters I explicitly praised for their masterful rendering or dynamic use of light (whether natural, artificial, or changing) to create emotional depth.",
         "reference_answer": {
-          "text": "Three painters you praised for this are Monet, Hopper, and Vermeer. (Rembrandt is also acceptable).",
+          "text": "Three painters you praised for this are Monet, Hopper, Rembrandt and Vermeer.",
           "required_facts": [
             "monet_positive",
             "hopper_positive",
@@ -851,7 +856,7 @@
             "rembrandt_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 painters",
+            "Names exactly 4 painters",
             "All named painters map to explicit praise of their use of light in the text"
           ]
         }
@@ -877,9 +882,9 @@
       },
       {
         "query_id": "q13_digital_contrast_mc",
-        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital screens, renders, or reproductions) as a negative point of contrast to praise a physical artwork? A) 1-3. B) 4-6. C) 7-9.",
+        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital screens, renders, or reproductions) as a negative point of contrast to praise a physical artwork? A) 1-3. B) 4-5. C) 6-7. D) 8-9",
         "reference_answer": {
-          "text": "The correct option is B (4-6). You explicitly used digital technology as a negative contrast exactly 6 times (while discussing Monet, Michelangelo, Van Gogh, Hopper, Rothko, and Cézanne).",
+          "text": "The correct option is C (6-7). You explicitly used digital technology as a negative contrast exactly 6 times (while discussing Monet, Michelangelo, Van Gogh, Hopper, Rothko, and Cézanne).",
           "required_facts": [
             "monet_positive",
             "david_positive",

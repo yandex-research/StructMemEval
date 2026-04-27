@@ -715,15 +715,15 @@
         "reference_answer": {
           "text": "The exact fraction is 2/9. You evaluated exactly 2 cooperative games positively for preventing alpha-player dominance (Spirit Island and The Crew), while explicitly criticizing 7 others for the quarterbacking problem (Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium).",
           "required_facts": [
-            "spirit_island_positive",
-            "the_crew_positive",
-            "pandemic_negative",
-            "forbidden_island_negative",
-            "pandemic_legacy_negative",
-            "flash_point_negative",
-            "robinson_crusoe_negative",
-            "forbidden_desert_negative",
-            "mysterium_negative"
+            "cooperative_success_enjoyment",
+            "cooperative_hidden_information",
+            "cooperative_alpha_player_problem_1",
+            "cooperative_alpha_player_problem_2",
+            "cooperative_alpha_player_problem_3",
+            "cooperative_alpha_player_problem_4",
+            "cooperative_alpha_player_problem_5",
+            "cooperative_alpha_player_problem_6",
+            "cooperative_alpha_player_problem_7"
           ],
           "evaluation_criteria": [
             "Provides exact fraction 2/9",
@@ -732,21 +732,18 @@
           ]
         }
       },
+      },
       {
         "query_id": "q02_abstract_games_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of abstract strategy games I explicitly discussed that I criticized for becoming predictable and formulaic after repeated plays?",
+        "question": "What is the exact fraction of abstract strategy games I explicitly discussed that I criticized for becoming predictable and formulaic after repeated plays?",
         "reference_answer": {
-          "text": "The exact fraction is 1/3. You criticized exactly 1 abstract game for becoming predictable (Hive), while praising 2 others for remaining fresh and elegant (Azul and Santorini).",
-          "required_facts": [
-            "hive_negative",
-            "azul_positive",
-            "santorini_positive"
-          ],
-          "evaluation_criteria": [
+            "text": "The exact fraction is 1/3. You criticized exactly 1 abstract game (Hive) for becoming predictable, while praising 2 others (Azul and Santorini) for remaining fresh and elegant.",
+            "required_facts": ["abstract_game_repetition", "abstract_games_appreciation"],
+            "evaluation_criteria": [
             "Provides exact fraction 1/3",
             "Identifies Hive as the single criticized abstract game",
-            "Identifies Azul and Santorini as the praised abstract games"
-          ]
+            "Identifies Azul and Santorini as the praised abstract games (as per abstract_games_appreciation)"
+            ]
         }
       },
       {
@@ -789,20 +786,15 @@
         }
       },
       {
-        "query_id": "q05_engine_building_count",
-        "question": "How many specific board games did I explicitly praise for their engine-building mechanics, where early decisions compound into satisfying late-game power or resources? Provide the exact count.",
+        "query_id": "q05_meaningful_tradeoffs_count",
+        "question": "How many specific board games did I explicitly praise for featuring meaningful trade-offs or satisfying engine-building mechanics? Provide the exact count and list the games.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 4 games for their satisfying engine-building mechanics: Terraforming Mars, Brass: Birmingham, Dominion, and Scythe.",
-          "required_facts": [
-            "terraforming_mars_engine",
-            "brass_birmingham_engine",
-            "dominion_engine",
-            "scythe_engine"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 4 games",
-            "Names Terraforming Mars, Brass: Birmingham, Dominion, and Scythe"
-          ]
+            "text": "You explicitly praised exactly 3 games: Terraforming Mars, Brass: Birmingham, and Dominion.",
+            "required_facts": ["strategy_depth_appreciation", "economic_games_appreciation", "deck_building_appreciation"],
+            "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Terraforming Mars, Brass: Birmingham, and Dominion"
+            ]
         }
       },
       {
@@ -838,28 +830,28 @@
         }
       },
       {
-        "query_id": "q08_solved_puzzle_mc",
-        "question": "Which of the following ranges represents the exact number of specific board games I explicitly criticized for becoming predictable, feeling like a 'spreadsheet exercise', or acting as a 'solved puzzle' with optimal paths? A) 1-3. B) 4-5. C) 6-8.",
+        "query_id": "q08_solved_puzzle_count",
+        "question": "How many specific board games did I explicitly criticize for becoming predictable, feeling like a 'spreadsheet exercise', or being a 'solved puzzle'? Provide the exact count and list the games.",
         "reference_answer": {
-          "text": "The correct option is C (6-8). You explicitly leveled this criticism at exactly 7 games: Friday, Pandemic, Hive, Ascension, Forbidden Island, Forbidden Desert, and Codenames.",
-          "required_facts": [
-            "friday_solved",
-            "pandemic_spreadsheet",
-            "hive_predictable",
-            "ascension_spreadsheet",
-            "forbidden_island_puzzle",
-            "forbidden_desert_puzzle",
-            "codenames_repetitive"
-          ],
-          "evaluation_criteria": [
-            "Selects Option C",
-            "Identifies exactly 7 games mapping to the 'solved/predictable' criticism"
-          ]
+            "text": "You criticized exactly 7 games: Pandemic, Hive, Ascension, Forbidden Island, Forbidden Desert, Codenames, and Friday.",
+            "required_facts": [
+            "cooperative_alpha_player_problem_1",
+            "abstract_game_repetition",
+            "deck_building_appreciation",
+            "cooperative_alpha_player_problem_2",
+            "cooperative_alpha_player_problem_6",
+            "party_games_fatigue",
+            "solo_gaming_preference"
+            ],
+            "evaluation_criteria": [
+            "Provides exact count of 7",
+            "Lists all 7 games correctly"
+            ]
         }
       },
       {
         "query_id": "q09_meaningful_tradeoffs_mc",
-        "question": "Which of the following ranges represents the exact number of specific board games I explicitly praised for featuring meaningful trade-offs or sacrifices (such as deck dilution, tight economies, or balancing asymmetric drawbacks) rather than just being a 'point salad'? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of specific board games I explicitly praised for featuring meaningful trade-offs or sacrifices (such as deck dilution, tight economies, or balancing asymmetric drawbacks) rather than just being a 'point salad'? A) 1-2. B) 3-4. C) 5-6. D) 7-8.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You praised exactly 3 games specifically for enforcing meaningful trade-offs: Dominion, Brass: Birmingham, and Spirit Island.",
           "required_facts": [
@@ -874,63 +866,59 @@
         }
       },
       {
-        "query_id": "q10_asymmetric_factions_mc",
-        "question": "Which of the following ranges represents the exact number of specific board games I explicitly praised for featuring asymmetric factions, unique player powers, or highly variable setups that prevent the game from feeling repetitive? A) 1-2. B) 3-5. C) 6-8.",
+        "query_id": "q10_asymmetric_factions_count",
+        "question": "How many specific board games did I explicitly praise for asymmetric factions, unique player powers, or variable setups? Provide the exact count.",
         "reference_answer": {
-          "text": "The correct option is B (3-5). You explicitly praised exactly 4 games for asymmetric or highly variable powers: Root, Santorini, Spirit Island, and Scythe.",
-          "required_facts": [
-            "root_asymmetric",
-            "santorini_powers",
-            "spirit_island_asymmetric",
-            "scythe_asymmetric"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B",
-            "Identifies exactly 4 games praised for asymmetry"
-          ]
+            "text": "You praised exactly 3 games: Root, Santorini, and Spirit Island.",
+            "required_facts": ["strategy_variable_setup", "abstract_games_appreciation", "cooperative_success_enjoyment"],
+            "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Root, Santorini, and Spirit Island"
+            ]
         }
       },
       {
         "query_id": "q11_thematic_integration_list",
-        "question": "Name exactly 4 specific board games I explicitly praised that feature heavy thematic integration involving empire-building, historical industry, or mythological/fantasy settings, explicitly excluding any pure abstract strategy games.",
+        "question": "Name exactly 6 specific board games that I explicitly praised for their thematic integration involving empire-building, historical industry, or mythological/fantasy settings.",
         "reference_answer": {
-          "text": "Four specific games you praised that fit this thematic integration criteria are Terraforming Mars, Scythe, Brass: Birmingham, and Blood Rage. (Root and Spirit Island are also acceptable).",
-          "required_facts": [
-            "terraforming_mars_theme",
-            "scythe_theme",
-            "brass_birmingham_theme",
-            "blood_rage_theme"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 4 games",
-            "All named games fit the thematic integration criteria and exclude abstracts like Azul/Santorini"
-          ]
+            "text": "The six games are: Terraforming Mars, Scythe, Brass: Birmingham, Blood Rage, Spirit Island, and Root.",
+            "required_facts": [
+            "strategy_depth_appreciation",
+            "thematic_immersion_preference",
+            "economic_games_appreciation",
+            "area_control_preference",
+            "cooperative_success_enjoyment",
+            "strategy_variable_setup"
+            ],
+            "evaluation_criteria": [
+            "Names exactly 6 games",
+            "All games must be from the required facts as listed"
+            ]
         }
       },
       {
         "query_id": "q12_alpha_player_exclusion_list",
-        "question": "Name exactly 3 specific cooperative board games I explicitly criticized for allowing one player to dominate the session, ensuring that you do NOT include any games themed around escaping a sinking landmass or a burying desert.",
+        "question": "Name exactly 5 specific cooperative board games I explicitly criticized for allowing one player to dominate the session, excluding any games from the 'Forbidden' series (i.e., Forbidden Island and Forbidden Desert).",
         "reference_answer": {
-          "text": "Three specific cooperative games you criticized for the alpha-player problem, excluding the 'Forbidden' series, are Pandemic, Flash Point, and Robinson Crusoe. (Pandemic Legacy and Mysterium are also acceptable).",
-          "required_facts": [
-            "pandemic_alpha",
-            "flash_point_alpha",
-            "robinson_crusoe_alpha",
-            "pandemic_legacy_alpha",
-            "mysterium_alpha"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 games",
-            "All games named must be co-ops criticized for quarterbacking",
-            "Forbidden Island and Forbidden Desert must be excluded"
-          ]
+            "text": "The five games are: Pandemic, Pandemic Legacy, Flash Point, Robinson Crusoe, and Mysterium.",
+            "required_facts": [
+            "cooperative_alpha_player_problem_1",
+            "cooperative_alpha_player_problem_3",
+            "cooperative_alpha_player_problem_4",
+            "cooperative_alpha_player_problem_5",
+            "cooperative_alpha_player_problem_7"
+            ],
+            "evaluation_criteria": [
+            "Names exactly 5 games",
+            "All games are from the specified facts and exclude Forbidden Island/Desert"
+            ]
         }
       },
       {
         "query_id": "q13_solo_digital_list",
-        "question": "Name exactly 3 specific board games I explicitly stated I played or intended to play in a digital format (like a PC simulator) or as a solo experience during weekdays.",
+        "question": "Name exactly 4 specific board games I explicitly stated I played or intended to play in a digital format (like a PC simulator) or as a solo experience during weekdays.",
         "reference_answer": {
-          "text": "Three specific games you discussed playing digitally or as a solo experience are Friday, Spirit Island, and Root. (Robinson Crusoe is also acceptable).",
+          "text": "Three specific games you discussed playing digitally or as a solo experience are Friday, Spirit Island, Robinson Crusoe and Root.",
           "required_facts": [
             "friday_solo",
             "spirit_island_solo",
@@ -938,16 +926,16 @@
             "robinson_crusoe_solo"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 games",
+            "Names exactly 4 games",
             "All games must map to digital or solo weekday play in the text"
           ]
         }
       },
       {
         "query_id": "q14_filler_gateway_list",
-        "question": "Name exactly 3 specific board games I explicitly discussed that are intended as quick 'fillers', gateway games for non-gamers, or light party games, which I evaluated positively.",
+        "question": "Name exactly 5 specific board games I explicitly discussed that are intended as quick 'fillers', gateway games for non-gamers, or light party games, which I evaluated positively.",
         "reference_answer": {
-          "text": "Three specific games fitting this description that you evaluated positively are 7 Wonders, Sushi Go!, and Just One. (The Mind and Ticket to Ride are also acceptable).",
+          "text": "Five specific games fitting this description that you evaluated positively are 7 Wonders, Sushi Go!, The Mind, Ticket to Ride and Just One.",
           "required_facts": [
             "7wonders_filler",
             "sushigo_gateway",
@@ -956,28 +944,27 @@
             "tickettoride_gateway"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 games",
+            "Names exactly 5 games",
             "All named games must be positively evaluated light/gateway/party games"
           ]
         }
       },
       {
         "query_id": "q15_criticized_non_coop_list",
-        "question": "Name exactly 5 specific board games I explicitly criticized or expressed negative feelings toward, ensuring that absolutely NONE of them are fully cooperative games.",
+        "question": "Name exactly 5 specific board games that I explicitly criticized or expressed negative feelings toward, where none of them are fully cooperative games.",
         "reference_answer": {
-          "text": "Five specific non-cooperative games you criticized are Hive, Ascension, Twilight Imperium, Catan, and Codenames.",
-          "required_facts": [
-            "hive_criticized",
-            "ascension_criticized",
-            "twilight_imperium_criticized",
-            "catan_criticized",
-            "codenames_criticized"
-          ],
-          "evaluation_criteria": [
+            "text": "The five games are: Hive, Ascension, Twilight Imperium, Catan, and Codenames.",
+            "required_facts": [
+            "abstract_game_repetition",
+            "deck_building_appreciation",
+            "strategy_complexity_overwhelm",
+            "thematic_immersion_preference",
+            "party_games_fatigue"
+            ],
+            "evaluation_criteria": [
             "Names exactly 5 games",
-            "All 5 games must be negatively evaluated in the text",
-            "None of the named games can be cooperative (e.g., excludes Pandemic, Mysterium, Robinson Crusoe, etc.)"
-          ]
+            "All games are from the specified facts and none are cooperative"
+            ]
         }
       }
     ]

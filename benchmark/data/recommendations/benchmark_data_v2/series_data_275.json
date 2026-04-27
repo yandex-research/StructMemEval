@@ -561,7 +561,7 @@
       },
       {
         "query_id": "q03_unglamorous_detective_mc",
-        "question": "Which of the following ranges represents the exact number of crime or investigation shows I praised specifically because they focused on tired, unglamorous protagonists rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of crime or investigation shows I praised specifically because they focused on tired, unglamorous protagonists rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You praised exactly 3 crime shows for this: Bosch, Slow Horses, and Mare of Easttown.",
           "required_facts": [
@@ -612,7 +612,7 @@
       },
       {
         "query_id": "q06_historical_realism_mc",
-        "question": "Which of the following ranges represents the exact number of series I explicitly praised for grounding their narratives in history or treating historical figures with psychological realism? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of series I explicitly praised for grounding their narratives in history or treating historical figures with psychological realism? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is B (3-4). You praised exactly 4 series for this: Chernobyl, The Crown, The Last Kingdom, and Vikings.",
           "required_facts": [
@@ -680,7 +680,7 @@
       },
       {
         "query_id": "q10_declining_quality_mc",
-        "question": "Which of the following ranges represents the exact number of series or film franchises where I explicitly stated that early seasons or installments were strong, but later ones declined in quality, balance, or focus? A) 0-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of series or film franchises where I explicitly stated that early seasons or installments were strong, but later ones declined in quality, balance, or focus? A) 0-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
           "text": "The correct option is C (5-6). You explicitly noted a decline in exactly 5 properties: Westworld, Game of Thrones, Only Murders in the Building, Peaky Blinders, and the Dune franchise.",
           "required_facts": [
