@@ -1,12 +1,12 @@
 ## Dataset: RecSys
 ## Tests memory systems on recommendations and preferences statistics over dialogue
 
-collection_name: benchmark_recommendations
-user_id: benchmark_user_recommendations
+collection_name: benchmark_recommendations_hints
+user_id: benchmark_user_recommendations_hints
 
 prompts:
   mem0_agent:
     loading: ../../../../prompts/mem0_agent_loading_hint.txt
     query: ../../../../prompts/mem0_agent_query_hint.txt
   mem_agent:
-    system_prompt: ../../../../prompts/system_prompt.txt
+    system_prompt: ../../../../prompts/system_prompt_recommendations_hint.txt
