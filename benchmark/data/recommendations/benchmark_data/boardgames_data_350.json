@@ -710,10 +710,10 @@
   ],
   "queries": [
       {
-        "query_id": "q01_cooperative_success_rate",
-        "question": "Based on all our conversations, what is the exact fraction (e.g., X/Y) of cooperative games I discussed that I rated positively?",
+        "query_id": "q01_cooperative_success_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of fully cooperative board games I explicitly reviewed where I evaluated the experience positively because the mechanics successfully prevented a single player from dominating decisions?",
         "reference_answer": {
-          "text": "Exactly 2/9 of the cooperative games you discussed were rated positively (Spirit Island and The Crew).",
+          "text": "The exact fraction is 2/9. You evaluated exactly 2 cooperative games positively for preventing alpha-player dominance (Spirit Island and The Crew), while explicitly criticizing 7 others for the quarterbacking problem (Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium).",
           "required_facts": [
             "cooperative_success_enjoyment",
             "cooperative_hidden_information",
@@ -727,246 +727,243 @@
           ],
           "evaluation_criteria": [
             "Provides exact fraction 2/9",
-            "Identifies Spirit Island and The Crew as the successful games"
+            "Names Spirit Island and The Crew as the positive games",
+            "Acknowledges the 7 criticized cooperative games"
           ]
         }
       },
       {
-        "query_id": "q02_top_three_mechanisms",
-        "question": "Which of the following game mechanisms do I most consistently praise, and what is the exact count of strategy games I explicitly praised for featuring this winning mechanism? A) Asymmetric factions/variable setup. B) Dice rolling. C) Set collection.",
+        "query_id": "q02_abstract_games_fraction",
+        "question": "What is the exact fraction of abstract strategy games I explicitly discussed that I criticized for becoming predictable and formulaic after repeated plays?",
         "reference_answer": {
-          "text": "The correct option is A (Asymmetric factions/variable setup). You explicitly praised exactly 4 strategy games for featuring asymmetric factions or variable setups: Root, Spirit Island, Scythe, and Blood Rage.",
+            "text": "The exact fraction is 1/3. You criticized exactly 1 abstract game (Hive) for becoming predictable, while praising 2 others (Azul and Santorini) for remaining fresh and elegant.",
+            "required_facts": ["abstract_game_repetition", "abstract_games_appreciation"],
+            "evaluation_criteria": [
+            "Provides exact fraction 1/3",
+            "Identifies Hive as the single criticized abstract game",
+            "Identifies Azul and Santorini as the praised abstract games (as per abstract_games_appreciation)"
+            ]
+        }
+      },
+      {
+        "query_id": "q03_rulebook_complexity_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of specific named board games I discussed in the context of rulebook complexity or learning curves that I explicitly praised for teaching themselves intuitively without requiring exhaustive upfront study?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/5. You praised exactly 3 specific games for intuitive rules or teaching themselves (Scythe, Wingspan, and 7 Wonders), while criticizing 2 specific games for intimidating complexity or excessive rulebook overhead (Twilight Imperium and Robinson Crusoe).",
           "required_facts": [
-            "strategy_variable_setup",
-            "cooperative_success_enjoyment",
-            "thematic_immersion_preference",
-            "area_control_preference"
+            "scythe_intuitive",
+            "wingspan_intuitive",
+            "7wonders_intuitive",
+            "twilight_imperium_complex",
+            "robinson_crusoe_complex"
           ],
           "evaluation_criteria": [
-            "Selects Option A",
-            "Provides exact count of 4 games",
-            "Lists Root, Spirit Island, Scythe, and Blood Rage"
+            "Provides exact fraction 3/5",
+            "Names Scythe, Wingspan, and 7 Wonders as intuitive",
+            "Names Twilight Imperium and Robinson Crusoe as overly complex"
           ]
         }
       },
       {
-        "query_id": "q03_strategy_vs_abstract_ratio",
-        "question": "What is the exact fraction (e.g., X/Y) of abstract games I discussed positively compared to the total number of abstract games I discussed?",
+        "query_id": "q04_alpha_player_count",
+        "question": "How many specific cooperative board games did I explicitly criticize because their open information or mechanics allowed one player to calculate moves for everyone else, turning me into a spectator? Provide the exact count.",
         "reference_answer": {
-          "text": "You discussed 3 abstract games in total. You gave positive feedback for 2 of them (Azul and Santorini) and negative feedback for 1 of them (Hive), resulting in an exact fraction of 2/3 positive feedback for abstract games.",
+          "text": "You explicitly criticized exactly 7 cooperative games for this alpha-player problem: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
           "required_facts": [
-            "abstract_games_appreciation",
-            "abstract_game_repetition"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 2/3",
-            "Correctly identifies Azul and Santorini as the positive abstract games",
-            "Correctly identifies Hive as the negative abstract game"
-          ]
-        }
-      },
-      {
-        "query_id": "q04_player_count_preference",
-        "question": "What is my preferred player count for strategy games from the following options, and exactly how many strategy games did I explicitly praise for working well at this exact player count? A) 1-2 players. B) 3-4 players. C) 5-6 players.",
-        "reference_answer": {
-          "text": "The correct option is B (3-4 players). You explicitly praised exactly 3 games for working well at this count: Root (tense at 3-4 players), Terraforming Mars (productive downtime at 4 players), and Dominion (shines with 4 players).",
-          "required_facts": [
-            "player_count_sensitivity",
-            "strategy_player_agency",
-            "deck_building_appreciation"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B",
-            "Provides exact count of 3 games",
-            "Lists Root, Terraforming Mars, and Dominion"
-          ]
-        }
-      },
-      {
-        "query_id": "q05_alpha_player_causes",
-        "question": "How many cooperative games did I criticize for having the 'alpha player' or 'quarterbacking' problem? Provide the exact count and list them.",
-        "reference_answer": {
-          "text": "You criticized exactly 7 cooperative games for having the 'alpha player' or 'quarterbacking' problem. They are: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
-          "required_facts": [
-            "cooperative_alpha_player_problem_1",
-            "cooperative_alpha_player_problem_2",
-            "cooperative_alpha_player_problem_3",
-            "cooperative_alpha_player_problem_4",
-            "cooperative_alpha_player_problem_5",
-            "cooperative_alpha_player_problem_6",
-            "cooperative_alpha_player_problem_7"
-          ],
-          "evaluation_criteria": [
-            "Provides the exact count of 7 games",
-            "Lists all 7 criticized games correctly"
-          ]
-        }
-      },
-      {
-        "query_id": "q06_game_length_statistics",
-        "question": "What is my ideal game length in minutes for deep strategy games from the following options, and exactly how many games did I explicitly criticize for severe time bloat or taking too long? A) 30 minutes. B) 90 minutes. C) 5+ hours.",
-        "reference_answer": {
-          "text": "The correct option is B (90 minutes). You explicitly criticized exactly 1 game for severe time bloat that disrespects your time: Twilight Imperium (which runs 5+ hours).",
-          "required_facts": [
-            "game_length_preference",
-            "strategy_complexity_overwhelm"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B",
-            "Provides exact count of 1 criticized game",
-            "Names Twilight Imperium"
-          ]
-        }
-      },
-      {
-        "query_id": "q07_replayability_factors",
-        "question": "Which of the following factors most strongly prevents an abstract game from maintaining my interest based on my comments, and exactly how many abstract games did I review positively because their mechanics avoided this flaw? A) Fixed setups leading to formulaic openings. B) Poor components. C) Lack of theme.",
-        "reference_answer": {
-          "text": "The correct option is A (Fixed setups leading to formulaic openings). You reviewed exactly 2 abstract games positively (Azul and Santorini) because their variability and mechanics kept them fresh, unlike Hive.",
-          "required_facts": [
-            "abstract_game_repetition",
-            "abstract_games_appreciation"
-          ],
-          "evaluation_criteria": [
-            "Selects Option A",
-            "Provides exact count of 2 positive abstract games",
-            "Names Azul and Santorini"
-          ]
-        }
-      },
-      {
-        "query_id": "q08_legacy_game_attitude",
-        "question": "How many legacy or campaign games did I discuss, and what was the exact fraction (e.g., X/Y) of them that I felt positive or cautiously optimistic about?",
-        "reference_answer": {
-          "text": "You discussed exactly 2 legacy/campaign games. Your positive feedback fraction was 1/2. You were negatively disposed toward Pandemic Legacy but cautiously optimistic about Gloomhaven.",
-          "required_facts": [
-            "legacy_games_attitude",
-            "cooperative_alpha_player_problem_3"
-          ],
-          "evaluation_criteria": [
-            "Identifies that 2 legacy games were discussed",
-            "Provides the exact fraction 1/2 positive",
-            "Names Gloomhaven and Pandemic Legacy"
-          ]
-        }
-      },
-      {
-        "query_id": "q09_most_criticized_mechanism",
-        "question": "Out of the 9 cooperative experiences I discussed, what is the exact fraction (e.g., X/9) of games that suffered from the 'quarterbacking' or 'alpha player' problem?",
-        "reference_answer": {
-          "text": "Exactly 7/9 of the cooperative games you discussed suffered from the 'quarterbacking' or 'alpha player' problem.",
-          "required_facts": [
-            "cooperative_alpha_player_problem_1",
-            "cooperative_alpha_player_problem_2",
-            "cooperative_alpha_player_problem_3",
-            "cooperative_alpha_player_problem_4",
-            "cooperative_alpha_player_problem_5",
-            "cooperative_alpha_player_problem_6",
-            "cooperative_alpha_player_problem_7"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 7/9"
-          ]
-        }
-      },
-      {
-        "query_id": "q10_party_game_paradox",
-        "question": "What is the exact fraction (e.g., X/Y) of party games I enjoyed to the total number of party games I discussed? Provide the fraction and name the games.",
-        "reference_answer": {
-          "text": "The exact fraction is 1/2. You discussed two party games: Just One, which you enjoyed due to its clever mechanical constraint, and Codenames, which you felt grew stale and repetitive.",
-          "required_facts": [
-            "party_game_mechanical_innovation",
-            "party_games_fatigue"
-          ],
-          "evaluation_criteria": [
-            "Provides the exact fraction 1/2",
-            "Identifies Just One as positive",
-            "Identifies Codenames as negative"
-          ]
-        }
-      },
-      {
-        "query_id": "q11_theme_integration_preference",
-        "question": "Of the 4 games where I explicitly discussed thematic integration (Scythe, Brass, Catan, Pandemic), how many did I praise for having mechanics and theme that work together cohesively? Provide the exact fraction (e.g., X/4).",
-        "reference_answer": {
-          "text": "The exact fraction is 2/4. You praised Scythe and Brass for having cohesive theme and mechanics, but criticized Catan and Pandemic for having themes that felt irrelevant or like window dressing.",
-          "required_facts": [
-            "thematic_immersion_preference",
-            "economic_games_appreciation",
-            "cooperative_alpha_player_problem_1"
-          ],
-          "evaluation_criteria": [
-            "Provides the exact fraction 2/4",
-            "Identifies the 2 praised games (Scythe, Brass)",
-            "Identifies the 2 criticized games (Catan, Pandemic)"
-          ]
-        }
-      },
-      {
-        "query_id": "q12_collection_philosophy",
-        "question": "Based on my stated game collection statistics, what is the exact number of my games that account for 80% of my playtime, and what exact fraction of my total collection does this represent?",
-        "reference_answer": {
-          "text": "Exactly 10 games account for 80% of your playtime, which represents a fraction of 10/40 (or 1/4) of your total collection.",
-          "required_facts": [
-            "game_collection_strategy"
-          ],
-          "evaluation_criteria": [
-            "States the exact number 10 games",
-            "Provides the exact fraction 10/40 or 1/4"
-          ]
-        }
-      },
-      {
-        "query_id": "q13_most_mentioned_game",
-        "question": "Which exact board game do I mention the most across all our conversations, and what is the exact count of different conversations it appears in?",
-        "reference_answer": {
-          "text": "The most mentioned board game is Root. It appeared in exactly 9 different conversations across our discussions.",
-          "required_facts": [
-            "strategy_variable_setup",
-            "player_count_sensitivity",
-            "digital_vs_physical_preference"
-          ],
-          "evaluation_criteria": [
-            "Identifies Root",
-            "Provides exact count of 9 conversations"
-          ]
-        }
-      },
-      {
-        "query_id": "q14_agency_mentions_ratio",
-        "question": "In my discussions about cooperative games, what is the exact number of games where I explicitly complained about feeling like a 'spectator', 'bystander', or a 'robot following instructions'?",
-        "reference_answer": {
-          "text": "You explicitly complained about feeling like a 'spectator', 'bystander', or 'robot following instructions' in exactly 7 cooperative games: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
-          "required_facts": [
-            "cooperative_alpha_player_problem_1",
-            "cooperative_alpha_player_problem_2",
-            "cooperative_alpha_player_problem_3",
-            "cooperative_alpha_player_problem_4",
-            "cooperative_alpha_player_problem_5",
-            "cooperative_alpha_player_problem_6",
-            "cooperative_alpha_player_problem_7"
+            "pandemic_alpha_player",
+            "forbidden_island_alpha_player",
+            "pandemic_legacy_alpha_player",
+            "flash_point_alpha_player",
+            "robinson_crusoe_alpha_player",
+            "forbidden_desert_alpha_player",
+            "mysterium_alpha_player"
           ],
           "evaluation_criteria": [
             "Provides exact count of 7 games",
-            "Lists the correct games"
+            "Lists Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium"
           ]
         }
       },
       {
-        "query_id": "q15_game_success_predictor",
-        "question": "Which of the following statements best summarizes my ultimate test for whether a cooperative game succeeds for me, and exactly how many cooperative games successfully passed this test? A) Does it have a traitor mechanic? B) Does it mechanically prevent a single player from dominating decisions? C) Does it have legacy elements?",
+        "query_id": "q05_meaningful_tradeoffs_count",
+        "question": "How many specific board games did I explicitly praise for featuring meaningful trade-offs or satisfying engine-building mechanics? Provide the exact count and list the games.",
         "reference_answer": {
-          "text": "The correct option is B (Does it mechanically prevent a single player from dominating decisions?). Exactly 2 cooperative games passed this test in our discussions (Spirit Island and The Crew).",
+            "text": "You explicitly praised exactly 3 games: Terraforming Mars, Brass: Birmingham, and Dominion.",
+            "required_facts": ["strategy_depth_appreciation", "economic_games_appreciation", "deck_building_appreciation"],
+            "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Terraforming Mars, Brass: Birmingham, and Dominion"
+            ]
+        }
+      },
+      {
+        "query_id": "q06_tactile_components_count",
+        "question": "How many specific board games did I explicitly praise for their tactile components (such as physical tiles, miniatures, or chunky tokens) that enhance the holistic experience beyond pure mechanics? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised the tactile components of exactly 3 games: Azul (satisfying tiles), Santorini (miniatures), and Root (chunky gear tokens).",
           "required_facts": [
-            "strategy_player_agency",
-            "cooperative_success_enjoyment",
-            "cooperative_hidden_information"
+            "azul_tactile",
+            "santorini_tactile",
+            "root_tactile"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3 games",
+            "Names Azul, Santorini, and Root"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_expansions_count",
+        "question": "How many specific board game expansions or standalone sequels did I explicitly inquire about purchasing or trying next to expand upon a base game I had already played? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly inquired about trying exactly 3 specific expansions or standalone sequels: Lancashire (for Brass), Prosperity (for Dominion), and Invaders from Afar (for Scythe).",
+          "required_facts": [
+            "brass_lancashire_inquiry",
+            "dominion_prosperity_inquiry",
+            "scythe_invaders_inquiry"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Lancashire, Prosperity, and Invaders from Afar"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_solved_puzzle_count",
+        "question": "How many specific board games did I explicitly criticize for becoming predictable, feeling like a 'spreadsheet exercise', or being a 'solved puzzle'? Provide the exact count and list the games.",
+        "reference_answer": {
+            "text": "You criticized exactly 7 games: Pandemic, Hive, Ascension, Forbidden Island, Forbidden Desert, Codenames, and Friday.",
+            "required_facts": [
+            "cooperative_alpha_player_problem_1",
+            "abstract_game_repetition",
+            "deck_building_appreciation",
+            "cooperative_alpha_player_problem_2",
+            "cooperative_alpha_player_problem_6",
+            "party_games_fatigue",
+            "solo_gaming_preference"
+            ],
+            "evaluation_criteria": [
+            "Provides exact count of 7",
+            "Lists all 7 games correctly"
+            ]
+        }
+      },
+      {
+        "query_id": "q09_meaningful_tradeoffs_mc",
+        "question": "Which of the following ranges represents the exact number of specific board games I explicitly praised for featuring meaningful trade-offs or sacrifices (such as deck dilution, tight economies, or balancing asymmetric drawbacks) rather than just being a 'point salad'? A) 1-2. B) 3-4. C) 5-6. D) 7-8.",
+        "reference_answer": {
+          "text": "The correct option is B (3-4). You praised exactly 3 games specifically for enforcing meaningful trade-offs: Dominion, Brass: Birmingham, and Spirit Island.",
+          "required_facts": [
+            "dominion_tradeoffs",
+            "brass_tradeoffs",
+            "spirit_island_tradeoffs"
           ],
           "evaluation_criteria": [
             "Selects Option B",
-            "Provides exact count of 2 passing games",
-            "Names Spirit Island and The Crew"
+            "Identifies exactly 3 games praised for trade-offs"
           ]
+        }
+      },
+      {
+        "query_id": "q10_asymmetric_factions_count",
+        "question": "How many specific board games did I explicitly praise for asymmetric factions, unique player powers, or variable setups? Provide the exact count.",
+        "reference_answer": {
+            "text": "You praised exactly 3 games: Root, Santorini, and Spirit Island.",
+            "required_facts": ["strategy_variable_setup", "abstract_games_appreciation", "cooperative_success_enjoyment"],
+            "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Root, Santorini, and Spirit Island"
+            ]
+        }
+      },
+      {
+        "query_id": "q11_thematic_integration_list",
+        "question": "Name exactly 6 specific board games that I explicitly praised for their thematic integration involving empire-building, historical industry, or mythological/fantasy settings.",
+        "reference_answer": {
+            "text": "The six games are: Terraforming Mars, Scythe, Brass: Birmingham, Blood Rage, Spirit Island, and Root.",
+            "required_facts": [
+            "strategy_depth_appreciation",
+            "thematic_immersion_preference",
+            "economic_games_appreciation",
+            "area_control_preference",
+            "cooperative_success_enjoyment",
+            "strategy_variable_setup"
+            ],
+            "evaluation_criteria": [
+            "Names exactly 6 games",
+            "All games must be from the required facts as listed"
+            ]
+        }
+      },
+      {
+        "query_id": "q12_alpha_player_exclusion_list",
+        "question": "Name exactly 5 specific cooperative board games I explicitly criticized for allowing one player to dominate the session, excluding any games from the 'Forbidden' series (i.e., Forbidden Island and Forbidden Desert).",
+        "reference_answer": {
+            "text": "The five games are: Pandemic, Pandemic Legacy, Flash Point, Robinson Crusoe, and Mysterium.",
+            "required_facts": [
+            "cooperative_alpha_player_problem_1",
+            "cooperative_alpha_player_problem_3",
+            "cooperative_alpha_player_problem_4",
+            "cooperative_alpha_player_problem_5",
+            "cooperative_alpha_player_problem_7"
+            ],
+            "evaluation_criteria": [
+            "Names exactly 5 games",
+            "All games are from the specified facts and exclude Forbidden Island/Desert"
+            ]
+        }
+      },
+      {
+        "query_id": "q13_solo_digital_list",
+        "question": "Name exactly 4 specific board games I explicitly stated I played or intended to play in a digital format (like a PC simulator) or as a solo experience during weekdays.",
+        "reference_answer": {
+          "text": "Four specific games you discussed playing digitally or as a solo experience are Friday, Spirit Island, Robinson Crusoe and Root.",
+          "required_facts": [
+            "friday_solo",
+            "spirit_island_solo",
+            "root_digital",
+            "robinson_crusoe_solo"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 games",
+            "All games must map to digital or solo weekday play in the text"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_filler_gateway_list",
+        "question": "Name exactly 5 specific board games I explicitly discussed that are intended as quick 'fillers', gateway games for non-gamers, or light party games, which I evaluated positively.",
+        "reference_answer": {
+          "text": "Five specific games fitting this description that you evaluated positively are 7 Wonders, Sushi Go!, The Mind, Ticket to Ride and Just One.",
+          "required_facts": [
+            "7wonders_filler",
+            "sushigo_gateway",
+            "justone_party",
+            "themind_filler",
+            "tickettoride_gateway"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 games",
+            "All named games must be positively evaluated light/gateway/party games"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_criticized_non_coop_list",
+        "question": "Name exactly 5 specific board games that I explicitly criticized or expressed negative feelings toward, where none of them are fully cooperative games.",
+        "reference_answer": {
+            "text": "The five games are: Hive, Ascension, Twilight Imperium, Catan, and Codenames.",
+            "required_facts": [
+            "abstract_game_repetition",
+            "deck_building_appreciation",
+            "strategy_complexity_overwhelm",
+            "thematic_immersion_preference",
+            "party_games_fatigue"
+            ],
+            "evaluation_criteria": [
+            "Names exactly 5 games",
+            "All games are from the specified facts and none are cooperative"
+            ]
         }
       }
     ]

@@ -697,7 +697,7 @@
         "query_id": "q01_comedy_praise_fraction",
         "question": "What is the exact fraction (e.g., X/Y) of the comedy series I discussed that I praised positively for their depth, warmth, or emotional gravity?",
         "reference_answer": {
-          "text": "The exact fraction is 4/6 (or 2/3). You evaluated 6 comedy series in total, and praised exactly 4 of them (Parks and Recreation, The Bear, Hacks, and Fleabag) while criticizing 2 (Ted Lasso and Modern Family).",
+          "text": "The exact fraction is 4/6 (or 2/3). You evaluated 6 comedy series in total, and praised exactly 4 of them: Parks and Recreation, The Bear, Hacks, and Fleabag. You criticized the other 2: Ted Lasso and Modern Family.",
           "required_facts": [
             "parc_positive",
             "bear_hacks_positive",
@@ -705,15 +705,16 @@
             "light_comedy_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 4/6 or 2/3"
+            "Provides exact fraction 4/6 or 2/3",
+            "Lists the 4 praised comedies correctly"
           ]
         }
       },
       {
-        "query_id": "q02_horror_violence_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of post-apocalyptic, disaster, or horror series I evaluated where I explicitly criticized the presence of gratuitous violence, explicit gore, or cheap jump scares?",
+        "query_id": "q02_horror_praise_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the post-apocalyptic, disaster, or horror series I discussed that I praised positively without any criticism?",
         "reference_answer": {
-          "text": "The exact fraction is 1/4. Out of the 4 disaster/horror/post-apocalyptic series you evaluated (Chernobyl, Station Eleven, Midnight Mass, and The Last of Us), you criticized exactly 1 (The Last of Us) for its gratuitous violence.",
+          "text": "The exact fraction is 3/4. You discussed 4 such series (Chernobyl, Station Eleven, Midnight Mass, and The Last of Us). You praised 3 of them (Chernobyl, Station Eleven, and Midnight Mass) without criticism, while The Last of Us received mixed feedback due to gratuitous violence.",
           "required_facts": [
             "drama_positive",
             "station_eleven_positive",
@@ -721,7 +722,8 @@
             "tlou_mixed"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 1/4"
+            "Provides exact fraction 3/4",
+            "Correctly identifies the 3 praised series"
           ]
         }
       },
@@ -729,7 +731,7 @@
         "query_id": "q03_detective_gimmick_fraction",
         "question": "What is the exact fraction (e.g., X/Y) of the detective or investigative series I discussed that I explicitly criticized for losing their integrity to quirky gimmicks, celebrity cameos, or stylistic fireworks?",
         "reference_answer": {
-          "text": "The exact fraction is 2/8 (or 1/4). You discussed 8 investigative series in total, and explicitly criticized exactly 2 of them (Only Murders and The Afterparty) for these issues.",
+          "text": "The exact fraction is 2/8 (or 1/4). You discussed 8 investigative series in total (True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, Only Murders in the Building, and The Afterparty). You explicitly criticized exactly 2 of them (Only Murders in the Building and The Afterparty) for these issues.",
           "required_facts": [
             "td_positive",
             "mh_bosch_positive",
@@ -738,7 +740,8 @@
             "light_detective_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 2/8 or 1/4"
+            "Provides exact fraction 2/8 or 1/4",
+            "Correctly names the 2 criticized series"
           ]
         }
       },
@@ -746,7 +749,7 @@
         "query_id": "q04_style_over_substance_count",
         "question": "How many specific television series did I explicitly criticize for prioritizing visual style, gimmicks, or \"style over substance\" rather than psychological depth? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly criticized exactly 4 series for this flaw (Peaky Blinders, Yellowstone, Wednesday, and The Afterparty).",
+          "text": "You explicitly criticized exactly 4 series for this flaw: Peaky Blinders, Yellowstone, Wednesday, and The Afterparty.",
           "required_facts": [
             "peaky_analysis",
             "yellowstone_negative",
@@ -754,7 +757,8 @@
             "light_detective_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 4"
+            "Provides exact count of 4",
+            "Lists Peaky Blinders, Yellowstone, Wednesday, and The Afterparty"
           ]
         }
       },
@@ -762,7 +766,7 @@
         "query_id": "q05_toxic_wealth_count",
         "question": "How many specific series did I explicitly praise for portraying extremely wealthy, powerful, or historical figures as morally compromised or toxic, yet keeping their motivations psychologically understandable? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 4 series for this nuanced portrayal (Succession, The Crown, The White Lotus, and Industry).",
+          "text": "You explicitly praised exactly 4 series for this nuanced portrayal: Succession, The Crown, The White Lotus, and Industry.",
           "required_facts": [
             "drama_positive",
             "crown_positive",
@@ -770,7 +774,8 @@
             "industry_positive"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 4"
+            "Provides exact count of 4",
+            "Lists Succession, The Crown, The White Lotus, and Industry"
           ]
         }
       },
@@ -778,7 +783,7 @@
         "query_id": "q06_fantasy_lore_count",
         "question": "How many epic fantasy series did I explicitly criticize or abandon because they overwhelmed the narrative with lore, world-building, or prophecies at the expense of deep character development? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly criticized exactly 5 epic fantasy series for this issue (Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time).",
+          "text": "You explicitly criticized exactly 5 epic fantasy series for this issue: Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
           "required_facts": [
             "got_negative",
             "hotd_negative",
@@ -786,7 +791,8 @@
             "mystery_fantasy_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5"
+            "Provides exact count of 5",
+            "Lists all 5 series correctly"
           ]
         }
       },
@@ -794,7 +800,7 @@
         "query_id": "q07_scifi_emotional_count",
         "question": "How many specific sci-fi series did I explicitly praise because their core high-concept premise (such as time travel, artificial consciousness, tech dystopia, or orbital mechanics) perfectly served the emotional weight and human drama? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 5 sci-fi series for perfectly aligning their high-concept premises with emotional weight (Westworld, Black Mirror, The Expanse, Dark, and Severance).",
+          "text": "You explicitly praised exactly 5 sci-fi series for perfectly aligning their high-concept premises with emotional weight: Westworld, Black Mirror, The Expanse, Dark, and Severance.",
           "required_facts": [
             "ww_foundation_contrast",
             "bm_positive",
@@ -802,52 +808,56 @@
             "dark_severance_positive"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5"
+            "Provides exact count of 5",
+            "Lists Westworld, Black Mirror, The Expanse, Dark, and Severance"
           ]
         }
       },
       {
-        "query_id": "q08_reality_tv_mc",
-        "question": "Which of the following best describes my explicit preference between reality television and deeply flawed genre fiction (like heavily violent or lore-dumping shows)? A) I explicitly stated I would rather watch flawed sci-fi or genre fiction over reality TV, which I consider zero-stakes background noise. B) I prefer reality TV because flawed genre fiction is too pretentious and confusing. C) I consider them exactly equal in value.",
+        "query_id": "q08_emotionally_cold_count",
+        "question": "How many specific television series did I explicitly criticize for being \"emotionally cold,\" having \"zero emotional stakes,\" or prioritizing spectacle over character feeling? Provide the exact count.",
         "reference_answer": {
-          "text": "The correct option is A. You explicitly stated that you would take even flawed sci-fi over reality TV (which you called background noise with zero stakes) any day.",
+          "text": "You explicitly criticized exactly 3 series for this issue: Foundation, The Rings of Power, and House of the Dragon.",
           "required_facts": [
-            "reality_verdict",
+            "ww_foundation_contrast",
             "pure_fantasy_negative",
-            "tlou_mixed"
+            "hotd_negative"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Provides exact count of 3",
+            "Lists Foundation, The Rings of Power, and House of the Dragon"
           ]
         }
       },
       {
         "query_id": "q09_gritty_detective_mc",
-        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
         "reference_answer": {
-          "text": "The correct option is C (4-5). You explicitly praised exactly 4 series for their gritty or unglamorous bureaucratic realism (True Detective, Mindhunter, Bosch, and Slow Horses).",
+          "text": "The correct option is C (4-5). You explicitly praised exactly 4 series for their gritty or unglamorous bureaucratic realism: True Detective, Mindhunter, Bosch, and Slow Horses.",
           "required_facts": [
             "td_positive",
             "mh_bosch_positive",
             "slowhorses_fargo_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option C"
+            "Selects Option C",
+            "Confirms count of 4 within the selected range"
           ]
         }
       },
       {
         "query_id": "q10_comedy_warmth_mc",
-        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is B (3-4). You explicitly praised exactly 4 comedies for these specific traits (Parks and Recreation, The Bear, Hacks, and Fleabag).",
+          "text": "The correct option is B (3-4). You explicitly praised exactly 4 comedies for these specific traits: Parks and Recreation, The Bear, Hacks, and Fleabag.",
           "required_facts": [
             "parc_positive",
             "bear_hacks_positive",
             "fleabag_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option B"
+            "Selects Option B",
+            "Confirms count of 4 within the selected range"
           ]
         }
       },
@@ -855,37 +865,39 @@
         "query_id": "q11_franchise_depth_mc",
         "question": "Based on my discussions of major franchises (superheroes, animation, or massive sci-fi prequels), which of the following is true? A) I praised exactly 3 specific series for transcending their franchise constraints to explore deep ideological fractures, systemic trauma, or ordinary people in broken systems. B) I completely rejected all franchise spin-offs for lacking depth. C) I explicitly stated I only watch these shows for their visually stunning fight choreography.",
         "reference_answer": {
-          "text": "The correct option is A. You praised exactly 3 franchise series for exploring these deep themes (Arcane, Watchmen, and Andor).",
+          "text": "The correct option is A. You praised exactly 3 franchise series for exploring these deep themes: Arcane, Watchmen, and Andor.",
           "required_facts": [
             "arcane_positive",
             "watchmen_positive",
             "andor_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Selects Option A",
+            "Correctly identifies the 3 praised franchise series"
           ]
         }
       },
       {
-        "query_id": "q12_fantasy_boundary_mc",
-        "question": "Which of the following best describes my explicitly stated boundary for enjoying shows set in historical or fantasy periods? A) I demand 100% strict historical accuracy and reject any show that takes dramatic license. B) I require heavy, elaborate magic systems and complex prophecies to stay engaged. C) I tolerate or praise historical license and subtle mythicism, but I completely reject shows where magic or prophecy replaces human agency and character motivation.",
+        "query_id": "q12_trauma_authenticity_list",
+        "question": "Name 3 specific television series I explicitly praised for successfully depicting trauma, grief, or psychological pain in a way that felt authentic and earned, rather than manipulative or gratuitous.",
         "reference_answer": {
-          "text": "The correct option is C. You praised shows like The Last Kingdom, Vikings, and The Crown for using history and myth to serve character, while rejecting pure fantasy shows where prophecies and lore overpowered human agency.",
+          "text": "Three series you praised for authentic trauma depiction are Fleabag, The Bear, and Midnight Mass.",
           "required_facts": [
-            "grounded_fantasy_positive",
-            "crown_positive",
-            "pure_fantasy_negative"
+            "fleabag_positive",
+            "bear_hacks_positive",
+            "midnight_mass_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option C"
+            "Names exactly 3 series",
+            "All named series match the criteria of authentic trauma depiction"
           ]
         }
       },
       {
         "query_id": "q13_scifi_emotional_list",
-        "question": "Name exactly 4 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
+        "question": "Name exactly 5 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
         "reference_answer": {
-          "text": "Four series you praised for this focus are Station Eleven, Black Mirror, Severance, and The Expanse. (Dark and Westworld are also acceptable).",
+          "text": "Five series you praised for this focus are Station Eleven, Black Mirror, Severance, Dark and Westworld, and The Expanse.",
           "required_facts": [
             "station_eleven_positive",
             "bm_positive",
@@ -893,8 +905,8 @@
             "expanse_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 series",
-            "Ensures all 4 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
+            "Names exactly 5 series",
+            "Ensures all 5 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
           ]
         }
       },
@@ -918,7 +930,7 @@
         "query_id": "q15_toxic_characters_list",
         "question": "Name exactly 4 specific comedy or drama series I explicitly praised for successfully portraying highly flawed, toxic, or grieving characters in a way that made their motivations deeply understandable, without necessarily excusing their bad behavior.",
         "reference_answer": {
-          "text": "Four series you praised for this nuanced character portrayal are Succession, The White Lotus, Industry, and Fleabag. (The Bear is also acceptable).",
+          "text": "Four series you praised for this nuanced character portrayal are Succession, The White Lotus, Industry, and Fleabag. (The Bear is also acceptable.)",
           "required_facts": [
             "drama_positive",
             "white_lotus_positive",

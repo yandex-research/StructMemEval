@@ -525,9 +525,9 @@
   "queries": [
       {
         "query_id": "q01_detective_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of detective or murder-mystery shows I discussed that I reviewed positively?",
+        "question": "What is the exact fraction (e.g., X/Y) of mystery or detective series I discussed that I reviewed positively?",
         "reference_answer": {
-          "text": "Exactly 7/9. I praised 7 (True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, Mare of Easttown) and criticized 2 (Only Murders in the Building, The Afterparty).",
+          "text": "You reviewed exactly 7/9 mystery or detective series positively. You praised True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, and Mare of Easttown, but criticized Only Murders in the Building and The Afterparty.",
           "required_facts": [
             "td_positive",
             "mh_bosch_positive",
@@ -537,45 +537,49 @@
             "light_detective_negative"
           ],
           "evaluation_criteria": [
-            "Provides the exact fraction 7/9"
+            "Provides exact fraction 7/9",
+            "Correctly identifies the 7 positive and 2 negative series"
           ]
         }
       },
       {
         "query_id": "q02_overwhelming_lore_count",
-        "question": "How many pure fantasy shows did I explicitly criticize because their lore, mythology, or world-building became overwhelming or came at the expense of character development? Provide the exact count.",
+        "question": "How many pure high-fantasy series did I explicitly criticize because their extensive world-building, magical lore, or mythological prophecies came at the expense of character development or emotional stakes? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 4 shows (Game of Thrones, Shadow and Bone, The Rings of Power, and The Wheel of Time).",
+          "text": "You criticized exactly 5 pure high-fantasy series for this reason: Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
           "required_facts": [
             "got_negative",
+            "hotd_negative",
             "pure_fantasy_negative",
             "mystery_fantasy_negative"
           ],
           "evaluation_criteria": [
-            "Provides the exact count of 4 shows"
+            "Provides exact count of 5",
+            "Names Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time"
           ]
         }
       },
       {
         "query_id": "q03_unglamorous_detective_mc",
-        "question": "Which of the following ranges represents the exact number of detective or crime shows I praised specifically because they focused on tired, unglamorous protagonists or gritty settings rather than flashy glamour? A) 3-4. B) 5-6. C) 7-8.",
+        "question": "Which of the following ranges represents the exact number of crime or investigation shows I praised specifically because they focused on tired, unglamorous protagonists rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is A (3-4). I praised exactly 3 shows for this (Bosch, Slow Horses, and Mare of Easttown).",
+          "text": "The correct option is B (3-4). You praised exactly 3 crime shows for this: Bosch, Slow Horses, and Mare of Easttown.",
           "required_facts": [
             "mh_bosch_positive",
             "slowhorses_fargo_positive",
             "mare_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Selects Option B",
+            "Identifies Bosch, Slow Horses, and Mare of Easttown"
           ]
         }
       },
       {
         "query_id": "q04_style_over_substance_list",
-        "question": "Name 4 shows or franchises I explicitly criticized because they prioritized visual spectacle, stylistic flair, or structural gimmicks over psychological depth and character development.",
+        "question": "Name 5 specific television or film properties I explicitly criticized because they prioritized visual spectacle, stylistic flair, or structural gimmicks over psychological depth and character development.",
         "reference_answer": {
-          "text": "Four shows that fit this criteria are Foundation, The Afterparty, Dune: Part Two, and The Rings of Power. (Later seasons of Peaky Blinders is also correct).",
+          "text": "Five properties you criticized for this are Foundation, The Afterparty, Dune: Part Two, The Rings of Power, and Peaky Blinders (later seasons).",
           "required_facts": [
             "ww_foundation_contrast",
             "light_detective_negative",
@@ -584,16 +588,16 @@
             "peaky_analysis"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 shows",
-            "Ensures all 4 match the style-over-substance criticism in the text"
+            "Names exactly 5 properties",
+            "Ensures all 5 map to the style-over-substance criticism"
           ]
         }
       },
       {
         "query_id": "q05_comedy_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of comedy series I discussed that I reviewed positively?",
+        "question": "What is the exact fraction (e.g., X/Y) of comedic or dramedy series I discussed that I reviewed entirely positively?",
         "reference_answer": {
-          "text": "Exactly 4/6 (or 2/3). I praised Parks and Recreation, The Bear, Hacks, and Shrinking, but criticized Ted Lasso and Modern Family.",
+          "text": "You reviewed exactly 4/6 (or 2/3) of the comedic series positively. You praised Parks and Recreation, The Bear, Hacks, and Shrinking, but criticized Ted Lasso and Modern Family.",
           "required_facts": [
             "parc_positive",
             "bear_hacks_positive",
@@ -601,45 +605,48 @@
             "light_comedy_negative"
           ],
           "evaluation_criteria": [
-            "Provides the exact fraction 4/6 or 2/3"
+            "Provides exact fraction 4/6 or 2/3",
+            "Correctly identifies the 4 positive and 2 negative series"
           ]
         }
       },
       {
         "query_id": "q06_historical_realism_mc",
-        "question": "Which of the following ranges represents the exact number of shows I explicitly praised for grounding their narratives in history or treating historical events and figures with psychological realism? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of series I explicitly praised for grounding their narratives in history or treating historical figures with psychological realism? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is B (3-4). I praised exactly 4 shows for this (Chernobyl, The Crown, The Last Kingdom, and Vikings).",
+          "text": "The correct option is B (3-4). You praised exactly 4 series for this: Chernobyl, The Crown, The Last Kingdom, and Vikings.",
           "required_facts": [
             "drama_positive",
             "crown_positive",
             "grounded_fantasy_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option B"
+            "Selects Option B",
+            "Identifies Chernobyl, The Crown, The Last Kingdom, and Vikings"
           ]
         }
       },
       {
         "query_id": "q07_ordinary_people_count",
-        "question": "How many shows across the sci-fi, fantasy, or superhero genres did I explicitly praise for focusing on ordinary people making choices rather than relying on prophecies or 'chosen one' tropes? Provide the exact count.",
+        "question": "How many television properties across the speculative fiction or superhero genres did I explicitly praise for focusing on ordinary people making difficult choices rather than relying on prophecies or 'chosen one' tropes? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 3 shows (Andor, The Last Kingdom, and The Boys).",
+          "text": "You explicitly praised exactly 3 properties for this: Andor, The Last Kingdom, and The Boys.",
           "required_facts": [
             "andor_positive",
             "grounded_fantasy_positive",
             "theboys_positive"
           ],
           "evaluation_criteria": [
-            "Provides the exact count of 3 shows"
+            "Provides exact count of 3",
+            "Names Andor, The Last Kingdom, and The Boys"
           ]
         }
       },
       {
         "query_id": "q08_pure_fantasy_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of pure high-fantasy series (excluding those grounded in real human history) that I reviewed positively?",
+        "question": "What is the exact fraction (e.g., X/Y) of purely mythical or high-fantasy series (excluding those explicitly anchored in real human history) that I evaluated positively?",
         "reference_answer": {
-          "text": "Exactly 0/5. I explicitly criticized all 5 pure fantasy series discussed (Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time).",
+          "text": "You evaluated exactly 0/5 of the pure high-fantasy series positively. You criticized Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
           "required_facts": [
             "got_negative",
             "hotd_negative",
@@ -647,15 +654,16 @@
             "mystery_fantasy_negative"
           ],
           "evaluation_criteria": [
-            "Provides the exact fraction 0/5"
+            "Provides exact fraction 0/5",
+            "Identifies the 5 criticized high-fantasy series"
           ]
         }
       },
       {
         "query_id": "q09_philosophical_scifi_list",
-        "question": "Name 5 sci-fi, fantasy, or superhero shows I explicitly praised for prioritizing human truth, psychological realism, or philosophical depth over mere visual spectacle.",
+        "question": "Name 6 speculative fiction or superhero shows I explicitly praised for prioritizing human truth, psychological realism, or philosophical depth over mere visual spectacle.",
         "reference_answer": {
-          "text": "Five shows that fit this criteria include Westworld, The Expanse, Dark, Severance, Andor, The Boys, and Pantheon. (Any 5 of these are correct).",
+          "text": "Six shows you praised for this are Westworld (season 1), The Expanse, Dark, Severance, Andor, and Pantheon. (The Boys is also correct).",
           "required_facts": [
             "ww_foundation_contrast",
             "expanse_positive",
@@ -665,16 +673,16 @@
             "pantheon_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 5 shows",
-            "Ensures all 5 shows match the psychological depth/philosophical exploration criteria in the text"
+            "Names exactly 6 shows",
+            "Ensures all match the philosophical or psychological realism criteria"
           ]
         }
       },
       {
         "query_id": "q10_declining_quality_mc",
-        "question": "Which of the following ranges represents the exact number of series or film franchises where I explicitly stated that early seasons or installments were strong, but later ones declined in quality, focus, or balance? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of series or film franchises where I explicitly stated that early seasons or installments were strong, but later ones declined in quality, balance, or focus? A) 0-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is C (5-6). I explicitly named 5 properties that declined over time (Westworld, Game of Thrones, Only Murders in the Building, Peaky Blinders, and the Dune franchise).",
+          "text": "The correct option is C (5-6). You explicitly noted a decline in exactly 5 properties: Westworld, Game of Thrones, Only Murders in the Building, Peaky Blinders, and the Dune franchise.",
           "required_facts": [
             "ww_foundation_contrast",
             "got_negative",
@@ -683,47 +691,50 @@
             "dune_contrast"
           ],
           "evaluation_criteria": [
-            "Selects Option C"
+            "Selects Option C",
+            "Identifies the 5 properties with declining quality"
           ]
         }
       },
       {
         "query_id": "q11_heavy_comedy_count",
-        "question": "How many comedy or dramedy series did I explicitly praise for successfully balancing humor with heavy themes like grief, trauma, or generational conflict without cheapening the pain? Provide the exact count.",
+        "question": "How many comedy or dramedy series did I explicitly praise for successfully balancing humor with heavy emotional themes like grief, trauma, or generational conflict without cheapening the pain? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 3 series (The Bear, Hacks, and Shrinking), which I explicitly contrasted with the manufactured conflicts of comedies like Ted Lasso.",
+          "text": "You praised exactly 3 series for this: The Bear, Hacks, and Shrinking.",
           "required_facts": [
             "bear_hacks_positive",
             "shrinking_positive",
             "light_comedy_negative"
           ],
           "evaluation_criteria": [
-            "Provides the exact count of 3 shows"
+            "Provides exact count of 3",
+            "Names The Bear, Hacks, and Shrinking"
           ]
         }
       },
       {
         "query_id": "q12_zero_stakes_list",
-        "question": "Name 4 television properties across any genre that I explicitly criticized for having 'zero stakes', 'manufactured' conflicts, or relying on 'made-up' tension rather than authentic character struggles.",
+        "question": "Name 4 specific fictional television properties that I explicitly criticized for having zero stakes, manufactured conflicts, or relying on made-up tension, ensuring you do NOT include any reality television shows in your answer.",
         "reference_answer": {
-          "text": "Four properties that fit this criteria are The Rings of Power, Big Brother, Ted Lasso, and House of the Dragon. (Shadow and Bone is also correct).",
+          "text": "Four fictional properties you criticized for this are The Rings of Power, Shadow and Bone, Ted Lasso, and House of the Dragon. (Big Brother and Love Island are correctly excluded due to the reality TV constraint).",
           "required_facts": [
             "pure_fantasy_negative",
-            "reality_verdict",
             "light_comedy_negative",
-            "hotd_negative"
+            "hotd_negative",
+            "reality_verdict"
           ],
           "evaluation_criteria": [
             "Names exactly 4 properties",
-            "Ensures all 4 map to the zero stakes/manufactured conflicts criticism"
+            "Correctly excludes Big Brother and Love Island",
+            "Ensures all named properties map to the zero stakes/manufactured tension criticism"
           ]
         }
       },
       {
         "query_id": "q13_restraint_dread_count",
-        "question": "How many shows did I explicitly praise for building dread, atmosphere, or tension through restraint, quiet intensity, or avoiding flashy melodrama? Provide the exact count.",
+        "question": "How many shows did I explicitly praise for building dread, atmosphere, or psychological tension through restraint, quiet intensity, or by avoiding flashy melodrama? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 4 shows (Mindhunter, True Detective, Chernobyl, and Severance).",
+          "text": "You praised exactly 4 shows for this: Mindhunter, True Detective, Chernobyl, and Severance.",
           "required_facts": [
             "mh_bosch_positive",
             "td_positive",
@@ -731,36 +742,43 @@
             "dark_severance_positive"
           ],
           "evaluation_criteria": [
-            "Provides the exact count of 4 shows"
+            "Provides exact count of 4",
+            "Names Mindhunter, True Detective, Chernobyl, and Severance"
           ]
         }
       },
       {
-        "query_id": "q14_cheap_tactics_mc",
-        "question": "Which of the following ranges represents the exact number of series I explicitly dismissed or criticized because they relied heavily on celebrity cameos or repetitive yelling rather than genuine narrative tension? A) 0. B) 1. C) 2-3.",
+        "query_id": "q14_respect_intelligence_list",
+        "question": "Name 5 specific shows that I explicitly praised because they respect the audience's intelligence, trust viewers to follow complex plots without hand-holding, or require active viewing.",
         "reference_answer": {
-          "text": "The correct option is C (2-3). I criticized exactly 2 shows for this (Only Murders in the Building for celebrity cameos, and Big Brother for people yelling in a house).",
+          "text": "Five shows you praised for this are Lupin, Dark, Severance, Slow Horses, and Pantheon. (Chernobyl is also correct).",
           "required_facts": [
-            "light_detective_negative",
-            "reality_verdict"
+            "lupin_positive",
+            "dark_severance_positive",
+            "slowhorses_fargo_positive",
+            "drama_positive",
+            "pantheon_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option C"
+            "Names exactly 5 shows",
+            "Ensures all map to the 'respecting intelligence' or 'trusting the audience' criteria"
           ]
         }
       },
       {
-        "query_id": "q15_scale_over_soul_mc",
-        "question": "Which of the following ranges represents the exact number of big-budget sci-fi or fantasy properties I explicitly criticized for prioritizing massive scale, stunning visuals, or action sequences at the expense of emotional soul or interiority? A) 1-2. B) 3-4. C) 5-6.",
+        "query_id": "q15_scale_over_soul_list",
+        "question": "Name 4 big-budget science fiction or fantasy properties I explicitly criticized for prioritizing massive scale, stunning visuals, or action sequences at the expense of emotional soul or character interiority.",
         "reference_answer": {
-          "text": "The correct option is B (3-4). I criticized exactly 3 properties for this specific flaw (Foundation, The Rings of Power, and Dune: Part Two).",
+          "text": "Four properties you criticized for this are Foundation, The Rings of Power, Dune: Part Two, and Game of Thrones (later seasons).",
           "required_facts": [
             "ww_foundation_contrast",
             "pure_fantasy_negative",
-            "dune_contrast"
+            "dune_contrast",
+            "got_negative"
           ],
           "evaluation_criteria": [
-            "Selects Option B"
+            "Names exactly 4 properties",
+            "Ensures all map to the scale-over-soul or spectacle-over-character criticism"
           ]
         }
       }
