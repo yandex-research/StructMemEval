@@ -714,7 +714,7 @@
         "query_id": "q12_everyday_topics_advice_list",
         "question": "Name 4 specific non-cinematic, everyday topics we discussed where I mentioned a problem or negative outcome, and you gave me explicit preventative advice on how to solve or avoid it.",
         "reference_answer": {
-          "text": "Three non-cinematic topics where I gave you preventative advice are plant care (saving your dying succulent), cooking pasta (preventing overcooking and clumping), smartphone photography (stabilizing low-light shots), and hiking gear preparation.",
+          "text": "Four non-cinematic topics where I gave you preventative advice are plant care (saving your dying succulent), cooking pasta (preventing overcooking and clumping), smartphone photography (stabilizing low-light shots), and hiking gear preparation.",
           "required_facts": [],
           "evaluation_criteria": [
             "Names exactly 4 topics",

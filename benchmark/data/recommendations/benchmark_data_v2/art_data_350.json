@@ -683,7 +683,7 @@
         "query_id": "q02_rejected_artists_list",
         "question": "Name 5 specific artists I explicitly rejected for producing work that felt emotionally empty, overly polished, or reliant on gimmicks.",
         "reference_answer": {
-          "text": "Four artists you completely rejected for these reasons are Warhol, Renoir, Hirst, Serra and Ai Weiwei.",
+          "text": "Five artists you completely rejected for these reasons are Warhol, Renoir, Hirst, Serra and Ai Weiwei.",
           "required_facts": [
             "warhol_negative",
             "renoir_negative",
@@ -735,7 +735,7 @@
         "query_id": "q05_texture_list",
         "question": "Name 4 specific artists whose work I explicitly praised for featuring rough textures, visible seams, or thick impasto, reflecting a sense of physical struggle or honest effort.",
         "reference_answer": {
-          "text": "Three artists you praised for these qualities are Rodin, Van Gogh, Cézanne and Rembrandt.",
+          "text": "Four artists you praised for these qualities are Rodin, Van Gogh, Cézanne and Rembrandt.",
           "required_facts": [
             "rodin_positive",
             "vangogh_positive",
@@ -848,7 +848,7 @@
         "query_id": "q11_light_painters_list",
         "question": "Name 4 specific painters I explicitly praised for their masterful rendering or dynamic use of light (whether natural, artificial, or changing) to create emotional depth.",
         "reference_answer": {
-          "text": "Three painters you praised for this are Monet, Hopper, Rembrandt and Vermeer.",
+          "text": "Four painters you praised for this are Monet, Hopper, Rembrandt and Vermeer.",
           "required_facts": [
             "monet_positive",
             "hopper_positive",

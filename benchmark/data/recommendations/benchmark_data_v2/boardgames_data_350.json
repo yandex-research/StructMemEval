@@ -732,7 +732,6 @@
           ]
         }
       },
-      },
       {
         "query_id": "q02_abstract_games_fraction",
         "question": "What is the exact fraction of abstract strategy games I explicitly discussed that I criticized for becoming predictable and formulaic after repeated plays?",
@@ -918,7 +917,7 @@
         "query_id": "q13_solo_digital_list",
         "question": "Name exactly 4 specific board games I explicitly stated I played or intended to play in a digital format (like a PC simulator) or as a solo experience during weekdays.",
         "reference_answer": {
-          "text": "Three specific games you discussed playing digitally or as a solo experience are Friday, Spirit Island, Robinson Crusoe and Root.",
+          "text": "Four specific games you discussed playing digitally or as a solo experience are Friday, Spirit Island, Robinson Crusoe and Root.",
           "required_facts": [
             "friday_solo",
             "spirit_island_solo",

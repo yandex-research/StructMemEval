@@ -740,7 +740,7 @@
         "query_id": "q07_worker_placement_exclusion_list",
         "question": "Name 4 worker placement games mentioned during our conversations that do NOT feature a 1920s alt-history or dieselpunk theme.",
         "reference_answer": {
-          "text": "Three worker placement games mentioned that do not have that theme are Agricola, Caverna, Lords of Waterdeep and Caylus. (Scythe is correctly excluded).",
+          "text": "Four worker placement games mentioned that do not have that theme are Agricola, Caverna, Lords of Waterdeep and Caylus. (Scythe is correctly excluded).",
           "required_facts": [
             "worker_placement_appreciation",
             "thematic_immersion_preference"
