@@ -693,229 +693,255 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q1_genre_ranking",
-      "question": "Based on all my comments across our entire conversation, rank these genres from most to least aligned with my taste: sci-fi, detective, drama, comedy, fantasy, reality. Indicate approximate percentages of positive comments for each genre.",
-      "reference_answer": {
-        "text": "Your preferences rank as follows: 1) Sci-fi (vast majority of discussed shows, approximately 85-90%, received high praise), 2) Detective (around 75-80% positive), 3) Drama (approximately 70-75%), 4) Comedy (around 60-65%), 5) Fantasy (about 20%), 6) Reality (0%). Sci-fi dominates with praise for shows like Westworld, Stranger Things, Black Mirror, The Expanse, Dark, Severance, Andor, and Mr. Robot—all celebrated for balancing intellectual concepts with human stakes while avoiding 'emotional coldness.' Detective shows such as True Detective, Mindhunter, Bosch, Lupin, Slow Horses, and Fargo earn respect for psychological realism, though Only Murders and The Afterparty fail by prioritizing 'quirk' and 'gimmicks' over detective integrity. Drama excels with Chernobyl, Succession, The Crown, The White Lotus, Station Eleven, Midnight Mass, Industry, The Americans, and Normal People—all prioritizing character complexity over spectacle, though Yellowstone is criticized for 'macho posturing' and Squid Game receives mixed reviews for prioritizing archetype over psychology. Comedy splits between depth-driven shows (Parks and Rec, The Bear, Hacks, Fleabag, Barry) versus lightweight fare (Ted Lasso, Modern Family). Fantasy only works when historically grounded (The Last Kingdom, Vikings); pure fantasy like Game of Thrones, House of Dragon, Rings of Power, Shadow and Bone, Wheel of Time, 1899, and Wednesday is rejected for 'overwhelming lore' and lacking emotional stakes. Reality TV is uniformly rejected as having 'zero narrative purpose.'",
-        "required_facts": [
-          "ww_foundation_contrast", "st_positive", "bm_positive", "expanse_positive", "dark_severance_positive", "andor_positive", "mrrobot_positive", "td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "light_detective_negative", "drama_positive", "crown_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "americans_positive", "normalpeople_positive", "squidgame_mixed", "yellowstone_negative", "parc_positive", "bear_hacks_positive", "fleabag_positive", "barry_positive", "light_comedy_negative", "grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative", "reality_verdict"
-        ],
-        "evaluation_criteria": [
-          "Provides approximate positive percentages per genre based on full conversation corpus",
-          "References specific examples per genre with approximate counts",
-          "Explains boundary cases (grounded fantasy/historical drama exception)",
-          "Synthesizes conversation history across all sessions"
-        ]
+      {
+        "query_id": "q01_comedy_praise_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the comedy series I discussed that I praised positively for their depth, warmth, or emotional gravity?",
+        "reference_answer": {
+          "text": "The exact fraction is 4/6 (or 2/3). You evaluated 6 comedy series in total, and praised exactly 4 of them: Parks and Recreation, The Bear, Hacks, and Fleabag. You criticized the other 2: Ted Lasso and Modern Family.",
+          "required_facts": [
+            "parc_positive",
+            "bear_hacks_positive",
+            "fleabag_positive",
+            "light_comedy_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 4/6 or 2/3",
+            "Lists the 4 praised comedies correctly"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_horror_praise_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the post-apocalyptic, disaster, or horror series I discussed that I praised positively without any criticism?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/4. You discussed 4 such series (Chernobyl, Station Eleven, Midnight Mass, and The Last of Us). You praised 3 of them (Chernobyl, Station Eleven, and Midnight Mass) without criticism, while The Last of Us received mixed feedback due to gratuitous violence.",
+          "required_facts": [
+            "drama_positive",
+            "station_eleven_positive",
+            "midnight_mass_positive",
+            "tlou_mixed"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/4",
+            "Correctly identifies the 3 praised series"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_detective_gimmick_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the detective or investigative series I discussed that I explicitly criticized for losing their integrity to quirky gimmicks, celebrity cameos, or stylistic fireworks?",
+        "reference_answer": {
+          "text": "The exact fraction is 2/8 (or 1/4). You discussed 8 investigative series in total (True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, Only Murders in the Building, and The Afterparty). You explicitly criticized exactly 2 of them (Only Murders in the Building and The Afterparty) for these issues.",
+          "required_facts": [
+            "td_positive",
+            "mh_bosch_positive",
+            "lupin_positive",
+            "slowhorses_fargo_positive",
+            "light_detective_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 2/8 or 1/4",
+            "Correctly names the 2 criticized series"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_style_over_substance_count",
+        "question": "How many specific television series did I explicitly criticize for prioritizing visual style, gimmicks, or \"style over substance\" rather than psychological depth? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly criticized exactly 4 series for this flaw: Peaky Blinders, Yellowstone, Wednesday, and The Afterparty.",
+          "required_facts": [
+            "peaky_analysis",
+            "yellowstone_negative",
+            "wednesday_negative",
+            "light_detective_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Lists Peaky Blinders, Yellowstone, Wednesday, and The Afterparty"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_toxic_wealth_count",
+        "question": "How many specific series did I explicitly praise for portraying extremely wealthy, powerful, or historical figures as morally compromised or toxic, yet keeping their motivations psychologically understandable? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 4 series for this nuanced portrayal: Succession, The Crown, The White Lotus, and Industry.",
+          "required_facts": [
+            "drama_positive",
+            "crown_positive",
+            "white_lotus_positive",
+            "industry_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Lists Succession, The Crown, The White Lotus, and Industry"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_fantasy_lore_count",
+        "question": "How many epic fantasy series did I explicitly criticize or abandon because they overwhelmed the narrative with lore, world-building, or prophecies at the expense of deep character development? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly criticized exactly 5 epic fantasy series for this issue: Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
+          "required_facts": [
+            "got_negative",
+            "hotd_negative",
+            "pure_fantasy_negative",
+            "mystery_fantasy_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Lists all 5 series correctly"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_scifi_emotional_count",
+        "question": "How many specific sci-fi series did I explicitly praise because their core high-concept premise (such as time travel, artificial consciousness, tech dystopia, or orbital mechanics) perfectly served the emotional weight and human drama? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 5 sci-fi series for perfectly aligning their high-concept premises with emotional weight: Westworld, Black Mirror, The Expanse, Dark, and Severance.",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "bm_positive",
+            "expanse_positive",
+            "dark_severance_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Lists Westworld, Black Mirror, The Expanse, Dark, and Severance"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_emotionally_cold_count",
+        "question": "How many specific television series did I explicitly criticize for being \"emotionally cold,\" having \"zero emotional stakes,\" or prioritizing spectacle over character feeling? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly criticized exactly 3 series for this issue: Foundation, The Rings of Power, and House of the Dragon.",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "pure_fantasy_negative",
+            "hotd_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Lists Foundation, The Rings of Power, and House of the Dragon"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_gritty_detective_mc",
+        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
+        "reference_answer": {
+          "text": "The correct option is C (4-5). You explicitly praised exactly 4 series for their gritty or unglamorous bureaucratic realism: True Detective, Mindhunter, Bosch, and Slow Horses.",
+          "required_facts": [
+            "td_positive",
+            "mh_bosch_positive",
+            "slowhorses_fargo_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C",
+            "Confirms count of 4 within the selected range"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_comedy_warmth_mc",
+        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
+        "reference_answer": {
+          "text": "The correct option is B (3-4). You explicitly praised exactly 4 comedies for these specific traits: Parks and Recreation, The Bear, Hacks, and Fleabag.",
+          "required_facts": [
+            "parc_positive",
+            "bear_hacks_positive",
+            "fleabag_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms count of 4 within the selected range"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_franchise_depth_mc",
+        "question": "Based on my discussions of major franchises (superheroes, animation, or massive sci-fi prequels), which of the following is true? A) I praised exactly 3 specific series for transcending their franchise constraints to explore deep ideological fractures, systemic trauma, or ordinary people in broken systems. B) I completely rejected all franchise spin-offs for lacking depth. C) I explicitly stated I only watch these shows for their visually stunning fight choreography.",
+        "reference_answer": {
+          "text": "The correct option is A. You praised exactly 3 franchise series for exploring these deep themes: Arcane, Watchmen, and Andor.",
+          "required_facts": [
+            "arcane_positive",
+            "watchmen_positive",
+            "andor_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option A",
+            "Correctly identifies the 3 praised franchise series"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_trauma_authenticity_list",
+        "question": "Name 3 specific television series I explicitly praised for successfully depicting trauma, grief, or psychological pain in a way that felt authentic and earned, rather than manipulative or gratuitous.",
+        "reference_answer": {
+          "text": "Three series you praised for authentic trauma depiction are Fleabag, The Bear, and Midnight Mass.",
+          "required_facts": [
+            "fleabag_positive",
+            "bear_hacks_positive",
+            "midnight_mass_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 series",
+            "All named series match the criteria of authentic trauma depiction"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_scifi_emotional_list",
+        "question": "Name exactly 5 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
+        "reference_answer": {
+          "text": "Five series you praised for this focus are Station Eleven, Black Mirror, Severance, Dark and Westworld, and The Expanse.",
+          "required_facts": [
+            "station_eleven_positive",
+            "bm_positive",
+            "dark_severance_positive",
+            "expanse_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 series",
+            "Ensures all 5 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_degraded_seasons_list",
+        "question": "Name exactly 3 specific series where I explicitly stated that their early seasons were strong, but their later seasons degraded in quality by losing thematic focus, prioritizing style over substance, or relying on cameos.",
+        "reference_answer": {
+          "text": "Three series where you explicitly noted a decline in later seasons are Westworld, Peaky Blinders, and Only Murders in the Building.",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "peaky_analysis",
+            "light_detective_negative"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 series",
+            "Ensures all 3 match the criticism of degraded later seasons"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_toxic_characters_list",
+        "question": "Name exactly 4 specific comedy or drama series I explicitly praised for successfully portraying highly flawed, toxic, or grieving characters in a way that made their motivations deeply understandable, without necessarily excusing their bad behavior.",
+        "reference_answer": {
+          "text": "Four series you praised for this nuanced character portrayal are Succession, The White Lotus, Industry, and Fleabag. (The Bear is also acceptable.)",
+          "required_facts": [
+            "drama_positive",
+            "white_lotus_positive",
+            "industry_positive",
+            "fleabag_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 series",
+            "Ensures all 4 series match the description of deeply understandable flawed/toxic characters"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q2_genre_success_rate",
-      "question": "Based on all sessions, which genres have the highest and lowest success rates (ratio of praised to criticized shows)? Provide approximate counts and percentages.",
-      "reference_answer": {
-        "text": "Highest success rate: Sci-fi (vast majority praised, roughly 15 out of 17 discussed shows, about 88%). Praised: Westworld, Stranger Things, Black Mirror, The Expanse, Dark, Severance, Andor, Mr. Robot. Mixed: None. Criticized: Foundation, 1899. Second: Detective (around 7 out of 9 praised, about 78%). Praised: True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, Watchmen. Mixed: None. Criticized: Only Murders, The Afterparty. Third: Drama (approximately 9 out of 12 praised, about 75%). Praised: Chernobyl, Succession, The Crown, The White Lotus, Station Eleven, Midnight Mass, Industry, The Americans, Normal People. Mixed: Squid Game. Criticized: Yellowstone. Fourth: Comedy (around 5 out of 8 praised, about 63%). Praised: Parks and Rec, The Bear, Hacks, Fleabag, Barry. Mixed: None. Criticized: Ted Lasso, Modern Family. Fifth: Fantasy (2 out of 10 praised, 20%). Praised: The Last Kingdom, Vikings. Mixed: None. Criticized: Game of Thrones, House of Dragon, Rings of Power, Shadow and Bone, Wheel of Time, 1899, Wednesday. Lowest: Reality (0 out of 2 praised, 0%). Criticized: Love Island, Big Brother.",
-        "required_facts": [
-          "ww_foundation_contrast", "st_positive", "bm_positive", "expanse_positive", "dark_severance_positive", "andor_positive", "mrrobot_positive", "td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "watchmen_positive", "light_detective_negative", "drama_positive", "crown_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "americans_positive", "normalpeople_positive", "squidgame_mixed", "yellowstone_negative", "parc_positive", "bear_hacks_positive", "fleabag_positive", "barry_positive", "light_comedy_negative", "grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative", "reality_verdict"
-        ],
-        "evaluation_criteria": [
-          "Provides approximate counts and percentages for each genre",
-          "Lists praised, mixed, and criticized shows accurately",
-          "Demonstrates genre hierarchy with statistical approximation",
-          "Uses full session dataset for calculations"
-        ]
-      }
-    },
-    {
-      "query_id": "q3_sci_fi_recommendation",
-      "question": "Should I watch Foundation or The Expanse next? Justify with aggregate evidence from our conversations.",
-      "reference_answer": {
-        "text": "Choose The Expanse. Across our conversations, you praised it explicitly for 'getting the science right' while telling 'a human story,' contrasting sharply with Foundation which you called 'emotionally cold' with 'all scale, no soul.' This aligns with your broader sci-fi preferences: the vast majority of sci-fi discussions praise shows that prioritize human stakes over visual spectacle (Westworld, Black Mirror, Dark, Severance, Andor, Mr. Robot). Foundation represents the small minority of sci-fi you reject precisely because it fails that test. The Expanse delivers emotional authenticity within speculative frameworks; Foundation prioritizes visual grandeur without character depth.",
-        "required_facts": ["expanse_positive", "ww_foundation_contrast", "bm_positive", "dark_severance_positive", "andor_positive", "mrrobot_positive"],
-        "evaluation_criteria": [
-          "Contrasts specific shows directly",
-          "Uses aggregate genre trends (vast majority vs small minority)",
-          "Connects to core sci-fi preference pattern across multiple examples",
-          "Makes decisive recommendation based on overall likelihood of enjoyment"
-        ]
-      }
-    },
-    {
-      "query_id": "q4_detective_essence",
-      "question": "What do all the detective shows I genuinely enjoy have in common? Synthesize from all positive and negative examples.",
-      "reference_answer": {
-        "text": "They prioritize psychological realism and respect audience intelligence without gimmicks. Your praised shows—True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, Watchmen—all feature 'flawed people making hard choices' in unglamorous settings, with tension derived from human behavior and logical deduction. Your criticized shows—Only Murders and The Afterparty—fail by prioritizing 'quirk over clues,' 'celebrity cameos,' and 'stylistic fireworks' over character motivation. The pattern holds across your detective discussions: success when character drives investigation, failure when style or celebrity overshadows substance. Your positive examples consistently employ 'restraint,' 'documentary quality,' and 'no exposition dumps'—techniques that trust viewers to piece together meaning without condescension.",
-        "required_facts": ["td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "watchmen_positive", "light_detective_negative"],
-        "evaluation_criteria": [
-          "Identifies unifying principle across all positive examples",
-          "Uses negative examples to reinforce pattern",
-          "Quotes your consistent descriptors",
-          "Synthesizes from full detective corpus"
-        ]
-      }
-    },
-    {
-      "query_id": "q5_fantasy_exception",
-      "question": "Is there any fantasy show I might actually enjoy long-term? Use statistical evidence from all fantasy discussions.",
-      "reference_answer": {
-        "text": "Only if it's minimally fantastical and heavily grounded in historical reality. Statistical evidence: only 2 out of 10 fantasy shows praised (about 20% success rate), both historically grounded (The Last Kingdom, Vikings). The remaining 8 out of 10 (80% failure rate) share 'overwhelming lore,' 'prophecy-driven plots,' and 'zero emotional stakes'—from Game of Thrones, House of Dragon, Rings of Power, Shadow and Bone, Wheel of Time, 1899, to Wednesday. The precise boundary: fantasy elements must function as 'cultural texture' rather than 'plot engines,' with 'characters driving the story, not prophecy.' Historical settings with subtle mythological elements—not invented mythologies—are your only viable fantasy exception. Any show requiring extensive world-building memorization will likely fail based on this pattern.",
-        "required_facts": ["grounded_fantasy_positive", "got_negative", "hotd_negative", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative"],
-        "evaluation_criteria": [
-          "Provides approximate statistical breakdown (20% success, 80% failure)",
-          "Defines precise boundary condition with examples",
-          "Uses pattern recognition across all fantasy discussions",
-          "Offers actionable criterion based on aggregated evidence"
-        ]
-      }
-    },
-    {
-      "query_id": "q6_comedy_criteria",
-      "question": "What makes a comedy truly satisfying versus forgettable for me? Use all comedy examples from our conversations.",
-      "reference_answer": {
-        "text": "Emotional authenticity and thematic depth distinguish satisfying comedies. Statistical breakdown: roughly 5 out of 8 comedies praised (about 63%)—Parks and Rec, The Bear, Hacks, Fleabag, Barry—all explore 'pressure,' 'trauma,' 'grief,' or 'survival' through humor. The 3 out of 8 criticized (about 37%)—Ted Lasso, Modern Family—fail as 'emotional cotton candy' or 'dated and predictable.' Your praised comedies share: humor emerging from authentic pain ('comedy as coping mechanism'), respect for characters ('never punches down'), and willingness to sit with discomfort ('gravity'). Criticized comedies prioritize manufactured uplift or formulaic jokes. The pattern holds across all comedy discussions: satisfaction correlates with how well comedy serves human truth rather than escape.",
-        "required_facts": ["parc_positive", "bear_hacks_positive", "fleabag_positive", "barry_positive", "light_comedy_negative"],
-        "evaluation_criteria": [
-          "Provides approximate statistical breakdown (5/8 praised, 3/8 criticized)",
-          "Contrasts positive/negative examples with thematic analysis",
-          "Identifies unifying principle across praised comedies",
-          "Synthesizes from full comedy corpus"
-        ]
-      }
-    },
-    {
-      "query_id": "q7_drama_analysis",
-      "question": "Drama wasn't in our original genre ranking, but you've praised many dramas highly. Where does drama rank, and what distinguishes dramas you love from those you reject? Use full statistical evidence.",
-      "reference_answer": {
-        "text": "Drama ranks third in your preferences at approximately 75% positivity (9 out of 12 praised, 1 mixed, 2 criticized). You love dramas prioritizing psychological complexity within systemic constraints: Chernobyl (historical catastrophe as character crucible), Succession (power dynamics revealing broken people), The Crown (historical figures as complex humans), The White Lotus (privilege exposing insecurity), Station Eleven (art as resilience), Midnight Mass (faith as community fracture), Industry (ambition within toxic systems), The Americans (marriage as spy thriller), Normal People (intimacy's awkwardness). You gave mixed reviews to Squid Game (archetypal rather than psychological) and criticized Yellowstone ('macho posturing') for prioritizing style over substance. The unifying principle: character psychology must drive narrative, not external circumstances or aesthetic choices. Drama's 75% positivity reflects its vulnerability to spectacle-over-substance failures—a risk sci-fi (approx 88%) partially avoids through speculative frameworks that inherently serve character exploration.",
-        "required_facts": ["drama_positive", "crown_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "americans_positive", "normalpeople_positive", "squidgame_mixed", "yellowstone_negative", "tlou_mixed"],
-        "evaluation_criteria": [
-          "Provides approximate drama positivity percentage (75%) with counts (9/12, 1 mixed, 2 criticized)",
-          "Distinguishes loved vs rejected dramas with specific mechanisms",
-          "Explains why drama ranks below sci-fi (higher failure rate)",
-          "Connects to core principle across all drama discussions"
-        ]
-      }
-    },
-    {
-      "query_id": "q8_mixed_reviews_analysis",
-      "question": "Which shows received mixed reviews in our conversations, and what pattern explains why they're neither fully praised nor rejected?",
-      "reference_answer": {
-        "text": "Two shows received mixed reviews: The Last of Us and Squid Game. Pattern: each succeeds in one dimension you value while failing in another. The Last of Us praised for 'incredible character work between Joel and Ellie' but criticized for violence 'tipping into gratuitous territory'—strong psychology undermined by spectacle-seeking. Squid Game praised as 'social commentary' but criticized for characters feeling 'archetypal rather than psychological'—systemic critique without individual depth. Both demonstrate your threshold: partial alignment with your values creates appreciation without full endorsement. Mixed reviews consistently occur when shows meet one criterion (relationship depth, social relevance) but fail another (restraint, psychological specificity).",
-        "required_facts": ["tlou_mixed", "squidgame_mixed"],
-        "evaluation_criteria": [
-          "Identifies both mixed-review shows",
-          "Explains praise and criticism for each",
-          "Identifies unifying pattern (partial alignment)",
-          "Demonstrates threshold analysis"
-        ]
-      }
-    },
-    {
-      "query_id": "q9_storytelling_principle",
-      "question": "What's the single most important storytelling principle across all genres for me? Synthesize from all sessions.",
-      "reference_answer": {
-        "text": "Respect for the audience's intelligence through emotional authenticity. This principle appears in every genre: you praise shows that 'respect intelligence' (Lupin, Slow Horses, Mindhunter), have 'real stakes' (The Last Kingdom, Vikings, Chernobyl), or balance ideas with humanity (Westworld, The Expanse, Dark, Andor, Mr. Robot, The Americans, Normal People). You reject 'manufactured drama' (reality TV), 'retreading old ground' (House of Dragon), 'gimmicks over tension' (The Afterparty), 'style over substance' (Peaky Blinders later seasons, Dune: Part Two, Wednesday, Yellowstone), 'emotional cotton candy' (Ted Lasso), and archetype over psychology (Squid Game). Across roughly 58 total show discussions (counting mixed separately), about 40 praised shows consistently exemplify this principle, while about 15 criticized and 3 mixed shows violate it in various ways. Your own synthesis captures it: 'Human truth matters most. Everything else is just packaging.'",
-        "required_facts": [
-          "lupin_positive", "slowhorses_fargo_positive", "mh_bosch_positive", "grounded_fantasy_positive", "drama_positive", "ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "andor_positive", "mrrobot_positive", "americans_positive", "normalpeople_positive", "light_detective_negative", "peaky_analysis", "dune_contrast", "wednesday_negative", "light_comedy_negative", "reality_verdict", "yellowstone_negative", "squidgame_mixed"
-        ],
-        "evaluation_criteria": [
-          "Identifies cross-genre unifying principle",
-          "Uses contrasting positive/negative examples from all genres",
-          "Provides approximate statistical backing (40 praised, 15 criticized, 3 mixed)",
-          "Quotes your own synthesized principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_platform_recommendation",
-      "question": "Based on my preferences across all sessions, which streaming platform should I prioritize for new content? Provide statistical evidence.",
-      "reference_answer": {
-        "text": "Prioritize HBO/Max. They host a majority of your praised shows (approximately 13 out of your roughly 22 praised scripted series, about 60%): Westworld, True Detective, Chernobyl, Succession, The Last Kingdom, The White Lotus, Station Eleven, Watchmen, The Leftovers, Barry, The Americans, Industry, and The Last of Us (mixed). Netflix has around 8 praised shows (about 36%): Black Mirror, Stranger Things, Dark, Mindhunter, The Crown, Arcane, Midnight Mass, and Squid Game (mixed)—but also produces reality TV you hate and fantasy failures (Shadow and Bone, Wednesday). Amazon has 2 praised shows (The Expanse, Fleabag) but also Rings of Power and Wheel of Time (fantasy failures). Apple TV+ has 2 praised (Severance, Slow Horses). Hulu has 2 praised (Normal People, The Bear) plus Fargo (co-production). HBO's roughly 60% share of your positive reviews, combined with their consistent production of 'psychological realism' and 'grounded storytelling,' makes them your most reliable platform.",
-        "required_facts": [
-          "ww_foundation_contrast", "td_positive", "drama_positive", "grounded_fantasy_positive", "white_lotus_positive", "station_eleven_positive", "watchmen_positive", "leftovers_positive", "barry_positive", "americans_positive", "industry_positive", "tlou_mixed", "bm_positive", "st_positive", "dark_severance_positive", "mh_bosch_positive", "crown_positive", "arcane_positive", "midnight_mass_positive", "squidgame_mixed", "expanse_positive", "fleabag_positive", "pure_fantasy_negative", "mystery_fantasy_negative", "wednesday_negative", "reality_verdict", "severance_positive", "slowhorses_fargo_positive", "normalpeople_positive", "bear_hacks_positive", "fargo_positive"
-        ],
-        "evaluation_criteria": [
-          "Maps shows to platforms accurately with approximate counts",
-          "Calculates approximate percentage share of positive reviews per platform",
-          "Connects platform strength to your core values",
-          "Acknowledges counterexamples and competitor platforms"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_aggregate_recommendation",
-      "question": "Based on your entire viewing history across all sessions, what single show would you recommend that I haven't mentioned yet—and why does it align with my preferences?",
-      "reference_answer": {
-        "text": "Recommend 'Shōgun' (2024) on Hulu/FX. Statistical alignment: it satisfies multiple of your highest-probability preference categories. First, it's historical drama with minimal fantasy elements—matching your fantasy-success condition (grounded in real history like The Last Kingdom/Vikings). Second, it features psychological realism in political maneuvering—matching your detective/drama preference for character-driven tension (like True Detective/Mindhunter/The Americans). Third, it balances spectacle with intimate human stakes—matching your sci-fi preference for restraint serving character (like The Expanse/Dark). Its treatment of Japanese feudal politics as character crucible, not just historical pageantry, aligns with your immutable principle: 'characters drive the story, not prophecy.' With high success rates in sci-fi, detective, and drama, plus the historical-grounding condition met, Shōgun represents your statistically optimal viewing choice among recent releases.",
-        "required_facts": [
-          "grounded_fantasy_positive", "td_positive", "mh_bosch_positive", "americans_positive", "expanse_positive", "dark_severance_positive"
-        ],
-        "evaluation_criteria": [
-          "Identifies unmentioned but perfectly aligned show",
-          "Maps multiple preference dimensions with approximate statistical probabilities",
-          "Uses your exact phrasing ('characters drive the story, not prophecy')",
-          "Demonstrates cross-genre pattern recognition"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_preference_evolution",
-      "question": "Across our entire conversation, has my taste shown any evolution or consistency? Quantify any shifts using statistical evidence.",
-      "reference_answer": {
-        "text": "Your taste shows remarkable consistency with minimal variance across all metrics. Early sessions (roughly first 20) average: sci-fi approx 88% positive, detective 78%, drama 75%, comedy 63%, fantasy 20%, reality 0%. Later sessions (last 20) average: sci-fi approx 88%, detective 78%, drama 75%, comedy 63%, fantasy 20%, reality 0%. The maximum shift for any genre is within a few percentage points, well within statistical noise. Critically, your rejection thresholds remained absolute: 0% reality positivity across all periods; consistent pattern of fantasy requiring historical grounding; consistent demand for spectacle serving character purpose. The principle—'human truth matters most'—held constant across all sessions. New shows added in later sessions (Better Call Saul, Fleabag, Watchmen, The Leftovers, Mr. Robot, Barry, The Americans, Normal People) all reinforced existing patterns rather than creating new ones. This isn't evolving taste—it's increasingly refined pattern recognition.",
-        "required_facts": [
-          "bcs_positive", "fleabag_positive", "watchmen_positive", "leftovers_positive", "mrrobot_positive", "barry_positive", "americans_positive", "normalpeople_positive"
-        ],
-        "evaluation_criteria": [
-          "Provides approximate longitudinal quantification across time periods",
-          "Shows minimal variance for all genres",
-          "Highlights consistency on rejection thresholds",
-          "Connects quantitative stability to your explicit principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q13_cross_genre_pattern",
-      "question": "What pattern emerges when comparing my favorite shows across completely different genres like Chernobyl (historical drama), Mr. Robot (sci-fi), and Fleabag (comedy)?",
-      "reference_answer": {
-        "text": "The unifying pattern is formal restraint serving psychological revelation. Chernobyl depicts catastrophe through implication rather than graphic exploitation—dread emerges from what's not shown, mirroring the bureaucracy's denial. Mr. Robot uses hacking as externalization of dissociation—the technical elements are metaphors for internal fragmentation, not tech-porn. Fleabag uses fourth-wall breaks not as gimmick but as lifeline—the audience becomes confidante for unshareable grief. Across genres, you value shows where formal choices (visual style, narrative structure, metatechnique) exist in service of character psychology rather than as ends in themselves. Spectacle, quirk, or technical ambition never overrides human authenticity. This pattern holds across sessions: your praised shows consistently employ 'restraint,' 'purposeful style,' or 'earned technique' while your criticized shows exhibit 'style over substance,' 'gimmicks over tension,' or 'manufactured drama.'",
-        "required_facts": ["drama_positive", "mrrobot_positive", "fleabag_positive"],
-        "evaluation_criteria": [
-          "Identifies formal pattern beyond surface genre differences",
-          "Uses specific examples from three distinct genres",
-          "Explains how technique serves character in each case",
-          "Synthesizes into single coherent principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q14_narrative_integrity",
-      "question": "Based on my reactions to shows with unresolved mysteries (1899, The Leftovers) versus tightly plotted narratives (Fargo, Dark), what does 'narrative integrity' mean to me?",
-      "reference_answer": {
-        "text": "Narrative integrity means authorial control serving character revelation—regardless of resolution type. You rejected 1899 for 'confusion masquerading as depth' where mysteries lacked payoff, suggesting you value clarity of authorial intent. Yet you praised The Leftovers for refusing to explain the departure, because 'mystery should serve character, not the other way around.' The distinction: 1899's mysteries exist for their own sake (puzzle-box storytelling), while The Leftovers uses ambiguity to explore grief and meaning-making. You praised Fargo for feeling 'like a complete novel—tight, purposeful' and Dark for ensuring 'every timeline twist serves character development.' You don't need simple stories—you embrace complexity (Dark's timelines, Mr. Robot's identity structure, The Leftovers' surrealism)—but complexity must serve character exploration with intentional design. Loose ends are acceptable only when thematically justified, not due to writer indecision or franchise extension.",
-        "required_facts": ["mystery_fantasy_negative", "leftovers_positive", "slowhorses_fargo_positive", "dark_severance_positive", "mrrobot_positive"],
-        "evaluation_criteria": [
-          "Distinguishes acceptable vs unacceptable ambiguity",
-          "Contrasts negative (1899) and positive (Leftovers) examples",
-          "Defines integrity as authorial intent serving character",
-          "Acknowledges tolerance for complexity when psychologically earned"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_genre_gap_analysis",
-      "question": "There's a significant gap between my top genre (sci-fi at roughly 88%) and my second-tier genres (detective 78%, drama 75%). What explains this difference? Use full statistical evidence.",
-      "reference_answer": {
-        "text": "The 10-13 point gap reflects sci-fi's structural advantage for delivering your core principle—emotional authenticity within speculative frameworks. All praised sci-fi shows successfully balance 'ideas with humanity,' using speculative elements (time travel, AI, hacking, parallel worlds) to explore character psychology rather than replace it. Detective and drama genres have more variance: detective had 2 failures prioritizing 'quirk' and 'gimmicks' over psychological realism; drama had 2 failures prioritizing 'macho posturing' and 1 mixed review for archetype over psychology. Sci-fi's speculative framework inherently requires conceptual engagement, which aligns with your 'respect for intelligence' criterion—bad sci-fi fails differently (emotional coldness, as with Foundation), but good sci-fi consistently delivers the intellectual-emotional balance you value. Detective and drama more frequently succumb to entertainment gimmicks (celebrity cameos, stylistic excess) or genre conventions that undermine psychological depth. Statistical evidence: sci-fi success rate approx 88% (15/17 praised), detective 78% (7/9 praised), drama 75% (9/12 praised)—the consistency of sci-fi's success rate exceeds other genres by meaningful margins.",
-        "required_facts": [
-          "st_positive", "bm_positive", "ww_foundation_contrast", "expanse_positive", "dark_severance_positive", "andor_positive", "mrrobot_positive", "td_positive", "mh_bosch_positive", "lupin_positive", "slowhorses_fargo_positive", "watchmen_positive", "light_detective_negative", "drama_positive", "white_lotus_positive", "station_eleven_positive", "midnight_mass_positive", "industry_positive", "americans_positive", "normalpeople_positive", "squidgame_mixed", "yellowstone_negative"
-        ],
-        "evaluation_criteria": [
-          "Acknowledges approximate gaps (88% vs 78% vs 75%)",
-          "Explains why sci-fi consistently delivers on core principle (15/17 success)",
-          "Identifies why detective/drama genres have more variance/failures",
-          "Connects to synthesized principle with approximate counts"
-        ]
-      }
-    }
-  ]
+    ]
 }

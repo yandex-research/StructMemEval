@@ -832,7 +832,8 @@ def run_agent_case(args) -> dict:
 def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             system_prompt_path: str, mem_agent_config: dict,
                             script_dir: Path, max_workers: int = 3,
-                            verbose: bool = False, mem_checkpoints: list[int] = [0, None]) -> dict:
+                            verbose: bool = False, mem_checkpoints: list[int] = [0, None],
+                            output_dir: Path = None, timestamp: str = None) -> dict:
     """Run mem-agent benchmarks in parallel across cases with incremental saving."""
     tasks = []
     for case_file in case_files:
@@ -1016,7 +1017,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             if parallel_workers > 1:
                 status = run_mem_agent_parallel(
                     dataset.case_files, experiment, dataset.mem_agent_system_prompt,
-                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints,
+                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints, output_dir, timestamp
                 )
                 agent_count = status.get("success_count", 0)
             else:

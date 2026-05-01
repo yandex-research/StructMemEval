@@ -528,216 +528,261 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q1_unanimous_praise",
-      "question": "How many artists did I praise without any criticism or mixed feelings across all conversations? List them.",
-      "reference_answer": {
-        "text": "16 artists received exclusively positive praise with no negative or mixed comments: Monet, Rodin, Hopper, Michelangelo, Klimt, Van Gogh, Degas, Botticelli, Brancusi, Kahlo, Vermeer, Rembrandt, O'Keeffe, Rothko, Matisse, and Cézanne. You used language like 'captures light in a way that feels alive' for Monet, 'stone learning to be flesh' for Rodin, 'emotional weather' for Van Gogh, and 'pain into power' for Kahlo. These artists share your core value: material authenticity serving emotional truth without requiring external explanation.",
-        "required_facts": ["monet_positive", "rodin_positive", "hopper_positive", "david_positive", "klimt_positive", "vangogh_positive", "degas_positive", "botticelli_positive", "brancusi_positive", "kahlo_positive", "vermeer_positive", "rembrandt_positive", "okeeffe_positive", "rothko_positive", "matisse_positive", "cezanne_positive"],
-        "evaluation_criteria": [
-          "Counts exactly 16 artists",
-          "Lists all correct names",
-          "Uses at least one exact quote as evidence",
-          "Identifies common thread"
-        ]
+      {
+        "query_id": "q01_fraction_sculptors_praised",
+        "question": "What is the exact fraction (e.g., X/Y) of sculptors I explicitly discussed where I praised their work positively?",
+        "reference_answer": {
+          "text": "You evaluated exactly 3/4 of these sculptors positively. You praised Rodin, Michelangelo, and Brancusi, but completely rejected Richard Serra.",
+          "required_facts": [
+            "rodin_positive",
+            "david_positive",
+            "brancusi_positive",
+            "serra_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/4",
+            "Names Rodin, Michelangelo, Brancusi, and Serra"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_fraction_unconventional_media",
+        "question": "What is the exact fraction (e.g., X/Y) of artworks utilizing unconventional materials—specifically shaped paper, preserved animal specimens, or manufactured ceramic seeds—that I explicitly praised?",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 1/3 of these artworks. You evaluated Henri Matisse's cut-outs positively, while rejecting Damien Hirst's shark and Ai Weiwei's seeds.",
+          "required_facts": [
+            "matisse_positive",
+            "hirst_negative",
+            "aiweiwei_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 1/3",
+            "Names Matisse, Hirst, and Ai Weiwei"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_fraction_spatial_installations",
+        "question": "What is the exact fraction (e.g., X/Y) of contemporary spatial, conceptual, or immersive installations I discussed that I evaluated with pure positivity?",
+        "reference_answer": {
+          "text": "You evaluated exactly 0/4 of these installations positively. You criticized the steel walls by Richard Serra, the ceramic seeds by Ai Weiwei, the biological tank by Damien Hirst, and contemporary installations in general.",
+          "required_facts": [
+            "serra_negative",
+            "aiweiwei_negative",
+            "hirst_negative",
+            "installations_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 0/4",
+            "Confirms universal negative sentiment for the specific artists and general category"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_count_required_explanation",
+        "question": "How many specific artists or general art categories did I explicitly criticize or express mixed feelings about because their work required external explanations, theoretical decoding, or biographical context to be appreciated? Provide the exact count.",
+        "reference_answer": {
+          "text": "You criticized exactly 4 artists or categories for this reason: Damien Hirst, Ai Weiwei, Jackson Pollock, and contemporary conceptual installations in general.",
+          "required_facts": [
+            "hirst_negative",
+            "aiweiwei_negative",
+            "pollock_mixed",
+            "installations_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Correctly lists Hirst, Ai Weiwei, Pollock, and contemporary installations"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_count_extended_viewing",
+        "question": "How many distinct artists did I explicitly state I spent twenty minutes or more continuously observing their work in a single session? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly stated spending twenty minutes or more observing exactly 3 artists: Claude Monet, Mark Rothko, and Johannes Vermeer.",
+          "required_facts": [
+            "monet_positive",
+            "rothko_positive",
+            "vermeer_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Correctly lists Monet, Rothko, and Vermeer"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_count_healing_transformative",
+        "question": "How many creators did I explicitly praise for creating artworks that serve a transformative, spiritually comforting, or emotionally healing function, especially when dealing with isolation, pain, or mortality? Provide the exact count.",
+        "reference_answer": {
+          "text": "You praised exactly 5 creators for this: Vincent Van Gogh, Frida Kahlo, Henri Matisse, Edward Hopper, and Georgia O'Keeffe.",
+          "required_facts": [
+            "vangogh_positive",
+            "kahlo_positive",
+            "matisse_positive",
+            "hopper_positive",
+            "okeeffe_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Correctly lists Van Gogh, Kahlo, Matisse, Hopper, and O'Keeffe"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_count_visible_texture",
+        "question": "How many artists did I explicitly praise for their specific use of visible texture, thick impasto, or rough, unpolished materials? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 5 creators for this: Auguste Rodin, Vincent Van Gogh, Rembrandt, Paul Cézanne, and Claude Monet.",
+          "required_facts": [
+            "rodin_positive",
+            "vangogh_positive",
+            "rembrandt_positive",
+            "cezanne_positive",
+            "monet_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Lists Rodin, Van Gogh, Rembrandt, Cézanne, and Monet"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_mc_digital_contrast",
+        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital art, screens, renders, or reproductions) as a negative contrast to praise physical, traditional artworks? A) 1-2. B) 3-5. C) 6-8. D) 9-10",
+        "reference_answer": {
+          "text": "The correct option is C (6-8). You used digital technology as a negative contrast exactly 6 times across discussions about Claude Monet, Edward Hopper, Michelangelo, Vincent Van Gogh, Mark Rothko, and Paul Cézanne.",
+          "required_facts": [
+            "monet_positive",
+            "hopper_positive",
+            "david_positive",
+            "vangogh_positive",
+            "rothko_positive",
+            "cezanne_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_mc_rejected_artists",
+        "question": "Which of the following ranges represents the exact count of specific creators whose work I explicitly rejected or thoroughly criticized without expressing any mixed or positive feelings? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
+        "reference_answer": {
+          "text": "The correct option is C (4-5). You completely rejected exactly 4 creators: Pierre-Auguste Renoir, Damien Hirst, Richard Serra, and Ai Weiwei.",
+          "required_facts": [
+            "renoir_negative",
+            "hirst_negative",
+            "serra_negative",
+            "aiweiwei_negative"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_mc_spatial_preference",
+        "question": "Based on my physical interactions with three-dimensional or spatial art, which of the following best describes my explicit preference? A) I prefer interactive works that require walking directly on them or following specific instructions. B) I prefer works that invite natural movement and reward circumnavigation without trapping the viewer. C) I strictly prefer viewing large sculptural works from a single, static vantage point.",
+        "reference_answer": {
+          "text": "The correct option is B. You praised walking around Auguste Rodin's figures, but explicitly criticized Richard Serra's steel walls for making you feel trapped and Ai Weiwei's ceramic seeds for demanding restrictive floor instructions.",
+          "required_facts": [
+            "rodin_positive",
+            "serra_negative",
+            "aiweiwei_negative"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_count_light_illumination",
+        "question": "How many specific creators did I explicitly praise for their masterful rendering of natural light, artificial glow, or physical illumination within the artwork itself? Provide the exact count.",
+        "reference_answer": {
+          "text": "You praised exactly 5 creators for this: Claude Monet, Edward Hopper, Johannes Vermeer, Rembrandt, and Mark Rothko.",
+          "required_facts": [
+            "monet_positive",
+            "hopper_positive",
+            "vermeer_positive",
+            "rembrandt_positive",
+            "rothko_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Correctly lists Monet, Hopper, Vermeer, Rembrandt, and Rothko"
+          ]
+        }
+      },
+      {
+          "query_id": "q12_list_rather_than_artists",
+          "question": "Name 5 specific artists I explicitly favored using a comparative 'rather... than...' or 'give me X over Y' statement.",
+          "reference_answer": {
+            "text": "You used such comparative statements for exactly 5 artists: Auguste Rodin ('rough-hewn truth over polished lies'), Gustav Klimt ('one Klimt that overwhelms me than ten minimal pieces'), Vincent Van Gogh ('one original Van Gogh than a thousand perfect prints'), Constantin Brancusi ('Brancusi's Bird in Space over Serra's walls'), and Rembrandt ('one honest Rembrandt than a hundred perfected Instagram faces').",
+            "required_facts": [
+              "rodin_positive",
+              "klimt_positive",
+              "vangogh_positive",
+              "brancusi_positive",
+              "rembrandt_positive"
+            ],
+            "evaluation_criteria": [
+              "Names exactly 5 correct artists",
+              "Lists Rodin, Klimt, Van Gogh, Brancusi, and Rembrandt"
+            ]
+          }
+      },
+      {
+        "query_id": "q13_list_struggle_fatigue",
+        "question": "Name at least 3 visual artists whose work I explicitly praised for capturing physical exhaustion, visible psychological struggle, or the tangible effort of the artistic process itself.",
+        "reference_answer": {
+          "text": "Three artists you praised for this are Edgar Degas, Auguste Rodin, Paul Cézanne (Vincent Van Gogh is also correct).",
+          "required_facts": [
+            "degas_positive",
+            "rodin_positive",
+            "cezanne_positive",
+            "vangogh_positive"
+          ],
+          "evaluation_criteria": [
+            "Names at least 3 correct artists",
+            "Ensures all named artists match the fatigue or visible struggle criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_list_criticized_mixed",
+        "question": "Name at least 4 distinct creators whose work I explicitly criticized, rejected entirely, or viewed with mixed feelings because they lacked emotional depth, relied on shock value, or required theoretical decoding.",
+        "reference_answer": {
+          "text": "Four creators you evaluated negatively or with mixed feelings are Pierre-Auguste Renoir, Jackson Pollock, Damien Hirst, Richard Serra (Ai Weiwei is also correct).",
+          "required_facts": [
+            "renoir_negative",
+            "pollock_mixed",
+            "hirst_negative",
+            "serra_negative",
+            "aiweiwei_negative"
+          ],
+          "evaluation_criteria": [
+            "Names at least 4 correct creators",
+            "Ensures all named creators received mixed or negative reviews"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_list_quiet_understated",
+        "question": "Name at least 3 specific creators whose work I explicitly praised for possessing a quiet, subtle, or contemplative quality, which I explicitly contrasted against loud, aggressive, or flashy modern styles.",
+        "reference_answer": {
+          "text": "Three creators you praised for these qualities are Edward Hopper, Sandro Botticelli, Johannes Vermeer (Mark Rothko is also correct).",
+          "required_facts": [
+            "hopper_positive",
+            "botticelli_positive",
+            "vermeer_positive",
+            "rothko_positive"
+          ],
+          "evaluation_criteria": [
+            "Names at least 3 correct creators",
+            "Ensures all named creators match the quiet, understated, or contemplative criteria"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q2_complete_rejection",
-      "question": "Which artists did I reject entirely, with no positive comments whatsoever?",
-      "reference_answer": {
-        "text": "Four artists received exclusively negative comments with no praise: Renoir (session 11: 'saccharine' where 'all the interesting edges disappeared'), Hirst (session 22: 'shock without substance' and 'forgettable art'), Serra (session 23: 'intimidate rather than invite' and 'physical discomfort without emotional payoff'), and Ai Weiwei (session 24: 'gimmicky' and 'propaganda with better materials'). Additionally, you gave 0% approval to Contemporary Installations as a category (session 25), calling them 'conceptual puzzles where the artist holds all the answers.'",
-        "required_facts": ["renoir_negative", "hirst_negative", "serra_negative", "aiweiwei_negative", "installations_negative"],
-        "evaluation_criteria": [
-          "Lists all four rejected artists",
-          "Includes Contemporary Installations as category",
-          "Uses exact rejection quotes for each",
-          "Notes zero positive pattern"
-        ]
-      }
-    },
-    {
-      "query_id": "q3_mixed_reviews",
-      "question": "Which artist received both praise and criticism in our conversations? What was the specific praise and criticism?",
-      "reference_answer": {
-        "text": "Only Pollock received mixed reviews (session 19). You praised his work: 'Pollock's energy is undeniable' and 'Number 1A feels deliberate.' But you criticized later works: 'without his biography, the splatters feel random' and 'later pieces seem like diminishing returns where the technique overshadows meaning.' This reflects your broader value: visible compositional intelligence must underlie apparent chaos.",
-        "required_facts": ["pollock_mixed"],
-        "evaluation_criteria": [
-          "Identifies Pollock as the only mixed artist",
-          "Quotes both praise and criticism",
-          "Uses exact session reference",
-          "Explains the balance"
-        ]
-      }
-    },
-    {
-      "query_id": "q4_impasto_and_texture",
-      "question": "Which artists did I specifically mention for their use of impasto, rough texture, or visible brushwork? Quote my descriptions.",
-      "reference_answer": {
-        "text": "You mentioned six artists for impasto, texture, or visible brushwork: Van Gogh (session 7: 'the real texture shows his hand trembling with purpose' and 'the thick paint creates shadows'), Rembrandt (session 15: 'thick impasto highlights aren't showy, they're necessary to capture how light actually falls on aged skin'), Monet (session 1: 'the actual brushstrokes have physical depth that changes with viewing angle'), Cézanne (session 26: 'his brushstrokes leave seams—like the world is still being stitched together'), Rodin (session 2: 'rough textures make the human form seem caught mid-breath'), and Degas (session 8: 'pastel medium... those smudged edges feel like breath'). You value technique that serves emotional truth rather than hiding it.",
-        "required_facts": ["vangogh_positive", "rembrandt_positive", "monet_positive", "cezanne_positive", "rodin_positive", "degas_positive"],
-        "evaluation_criteria": [
-          "Lists all six artists",
-          "Uses exact quotes about texture for each",
-          "Notes common thread of visible technique",
-          "Contrasts with hidden technique (implied)"
-        ]
-      }
-    },
-    {
-      "query_id": "q5_healing_criterion",
-      "question": "In which session did I state my ultimate test for whether something is 'decoration' versus 'art'? What was that test?",
-      "reference_answer": {
-        "text": "In session 20 about Matisse's cut-outs, you stated your ultimate test: 'would this piece comfort someone in pain? If not, it's decoration, not art.' This came after saying you'd hang a Matisse cut-out 'in a children's hospital—it would heal more than medicine sometimes.' This criterion explains why you value Rothko's chapel (session 18) as 'meditation where the painting breathes with you,' and why you reject works like Hirst's shark (session 22) that offer 'shock without substance.' Therapeutic impact is your highest artistic value.",
-        "required_facts": ["matisse_positive", "rothko_positive", "hirst_negative"],
-        "evaluation_criteria": [
-          "Identifies correct session (20)",
-          "Quotes the exact test",
-          "Connects to other examples (Rothko, Hirst)",
-          "Explains why this is ultimate criterion"
-        ]
-      }
-    },
-    {
-      "query_id": "q6_biography_necessity",
-      "question": "Based on our conversations, when is biographical knowledge helpful versus necessary for art appreciation? Use my exact statements.",
-      "reference_answer": {
-        "text": "Biographical knowledge is helpful but never necessary. You stated this principle in session 22: 'Great art should work even if you don't know the artist's name or intention.' You praised Van Gogh more deeply knowing his struggles (session 7), but his work 'isn't just paint—it's emotional weather' works without biography. Conversely, you criticized Pollock in session 19 because 'without his biography, the splatters feel random'—meaning the work itself fails to communicate. You criticized Hirst in session 22 because 'when the artist needs to explain why it's art, the work has already failed its primary test.' Your rule: biography should enrich, never rescue, the artwork.",
-        "required_facts": ["vangogh_positive", "pollock_mixed", "hirst_negative"],
-        "evaluation_criteria": [
-          "States 'helpful never necessary' position",
-          "Uses Van Gogh as positive example",
-          "Uses Pollock and Hirst as negative examples",
-          "Quotes the 'work without biography' principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q7_artist_hand_vs_concept",
-      "question": "Which artists did I explicitly contrast in terms of showing the artist's hand versus hiding behind concept? Provide the contrasting pairs and my exact words.",
-      "reference_answer": {
-        "text": "You contrasted several pairs: Rodin versus Serra—Rodin's 'rough textures make the human form seem caught mid-breath' (session 2) versus Serra's 'massive steel walls intimidate rather than invite... you feel trapped by the material, not transformed by it' (session 23). Van Gogh versus Hirst—Van Gogh's 'hand trembling with purpose' (session 7) versus Hirst's 'shock without substance' requiring explanation (session 22). Monet versus Renoir—Monet's 'actual brushstrokes have physical depth' (session 1) versus Renoir's polished surfaces where 'interesting edges disappeared' (session 11). Your consistent preference: visible human touch over impersonal concept.",
-        "required_facts": ["rodin_positive", "serra_negative", "vangogh_positive", "hirst_negative", "monet_positive", "renoir_negative"],
-        "evaluation_criteria": [
-          "Identifies Rodin/Serra, Van Gogh/Hirst, Monet/Renoir pairs",
-          "Uses exact quotes for each",
-          "Explains 'visible hand' as unifying preference",
-          "Shows contrast between pairs"
-        ]
-      }
-    },
-    {
-      "query_id": "q8_medium_essentialism",
-      "question": "For which artists did I explicitly state that their choice of medium was essential, not arbitrary, to the artwork's effect? Quote my descriptions.",
-      "reference_answer": {
-        "text": "You praised five artists for medium being essential to effect: Degas (session 8: 'pastel medium lets him capture movement and fatigue in ways oils can't—those smudged edges feel like breath'), Van Gogh (session 7: 'the real texture shows his hand trembling with purpose'—impasto making emotion tangible), Rembrandt (session 15: 'thick impasto highlights aren't showy—they're necessary'), Matisse (session 20: 'cut-outs prove limitation breeds creativity—confined to scissors and paper'), and Brancusi (session 12: 'polished bronze makes weightlessness tangible'). For each, you emphasized that the medium itself enables the emotional effect—'when the how and why become inseparable' (session 8).",
-        "required_facts": ["degas_positive", "vangogh_positive", "rembrandt_positive", "matisse_positive", "brancusi_positive"],
-        "evaluation_criteria": [
-          "Lists all five artists",
-          "Quotes medium-specific praise for each",
-          "Explains 'inseparable how and why' principle",
-          "Contrasts with medium as gimmick"
-        ]
-      }
-    },
-    {
-      "query_id": "q9_specific_activity",
-      "question": "What specific activities did I mention doing with art that reveal my preference for slow, engaged viewing? Which artists did I mention in these contexts?",
-      "reference_answer": {
-        "text": "You mentioned four specific activities revealing slow viewing: sitting for extended periods (session 18 with Rothko: 'I sat on that bench for forty minutes, watching the colors shift'), circling sculptures (session 2 with Rodin: 'I circled The Thinker three times—each angle revealed a new layer'), spending focused time with a single painting (session 14 with Vermeer: 'I spent twenty minutes with just this one painting—no photos, no notes, just looking'), and watching light change (session 1 with Monet: 'I spent forty minutes just watching how the light shifted across the canvas').",
-        "required_facts": ["rothko_positive", "rodin_positive", "vermeer_positive", "monet_positive"],
-        "evaluation_criteria": [
-          "Lists sitting, circling, focused time, watching light",
-          "Connects each to specific artists",
-          "Quotes time spent (forty minutes, twenty minutes)",
-          "Avoids attributing assistant statements to user"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_authenticity_principle",
-      "question": "In multiple sessions, I used the words 'truth' or 'honest' to describe what I value in art. Quote three different instances where I used these words and name the artists.",
-      "reference_answer": {
-        "text": "You used 'truth' or 'honest' in at least three instances: 1) Session 2 on Rodin: 'Give me rough-hewn truth over polished lies any day.' 2) Session 11 on Monet and Renoir: 'Monet shows nature's truth; Renoir shows nature's postcard' and 'I'd rather have an imperfect truth than a perfect lie.' 3) Session 15 on Rembrandt: 'I'd rather see one honest Rembrandt than a hundred perfected Instagram faces.' These consistently contrast 'truth' and 'honest' with 'polish,' 'perfection,' or 'lies.'",
-        "required_facts": ["rodin_positive", "monet_positive", "renoir_negative", "rembrandt_positive"],
-        "evaluation_criteria": [
-          "Provides at least three distinct quotes",
-          "Names associated artists for each",
-          "Notes consistent contrast with polish/perfection",
-          "Uses exact language from user messages"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_complete_philosophy",
-      "question": "Using only direct quotes from our conversations, synthesize my complete artistic philosophy.",
-      "reference_answer": {
-        "text": "'Van Gogh's Starry Night isn't just paint—it's emotional weather. Those swirling skies feel like hope fighting through mental storms, making beauty from turbulence.' (session 7) 'Kahlo's self-portraits turn pain into power—not by hiding scars, but by making them part of her crown.' (session 13) 'Rodin's sculptures feel unfinished in the best way—those rough textures make the human form seem caught mid-breath, like stone is learning to be flesh.' (session 2) 'Monet's Water Lilies series captures light in a way that feels alive—like the pond breathes with the changing sky.' (session 1) 'Rembrandt's late self-portraits show aging without vanity—every wrinkle maps a life fully lived. His light doesn't flatter; it forgives.' (session 15) 'Great art shouldn't need footnotes or floor instructions.' (session 24) 'Most contemporary installations feel like conceptual puzzles where the artist holds all the answers. I want art to ask questions, not demand I decode its password.' (session 25) 'Would this piece comfort someone in pain? If not, it's decoration, not art.' (session 20) 'I want to be changed by what I see, not just decorated for it.' (session 6)",
-        "required_facts": ["vangogh_positive", "kahlo_positive", "rodin_positive", "monet_positive", "rembrandt_positive", "aiweiwei_negative", "installations_negative", "matisse_positive"],
-        "evaluation_criteria": [
-          "Uses at least 8 distinct direct user quotes",
-          "Quotes cover positive criteria and rejection criteria",
-          "Quotes include the therapeutic test",
-          "Quotes include the transformation principle",
-          "Quotes include the accessibility principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_rank_mediums",
-      "question": "Based on all our conversations, rank the following art mediums from most to least aligned with my preferences: painting, sculpture, installation art. Provide the raw counts of positive, negative, and mixed comments for each.",
-      "reference_answer": {
-        "text": "Ranking: 1) Painting (13 positive, 1 negative, 1 mixed), 2) Sculpture (3 positive, 1 negative, 0 mixed), 3) Installation art (0 positive, 3 negative, 0 mixed). Raw counts: Painting positives include Monet, Van Gogh, Rembrandt, Degas, Cézanne, Botticelli, Vermeer, Hopper, Kahlo, O'Keeffe, Rothko, Matisse, Klimt; negative is Renoir; mixed is Pollock. Sculpture positives are Rodin, Michelangelo, Brancusi; negative is Serra. Installation negatives are Hirst, Ai Weiwei, and the category 'Contemporary Installations' (session 25). Your preference for tangible, handcrafted works over conceptual installations is clear from these numbers.",
-        "required_facts": ["monet_positive", "vangogh_positive", "rembrandt_positive", "degas_positive", "cezanne_positive", "botticelli_positive", "vermeer_positive", "hopper_positive", "kahlo_positive", "okeeffe_positive", "rothko_positive", "matisse_positive", "klimt_positive", "renoir_negative", "pollock_mixed", "rodin_positive", "david_positive", "brancusi_positive", "serra_negative", "hirst_negative", "aiweiwei_negative", "installations_negative"],
-        "evaluation_criteria": [
-          "Provides correct ranking",
-          "Gives raw counts for each medium",
-          "Lists examples for each category",
-          "Avoids subjective percentages"
-        ]
-      }
-    },
-    {
-      "query_id": "q13_recommend_exhibition",
-      "question": "I have time to see only one exhibition next month. Based on our conversations, should I see a retrospective of Monet, Van Gogh, or Rothko? Justify your recommendation using my specific comments about each.",
-      "reference_answer": {
-        "text": "Choose Van Gogh. While all three are among your most praised artists (all positive), Van Gogh elicited the deepest emotional engagement and most extensive discussion. You described his Starry Night as 'emotional weather' and 'hope fighting through mental storms' (session 7), emphasizing transformation: 'document of human struggle transformed into beauty.' You discussed his technique at length—'the real texture shows his hand trembling with purpose'—and the importance of originals: 'I'd rather see one original Van Gogh than a thousand perfect prints.' Monet you called 'meditative' and 'alive' (session 1). Rothko you called 'emotional weather systems' and 'meditation where the painting breathes with you' (session 18). Van Gogh uniquely combines visible struggle, material authenticity, and profound emotional transformation, making him most aligned with your highest criterion: art that changes you.",
-        "required_facts": ["vangogh_positive", "monet_positive", "rothko_positive"],
-        "evaluation_criteria": [
-          "Recommends Van Gogh",
-          "Uses specific quotes about emotional transformation",
-          "Compares with Monet and Rothko using their quotes",
-          "Connects to core value of being changed by art"
-        ]
-      }
-    },
-    {
-      "query_id": "q14_most_transformative_language",
-      "question": "Which three artists did I describe with language of transformation (e.g., turning pain into power, struggle into beauty)? Provide the exact quotes.",
-      "reference_answer": {
-        "text": "Three artists stand out for transformative language: 1) Van Gogh (session 7): 'Van Gogh's Starry Night isn't just paint—it's emotional weather. Those swirling skies feel like hope fighting through mental storms, making beauty from turbulence.' 2) Kahlo (session 13): 'Kahlo's self-portraits turn pain into power—not by hiding scars, but by making them part of her crown. She doesn't ask for pity; she demands witness.' 3) Matisse (session 20): 'Matisse's cut-outs prove limitation breeds creativity—confined to scissors and paper in old age, he made some of his most joyful, daring work. Constraint as liberation.' All three describe art actively transforming suffering, limitation, or struggle into something beautiful and empowering.",
-        "required_facts": ["vangogh_positive", "kahlo_positive", "matisse_positive"],
-        "evaluation_criteria": [
-          "Identifies Van Gogh, Kahlo, Matisse",
-          "Quotes each transformative description exactly",
-          "Explains common theme of transformation",
-          "Connects to overall philosophy"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_recommend_sculpture_exhibition",
-      "question": "If a museum offered simultaneous exhibitions of Rodin, Brancusi, and Serra, which one should I prioritize? Justify using my exact comments about each.",
-      "reference_answer": {
-        "text": "Prioritize Brancusi. You praised Rodin (session 2) for 'rough textures that make the human form seem caught mid-breath' and 'process made visible.' You praised Brancusi (session 12) for capturing 'flight's essence through pure form' where 'polished bronze makes weightlessness tangible.' But you criticized Serra (session 23) harshly: 'massive steel walls intimidate rather than invite' and create 'physical discomfort without emotional payoff—you feel trapped by the material, not transformed by it.' Brancusi embodies your highest values: 'art that trusts material to carry meaning without explanation' and makes 'the invisible visible.' Between Rodin's representational work and Brancusi's essential forms, Brancusi more purely represents your ideal of material serving transcendent meaning.",
-        "required_facts": ["rodin_positive", "brancusi_positive", "serra_negative"],
-        "evaluation_criteria": [
-          "Recommends Brancusi",
-          "Uses exact quotes for all three sculptors",
-          "Explains why Brancusi best fits core values",
-          "Notes Serra rejection as key contrast"
-        ]
-      }
-    }
-  ]
+    ]
 }

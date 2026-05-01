@@ -605,254 +605,244 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q1_genre_satisfaction_ranking",
-      "question": "Based on all our conversations, rank the book genres I've discussed by my satisfaction rate. Provide the exact number of positive and negative sessions for each genre, and the resulting percentage.",
-      "reference_answer": {
-        "text": "Based on 29 fact‑based sessions, your genre satisfaction ranking is: 1) Horror – 100.0% positive (4 positive sessions out of 4: sessions 14,15,16,35). 2) Historical Fiction – 100.0% positive (4 positive out of 4: sessions 18,19,20,31). 3) Romance – 80.0% positive (4 positive out of 5: sessions 10,11,28,32 positive; session 12 negative). 4) Fantasy – 75.0% positive (9 positive out of 12: sessions 01,02,03,05,08,25,27,29,34 positive; sessions 06,07,26 negative). 5) Poetry – 66.7% positive (2 positive out of 3: sessions 23,33 positive; session 22 negative). Horror and Historical Fiction achieve perfect scores because they consistently deliver the psychological depth and emotional accessibility you value, while Fantasy's lower score reflects your series completion anxiety and occasional disappointment with unbalanced world‑building.",
-        "required_facts": [
-          "fantasy_preference", "fantasy_world_building", "sanderson_preference", "fantasy_satisfaction",
-          "fantasy_series_length", "fantasy_completion_anxiety", "fantasy_character_depth",
-          "epic_fantasy_preference", "fantasy_romance_blend", "low_fantasy_preference",
-          "sanderson_standalone_appreciation", "fantasy_detail_appreciation",
-          "romance_tropes", "romance_character_development", "romance_fatigue", "slow_burn_preference",
-          "romance_depth_example",
-          "horror_appreciation", "horror_atmosphere", "king_appreciation", "king_novella_appreciation", "horror_classic",
-          "historical_fiction_challenge", "historical_fiction_balance", "historical_setting_preference",
-          "historical_fiction_masterpiece",
-          "poetry_struggle", "poetry_format_preference", "poetry_audio_success"
-        ],
-        "evaluation_criteria": [
-          "Provides exact counts for each genre",
-          "Calculates percentages correctly",
-          "Ranks genres accurately",
-          "Explains reasons for differences"
-        ]
+      {
+        "query_id": "q01_historical_fiction_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of historical fiction novels I discussed that I explicitly praised for their execution?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/5. I positively reviewed The Book Thief, The Nightingale, and All the Light We Cannot See, but criticized or struggled with Wolf Hall and I, Claudius.",
+          "required_facts": [
+            "historical_fiction_challenge",
+            "historical_fiction_balance",
+            "historical_setting_preference",
+            "historical_fiction_masterpiece"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/5"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_contemporary_romance_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of contemporary romance novels I discussed that I reviewed positively?",
+        "reference_answer": {
+          "text": "The exact fraction is 2/3. I praised The Flatshare and Beach Read, but explicitly criticized The Unhoneymooners.",
+          "required_facts": [
+            "romance_tropes",
+            "romance_character_development",
+            "romance_depth_example"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 2/3"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_poetry_audio_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the specific poets or poetry podcasts I discussed that I explicitly stated I enjoyed experiencing in audio format?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/4. I praised the audio formats of Amanda Gorman, The Slowdown podcast, and Rupi Kaur, but struggled with reading Mary Oliver in print.",
+          "required_facts": [
+            "poetry_struggle",
+            "poetry_format_preference",
+            "poetry_audio_success"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/4"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_reread_count",
+        "question": "How many specific books or series did I explicitly state that I was rereading or had read multiple times? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 4. I mentioned rereading Mistborn, The Shining, The Body, and the Stormlight Archive.",
+          "required_facts": [
+            "fantasy_preference",
+            "horror_appreciation",
+            "king_novella_appreciation",
+            "fantasy_detail_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_character_author_count",
+        "question": "How many specific authors did I explicitly praise for prioritizing character authenticity, the emotional lives of ordinary people, or meaningful evolution over complex plot mechanics and strict historical details? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 4 authors. I explicitly praised Brandon Sanderson (for Vin's growth), Stephen King (for ordinary characters), Kristin Hannah (for characters over historical accuracy), and Anthony Doerr (for seamlessly weaving history into the characters' lives).",
+          "required_facts": [
+            "fantasy_character_depth",
+            "king_appreciation",
+            "historical_fiction_balance",
+            "historical_fiction_masterpiece"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_struggled_books_count",
+        "question": "Provide the exact count of specific books or series that I explicitly mentioned struggling to read, abandoning midway, or refusing to start due to length, dense details, or emotional distance.",
+        "reference_answer": {
+          "text": "Exactly 5. I mentioned an unnamed fantasy series I abandoned by book three, the Malazan series/Gardens of the Moon, the Kingkiller Chronicle, Wolf Hall, and I, Claudius.",
+          "required_facts": [
+            "fantasy_satisfaction",
+            "fantasy_completion_anxiety",
+            "epic_fantasy_preference",
+            "historical_fiction_challenge",
+            "historical_setting_preference"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_horror_no_gore_count",
+        "question": "How many specific horror novels or movies did I explicitly praise for creating dread through psychological tension, domestic situations, or atmosphere rather than relying on explicit gore? Provide the exact count.",
+        "reference_answer": {
+          "text": "Exactly 3. I praised The Shining, The Haunting of Hill House, and Rosemary's Baby for these specific traits.",
+          "required_facts": [
+            "horror_appreciation",
+            "horror_atmosphere",
+            "horror_classic"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_criticized_books_mc",
+        "question": "Which of the following ranges represents the exact number of named books I explicitly criticized for having artificial character drama, unbalanced genre-blending, or overly dense historical details? A) 0-1. B) 5-6. C) 2-4.",
+        "reference_answer": {
+          "text": "The correct option is C (2-4). I explicitly criticized exactly 3 books for these specific reasons: The Unhoneymooners, A Court of Thorns and Roses, and Wolf Hall.",
+          "required_facts": [
+            "romance_tropes",
+            "fantasy_romance_blend",
+            "historical_fiction_challenge"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_historical_fiction_mc",
+        "question": "Which of the following best describes my explicitly stated preferences for reading historical fiction? A) I prefer 20th-century settings and prioritize emotional truth over dense historical facts. B) I prefer ancient history because the emotional distance is intellectually engaging. C) I prefer 20th-century settings but require encyclopedia-like research and strict factual accuracy over character relatability.",
+        "reference_answer": {
+          "text": "The correct option is A. I explicitly stated that I prefer 20th-century settings because they are more emotionally relatable, and I consistently praise authors who balance history with character while struggling with dense details.",
+          "required_facts": [
+            "historical_setting_preference",
+            "historical_fiction_balance",
+            "historical_fiction_challenge"
+          ],
+          "evaluation_criteria": [
+            "Selects Option A"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_magic_system_mc",
+        "question": "Which of the following best describes my explicitly stated preference for magic systems in fantasy novels? A) I prefer soft, unexplained magic without clear rules to maintain a sense of wonder. B) I prefer magic systems with logical rules, boundaries, and costs so that victories feel earned. C) I prefer magic that is completely separated from the natural ecology to keep it mysterious.",
+        "reference_answer": {
+          "text": "The correct option is B. I explicitly stated that I love magic systems that feel logical and consistent with clear costs and boundaries.",
+          "required_facts": [
+            "fantasy_world_building",
+            "sanderson_preference",
+            "fantasy_detail_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_fantasy_anxiety_mc",
+        "question": "Which of the following combinations of factors did I explicitly state causes me anxiety or frustration when considering or reading long fantasy series? A) Unfinished status, wandering plots without resolution, and massive lengths like 10+ books. B) Large casts of characters with distinct voices and standalone formats. C) Logical magic systems and ecological world-building details.",
+        "reference_answer": {
+          "text": "The correct option is A. I explicitly stated that 10+ book lengths, series that remain unfinished for years, and wandering plots without satisfying conclusions cause me anxiety and frustration.",
+          "required_facts": [
+            "fantasy_satisfaction",
+            "fantasy_series_length",
+            "fantasy_completion_anxiety"
+          ],
+          "evaluation_criteria": [
+            "Selects Option A"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_reading_format_mc",
+        "question": "Which of the following best describes my aggregated preferences for reading formats across different genres? A) I strictly read all genres in print. B) I exclusively listen to audiobooks for every genre to save time. C) I prefer print for traditional immersion but strongly prefer audio for poetry to bypass the decoding pressure of written text.",
+        "reference_answer": {
+          "text": "The correct option is C. I explicitly stated that reading poetry in print causes performance anxiety and decoding pressure, and that the audio format makes poetry much more accessible.",
+          "required_facts": [
+            "poetry_struggle",
+            "poetry_format_preference",
+            "poetry_audio_success"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_fantasy_elements_list",
+        "question": "Name 3 specific narrative elements, structural characteristics, or world-building techniques that I explicitly praised as essential for my enjoyment of fantasy novels.",
+        "reference_answer": {
+          "text": "Any 3 of the following: 1) Logical and consistent magic systems with clear costs. 2) Satisfying conclusions that tie up loose ends. 3) Character growth involving moral choices. 4) Distinct voices and purposes for every character in a large cast. 5) Magic systems that integrate into the natural ecology without info-dumps.",
+          "required_facts": [
+            "fantasy_world_building",
+            "fantasy_satisfaction",
+            "fantasy_character_depth",
+            "epic_fantasy_preference",
+            "fantasy_detail_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 specific narrative elements",
+            "Ensures all 3 map to praised characteristics in the text"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_frustrating_tropes_list",
+        "question": "Name 3 specific narrative tropes, pacing issues, or structural choices across any genre that I explicitly stated cause me frustration or break my immersion.",
+        "reference_answer": {
+          "text": "Any 3 of the following: 1) Fantasy series ending on cliffhangers or remaining unfinished. 2) Characters making stupid decisions to create artificial drama. 3) Insta-love romances that feel unearned. 4) Dense, inaccessible historical details that overwhelm the narrative. 5) Romance overshadowing the world-building in fantasy blends.",
+          "required_facts": [
+            "fantasy_completion_anxiety",
+            "romance_tropes",
+            "slow_burn_preference",
+            "historical_fiction_challenge",
+            "fantasy_romance_blend"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 narrative frustrations",
+            "Ensures all 3 map to explicitly stated dislikes in the text"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_authentic_emotion_books_list",
+        "question": "Name 3 specific books across any genre that I explicitly praised for anchoring their story in authentic emotional struggles, character growth, or psychological depth, rather than relying on artificial drama, dense facts, or explicit gore.",
+        "reference_answer": {
+          "text": "Any 3 of the following: The Flatshare, The Nightingale, The Shining, All the Light We Cannot See, Beach Read, or The Haunting of Hill House.",
+          "required_facts": [
+            "romance_character_development",
+            "historical_fiction_balance",
+            "horror_appreciation",
+            "historical_fiction_masterpiece",
+            "romance_depth_example"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 books",
+            "Ensures all 3 map to the praised criteria of authentic emotion/psychological depth"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q2_perfect_book_recommendation",
-      "question": "I want a book with logical magic systems, strong character growth, and a guaranteed satisfying ending. Based on our talks, which book is my perfect match?",
-      "reference_answer": {
-        "text": "Brandon Sanderson's 'Mistborn: The Final Empire' is your ideal match. You have praised Sanderson in multiple sessions (02, 03, 08, 29, 34) for his 'logical and consistent' magic systems, his ability to create characters who 'struggle with moral choices and evolve' (Vin's journey from street urchin to leader), and his reliability in 'tying up loose ends' – a critical factor given your anxiety about unfinished series (expressed in sessions 06 and 07). Mistborn is a completed trilogy, so it satisfies all three requirements with 100% alignment to your preferences.",
-        "required_facts": [
-          "fantasy_world_building", "fantasy_character_depth", "sanderson_preference",
-          "fantasy_satisfaction", "fantasy_completion_anxiety"
-        ],
-        "evaluation_criteria": [
-          "Correctly identifies Mistborn",
-          "Connects to all three criteria with evidence",
-          "Mentions series completion as key factor"
-        ]
-      }
-    },
-    {
-      "query_id": "q3_common_thread",
-      "question": "What is the single most important factor that determines whether I will love or hate a book, regardless of genre? Quantify how often this factor appears in my feedback.",
-      "reference_answer": {
-        "text": "The single most important factor is **character authenticity** – whether characters make believable, motivated decisions rather than acting to serve plot convenience. This factor appears in 21 of your 29 fact‑based sessions (72.4%). You praised authentic evolution in fantasy (Vin in Mistborn, session 08), romance (The Flatshare, sessions 10–11), horror (King's ordinary people, session 16), and historical fiction (The Nightingale, session 19). Conversely, you criticized artificial drama in romance (The Unhoneymooners, session 10) and unbalanced world‑building (ACOTAR, session 26). No other factor – not prose style, not genre, not even world‑building complexity – predicts your satisfaction as strongly.",
-        "required_facts": [
-          "fantasy_character_depth", "romance_character_development", "king_appreciation",
-          "historical_fiction_balance", "romance_tropes", "fantasy_romance_blend"
-        ],
-        "evaluation_criteria": [
-          "Identifies character authenticity as the core factor",
-          "Provides percentage (72.4%) with exact session count",
-          "Supports with positive and negative examples across genres"
-        ]
-      }
-    },
-    {
-      "query_id": "q4_fantasy_author_priority",
-      "question": "Among Sanderson, Rothfuss, and Jordan, which fantasy author should I read next, and why? Base your answer on my specific concerns about series completion, magic systems, and character depth.",
-      "reference_answer": {
-        "text": "You should prioritize Sanderson. He scores highest on all your criteria: series completion (you praised him for 'tying up loose ends' in sessions 03 and 29, and he has never abandoned a series), magic systems (you love his 'logical and consistent' rules, sessions 02 and 34), and character depth (Vin's evolution in Mistborn, session 08). Rothfuss triggers your completion anxiety (session 07 – 14 years unfinished), and Jordan's Wheel of Time (14 books) also triggers your 'series length anxiety' (session 06). Sanderson gives you a 75% satisfaction rate (9 of 12 positive fantasy sessions mentioning him).",
-        "required_facts": [
-          "sanderson_preference", "fantasy_world_building", "fantasy_character_depth",
-          "fantasy_completion_anxiety", "fantasy_series_length"
-        ],
-        "evaluation_criteria": [
-          "Selects Sanderson",
-          "Justifies with all three criteria",
-          "References specific anxiety triggers for others"
-        ]
-      }
-    },
-    {
-      "query_id": "q5_horror_recommendation",
-      "question": "I want a horror novel that relies on psychological tension and atmosphere, not gore. Which specific book fits me best, and what quotes from our chats support this?",
-      "reference_answer": {
-        "text": "Shirley Jackson's 'The Haunting of Hill House' is your perfect match. You stated you 'prefer horror that creates a sense of dread through atmosphere rather than explicit violence' (session 15) and that 'the best horror stays with you long after reading' (session 14). Jackson's prose makes 'the sentences themselves feel haunted' – exactly the kind of lingering psychological terror you value. You also appreciate Stephen King for 'ordinary characters facing extraordinary circumstances' (session 16), and Jackson achieves the same with Eleanor and the other guests. With 100% positive horror feedback (4 out of 4 sessions), this recommendation is strongly aligned.",
-        "required_facts": [
-          "horror_appreciation", "horror_atmosphere", "king_appreciation"
-        ],
-        "evaluation_criteria": [
-          "Names The Haunting of Hill House",
-          "Uses user's exact descriptions of preferred horror",
-          "Connects to 100% positive horror record"
-        ]
-      }
-    },
-    {
-      "query_id": "q6_historical_fiction_strategy",
-      "question": "I often struggle with dense historical fiction like Wolf Hall. What strategy should I follow to enjoy the genre, based on my past successes?",
-      "reference_answer": {
-        "text": "Your optimal strategy has three parts: 1) Focus on 20th‑century settings – you said 'I prefer historical fiction set in the 20th century because I can more easily connect with the characters' experiences' (session 20). 2) Choose authors who prioritize character over detail – Kristin Hannah (The Nightingale), Markus Zusak (The Book Thief), and Anthony Doerr (All the Light We Cannot See) weave history seamlessly into character journeys, unlike Mantel's dense prose (session 18). 3) Prioritize 'emotional truth' over strict accuracy – you value 'creative liberties that stay true to the emotional reality' (session 19). Following this, your historical fiction satisfaction is 100% (4 of 4 positive sessions).",
-        "required_facts": [
-          "historical_setting_preference", "historical_fiction_balance",
-          "historical_fiction_challenge", "historical_fiction_masterpiece"
-        ],
-        "evaluation_criteria": [
-          "Provides three clear strategies",
-          "References specific positive and negative examples",
-          "Mentions 100% success rate when strategies are followed"
-        ]
-      }
-    },
-    {
-      "query_id": "q7_romance_recommendation",
-      "question": "I want a romance novel that avoids artificial drama and has strong character development. Which book should I choose, and why?",
-      "reference_answer": {
-        "text": "Beth O'Leary's 'The Flatshare' is your ideal romance. You praised it explicitly: characters have 'their own goals and struggles' (session 11), and the relationship develops through 'slow‑burn' tension where 'obstacles serve character growth' (session 28). It avoids the 'stupid decisions for artificial drama' you hated in The Unhoneymooners (session 10). With 80% positive romance feedback (4 of 5 sessions), and The Flatshare mentioned positively across multiple sessions, it perfectly embodies your preference for earned, character‑driven romance.",
-        "required_facts": [
-          "romance_character_development", "romance_tropes", "slow_burn_preference"
-        ],
-        "evaluation_criteria": [
-          "Identifies The Flatshare",
-          "Connects to user's stated preferences (authentic goals, slow burn)",
-          "Contrasts with negative example"
-        ]
-      }
-    },
-    {
-      "query_id": "q8_genre_expansion",
-      "question": "Which new genre should I explore that naturally extends from my current tastes, and why would it work for me?",
-      "reference_answer": {
-        "text": "Magical realism is your ideal next genre. It bridges your love for fantasy ('low fantasy set in our world with subtle magical elements' – session 27) and your preference for emotional accessibility over complex world‑building. It also aligns with your historical fiction value of 'emotional truth' (session 19) and your romance appreciation for character‑driven stories. Authors like Alice Hoffman (Practical Magic) or Laura Esquivel (Like Water for Chocolate) create wonder within familiar settings, avoiding the 'dense details' you dislike and the 'unfinished series' anxiety you have. This expansion has the highest probability of success given your 75%+ satisfaction in adjacent genres.",
-        "required_facts": [
-          "low_fantasy_preference", "fantasy_world_building",
-          "historical_setting_preference", "romance_character_development",
-          "historical_fiction_challenge", "fantasy_completion_anxiety"
-        ],
-        "evaluation_criteria": [
-          "Identifies magical realism",
-          "Explains how it bridges multiple existing preferences",
-          "Shows how it avoids known pain points"
-        ]
-      }
-    },
-    {
-      "query_id": "q9_format_strategy",
-      "question": "For which genres should I use audiobooks versus print, based on my past experiences? Create a personalized format guide.",
-      "reference_answer": {
-        "text": "Here is your personalized format guide: **Print for Fantasy** – you need to absorb complex world‑building and magic systems (75% positive fantasy sessions). **Print for Horror** – atmospheric tension benefits from controlled pacing and rereading (100% positive). **Audiobooks for Poetry** – you explicitly said audio 'makes poetry more accessible' and removes 'performance anxiety' (session 23); print poetry feels 'overwhelming' (session 22). **Audiobooks for Dense Historical Fiction** – though not explicitly stated, audio can bypass the 'period‑appropriate language' barrier you struggled with in Wolf Hall (session 18). **Print for Romance** – character dialogue and emotional beats land better when you control the pace (80% positive). This strategy respects your core need: format should serve engagement, not hinder it.",
-        "required_facts": [
-          "poetry_format_preference", "historical_fiction_challenge",
-          "fantasy_preference", "horror_atmosphere", "romance_character_development"
-        ],
-        "evaluation_criteria": [
-          "Provides genre‑specific recommendations",
-          "Uses user's explicit statements where available",
-          "Explains reasoning for each"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_series_anxiety_strategy",
-      "question": "I love epic fantasy but fear unfinished series. How should I choose what to read? Outline a tiered strategy with examples.",
-      "reference_answer": {
-        "text": "Use this three‑tier strategy: **Tier 1 (Zero Risk)** – Read completed trilogies only, e.g., Sanderson's Mistborn, which you know delivers satisfying conclusions (sessions 03, 29). **Tier 2 (Managed Risk)** – For ongoing series, only start authors with proven completion records and announced endpoints. Sanderson's Stormlight Archive (10 planned, 5 published) qualifies because he 'ties up loose ends' and has never abandoned a series. **Tier 3 (Exploration)** – Use standalone novels as 'test drives' for new authors, e.g., Sanderson's 'Elantris'. Avoid authors like Rothfuss and Martin entirely – they trigger your core anxiety (sessions 06–07). This approach lets you enjoy epic scope while respecting your 75% fantasy satisfaction rate and your boundary condition of completion reliability.",
-        "required_facts": [
-          "fantasy_completion_anxiety", "fantasy_series_length",
-          "sanderson_preference", "fantasy_satisfaction", "sanderson_standalone_appreciation"
-        ],
-        "evaluation_criteria": [
-          "Presents clear three‑tier strategy",
-          "Names specific examples for each tier",
-          "Explains why it addresses user's anxiety"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_genre_comparison",
-      "question": "Compare my satisfaction with fantasy versus romance. Give exact percentages and explain the reasons for the difference.",
-      "reference_answer": {
-        "text": "Fantasy satisfaction: 75.0% (9 positive out of 12 sessions). Romance satisfaction: 80.0% (4 positive out of 5 sessions). The 5‑point gap stems from reliability factors. Fantasy's positives are driven by Sanderson's consistent delivery of logical magic and satisfying endings; its negatives come from series completion anxiety (sessions 06, 07) and unbalanced world‑building (session 26). Romance's positives center on character authenticity (The Flatshare, sessions 10–11, 28, 32); its sole negative is trope fatigue (session 12), which is easier to avoid by spacing out reads. Both genres score highly, but fantasy has more inherent risk due to long‑form commitments.",
-        "required_facts": [
-          "fantasy_preference", "sanderson_preference", "fantasy_satisfaction",
-          "romance_character_development", "romance_fatigue", "romance_tropes", "romance_depth_example"
-        ],
-        "evaluation_criteria": [
-          "Provides correct percentages (75% vs 80%)",
-          "Counts sessions correctly (12 fantasy, 5 romance)",
-          "Explains reasons for the difference"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_character_focused_recommendation",
-      "question": "Recommend a book where character growth is the absolute center of the story, regardless of genre. Justify using my stated preferences.",
-      "reference_answer": {
-        "text": "Amor Towles' 'A Gentleman in Moscow' is your ideal character‑driven book. The Count's decades‑long confinement forces internal growth through moral choices – exactly what you value in fantasy ('characters who struggle with moral choices and evolve', session 08) and romance ('characters have their own goals and struggles', session 11). Though historical fiction, it avoids your 'dense details' pain point: the setting serves character development, not the other way around. With 100% positive historical fiction when characters come first, this novel delivers the authentic evolution you seek.",
-        "required_facts": [
-          "fantasy_character_depth", "romance_character_development",
-          "historical_setting_preference", "historical_fiction_balance"
-        ],
-        "evaluation_criteria": [
-          "Identifies A Gentleman in Moscow",
-          "Explains how it embodies user's character‑first value",
-          "Shows why it works despite being historical fiction"
-        ]
-      }
-    },
-    {
-      "query_id": "q13_world_building_priorities",
-      "question": "Rank the aspects of world‑building that matter most to me, with evidence from our conversations.",
-      "reference_answer": {
-        "text": "Your world‑building priorities, ranked: 1) **Character Integration** (mentioned in 5 sessions) – world elements must serve character growth; you criticized when world‑building 'overshadows' character arcs (session 26). 2) **Logical Consistency** (4 sessions) – magic needs 'consistent rules' to make victories feel earned (sessions 02, 34). 3) **Emotional Accessibility** (3 sessions) – you prefer low fantasy in relatable worlds (session 27) and 20th‑century settings (session 20). 4) **No Information Overload** (2 sessions) – avoid 'dense details' that pull you out (session 18). 5) **Satisfying Resolution** (3 sessions) – world‑building promises must be fulfilled (sessions 03, 29). These explain why Sanderson (strong on #2 and #5) satisfies you, while Malazan (dense, #4 violation) frustrates you.",
-        "required_facts": [
-          "fantasy_character_depth", "fantasy_world_building", "low_fantasy_preference",
-          "historical_setting_preference", "historical_fiction_challenge",
-          "sanderson_preference", "fantasy_romance_blend", "fantasy_detail_appreciation"
-        ],
-        "evaluation_criteria": [
-          "Ranks five aspects with session counts",
-          "Connects each to positive/negative examples",
-          "Explains how ranking matches satisfaction patterns"
-        ]
-      }
-    },
-    {
-      "query_id": "q14_poetry_plan",
-      "question": "I want to enjoy poetry but find print intimidating. Create a step‑by‑step plan based on what has worked for me.",
-      "reference_answer": {
-        "text": "Here is a 4‑step plan based on your success with audio poetry: **Step 1 (Weeks 1‑2)** – Daily audio immersion via 'The Slowdown' podcast, Amanda Gorman, or Rupi Kaur's audiobook; you said audio 'makes poetry more accessible' (sessions 23, 33). **Step 2 (Weeks 3‑4)** – Try novels‑in‑verse like 'The Poet X' by Elizabeth Acevedo; narrative structure provides the character development you love (session 08). **Step 3 (Weeks 5‑6)** – Themed micro‑collections in print, e.g., Ada Limón's 'The Hurting Kind'; read one poem daily to reduce intimidation. **Step 4 (Weeks 7+)** – Curated anthologies like 'Good Poems' edited by Garrison Keillor. This leverages your 66.7% poetry satisfaction (2 of 3 positive) and your clear preference for audio as the entry point.",
-        "required_facts": [
-          "poetry_struggle", "poetry_format_preference", "poetry_audio_success", "fantasy_character_depth"
-        ],
-        "evaluation_criteria": [
-          "Provides time‑bound steps",
-          "Uses user's successful audio experience",
-          "Bridges to narrative formats"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_reading_identity",
-      "question": "Summarize my core reading identity in three principles that predict my reaction to any book.",
-      "reference_answer": {
-        "text": "Your reading identity rests on three predictive principles: **1) Character authenticity > plot mechanics** – characters must make believable, motivated decisions; violation leads to abandonment (72.4% of positive feedback hinges on this). **2) Emotional accessibility > technical precision** – you prioritize emotional connection over perfect accuracy, whether in historical facts, magic systems, or poetic density (evident in 100% of your historical and horror positives). **3) Completion reliability for long commitments** – you require confidence that series will conclude satisfactorily; without it, anxiety overrides enjoyment (100% of your series‑related concerns). These principles correctly predict over 90% of your satisfaction outcomes across 29 fact‑based sessions.",
-        "required_facts": [
-          "romance_tropes", "fantasy_character_depth", "historical_fiction_challenge",
-          "historical_fiction_balance", "fantasy_completion_anxiety",
-          "romance_character_development", "king_appreciation", "poetry_struggle"
-        ],
-        "evaluation_criteria": [
-          "Distills three clear principles",
-          "Provides supporting percentages",
-          "Explains how they predict satisfaction"
-        ]
-      }
-    }
-  ]
+    ]
 }

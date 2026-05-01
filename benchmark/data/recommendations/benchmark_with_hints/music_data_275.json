@@ -592,245 +592,267 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q01_best_learning_genre",
-      "question": "Based on all our conversations, which musical genre would be most beneficial for me to study deeply as a developing musician?",
-      "reference_answer": {
-        "text": "Based on our conversations, rock music—particularly its blues-rock foundation—would be your most beneficial genre to study deeply. You consistently value 'raw emotional honesty' and music where 'every note has purpose'—core rock principles. Your appreciation for guitarists like Gilmour who 'don't need speed to be expressive' aligns perfectly with rock phrasing. Your violin studies will also benefit from rock's emphasis on microtonal expression (bends, slides) that transfers directly to string instruments. Rock provides the emotional vocabulary that will elevate your playing across all contexts. With approximately 7 positive out of 8 rock sessions (around 88% positive), this genre offers the purest expression of your core musical values. Start with B.B. King and Albert King to understand how minimalism creates maximum emotional impact—those three-chord structures force genuine emotional intent rather than hiding behind complexity.",
-        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration", "classical_violin_appreciation", "rock_emotional_honesty", "alternative_emotional_depth", "alternative_storytelling_value", "rock_live_recording_philosophy"],
-        "evaluation_criteria": [
-          "Identified rock/blues-rock as optimal learning genre based on emotional foundation",
-          "Connected to user's balance of technique and expression value",
-          "Explained cross-instrument benefits for both guitar and violin",
-          "Referenced specific user quotes about emotional honesty in music"
-        ]
-      }
-    },
-    {
-      "query_id": "q02_top_three_genres_ranked",
-      "question": "What are my top three most positively regarded music genres based on our discussions, and what specific qualities do I value in each?",
-      "reference_answer": {
-        "text": "Based on sentiment analysis of our conversations, your top three genres are: 1) Classic rock (approximately 8 sessions, around 88% positive)—valued for 'raw, emotional solos,' 'analog warmth,' guitarists who prioritize 'melodic phrasing over shredding,' and the 'human imperfections that give the music soul' in live studio recordings. 2) Alternative rock (about 6 sessions, roughly 83% positive)—appreciated for 'complex emotions,' 'lo-fi authenticity,' 'poetic lyrics,' the 'excitement of discovering underground bands,' and 'raw authenticity over polished perfection.' You connect with its risk-taking spirit but criticize bands that 'lose their edge' after signing with majors. 3) Classical music (5 sessions, 80% positive)—resonates because of Romantic composers who 'express clear emotions' you can feel 'without lyrics,' especially after your violin studies revealed the 'technical skill' behind the beauty. All three share your core value: emotional authenticity over technical display.",
-        "required_facts": ["rock_guitar_inspiration", "rock_analog_warmth", "classic_rock_authenticity", "rock_live_recording_philosophy", "alternative_emotional_depth", "alternative_lo_fi_aesthetic", "alternative_lyrical_complexity", "alternative_storytelling_value", "alternative_raw_authenticity", "classical_violin_appreciation", "classical_composer_connection", "classical_live_revelation"],
-        "evaluation_criteria": [
-          "Correctly ranked top 3 genres based on conversation frequency and sentiment",
-          "Identified specific valued qualities for each genre with direct quotes",
-          "Connected all three to user's overarching authenticity value",
-          "Acknowledged nuanced criticisms within preferred genres"
-        ]
-      }
-    },
-    {
-      "query_id": "q03_primary_instrument_focus",
-      "question": "I'm torn between focusing on guitar or violin. Based on my musical preferences and learning patterns, which instrument should I prioritize and why?",
-      "reference_answer": {
-        "text": "You should prioritize guitar as your primary instrument while maintaining violin as a complementary study. Roughly 16 of our conversations centered on guitar-related topics (rock solos, phrasing, tone, technique, blues bends), compared to about 6 focused primarily on violin. You described spending 'hours practicing bending and vibrato' on guitar with clear intrinsic motivation, while your violin study was explicitly framed as analytical ('to understand classical music better'). Guitar aligns directly with your top genres (rock, alternative) and core value of emotional storytelling through melody—you said solos should 'tell a story without words.' Your violin practice provides invaluable ear training and helps you appreciate classical music's technical demands, but guitar is clearly your expressive voice. Keep violin for its unique benefits to intonation and classical appreciation, but let guitar be your primary creative outlet—your passion for it is evident in how deeply you analyze phrasing and tone across multiple sessions.",
-        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration", "classical_violin_appreciation", "alternative_emotional_depth", "classic_rock_authenticity", "rock_emotional_honesty", "classical_guitar_bridge"],
-        "evaluation_criteria": [
-          "Recommended guitar as primary instrument with approximate frequency evidence",
-          "Distinguished between analytical vs. expressive motivation for each instrument",
-          "Proposed complementary role for secondary instrument",
-          "Connected recommendation to user's core genres and values"
-        ]
-      }
-    },
-    {
-      "query_id": "q04_genres_to_approach_cautiously",
-      "question": "Which music genres should I approach cautiously based on my stated preferences, and what specific aspects conflict with my musical values?",
-      "reference_answer": {
-        "text": "Approach these genres cautiously: 1) Death/black metal—you explicitly stated metal feels 'too overwhelming and aggressive' with 'constant screaming' that makes it 'hard to appreciate the musicianship underneath.' While you respect technical skill (Tool, Animals as Leaders, acoustic metal moments), extreme metal's vocal approach directly conflicts with your need for emotional connection through melody. 2) Formulaic mainstream pop—you appreciate 'catchy melodies' but reject music that feels 'manufactured' or 'designed by committee.' Your preference for authentic expression suggests highly commercialized pop will leave you unsatisfied despite its melodic strengths. 3) Baroque classical—you find it 'too mathematical and restrained' compared to Romantic composers who 'express clear emotions.' Your need for immediate emotional resonance means Baroque's intellectual precision may feel cold. All three fail your core test: balancing technical craft with authentic emotional expression. Interestingly, you can appreciate metal's technical aspects when separated from aggression (instrumental/acoustic/dynamic range), showing your rejection is value-based, not genre-based.",
-        "required_facts": ["metal_overwhelming", "metal_technical_appreciation", "metal_instrumental_exception", "metal_acoustic_appreciation", "metal_dynamic_range_appreciation", "pop_formulaic_concerns", "classical_composer_connection"],
-        "evaluation_criteria": [
-          "Identified 3 specific genres requiring caution with clear reasoning",
-          "Explained conflict between genre characteristics and user values",
-          "Acknowledged nuance (e.g., appreciating metal musicianship but not vocals)",
-          "Connected avoidance rationale to user's core balance principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q05_ideal_production_aesthetic",
-      "question": "What production style or aesthetic would best suit my musical personality based on our conversations?",
-      "reference_answer": {
-        "text": "Your ideal production aesthetic is warm, organic, and performance-focused rather than clinically perfect. You've consistently criticized 'over-produced music' while praising the 'analog warmth' of 70s recordings, 'human imperfections that give the music soul,' and the 'energy of musicians playing together in one room' that 'creates magic overdubbing can never replicate.' You value 'raw, unpolished sound' that 'feels honest and authentic' (lo-fi alternative) but also appreciate 'polished and professional' production when it serves the song (pop melodies). The sweet spot for you: recordings that preserve natural dynamics and performance nuance while maintaining clarity—think Neil Young's 'Harvest' (warm, slightly imperfect) meets Bon Iver's 'For Emma' (texturally rich but emotionally direct). Avoid hyper-compressed modern rock, quantized-perfect electronic music, and excessive auto-tune. Your production philosophy: 'Technical perfection should never mask emotional authenticity.' Prioritize room ambiance, minimal overdubs, analog-style saturation, and performances with genuine feel over grid-perfect timing.",
-        "required_facts": ["rock_analog_warmth", "classic_rock_authenticity", "alternative_lo_fi_aesthetic", "pop_auto_tune_critique", "rock_modern_decline", "rock_emotional_honesty", "rock_live_recording_philosophy", "alternative_raw_authenticity"],
-        "evaluation_criteria": [
-          "Identified warm/organic production as ideal match",
-          "Referenced user's criticism of clinical/perfect production",
-          "Balanced appreciation for polish with need for authenticity",
-          "Provided concrete aesthetic characteristics with genre examples"
-        ]
-      }
-    },
-    {
-      "query_id": "q06_emotional_technical_balance_genres",
-      "question": "Which genres best combine the emotional depth and technical mastery I seem to value? I want recommendations that satisfy both sides of my musical personality.",
-      "reference_answer": {
-        "text": "Three genre/style combinations perfectly balance emotion and technique for you: 1) Blues-rock fusion (Gary Moore, early Jeff Beck)—merges rock's 'raw emotional honesty' with virtuosic technique that always serves the song. You'll appreciate how they use technical skill to amplify feeling rather than show off. 2) Progressive folk-rock (Nick Drake, early Paul Simon)—blends intricate fingerstyle guitar work with deeply personal storytelling that 'paints vivid pictures.' Satisfies your love of lyrical depth and acoustic authenticity. 3) Jazz-influenced alternative (Radiohead's later work, Jeff Buckley)—combines harmonic sophistication with profound emotional vulnerability. Their willingness to take risks while maintaining melodic accessibility matches your values perfectly. All three avoid extremes you reject: empty shredding, formulaic songwriting, or aggression without purpose. They embody your principle that 'technique in service of expression' defines mature musicianship. Your appreciation for dynamic range in metal and melodic craft in pop shows you're ready to explore this balance further—you just need artists who prioritize emotional coherence alongside harmonic complexity.",
-        "required_facts": ["alternative_emotional_depth", "guitar_hero_inspiration", "alternative_lyrical_complexity", "rock_guitar_inspiration", "alternative_lo_fi_aesthetic", "classic_rock_authenticity", "rock_emotional_honesty", "alternative_storytelling_value", "metal_dynamic_range_appreciation", "pop_melodic_craft_appreciation"],
-        "evaluation_criteria": [
-          "Recommended 3 specific genre/style combinations",
-          "Explained how each balances emotion and technique",
-          "Connected recommendations to user's explicit values",
-          "Avoided genres representing extremes user rejects"
-        ]
-      }
-    },
-    {
-      "query_id": "q07_authenticity_critique",
-      "question": "Which genres or music styles have I implicitly or explicitly criticized for lacking authenticity, and what specific authenticity markers am I looking for?",
-      "reference_answer": {
-        "text": "You've criticized three areas for authenticity issues: 1) Modern rock production that sounds 'too clinical' compared to 70s classics—you value the 'analog warmth and human imperfection' that made older solos 'breathe' and believe 'the energy of musicians playing together in one room creates magic that overdubbing can never replicate.' 2) Death metal vocals that feel like 'shouting over interesting music' rather than expressive singing—you seek emotional intentionality in vocal delivery and appreciate metal bands that understand 'dynamic range' to create emotional depth beyond pure aggression. 3) Formulaic pop that feels 'manufactured' or 'designed by committee' rather than personally expressive—you contrast this with artists who 'prioritize artistic vision over commercial appeal' while still respecting pop's 'melodic craft.' Your authenticity markers are consistent: emotional intentionality (every note must 'have purpose'), human imperfection that reveals the performer (not quantized perfection), and artistic vision serving personal expression rather than market calculation. You don't reject technical skill—you reject skill deployed without emotional purpose. As you put it: 'technique in service of expression' defines what feels authentic; 'virtuosity without feeling leaves me cold.' This explains your appreciation across rock, alternative, and classical while struggling with extreme metal vocals and formulaic pop.",
-        "required_facts": ["rock_guitar_inspiration", "metal_overwhelming", "pop_formulaic_concerns", "alternative_mainstream_sellout", "classic_rock_authenticity", "alternative_lo_fi_aesthetic", "rock_emotional_honesty", "rock_live_recording_philosophy", "metal_dynamic_range_appreciation", "pop_melodic_craft_appreciation"],
-        "evaluation_criteria": [
-          "Identified 3 specific authenticity criticisms with examples",
-          "Defined consistent authenticity markers across genres",
-          "Distinguished between rejecting technique vs. rejecting empty technique",
-          "Used user's own phrasing about 'technique in service of expression'"
-        ]
-      }
-    },
-    {
-      "query_id": "q08_core_musical_identity",
-      "question": "What are my fundamental musical values that cut across all genres I've discussed? I want to understand my musical identity at its core.",
-      "reference_answer": {
-        "text": "Your core musical identity rests on three interconnected values spanning all conversations: 1) Emotional authenticity over technical display—you consistently reject 'virtuosity without feeling' while praising music where 'every note has purpose.' This appears in your rock appreciation ('raw emotional solos'), classical connection (Romantic composers' 'clear emotions'), and alternative love ('complex emotions'). 2) Human imperfection as expressive virtue—you critique 'clinical' production while valuing the 'analog warmth' and 'human imperfection' that makes music 'breathe.' This spans your rock, blues-rock, and alternative interests—you hear vulnerability as strength, not weakness. The 'slight imperfections' you value in live recordings and lo-fi production aren't flaws to you—they're the markers of genuine human expression. 3) Artistic integrity over commercial calculation—you gravitate toward artists who 'prioritize artistic vision over commercial appeal' and reject music that feels 'manufactured' or 'designed by committee.' These three values form a coherent philosophy: you seek music where skilled performers express genuine emotion through imperfectly human means, prioritizing personal truth over market appeal. This explains why you connect across rock, alternative, and classical while struggling with extreme metal vocals and formulaic pop—they violate different aspects of this unified value system.",
-        "required_facts": ["rock_guitar_inspiration", "alternative_emotional_depth", "classic_rock_authenticity", "alternative_lo_fi_aesthetic", "metal_overwhelming", "pop_formulaic_concerns", "alternative_mainstream_sellout", "classical_composer_connection", "rock_emotional_honesty", "rock_live_recording_philosophy", "alternative_raw_authenticity"],
-        "evaluation_criteria": [
-          "Synthesized 3 core values from across all conversations",
-          "Demonstrated how each value appears in multiple genres",
-          "Showed coherence of value system across diverse interests",
-          "Explained why certain genres resonate or don't based on these values"
-        ]
-      }
-    },
-    {
-      "query_id": "q09_live_vs_recorded_preference",
-      "question": "Based on our conversations about live performances versus recordings, what's my preference and why does it matter for my musical development?",
-      "reference_answer": {
-        "text": "You have a strong preference for live or live-sounding recordings over sterile studio productions. Your breakthrough classical music experience came from 'seeing a live orchestra perform' where 'the physical presence of the sound...made the music come alive' in ways 'recordings never could.' You specifically praised classic rock bands that 'recorded live in the studio with minimal overdubs' where you can 'hear the human imperfections that give the music soul' and believe 'the energy of musicians playing together in one room creates magic that overdubbing can never replicate.' You criticize modern production for being 'too clinical' and 'processed,' stripping away the 'human element' you value. This preference matters deeply for your development: 1) It guides your recording approach—prioritize capturing authentic performances over perfecting every detail in post-production. 2) It shapes your listening habits—seek out live albums and minimally produced records to train your ear on genuine musical interaction. 3) It informs your practice—play with other musicians regularly to develop the responsive listening skills that make performances breathe. Your preference isn't anti-technology; it's pro-humanity in music-making. The warmth you seek in 'analog recordings' and authenticity you value in 'lo-fi production' all point to the same core need: music that breathes like a human being, not a machine.",
-        "required_facts": ["classical_live_revelation", "classic_rock_authenticity", "rock_analog_warmth", "alternative_lo_fi_aesthetic", "rock_modern_decline", "rock_emotional_honesty", "rock_live_recording_philosophy", "alternative_raw_authenticity"],
-        "evaluation_criteria": [
-          "Identified clear preference for live/authentic over sterile production",
-          "Connected preference to specific experiences across genres",
-          "Explained practical implications for user's musical development",
-          "Distinguished between rejecting technology vs. rejecting dehumanization"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_cross_genre_patterns",
-      "question": "What patterns do you notice across my genre preferences that reveal my deeper musical personality?",
-      "reference_answer": {
-        "text": "Three cross-genre patterns reveal your musical personality: 1) You consistently prefer genres that prioritize melodic expression over rhythmic aggression. You connect with rock guitar solos, violin melodies, and vocal phrasing—but struggle with metal's rhythmic assault and distorted vocals that obscure melody. Even your appreciation of Tool centers on their melodic complexity within odd time signatures, not the aggression. You specifically appreciate metal bands that understand 'dynamic range' because contrast creates emotional depth beyond pure sonic assault. 2) You value narrative and emotional clarity over abstraction. You prefer Romantic composers who 'express clear emotions' over Baroque's mathematical precision, and lyrics that 'paint vivid pictures' over pure abstraction. You need to feel the emotional intent immediately—your impatience with 'pieces too long and difficult to follow' reflects this need for accessible emotional communication. 3) You seek authenticity through imperfection—you consistently praise 'human imperfections,' 'raw unpolished sound,' and 'analog warmth' while criticizing 'clinical' production, auto-tune, and formulaic writing. These patterns reveal you're fundamentally a melodic storyteller who values emotional directness and human vulnerability in music. You're not a technical virtuoso seeking complexity for its own sake—you're an emotional communicator seeking genuine connection through sound.",
-        "required_facts": ["rock_guitar_inspiration", "classical_violin_appreciation", "classical_composer_connection", "alternative_lyrical_complexity", "metal_overwhelming", "metal_technical_appreciation", "classic_rock_authenticity", "alternative_lo_fi_aesthetic", "pop_formulaic_concerns", "rock_emotional_honesty", "metal_dynamic_range_appreciation"],
-        "evaluation_criteria": [
-          "Identified 3 distinct cross-genre patterns with evidence",
-          "Connected patterns to reveal unified musical personality",
-          "Distinguished user's preferences from stereotypical musician values",
-          "Provided insight into user's fundamental musical identity"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_learning_approach_recommendation",
-      "question": "Based on how I've discussed learning instruments and appreciating music, what's my optimal approach to musical growth?",
-      "reference_answer": {
-        "text": "Your optimal learning approach uniquely combines analytical understanding with emotional immersion—never one without the other. You learned violin not just to play, but to 'understand classical music better' by experiencing its technical demands firsthand. You study guitar solos note-by-note ('practicing bending and vibrato for hours') but always with emotional intent—you want to 'capture that feeling,' not just replicate technique. This dual approach is your superpower. Practical application: First, learn technique through emotional goals—practice bends to express sadness, not just to execute the motion. Second, deepen appreciation through hands-on experience—your violin studies transformed how you hear classical recordings; your classical guitar practice revealed 'compositional bridges' in orchestral music. Third, cross-pollinate instruments—your guitar harmony knowledge helps your violin phrasing; violin intonation sensitivity improves your guitar bending. Fourth, analyze recordings emotionally and technically simultaneously—ask both 'what feeling does this convey?' and 'how was this achieved technically?' Avoid purely technical exercises divorced from musical context, and avoid passive listening without active analysis. Your growth happens at the intersection of 'What is this technically?' and 'How does this make me feel?'—that's where your most profound musical insights emerge. This approach honors both your intellectual curiosity and emotional sensitivity—two sides of a single musical mind.",
-        "required_facts": ["classical_violin_appreciation", "rock_guitar_inspiration", "guitar_hero_inspiration", "classical_guitar_bridge", "alternative_emotional_depth", "rock_emotional_honesty", "genre_exploration_pattern"],
-        "evaluation_criteria": [
-          "Identified dual analytical/emotional learning approach as user's strength",
-          "Provided specific examples of how user already applies this approach",
-          "Gave actionable recommendations bridging technique and expression",
-          "Validated user's natural learning style rather than imposing external methods"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_genre_statistics_breakdown",
-      "question": "What are the exact statistics of my genre preferences based on our conversations—how many positive, negative, and mixed discussions did we have about each major genre?",
-      "reference_answer": {
-        "text": "Based on our conversations with 29 content-rich genre-specific sessions, here are your approximate genre statistics: Rock music—around 8 discussions total (approximately 7 positive about classic rock's authenticity/solos/warmth/live recording philosophy/emotional honesty, 1 negative about modern rock's decline)—roughly 88% positive. Alternative rock—about 6 discussions (around 5 positive about emotional depth/lo-fi aesthetic/lyrical complexity/storytelling/raw authenticity, 1 negative about mainstream sellout)—approximately 83% positive. Classical music—5 discussions (about 4 positive about Romantic composers/violin appreciation/live performance/cross-instrument insights, 1 negative about Baroque's mathematical restraint and intimidating length)—80% positive. Pop music—4 discussions (2 positive about catchy melodies/melodic craft/production quality, 2 negative about formulaic nature/auto-tune/commercial calculation)—50% positive. Metal—6 discussions (4 positive about technical skill/instrumental exceptions/acoustic moments/dynamic range, 2 negative about overwhelming aggression/vocal styles/subgenre confusion)—around 67% positive. Your overall pattern: strongest affinity for rock and alternative (emotional authenticity + guitar focus), strong appreciation for classical (with specific conditions around era and format), balanced but critical engagement with pop, and selective appreciation of metal when it emphasizes musicianship over aggression. These statistics reflect your consistent prioritization of emotional expression and human authenticity over technical display or commercial calculation across all genres.",
-        "required_facts": [
-            "rock_guitar_inspiration",
-            "rock_analog_warmth",
-            "rock_modern_decline",
-            "guitar_hero_inspiration",
-            "classic_rock_authenticity",
-            "rock_live_recording_philosophy",
-            "rock_emotional_honesty",
-            "alternative_emotional_depth",
-            "alternative_lo_fi_aesthetic",
-            "alternative_lyrical_complexity",
-            "alternative_storytelling_value",
-            "alternative_raw_authenticity",
-            "alternative_mainstream_sellout",
-            "classical_violin_appreciation",
-            "classical_intimidating_length",
-            "classical_live_revelation",
-            "classical_guitar_bridge",
-            "classical_composer_connection",
-            "pop_catchy_melodies",
-            "pop_formulaic_concerns",
-            "pop_auto_tune_critique",
-            "pop_melodic_craft_appreciation",
+      {
+        "query_id": "q01_metal_positive_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of my discussions specifically regarding heavy metal bands or subgenres where I explicitly found elements to praise or appreciate?",
+        "reference_answer": {
+          "text": "The exact fraction is 4/6 (or 2/3). You praised specific elements in the music of Tool, Animals as Leaders, Mastodon, and the acoustic parts of Metallica's work, while explicitly struggling with the aggression of Master of Puppets by Metallica and the blending styles of death/black/doom metal.",
+          "required_facts": [
             "metal_technical_appreciation",
-            "metal_instrumental_exception",
             "metal_overwhelming",
+            "metal_instrumental_exception",
             "metal_subgenre_overwhelm",
             "metal_acoustic_appreciation",
             "metal_dynamic_range_appreciation"
-        ],
-        "evaluation_criteria": [
-          "Provided approximate quantitative breakdown for all five genres with roughly correct session counts",
-          "Calculated percentages reflecting true sentiment (around 88%, 83%, 80%, 50%, 67%)",
-          "Distinguished between specific aspects appreciated within each genre",
-          "Connected statistics to user's underlying value system of emotional authenticity"
-        ]
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 4/6 or 2/3",
+            "Correctly identifies the 4 praised instances versus the 2 criticized instances"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_classical_positive_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of my conversations focused on orchestral, symphonic, or historical instrumental music where I expressed positive feelings or a new appreciation?",
+        "reference_answer": {
+          "text": "The exact fraction is 4/5. You expressed positive appreciation when discussing playing Bach on violin, attending a live symphony concert, connecting with Romantic composers like Brahms and Tchaikovsky, and playing classical guitar, but you criticized Mahler's symphonies for being intimidatingly long.",
+          "required_facts": [
+            "classical_violin_appreciation",
+            "classical_intimidating_length",
+            "classical_live_revelation",
+            "classical_composer_connection",
+            "classical_guitar_bridge"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 4/5",
+            "Identifies the 4 positive classical discussions and the 1 negative (Mahler)"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_pop_positive_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of my explicit discussions about mainstream vocal pop music where I praised the genre for its melodic hooks or production craft?",
+        "reference_answer": {
+          "text": "The exact fraction is 2/4 (or 1/2). You praised the melodic craft of Dua Lipa and Taylor Swift, but criticized the genre generally for overusing auto-tune and relying on formulaic four-chord progressions.",
+          "required_facts": [
+            "pop_catchy_melodies",
+            "pop_auto_tune_critique",
+            "pop_formulaic_concerns",
+            "pop_melodic_craft_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 2/4 or 1/2",
+            "Accurately maps the 2 positive sessions against the 2 critical sessions"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_criticized_acts_count",
+        "question": "How many specific musical acts or composers did I explicitly criticize, struggle to enjoy, or express deep disappointment in? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly criticized or struggled with exactly 4 musical acts or composers: Metallica (Master of Puppets), Mahler, Arctic Monkeys (Tranquility Base Hotel), and Bach (finding his Baroque style too mathematical).",
+          "required_facts": [
+            "metal_overwhelming",
+            "classical_intimidating_length",
+            "alternative_mainstream_sellout",
+            "classical_composer_connection"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Lists Metallica, Mahler, Arctic Monkeys, and Bach as the criticized acts"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_actively_studied_acts_count",
+        "question": "How many specific musical acts or composers did I explicitly state that I was actively practicing, analyzing, or learning to play on a physical instrument myself? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly stated practicing or studying exactly 5 acts or composers: Led Zeppelin (Jimmy Page's solos), Tool (time signatures), Bach (Partita No. 3), David Gilmour (bending/vibrato), and Animals as Leaders (extended range/tapping).",
+          "required_facts": [
+            "rock_guitar_inspiration",
+            "metal_technical_appreciation",
+            "classical_violin_appreciation",
+            "guitar_hero_inspiration",
+            "metal_instrumental_exception"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Lists Led Zeppelin/Jimmy Page, Tool, Bach, David Gilmour, and Animals as Leaders"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_criticized_genres_count",
+        "question": "How many distinct broad musical genres, subgenres, or specific historical eras of a genre did I explicitly criticize or express negative struggles with (e.g., finding them formulaic, overwhelming, or overly mathematical)? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly criticized exactly 6 genres/subgenres/eras: Heavy Metal (for aggression), Symphonic/Classical (for intimidating length), Modern Rock (for being derivative), Death/Black/Doom Metal (for blending together), Mainstream Pop (for being formulaic), and Baroque Classical (for being too mathematical).",
+          "required_facts": [
+            "metal_overwhelming",
+            "classical_intimidating_length",
+            "rock_modern_decline",
+            "metal_subgenre_overwhelm",
+            "pop_formulaic_concerns",
+            "classical_composer_connection"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 6",
+            "Identifies Heavy Metal, Symphonic/Classical, Modern Rock, Death/Black/Doom Metal, Mainstream Pop, and Baroque"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_raw_production_praise_count",
+        "question": "How many specific bands did I explicitly praise for their unpolished, lo-fi, or live-in-the-room recording qualities, emphasizing how those imperfections add authenticity or soul? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 5 bands for these qualities: Pink Floyd, Nirvana, The Rolling Stones, The Who, and Pixies.",
+          "required_facts": [
+            "rock_analog_warmth",
+            "alternative_lo_fi_aesthetic",
+            "classic_rock_authenticity",
+            "rock_live_recording_philosophy",
+            "alternative_raw_authenticity"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Lists Pink Floyd, Nirvana, Rolling Stones, The Who, and Pixies"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_alternative_folk_praise_count",
+        "question": "How many specific alternative rock or folk-rock musical acts did I explicitly praise for their lyrical depth, poetic storytelling, innovative soundscapes, or raw emotional authenticity? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 4 acts for these qualities: Radiohead (or Thom Yorke), Nirvana, Simon & Garfunkel, and Pixies.",
+          "required_facts": [
+            "alternative_emotional_depth",
+            "alternative_lo_fi_aesthetic",
+            "alternative_lyrical_complexity",
+            "alternative_storytelling_value"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Lists Radiohead/Thom Yorke, Nirvana, Simon & Garfunkel, and Pixies"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_metal_versatility_mc",
+        "question": "Which of the following ranges represents the exact number of highly technical or aggressive bands I explicitly praised for their musical versatility, dynamic range, acoustic integration, or lack of distracting harsh vocals? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
+        "reference_answer": {
+          "text": "The correct option is C (4-5). You explicitly praised exactly 4 heavy bands for these traits: Tool, Animals as Leaders, Metallica (specifically for acoustic sections), and Mastodon.",
+          "required_facts": [
+            "metal_technical_appreciation",
+            "metal_instrumental_exception",
+            "metal_acoustic_appreciation",
+            "metal_dynamic_range_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C",
+            "Confirms count of 4 within the selected range"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_classical_era_preference_mc",
+        "question": "Based on my overarching discussions about historical orchestral music, which of the following best describes my explicit preference regarding compositional eras? A) I strictly prefer the mathematical precision and intellectual structure of the Baroque era. B) I strongly prefer the direct emotional expression of Romantic era composers, finding earlier mathematical styles less accessible. C) I completely reject both Baroque and Romantic eras in favor of extremely long, complex symphonies without clear section changes.",
+        "reference_answer": {
+          "text": "The correct option is B. You explicitly stated you connect much more with Romantic composers like Brahms and Tchaikovsky because of their clear emotional expression, while finding Baroque music like Bach too mathematical and restrained.",
+          "required_facts": [
+            "classical_composer_connection",
+            "classical_intimidating_length",
+            "classical_violin_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Correctly maps user preference to Romantic emotional directness over Baroque math"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_commercial_complaint_mc",
+        "question": "Which of the following ranges represents the exact number of separate sessions where I explicitly complained about modern music feeling too safe, derivative, manufactured, or designed by a committee? A) 1-2. B) 3-5. C) 6-8. D) 9-12",
+        "reference_answer": {
+          "text": "The correct option is B (3-5). You explicitly expressed this exact complaint across 4 different sessions (regarding modern rock lacking risk, alternative bands losing their edge on major labels, auto-tune removing vulnerability, and mainstream pop being formulaic).",
+          "required_facts": [
+            "rock_modern_decline",
+            "alternative_mainstream_sellout",
+            "pop_auto_tune_critique",
+            "pop_formulaic_concerns"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Matches the 4 instances to the requested conceptual traits"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_restrained_guitarists_list",
+        "question": "Name 3 specific guitarists I explicitly praised for their emotional phrasing, restraint, or tone, ensuring they are artists I specifically highlighted as proving you do not need speed or \"shredding\" to be expressive.",
+        "reference_answer": {
+          "text": "Three guitarists you explicitly praised for restraint and emotion over speed are David Gilmour, Mark Knopfler, and B.B. King.",
+          "required_facts": [
+            "guitar_hero_inspiration",
+            "rock_emotional_honesty",
+            "rock_guitar_inspiration"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 guitarists",
+            "Includes David Gilmour, Mark Knopfler, and B.B. King",
+            "Excludes shredders or modern highly-processed guitarists"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_live_raw_bands_list",
+        "question": "Name 5 specific bands whose recordings I explicitly praised because they captured raw, live-in-the-studio energy, analog warmth, or unvarnished human imperfections.",
+        "reference_answer": {
+          "text": "Five bands you praised for capturing raw, analog, or live energy are Pink Floyd, Nirvana, The Rolling Stones, The Who and Pixies.",
+          "required_facts": [
+            "rock_analog_warmth",
+            "alternative_lo_fi_aesthetic",
+            "classic_rock_authenticity",
+            "alternative_raw_authenticity"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 bands",
+            "All 5 bands map to discussions of analog, live, or lo-fi praise"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_metal_positive_exclusion_list",
+        "question": "Name 3 aggressive, heavy, or highly technical bands I explicitly praised for their dynamic range, odd time signatures, or instrumental complexity, ensuring you completely exclude any band whose intense aggression or screaming I explicitly stated I struggled to get through.",
+        "reference_answer": {
+          "text": "Three heavy bands you praised are Tool, Animals as Leaders, and Mastodon. (Metallica is excluded because you explicitly stated their aggression on Master of Puppets was too intense and hard to get through).",
+          "required_facts": [
+            "metal_technical_appreciation",
+            "metal_instrumental_exception",
+            "metal_dynamic_range_appreciation",
+            "metal_overwhelming"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 bands",
+            "Includes Tool, Animals as Leaders, and Mastodon",
+            "Strictly excludes Metallica"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_classical_composers_list",
+        "question": "Name 4 specific historical composers I mentioned, identifying at least one whose symphonies I explicitly found too long and at least one from the Romantic era whose emotional directness I praised.",
+        "reference_answer": {
+          "text": "Four classical composers you mentioned are Mahler (whose symphonies you found too long), Brahms, Tchaikovsky and Bach (both of whom you praised for Romantic emotional directness).",
+          "required_facts": [
+            "classical_intimidating_length",
+            "classical_composer_connection",
+            "classical_violin_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 composers",
+            "Ensures Mahler is tied to the length critique",
+            "Ensures Brahms or Tchaikovsky is tied to Romantic emotional praise"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q13_personalized_playlist_strategy",
-      "question": "If I were building a 10-song playlist that perfectly represents my musical taste, what would be your strategy for selecting those songs and why?",
-      "reference_answer": {
-        "text": "My strategy for your perfect 10-song playlist balances emotional authenticity, technical craft, and genre diversity while honoring your core values. Here's the arc: 1) Start with Pink Floyd's 'Comfortably Numb' solo—Gilmour's phrasing embodies your love of 'raw, emotional solos' with 'human imperfections.' 2) Add Led Zeppelin's 'Whole Lotta Love' for Jimmy Page's 'incredible tone and phrasing' you're learning. 3) Include Radiohead's 'Paranoid Android' for its 'complex emotions' and the 'genuine excitement' you feel discovering boundary-pushing music. 4) Add Simon & Garfunkel's 'The Sound of Silence' for poetic lyrics that 'paint vivid pictures' in the folk-rock tradition you value. 5) Include a Brahms violin concerto movement honoring your connection to Romantic composers who 'express clear emotions.' 6) Insert B.B. King's 'The Thrill Is Gone' to ground everything in rock's emotional honesty—'three chords and the truth' that forces genuine expression. 7) Add Metallica's 'Nothing Else Matters' showcasing metal's 'musical range' in acoustic moments that reveal vulnerability. 8) Include Pink Floyd's 'Breathe' for its 'analog warmth' you cherish in 70s production. 9) Add a carefully selected pop song with strong melodic craft that works without sacrificing production quality or feeling manufactured. 10) Close with The Rolling Stones' 'Gimme Shelter' live version ending on musicians playing together in real time—capturing the 'human imperfections' and 'energy of musicians playing together' that 'give music soul.' This arc moves from technical mastery to emotional vulnerability and back, mirroring your musical journey. Every song passes your authenticity test while showcasing your range—the unifying thread isn't genre, it's human expression prioritized over technical display or commercial calculation.",
-        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration", "alternative_storytelling_value", "alternative_lyrical_complexity", "classical_composer_connection", "alternative_emotional_depth", "metal_acoustic_appreciation", "rock_analog_warmth", "pop_melodic_craft_appreciation", "classic_rock_authenticity", "rock_emotional_honesty", "rock_live_recording_philosophy"],
-        "evaluation_criteria": [
-          "Provided strategic 10-song selection with clear rationale for each",
-          "Created narrative arc reflecting user's musical values and journey",
-          "Balanced representation across preferred genres without forcing inclusion",
-          "Ensured every selection passes user's authenticity test as unifying principle",
-          "NOTE: Exact song titles are not required; evaluate based on genre diversity, quality of rationale, and alignment with user's stated values. A reasonable genre distribution includes classic rock (2-3 songs), alternative (2-3), classical (1-2), blues (1), metal acoustic/instrumental (1), and pop craft (0-1)."
-        ]
-      }
-    },
-    {
-      "query_id": "q14_metal_appreciation_strategy",
-      "question": "Given that I have mixed reactions to metal, what specific strategy would maximize my chances of finding metal music I actually enjoy?",
-      "reference_answer": {
-        "text": "Given your approximately 33% negative reaction rate to metal (2 negative out of around 6 metal sessions), your optimal strategy focuses exclusively on metal subgenres emphasizing musicianship over aggression while avoiding harsh vocals entirely. Specifically: 1) Prioritize instrumental progressive metal like Animals as Leaders—you already connected with how they let you 'focus on the musicianship without being put off by aggressive vocals.' Their jazz-influenced harmony and polyrhythmic complexity satisfy your appreciation for technical sophistication without emotional assault. 2) Explore bands with strong acoustic dimensions—you appreciated how 'some metal bands include beautiful acoustic sections' that 'show their musical range' beyond noise, and specifically value metal bands that understand 'dynamic range' to create emotional depth. 3) Seek rhythmically complex bands like Tool that prioritize 'complex time signatures and musicianship' over vocal aggression—their mathematical precision appeals to your analytical side while Maynard's melodic vocals maintain emotional accessibility. Critical avoidance rules: Steer clear of death/black metal with constant growling—that consistently triggers your discomfort with metal being 'too overwhelming.' Don't get bogged down in subgenre taxonomy—you've noted there are 'too many metal subgenres to keep track of' that 'all seem to blend together.' Start with just 2-3 accessible entry points rather than navigating the entire landscape. Remember: you don't need to 'get' all of metal. Finding the roughly 67% that aligns with your values (technical complexity, dynamic range, melodic vocals) while avoiding the rest is a perfectly valid approach. Your appreciation for technical skill means you'll connect with metal that showcases compositional intelligence rather than pure sonic assault.",
-        "required_facts": ["metal_overwhelming", "metal_technical_appreciation", "metal_instrumental_exception", "metal_acoustic_appreciation", "metal_subgenre_overwhelm", "metal_dynamic_range_appreciation", "genre_exploration_pattern"],
-        "evaluation_criteria": [
-          "Acknowledged user's statistical mix with metal without judgment",
-          "Provided specific entry points matching user's existing positive exceptions",
-          "Created clear avoidance guidelines based on consistent negative patterns",
-          "Validated selective appreciation rather than demanding genre-wide acceptance"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_musical_growth_roadmap",
-      "question": "Looking at my musical journey so far, what should my next 6 months of musical growth focus on to develop most meaningfully as a musician?",
-      "reference_answer": {
-        "text": "Based on our conversations mapping your musical identity, your next 6 months should focus on three interconnected areas that build on your existing strengths while addressing key growth opportunities: Months 1-2: Deepen rock foundation—spend focused time with B.B. King and Albert King recordings. Practice bending and vibrato not as techniques but as emotional vocabulary—assign specific feelings to each bend width and vibrato speed. This grounds your guitar playing in the emotional authenticity that defines your musical values. Months 3-4: Cross-pollinate instruments intentionally—dedicate 20 minutes of each practice session to transferring concepts between guitar and violin. Play blues bends on violin (using vibrato width); apply violin's precise intonation to guitar bends. Study Bach's lute suites on guitar to bridge classical and popular traditions—this satisfies your appreciation for both technical craft and emotional expression. Months 5-6: Explore soul/R&B vocal phrasing—without needing to sing well, analyze how Al Green or D'Angelo use melodic contour to convey emotion. Apply these phrasing principles to your guitar solos. This addresses your blind spot in appreciating vocal expression while reinforcing your core value of emotional authenticity. Throughout this journey: Record yourself weekly playing the same simple progression—listen back not for technical accuracy but for emotional intent. Which take feels most human? Most vulnerable? That's your compass. Avoid the trap of accumulating techniques without emotional purpose—your growth happens at the intersection of 'What is this technically?' and 'How does this make me feel?' Your musical identity is already clear: you're an emotional communicator who values authenticity over virtuosity. These six months should refine that voice, not search for a new one. The goal isn't to play more notes—it's to make the notes you play matter more.",
-        "required_facts": ["rock_guitar_inspiration", "guitar_hero_inspiration", "classical_violin_appreciation", "classical_guitar_bridge", "rock_emotional_honesty", "genre_exploration_pattern", "alternative_emotional_depth", "alternative_storytelling_value"],
-        "evaluation_criteria": [
-          "Provided structured 6-month roadmap with clear monthly focus areas",
-          "Connected each phase to user's existing strengths and values",
-          "Addressed specific growth opportunities (vocal phrasing, cross-instrument transfer)",
-          "Emphasized emotional intent over technical accumulation as guiding principle"
-        ]
-      }
-    }
-  ]
+    ]
 }

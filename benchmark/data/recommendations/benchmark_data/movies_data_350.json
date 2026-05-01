@@ -790,215 +790,261 @@
     }
   ],
   "queries": [
-    {
-      "query_id": "q1_favorite_actor_mentions",
-      "question": "Which actor do I mention most frequently and positively across our conversations? Give me approximate counts.",
-      "reference_answer": {
-        "text": "Arnold Schwarzenegger is your most frequently mentioned actor, appearing in positive contexts in about 6 different discussions. You've praised him in Terminator 2, Predator, Commando, and True Lies, calling him the 'gold standard' and noting his physical commitment. Tom Cruise comes second with about 4 mentions across Mission: Impossible, Top Gun, and general discussions of commitment. Keanu Reeves third with 3 mentions, primarily for John Wick and his training dedication. Your admiration clearly peaks with Schwarzenegger, whom you see as the quintessential action star.",
-        "required_facts": ["terminator2_favorite", "predator_cast", "commando_one_liners", "true_lies_schwarzenegger", "mi_stunts", "john_wick_training", "actor_commitment", "top_gun_practical"],
-        "evaluation_criteria": [
-          "Identifies Arnold as most mentioned (approx 6 times)",
-          "Lists other actors with approximate counts (Cruise ~4, Reeves ~3)",
-          "Uses specific film examples without session numbers",
-          "Reflects user's consistent admiration"
-        ]
+      {
+        "query_id": "q01_crime_pacing_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the specific crime, mob, or heist films I discussed by name that I explicitly criticized for dragging, being too slow, or lacking narrative momentum?",
+        "reference_answer": {
+          "text": "The exact fraction is 1/4. You criticized the 3.5-hour mob epic (The Irishman) for being too slow, but praised the other three crime/mob films (Heat, The French Connection, and Goodfellas) for their perfect pacing, tension, and stakes.",
+          "required_facts": [
+            "drama_pacing",
+            "heat_practical",
+            "french_connection_chase",
+            "goodfellas_cop"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 1/4",
+            "Correctly identifies The Irishman as criticized and the other three as praised"
+          ]
+        }
+      },
+      {
+        "query_id": "q02_austrian_star_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the specific movies starring the famous Austrian action star I discussed where I explicitly praised a sequence set in either a shopping mall or a mud pit?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/5. Out of the 5 movies starring Arnold Schwarzenegger you discussed (The Terminator, Terminator 2, Predator, Commando, and True Lies), you explicitly praised exactly 3 for these specific settings: Predator (mud pit), Commando (mall shootout), and True Lies (mall chase).",
+          "required_facts": [
+            "terminator2_favorite",
+            "predator_cast",
+            "commando_one_liners",
+            "true_lies_schwarzenegger",
+            "actor_commitment"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/5",
+            "Names the 5 movies and correctly maps the 3 that fit the setting constraints"
+          ]
+        }
+      },
+      {
+        "query_id": "q03_scifi_extraterrestrial_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the science-fiction movies featuring extraterrestrial elements (aliens, off-planet settings, or spaceships) that I discussed where I explicitly praised their practical environments or physical realism?",
+        "reference_answer": {
+          "text": "The exact fraction is 3/4. You praised Dune, Alien, and District 9 for their tangible realism and practical sets, but completely rejected Jupiter Ascending as weightless CGI.",
+          "required_facts": [
+            "dune_practical",
+            "alien_atmosphere",
+            "district9_stunts",
+            "sci_fi_practical"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 3/4",
+            "Identifies Dune, Alien, and District 9 as praised, and Jupiter Ascending as rejected"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_vehicle_chases_count",
+        "question": "How many specific movies did I explicitly praise for featuring practical vehicle chases involving real cars, trucks, or motorcycles? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 6 movies for practical vehicle chases: Terminator 2, Mad Max: Fury Road, The Dark Knight, John Wick 4, The French Connection, and True Lies.",
+          "required_facts": [
+            "terminator2_favorite",
+            "fury_road_practical",
+            "nolan_practical",
+            "wick4_stunts",
+            "french_connection_chase",
+            "true_lies_schwarzenegger"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 6",
+            "Correctly names all 6 movies matching the practical vehicle chase criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_actor_training_count",
+        "question": "How many specific actors did I mention by name who underwent months of specialized physical, martial arts, or military training for their action roles? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 3 actors for undergoing months of specialized training: Keanu Reeves (John Wick), Chris Hemsworth (Extraction), and Choi Min-sik (Oldboy).",
+          "required_facts": [
+            "john_wick_training",
+            "extraction_practical",
+            "oldboy_corridor"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Keanu Reeves, Chris Hemsworth, and Choi Min-sik"
+          ]
+        }
+      },
+      {
+        "query_id": "q06_action_reveals_character_count",
+        "question": "How many specific movies did I explicitly praise for having action sequences that reveal character traits or advance the story, rather than just serving as empty spectacle? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 5 movies for character-revealing action: Heat, The Matrix, Extraction, Raiders of the Lost Ark, and John Wick.",
+          "required_facts": [
+            "heat_practical",
+            "matrix_influence",
+            "extraction_practical",
+            "raiders_character",
+            "john_wick_training"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 5",
+            "Names Heat, The Matrix, Extraction, Raiders of the Lost Ark, and John Wick"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_practical_directors_count",
+        "question": "How many specific film directors did I explicitly praise by name for their strong commitment to practical effects, storyboarding, or shooting on real physical locations? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 4 directors for this commitment: George Miller, Denis Villeneuve, Christopher Nolan, and Ridley Scott.",
+          "required_facts": [
+            "fury_road_practical",
+            "dune_practical",
+            "nolan_practical",
+            "alien_atmosphere"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Names George Miller, Denis Villeneuve, Christopher Nolan, and Ridley Scott"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_superhero_practical_count",
+        "question": "How many specific superhero or comic-book movies did I explicitly praise for their practical stunts, villain depth, or earned emotional payoff? Provide the exact count.",
+        "reference_answer": {
+          "text": "You praised exactly 4 superhero/comic-book movies for these qualities: Captain America: The Winter Soldier, The Dark Knight, The Dark Knight Rises, and Avengers: Endgame.",
+          "required_facts": [
+            "marvel_fatigue",
+            "batman_villain",
+            "nolan_practical",
+            "endgame_emotional"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Names The Winter Soldier, The Dark Knight, The Dark Knight Rises, and Avengers: Endgame"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_actor_injuries_mc",
+        "question": "Which of the following ranges represents the exact number of times I mentioned an actor suffering a real physical injury (e.g., breaking a bone) or severe physical sickness (e.g., throwing up) while performing a practical stunt or sequence? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
+        "reference_answer": {
+          "text": "The correct option is B (3-4). You mentioned exactly 4 instances: Tom Cruise breaking his ankle, Henry Cavill breaking his finger, Chris Hemsworth getting injured, and the actors in Top Gun: Maverick throwing up.",
+          "required_facts": [
+            "mi_stunts",
+            "extraction_practical",
+            "top_gun_practical"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms 4 instances within the selected range"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_pacing_preferences_mc",
+        "question": "Based on my discussions, which of the following best describes my strict criteria for perfect film runtime and pacing? A) I prefer epic 3.5-hour films that allow for slow, methodical character conversations. B) I demand a runtime under 2.5 hours with absolutely no wasted scenes and constant narrative momentum. C) I prefer tight 90-minute comedies that prioritize shock value over story.",
+        "reference_answer": {
+          "text": "The correct option is B. You explicitly stated your ideal film is under 2.5 hours with no wasted scenes, citing Die Hard as the perfect benchmark, while actively rejecting slow 3.5-hour epics like The Irishman.",
+          "required_facts": [
+            "optimal_length",
+            "drama_pacing",
+            "die_hard_xmas"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Identifies runtime under 2.5 hours with no wasted scenes as the core criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_home_theater_priority_mc",
+        "question": "Which of the following best represents my explicitly stated priority when watching action movies or setting up a home theater? A) I prioritize 4K visual fidelity and projectors above all else. B) I prioritize high-quality sound systems over visuals because audio sells the physical weight and danger of the action. C) I prefer watching on small screens as long as the story is efficient.",
+        "reference_answer": {
+          "text": "The correct option is B. You explicitly stated that a good sound system matters more than visuals, citing how audio sells the weight of gunfire and explosions in practical action films like Heat and Dunkirk.",
+          "required_facts": [
+            "sound_priority",
+            "heat_practical",
+            "dunkirk_sound"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Verifies that sound over visuals matches the user's stated priority"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_practical_scifi_list",
+        "question": "Name 5 specific science-fiction movies I praised for using practical effects, real sets, miniatures, or authentic locations instead of relying entirely on green screens or CGI.",
+        "reference_answer": {
+          "text": "Five specific science-fiction movies you praised for practical elements are Dune, Alien, District 9, The Matrix and Terminator 2.",
+          "required_facts": [
+            "dune_practical",
+            "alien_atmosphere",
+            "district9_stunts",
+            "matrix_influence",
+            "terminator2_favorite"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 movies",
+            "All named movies are science fiction films matching the practical effects praise"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_villain_depth_list",
+        "question": "Name 3 specific movies where I explicitly praised the main villain or antagonist for having clear motives, philosophical depth, or an unpredictable code, rather than just being generically evil.",
+        "reference_answer": {
+          "text": "Three movies where you praised the villain's depth are Die Hard (Hans Gruber), The Dark Knight (The Joker), and No Country for Old Men (Anton Chigurh).",
+          "required_facts": [
+            "die_hard_xmas",
+            "batman_villain",
+            "no_country_villain"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 movies",
+            "Ensures all 3 movies correspond to praised villains in the text"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_singletake_aviation_list",
+        "question": "Name 5 specific movies I explicitly praised for featuring uninterrupted single-take action sequences OR featuring real aviation stunts involving actual planes or jets.",
+        "reference_answer": {
+          "text": "Five specific movies you praised for these feats are Oldboy (single-take corridor), Extraction (single-take bridge), Mission: Impossible - Fallout (single-take HALO jump), The Dark Knight Rises (real C-130 plane stunt), and Top Gun: Maverick (real F-18 jets).",
+          "required_facts": [
+            "oldboy_corridor",
+            "extraction_practical",
+            "mi_stunts",
+            "nolan_practical",
+            "top_gun_practical"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 movies",
+            "Matches all 5 movies to either single-take sequences or real plane/jet stunts"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_directors_negative_constraint_list",
+        "question": "Name 3 specific directors whom I praised for prioritizing practical action, but who did NOT direct a movie involving a man dressed as a bat.",
+        "reference_answer": {
+          "text": "Three specific directors you praised who did not direct a Batman movie are George Miller, Denis Villeneuve, and Ridley Scott. (Christopher Nolan is excluded because he directed The Dark Knight and The Dark Knight Rises).",
+          "required_facts": [
+            "fury_road_practical",
+            "dune_practical",
+            "alien_atmosphere",
+            "nolan_practical"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 directors",
+            "Excludes Christopher Nolan entirely due to the negative constraint"
+          ]
+        }
       }
-    },
-    {
-      "query_id": "q2_practical_vs_cgi_ratio",
-      "question": "What percentage of the films you've praised rely primarily on practical effects rather than CGI?",
-      "reference_answer": {
-        "text": "Of the roughly 28 films you've discussed positively, about 25 of them (approximately 90%) heavily feature practical effects, real stunts, or location shooting. You've praised Terminator 2, Heat, Fury Road, Dune, Extraction, The French Connection, Alien, John Wick, Mission: Impossible, Top Gun, and many others specifically for their tangible, real-world danger. Only a handful of exceptions—like The Matrix and Avengers: Endgame—received praise despite CGI, and even then you noted they balanced it with practical work or earned emotional stakes. Practical filmmaking is clearly your non-negotiable standard.",
-        "required_facts": ["terminator2_favorite", "heat_practical", "fury_road_practical", "dune_practical", "extraction_practical", "practical_over_cgi", "alien_atmosphere", "french_connection_chase", "district9_stunts", "matrix_influence", "endgame_emotional", "mi_stunts", "john_wick_training", "top_gun_practical", "wick4_stunts", "fall_guy_stunts", "oldboy_corridor", "nolan_practical"],
-        "evaluation_criteria": [
-          "Provides approximate percentage (about 90%)",
-          "Lists multiple examples of practical films",
-          "Acknowledges the few exceptions",
-          "Highlights the core principle"
-        ]
-      }
-    },
-    {
-      "query_id": "q3_genre_satisfaction_ranking",
-      "question": "Based on our talks, rank my satisfaction with different film genres.",
-      "reference_answer": {
-        "text": "Your satisfaction is highest with action (nearly 100% positive, with about 20 enthusiastic discussions), followed by sci‑fi when it's grounded in practical effects (about 6 positive, 1 mixed), and smart comedies (1 positive). You're consistently negative about slow dramas (4 negative discussions) and increasingly critical of modern superhero films (about 4 negative, 2 positive for exceptions like The Dark Knight and Endgame). In short: action rules, dramas bore you, and superheroes need character depth to win you over.",
-        "required_facts": ["terminator2_favorite", "heat_practical", "fury_road_practical", "drama_patience", "drama_pacing", "marvel_fatigue", "superhero_spectacle", "endgame_emotional", "batman_villain", "comedy_timing", "sci_fi_practical", "alien_atmosphere", "dune_practical"],
-        "evaluation_criteria": [
-          "Correctly ranks action first",
-          "Notes sci‑fi and comedy as positive but fewer",
-          "Identifies drama and modern superhero fatigue as negative",
-          "Gives approximate counts per genre"
-        ]
-      }
-    },
-    {
-      "query_id": "q4_ideal_movie_length",
-      "question": "What's my preferred movie length, and which films exemplify it?",
-      "reference_answer": {
-        "text": "You prefer films under 2.5 hours with tight pacing and no wasted scenes. You've explicitly called Die Hard (2h12m) the 'perfect example' and praised its efficiency. You've also criticized longer films like The Irishman (3.5h) and The Hateful Eight for dragging. In several discussions you've emphasised that a tight 90‑minute action movie can be more satisfying than a three‑hour epic that meanders. So your sweet spot is roughly 90–150 minutes, as long as every scene serves the story.",
-        "required_facts": ["optimal_length", "die_hard_xmas", "drama_pacing", "tarantino_dialogue"],
-        "evaluation_criteria": [
-          "States preferred range (under 2.5 hours)",
-          "Uses Die Hard as key example",
-          "Mentions criticized longer films",
-          "Highlights efficiency as core value"
-        ]
-      }
-    },
-    {
-      "query_id": "q5_director_trust",
-      "question": "Which directors do I trust most to deliver the kind of filmmaking I love?",
-      "reference_answer": {
-        "text": "You've expressed the strongest trust in George Miller, Denis Villeneuve, and Christopher Nolan. You praised Miller for storyboarding every shot of Fury Road and for his unwavering commitment to practical stunts. Villeneuve earned your trust by using real desert locations and miniatures in Dune, and you've explicitly said he's 'one of the few directors who respects practical work.' Nolan also features prominently for his practical approach in The Dark Knight trilogy and Dunkirk. All three appear in multiple positive discussions, and you're eagerly awaiting their future projects.",
-        "required_facts": ["fury_road_practical", "dune_practical", "nolan_practical", "dunkirk_sound"],
-        "evaluation_criteria": [
-          "Names Miller, Villeneuve, and Nolan",
-          "Explains why each earned trust",
-          "Notes anticipation for future work",
-          "Avoids overgeneralization"
-        ]
-      }
-    },
-    {
-      "query_id": "q6_action_star_comparison",
-      "question": "Compare your feelings about Arnold Schwarzenegger and Tom Cruise. Who do you admire more and why?",
-      "reference_answer": {
-        "text": "You admire both deeply, but Arnold edges out slightly in sheer breadth of praise. You've highlighted him in four different films (T2, Predator, Commando, True Lies) and called him 'the gold standard' and 'peak' action star. You love his physicality, one‑liners, and the fact that he did his own stunts. Tom Cruise earns your respect for his relentless dedication—the HALO jump, broken ankle, real jet flying in Top Gun, and general commitment to authenticity—but you've mentioned him primarily in the Mission: Impossible and Top Gun franchise. So Arnold has more variety, while Cruise is admired for intensity and consistency across a series. Both represent the kind of authentic commitment you value.",
-        "required_facts": ["terminator2_favorite", "predator_cast", "commando_one_liners", "true_lies_schwarzenegger", "mi_stunts", "actor_commitment", "top_gun_practical"],
-        "evaluation_criteria": [
-          "Compares both actors fairly",
-          "Notes Arnold's wider range of films",
-          "Highlights Cruise's specific stunts",
-          "Connects to core value of authenticity"
-        ]
-      }
-    },
-    {
-      "query_id": "q7_villain_depth",
-      "question": "What makes a movie villain great in your eyes, and which villains exemplify that?",
-      "reference_answer": {
-        "text": "You value villains with clear philosophy and motivation, not just generic evil. Heath Ledger's Joker is your top example: 'he wasn't just evil—he had philosophy behind his chaos.' You also praised Hans Gruber in Die Hard for his cunning, Anton Chigurh in No Country for Old Men for his terrifying moral code, and even the T-1000 for its relentless, logical pursuit. In contrast, you've dismissed many modern superhero villains as 'generic' with no personality. A great villain, for you, raises the stakes by being a credible, dimensional antagonist.",
-        "required_facts": ["batman_villain", "die_hard_xmas", "no_country_villain", "terminator2_favorite"],
-        "evaluation_criteria": [
-          "Identifies key quality (philosophy/motivation)",
-          "Names Joker as prime example",
-          "Mentions other praised villains",
-          "Contrasts with criticized generic villains"
-        ]
-      }
-    },
-    {
-      "query_id": "q8_films_called_perfect",
-      "question": "How many films have you called 'perfect' or 'gold standard'? Which ones?",
-      "reference_answer": {
-        "text": "You've used those exact phrases for three films: Terminator 2 (the 'gold standard for action films'), Heat ('the perfect action film'), and Die Hard ('perfect pacing,' 'perfect Christmas movie'). All three share your core values: practical effects, strong characters, and efficient storytelling. You've also used 'perfection' for Commando's 80s style and praised Fury Road as a masterclass, but the three mentioned are your clearest benchmarks.",
-        "required_facts": ["terminator2_favorite", "heat_practical", "die_hard_xmas", "commando_one_liners", "fury_road_practical"],
-        "evaluation_criteria": [
-          "Counts three primary films",
-          "Lists them correctly",
-          "Notes common traits",
-          "Uses user's exact phrasing"
-        ]
-      }
-    },
-    {
-      "query_id": "q9_sound_vs_visuals",
-      "question": "You mentioned home theater setup—do you prioritize sound or visuals? Why?",
-      "reference_answer": {
-        "text": "You clearly prioritize sound. You said 'sound matters more to me than visuals for action movies,' and you've consistently praised films like Heat, Dunkirk, and Terminator 2 for their impactful audio—gunfire that feels real, engine roars, explosions that shake the room. For you, sound creates the visceral tension that CGI visuals alone can't match. A great sound system lets you feel the danger, which is exactly what you crave.",
-        "required_facts": ["sound_priority", "heat_practical", "dunkirk_sound", "terminator2_favorite"],
-        "evaluation_criteria": [
-          "States sound priority",
-          "Explains why with examples",
-          "Connects to core value of authenticity",
-          "Uses user's own words"
-        ]
-      }
-    },
-    {
-      "query_id": "q10_marvel_vs_dc",
-      "question": "What's your overall take on Marvel and DC movies, based on our talks?",
-      "reference_answer": {
-        "text": "You're generally fatigued with the Marvel formula, describing newer entries as 'CGI soup with no real stakes.' However, you made an exception for Avengers: Endgame, because it earned its emotional payoff through years of character development. For DC, you've praised The Dark Knight as a 'crime thriller with superhero elements' and appreciated its villain depth, but you haven't discussed other DC films much. So your view is: both franchises can work when they focus on character, but you're tired of spectacle without substance.",
-        "required_facts": ["marvel_fatigue", "superhero_spectacle", "endgame_emotional", "batman_villain"],
-        "evaluation_criteria": [
-          "Notes Marvel fatigue with CGI",
-          "Acknowledges Endgame as exception",
-          "Praises Dark Knight for character",
-          "Summarizes balanced view"
-        ]
-      }
-    },
-    {
-      "query_id": "q11_comedy_preferences",
-      "question": "What kind of comedy films do you enjoy? Give an example.",
-      "reference_answer": {
-        "text": "You enjoy smart, character‑driven comedies like Tropic Thunder, which you praised for 'sharp writing, committed performances, jokes with purpose.' You dislike comedies that rely on 'raunchy humor and shock value' with no story. So your taste in comedy mirrors your action preferences: substance, commitment, and efficient storytelling matter more than crude gags.",
-        "required_facts": ["comedy_timing"],
-        "evaluation_criteria": [
-          "Identifies preferred comedy style",
-          "Uses Tropic Thunder as example",
-          "Contrasts with disliked style",
-          "Connects to broader values"
-        ]
-      }
-    },
-    {
-      "query_id": "q12_80s_vs_modern_action",
-      "question": "Do you prefer 80s/90s action films or modern ones?",
-      "reference_answer": {
-        "text": "You have deep affection for 80s/90s classics like Terminator 2, Die Hard, Predator, and Commando, calling them 'peak' and saying 'they don't make them like that anymore.' But you also strongly champion modern films that stick to practical effects, such as Fury Road, Mission: Impossible, John Wick, and Top Gun. So it's not about the decade—it's about whether a film prioritises real stunts and character over CGI. Your collection of praised films is roughly balanced between eras, as long as they meet your authenticity standard.",
-        "required_facts": ["terminator2_favorite", "die_hard_xmas", "predator_cast", "commando_one_liners", "fury_road_practical", "mi_stunts", "john_wick_training", "top_gun_practical"],
-        "evaluation_criteria": [
-          "Avoids simple decade preference",
-          "Lists classics and modern favorites",
-          "Focuses on core value (practical effects)",
-          "Notes balance between eras"
-        ]
-      }
-    },
-    {
-      "query_id": "q13_most_criticized_film",
-      "question": "Which film did you criticize most harshly, and why?",
-      "reference_answer": {
-        "text": "You were most critical of The Irishman. You called it '3.5 hours of old men talking,' said you quit after 45 minutes because 'nothing happened,' and used it as the prime example of why you have 'no patience for slow dramas.' The lack of narrative momentum and excessive runtime violated your core value of efficient storytelling. You contrasted it unfavorably with Die Hard's tight pacing.",
-        "required_facts": ["drama_pacing"],
-        "evaluation_criteria": [
-          "Names The Irishman",
-          "Quotes user's criticisms",
-          "Explains why it failed for them",
-          "Connects to broader value"
-        ]
-      }
-    },
-    {
-      "query_id": "q14_favorite_stunt_or_sequence",
-      "question": "Which stunt or action sequence have you praised most often?",
-      "reference_answer": {
-        "text": "You've praised the HALO jump in Mission: Impossible – Fallout multiple times, noting it was filmed in one take with real skydivers and that Tom Cruise broke his ankle but finished the scene. You've also repeatedly mentioned the downtown shootout in Heat, the truck chase in Terminator 2, and the corridor fight in Oldboy. But the HALO jump appears in at least three separate discussions, highlighting it as a pinnacle of practical stunt work.",
-        "required_facts": ["mi_stunts", "heat_practical", "terminator2_favorite", "oldboy_corridor"],
-        "evaluation_criteria": [
-          "Identifies HALO jump as most mentioned",
-          "Lists other praised sequences",
-          "Notes frequency (multiple discussions)",
-          "Emphasises practical nature"
-        ]
-      }
-    },
-    {
-      "query_id": "q15_core_philosophy_summary",
-      "question": "Summarize my film philosophy in three principles.",
-      "reference_answer": {
-        "text": "Your film philosophy rests on three pillars: 1) **Practical authenticity** – real stunts, real environments, and tangible danger create stakes that CGI can't fake. 2) **Character‑driven storytelling** – action must reveal who characters are, and emotional payoffs must be earned through development, not spectacle. 3) **Efficient pacing** – every scene should serve the story; no wasted moments, no self‑indulgent length. These principles explain why you revere classics like Die Hard and T2, embrace modern practical epics like Fury Road, and reject slow dramas and CGI‑heavy blockbusters.",
-        "required_facts": ["practical_over_cgi", "heat_practical", "endgame_emotional", "optimal_length", "drama_pacing", "raiders_character"],
-        "evaluation_criteria": [
-          "Distills three clear principles",
-          "Each principle is supported by evidence",
-          "Connects to both positive and negative examples",
-          "Uses user's own language where possible"
-        ]
-      }
-    }
-  ]
+    ]
 }
