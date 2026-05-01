@@ -9,4 +9,4 @@ prompts:
     loading: ../../../../prompts/mem0_agent_loading_hint.txt
     query: ../../../../prompts/mem0_agent_query_hint.txt
   mem_agent:
-    system_prompt: ../../../../prompts/system_prompt_recommendations_hint.txt
+    system_prompt: ../../../../prompts/system_prompt_recsys_hint.txt

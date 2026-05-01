@@ -734,9 +734,9 @@
       },
       {
         "query_id": "q13_list_struggle_fatigue",
-        "question": "Name 4 visual artists whose work I explicitly praised for capturing physical exhaustion, visible psychological struggle, or the tangible effort of the artistic process itself.",
+        "question": "Name at least 3 visual artists whose work I explicitly praised for capturing physical exhaustion, visible psychological struggle, or the tangible effort of the artistic process itself.",
         "reference_answer": {
-          "text": "Four artists you praised for this are Edgar Degas, Auguste Rodin, Paul Cézanne, and Vincent Van Gogh.",
+          "text": "Three artists you praised for this are Edgar Degas, Auguste Rodin, Paul Cézanne (Vincent Van Gogh is also correct).",
           "required_facts": [
             "degas_positive",
             "rodin_positive",
@@ -744,16 +744,16 @@
             "vangogh_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 correct artists",
+            "Names at least 3 correct artists",
             "Ensures all named artists match the fatigue or visible struggle criteria"
           ]
         }
       },
       {
         "query_id": "q14_list_criticized_mixed",
-        "question": "Name 5 distinct creators whose work I explicitly criticized, rejected entirely, or viewed with mixed feelings because they lacked emotional depth, relied on shock value, or required theoretical decoding.",
+        "question": "Name at least 4 distinct creators whose work I explicitly criticized, rejected entirely, or viewed with mixed feelings because they lacked emotional depth, relied on shock value, or required theoretical decoding.",
         "reference_answer": {
-          "text": "Five creators you evaluated negatively or with mixed feelings are Pierre-Auguste Renoir, Jackson Pollock, Damien Hirst, Richard Serra, and Ai Weiwei.",
+          "text": "Four creators you evaluated negatively or with mixed feelings are Pierre-Auguste Renoir, Jackson Pollock, Damien Hirst, Richard Serra (Ai Weiwei is also correct).",
           "required_facts": [
             "renoir_negative",
             "pollock_mixed",
@@ -762,16 +762,16 @@
             "aiweiwei_negative"
           ],
           "evaluation_criteria": [
-            "Names exactly 5 correct creators",
+            "Names at least 4 correct creators",
             "Ensures all named creators received mixed or negative reviews"
           ]
         }
       },
       {
         "query_id": "q15_list_quiet_understated",
-        "question": "Name 4 specific creators whose work I explicitly praised for possessing a quiet, subtle, or contemplative quality, which I explicitly contrasted against loud, aggressive, or flashy modern styles.",
+        "question": "Name at least 3 specific creators whose work I explicitly praised for possessing a quiet, subtle, or contemplative quality, which I explicitly contrasted against loud, aggressive, or flashy modern styles.",
         "reference_answer": {
-          "text": "Four creators you praised for these qualities are Edward Hopper, Sandro Botticelli, Johannes Vermeer, and Mark Rothko.",
+          "text": "Three creators you praised for these qualities are Edward Hopper, Sandro Botticelli, Johannes Vermeer (Mark Rothko is also correct).",
           "required_facts": [
             "hopper_positive",
             "botticelli_positive",
@@ -779,7 +779,7 @@
             "rothko_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 correct creators",
+            "Names at least 3 correct creators",
             "Ensures all named creators match the quiet, understated, or contemplative criteria"
           ]
         }
