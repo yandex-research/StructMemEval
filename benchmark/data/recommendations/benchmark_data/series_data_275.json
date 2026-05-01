@@ -1338,9 +1338,9 @@
     },
     {
       "query_id": "q03_unglamorous_detective_mc",
-      "question": "Which of the following ranges represents the exact number of crime, detective, or investigation shows I praised specifically because they focused on tired, flawed, or unglamorous protagonists/settings rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
+      "question": "Which of the following ranges represents the exact number of crime or investigation shows I praised specifically because they focused on tired, unglamorous protagonists rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
       "reference_answer": {
-        "text": "The correct option is B (3-4). You praised exactly 3 shows for this: Bosch, Slow Horses, and Mare of Easttown.",
+        "text": "The correct option is B (3-4). You praised exactly 3 crime shows for this: Bosch, Slow Horses, and Mare of Easttown.",
         "required_facts": [
           "mh_bosch_positive",
           "slowhorses_fargo_positive",
@@ -1348,8 +1348,7 @@
         ],
         "evaluation_criteria": [
           "Selects Option B",
-          "Identifies Bosch, Slow Horses, and Mare of Easttown",
-          "Connects the answer to tired, flawed, or unglamorous protagonists/settings rather than flashy style"
+          "Identifies Bosch, Slow Horses, and Mare of Easttown"
         ]
       }
     },
@@ -1441,18 +1440,18 @@
       "query_id": "q09_philosophical_scifi_list",
       "question": "Name 6 speculative fiction or superhero shows I explicitly praised for prioritizing human truth, psychological realism, or philosophical depth over mere visual spectacle.",
       "reference_answer": {
-        "text": "Six shows you praised for this are Westworld season 1, The Expanse, Dark, Severance, Andor, and Pantheon. The Boys would also be an acceptable substitute if exactly six valid shows are named.",
+        "text": "Six shows you praised for this are Westworld (season 1), The Expanse, Dark, Severance, Andor, and Pantheon. (The Boys is also correct).",
         "required_facts": [
           "ww_foundation_contrast",
           "expanse_positive",
           "dark_severance_positive",
           "andor_positive",
+          "theboys_positive",
           "pantheon_positive"
         ],
         "evaluation_criteria": [
           "Names exactly 6 shows",
-          "Ensures all named shows match the philosophical depth, psychological realism, or human-truth-over-spectacle criterion",
-          "Accepts The Boys as a valid alternative if substituted for one of the listed shows"
+          "Ensures all match the philosophical or psychological realism criteria"
         ]
       }
     },
@@ -1481,20 +1480,20 @@
         "text": "You praised exactly 3 series for this: The Bear, Hacks, and Shrinking.",
         "required_facts": [
           "bear_hacks_positive",
-          "shrinking_positive"
+          "shrinking_positive",
+          "light_comedy_negative"
         ],
         "evaluation_criteria": [
           "Provides exact count of 3",
-          "Names The Bear, Hacks, and Shrinking",
-          "Connects the praise to balancing comedy with grief, trauma, generational conflict, or emotional pain"
+          "Names The Bear, Hacks, and Shrinking"
         ]
       }
     },
     {
       "query_id": "q12_zero_stakes_list",
-      "question": "Name 4 specific fictional television properties that I explicitly criticized for having zero emotional stakes, manufactured conflicts, made-up prophecies/tension, or zero psychological depth, ensuring you do NOT include any reality television shows in your answer.",
+      "question": "Name 4 specific fictional television properties that I explicitly criticized for having zero stakes, manufactured conflicts, or relying on made-up tension, ensuring you do NOT include any reality television shows in your answer.",
       "reference_answer": {
-        "text": "Four fictional properties you criticized for this are The Rings of Power, Shadow and Bone, Ted Lasso, and House of the Dragon. Big Brother and Love Island are correctly excluded because the question excludes reality television.",
+        "text": "Four fictional properties you criticized for this are The Rings of Power, Shadow and Bone, Ted Lasso, and House of the Dragon. (Big Brother and Love Island are correctly excluded due to the reality TV constraint).",
         "required_facts": [
           "pure_fantasy_negative",
           "light_comedy_negative",
@@ -1502,12 +1501,9 @@
           "reality_verdict"
         ],
         "evaluation_criteria": [
-          "Names exactly 4 fictional television properties",
+          "Names exactly 4 properties",
           "Correctly excludes Big Brother and Love Island",
-          "Maps The Rings of Power to zero emotional stakes",
-          "Maps Shadow and Bone to zero psychological depth",
-          "Maps Ted Lasso to manufactured conflicts",
-          "Maps House of the Dragon to made-up prophecies or lack of real stakes"
+          "Ensures all named properties map to the zero stakes/manufactured tension criticism"
         ]
       }
     },
@@ -1515,17 +1511,16 @@
       "query_id": "q13_restraint_dread_count",
       "question": "How many shows did I explicitly praise for building dread, atmosphere, or psychological tension through restraint, quiet intensity, or by avoiding flashy melodrama? Provide the exact count.",
       "reference_answer": {
-        "text": "You praised exactly 4 shows for this: Mindhunter, True Detective, Chernobyl, and Slow Horses.",
+        "text": "You praised exactly 4 shows for this: Mindhunter, True Detective, Chernobyl, and Severance.",
         "required_facts": [
           "mh_bosch_positive",
           "td_positive",
           "drama_positive",
-          "slowhorses_fargo_positive"
+          "dark_severance_positive"
         ],
         "evaluation_criteria": [
           "Provides exact count of 4",
-          "Names Mindhunter, True Detective, Chernobyl, and Slow Horses",
-          "Connects each show to dread, atmosphere, psychological tension, restraint, quiet intensity, or lack of glamour/flashiness"
+          "Names Mindhunter, True Detective, Chernobyl, and Severance"
         ]
       }
     },
@@ -1533,25 +1528,25 @@
       "query_id": "q14_respect_intelligence_list",
       "question": "Name 5 specific shows that I explicitly praised because they respect the audience's intelligence, trust viewers to follow complex plots without hand-holding, or require active viewing.",
       "reference_answer": {
-        "text": "Five shows you praised for this are Lupin, Dark, Severance, Slow Horses, and Pantheon. Chernobyl would also be an acceptable substitute if exactly five valid shows are named.",
+        "text": "Five shows you praised for this are Lupin, Dark, Severance, Slow Horses, and Pantheon. (Chernobyl is also correct).",
         "required_facts": [
           "lupin_positive",
           "dark_severance_positive",
           "slowhorses_fargo_positive",
+          "drama_positive",
           "pantheon_positive"
         ],
         "evaluation_criteria": [
           "Names exactly 5 shows",
-          "Ensures all named shows map to respecting the audience's intelligence, trusting viewers to follow complexity, or requiring active viewing",
-          "Accepts Chernobyl as a valid alternative if substituted for one of the listed shows"
+          "Ensures all map to the 'respecting intelligence' or 'trusting the audience' criteria"
         ]
       }
     },
     {
       "query_id": "q15_scale_over_soul_list",
-      "question": "Name 4 big-budget science fiction or fantasy properties I explicitly criticized for prioritizing massive scale, stunning visuals, action sequences, fantasy lore, or world-building at the expense of emotional soul, character focus, or interiority.",
+      "question": "Name 4 big-budget science fiction or fantasy properties I explicitly criticized for prioritizing massive scale, stunning visuals, or action sequences at the expense of emotional soul or character interiority.",
       "reference_answer": {
-        "text": "Four properties you criticized for this are Foundation, The Rings of Power, Dune: Part Two, and Game of Thrones later seasons.",
+        "text": "Four properties you criticized for this are Foundation, The Rings of Power, Dune: Part Two, and Game of Thrones (later seasons).",
         "required_facts": [
           "ww_foundation_contrast",
           "pure_fantasy_negative",
@@ -1560,10 +1555,7 @@
         ],
         "evaluation_criteria": [
           "Names exactly 4 properties",
-          "Maps Foundation to scale without emotional soul",
-          "Maps The Rings of Power to stunning visuals without emotional stakes",
-          "Maps Dune: Part Two to action/spectacle at the expense of interiority",
-          "Maps Game of Thrones later seasons to fantasy lore/world-building overwhelming character focus"
+          "Ensures all map to the scale-over-soul or spectacle-over-character criticism"
         ]
       }
     }

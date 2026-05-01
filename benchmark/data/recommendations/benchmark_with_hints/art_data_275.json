@@ -1459,20 +1459,19 @@
     },
     {
       "query_id": "q06_count_healing_transformative",
-      "question": "How many creators did I explicitly praise for creating artworks that serve a meditative, spiritually transformative, emotionally strengthening, or healing function? Provide the exact count.",
+      "question": "How many creators did I explicitly praise for creating artworks that serve a transformative, spiritually comforting, or emotionally healing function, especially when dealing with isolation, pain, or mortality? Provide the exact count.",
       "reference_answer": {
-        "text": "You praised exactly 5 creators in this way: Vincent Van Gogh, Frida Kahlo, Henri Matisse, Edward Hopper, and Mark Rothko.",
+        "text": "You praised exactly 5 creators for this: Vincent Van Gogh, Frida Kahlo, Henri Matisse, Edward Hopper, and Georgia O'Keeffe.",
         "required_facts": [
           "vangogh_positive",
           "kahlo_positive",
           "matisse_positive",
           "hopper_positive",
-          "rothko_positive"
+          "okeeffe_positive"
         ],
         "evaluation_criteria": [
           "Provides exact count of 5",
-          "Correctly lists Van Gogh, Kahlo, Matisse, Hopper, and Rothko",
-          "Does not include O'Keeffe unless the answer separately justifies her as sacred/transformative rather than healing"
+          "Correctly lists Van Gogh, Kahlo, Matisse, Hopper, and O'Keeffe"
         ]
       }
     },
