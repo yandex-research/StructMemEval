@@ -168,50 +168,241 @@ result = update_file("user.md", old_content, new_content)
 
 ## Master Entity Review Table
 
-To enable precise aggregation queries, maintain a **master review table** in `user.md` under the heading `## Entity Review Table`. This table captures every explicitly stated user opinion about an entity (artist, work, game, book, movie, etc.).
+Maintain a master review table in `user.md` under `## Entity Review Table`.
 
-**Table format** (use the marker `<!-- MASTER_REVIEW_TABLE_END -->` for appending):
+The table stores explicit user opinions about reviewable entities: people, creators, works, products, places, activities, organizations, genres, styles, movements, techniques, forms, themes, categories, versions, performances, or recurring concepts.
+
+The table must avoid duplicate entities. If a new opinion refers to an existing entity through a variant, synonym, title form, parenthetical label, or spelling/transliteration difference, update the existing row instead of adding a new one.
+
+Use the marker `<!-- MASTER_REVIEW_TABLE_END -->` for appending.
+
+**Table format:**
 
 | Entity | Traits | Sentiment | Quote / Key Phrases |
 |--------|--------|-----------|----------------------|
-| ...    | ...    | Positive / Mixed / Negative | "..." |
+| ... | ... | Positive / Mixed / Negative | "..." |
 <!-- MASTER_REVIEW_TABLE_END -->
 
-### Column rules
-- **Entity**: name of the person, artwork, product, or category explicitly reviewed. For a general category (e.g. “contemporary installations”), use a descriptive label.
-- **Traits**: comma‑separated list of **objective characteristics** that will help later filtering.  
-  Always extract traits such as:
-  - Domain‑specific type: `sculpture`, `painting`, `installation`, `cut‑outs`, `preserved specimen`, `ceramic seeds`, `film`, `board game`, etc.
-  - Materials / techniques if notable: `impasto`, `bronze`, `gold leaf`, `pastel`, `practical effects`, `porcelain`, `oil`, `marble`.
-  - Qualities explicitly discussed: `requires explanation`, `shock value`, `theoretical decoding`, `quiet/contemplative`, `aggressive/loud`, `healing/transformative`, `visible texture`, `digital contrast`, `slow viewing`, `interactive`, `spatial confinement`, `emotional depth`, `authenticity`, `human struggle`.
-  - Any other recurring theme mentioned in the feedback.
-- **Sentiment**: exactly one of `Positive`, `Mixed`, `Negative`. Choose `Mixed` when the user expresses both praise and criticism for the same entity.
-- **Quote / Key Phrases**: one or two short verbatim excerpts from the user that justify the sentiment. Use double quotes.
+## Core rule
 
-### Appending a new review
-Use the marker `<!-- MASTER_REVIEW_TABLE_END -->` exactly as in the file update examples. **Always read the current table first** to see existing rows.
+Before adding a row, ALWAYS read the current `## Entity Review Table`.
 
-```python
-# Example for a positive review
-old_marker = "<!-- MASTER_REVIEW_TABLE_END -->"
-new_row = "| Rodin | sculpture, bronze, impasto‑like texture, human struggle, unfinished aesthetic | Positive | \"feel unfinished in the best way—those rough textures make the human form seem caught mid‑breath\" |\n"
-new_content = new_row + old_marker
-result = update_file("user.md", old_marker, new_content)
-Answering aggregation questions with the table
-When the user asks “how many …”, “what fraction …”, “name all …”:
+If the entity already exists, update its row:
+- merge new non-duplicate traits
+- update sentiment if needed
+- keep one or two strongest short quotes
 
-Read the whole user.md (or at least the ## Entity Review Table section) into a variable.
+If the entity is genuinely new, append a new canonical row before `<!-- MASTER_REVIEW_TABLE_END -->`.
 
-Parse the table rows.
+## Canonicalization
 
-Filter rows by the requested Traits or Sentiment.
+Use one stable canonical name per entity.
 
-Count distinct entities or compute fractions as required.
+Merge variants that refer to the same entity:
 
-Provide the exact answer in <reply>, referencing specific entities and quotes where appropriate.
+- exact or near-exact names
+- spelling, title, translation, or transliteration variants
+- singular/plural variants
+- parenthetical variants
+- broader/narrower labels when they clearly mean the same thing
 
-Important: Do not rely solely on per‑genre statistics. Use the master review table as the primary source for cross‑categorical questions.
+Examples:
 
+- `Radiohead` = `Radiohead (arrangements)`
+- `Emily Dickinson` = `Emily Dickinson (dashes)`
+- `Mainstream pop` = `Mainstream pop music`
+- `Baroque` = `Baroque music`
+- `Modern music` = `Today’s music`
+- `Heavy metal subgenres` = `Metal subgenres`
+- `Metaphor` = `Metaphors`
+- `Enjambment` = `Run-on lines`
+- `The Waste Land` = `Waste Land` = `T. S. Eliot's The Waste Land`
+- `Pushkin` = `Alexander Pushkin`
+- `Bashō` = `Basho`
+- `Dark Side of the Moon` = `Pink Floyd's Dark Side`
+- `Master of Puppets` = `Metallica's Master of Puppets`
+- `Lateralus` = `Tool's Lateralus`
+
+Prefer the most precise and recognizable canonical name.
+
+Do NOT merge genuinely distinct entities:
+
+- creator vs. work: `Walt Whitman` ≠ `Leaves of Grass`
+- person vs. related work: `David Gilmour` ≠ `Pink Floyd's Dark Side`
+- original vs. reviewed version/translation/performance: `Duino Elegies` ≠ `Stephen Mitchell's translation of Duino Elegies`
+- technique vs. broader style, unless the user treats them as identical: `Enjambment` ≠ `Free verse`
+
+Create separate rows only when the user explicitly expresses opinions about both.
+
+## Column rules
+
+### Entity
+
+Use the canonical name of the reviewed entity.
+
+Good:
+
+- `Emily Dickinson`
+- `The Waste Land`
+- `Free verse`
+- `Enjambment`
+- `Radiohead`
+- `Modern rock`
+- `Mainstream pop`
+- `Gardening`
+
+Avoid unnecessary variants:
+
+- `Emily Dickinson (dashes)`
+- `The Waste Land poem`
+- `Radiohead (arrangements)`
+- `Modern rock (production)`
+- `Mainstream pop music`
+
+### Traits
+
+Use comma-separated objective traits for filtering.
+
+Include:
+- entity type: `poet`, `artist`, `band`, `book`, `poem`, `album`, `film`, `game`, `product`, `place`, `activity`, `genre`, `technique`, `theme`, `version`, `translation`
+- notable forms/techniques/materials: `enjambment`, `meter`, `imagery`, `metaphor`, `analog tape saturation`, `mic bleed`, `auto-tune`, `polyrhythms`, `vibrato`, `oil`, `marble`
+- qualities: `raw`, `authentic`, `emotional`, `abstract`, `accessible`, `obscure`, `over-produced`, `processed`, `artificial`, `formulaic`, `warm`, `dynamic range`, `human imperfections`
+
+When updating, append only new non-duplicate traits.
+
+### Sentiment
+
+Use exactly one of:
+
+- `Positive`
+- `Mixed`
+- `Negative`
+
+Use:
+- `Positive` when the user likes, values, admires, recommends, revisits, or is moved by the entity.
+- `Negative` when the user dislikes, criticizes, avoids, rejects, or is disappointed by it.
+- `Mixed` when the user expresses both praise and criticism.
+
+When merging:
+- positive + positive = `Positive`
+- negative + negative = `Negative`
+- positive + negative = `Mixed`
+
+### Quote / Key Phrases
+
+Use one or two short verbatim excerpts in double quotes.
+
+When updating:
+- keep the strongest existing quote if useful
+- add a new quote only for a genuinely new aspect
+- keep the cell concise
+
+## Deduplication procedure
+
+Before adding a review row:
+
+1. Read `user.md`.
+2. Locate `## Entity Review Table`.
+3. Inspect existing rows.
+4. Normalize the proposed entity:
+   - lowercase
+   - trim whitespace
+   - remove unnecessary parenthetical qualifiers
+   - normalize obvious spelling/title/transliteration variants
+   - singularize obvious plurals
+   - compare synonyms and broader/narrower variants
+5. Update an existing row if a match exists.
+6. Otherwise append a new canonical row before `<!-- MASTER_REVIEW_TABLE_END -->`.
+
+## Minimal examples
+
+Same entity, new aspect:
+
+Existing:
+
+`| Emily Dickinson | poet, compressed language, slant rhyme | Positive | "her short poems feel endless inside" |`
+
+New opinion:
+
+`I love how Dickinson's dashes make the pauses feel like part of the thought itself.`
+
+Update to:
+
+`| Emily Dickinson | poet, compressed language, slant rhyme, dashes, pauses | Positive | "her short poems feel endless inside"; "pauses feel like part of the thought" |`
+
+Do not append `Emily Dickinson (dashes)`.
+
+Same entity, changed sentiment:
+
+Existing:
+
+`| Sonnets | poetic form, fourteen lines, meter | Positive | "the constraint makes the turn feel earned" |`
+
+New opinion:
+
+`Some sonnets feel too polished, like the emotion got trapped by the rhyme scheme.`
+
+Update to:
+
+`| Sonnets | poetic form, fourteen lines, meter, polished, constrained emotion | Mixed | "the constraint makes the turn feel earned"; "emotion got trapped by the rhyme scheme" |`
+
+Do not append `Sonnets (rhyme scheme)`.
+
+## Appending or updating
+
+Always read the current table first:
+
+`content = read_file("user.md")`
+
+If no duplicate exists:
+
+`old_marker = "<!-- MASTER_REVIEW_TABLE_END -->"`
+
+`new_row = "| Mary Oliver | poet, nature poetry, plain diction | Positive | \"makes paying attention feel sacred\" |\n"`
+
+`new_content = new_row + old_marker`
+
+`result = update_file("user.md", old_marker, new_content)`
+
+If a duplicate exists:
+
+`old_row = "| Free verse | poetic form, irregular meter | Positive | \"feels closer to actual thought\" |"`
+
+`new_row = "| Free verse | poetic form, irregular meter, enjambment | Positive | \"feels closer to actual thought\"; \"line breaks feel alive\" |"`
+
+`result = update_file("user.md", old_row, new_row)`
+
+Check result:
+
+`if result != True:`
+
+`    error = result`
+
+## Aggregation questions
+
+For “how many…”, “what fraction…”, “name all…”, “which entities…”, or “what does the user like/dislike…”:
+
+1. Read `user.md` or the table section.
+2. Parse rows.
+3. Treat each canonical entity as one unit.
+4. Filter by traits, sentiment, type, medium, creator, form, technique, theme, or category.
+5. Count distinct canonical entities.
+6. Answer in `<reply>` with entities and quotes when useful.
+
+Use this table as the primary source for cross-category preference questions.
+
+## Priority
+
+Every explicit opinion about a reviewable entity should be saved, but not necessarily as a new row.
+
+Priority:
+
+1. Preserve the opinion.
+2. Avoid duplicate entities.
+3. Merge into existing canonical rows.
+4. Append only genuinely new entities.
+
+Duplicate rows are memory pollution.
 
 ## Memory Operation Guidelines
 
