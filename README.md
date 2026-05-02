@@ -38,6 +38,7 @@ cp mem-agent/.env .env
 ## Install EMem
 
 ```bash
+git clone https://github.com/KevinSRR/EMem.git
 cd EMem
 
 # install dependencies

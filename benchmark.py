@@ -23,12 +23,12 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 from openai import RateLimitError
 
 from dotenv import load_dotenv
-from httpx import Client
+from httpx import Client, AsyncClient
 from openai._base_client import DEFAULT_TIMEOUT, DEFAULT_CONNECTION_LIMITS
 
 import yaml
 from tqdm import tqdm
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 
 from config_loader import load_config, resolve_dataset, resolve_experiments, Experiment, Dataset
 
@@ -366,7 +366,7 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
     embedding_model = emem_config.get('embedding_model', 'text-embedding-3-small')  
     embedding_base_url = emem_config.get('embedding_base_url') or base_url  
   
-    return EMemModel(  
+    model = EMemModel(  
         global_config=cfg,  
         save_dir=save_dir,  
         llm_model_name=model_name,  
@@ -374,6 +374,34 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
         embedding_model_name=embedding_model,  
         embedding_base_url=embedding_base_url,  
     )
+
+    http_client = Client(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+
+    async_http_client = AsyncClient(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+    
+    model.llm_model.openai_client = OpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=http_client
+    )
+
+    model.llm_model.async_openai_client = AsyncOpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=async_http_client
+    )
+
+    return model
 
 # ============================================================================
 # Session Loading
