@@ -81,7 +81,7 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/recommendations/benchmark_data_1sample/
+      - benchmark/data/recommendations/benchmark_data/
     run:
       emem: {
           support_json_schema: "false",
