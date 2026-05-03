@@ -43,10 +43,10 @@ cd EMem
 
 # install dependencies
 make install
-pip install rouge_score igraph gritlm --extra-index-url https://pypi.org/simple/
+pip install rouge_score bert_score igraph gritlm --extra-index-url https://pypi.org/simple/
 
 # set SUPPORT_JSON_SCHEMA to false
-export SUPPORT_JSON_SCHEMA=true
+export SUPPORT_JSON_SCHEMA=false
 
 cd ..
 ```

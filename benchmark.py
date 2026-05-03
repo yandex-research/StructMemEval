@@ -200,10 +200,14 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
         if not msgs:  
             continue  
         turns = []  
-        for turn_idx, msg in enumerate(msgs):  
-            speaker = "User" if msg['role'] == 'user' else "Assistant"  
-            dia_id = f"D{session_counter}:{turn_idx + 1}"  
-            turns.append(Turn(speaker=speaker, dia_id=dia_id, text=msg['content']))  
+        for turn_idx, msg in enumerate(msgs):
+            speaker = "User" if msg['role'] == 'user' else "Assistant"
+            dia_id = f"D{session_counter}:{turn_idx + 1}"
+            turns.append(Turn(
+                speaker=speaker,
+                dia_id=dia_id,
+                text=msg['content'],
+            ))
           
         date_time = f"12:00 pm on {session_counter} January, 2024"  
         sessions_dict[session_counter] = Session(  
@@ -222,7 +226,7 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
     qa_list = []  
     for query_obj in case_data.get('queries', []):  
         ref = query_obj['reference_answer']  
-        answer = ref[-1] if isinstance(ref, list) and ref else (ref or "")  
+        answer = ref['text'] 
         qa_list.append(EMemQA(  
             question=query_obj['question'],  
             answer=answer,  
@@ -889,68 +893,44 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
     wait=wait_exponential(multiplier=2, min=30, max=180),  
     stop=stop_after_attempt(6),  
 )  
-def run_emem_case(args) -> dict:  
-    """Run a single EMem case — parallel-safe (each case has its own save_dir)."""  
-    case_data, case_file, experiment, emem_config, script_dir, verbose, mem_checkpoints = args  
-  
-    case_id = case_data.get('case_id', 'unknown')  
-    base_save = script_dir / emem_config.get('save_dir', 'emem_memory') / experiment.name  
-  
-    print(f"  [{experiment.name}] EMem starting {case_id}...")  
-  
-    case_results = []  
-    for i in range(len(mem_checkpoints) - 1):  
-        cp_save_dir = str(base_save / f"{case_id}_cp{i}")  
-  
-        # Конвертируем данные с учётом чекпоинта  
-        sample = convert_case_to_locomo_sample(  
-            case_data, case_id,  
-            msg_start=mem_checkpoints[i],  
-            msg_end=mem_checkpoints[i + 1]  
-        )  
-  
-        if not sample.conversation.sessions:  
-            print(f"  [{experiment.name}] EMem: no sessions for checkpoint {i}, skipping")  
-            continue  
-  
-        mem_model = initialize_emem(emem_config, experiment, cp_save_dir)  
-        mem_model.index_conversation(sample)  
-  
-        qa_results = mem_model.rag_qa_conversation(  
-            queries=sample.qa,  
-            gold_docs=None,  
-            gold_answers=None,  
-        )  
-        queries_solutions = qa_results[0]  
-  
-        for q_idx, query_obj in enumerate(case_data['queries']):  
-            solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None  
-            answer = solution.answer if solution else ""  
-  
-            ref = query_obj['reference_answer']  
-            ref_answer = ref[i] if isinstance(ref, list) and i < len(ref) else (  
-                ref[-1] if isinstance(ref, list) else ref  
-            )  
-  
-            case_results.append({  
-                "query": query_obj['question'],  
-                "llm_response": answer,  
-                "reference_answer": ref_answer,  
-                "memory_state": {  
-                    "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,  
-                    "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,  
-                },  
-                "metadata": {},  
-                "message_checkpoint": i,  
-            })  
-  
-    print(f"  [{experiment.name}] EMem ✓ completed {case_id}")  
-    return {  
-        'case_id': case_id,  
-        'case_file': str(case_file),  
-        'config_name': 'emem',  
-        'results': case_results,  
-    }
+def run_emem_case(args) -> dict:
+    """Run EMem case — LoCoMo-style, without checkpoints for reliability."""
+    case_data, case_file, experiment, emem_config, script_dir, verbose, _ = args  # игнорируем mem_checkpoints
+    case_id = case_data.get('case_id', 'unknown')
+    
+    # Конвертируем ВЕСЬ кейс сразу (без срезов!)
+    sample = convert_case_to_locomo_sample(case_data, case_id)
+    
+    if not sample.conversation.sessions:
+        return {'case_id': case_id, 'results': [], 'error': 'no_sessions'}
+    
+    # Один save_dir на кейс
+    save_dir = script_dir / emem_config.get('save_dir', 'emem_memory') / experiment.name / case_id
+    mem_model = initialize_emem(emem_config, experiment, str(save_dir))
+    
+    # Индексируем полностью
+    mem_model.index_conversation(sample)
+    
+    # QA на всех вопросах сразу
+    qa_results = mem_model.rag_qa_conversation(queries=sample.qa, gold_docs=None, gold_answers=None)
+    
+    queries_solutions = qa_results[0] if len(qa_results) >= 1 else []
+    
+    # Формируем результаты
+    case_results = []
+    for q_idx, query_obj in enumerate(case_data['queries']):
+        solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None
+        case_results.append({
+            "query": query_obj['question'],
+            "llm_response": solution.answer if solution else "",
+            "reference_answer": query_obj['reference_answer'],
+            "memory_state": {
+                "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,
+                "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,
+            },
+        })
+    
+    return {'case_id': case_id, 'case_file': str(case_file), 'config_name': 'emem', 'results': case_results}
 
 # ============================================================================
 # Run EMem benchmark in parallel
