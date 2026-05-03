@@ -607,9 +607,9 @@
   "queries": [
       {
         "query_id": "q01_historical_fiction_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of historical fiction novels I discussed that I explicitly praised for their execution?",
+        "question": "What is the exact fraction (e.g., X/Y) of historical fiction novels I discussed that I explicitly praised for their execution or emotional resonance, compared to the total number of historical fiction novels I explicitly mentioned?",
         "reference_answer": {
-          "text": "The exact fraction is 3/5. I positively reviewed The Book Thief, The Nightingale, and All the Light We Cannot See, but criticized or struggled with Wolf Hall and I, Claudius.",
+          "text": "You praised exactly 3/5 historical fiction novels. You praised The Book Thief, The Nightingale, and All the Light We Cannot See, but explicitly criticized or struggled with Wolf Hall and I, Claudius.",
           "required_facts": [
             "historical_fiction_challenge",
             "historical_fiction_balance",
@@ -617,45 +617,50 @@
             "historical_fiction_masterpiece"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 3/5"
+            "Provides exact fraction 3/5",
+            "Correctly identifies the 3 praised historical novels and the 2 struggled/criticized historical novels"
           ]
         }
       },
       {
         "query_id": "q02_contemporary_romance_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of contemporary romance novels I discussed that I reviewed positively?",
+        "question": "What is the exact fraction (e.g., X/Y) of purely contemporary romance novels (excluding fantasy romance) I discussed that I explicitly praised for their character development or realistic obstacles?",
         "reference_answer": {
-          "text": "The exact fraction is 2/3. I praised The Flatshare and Beach Read, but explicitly criticized The Unhoneymooners.",
+          "text": "The exact fraction is 2/3. You praised The Flatshare and Beach Read, but explicitly criticized The Unhoneymooners for its artificial drama.",
           "required_facts": [
             "romance_tropes",
             "romance_character_development",
             "romance_depth_example"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 2/3"
+            "Provides exact fraction 2/3",
+            "Correctly identifies The Flatshare and Beach Read as praised",
+            "Correctly identifies The Unhoneymooners as criticized"
           ]
         }
       },
       {
         "query_id": "q03_poetry_audio_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of the specific poets or poetry podcasts I discussed that I explicitly stated I enjoyed experiencing in audio format?",
+        "question": "What is the exact fraction (e.g., X/Y) of poets or poetry podcasts I discussed whose work I explicitly stated I enjoyed experiencing in audio format, compared to the total number of poets or poetry podcasts I evaluated?",
         "reference_answer": {
-          "text": "The exact fraction is 3/4. I praised the audio formats of Amanda Gorman, The Slowdown podcast, and Rupi Kaur, but struggled with reading Mary Oliver in print.",
+          "text": "The exact fraction is 3/4. You explicitly enjoyed the audio experiences of Amanda Gorman, The Slowdown podcast, and Rupi Kaur, but struggled with reading Mary Oliver in print.",
           "required_facts": [
             "poetry_struggle",
             "poetry_format_preference",
             "poetry_audio_success"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 3/4"
+            "Provides exact fraction 3/4",
+            "Names Amanda Gorman, The Slowdown, and Rupi Kaur as audio successes",
+            "Names Mary Oliver as a print struggle"
           ]
         }
       },
       {
         "query_id": "q04_reread_count",
-        "question": "How many specific books or series did I explicitly state that I was rereading or had read multiple times? Provide the exact count.",
+        "question": "How many specific books or series did I explicitly state that I was rereading, had read for a second time, or had read multiple times? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 4. I mentioned rereading Mistborn, The Shining, The Body, and the Stormlight Archive.",
+          "text": "You explicitly stated rereading exactly 4 books or series: Mistborn, The Shining, The Body, and the Stormlight Archive.",
           "required_facts": [
             "fantasy_preference",
             "horror_appreciation",
@@ -663,15 +668,16 @@
             "fantasy_detail_appreciation"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 4"
+            "Provides exact count of 4",
+            "Names Mistborn, The Shining, The Body, and the Stormlight Archive"
           ]
         }
       },
       {
-        "query_id": "q05_character_author_count",
-        "question": "How many specific authors did I explicitly praise for prioritizing character authenticity, the emotional lives of ordinary people, or meaningful evolution over complex plot mechanics and strict historical details? Provide the exact count.",
+        "query_id": "q05_character_first_authors_count",
+        "question": "How many specific authors did I explicitly praise for creating authentic, flawed, or ordinary characters whose personal growth and everyday humanity anchor the story? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 4 authors. I explicitly praised Brandon Sanderson (for Vin's growth), Stephen King (for ordinary characters), Kristin Hannah (for characters over historical accuracy), and Anthony Doerr (for seamlessly weaving history into the characters' lives).",
+          "text": "You praised exactly 4 authors for this: Brandon Sanderson (for Vin's growth), Stephen King (for ordinary characters), Kristin Hannah (for characters over historical accuracy), and Anthony Doerr (for weaving history seamlessly into characters' lives).",
           "required_facts": [
             "fantasy_character_depth",
             "king_appreciation",
@@ -679,168 +685,180 @@
             "historical_fiction_masterpiece"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 4"
+            "Provides exact count of 4",
+            "Names Brandon Sanderson, Stephen King, Kristin Hannah, and Anthony Doerr"
           ]
         }
       },
       {
         "query_id": "q06_struggled_books_count",
-        "question": "Provide the exact count of specific books or series that I explicitly mentioned struggling to read, abandoning midway, or refusing to start due to length, dense details, or emotional distance.",
+        "question": "How many specific, named books or series did I explicitly mention struggling to read, abandoning midway, or refusing to start because of overwhelming length, dense details, or emotional distance? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 5. I mentioned an unnamed fantasy series I abandoned by book three, the Malazan series/Gardens of the Moon, the Kingkiller Chronicle, Wolf Hall, and I, Claudius.",
+          "text": "You explicitly mentioned exactly 4 specific books or series for these reasons: The Kingkiller Chronicle, Wolf Hall, I, Claudius, and Gardens of the Moon.",
           "required_facts": [
-            "fantasy_satisfaction",
             "fantasy_completion_anxiety",
             "epic_fantasy_preference",
             "historical_fiction_challenge",
             "historical_setting_preference"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5"
+            "Provides exact count of 4",
+            "Names The Kingkiller Chronicle, Wolf Hall, I, Claudius, and Gardens of the Moon"
           ]
         }
       },
       {
-        "query_id": "q07_horror_no_gore_count",
-        "question": "How many specific horror novels or movies did I explicitly praise for creating dread through psychological tension, domestic situations, or atmosphere rather than relying on explicit gore? Provide the exact count.",
+        "query_id": "q07_horror_atmosphere_count",
+        "question": "How many distinct books or films did I explicitly praise for generating fear or tension through atmospheric dread, psychological unraveling, or domestic situations rather than explicit gore? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 3. I praised The Shining, The Haunting of Hill House, and Rosemary's Baby for these specific traits.",
+          "text": "You praised exactly 3 distinct works for this: The Shining, The Haunting of Hill House, and Rosemary's Baby.",
           "required_facts": [
             "horror_appreciation",
             "horror_atmosphere",
             "horror_classic"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 3"
+            "Provides exact count of 3",
+            "Names The Shining, The Haunting of Hill House, and Rosemary's Baby"
           ]
         }
       },
       {
-        "query_id": "q08_criticized_books_mc",
-        "question": "Which of the following ranges represents the exact number of named books I explicitly criticized for having artificial character drama, unbalanced genre-blending, or overly dense historical details? A) 0-1. B) 5-6. C) 2-4.",
+        "query_id": "q08_criticized_books_list",
+        "question": "Name 5 specific books or series that I explicitly criticized, expressed frustration with, or struggled to finish due to artificial drama, unbalanced genre-blending, excessively dense historical details, or wandering plots.",
         "reference_answer": {
-          "text": "The correct option is C (2-4). I explicitly criticized exactly 3 books for these specific reasons: The Unhoneymooners, A Court of Thorns and Roses, and Wolf Hall.",
+          "text": "Five specific books or series you criticized or struggled with are The Unhoneymooners, A Court of Thorns and Roses, Wolf Hall, I, Claudius, and The Kingkiller Chronicle.",
           "required_facts": [
             "romance_tropes",
             "fantasy_romance_blend",
-            "historical_fiction_challenge"
-          ],
-          "evaluation_criteria": [
-            "Selects Option C"
-          ]
-        }
-      },
-      {
-        "query_id": "q09_historical_fiction_mc",
-        "question": "Which of the following best describes my explicitly stated preferences for reading historical fiction? A) I prefer 20th-century settings and prioritize emotional truth over dense historical facts. B) I prefer ancient history because the emotional distance is intellectually engaging. C) I prefer 20th-century settings but require encyclopedia-like research and strict factual accuracy over character relatability.",
-        "reference_answer": {
-          "text": "The correct option is A. I explicitly stated that I prefer 20th-century settings because they are more emotionally relatable, and I consistently praise authors who balance history with character while struggling with dense details.",
-          "required_facts": [
+            "historical_fiction_challenge",
             "historical_setting_preference",
-            "historical_fiction_balance",
-            "historical_fiction_challenge"
-          ],
-          "evaluation_criteria": [
-            "Selects Option A"
-          ]
-        }
-      },
-      {
-        "query_id": "q10_magic_system_mc",
-        "question": "Which of the following best describes my explicitly stated preference for magic systems in fantasy novels? A) I prefer soft, unexplained magic without clear rules to maintain a sense of wonder. B) I prefer magic systems with logical rules, boundaries, and costs so that victories feel earned. C) I prefer magic that is completely separated from the natural ecology to keep it mysterious.",
-        "reference_answer": {
-          "text": "The correct option is B. I explicitly stated that I love magic systems that feel logical and consistent with clear costs and boundaries.",
-          "required_facts": [
-            "fantasy_world_building",
-            "sanderson_preference",
-            "fantasy_detail_appreciation"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B"
-          ]
-        }
-      },
-      {
-        "query_id": "q11_fantasy_anxiety_mc",
-        "question": "Which of the following combinations of factors did I explicitly state causes me anxiety or frustration when considering or reading long fantasy series? A) Unfinished status, wandering plots without resolution, and massive lengths like 10+ books. B) Large casts of characters with distinct voices and standalone formats. C) Logical magic systems and ecological world-building details.",
-        "reference_answer": {
-          "text": "The correct option is A. I explicitly stated that 10+ book lengths, series that remain unfinished for years, and wandering plots without satisfying conclusions cause me anxiety and frustration.",
-          "required_facts": [
-            "fantasy_satisfaction",
-            "fantasy_series_length",
             "fantasy_completion_anxiety"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Names exactly 5 books or series",
+            "Includes The Unhoneymooners, A Court of Thorns and Roses, Wolf Hall, I, Claudius, and The Kingkiller Chronicle"
           ]
         }
       },
       {
-        "query_id": "q12_reading_format_mc",
-        "question": "Which of the following best describes my aggregated preferences for reading formats across different genres? A) I strictly read all genres in print. B) I exclusively listen to audiobooks for every genre to save time. C) I prefer print for traditional immersion but strongly prefer audio for poetry to bypass the decoding pressure of written text.",
+        "query_id": "q09_historical_fiction_list",
+        "question": "Name 3 specific historical fiction books I explicitly praised for making the characters' emotional journeys feel immediate and accessible rather than overwhelmed by dense historical facts or emotional distance.",
         "reference_answer": {
-          "text": "The correct option is C. I explicitly stated that reading poetry in print causes performance anxiety and decoding pressure, and that the audio format makes poetry much more accessible.",
+          "text": "Three specific historical fiction books you praised for this are The Book Thief, The Nightingale, and All the Light We Cannot See.",
           "required_facts": [
-            "poetry_struggle",
-            "poetry_format_preference",
-            "poetry_audio_success"
+            "historical_fiction_challenge",
+            "historical_fiction_balance",
+            "historical_fiction_masterpiece"
           ],
           "evaluation_criteria": [
-            "Selects Option C"
+            "Names exactly 3 books",
+            "Includes The Book Thief, The Nightingale, and All the Light We Cannot See"
           ]
         }
       },
       {
-        "query_id": "q13_fantasy_elements_list",
-        "question": "Name 3 specific narrative elements, structural characteristics, or world-building techniques that I explicitly praised as essential for my enjoyment of fantasy novels.",
+        "query_id": "q10_fantasy_authors_mc",
+        "question": "Which of the following ranges represents the exact number of specific fantasy authors I explicitly praised for their approach to world-building, character handling, or magic systems? A) 1-2. B) 3-4. C) 5-6. D) 7-8",
         "reference_answer": {
-          "text": "Any 3 of the following: 1) Logical and consistent magic systems with clear costs. 2) Satisfying conclusions that tie up loose ends. 3) Character growth involving moral choices. 4) Distinct voices and purposes for every character in a large cast. 5) Magic systems that integrate into the natural ecology without info-dumps.",
+          "text": "The correct option is B (3-4). You praised exactly 3 fantasy authors: Brandon Sanderson, Juliet Marillier, and V.E. Schwab.",
           "required_facts": [
-            "fantasy_world_building",
+            "sanderson_preference",
+            "fantasy_romance_blend",
+            "low_fantasy_preference"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms the count of 3 fantasy authors"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_romance_historical_praised_mc",
+        "question": "Which of the following ranges represents the exact combined total of contemporary romance and historical fiction novels that I explicitly praised for their character development, emotional authenticity, or satisfying execution? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
+        "reference_answer": {
+          "text": "The correct option is C (5-6). You praised exactly 5 such novels: The Flatshare and Beach Read (romance), plus The Book Thief, The Nightingale, and All the Light We Cannot See (historical fiction).",
+          "required_facts": [
+            "romance_character_development",
+            "romance_depth_example",
+            "historical_fiction_challenge",
+            "historical_fiction_balance",
+            "historical_fiction_masterpiece"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms the exact count is 5"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_author_contrast_mc",
+        "question": "Which of the following ranges represents the exact number of times I explicitly contrasted an author's positive handling of a specific genre or trope against negative examples or generic pitfalls from other works within the same genre? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
+        "reference_answer": {
+          "text": "The correct option is C (5-6). You made this explicit contrast exactly 5 times: praising Sanderson's endings versus wandering series, The Flatshare's real circumstances versus The Unhoneymooners' artificial drama, Stephen King's ordinary characters versus cheap horror, The Book Thief/Nightingale's emotional balance versus Wolf Hall's dense facts, and Juliet Marillier's integral romance versus A Court of Thorns and Roses' overshadowing romance.",
+          "required_facts": [
             "fantasy_satisfaction",
-            "fantasy_character_depth",
-            "epic_fantasy_preference",
-            "fantasy_detail_appreciation"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 specific narrative elements",
-            "Ensures all 3 map to praised characteristics in the text"
-          ]
-        }
-      },
-      {
-        "query_id": "q14_frustrating_tropes_list",
-        "question": "Name 3 specific narrative tropes, pacing issues, or structural choices across any genre that I explicitly stated cause me frustration or break my immersion.",
-        "reference_answer": {
-          "text": "Any 3 of the following: 1) Fantasy series ending on cliffhangers or remaining unfinished. 2) Characters making stupid decisions to create artificial drama. 3) Insta-love romances that feel unearned. 4) Dense, inaccessible historical details that overwhelm the narrative. 5) Romance overshadowing the world-building in fantasy blends.",
-          "required_facts": [
-            "fantasy_completion_anxiety",
             "romance_tropes",
-            "slow_burn_preference",
+            "king_appreciation",
             "historical_fiction_challenge",
             "fantasy_romance_blend"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 narrative frustrations",
-            "Ensures all 3 map to explicitly stated dislikes in the text"
+            "Selects Option C",
+            "Identifies the 5 specific thematic contrasts explicitly made in the text"
           ]
         }
       },
       {
-        "query_id": "q15_authentic_emotion_books_list",
-        "question": "Name 3 specific books across any genre that I explicitly praised for anchoring their story in authentic emotional struggles, character growth, or psychological depth, rather than relying on artificial drama, dense facts, or explicit gore.",
+        "query_id": "q13_environment_authors_list",
+        "question": "Name 3 specific authors across any genre whose books I explicitly praised for making the setting, environment, or atmosphere feel like a living, integral part of the story or magic system.",
         "reference_answer": {
-          "text": "Any 3 of the following: The Flatshare, The Nightingale, The Shining, All the Light We Cannot See, Beach Read, or The Haunting of Hill House.",
+          "text": "Three authors you praised for this are Shirley Jackson (the haunted atmosphere of Hill House), Brandon Sanderson (the natural ecology of Spren on Roshar), and Stephen King (the psychological reality of the Overlook Hotel in The Shining).",
           "required_facts": [
-            "romance_character_development",
-            "historical_fiction_balance",
-            "horror_appreciation",
-            "historical_fiction_masterpiece",
-            "romance_depth_example"
+            "horror_atmosphere",
+            "fantasy_detail_appreciation",
+            "horror_appreciation"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 books",
-            "Ensures all 3 map to the praised criteria of authentic emotion/psychological depth"
+            "Names exactly 3 authors",
+            "Includes Shirley Jackson, Brandon Sanderson, and Stephen King"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_criticized_no_fantasy_list",
+        "question": "Name 4 specific books or series I explicitly criticized, expressed frustration with, or abandoned, ensuring that absolutely none of them belong to the epic fantasy genre.",
+        "reference_answer": {
+          "text": "Four non-epic-fantasy books you criticized or struggled with are The Unhoneymooners, A Court of Thorns and Roses, Wolf Hall, and I, Claudius. (The Kingkiller Chronicle and Gardens of the Moon are correctly excluded due to being epic fantasy).",
+          "required_facts": [
+            "romance_tropes",
+            "fantasy_romance_blend",
+            "historical_fiction_challenge",
+            "historical_setting_preference"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 books or series",
+            "Includes The Unhoneymooners, A Court of Thorns and Roses, Wolf Hall, and I, Claudius",
+            "Contains no epic fantasy titles"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_authentic_emotion_no_horror_list",
+        "question": "Name 5 specific books I explicitly praised for their character-first storytelling or authentic emotional journeys, ensuring that absolutely NO horror or fantasy novels are included in the list.",
+        "reference_answer": {
+          "text": "Five specific non-horror, non-fantasy books you praised are The Flatshare, Beach Read, The Book Thief, The Nightingale, and All the Light We Cannot See.",
+          "required_facts": [
+            "romance_character_development",
+            "romance_depth_example",
+            "historical_fiction_challenge",
+            "historical_fiction_balance",
+            "historical_fiction_masterpiece"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 books",
+            "Includes The Flatshare, Beach Read, The Book Thief, The Nightingale, and All the Light We Cannot See",
+            "Contains no horror or fantasy titles"
           ]
         }
       }

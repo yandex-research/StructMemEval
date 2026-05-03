@@ -1,5 +1,5 @@
 {
-  "case_id": "recommendations_music_275",
+  "case_id": "recommendations_music_350",
   "sessions": [
     {
       "session_id": "session_01",
@@ -15,7 +15,11 @@
         {"role": "user", "content": "Classic rock guitar work inspires my own playing more than any other genre. There's something about those raw, emotional solos that you just don't hear in modern music."},
         {"role": "assistant", "content": "The authenticity of analog recording really comes through in those solos."},
         {"role": "user", "content": "I practice for hours trying to capture that same emotional quality."},
-        {"role": "assistant", "content": "Focus on phrasing over speed—you're developing the right approach."}
+        {"role": "assistant", "content": "Focus on phrasing over speed—you're developing the right approach."},
+        {"role": "user", "content": "Do you think I should focus more on vibrato or bending first?"},
+        {"role": "assistant", "content": "Start with vibrato—it's the foundation of emotional sustain."},
+        {"role": "user", "content": "Makes sense. I'll slow down and really listen to Gilmour's vibrato width."},
+        {"role": "assistant", "content": "Great plan. Small movements, big feeling."}
       ]
     },
     {
@@ -30,11 +34,36 @@
         {"role": "user", "content": "Ethiopian Yirgacheffe—floral notes with bright acidity."},
         {"role": "assistant", "content": "Perfect choice for morning clarity. Nothing beats that first sip."},
         {"role": "user", "content": "It really sets the tone for a productive day."},
-        {"role": "assistant", "content": "A good ritual to start the morning mindfully."}
+        {"role": "assistant", "content": "A good ritual to start the morning mindfully."},
+        {"role": "user", "content": "I even pair it with 10 minutes of scales."},
+        {"role": "assistant", "content": "Coffee + chromatics = perfect morning combo."},
+        {"role": "user", "content": "Exactly! Warm fingers, warm brain."},
+        {"role": "assistant", "content": "You've cracked the code."}
       ]
     },
     {
       "session_id": "session_03",
+      "topic": "Weather Break",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "Finally got some sunshine after weeks of rain."},
+        {"role": "assistant", "content": "Perfect day to take a walk and clear your head."},
+        {"role": "user", "content": "I'm heading to the park with my sketchbook."},
+        {"role": "assistant", "content": "Natural light makes everything look more vibrant—great choice for drawing."},
+        {"role": "user", "content": "The light really changes how I perceive colors today."},
+        {"role": "assistant", "content": "That golden hour quality brings out warmth in everything it touches."},
+        {"role": "user", "content": "It reminds me of analog tape saturation—warm and soft."},
+        {"role": "assistant", "content": "Nice connection! Nature's version of harmonic distortion."},
+        {"role": "user", "content": "Haha, exactly. Even the birds sound lo-fi."},
+        {"role": "assistant", "content": "Field recording with built-in ambiance."},
+        {"role": "user", "content": "Should I record them for a sample pack?"},
+        {"role": "assistant", "content": "Only if you keep the wind noise—it's part of the character!"}
+      ]
+    },
+    {
+      "session_id": "session_04",
       "topic": "Analog Warmth Appreciation",
       "contains_fact": true,
       "fact_id": "rock_analog_warmth",
@@ -47,13 +76,11 @@
         {"role": "user", "content": "Records from the 70s have a warmth and depth that digital recordings lack. The analog tape saturation adds character that you just can't replicate with plugins."},
         {"role": "assistant", "content": "That's why many engineers still use analog gear in hybrid setups."},
         {"role": "user", "content": "I can hear the difference immediately when I A/B test them."},
-        {"role": "assistant", "content": "Your ears have developed that critical listening skill many musicians lack."},
-        {"role": "user", "content": "The saturation adds harmonic complexity that digital plugins struggle to emulate."},
-        {"role": "assistant", "content": "It's the subtle non-linearities that create that magical character."}
+        {"role": "assistant", "content": "Your ears have developed that critical listening skill many musicians lack."}
       ]
     },
     {
-      "session_id": "session_04",
+      "session_id": "session_05",
       "topic": "Alternative Rock Discovery",
       "contains_fact": true,
       "fact_id": "alternative_emotional_depth",
@@ -64,13 +91,11 @@
         {"role": "user", "content": "There's a genuine excitement in discovering underground alternative bands that push boundaries. Finding something truly original feels like uncovering hidden treasure."},
         {"role": "assistant", "content": "That sense of discovery is what keeps alternative music vital despite commercial pressures."},
         {"role": "user", "content": "I appreciate alternative rock that explores complex emotions rather than just following the same verse-chorus formula. Bands like Radiohead create soundscapes that feel genuinely innovative."},
-        {"role": "assistant", "content": "Their willingness to take risks really sets them apart from mainstream rock."},
-        {"role": "user", "content": "The arrangements are so unpredictable yet cohesive."},
-        {"role": "assistant", "content": "They balance experimentation with emotional accessibility."}
+        {"role": "assistant", "content": "Their willingness to take risks really sets them apart from mainstream rock."}
       ]
     },
     {
-      "session_id": "session_05",
+      "session_id": "session_06",
       "topic": "Metal Technical Appreciation",
       "contains_fact": true,
       "fact_id": "metal_technical_appreciation",
@@ -81,11 +106,17 @@
         {"role": "user", "content": "The odd time signatures are fascinating from a musician's perspective."},
         {"role": "assistant", "content": "Their compositional complexity sets them apart from most metal bands."},
         {"role": "user", "content": "I've been studying the 9/8 and 8/8 patterns in Schism."},
-        {"role": "assistant", "content": "Those polyrhythms are challenging but rewarding to analyze."}
+        {"role": "assistant", "content": "Those polyrhythms are challenging but rewarding to analyze."},
+        {"role": "user", "content": "Do you know other bands that use math-like structures without screaming?"},
+        {"role": "assistant", "content": "Try Polyphia or Plini—they're instrumental and melodic."},
+        {"role": "user", "content": "Thanks! That's more my speed."},
+        {"role": "assistant", "content": "Glad to help bridge the gap."},
+        {"role": "user", "content": "While I generally don't enjoy metal, I can appreciate the technical skill of bands like Tool. Their complex time signatures and musicianship are impressive even if the aggression isn't my taste."},
+        {"role": "assistant", "content": "You've got a great ear for structure over surface intensity."}
       ]
     },
     {
-      "session_id": "session_06",
+      "session_id": "session_07",
       "topic": "Classical Violin Learning",
       "contains_fact": true,
       "fact_id": "classical_violin_appreciation",
@@ -98,11 +129,28 @@
         {"role": "user", "content": "Learning violin has given me a new appreciation for classical music. I can now hear the technical skill required in pieces that I used to find boring."},
         {"role": "assistant", "content": "Understanding the difficulty firsthand changes how you listen to recordings."},
         {"role": "user", "content": "I never realized how much coordination is required between bow and fingers."},
-        {"role": "assistant", "content": "The physical demands of violin reveal why these pieces are masterworks."}
+        {"role": "assistant", "content": "The physical demands of violin reveal why these pieces are masterworks."},
+        {"role": "user", "content": "Should I try transcribing violin lines to guitar?"},
+        {"role": "assistant", "content": "Absolutely—it'll deepen your phrasing on both instruments."},
+        {"role": "user", "content": "Great idea. I'll start with simpler sonatas."},
+        {"role": "assistant", "content": "Smart move. Build the bridge slowly."}
       ]
     },
     {
-      "session_id": "session_07",
+      "session_id": "session_08",
+      "topic": "Morning Routine",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "My morning routine is finally consistent: coffee, 15 min meditation, then 30 min guitar."},
+        {"role": "assistant", "content": "That's a solid foundation. Consistency beats intensity."},
+        {"role": "user", "content": "I used to jump straight into shredding and burn out by noon."},
+        {"role": "assistant", "content": "Now you're building sustainable musicianship—much better."}
+      ]
+    },
+    {
+      "session_id": "session_09",
       "topic": "Pop Music Appreciation",
       "contains_fact": true,
       "fact_id": "pop_catchy_melodies",
@@ -117,11 +165,15 @@
         {"role": "user", "content": "The chord progressions are simple but effective."},
         {"role": "assistant", "content": "Sometimes simplicity creates the strongest emotional impact."},
         {"role": "user", "content": "I find myself analyzing the production techniques even when I'm just enjoying the song."},
-        {"role": "assistant", "content": "Your musician's ear gives you insight into why these songs work so well."}
+        {"role": "assistant", "content": "Your musician's ear gives you insight into why these songs work so well."},
+        {"role": "user", "content": "Do you think I should study pop harmony more?"},
+        {"role": "assistant", "content": "Yes—it's a masterclass in economy and emotional targeting."},
+        {"role": "user", "content": "I'll add it to my rotation."},
+        {"role": "assistant", "content": "Balance it with your rock roots, and you'll have a killer toolkit."}
       ]
     },
     {
-      "session_id": "session_08",
+      "session_id": "session_10",
       "topic": "Rock Guitar Heroes",
       "contains_fact": true,
       "fact_id": "guitar_hero_inspiration",
@@ -138,7 +190,7 @@
       ]
     },
     {
-      "session_id": "session_09",
+      "session_id": "session_11",
       "topic": "Alternative Rock Production",
       "contains_fact": true,
       "fact_id": "alternative_lo_fi_aesthetic",
@@ -149,11 +201,13 @@
         {"role": "user", "content": "Absolutely. It feels more genuine and less manufactured."},
         {"role": "assistant", "content": "The limitations of low-budget recording can spark creativity."},
         {"role": "user", "content": "I love the lo-fi production quality of early alternative rock. The raw, unpolished sound feels more honest and authentic than today's over-produced music."},
-        {"role": "assistant", "content": "That authenticity is what made those records so influential."}
+        {"role": "assistant", "content": "That authenticity is what made those records so influential."},
+        {"role": "user", "content": "Should I try recording my demos with minimal mics?"},
+        {"role": "assistant", "content": "Yes—capture the performance first, polish later if needed."}
       ]
     },
     {
-      "session_id": "session_10",
+      "session_id": "session_12",
       "topic": "Heavy Metal Experience",
       "contains_fact": true,
       "fact_id": "metal_overwhelming",
@@ -170,52 +224,18 @@
       ]
     },
     {
-      "session_id": "session_11",
-      "topic": "Classical Music Accessibility",
-      "contains_fact": true,
-      "fact_id": "classical_intimidating_length",
-      "fact_quote": "I sometimes find classical pieces too long and difficult to follow. Without lyrics, it's hard to know when sections are changing or what the piece is trying to express",
-      "messages": [
-        {"role": "user", "content": "I tried listening to Mahler's symphonies."},
-        {"role": "assistant", "content": "How did you find the experience?"},
-        {"role": "user", "content": "They're beautiful but so long. I lost focus after 20 minutes."},
-        {"role": "assistant", "content": "Symphonic works can be challenging without prior knowledge."},
-        {"role": "user", "content": "I sometimes find classical pieces too long and difficult to follow. Without lyrics, it's hard to know when sections are changing or what the piece is trying to express."},
-        {"role": "assistant", "content": "Starting with shorter, programmatic pieces might be more accessible."}
-      ]
-    },
-    {
-      "session_id": "session_12",
-      "topic": "Rock Music Evolution",
-      "contains_fact": true,
-      "fact_id": "rock_modern_decline",
-      "fact_quote": "Modern rock lacks the innovation and risk-taking that defined classic rock. Most new rock bands sound like they're copying formulas rather than creating something original",
-      "messages": [
-        {"role": "user", "content": "I'm having trouble finding new rock bands I like."},
-        {"role": "assistant", "content": "What's missing compared to the classic rock you enjoy?"},
-        {"role": "user", "content": "Everything sounds derivative and safe. No one takes risks anymore."},
-        {"role": "assistant", "content": "Commercial pressures might discourage experimentation."},
-        {"role": "user", "content": "Modern rock lacks the innovation and risk-taking that defined classic rock. Most new rock bands sound like they're copying formulas rather than creating something original."},
-        {"role": "assistant", "content": "The golden era had fewer commercial constraints on artistic vision."},
-        {"role": "user", "content": "Even the guitar tones sound processed and artificial now."},
-        {"role": "assistant", "content": "Digital modeling can't replicate the character of vintage tube amps."},
-        {"role": "user", "content": "I miss when bands had distinctive sounds instead of following trends."},
-        {"role": "assistant", "content": "Authenticity often gets sacrificed for marketability in modern rock."}
-      ]
-    },
-    {
       "session_id": "session_13",
-      "topic": "Weather Chat",
+      "topic": "Book Reflection",
       "contains_fact": false,
       "fact_id": null,
       "fact_quote": null,
       "messages": [
-        {"role": "user", "content": "Finally got some sunshine after weeks of rain."},
-        {"role": "assistant", "content": "Perfect day to take a walk and clear your head."},
-        {"role": "user", "content": "I'm heading to the park with my sketchbook."},
-        {"role": "assistant", "content": "Natural light makes everything look more vibrant—great choice for drawing."},
-        {"role": "user", "content": "The light really changes how I perceive colors today."},
-        {"role": "assistant", "content": "That golden hour quality brings out warmth in everything it touches."}
+        {"role": "user", "content": "Just finished reading 'The Midnight Library' by Matt Haig."},
+        {"role": "assistant", "content": "How did you find it?"},
+        {"role": "user", "content": "Surprisingly moving. The concept of infinite lives really made me reflect on my own choices."},
+        {"role": "assistant", "content": "Books that prompt self-reflection often stay with us long after we've finished reading."},
+        {"role": "user", "content": "It made me appreciate the paths I've actually taken rather than wondering about alternatives."},
+        {"role": "assistant", "content": "That's a profound takeaway—finding meaning in your actual journey rather than hypothetical ones."}
       ]
     },
     {
@@ -234,7 +254,11 @@
         {"role": "user", "content": "I analyze lyrics like I would poetry sometimes."},
         {"role": "assistant", "content": "That close reading reveals layers most listeners miss."},
         {"role": "user", "content": "Mainstream pop lyrics feel shallow in comparison."},
-        {"role": "assistant", "content": "Commercial constraints often limit lyrical depth in pop music."}
+        {"role": "assistant", "content": "Commercial constraints often limit lyrical depth in pop music."},
+        {"role": "user", "content": "Do you know other lyricists like Yorke?"},
+        {"role": "assistant", "content": "Try Sufjan Stevens or Fiona Apple—they're equally poetic."},
+        {"role": "user", "content": "Adding them to my list. Thanks!"},
+        {"role": "assistant", "content": "You'll love their narrative depth."}
       ]
     },
     {
@@ -253,7 +277,11 @@
         {"role": "user", "content": "The drummer's polyrhythmic patterns complement the guitar perfectly."},
         {"role": "assistant", "content": "Their ensemble playing shows incredible musical telepathy."},
         {"role": "user", "content": "I enjoy instrumental metal bands like Animals as Leaders because I can focus on the musicianship without being put off by aggressive vocals. The technical proficiency is impressive."},
-        {"role": "assistant", "content": "They prove that metal can be intellectually stimulating as well as powerful."}
+        {"role": "assistant", "content": "They prove that metal can be intellectually stimulating as well as powerful."},
+        {"role": "user", "content": "Any similar bands you'd recommend?"},
+        {"role": "assistant", "content": "Check out Polyphia, Plini, or Intervals—same vibe, less distortion."},
+        {"role": "user", "content": "Perfect. Less noise, more nuance."},
+        {"role": "assistant", "content": "Exactly your sweet spot."}
       ]
     },
     {
@@ -272,7 +300,11 @@
         {"role": "user", "content": "Playing classical guitar has helped me appreciate orchestral music more because I can hear guitar-like textures in string arrangements and understand the compositional bridges between solo and ensemble works."},
         {"role": "assistant", "content": "That cross-instrument perspective gives you unique insight into orchestral writing."},
         {"role": "user", "content": "Seeing a live orchestra perform changed my perspective on classical music. The physical presence of the sound and watching the musicians interact made the music come alive in a way recordings never could."},
-        {"role": "assistant", "content": "That immediacy is what makes live classical music so powerful."}
+        {"role": "assistant", "content": "That immediacy is what makes live classical music so powerful."},
+        {"role": "user", "content": "I'm going again next month—this time with score in hand."},
+        {"role": "assistant", "content": "Score + live sound = ultimate listening education."},
+        {"role": "user", "content": "Can't wait to connect the dots visually and sonically."},
+        {"role": "assistant", "content": "You're building a 3D map of the music—that's next-level."}
       ]
     },
     {
@@ -289,22 +321,24 @@
         {"role": "user", "content": "The best classic rock bands recorded live in the studio with minimal overdubs. You can hear the human imperfections that give the music soul."},
         {"role": "assistant", "content": "That human element is what makes those recordings timeless."},
         {"role": "user", "content": "You can hear the bleed between microphones sometimes."},
-        {"role": "assistant", "content": "That bleed actually creates cohesion—the instruments exist in the same acoustic space."}
+        {"role": "assistant", "content": "That phase interaction creates a natural stereo image—part of the magic."},
+        {"role": "user", "content": "Should I try tracking my band live like that?"},
+        {"role": "assistant", "content": "If you can—capture the chemistry first, fix timing later if absolutely needed."}
       ]
     },
     {
       "session_id": "session_18",
-      "topic": "Book Discussion",
+      "topic": "Gardening Break",
       "contains_fact": false,
       "fact_id": null,
       "fact_quote": null,
       "messages": [
-        {"role": "user", "content": "Just finished reading 'The Midnight Library' by Matt Haig."},
-        {"role": "assistant", "content": "How did you find it?"},
-        {"role": "user", "content": "Surprisingly moving. The concept of infinite lives really made me reflect on my own choices."},
-        {"role": "assistant", "content": "Books that prompt self-reflection often stay with us long after we've finished reading."},
-        {"role": "user", "content": "It made me appreciate the paths I've actually taken rather than wondering about alternatives."},
-        {"role": "assistant", "content": "That's a profound takeaway—finding meaning in your actual journey rather than hypothetical ones."}
+        {"role": "user", "content": "My tomato plants are finally bearing fruit!"},
+        {"role": "assistant", "content": "There's nothing like homegrown tomatoes."},
+        {"role": "user", "content": "The smell of the leaves when I brush against them is incredible."},
+        {"role": "assistant", "content": "That earthy, herbal scent is one of summer's great pleasures."},
+        {"role": "user", "content": "It's meditative in a way—tending to something that grows slowly over time."},
+        {"role": "assistant", "content": "Like music practice, gardening rewards patience and consistent attention."}
       ]
     },
     {
@@ -319,7 +353,13 @@
         {"role": "user", "content": "Tranquility Base Hotel feels completely different from their garage rock roots."},
         {"role": "assistant", "content": "Do you think they've lost what made them special?"},
         {"role": "user", "content": "I'm disappointed when alternative bands sign with major labels and lose their edge. Their music becomes safe and radio-friendly instead of challenging and unique."},
-        {"role": "assistant", "content": "Artistic evolution is natural, but commercial pressure can dilute authenticity."}
+        {"role": "assistant", "content": "Artistic evolution is natural, but commercial pressure can dilute authenticity."},
+        {"role": "user", "content": "Any bands that stayed true after going big?"},
+        {"role": "assistant", "content": "Radiohead, maybe? They kept pushing boundaries even post-'OK Computer.'"},
+        {"role": "user", "content": "True. They're the exception, not the rule."},
+        {"role": "assistant", "content": "Rare, but proof it's possible to grow without selling out."},
+        {"role": "user", "content": "I'll stick with the underground scene for now."},
+        {"role": "assistant", "content": "Where the risk-takers still live."}
       ]
     },
     {
@@ -338,7 +378,11 @@
         {"role": "user", "content": "Even the band names and album artwork start to look the same after a while."},
         {"role": "assistant", "content": "The aesthetic uniformity can make the genre feel impenetrable to newcomers."},
         {"role": "user", "content": "I tried listening to different subgenres but couldn't tell them apart."},
-        {"role": "assistant", "content": "Without understanding the historical context, the distinctions aren't obvious."}
+        {"role": "assistant", "content": "Without understanding the historical context, the distinctions aren't obvious."},
+        {"role": "user", "content": "Maybe I should just accept that metal isn't for me."},
+        {"role": "assistant", "content": "Or focus only on the corners that align with your values—instrumental, dynamic, melodic."},
+        {"role": "user", "content": "Yeah, I'll stick with Tool and Animals as Leaders."},
+        {"role": "assistant", "content": "Smart filtering. Not every genre needs full immersion."}
       ]
     },
     {
@@ -353,9 +397,7 @@
         {"role": "user", "content": "Rock music moves me because of its raw emotional honesty. There's no pretense—just pure feeling expressed through simple but powerful structures that form the foundation of classic rock."},
         {"role": "assistant", "content": "That authenticity is why rock remains foundational to so much modern music."},
         {"role": "user", "content": "Three chords and the truth—that simplicity forces you to mean every note."},
-        {"role": "assistant", "content": "When you can't hide behind complexity, your emotional intention has to be genuine."},
-        {"role": "user", "content": "I try to bring that same honesty to my own playing regardless of genre."},
-        {"role": "assistant", "content": "That's the universal lesson rock teaches every serious musician."}
+        {"role": "assistant", "content": "When you can't hide behind complexity, your emotional intention has to be genuine."}
       ]
     },
     {
@@ -372,7 +414,11 @@
         {"role": "user", "content": "Modern music often feels disposable compared to these timeless stories."},
         {"role": "assistant", "content": "Alternative songs become part of our collective memory in a special way."},
         {"role": "user", "content": "I find myself remembering every word of these songs years later."},
-        {"role": "assistant", "content": "That memorability is the hallmark of great storytelling in music."}
+        {"role": "assistant", "content": "That memorability is the hallmark of great storytelling in music."},
+        {"role": "user", "content": "Should I try writing lyrics with more narrative?"},
+        {"role": "assistant", "content": "Absolutely—your ear for story will translate beautifully."},
+        {"role": "user", "content": "I'll start journaling scenes instead of just feelings."},
+        {"role": "assistant", "content": "Show, don't tell—that's the songwriter's mantra."}
       ]
     },
     {
@@ -408,22 +454,26 @@
         {"role": "user", "content": "Too much auto-tune in modern pop removes the human vulnerability that makes singing emotionally compelling. I miss hearing slight imperfections that show real human expression."},
         {"role": "assistant", "content": "Authenticity often resonates more than technical perfection."},
         {"role": "user", "content": "I also find that too much pop music feels formulaic and manufactured—like it's designed by committee rather than expressing genuine artistic vision."},
-        {"role": "assistant", "content": "That commercial calculation often sacrifices the emotional authenticity that makes music memorable."}
+        {"role": "assistant", "content": "That commercial calculation often sacrifices the emotional authenticity that makes music memorable."},
+        {"role": "user", "content": "Are there pop artists who avoid this?"},
+        {"role": "assistant", "content": "Lorde, Florence Welch, even Billie Eilish—they keep vocal vulnerability intact."},
+        {"role": "user", "content": "Good to know. I'll explore them."},
+        {"role": "assistant", "content": "They prove pop can be personal, not just polished."}
       ]
     },
     {
       "session_id": "session_25",
-      "topic": "Gardening Break",
+      "topic": "Hiking Reflection",
       "contains_fact": false,
       "fact_id": null,
       "fact_quote": null,
       "messages": [
-        {"role": "user", "content": "My tomato plants are finally bearing fruit!"},
-        {"role": "assistant", "content": "There's nothing like homegrown tomatoes."},
-        {"role": "user", "content": "The smell of the leaves when I brush against them is incredible."},
-        {"role": "assistant", "content": "That earthy, herbal scent is one of summer's great pleasures."},
-        {"role": "user", "content": "It's meditative in a way—tending to something that grows slowly over time."},
-        {"role": "assistant", "content": "Like music practice, gardening rewards patience and consistent attention."}
+        {"role": "user", "content": "Just got back from a hike in the mountains."},
+        {"role": "assistant", "content": "How was the trail?"},
+        {"role": "user", "content": "Breathtaking views at the summit—worth every step of the climb."},
+        {"role": "assistant", "content": "There's something meditative about rhythmic walking in nature."},
+        {"role": "user", "content": "It cleared my head in a way that nothing else can."},
+        {"role": "assistant", "content": "Nature has a way of putting creative blocks and daily stresses into perspective."}
       ]
     },
     {
@@ -442,7 +492,11 @@
         {"role": "user", "content": "When I hear Tchaikovsky's melodies, I feel like I understand exactly what he's expressing."},
         {"role": "assistant", "content": "That immediate emotional connection is precisely what Romantic composers prioritized."},
         {"role": "user", "content": "Baroque music sometimes feels too mathematical and restrained for me."},
-        {"role": "assistant", "content": "That intellectual precision appeals to some listeners but lacks the emotional immediacy you value."}
+        {"role": "assistant", "content": "That intellectual precision appeals to some listeners but lacks the emotional immediacy you value."},
+        {"role": "user", "content": "Should I try late Romantic like Rachmaninoff?"},
+        {"role": "assistant", "content": "Yes—he's all heart, with virtuosic flair that serves emotion."},
+        {"role": "user", "content": "Adding him to my playlist tonight."},
+        {"role": "assistant", "content": "Prepare for tears—and inspiration."}
       ]
     },
     {
@@ -457,7 +511,11 @@
         {"role": "user", "content": "The same four-chord progressions, the same lyrical themes about love and heartbreak."},
         {"role": "assistant", "content": "Commercial pressures often lead to risk-averse songwriting."},
         {"role": "user", "content": "I also find that too much pop music feels formulaic and manufactured—like it's designed by committee rather than expressing genuine artistic vision."},
-        {"role": "assistant", "content": "That calculated approach often sacrifices the uniqueness that makes music memorable."}
+        {"role": "assistant", "content": "That calculated approach often sacrifices the uniqueness that makes music memorable."},
+        {"role": "user", "content": "But I still catch myself humming some of it!"},
+        {"role": "assistant", "content": "Your ear recognizes craft—even when the soul's missing."},
+        {"role": "user", "content": "Exactly. It's frustrating but honest."},
+        {"role": "assistant", "content": "Use it as a lesson: what works structurally, minus the soullessness."}
       ]
     },
     {
@@ -508,7 +566,7 @@
         {"role": "user", "content": "I believe the energy of musicians playing together in one room creates magic that overdubbing can never replicate. Those slight imperfections are what give recordings their human soul."},
         {"role": "assistant", "content": "That shared musical conversation is impossible to fake in post-production."},
         {"role": "user", "content": "You can hear the bleed between microphones sometimes."},
-        {"role": "assistant", "content": "That bleed actually creates cohesion—the instruments exist in the same acoustic space."},
+        {"role": "assistant", "content": "That phase interaction creates a natural stereo image—part of the magic."},
         {"role": "user", "content": "Modern isolation techniques sometimes kill that natural interaction."},
         {"role": "assistant", "content": "Perfect separation can paradoxically make music feel disconnected."},
         {"role": "user", "content": "I want my own recordings to capture that same live energy someday."},
@@ -527,330 +585,377 @@
         {"role": "user", "content": "What I love most about alternative rock is how it values raw authenticity over polished perfection. Those unvarnished moments where you can hear the room ambiance and slight mistakes actually make the music more emotionally resonant."},
         {"role": "assistant", "content": "Those 'flaws' create character and emotional connection that sterile production lacks."},
         {"role": "user", "content": "Modern production often strips away that human element."},
-        {"role": "assistant", "content": "When everything is quantized and pitch-corrected, music loses its breathing quality."}
+        {"role": "assistant", "content": "When everything is quantized and pitch-corrected, music loses its breathing quality."},
+        {"role": "user", "content": "Should I leave in small mistakes when I record?"},
+        {"role": "assistant", "content": "If they serve the feel—yes. Perfection is the enemy of soul."},
+        {"role": "user", "content": "That's liberating to hear."},
+        {"role": "assistant", "content": "Music breathes. Let it."}
       ]
     },
     {
       "session_id": "session_32",
-      "topic": "Classical Guitar Bridge",
+      "topic": "Blues Guitar Deep Dive",
       "contains_fact": true,
-      "fact_id": "classical_guitar_bridge",
-      "fact_quote": "Playing classical guitar has helped me appreciate orchestral music more because I can hear guitar-like textures in string arrangements and understand the compositional bridges between solo and ensemble works",
+      "fact_id": "blues_phrasing",
+      "fact_quote": "The blues taught me that a single bent note can say more than a hundred fast scales. B.B. King proved you don't need speed to break hearts",
       "messages": [
-        {"role": "user", "content": "I've been practicing classical guitar pieces lately."},
-        {"role": "assistant", "content": "How does that differ from your electric guitar playing?"},
-        {"role": "user", "content": "The fingerstyle technique requires much more independence between fingers."},
-        {"role": "assistant", "content": "Classical guitar develops a different kind of dexterity than pick playing."},
-        {"role": "user", "content": "Playing classical guitar has helped me appreciate orchestral music more because I can hear guitar-like textures in string arrangements and understand the compositional bridges between solo and ensemble works."},
-        {"role": "assistant", "content": "That cross-instrument perspective gives you unique insight into orchestral writing."}
+        {"role": "user", "content": "I've been digging into B.B. King's playing style."},
+        {"role": "assistant", "content": "What aspect of his playing captivates you most?"},
+        {"role": "user", "content": "His vibrato and how he makes one note cry. It's all about feeling."},
+        {"role": "assistant", "content": "The blues is where rock's emotional honesty was forged."},
+        {"role": "user", "content": "I'm working on Lucille tone and bending into the note instead of just hitting it."},
+        {"role": "assistant", "content": "That pre-bend anticipation is everything in blues phrasing."},
+        {"role": "user", "content": "The blues taught me that a single bent note can say more than a hundred fast scales. B.B. King proved you don't need speed to break hearts."},
+        {"role": "assistant", "content": "He's the master of saying more with less—exactly what you value in Gilmour and Knopfler."},
+        {"role": "user", "content": "I can hear the lineage from blues to Zeppelin to Pink Floyd now."},
+        {"role": "assistant", "content": "That's the golden thread of emotional expression in rock."},
+        {"role": "user", "content": "Next I'll study Albert King's string bending."},
+        {"role": "assistant", "content": "Great choice—his wide bends will expand your expressive palette."}
       ]
     },
     {
       "session_id": "session_33",
-      "topic": "Metal Dynamic Range Appreciation",
+      "topic": "Classical Guitar vs Violin",
       "contains_fact": true,
-      "fact_id": "metal_dynamic_range_appreciation",
-      "fact_quote": "I appreciate metal bands that understand dynamic range—the contrast between quiet and loud moments makes the heavy parts hit harder and creates emotional depth beyond pure aggression",
+      "fact_id": "classical_instrument_comparison",
+      "fact_quote": "Studying violin has made me hear guitar differently. I now notice how classical guitar articulates harmony while violin sings the melody—two sides of the same musical coin",
       "messages": [
-        {"role": "user", "content": "I heard a Mastodon song with these beautiful quiet sections."},
-        {"role": "assistant", "content": "Their use of dynamics really sets them apart from more one-dimensional metal."},
-        {"role": "user", "content": "I appreciate metal bands that understand dynamic range—the contrast between quiet and loud moments makes the heavy parts hit harder and creates emotional depth beyond pure aggression."},
-        {"role": "assistant", "content": "That ebb and flow creates a narrative arc within the music itself."},
-        {"role": "user", "content": "It's like they're using volume as an expressive tool rather than just playing loud all the time."},
-        {"role": "assistant", "content": "Dynamic contrast is what separates compositional sophistication from sonic assault."}
+        {"role": "user", "content": "I'm trying to arrange a Bach cello suite for guitar."},
+        {"role": "assistant", "content": "That's a beautiful crossover project. Which suite?"},
+        {"role": "user", "content": "No. 1 in G major. The Prelude works well with guitar fingerings."},
+        {"role": "assistant", "content": "Bach translates naturally to guitar because of its polyphonic nature."},
+        {"role": "user", "content": "Playing it on guitar makes me appreciate the bass lines I missed on violin."},
+        {"role": "assistant", "content": "That's the magic of learning multiple instruments—each reveals new layers."},
+        {"role": "user", "content": "Studying violin has made me hear guitar differently. I now notice how classical guitar articulates harmony while violin sings the melody—two sides of the same musical coin."},
+        {"role": "assistant", "content": "You're developing a holistic view of music that few musicians achieve."},
+        {"role": "user", "content": "Should I also explore viola or cello for deeper understanding?"},
+        {"role": "assistant", "content": "If you have time, cello's tenor range would complement both instruments beautifully."},
+        {"role": "user", "content": "Maybe next year. For now, I'll keep transcribing."},
+        {"role": "assistant", "content": "Smart pacing—depth over breadth."}
       ]
     },
     {
       "session_id": "session_34",
-      "topic": "Pop Melodic Craft",
+      "topic": "Pop Songcraft Analysis",
       "contains_fact": true,
-      "fact_id": "pop_melodic_craft_appreciation",
-      "fact_quote": "Despite my criticisms of pop production, I have to respect the melodic craft behind truly great pop songs—the ability to write a memorable hook that sticks with you for days shows real musical intelligence",
+      "fact_id": "pop_craft_appreciation",
+      "fact_quote": "I respect the craftsmanship in a perfectly constructed pop song—how every section flows, how the hook lands—even if the lyrics don't always resonate emotionally",
       "messages": [
-        {"role": "user", "content": "I caught myself humming a Taylor Swift song all day yesterday."},
-        {"role": "assistant", "content": "Those melodies have a way of embedding themselves in your memory."},
-        {"role": "user", "content": "Despite my criticisms of pop production, I have to respect the melodic craft behind truly great pop songs—the ability to write a memorable hook that sticks with you for days shows real musical intelligence."},
-        {"role": "assistant", "content": "Crafting something that feels both familiar and fresh is deceptively difficult."},
-        {"role": "user", "content": "It's impressive how they balance simplicity with just enough novelty to keep it interesting."},
-        {"role": "assistant", "content": "That balance between accessibility and distinctiveness separates great pop from generic pop."}
+        {"role": "user", "content": "I've been studying Max Martin's production techniques."},
+        {"role": "assistant", "content": "He's the master of pop architecture. What have you noticed?"},
+        {"role": "user", "content": "The way he uses melodic math—repetition with slight variations—is genius."},
+        {"role": "assistant", "content": "Pure craft, even if the content is lightweight."},
+        {"role": "user", "content": "I respect the craftsmanship in a perfectly constructed pop song—how every section flows, how the hook lands—even if the lyrics don't always resonate emotionally."},
+        {"role": "assistant", "content": "That's a healthy distinction: appreciating structure without needing soul."},
+        {"role": "user", "content": "I can apply those structural lessons to my own writing without copying the superficiality."},
+        {"role": "assistant", "content": "Exactly—borrow the architecture, but fill it with your own emotional truth."},
+        {"role": "user", "content": "I'm analyzing how pre-choruses build tension before the drop."},
+        {"role": "assistant", "content": "That's a universal technique—works in rock, pop, even classical."},
+        {"role": "user", "content": "Good to know. I'll experiment with it in my next song."}
       ]
     },
     {
       "session_id": "session_35",
-      "topic": "Hiking Reflection",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": null,
+      "topic": "Progressive Metal Appreciation",
+      "contains_fact": true,
+      "fact_id": "prog_metal_instrumental",
+      "fact_quote": "Bands like Plini and Polyphia opened my eyes to how metal can be melodic, complex, and completely vocal-free. It's the perfect blend of technical mastery and emotional atmosphere",
       "messages": [
-        {"role": "user", "content": "Just got back from a hike in the mountains."},
-        {"role": "assistant", "content": "How was the trail?"},
-        {"role": "user", "content": "Breathtaking views at the summit—worth every step of the climb."},
-        {"role": "assistant", "content": "There's something meditative about rhythmic walking in nature."},
-        {"role": "user", "content": "It cleared my head in a way that nothing else can."},
-        {"role": "assistant", "content": "Nature has a way of putting creative blocks and daily stresses into perspective."}
+        {"role": "user", "content": "I discovered Plini through your recommendation. Wow."},
+        {"role": "assistant", "content": "His sense of melody over heavy riffs is exactly your sweet spot."},
+        {"role": "user", "content": "The song 'Paper Moon' has these soaring guitar lines that feel almost like vocals."},
+        {"role": "assistant", "content": "He uses the guitar as a singing voice—no lyrics needed."},
+        {"role": "user", "content": "The rhythmic complexity is there, but it never overwhelms the emotion."},
+        {"role": "assistant", "content": "That's the balance you've been seeking across all genres."},
+        {"role": "user", "content": "Bands like Plini and Polyphia opened my eyes to how metal can be melodic, complex, and completely vocal-free. It's the perfect blend of technical mastery and emotional atmosphere."},
+        {"role": "assistant", "content": "And it proves that metal's intensity can serve beauty, not just aggression."},
+        {"role": "user", "content": "I'm studying Polyphia's 'G.O.A.T.' to understand their hybrid picking."},
+        {"role": "assistant", "content": "That's advanced stuff—but it'll expand your technical vocabulary enormously."},
+        {"role": "user", "content": "I'll take it slow, phrase by phrase, like you always advise."},
+        {"role": "assistant", "content": "Wise approach. Technique absorbed slowly becomes part of your voice."}
+      ]
+    },
+    {
+      "session_id": "session_36",
+      "topic": "Live Concert Experience",
+      "contains_fact": true,
+      "fact_id": "live_sound_revelation",
+      "fact_quote": "A great live concert reminds you why music matters—the shared energy, the imperfections, the way sound fills a room. No recording can replicate that feeling of being inside the music",
+      "messages": [
+        {"role": "user", "content": "Went to a small club show last night—local blues band."},
+        {"role": "assistant", "content": "How was the vibe compared to arena shows?"},
+        {"role": "user", "content": "Intimate and raw. You could see the guitarists' fingers, the sweat."},
+        {"role": "assistant", "content": "That proximity creates a different kind of connection."},
+        {"role": "user", "content": "The guitarist broke a string and kept playing—such a human moment."},
+        {"role": "assistant", "content": "Exactly the kind of 'imperfection' you value in recordings."},
+        {"role": "user", "content": "A great live concert reminds you why music matters—the shared energy, the imperfections, the way sound fills a room. No recording can replicate that feeling of being inside the music."},
+        {"role": "assistant", "content": "That's why you'll always be drawn to live energy, whether in person or on record."},
+        {"role": "user", "content": "I came home inspired to practice for hours."},
+        {"role": "assistant", "content": "The ultimate sign of a powerful live experience—it sends you back to your instrument."}
       ]
     }
   ],
   "queries": [
       {
-        "query_id": "q01_metal_positive_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of my discussions specifically regarding heavy metal bands or subgenres where I explicitly found elements to praise or appreciate?",
+        "query_id": "q01_classical_composer_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the classical composers I explicitly named and evaluated where I stated I deeply connected with their emotional directness?",
         "reference_answer": {
-          "text": "The exact fraction is 4/6 (or 2/3). You praised specific elements in the music of Tool, Animals as Leaders, Mastodon, and the acoustic parts of Metallica's work, while explicitly struggling with the aggression of Master of Puppets by Metallica and the blending styles of death/black/doom metal.",
+          "text": "The exact fraction is 2/3. You explicitly praised Brahms and Tchaikovsky for their emotional directness, while stating that Bach felt too mathematical and restrained.",
           "required_facts": [
-            "metal_technical_appreciation",
-            "metal_overwhelming",
-            "metal_instrumental_exception",
-            "metal_subgenre_overwhelm",
-            "metal_acoustic_appreciation",
-            "metal_dynamic_range_appreciation"
+            "bach_mathematical_critique",
+            "brahms_emotional_connection",
+            "tchaikovsky_emotional_connection"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 4/6 or 2/3",
-            "Correctly identifies the 4 praised instances versus the 2 criticized instances"
+            "Provides exact fraction 2/3",
+            "Correctly identifies Brahms and Tchaikovsky as the emotional composers and Bach as the excluded one"
           ]
         }
       },
       {
-        "query_id": "q02_classical_positive_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of my conversations focused on orchestral, symphonic, or historical instrumental music where I expressed positive feelings or a new appreciation?",
+        "query_id": "q02_alternative_rock_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the alternative rock bands I explicitly named in our conversations that I criticized for losing their raw edge after changing their style or signing to a major label?",
         "reference_answer": {
-          "text": "The exact fraction is 4/5. You expressed positive appreciation when discussing playing Bach on violin, attending a live symphony concert, connecting with Romantic composers like Brahms and Tchaikovsky, and playing classical guitar, but you criticized Mahler's symphonies for being intimidatingly long.",
+          "text": "The exact fraction is 1/5. You criticized Arctic Monkeys for this issue, while praising Radiohead, Nirvana, Pixies, and Simon & Garfunkel for their authenticity, rawness, or lyrical depth.",
           "required_facts": [
-            "classical_violin_appreciation",
-            "classical_intimidating_length",
-            "classical_live_revelation",
-            "classical_composer_connection",
-            "classical_guitar_bridge"
+            "arctic_monkeys_criticized",
+            "radiohead_praised",
+            "nirvana_praised",
+            "pixies_praised",
+            "simon_and_garfunkel_praised"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 4/5",
-            "Identifies the 4 positive classical discussions and the 1 negative (Mahler)"
+            "Provides exact fraction 1/5",
+            "Identifies Arctic Monkeys as the criticized band vs the 4 praised bands"
           ]
         }
       },
       {
-        "query_id": "q03_pop_positive_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of my explicit discussions about mainstream vocal pop music where I praised the genre for its melodic hooks or production craft?",
+        "query_id": "q03_metal_criticism_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of the specific heavy metal or progressive metal bands I explicitly named that I stated I found too overwhelming due to aggressive screaming or intense distortion?",
         "reference_answer": {
-          "text": "The exact fraction is 2/4 (or 1/2). You praised the melodic craft of Dua Lipa and Taylor Swift, but criticized the genre generally for overusing auto-tune and relying on formulaic four-chord progressions.",
+          "text": "The exact fraction is 1/5. You criticized Metallica for being too aggressive, but you explicitly praised Tool, Animals as Leaders, Plini, and Polyphia for their technical skill and lack of screaming.",
           "required_facts": [
-            "pop_catchy_melodies",
-            "pop_auto_tune_critique",
-            "pop_formulaic_concerns",
-            "pop_melodic_craft_appreciation"
+            "metallica_overwhelming",
+            "tool_praised",
+            "animals_as_leaders_praised",
+            "plini_praised",
+            "polyphia_praised"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 2/4 or 1/2",
-            "Accurately maps the 2 positive sessions against the 2 critical sessions"
+            "Provides exact fraction 1/5",
+            "Identifies Metallica as the overwhelming band vs the 4 praised instrumental/prog bands"
           ]
         }
       },
       {
-        "query_id": "q04_criticized_acts_count",
-        "question": "How many specific musical acts or composers did I explicitly criticize, struggle to enjoy, or express deep disappointment in? Provide the exact count.",
+        "query_id": "q04_guitarists_phrasing_count",
+        "question": "How many specific guitarists did I explicitly mention studying or praising for their phrasing, vibrato, or emotional note choice rather than their playing speed? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly criticized or struggled with exactly 4 musical acts or composers: Metallica (Master of Puppets), Mahler, Arctic Monkeys (Tranquility Base Hotel), and Bach (finding his Baroque style too mathematical).",
+          "text": "You explicitly mentioned exactly 5 guitarists: Jimmy Page, David Gilmour, Mark Knopfler, B.B. King, and Albert King.",
           "required_facts": [
-            "metal_overwhelming",
-            "classical_intimidating_length",
-            "alternative_mainstream_sellout",
-            "classical_composer_connection"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 4",
-            "Lists Metallica, Mahler, Arctic Monkeys, and Bach as the criticized acts"
-          ]
-        }
-      },
-      {
-        "query_id": "q05_actively_studied_acts_count",
-        "question": "How many specific musical acts or composers did I explicitly state that I was actively practicing, analyzing, or learning to play on a physical instrument myself? Provide the exact count.",
-        "reference_answer": {
-          "text": "You explicitly stated practicing or studying exactly 5 acts or composers: Led Zeppelin (Jimmy Page's solos), Tool (time signatures), Bach (Partita No. 3), David Gilmour (bending/vibrato), and Animals as Leaders (extended range/tapping).",
-          "required_facts": [
-            "rock_guitar_inspiration",
-            "metal_technical_appreciation",
-            "classical_violin_appreciation",
-            "guitar_hero_inspiration",
-            "metal_instrumental_exception"
+            "jimmy_page_phrasing",
+            "david_gilmour_phrasing",
+            "mark_knopfler_phrasing",
+            "bb_king_vibrato",
+            "albert_king_bending"
           ],
           "evaluation_criteria": [
             "Provides exact count of 5",
-            "Lists Led Zeppelin/Jimmy Page, Tool, Bach, David Gilmour, and Animals as Leaders"
+            "Lists Jimmy Page, David Gilmour, Mark Knopfler, B.B. King, and Albert King"
           ]
         }
       },
       {
-        "query_id": "q06_criticized_genres_count",
-        "question": "How many distinct broad musical genres, subgenres, or specific historical eras of a genre did I explicitly criticize or express negative struggles with (e.g., finding them formulaic, overwhelming, or overly mathematical)? Provide the exact count.",
+        "query_id": "q05_hobbies_rituals_count",
+        "question": "How many specific non-musical hobbies, daily rituals, or outdoor activities did I explicitly state I engaged in to clear my head, reflect, or start my day? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly criticized exactly 6 genres/subgenres/eras: Heavy Metal (for aggression), Symphonic/Classical (for intimidating length), Modern Rock (for being derivative), Death/Black/Doom Metal (for blending together), Mainstream Pop (for being formulaic), and Baroque Classical (for being too mathematical).",
+          "text": "You explicitly mentioned exactly 6 activities: making pour-over coffee, meditating, walking with a sketchbook in the park, reading, gardening (tending tomatoes), and hiking.",
           "required_facts": [
-            "metal_overwhelming",
-            "classical_intimidating_length",
-            "rock_modern_decline",
-            "metal_subgenre_overwhelm",
-            "pop_formulaic_concerns",
-            "classical_composer_connection"
+            "pour_over_coffee_morning",
+            "meditation_routine",
+            "park_sketchbook_walk",
+            "reading_midnight_library",
+            "gardening_tomatoes",
+            "hiking_mountains"
           ],
           "evaluation_criteria": [
             "Provides exact count of 6",
-            "Identifies Heavy Metal, Symphonic/Classical, Modern Rock, Death/Black/Doom Metal, Mainstream Pop, and Baroque"
+            "Names the 6 correct non-musical activities"
           ]
         }
       },
       {
-        "query_id": "q07_raw_production_praise_count",
-        "question": "How many specific bands did I explicitly praise for their unpolished, lo-fi, or live-in-the-room recording qualities, emphasizing how those imperfections add authenticity or soul? Provide the exact count.",
+        "query_id": "q06_album_titles_count",
+        "question": "How many specific music albums did I explicitly mention by their exact titles across all our conversations? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 5 bands for these qualities: Pink Floyd, Nirvana, The Rolling Stones, The Who, and Pixies.",
+          "text": "You explicitly mentioned exactly 7 albums: Dark Side, OK Computer, Lateralus, Bleach, Nevermind, Master of Puppets, and Tranquility Base Hotel & Casino.",
           "required_facts": [
-            "rock_analog_warmth",
-            "alternative_lo_fi_aesthetic",
-            "classic_rock_authenticity",
-            "rock_live_recording_philosophy",
-            "alternative_raw_authenticity"
+            "dark_side_album",
+            "ok_computer_album",
+            "lateralus_album",
+            "bleach_album",
+            "nevermind_album",
+            "master_of_puppets_album",
+            "tranquility_base_hotel_album"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5",
-            "Lists Pink Floyd, Nirvana, Rolling Stones, The Who, and Pixies"
+            "Provides exact count of 7",
+            "Lists the 7 correct album titles"
           ]
         }
       },
       {
-        "query_id": "q08_alternative_folk_praise_count",
-        "question": "How many specific alternative rock or folk-rock musical acts did I explicitly praise for their lyrical depth, poetic storytelling, innovative soundscapes, or raw emotional authenticity? Provide the exact count.",
+        "query_id": "q07_genre_criticisms_count",
+        "question": "How many broad musical genres or subgenres did I explicitly criticize or express struggle with because I felt they were too mathematical, overly aggressive, or artificially manufactured? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 4 acts for these qualities: Radiohead (or Thom Yorke), Nirvana, Simon & Garfunkel, and Pixies.",
+          "text": "You explicitly criticized exactly 3 genres/subgenres: Baroque classical (too mathematical), Heavy Metal (overly aggressive), and Mainstream Pop (manufactured/formulaic).",
           "required_facts": [
-            "alternative_emotional_depth",
-            "alternative_lo_fi_aesthetic",
-            "alternative_lyrical_complexity",
-            "alternative_storytelling_value"
+            "baroque_mathematical_criticism",
+            "heavy_metal_aggression_criticism",
+            "mainstream_pop_formulaic_criticism"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 4",
-            "Lists Radiohead/Thom Yorke, Nirvana, Simon & Garfunkel, and Pixies"
+            "Provides exact count of 3",
+            "Lists Baroque classical, Heavy Metal, and Mainstream Pop"
           ]
         }
       },
       {
-        "query_id": "q09_metal_versatility_mc",
-        "question": "Which of the following ranges represents the exact number of highly technical or aggressive bands I explicitly praised for their musical versatility, dynamic range, acoustic integration, or lack of distracting harsh vocals? A) 0-1. B) 2-3. C) 4-5.",
+        "query_id": "q08_classic_rock_blues_count",
+        "question": "How many specific bands or solo artists did I explicitly mention listening to or studying within the classic rock and blues genres? Provide the exact count.",
         "reference_answer": {
-          "text": "The correct option is C (4-5). You explicitly praised exactly 4 heavy bands for these traits: Tool, Animals as Leaders, Metallica (specifically for acoustic sections), and Mastodon.",
+          "text": "You explicitly mentioned exactly 6 bands or solo artists in these genres: Led Zeppelin, Pink Floyd, The Rolling Stones, The Who, B.B. King, and Albert King.",
           "required_facts": [
-            "metal_technical_appreciation",
-            "metal_instrumental_exception",
-            "metal_acoustic_appreciation",
-            "metal_dynamic_range_appreciation"
+            "led_zeppelin_mention",
+            "pink_floyd_mention",
+            "rolling_stones_mention",
+            "the_who_mention",
+            "bb_king_mention",
+            "albert_king_mention"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 6",
+            "Lists the 6 correct classic rock and blues artists"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_metal_evolution_mc",
+        "question": "Which of the following ranges represents the exact number of progressive or heavy metal bands I explicitly praised for their instrumental proficiency, melodic complexity, and lack of screaming? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
+        "reference_answer": {
+          "text": "The correct option is B (3-4). You praised exactly 4 instrumental or progressive bands for these qualities: Animals as Leaders, Plini, Polyphia, and Intervals (acknowledged and added to your list).",
+          "required_facts": [
+            "animals_as_leaders_instrumental",
+            "plini_melodic",
+            "polyphia_instrumental",
+            "intervals_nuance"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms the count is 4 bands"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_alternative_praise_mc",
+        "question": "Which of the following ranges represents the exact number of alternative rock bands or musical duos I explicitly praised for their raw authenticity, storytelling, or emotional depth? A) 0-1. B) 2-3. C) 4-5. D) 6-8.",
+        "reference_answer": {
+          "text": "The correct option is C (4-5). You explicitly praised exactly 4 alternative bands or duos for these qualities: Radiohead, Nirvana, Pixies, and Simon & Garfunkel.",
+          "required_facts": [
+            "radiohead_innovation",
+            "nirvana_authenticity",
+            "pixies_raw_energy",
+            "simon_and_garfunkel_storytelling"
           ],
           "evaluation_criteria": [
             "Selects Option C",
-            "Confirms count of 4 within the selected range"
+            "Confirms the count is 4 bands"
           ]
         }
       },
       {
-        "query_id": "q10_classical_era_preference_mc",
-        "question": "Based on my overarching discussions about historical orchestral music, which of the following best describes my explicit preference regarding compositional eras? A) I strictly prefer the mathematical precision and intellectual structure of the Baroque era. B) I strongly prefer the direct emotional expression of Romantic era composers, finding earlier mathematical styles less accessible. C) I completely reject both Baroque and Romantic eras in favor of extremely long, complex symphonies without clear section changes.",
+        "query_id": "q11_morning_routine_mc",
+        "question": "Which of the following ranges represents the exact number of distinct activities (both musical and non-musical) that I explicitly stated make up my morning routines? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is B. You explicitly stated you connect much more with Romantic composers like Brahms and Tchaikovsky because of their clear emotional expression, while finding Baroque music like Bach too mathematical and restrained.",
+          "text": "The correct option is B (3-4). You explicitly mentioned exactly 4 activities across your morning routines: brewing pour-over coffee, playing guitar scales/chromatics, meditating, and practicing guitar for 30 minutes.",
           "required_facts": [
-            "classical_composer_connection",
-            "classical_intimidating_length",
-            "classical_violin_appreciation"
+            "pour_over_coffee_morning",
+            "scales_chromatics_morning",
+            "meditation_morning",
+            "guitar_practice_morning"
           ],
           "evaluation_criteria": [
             "Selects Option B",
-            "Correctly maps user preference to Romantic emotional directness over Baroque math"
+            "Confirms the count is 4 distinct activities"
           ]
         }
       },
       {
-        "query_id": "q11_commercial_complaint_mc",
-        "question": "Which of the following ranges represents the exact number of separate sessions where I explicitly complained about modern music feeling too safe, derivative, manufactured, or designed by a committee? A) 1-2. B) 3-5. C) 6-8.",
+        "query_id": "q12_metal_bands_exclusionary_list",
+        "question": "Name 4 specific heavy metal or progressive rock bands I explicitly praised that do NOT feature aggressive screaming or harsh vocals.",
         "reference_answer": {
-          "text": "The correct option is B (3-5). You explicitly expressed this exact complaint across 4 different sessions (regarding modern rock lacking risk, alternative bands losing their edge on major labels, auto-tune removing vulnerability, and mainstream pop being formulaic).",
+          "text": "Four bands you praised that do not feature harsh vocals are Animals as Leaders, Plini, Intervals and Polyphia.",
           "required_facts": [
-            "rock_modern_decline",
-            "alternative_mainstream_sellout",
-            "pop_auto_tune_critique",
-            "pop_formulaic_concerns"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B",
-            "Matches the 4 instances to the requested conceptual traits"
-          ]
-        }
-      },
-      {
-        "query_id": "q12_restrained_guitarists_list",
-        "question": "Name 3 specific guitarists I explicitly praised for their emotional phrasing, restraint, or tone, ensuring they are artists I specifically highlighted as proving you do not need speed or \"shredding\" to be expressive.",
-        "reference_answer": {
-          "text": "Three guitarists you explicitly praised for restraint and emotion over speed are David Gilmour, Mark Knopfler, and B.B. King.",
-          "required_facts": [
-            "guitar_hero_inspiration",
-            "rock_emotional_honesty",
-            "rock_guitar_inspiration"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 guitarists",
-            "Includes David Gilmour, Mark Knopfler, and B.B. King",
-            "Excludes shredders or modern highly-processed guitarists"
-          ]
-        }
-      },
-      {
-        "query_id": "q13_live_raw_bands_list",
-        "question": "Name 4 specific bands whose recordings I explicitly praised because they captured raw, live-in-the-studio energy, analog warmth, or unvarnished human imperfections.",
-        "reference_answer": {
-          "text": "Four bands you praised for capturing raw, analog, or live energy are Pink Floyd, Nirvana, The Rolling Stones, and The Who. (Pixies is also acceptable).",
-          "required_facts": [
-            "rock_analog_warmth",
-            "alternative_lo_fi_aesthetic",
-            "classic_rock_authenticity",
-            "alternative_raw_authenticity"
+            "animals_as_leaders_instrumental",
+            "plini_melodic",
+            "polyphia_instrumental"
           ],
           "evaluation_criteria": [
             "Names exactly 4 bands",
-            "All 4 bands map to discussions of analog, live, or lo-fi praise"
+            "Ensures all 4 bands map to the instrumental/no-screaming criteria"
           ]
         }
       },
       {
-        "query_id": "q14_metal_positive_exclusion_list",
-        "question": "Name 3 aggressive, heavy, or highly technical bands I explicitly praised for their dynamic range, odd time signatures, or instrumental complexity, ensuring you completely exclude any band whose intense aggression or screaming I explicitly stated I struggled to get through.",
+        "query_id": "q13_classical_composers_list",
+        "question": "Name 3 classical composers I explicitly discussed, ensuring that at least one was criticized for being too mathematical and at least one was praised for emotional directness.",
         "reference_answer": {
-          "text": "Three heavy bands you praised are Tool, Animals as Leaders, and Mastodon. (Metallica is excluded because you explicitly stated their aggression on Master of Puppets was too intense and hard to get through).",
+          "text": "Three classical composers you discussed are Bach (criticized as mathematical), Brahms (praised for emotion), and Tchaikovsky (praised for emotion).",
           "required_facts": [
-            "metal_technical_appreciation",
-            "metal_instrumental_exception",
-            "metal_dynamic_range_appreciation",
-            "metal_overwhelming"
+            "bach_mathematical_critique",
+            "brahms_emotional_connection",
+            "tchaikovsky_emotional_connection"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 bands",
-            "Includes Tool, Animals as Leaders, and Mastodon",
-            "Strictly excludes Metallica"
+            "Names exactly 3 classical composers",
+            "Correctly maps Bach to mathematical critique and Brahms/Tchaikovsky to emotional praise"
           ]
         }
       },
       {
-        "query_id": "q15_classical_composers_list",
-        "question": "Name 3 specific historical composers I mentioned, identifying at least one whose symphonies I explicitly found too long and at least one from the Romantic era whose emotional directness I praised.",
+        "query_id": "q14_analog_recording_traits_list",
+        "question": "Name 4 specific characteristics or 'imperfections' of analog or live studio recordings that I explicitly praised for giving music its human soul and authenticity.",
         "reference_answer": {
-          "text": "Three classical composers you mentioned are Mahler (whose symphonies you found too long), Brahms, and Tchaikovsky (both of whom you praised for Romantic emotional directness). (Bach is also a valid inclusion).",
+          "text": "Four characteristics you praised are analog tape saturation, microphone bleed, phase interaction (natural stereo image), and room ambiance/slight mistakes.",
           "required_facts": [
-            "classical_intimidating_length",
-            "classical_composer_connection",
-            "classical_violin_appreciation"
+            "analog_tape_saturation_warmth",
+            "microphone_bleed_praise",
+            "phase_interaction_stereo",
+            "room_ambiance_mistakes_praise"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 composers",
-            "Ensures Mahler is tied to the length critique",
-            "Ensures Brahms or Tchaikovsky is tied to Romantic emotional praise"
+            "Names exactly 4 recording characteristics",
+            "Ensures all 4 are explicitly mentioned in the text as positive traits of live/analog recording"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_artist_album_multihop_list",
+        "question": "Name 5 specific musical artists for whom I explicitly mentioned at least one of their album titles during our conversations.",
+        "reference_answer": {
+          "text": "Five artists whose albums you named are Pink Floyd (Dark Side), Radiohead (OK Computer), Nirvana (Bleach/Nevermind), Tool (Lateralus), and Metallica (Master of Puppets). (Arctic Monkeys is also acceptable).",
+          "required_facts": [
+            "dark_side_album",
+            "ok_computer_album",
+            "bleach_album",
+            "lateralus_album",
+            "master_of_puppets_album",
+            "tranquility_base_hotel_album"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 musical artists",
+            "Ensures every named artist has an explicitly mentioned album title in the text"
           ]
         }
       }

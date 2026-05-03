@@ -555,7 +555,7 @@
         "query_id": "q03_everyday_failure_fraction",
         "question": "What is the exact fraction (e.g., X/Y) of the non-cinematic, everyday life topics we discussed where I explicitly mentioned currently experiencing a problem, failure, or underperforming item?",
         "reference_answer": {
-          "text": "The exact fraction is 3/6. Out of 6 non-cinematic topics (coffee setup, home theater, hiking, smartphone camera, cooking pasta, and plant care), you explicitly mentioned problems in 3: your phone camera struggling in low light, overcooking your pasta, and your succulent dying.",
+          "text": "The exact fraction is 3/6 or 1/2. Out of 6 non-cinematic topics (coffee setup, home theater, hiking, smartphone camera, cooking pasta, and plant care), you explicitly mentioned problems in 3: your phone camera struggling in low light, overcooking your pasta, and your succulent dying.",
           "required_facts": [
             "session_04",
             "session_06",
@@ -660,7 +660,7 @@
       },
       {
         "query_id": "q09_miniatures_mc",
-        "question": "Which of the following ranges represents the exact number of films I explicitly praised for their effective use of miniatures or matte paintings? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of films I explicitly praised for their effective use of miniatures or matte paintings? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
         "reference_answer": {
           "text": "The correct option is B (3-4). You explicitly praised exactly 4 films for using miniatures or matte paintings: Terminator 2: Judgment Day, Dune, Alien, and Blade Runner.",
           "required_facts": [
@@ -676,7 +676,7 @@
       },
       {
         "query_id": "q10_character_stakes_mc",
-        "question": "Which of the following ranges represents the exact number of movies I explicitly praised because the action, humor, or emotional payoff was earned through deep character development or history? A) 0-1. B) 2-3. C) 4-5.",
+        "question": "Which of the following ranges represents the exact number of movies I explicitly praised because the action, humor, or emotional payoff was earned through deep character development or history? A) 0-1. B) 2-3. C) 4-5. D) 6-8",
         "reference_answer": {
           "text": "The correct option is C (4-5). You explicitly praised exactly 5 movies for this: Die Hard, Heat, The Dark Knight, Avengers: Endgame, and Tropic Thunder.",
           "required_facts": [
@@ -694,7 +694,7 @@
       },
       {
         "query_id": "q11_public_commercial_locations_mc",
-        "question": "Which of the following ranges represents the exact number of movies I explicitly praised that feature standout sequences set in a public commercial or transit space (such as a shopping mall, a tavern, a coffee shop, or a subway)? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of movies I explicitly praised that feature standout sequences set in a public commercial or transit space (such as a shopping mall, a tavern, a coffee shop, or a subway)? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
         "reference_answer": {
           "text": "The correct option is C (5-6). You praised exactly 5 movies with sequences in these specific spaces: Commando (mall), True Lies (mall), Heat (coffee shop), The Matrix (subway), and Inglourious Basterds (tavern).",
           "required_facts": [
@@ -712,18 +712,13 @@
       },
       {
         "query_id": "q12_everyday_topics_advice_list",
-        "question": "Name 3 specific non-cinematic, everyday topics we discussed where I mentioned a problem or negative outcome, and you gave me explicit preventative advice on how to solve or avoid it.",
+        "question": "Name 4 specific non-cinematic, everyday topics we discussed where I mentioned a problem or negative outcome, and you gave me explicit preventative advice on how to solve or avoid it.",
         "reference_answer": {
-          "text": "Three non-cinematic topics where I gave you preventative advice are plant care (saving your dying succulent), cooking pasta (preventing overcooking and clumping), and smartphone photography (stabilizing low-light shots). (Hiking gear preparation is also acceptable).",
-          "required_facts": [
-            "session_26",
-            "session_21",
-            "session_15",
-            "session_09"
-          ],
+          "text": "Four non-cinematic topics where I gave you preventative advice are plant care (saving your dying succulent), cooking pasta (preventing overcooking and clumping), smartphone photography (stabilizing low-light shots), and hiking gear preparation.",
+          "required_facts": [],
           "evaluation_criteria": [
-            "Names exactly 3 topics",
-            "Ensures all 3 relate to the non-cinematic advice sessions"
+            "Names exactly 4 topics",
+            "Ensures all 4 relate to the non-cinematic advice sessions"
           ]
         }
       },

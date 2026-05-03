@@ -1,5 +1,5 @@
 {
-  "case_id": "recommendations_series_350",
+  "case_id": "recommendations_series_275",
   "sessions": [
     {
       "session_id": "session_01",
@@ -22,21 +22,6 @@
     },
     {
       "session_id": "session_02",
-      "topic": "Coffee Break",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": null,
-      "messages": [
-        {"role": "user", "content": "Need a coffee recommendation before my next binge session."},
-        {"role": "assistant", "content": "Brew & Co. has great cold brew. Quiet spot for focusing."},
-        {"role": "user", "content": "Perfect. Their oat milk latte is my go-to."},
-        {"role": "assistant", "content": "Fuel for the next Westworld rewatch?"},
-        {"role": "user", "content": "Actually thinking about Severance next. Heard good things."},
-        {"role": "assistant", "content": "That pairs well with your taste for cerebral sci-fi."}
-      ]
-    },
-    {
-      "session_id": "session_03",
       "topic": "Stranger Things",
       "contains_fact": true,
       "fact_id": "st_positive",
@@ -51,11 +36,13 @@
         {"role": "user", "content": "Stranger Things hits that perfect sweet spot of 80s nostalgia and sci-fi mystery."},
         {"role": "assistant", "content": "That blend seems to be what resonates most with long-time fans."},
         {"role": "user", "content": "It never forgets it's about kids riding bikes, even with demogorgons chasing them."},
-        {"role": "assistant", "content": "Human scale within supernatural stakes—that's the formula."}
+        {"role": "assistant", "content": "Human scale within supernatural stakes—that's the formula."},
+        {"role": "user", "content": "Exactly. The monsters matter less than how the characters react to them."},
+        {"role": "assistant", "content": "Psychological realism within genre constraints."}
       ]
     },
     {
-      "session_id": "session_04",
+      "session_id": "session_03",
       "topic": "True Detective Season 1",
       "contains_fact": true,
       "fact_id": "td_positive",
@@ -72,39 +59,7 @@
       ]
     },
     {
-      "session_id": "session_05",
-      "topic": "Weekend Hike",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": null,
-      "messages": [
-        {"role": "user", "content": "Thinking about hiking this weekend. Any trail recommendations?"},
-        {"role": "assistant", "content": "Cedar Ridge has amazing views this time of year."},
-        {"role": "user", "content": "Perfect. Need to clear my head after that Dark finale."},
-        {"role": "assistant", "content": "Nature provides the best contrast to cerebral sci-fi."}
-      ]
-    },
-    {
-      "session_id": "session_06",
-      "topic": "Black Mirror",
-      "contains_fact": true,
-      "fact_id": "bm_positive",
-      "fact_quote": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us. Love how unsettling yet smart it is.",
-      "messages": [
-        {"role": "user", "content": "Been rewatching Black Mirror lately."},
-        {"role": "assistant", "content": "Which episodes do you find hold up best over time?"},
-        {"role": "user", "content": "San Junipero and White Christmas still hit hard. The tech is almost secondary to the human dilemmas."},
-        {"role": "assistant", "content": "The emotional core transcends the speculative elements."},
-        {"role": "user", "content": "Black Mirror is one of those rare sci-fi shows that actually makes me think about where tech is taking us."},
-        {"role": "assistant", "content": "That reflective quality is often cited as its strongest feature."},
-        {"role": "user", "content": "It never feels like tech porn—it's always about people using (or being used by) technology."},
-        {"role": "assistant", "content": "Human consequences over gadget fascination."},
-        {"role": "user", "content": "Exactly. Give me emotional stakes over shiny interfaces any day."},
-        {"role": "assistant", "content": "That preference for substance over surface runs through all your favorites."}
-      ]
-    },
-    {
-      "session_id": "session_07",
+      "session_id": "session_04",
       "topic": "Mindhunter & Bosch",
       "contains_fact": true,
       "fact_id": "mh_bosch_positive",
@@ -121,7 +76,7 @@
       ]
     },
     {
-      "session_id": "session_08",
+      "session_id": "session_05",
       "topic": "Parks and Recreation",
       "contains_fact": true,
       "fact_id": "parc_positive",
@@ -136,11 +91,15 @@
         {"role": "user", "content": "It never punches down—that matters. Even Jerry gets moments of dignity."},
         {"role": "assistant", "content": "Authentic kindness as a comedic principle is surprisingly hard to sustain."},
         {"role": "user", "content": "Most sitcoms rely on embarrassment humor. Parks finds joy in people trying their best."},
-        {"role": "assistant", "content": "Optimism without naivety—that's the tightrope it walks."}
+        {"role": "assistant", "content": "Optimism without naivety—that's the tightrope it walks."},
+        {"role": "user", "content": "Leslie's relentless positivity could be grating in lesser hands. Here it's aspirational."},
+        {"role": "assistant", "content": "Earned idealism versus manufactured sentimentality."},
+        {"role": "user", "content": "You root for these characters because they care about their community—not just themselves."},
+        {"role": "assistant", "content": "Purpose beyond self-interest creates deeper investment."}
       ]
     },
     {
-      "session_id": "session_09",
+      "session_id": "session_06",
       "topic": "Game of Thrones",
       "contains_fact": true,
       "fact_id": "got_negative",
@@ -155,7 +114,7 @@
       ]
     },
     {
-      "session_id": "session_10",
+      "session_id": "session_07",
       "topic": "The Bear & Hacks",
       "contains_fact": true,
       "fact_id": "bear_hacks_positive",
@@ -174,7 +133,7 @@
       ]
     },
     {
-      "session_id": "session_11",
+      "session_id": "session_08",
       "topic": "Lupin",
       "contains_fact": true,
       "fact_id": "lupin_positive",
@@ -193,7 +152,7 @@
       ]
     },
     {
-      "session_id": "session_12",
+      "session_id": "session_09",
       "topic": "Only Murders & The Afterparty",
       "contains_fact": true,
       "fact_id": "light_detective_negative",
@@ -212,7 +171,7 @@
       ]
     },
     {
-      "session_id": "session_13",
+      "session_id": "session_10",
       "topic": "The Expanse",
       "contains_fact": true,
       "fact_id": "expanse_positive",
@@ -231,22 +190,7 @@
       ]
     },
     {
-      "session_id": "session_14",
-      "topic": "Book Club",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": null,
-      "messages": [
-        {"role": "user", "content": "Any book recommendations after finishing Klara and the Sun?"},
-        {"role": "assistant", "content": "Looking for more AI-themed fiction or something different?"},
-        {"role": "user", "content": "Something with the same emotional intelligence but maybe grittier."},
-        {"role": "assistant", "content": "Try 'The Ministry for the Future' by Kim Stanley Robinson."},
-        {"role": "user", "content": "Already read it. Loved how it balanced big ideas with human-scale consequences."},
-        {"role": "assistant", "content": "That balance seems to be your sweet spot across all media."}
-      ]
-    },
-    {
-      "session_id": "session_15",
+      "session_id": "session_11",
       "topic": "Dark & Severance",
       "contains_fact": true,
       "fact_id": "dark_severance_positive",
@@ -265,7 +209,7 @@
       ]
     },
     {
-      "session_id": "session_16",
+      "session_id": "session_12",
       "topic": "Ted Lasso & Modern Family",
       "contains_fact": true,
       "fact_id": "light_comedy_negative",
@@ -280,7 +224,7 @@
       ]
     },
     {
-      "session_id": "session_17",
+      "session_id": "session_13",
       "topic": "House of the Dragon",
       "contains_fact": true,
       "fact_id": "hotd_negative",
@@ -297,24 +241,7 @@
       ]
     },
     {
-      "session_id": "session_18",
-      "topic": "Grocery Run",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": null,
-      "messages": [
-        {"role": "user", "content": "Quick question—best time to hit the grocery store on weekends?"},
-        {"role": "assistant", "content": "Early Saturday morning before 10am. Or Sunday evening after 7pm."},
-        {"role": "user", "content": "Thanks. Need supplies before my Severance marathon."},
-        {"role": "assistant", "content": "Stock up on snacks—you won't want to pause that one."},
-        {"role": "user", "content": "True. That show demands full attention."},
-        {"role": "assistant", "content": "No room for distraction when every detail matters."},
-        {"role": "user", "content": "Will grab coffee too. Need caffeine for that level of focus."},
-        {"role": "assistant", "content": "Cerebral sci-fi requires mental energy—fuel accordingly."}
-      ]
-    },
-    {
-      "session_id": "session_19",
+      "session_id": "session_14",
       "topic": "Slow Horses & Fargo",
       "contains_fact": true,
       "fact_id": "slowhorses_fargo_positive",
@@ -333,7 +260,7 @@
       ]
     },
     {
-      "session_id": "session_20",
+      "session_id": "session_15",
       "topic": "The Last Kingdom & Vikings",
       "contains_fact": true,
       "fact_id": "grounded_fantasy_positive",
@@ -350,7 +277,7 @@
       ]
     },
     {
-      "session_id": "session_21",
+      "session_id": "session_16",
       "topic": "The Rings of Power & Shadow and Bone",
       "contains_fact": true,
       "fact_id": "pure_fantasy_negative",
@@ -369,7 +296,7 @@
       ]
     },
     {
-      "session_id": "session_22",
+      "session_id": "session_17",
       "topic": "Reality TV Verdict",
       "contains_fact": true,
       "fact_id": "reality_verdict",
@@ -384,7 +311,7 @@
       ]
     },
     {
-      "session_id": "session_23",
+      "session_id": "session_18",
       "topic": "Chernobyl & Succession",
       "contains_fact": true,
       "fact_id": "drama_positive",
@@ -403,7 +330,7 @@
       ]
     },
     {
-      "session_id": "session_24",
+      "session_id": "session_19",
       "topic": "1899 & Wheel of Time",
       "contains_fact": true,
       "fact_id": "mystery_fantasy_negative",
@@ -420,7 +347,26 @@
       ]
     },
     {
-      "session_id": "session_25",
+      "session_id": "session_20",
+      "topic": "Storytelling Philosophy",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": null,
+      "messages": [
+        {"role": "user", "content": "What's the common thread across all my favorite shows?"},
+        {"role": "assistant", "content": "They prioritize emotional authenticity over spectacle and respect audience intelligence."},
+        {"role": "user", "content": "Exactly. Whether it's sci-fi, detective, or comedy—human truth matters most."},
+        {"role": "assistant", "content": "You reject manufactured drama in favor of character-driven conflict."},
+        {"role": "user", "content": "Give me flawed humans making hard choices over perfect heroes saving worlds any day."},
+        {"role": "assistant", "content": "Psychological realism is your universal benchmark across genres."},
+        {"role": "user", "content": "Even in fantasy or sci-fi—the speculative element should serve character exploration, not replace it."},
+        {"role": "assistant", "content": "Genre as lens rather than destination—that's your immutable principle."},
+        {"role": "user", "content": "Shows that forget this rule fail—no matter how expensive the production."},
+        {"role": "assistant", "content": "Budget cannot compensate for emotional emptiness—that's your consistent critique."}
+      ]
+    },
+    {
+      "session_id": "session_21",
       "topic": "Dune (2021) vs Dune: Part Two",
       "contains_fact": true,
       "fact_id": "dune_contrast",
@@ -435,7 +381,7 @@
       ]
     },
     {
-      "session_id": "session_26",
+      "session_id": "session_22",
       "topic": "Andor",
       "contains_fact": true,
       "fact_id": "andor_positive",
@@ -452,7 +398,7 @@
       ]
     },
     {
-      "session_id": "session_27",
+      "session_id": "session_23",
       "topic": "The Crown",
       "contains_fact": true,
       "fact_id": "crown_positive",
@@ -469,7 +415,7 @@
       ]
     },
     {
-      "session_id": "session_28",
+      "session_id": "session_24",
       "topic": "Peaky Blinders Analysis",
       "contains_fact": true,
       "fact_id": "peaky_analysis",
@@ -486,7 +432,7 @@
       ]
     },
     {
-      "session_id": "session_29",
+      "session_id": "session_25",
       "topic": "Weekend Viewing Strategy",
       "contains_fact": false,
       "fact_id": null,
@@ -503,282 +449,104 @@
       ]
     },
     {
-      "session_id": "session_30",
-      "topic": "The White Lotus",
+      "session_id": "session_26",
+      "topic": "The Boys",
       "contains_fact": true,
-      "fact_id": "white_lotus_positive",
-      "fact_quote": "The White Lotus succeeds by making wealthy characters psychologically legible—you understand their insecurities even when you despise their privilege. That moral complexity without moralizing is rare.",
+      "fact_id": "theboys_positive",
+      "fact_quote": "The Boys takes superheroes and strips away the fantasy—it's about power corrupting absolutely, and the ordinary people caught in the crossfire. The satire lands because the characters feel real, not cartoonish.",
       "messages": [
-        {"role": "user", "content": "The White Lotus succeeds by making wealthy characters psychologically legible—you understand their insecurities even when you despise their privilege."},
-        {"role": "assistant", "content": "Character depth transcends social critique—their humanity remains central despite satirical framing."},
-        {"role": "user", "content": "That moral complexity without moralizing is rare. You're not told who to root for—you decide based on understanding their wounds."},
-        {"role": "assistant", "content": "Agency in moral judgment versus prescribed sympathy—that distinction matters to you."},
-        {"role": "user", "content": "Season 1's hotel setting created perfect pressure cooker for character revelation. Every interaction exposed hidden vulnerabilities."},
-        {"role": "assistant", "content": "Environmental constraints as character catalyst—that's a technique you consistently praise."},
-        {"role": "user", "content": "Compare that to Succession where power dynamics reveal character. Different mechanism, same principle: stakes expose truth."},
-        {"role": "assistant", "content": "External pressures as mirrors for internal conflict—that's your universal storytelling metric."}
+        {"role": "user", "content": "Finally caught up with The Boys. It's brutal but brilliant."},
+        {"role": "assistant", "content": "What makes it work beyond the shock value?"},
+        {"role": "user", "content": "The Boys takes superheroes and strips away the fantasy—it's about power corrupting absolutely, and the ordinary people caught in the crossfire."},
+        {"role": "assistant", "content": "So it's a deconstruction of the genre?"},
+        {"role": "user", "content": "Exactly. Homelander is terrifying because he's a psychological profile, not just a villain. You understand why he is the way he is."},
+        {"role": "assistant", "content": "That psychological depth makes the satire land harder."},
+        {"role": "user", "content": "The satire lands because the characters feel real, not cartoonish. Even the most outrageous moments serve the character work."},
+        {"role": "assistant", "content": "It sounds like it fits your preference for human truth within genre frameworks."},
+        {"role": "user", "content": "Absolutely. Give me The Boys over any polished Marvel movie. One has something to say; the other just sells toys."},
+        {"role": "assistant", "content": "Substance over spectacle—your consistent benchmark."}
       ]
     },
     {
-      "session_id": "session_31",
-      "topic": "Arcane",
+      "session_id": "session_27",
+      "topic": "Pantheon",
       "contains_fact": true,
-      "fact_id": "arcane_positive",
-      "fact_quote": "Arcane proves animation can tackle mature themes with emotional depth—sisterhood fractured by ideology, not just spectacle. Every fight scene serves character development, not just cool moves.",
+      "fact_id": "pantheon_positive",
+      "fact_quote": "Pantheon is animated sci-fi that treats uploaded intelligence as a philosophical problem, not just a plot device. It asks what identity means when you're code—and makes you care about characters who are literally ones and zeros.",
       "messages": [
-        {"role": "user", "content": "Arcane proves animation can tackle mature themes with emotional depth—sisterhood fractured by ideology, not just spectacle."},
-        {"role": "assistant", "content": "Visual artistry in service of emotional narrative rather than replacement."},
-        {"role": "user", "content": "Every fight scene serves character development, not just cool moves. Jinx and Vi's conflict feels earned because we understand both perspectives."},
-        {"role": "assistant", "content": "Dual protagonist structure creating moral complexity rather than hero/villain binary."},
-        {"role": "user", "content": "The animation style shifts to reflect emotional states—chaotic brushstrokes during Jinx's breakdowns, clean lines during Vi's determination."},
-        {"role": "assistant", "content": "Formal technique as emotional signifier—that's sophisticated visual storytelling."},
-        {"role": "user", "content": "Compare that to Rings of Power where beautiful visuals lack emotional purpose. Arcane's style serves story; Rings of Power's style is the story."},
-        {"role": "assistant", "content": "Instrumental versus ornamental aesthetics—that's your precise distinction."}
+        {"role": "user", "content": "Binged Pantheon over the weekend. Criminally underrated."},
+        {"role": "assistant", "content": "I've heard it deals with mind uploading. How does it handle the concept?"},
+        {"role": "user", "content": "Pantheon is animated sci-fi that treats uploaded intelligence as a philosophical problem, not just a plot device."},
+        {"role": "assistant", "content": "So it's more about identity than technology?"},
+        {"role": "user", "content": "Exactly. It asks what identity means when you're code—and makes you care about characters who are literally ones and zeros."},
+        {"role": "assistant", "content": "That sounds like it fits your preference for human truth within speculative frameworks."},
+        {"role": "user", "content": "The family drama at its core is what grounds it. Caspian's search for truth, Ellen's grief—it's Black Mirror-level thoughtfulness stretched over two seasons."},
+        {"role": "assistant", "content": "So the emotional stakes remain central despite the high-concept premise."},
+        {"role": "user", "content": "Exactly. Give me Pantheon over any generic AI thriller. It respects your intelligence and never forgets the people behind the science."}
       ]
     },
     {
-      "session_id": "session_32",
-      "topic": "Yellowstone",
+      "session_id": "session_28",
+      "topic": "Mare of Easttown",
       "contains_fact": true,
-      "fact_id": "yellowstone_negative",
-      "fact_quote": "Yellowstone started with interesting family dynamics but devolved into macho posturing—more shirtless Kevin Costner glaring than meaningful character development. Style over substance with a cowboy hat.",
+      "fact_id": "mare_positive",
+      "fact_quote": "Mare of Easttown is detective work stripped of glamour—a tired woman in a small town solving a case while barely holding her own life together. Kate Winslet made me feel every ounce of that exhaustion.",
       "messages": [
-        {"role": "user", "content": "Yellowstone started with interesting family dynamics but devolved into macho posturing—more shirtless Kevin Costner glaring than meaningful character development."},
-        {"role": "assistant", "content": "Aesthetic repetition without narrative progression undermines long-term engagement."},
-        {"role": "user", "content": "Style over substance with a cowboy hat. Every conflict resolves through violence rather than psychological complexity."},
-        {"role": "assistant", "content": "Simplistic conflict resolution versus nuanced character negotiation—that's your threshold."},
-        {"role": "user", "content": "Compare that to Succession where power plays involve psychological manipulation, not just physical intimidation. One explores human nature; the other just celebrates dominance."},
-        {"role": "assistant", "content": "Complexity versus simplicity in power dynamics—that distinction defines your preferences."},
-        {"role": "user", "content": "I'll take flawed characters making hard choices over perfect heroes solving problems with fists any day."},
-        {"role": "assistant", "content": "Psychological realism over fantasy power fantasy—that's your consistent critique."}
+        {"role": "user", "content": "Finally watched Mare of Easttown. That's how you do a limited series."},
+        {"role": "assistant", "content": "What set it apart from other crime dramas?"},
+        {"role": "user", "content": "Mare of Easttown is detective work stripped of glamour—a tired woman in a small town solving a case while barely holding her own life together."},
+        {"role": "assistant", "content": "So the character's internal struggle drives the investigation?"},
+        {"role": "user", "content": "Exactly. Kate Winslet made me feel every ounce of that exhaustion. The mystery mattered, but Mare's grief and resilience mattered more."},
+        {"role": "assistant", "content": "That sounds like the psychological realism you praise in True Detective and Mindhunter."},
+        {"role": "user", "content": "No gimmicks, no flashy twists—just patient storytelling and lived-in performances. Every character felt real, even the ones with just a few scenes."},
+        {"role": "assistant", "content": "So it's the detective genre at its most human."},
+        {"role": "user", "content": "Exactly. Give me Mare over any glossy procedural. One respects the audience; the other just fills time."}
       ]
     },
     {
-      "session_id": "session_33",
-      "topic": "Station Eleven",
+      "session_id": "session_29",
+      "topic": "Shrinking",
       "contains_fact": true,
-      "fact_id": "station_eleven_positive",
-      "fact_quote": "Station Eleven finds hope without sentimentality—post-apocalyptic but focused on art and human connection rather than survival porn. The Traveling Symphony proves culture matters more than comfort.",
+      "fact_id": "shrinking_positive",
+      "fact_quote": "Shrinking is a comedy about grief that earns its laughs without cheapening the pain. It's The Bear's emotional honesty wrapped in Ted Lasso's warmth—but with sharper edges. Harrison Ford's grumpy therapist is a revelation.",
       "messages": [
-        {"role": "user", "content": "Station Eleven finds hope without sentimentality—post-apocalyptic but focused on art and human connection rather than survival porn."},
-        {"role": "assistant", "content": "Genre subversion through humanistic focus rather than dystopian spectacle."},
-        {"role": "user", "content": "The Traveling Symphony proves culture matters more than comfort. Shakespeare in a ruined world isn't naive—it's defiant."},
-        {"role": "assistant", "content": "Art as resistance rather than escapism—that's a nuanced thematic position."},
-        {"role": "user", "content": "Compare that to The Last of Us where violence drives the narrative. Both post-apocalyptic, but Station Eleven trusts humanity; The Last of Us trusts survival instinct."},
-        {"role": "assistant", "content": "Optimism grounded in human connection versus pessimism grounded in scarcity—that's your preference spectrum."},
-        {"role": "user", "content": "Station Eleven never loses its warmth even when depicting loss. That balance is incredibly hard to maintain."},
-        {"role": "assistant", "content": "Earned optimism versus manufactured sentimentality—that's the tightrope you value."}
-      ]
-    },
-    {
-      "session_id": "session_34",
-      "topic": "The Last of Us",
-      "contains_fact": true,
-      "fact_id": "tlou_mixed",
-      "fact_quote": "The Last of Us has incredible character work between Joel and Ellie—their relationship feels earned. But the violence sometimes tips into gratuitous territory. Emotional truth shouldn't require graphic suffering to prove its stakes.",
-      "messages": [
-        {"role": "user", "content": "The Last of Us has incredible character work between Joel and Ellie—their relationship feels earned."},
-        {"role": "assistant", "content": "The slow-burn trust development creates genuine investment rather than forced bonding."},
-        {"role": "user", "content": "But the violence sometimes tips into gratuitous territory. Emotional truth shouldn't require graphic suffering to prove its stakes."},
-        {"role": "assistant", "content": "Restraint often creates more impact than explicit depiction—that's your consistent critique."},
-        {"role": "user", "content": "Chernobyl proved implied horror resonates deeper than gore. The Last of Us occasionally forgets that lesson."},
-        {"role": "assistant", "content": "Suggestion versus explicit display—that's your aesthetic threshold across genres."},
-        {"role": "user", "content": "The core relationship works because it's psychologically authentic. Joel's trauma and Ellie's resilience feel real, not manufactured for plot convenience."},
-        {"role": "assistant", "content": "Character motivation driving narrative versus narrative forcing character—that's your fundamental distinction."}
-      ]
-    },
-    {
-      "session_id": "session_35",
-      "topic": "Midnight Mass",
-      "contains_fact": true,
-      "fact_id": "midnight_mass_positive",
-      "fact_quote": "Midnight Mass uses horror to explore faith and community with genuine respect—no cheap jump scares, just escalating dread rooted in character psychology. Every supernatural element serves the human drama.",
-      "messages": [
-        {"role": "user", "content": "Midnight Mass uses horror to explore faith and community with genuine respect—no cheap jump scares, just escalating dread rooted in character psychology."},
-        {"role": "assistant", "content": "Genre as vehicle for thematic exploration rather than destination."},
-        {"role": "user", "content": "Every supernatural element serves the human drama. The vampire mythology isn't the point—it's how belief transforms (or corrupts) community."},
-        {"role": "assistant", "content": "Supernatural as metaphor rather than spectacle—that's your preferred speculative approach."},
-        {"role": "user", "content": "Father Paul's monologues could feel pretentious in lesser hands, but Hamish Linklater delivers them with such conviction you lean in rather than roll your eyes."},
-        {"role": "assistant", "content": "Earned intellectualism versus performative cleverness—that's your distinction."},
-        {"role": "user", "content": "The finale's sermon about death being beautiful—that moment lands because the show earned it through character work, not just philosophical posturing."},
-        {"role": "assistant", "content": "Thematic payoff grounded in emotional journey rather than abstract argument."}
-      ]
-    },
-    {
-      "session_id": "session_36",
-      "topic": "Industry",
-      "contains_fact": true,
-      "fact_id": "industry_positive",
-      "fact_quote": "Industry captures workplace toxicity with uncomfortable accuracy—no heroes, just ambitious people making morally compromised choices in a broken system. You understand their motivations even when you despise their actions.",
-      "messages": [
-        {"role": "user", "content": "Industry captures workplace toxicity with uncomfortable accuracy—no heroes, just ambitious people making morally compromised choices in a broken system."},
-        {"role": "assistant", "content": "Moral ambiguity without moral relativism—that's a sophisticated narrative position."},
-        {"role": "user", "content": "You understand their motivations even when you despise their actions. That nuanced perspective separates great drama from caricature."},
-        {"role": "assistant", "content": "Understanding without endorsement—that principle runs through all your favorites from Succession to Chernobyl."},
-        {"role": "user", "content": "The finance world setting could feel alienating, but the character dynamics are universally recognizable—power, insecurity, ambition."},
-        {"role": "assistant", "content": "Specific setting serving universal human truth—that's effective storytelling."},
-        {"role": "user", "content": "Compare that to Billions which glorifies the toxicity it depicts. Industry critiques without celebration—that distinction matters."},
-        {"role": "assistant", "content": "Critical distance versus complicity—that's your ethical threshold in storytelling."}
-      ]
-    },
-    {
-      "session_id": "session_37",
-      "topic": "Wednesday",
-      "contains_fact": true,
-      "fact_id": "wednesday_negative",
-      "fact_quote": "Wednesday has style to spare but zero psychological depth—more TikTok dance breaks than meaningful character development. Quirk shouldn't replace character; it should enhance it.",
-      "messages": [
-        {"role": "user", "content": "Wednesday has style to spare but zero psychological depth—more TikTok dance breaks than meaningful character development."},
-        {"role": "assistant", "content": "Aesthetic maximalism masking emotional minimalism—that's your consistent critique."},
-        {"role": "user", "content": "Quirk shouldn't replace character; it should enhance it. Wednesday's deadpan delivery becomes a crutch rather than a character trait."},
-        {"role": "assistant", "content": "Surface mannerism versus deep psychology—that distinction defines your preferences."},
-        {"role": "user", "content": "Compare that to True Detective where Rust Cohle's nihilism feels earned through trauma and worldview. Wednesday's darkness feels like a costume."},
-        {"role": "assistant", "content": "Authentic darkness versus aesthetic darkness—that's your threshold."},
-        {"role": "user", "content": "The mystery plot exists only to showcase cool visuals, not to explore character. Detective stories should challenge the mind, not just the eyes."},
-        {"role": "assistant", "content": "Intellectual engagement versus visual stimulation—that's your preference hierarchy."}
-      ]
-    },
-    {
-      "session_id": "session_38",
-      "topic": "Better Call Saul vs Breaking Bad",
-      "contains_fact": true,
-      "fact_id": "bcs_positive",
-      "fact_quote": "Better Call Saul surpasses Breaking Bad in character depth—watching Jimmy's slow transformation hurts because we understand every choice. Breaking Bad was brilliant, but Saul's tragedy feels more human, less operatic.",
-      "messages": [
-        {"role": "user", "content": "Just finished Better Call Saul. I think it's actually better than Breaking Bad."},
-        {"role": "assistant", "content": "That's a significant claim given Breaking Bad's cultural status. What elevates Saul for you?"},
-        {"role": "user", "content": "Better Call Saul surpasses Breaking Bad in character depth—watching Jimmy's slow transformation hurts because we understand every choice."},
-        {"role": "assistant", "content": "The prequel format allowed for more psychological granularity."},
-        {"role": "user", "content": "Breaking Bad was brilliant, but Saul's tragedy feels more human, less operatic. Walter White became a monster; Jimmy McGill stayed recognizable."},
-        {"role": "assistant", "content": "Relatable moral erosion versus dramatic transformation—that distinction resonates with your preference for psychological realism."},
-        {"role": "user", "content": "Kim Wexler might be the most complex female character I've seen. Her choices feel authentic, not plot-convenient."},
-        {"role": "assistant", "content": "Character integrity maintained throughout a six-season arc—that's exceptional writing."}
-      ]
-    },
-    {
-      "session_id": "session_39",
-      "topic": "Fleabag",
-      "contains_fact": true,
-      "fact_id": "fleabag_positive",
-      "fact_quote": "Fleabag uses the fourth wall not as a gimmick but as a lifeline—she's confessing to us because she can't connect with anyone real. That's comedy as survival, not just entertainment.",
-      "messages": [
-        {"role": "user", "content": "Finally watched Fleabag. Why did I wait so long?"},
-        {"role": "assistant", "content": "Which aspect resonated most deeply with you?"},
-        {"role": "user", "content": "Fleabag uses the fourth wall not as a gimmick but as a lifeline—she's confessing to us because she can't connect with anyone real."},
-        {"role": "assistant", "content": "The audience as confidante creates unique intimacy."},
-        {"role": "user", "content": "That's comedy as survival, not just entertainment. She's funny because she's drowning, not despite it."},
-        {"role": "assistant", "content": "Humor emerging from authentic pain—that's the comedic equivalent of your preference for emotional authenticity."},
-        {"role": "user", "content": "The Hot Priest scenes—when she looks at us and he asks what's happening—that moment broke me. The show makes you feel seen."},
-        {"role": "assistant", "content": "That metanarrative moment acknowledges loneliness while sharing it."}
-      ]
-    },
-    {
-      "session_id": "session_40",
-      "topic": "Watchmen (HBO)",
-      "contains_fact": true,
-      "fact_id": "watchmen_positive",
-      "fact_quote": "Watchmen (HBO) took the comic's themes and made them urgent—racism as legacy trauma, justice as performance. Lindelof understood that superheroes are just lenses for examining America's wounds.",
-      "messages": [
-        {"role": "user", "content": "HBO's Watchmen might be the best superhero content ever made."},
-        {"role": "assistant", "content": "That's high praise. What made it transcend the genre for you?"},
-        {"role": "user", "content": "Watchmen (HBO) took the comic's themes and made them urgent—racism as legacy trauma, justice as performance."},
-        {"role": "assistant", "content": "It used speculative elements to examine real historical wounds."},
-        {"role": "user", "content": "Lindelof understood that superheroes are just lenses for examining America's wounds, not power fantasies to celebrate."},
-        {"role": "assistant", "content": "Genre as diagnostic tool rather than escapism—that's your ideal."},
-        {"role": "user", "content": "The Tulsa massacre episode—standalone, no superheroes, just history. And it hit harder than any action sequence."},
-        {"role": "assistant", "content": "Restraint in genre elements amplifies emotional impact when they appear."},
-        {"role": "user", "content": "Sister Night and Looking Glass felt like real people, not costumes with catchphrases. You understood their trauma."},
-        {"role": "assistant", "content": "Psychological depth within genre constraints—that's your benchmark."}
+        {"role": "user", "content": "Caught up with Shrinking. Didn't expect to cry so much."},
+        {"role": "assistant", "content": "What makes it work as a comedy-drama?"},
+        {"role": "user", "content": "Shrinking is a comedy about grief that earns its laughs without cheapening the pain."},
+        {"role": "assistant", "content": "So it balances humor and heart like The Bear?"},
+        {"role": "user", "content": "It's The Bear's emotional honesty wrapped in Ted Lasso's warmth—but with sharper edges. Harrison Ford's grumpy therapist is a revelation."},
+        {"role": "assistant", "content": "Does it avoid the 'emotional cotton candy' trap you mentioned with Ted Lasso?"},
+        {"role": "user", "content": "Absolutely. The conflicts feel real, not manufactured. Jimmy's grief isn't resolved in a tidy arc—it's messy and ongoing, just like real life."},
+        {"role": "assistant", "content": "That authenticity seems to be your benchmark for comedy."},
+        {"role": "user", "content": "Give me Shrinking over any sitcom that's afraid to sit with discomfort. It proves you can be funny and profound at the same time."}
       ]
     }
   ],
   "queries": [
       {
-        "query_id": "q01_comedy_praise_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of the comedy series I discussed that I praised positively for their depth, warmth, or emotional gravity?",
+        "query_id": "q01_detective_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of mystery or detective series I discussed that I reviewed positively?",
         "reference_answer": {
-          "text": "The exact fraction is 4/6 (or 2/3). You evaluated 6 comedy series in total, and praised exactly 4 of them (Parks and Recreation, The Bear, Hacks, and Fleabag) while criticizing 2 (Ted Lasso and Modern Family).",
-          "required_facts": [
-            "parc_positive",
-            "bear_hacks_positive",
-            "fleabag_positive",
-            "light_comedy_negative"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 4/6 or 2/3"
-          ]
-        }
-      },
-      {
-        "query_id": "q02_horror_violence_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of post-apocalyptic, disaster, or horror series I evaluated where I explicitly criticized the presence of gratuitous violence, explicit gore, or cheap jump scares?",
-        "reference_answer": {
-          "text": "The exact fraction is 1/4. Out of the 4 disaster/horror/post-apocalyptic series you evaluated (Chernobyl, Station Eleven, Midnight Mass, and The Last of Us), you criticized exactly 1 (The Last of Us) for its gratuitous violence.",
-          "required_facts": [
-            "drama_positive",
-            "station_eleven_positive",
-            "midnight_mass_positive",
-            "tlou_mixed"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 1/4"
-          ]
-        }
-      },
-      {
-        "query_id": "q03_detective_gimmick_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of the detective or investigative series I discussed that I explicitly criticized for losing their integrity to quirky gimmicks, celebrity cameos, or stylistic fireworks?",
-        "reference_answer": {
-          "text": "The exact fraction is 2/8 (or 1/4). You discussed 8 investigative series in total, and explicitly criticized exactly 2 of them (Only Murders and The Afterparty) for these issues.",
+          "text": "You reviewed exactly 7/9 mystery or detective series positively. You praised True Detective, Mindhunter, Bosch, Lupin, Slow Horses, Fargo, and Mare of Easttown, but criticized Only Murders in the Building and The Afterparty.",
           "required_facts": [
             "td_positive",
             "mh_bosch_positive",
             "lupin_positive",
             "slowhorses_fargo_positive",
+            "mare_positive",
             "light_detective_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 2/8 or 1/4"
+            "Provides exact fraction 7/9",
+            "Correctly identifies the 7 positive and 2 negative series"
           ]
         }
       },
       {
-        "query_id": "q04_style_over_substance_count",
-        "question": "How many specific television series did I explicitly criticize for prioritizing visual style, gimmicks, or \"style over substance\" rather than psychological depth? Provide the exact count.",
+        "query_id": "q02_overwhelming_lore_count",
+        "question": "How many pure high-fantasy series did I explicitly criticize because their extensive world-building, magical lore, or mythological prophecies came at the expense of character development or emotional stakes? Provide the exact count.",
         "reference_answer": {
-          "text": "You explicitly criticized exactly 4 series for this flaw (Peaky Blinders, Yellowstone, Wednesday, and The Afterparty).",
-          "required_facts": [
-            "peaky_analysis",
-            "yellowstone_negative",
-            "wednesday_negative",
-            "light_detective_negative"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 4"
-          ]
-        }
-      },
-      {
-        "query_id": "q05_toxic_wealth_count",
-        "question": "How many specific series did I explicitly praise for portraying extremely wealthy, powerful, or historical figures as morally compromised or toxic, yet keeping their motivations psychologically understandable? Provide the exact count.",
-        "reference_answer": {
-          "text": "You explicitly praised exactly 4 series for this nuanced portrayal (Succession, The Crown, The White Lotus, and Industry).",
-          "required_facts": [
-            "drama_positive",
-            "crown_positive",
-            "white_lotus_positive",
-            "industry_positive"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 4"
-          ]
-        }
-      },
-      {
-        "query_id": "q06_fantasy_lore_count",
-        "question": "How many epic fantasy series did I explicitly criticize or abandon because they overwhelmed the narrative with lore, world-building, or prophecies at the expense of deep character development? Provide the exact count.",
-        "reference_answer": {
-          "text": "You explicitly criticized exactly 5 epic fantasy series for this issue (Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time).",
+          "text": "You criticized exactly 5 pure high-fantasy series for this reason: Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
           "required_facts": [
             "got_negative",
             "hotd_negative",
@@ -786,148 +554,231 @@
             "mystery_fantasy_negative"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5"
+            "Provides exact count of 5",
+            "Names Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time"
           ]
         }
       },
       {
-        "query_id": "q07_scifi_emotional_count",
-        "question": "How many specific sci-fi series did I explicitly praise because their core high-concept premise (such as time travel, artificial consciousness, tech dystopia, or orbital mechanics) perfectly served the emotional weight and human drama? Provide the exact count.",
+        "query_id": "q03_unglamorous_detective_mc",
+        "question": "Which of the following ranges represents the exact number of crime or investigation shows I praised specifically because they focused on tired, unglamorous protagonists rather than flashy cinematic flair? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "You explicitly praised exactly 5 sci-fi series for perfectly aligning their high-concept premises with emotional weight (Westworld, Black Mirror, The Expanse, Dark, and Severance).",
+          "text": "The correct option is B (3-4). You praised exactly 3 crime shows for this: Bosch, Slow Horses, and Mare of Easttown.",
+          "required_facts": [
+            "mh_bosch_positive",
+            "slowhorses_fargo_positive",
+            "mare_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Identifies Bosch, Slow Horses, and Mare of Easttown"
+          ]
+        }
+      },
+      {
+        "query_id": "q04_style_over_substance_list",
+        "question": "Name 5 specific television or film properties I explicitly criticized because they prioritized visual spectacle, stylistic flair, or structural gimmicks over psychological depth and character development.",
+        "reference_answer": {
+          "text": "Five properties you criticized for this are Foundation, The Afterparty, Dune: Part Two, The Rings of Power, and Peaky Blinders (later seasons).",
           "required_facts": [
             "ww_foundation_contrast",
-            "bm_positive",
-            "expanse_positive",
-            "dark_severance_positive"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 5"
-          ]
-        }
-      },
-      {
-        "query_id": "q08_reality_tv_mc",
-        "question": "Which of the following best describes my explicit preference between reality television and deeply flawed genre fiction (like heavily violent or lore-dumping shows)? A) I explicitly stated I would rather watch flawed sci-fi or genre fiction over reality TV, which I consider zero-stakes background noise. B) I prefer reality TV because flawed genre fiction is too pretentious and confusing. C) I consider them exactly equal in value.",
-        "reference_answer": {
-          "text": "The correct option is A. You explicitly stated that you would take even flawed sci-fi over reality TV (which you called background noise with zero stakes) any day.",
-          "required_facts": [
-            "reality_verdict",
+            "light_detective_negative",
             "pure_fantasy_negative",
-            "tlou_mixed"
+            "dune_contrast",
+            "peaky_analysis"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Names exactly 5 properties",
+            "Ensures all 5 map to the style-over-substance criticism"
           ]
         }
       },
       {
-        "query_id": "q09_gritty_detective_mc",
-        "question": "Which of the following ranges represents the exact number of investigative or spy series I praised for maintaining gritty realism, bureaucratic tension, or unglamorous settings? A) 0-1. B) 2-3. C) 4-5.",
+        "query_id": "q05_comedy_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of comedic or dramedy series I discussed that I reviewed entirely positively?",
         "reference_answer": {
-          "text": "The correct option is C (4-5). You explicitly praised exactly 4 series for their gritty or unglamorous bureaucratic realism (True Detective, Mindhunter, Bosch, and Slow Horses).",
-          "required_facts": [
-            "td_positive",
-            "mh_bosch_positive",
-            "slowhorses_fargo_positive"
-          ],
-          "evaluation_criteria": [
-            "Selects Option C"
-          ]
-        }
-      },
-      {
-        "query_id": "q10_comedy_warmth_mc",
-        "question": "Which of the following ranges represents the exact number of comedy series I explicitly praised for maintaining deep warmth, compassion, or emotional gravity while dealing with trauma or generational conflict? A) 1-2. B) 3-4. C) 5-6.",
-        "reference_answer": {
-          "text": "The correct option is B (3-4). You explicitly praised exactly 4 comedies for these specific traits (Parks and Recreation, The Bear, Hacks, and Fleabag).",
+          "text": "You reviewed exactly 4/6 (or 2/3) of the comedic series positively. You praised Parks and Recreation, The Bear, Hacks, and Shrinking, but criticized Ted Lasso and Modern Family.",
           "required_facts": [
             "parc_positive",
             "bear_hacks_positive",
-            "fleabag_positive"
+            "shrinking_positive",
+            "light_comedy_negative"
           ],
           "evaluation_criteria": [
-            "Selects Option B"
+            "Provides exact fraction 4/6 or 2/3",
+            "Correctly identifies the 4 positive and 2 negative series"
           ]
         }
       },
       {
-        "query_id": "q11_franchise_depth_mc",
-        "question": "Based on my discussions of major franchises (superheroes, animation, or massive sci-fi prequels), which of the following is true? A) I praised exactly 3 specific series for transcending their franchise constraints to explore deep ideological fractures, systemic trauma, or ordinary people in broken systems. B) I completely rejected all franchise spin-offs for lacking depth. C) I explicitly stated I only watch these shows for their visually stunning fight choreography.",
+        "query_id": "q06_historical_realism_mc",
+        "question": "Which of the following ranges represents the exact number of series I explicitly praised for grounding their narratives in history or treating historical figures with psychological realism? A) 1-2. B) 3-4. C) 5-6. D) 7-9.",
         "reference_answer": {
-          "text": "The correct option is A. You praised exactly 3 franchise series for exploring these deep themes (Arcane, Watchmen, and Andor).",
-          "required_facts": [
-            "arcane_positive",
-            "watchmen_positive",
-            "andor_positive"
-          ],
-          "evaluation_criteria": [
-            "Selects Option A"
-          ]
-        }
-      },
-      {
-        "query_id": "q12_fantasy_boundary_mc",
-        "question": "Which of the following best describes my explicitly stated boundary for enjoying shows set in historical or fantasy periods? A) I demand 100% strict historical accuracy and reject any show that takes dramatic license. B) I require heavy, elaborate magic systems and complex prophecies to stay engaged. C) I tolerate or praise historical license and subtle mythicism, but I completely reject shows where magic or prophecy replaces human agency and character motivation.",
-        "reference_answer": {
-          "text": "The correct option is C. You praised shows like The Last Kingdom, Vikings, and The Crown for using history and myth to serve character, while rejecting pure fantasy shows where prophecies and lore overpowered human agency.",
-          "required_facts": [
-            "grounded_fantasy_positive",
-            "crown_positive",
-            "pure_fantasy_negative"
-          ],
-          "evaluation_criteria": [
-            "Selects Option C"
-          ]
-        }
-      },
-      {
-        "query_id": "q13_scifi_emotional_list",
-        "question": "Name exactly 4 specific television series I explicitly praised because their science-fiction, post-apocalyptic, or dystopian premises focused deeply on emotional resonance, human connection, or psychological tension rather than just survival mechanics or empty spectacle.",
-        "reference_answer": {
-          "text": "Four series you praised for this focus are Station Eleven, Black Mirror, Severance, and The Expanse. (Dark and Westworld are also acceptable).",
-          "required_facts": [
-            "station_eleven_positive",
-            "bm_positive",
-            "dark_severance_positive",
-            "expanse_positive"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 4 series",
-            "Ensures all 4 series match the criteria of sci-fi/dystopian settings focused on emotional resonance"
-          ]
-        }
-      },
-      {
-        "query_id": "q14_degraded_seasons_list",
-        "question": "Name exactly 3 specific series where I explicitly stated that their early seasons were strong, but their later seasons degraded in quality by losing thematic focus, prioritizing style over substance, or relying on cameos.",
-        "reference_answer": {
-          "text": "Three series where you explicitly noted a decline in later seasons are Westworld, Peaky Blinders, and Only Murders in the Building.",
-          "required_facts": [
-            "ww_foundation_contrast",
-            "peaky_analysis",
-            "light_detective_negative"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 series",
-            "Ensures all 3 match the criticism of degraded later seasons"
-          ]
-        }
-      },
-      {
-        "query_id": "q15_toxic_characters_list",
-        "question": "Name exactly 4 specific comedy or drama series I explicitly praised for successfully portraying highly flawed, toxic, or grieving characters in a way that made their motivations deeply understandable, without necessarily excusing their bad behavior.",
-        "reference_answer": {
-          "text": "Four series you praised for this nuanced character portrayal are Succession, The White Lotus, Industry, and Fleabag. (The Bear is also acceptable).",
+          "text": "The correct option is B (3-4). You praised exactly 4 series for this: Chernobyl, The Crown, The Last Kingdom, and Vikings.",
           "required_facts": [
             "drama_positive",
-            "white_lotus_positive",
-            "industry_positive",
-            "fleabag_positive"
+            "crown_positive",
+            "grounded_fantasy_positive"
           ],
           "evaluation_criteria": [
-            "Names exactly 4 series",
-            "Ensures all 4 series match the description of deeply understandable flawed/toxic characters"
+            "Selects Option B",
+            "Identifies Chernobyl, The Crown, The Last Kingdom, and Vikings"
+          ]
+        }
+      },
+      {
+        "query_id": "q07_ordinary_people_count",
+        "question": "How many television properties across the speculative fiction or superhero genres did I explicitly praise for focusing on ordinary people making difficult choices rather than relying on prophecies or 'chosen one' tropes? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 3 properties for this: Andor, The Last Kingdom, and The Boys.",
+          "required_facts": [
+            "andor_positive",
+            "grounded_fantasy_positive",
+            "theboys_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names Andor, The Last Kingdom, and The Boys"
+          ]
+        }
+      },
+      {
+        "query_id": "q08_pure_fantasy_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of purely mythical or high-fantasy series (excluding those explicitly anchored in real human history) that I evaluated positively?",
+        "reference_answer": {
+          "text": "You evaluated exactly 0/5 of the pure high-fantasy series positively. You criticized Game of Thrones, House of the Dragon, The Rings of Power, Shadow and Bone, and The Wheel of Time.",
+          "required_facts": [
+            "got_negative",
+            "hotd_negative",
+            "pure_fantasy_negative",
+            "mystery_fantasy_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 0/5",
+            "Identifies the 5 criticized high-fantasy series"
+          ]
+        }
+      },
+      {
+        "query_id": "q09_philosophical_scifi_list",
+        "question": "Name 6 speculative fiction or superhero shows I explicitly praised for prioritizing human truth, psychological realism, or philosophical depth over mere visual spectacle.",
+        "reference_answer": {
+          "text": "Six shows you praised for this are Westworld (season 1), The Expanse, Dark, Severance, Andor, and Pantheon. (The Boys is also correct).",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "expanse_positive",
+            "dark_severance_positive",
+            "andor_positive",
+            "theboys_positive",
+            "pantheon_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 6 shows",
+            "Ensures all match the philosophical or psychological realism criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_declining_quality_mc",
+        "question": "Which of the following ranges represents the exact number of series or film franchises where I explicitly stated that early seasons or installments were strong, but later ones declined in quality, balance, or focus? A) 0-2. B) 3-4. C) 5-6. D) 7-9.",
+        "reference_answer": {
+          "text": "The correct option is C (5-6). You explicitly noted a decline in exactly 5 properties: Westworld, Game of Thrones, Only Murders in the Building, Peaky Blinders, and the Dune franchise.",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "got_negative",
+            "light_detective_negative",
+            "peaky_analysis",
+            "dune_contrast"
+          ],
+          "evaluation_criteria": [
+            "Selects Option C",
+            "Identifies the 5 properties with declining quality"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_heavy_comedy_count",
+        "question": "How many comedy or dramedy series did I explicitly praise for successfully balancing humor with heavy emotional themes like grief, trauma, or generational conflict without cheapening the pain? Provide the exact count.",
+        "reference_answer": {
+          "text": "You praised exactly 3 series for this: The Bear, Hacks, and Shrinking.",
+          "required_facts": [
+            "bear_hacks_positive",
+            "shrinking_positive",
+            "light_comedy_negative"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 3",
+            "Names The Bear, Hacks, and Shrinking"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_zero_stakes_list",
+        "question": "Name 4 specific fictional television properties that I explicitly criticized for having zero stakes, manufactured conflicts, or relying on made-up tension, ensuring you do NOT include any reality television shows in your answer.",
+        "reference_answer": {
+          "text": "Four fictional properties you criticized for this are The Rings of Power, Shadow and Bone, Ted Lasso, and House of the Dragon. (Big Brother and Love Island are correctly excluded due to the reality TV constraint).",
+          "required_facts": [
+            "pure_fantasy_negative",
+            "light_comedy_negative",
+            "hotd_negative",
+            "reality_verdict"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 properties",
+            "Correctly excludes Big Brother and Love Island",
+            "Ensures all named properties map to the zero stakes/manufactured tension criticism"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_restraint_dread_count",
+        "question": "How many shows did I explicitly praise for building dread, atmosphere, or psychological tension through restraint, quiet intensity, or by avoiding flashy melodrama? Provide the exact count.",
+        "reference_answer": {
+          "text": "You praised exactly 4 shows for this: Mindhunter, True Detective, Chernobyl, and Severance.",
+          "required_facts": [
+            "mh_bosch_positive",
+            "td_positive",
+            "drama_positive",
+            "dark_severance_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Names Mindhunter, True Detective, Chernobyl, and Severance"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_respect_intelligence_list",
+        "question": "Name 5 specific shows that I explicitly praised because they respect the audience's intelligence, trust viewers to follow complex plots without hand-holding, or require active viewing.",
+        "reference_answer": {
+          "text": "Five shows you praised for this are Lupin, Dark, Severance, Slow Horses, and Pantheon. (Chernobyl is also correct).",
+          "required_facts": [
+            "lupin_positive",
+            "dark_severance_positive",
+            "slowhorses_fargo_positive",
+            "drama_positive",
+            "pantheon_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 5 shows",
+            "Ensures all map to the 'respecting intelligence' or 'trusting the audience' criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_scale_over_soul_list",
+        "question": "Name 4 big-budget science fiction or fantasy properties I explicitly criticized for prioritizing massive scale, stunning visuals, or action sequences at the expense of emotional soul or character interiority.",
+        "reference_answer": {
+          "text": "Four properties you criticized for this are Foundation, The Rings of Power, Dune: Part Two, and Game of Thrones (later seasons).",
+          "required_facts": [
+            "ww_foundation_contrast",
+            "pure_fantasy_negative",
+            "dune_contrast",
+            "got_negative"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 properties",
+            "Ensures all map to the scale-over-soul or spectacle-over-character criticism"
           ]
         }
       }

@@ -1,5 +1,5 @@
 {
-  "case_id": "recommendations_boardgames_350",
+  "case_id": "recommendations_boardgames_275",
   "sessions": [
     {
       "session_id": "session_01",
@@ -69,25 +69,6 @@
     },
     {
       "session_id": "session_05",
-      "topic": "Solo Gaming",
-      "contains_fact": true,
-      "fact_id": "solo_gaming_preference",
-      "fact_quote": "I enjoy solo gaming as a way to learn complex systems without social pressure, but I prefer games that don't feel like puzzles with optimal solutions",
-      "messages": [
-        {"role": "user", "content": "Thinking about trying more solo gaming during weekdays."},
-        {"role": "assistant", "content": "What draws you to solo play—convenience, learning complex systems, or something else?"},
-        {"role": "user", "content": "I enjoy solo gaming as a way to learn complex systems without social pressure, but I prefer games that don't feel like puzzles with optimal solutions"},
-        {"role": "assistant", "content": "That's a nuanced preference—you want the freedom to experiment without the pressure of other players, but reject deterministic puzzles where one optimal path exists."},
-        {"role": "user", "content": "Exactly. Games like Friday feel like optimization puzzles after a few plays."},
-        {"role": "assistant", "content": "Friday's fixed deck creates that solved-puzzle feeling you dislike. Games like Spirit Island solo mode work better for you because asymmetric powers create genuine trade-offs without a single optimal sequence."},
-        {"role": "user", "content": "What about Robinson Crusoe solo? Too much randomness?"},
-        {"role": "assistant", "content": "Robinson Crusoe solo actually highlights its core flaw for you—the dice randomness doesn't compensate for the alpha player problem since you're making all decisions anyway, creating frustration without meaningful agency distribution."},
-        {"role": "user", "content": "Makes sense. I'll stick with Spirit Island for solo sessions."},
-        {"role": "assistant", "content": "Smart choice—Spirit Island's adversary system creates genuine tension in solo mode while maintaining the asymmetric design you value, avoiding both the puzzle-like optimization of Friday and the frustrating randomness of Robinson Crusoe."}
-      ]
-    },
-    {
-      "session_id": "session_06",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_1",
@@ -108,7 +89,7 @@
       ]
     },
     {
-      "session_id": "session_07",
+      "session_id": "session_06",
       "topic": "Strategy Interaction",
       "contains_fact": true,
       "fact_id": "strategy_interaction_preference",
@@ -123,7 +104,7 @@
       ]
     },
     {
-      "session_id": "session_08",
+      "session_id": "session_07",
       "topic": "Game Storage",
       "contains_fact": false,
       "fact_id": null,
@@ -138,7 +119,7 @@
       ]
     },
     {
-      "session_id": "session_09",
+      "session_id": "session_08",
       "topic": "Abstract Repetition",
       "contains_fact": true,
       "fact_id": "abstract_game_repetition",
@@ -155,26 +136,7 @@
       ]
     },
     {
-      "session_id": "session_10",
-      "topic": "Economic Games",
-      "contains_fact": true,
-      "fact_id": "economic_games_appreciation",
-      "fact_quote": "I appreciate economic games where money represents meaningful trade-offs rather than just victory points—where spending decisions create genuine tension",
-      "messages": [
-        {"role": "user", "content": "Tried Brass: Birmingham last weekend."},
-        {"role": "assistant", "content": "How did the economic engine-building feel compared to Terraforming Mars?"},
-        {"role": "user", "content": "I appreciate economic games where money represents meaningful trade-offs rather than just victory points—where spending decisions create genuine tension"},
-        {"role": "assistant", "content": "You've identified what separates great economic design from point-salad mechanics—Brass forces real trade-offs between short-term liquidity and long-term network development."},
-        {"role": "user", "content": "The canal/railroad transition was brutal but satisfying."},
-        {"role": "assistant", "content": "That mid-game pivot creates exactly the kind of meaningful tension you value—where early decisions compound into late-game consequences without feeling random or arbitrary."},
-        {"role": "user", "content": "Lancashire felt more punishing though. Birmingham's tea mechanic softens the blow."},
-        {"role": "assistant", "content": "Birmingham's tea market adds just enough forgiveness to prevent early mistakes from snowballing into unwinnable positions—maintaining engagement even when you fall behind, which aligns perfectly with your agency-focused preferences."},
-        {"role": "user", "content": "Should I pick up the Lancashire expansion next?"},
-        {"role": "assistant", "content": "Only if you want a harsher experience—Lancashire's unforgiving economy lacks Birmingham's tea safety valve, which might undermine the sustained engagement you value when early setbacks feel insurmountable."}
-      ]
-    },
-    {
-      "session_id": "session_11",
+      "session_id": "session_09",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_2",
@@ -197,7 +159,7 @@
       ]
     },
     {
-      "session_id": "session_12",
+      "session_id": "session_10",
       "topic": "Deck Building Depth",
       "contains_fact": true,
       "fact_id": "deck_building_appreciation",
@@ -218,7 +180,7 @@
       ]
     },
     {
-      "session_id": "session_13",
+      "session_id": "session_11",
       "topic": "Strategy Variable Setup",
       "contains_fact": true,
       "fact_id": "strategy_variable_setup",
@@ -236,6 +198,38 @@
         {"role": "assistant", "content": "That's the holy grail of replayability you're seeking—and Root delivers it consistently for your play style."},
         {"role": "user", "content": "Even with the same factions, different player combinations create unique dynamics."},
         {"role": "assistant", "content": "That emergent complexity from simple interactions is exactly what makes Root a modern classic for players like you."}
+      ]
+    },
+    {
+      "session_id": "session_12",
+      "topic": "Game Night Logistics",
+      "contains_fact": false,
+      "fact_id": null,
+      "fact_quote": "",
+      "messages": [
+        {"role": "user", "content": "How early should I arrive to set up for a 4-player game night?"},
+        {"role": "assistant", "content": "Aim for 30-45 minutes early to unpack your games, sort components, and handle any rules questions before everyone arrives."},
+        {"role": "user", "content": "Good point. I'll bring my own card sleeves too."},
+        {"role": "assistant", "content": "Smart move—nothing kills momentum like shuffling unsleeved cards mid-game when you're deep in strategy."},
+        {"role": "user", "content": "Planning to run Root followed by Spirit Island if we have energy."},
+        {"role": "assistant", "content": "Excellent pairing for your group—both reward strategic thinking without alpha player issues, so everyone stays meaningfully engaged."}
+      ]
+    },
+    {
+      "session_id": "session_13",
+      "topic": "Abstract Aesthetics",
+      "contains_fact": true,
+      "fact_id": "abstract_aesthetic_importance",
+      "fact_quote": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying",
+      "messages": [
+        {"role": "user", "content": "Azul's tiles have such satisfying weight and color."},
+        {"role": "assistant", "content": "Does that tactile quality significantly affect your enjoyment?"},
+        {"role": "user", "content": "Absolutely! The weight and color of the tiles make placing them more satisfying."},
+        {"role": "assistant", "content": "Component quality elevates even simple mechanics into something special for you—and you clearly appreciate that in your gaming experience."},
+        {"role": "user", "content": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying"},
+        {"role": "assistant", "content": "Games that engage multiple senses often create stronger emotional connections for you—and you've noticed how this transforms abstract strategy."},
+        {"role": "user", "content": "Santorini's miniatures also add to the immersion."},
+        {"role": "assistant", "content": "That visual and tactile appeal transforms abstract strategy into a holistic experience you clearly value beyond pure mechanics."}
       ]
     },
     {
@@ -261,38 +255,6 @@
     },
     {
       "session_id": "session_15",
-      "topic": "Game Night Logistics",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
-      "messages": [
-        {"role": "user", "content": "How early should I arrive to set up for a 4-player game night?"},
-        {"role": "assistant", "content": "Aim for 30-45 minutes early to unpack your games, sort components, and handle any rules questions before everyone arrives."},
-        {"role": "user", "content": "Good point. I'll bring my own card sleeves too."},
-        {"role": "assistant", "content": "Smart move—nothing kills momentum like shuffling unsleeved cards mid-game when you're deep in strategy."},
-        {"role": "user", "content": "Planning to run Root followed by Spirit Island if we have energy."},
-        {"role": "assistant", "content": "Excellent pairing for your group—both reward strategic thinking without alpha player issues, so everyone stays meaningfully engaged."}
-      ]
-    },
-    {
-      "session_id": "session_16",
-      "topic": "Abstract Aesthetics",
-      "contains_fact": true,
-      "fact_id": "abstract_aesthetic_importance",
-      "fact_quote": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying",
-      "messages": [
-        {"role": "user", "content": "Azul's tiles have such satisfying weight and color."},
-        {"role": "assistant", "content": "Does that tactile quality significantly affect your enjoyment?"},
-        {"role": "user", "content": "Absolutely! The weight and color of the tiles make placing them more satisfying."},
-        {"role": "assistant", "content": "Component quality elevates even simple mechanics into something special for you—and you clearly appreciate that in your gaming experience."},
-        {"role": "user", "content": "The physical components and visual design of abstract games enhance the experience significantly. Beautiful components make the gameplay more satisfying"},
-        {"role": "assistant", "content": "Games that engage multiple senses often create stronger emotional connections for you—and you've noticed how this transforms abstract strategy."},
-        {"role": "user", "content": "Santorini's miniatures also add to the immersion."},
-        {"role": "assistant", "content": "That visual and tactile appeal transforms abstract strategy into a holistic experience you clearly value beyond pure mechanics."}
-      ]
-    },
-    {
-      "session_id": "session_17",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_4",
@@ -305,32 +267,13 @@
         {"role": "user", "content": "Flash Point became tedious because the most experienced player directed everyone's actions turn by turn, eliminating any meaningful choice for others"},
         {"role": "assistant", "content": "Without mechanical barriers to quarterbacking in your session, you were left with no real agency—just executing someone else's calculated plan."},
         {"role": "user", "content": "I spent three turns just moving my firefighter where I was told."},
-        {"role": "assistant", "content": "That wasn't playing a game for you—that's being a pawn in someone else's puzzle while your own decisions didn't matter."},
+        {"role": "assistant", "content": "That wasn't playing a game for you—that was being a pawn in someone else's puzzle while your own decisions didn't matter."},
         {"role": "user", "content": "Exactly. I might as well have been watching a YouTube playthrough."},
         {"role": "assistant", "content": "You've perfectly described the core issue: agency is the difference between your participation and spectatorship."}
       ]
     },
     {
-      "session_id": "session_18",
-      "topic": "Player Count Optimization",
-      "contains_fact": true,
-      "fact_id": "player_count_sensitivity",
-      "fact_quote": "I've noticed that some games transform completely at different player counts—Root is tense at 3 players but chaotic at 6, and I prefer the focused interaction of smaller groups",
-      "messages": [
-        {"role": "user", "content": "Trying to decide between 3 or 4 players for our next Root session."},
-        {"role": "assistant", "content": "How do you feel about the pacing differences between those counts?"},
-        {"role": "user", "content": "I've noticed that some games transform completely at different player counts—Root is tense at 3 players but chaotic at 6, and I prefer the focused interaction of smaller groups"},
-        {"role": "assistant", "content": "You've observed a key design reality—Root's asymmetry creates focused strategic tension at 3-4 players where you can track everyone's plans, but at 5-6 players the chaos overwhelms the strategic depth you value."},
-        {"role": "user", "content": "Exactly. At 6 players I spend half the game waiting for my turn to matter again."},
-        {"role": "assistant", "content": "That agency dip during long downtimes directly contradicts your core preference for sustained engagement—3-4 players keeps the action density high enough that you're always mentally involved even when not taking your turn."},
-        {"role": "user", "content": "What about Terraforming Mars? Better at 3 or 4?"},
-        {"role": "assistant", "content": "Terraforming Mars actually handles 4 players better than Root—its parallel engine-building means downtime feels productive as you plan your next moves, though 3 players does speed up the experience if that's your priority."},
-        {"role": "user", "content": "I think we'll go with 4 for Terraforming Mars next time. Less waiting between rounds."},
-        {"role": "assistant", "content": "Smart choice—Terraforming Mars' simultaneous action selection during planning phases maintains your engagement even at 4 players, avoiding the agency problems that plague other multiplayer games at higher counts."}
-      ]
-    },
-    {
-      "session_id": "session_19",
+      "session_id": "session_16",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_5",
@@ -353,7 +296,7 @@
       ]
     },
     {
-      "session_id": "session_20",
+      "session_id": "session_17",
       "topic": "Party Fatigue",
       "contains_fact": true,
       "fact_id": "party_games_fatigue",
@@ -372,7 +315,7 @@
       ]
     },
     {
-      "session_id": "session_21",
+      "session_id": "session_18",
       "topic": "Game Night Beverage",
       "contains_fact": false,
       "fact_id": null,
@@ -387,7 +330,7 @@
       ]
     },
     {
-      "session_id": "session_22",
+      "session_id": "session_19",
       "topic": "Cooperative Success",
       "contains_fact": true,
       "fact_id": "cooperative_success_enjoyment",
@@ -408,7 +351,7 @@
       ]
     },
     {
-      "session_id": "session_23",
+      "session_id": "session_20",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_6",
@@ -427,7 +370,7 @@
       ]
     },
     {
-      "session_id": "session_24",
+      "session_id": "session_21",
       "topic": "Party Innovation",
       "contains_fact": true,
       "fact_id": "party_game_mechanical_innovation",
@@ -446,7 +389,7 @@
       ]
     },
     {
-      "session_id": "session_25",
+      "session_id": "session_22",
       "topic": "Cooperative Hidden Info",
       "contains_fact": true,
       "fact_id": "cooperative_hidden_information",
@@ -465,7 +408,7 @@
       ]
     },
     {
-      "session_id": "session_26",
+      "session_id": "session_23",
       "topic": "Strategy Complexity",
       "contains_fact": true,
       "fact_id": "strategy_complexity_overwhelm",
@@ -482,7 +425,7 @@
       ]
     },
     {
-      "session_id": "session_27",
+      "session_id": "session_24",
       "topic": "Cooperative Alpha Problem",
       "contains_fact": true,
       "fact_id": "cooperative_alpha_player_problem_7",
@@ -503,7 +446,7 @@
       ]
     },
     {
-      "session_id": "session_28",
+      "session_id": "session_25",
       "topic": "Strategy Player Agency",
       "contains_fact": true,
       "fact_id": "strategy_player_agency",
@@ -522,7 +465,7 @@
       ]
     },
     {
-      "session_id": "session_29",
+      "session_id": "session_26",
       "topic": "Thematic Immersion",
       "contains_fact": true,
       "fact_id": "thematic_immersion_preference",
@@ -543,30 +486,30 @@
       ]
     },
     {
-      "session_id": "session_30",
-      "topic": "Area Control",
+      "session_id": "session_27",
+      "topic": "Player Count Optimization",
       "contains_fact": true,
-      "fact_id": "area_control_preference",
-      "fact_quote": "I enjoy area control games where territory matters strategically rather than just scoring points—where controlling space creates meaningful advantages beyond end-game scoring",
+      "fact_id": "player_count_sensitivity",
+      "fact_quote": "I've noticed that some games transform completely at different player counts—Root is tense at 3 players but chaotic at 6, and I prefer the focused interaction of smaller groups",
       "messages": [
-        {"role": "user", "content": "Tried Blood Rage last night."},
-        {"role": "assistant", "content": "How did the area control feel compared to other games you've played?"},
-        {"role": "user", "content": "I enjoy area control games where territory matters strategically rather than just scoring points—where controlling space creates meaningful advantages beyond end-game scoring"},
-        {"role": "assistant", "content": "You've identified the key distinction—Blood Rage's provinces provide card draw and resource advantages during the game, making territory control meaningful throughout rather than just a final scoring exercise."},
-        {"role": "user", "content": "The drafting phase actually matters more than the battles sometimes."},
-        {"role": "assistant", "content": "That's the elegant design you appreciate—drafting creates asymmetric advantages that make combat decisions meaningful rather than pure dice-chucking, avoiding the random frustration you'd dislike."},
-        {"role": "user", "content": "Does Rising Sun handle area control better or worse?"},
-        {"role": "assistant", "content": "Rising Sun adds political alliances that create interesting negotiation dynamics, but the hidden victory conditions undermine the transparent strategic depth you value—Blood Rage's straightforward scoring aligns better with your preference for meaningful, visible trade-offs."},
-        {"role": "user", "content": "I'll stick with Blood Rage for now. Maybe try Rising Sun later with the right group."},
-        {"role": "assistant", "content": "Smart approach—Blood Rage delivers the clean area control experience you want, while Rising Sun's negotiation elements might work better with a group that enjoys hidden information and table talk over pure strategic optimization."}
+        {"role": "user", "content": "Trying to decide between 3 or 4 players for our next Root session."},
+        {"role": "assistant", "content": "How do you feel about the pacing differences between those counts?"},
+        {"role": "user", "content": "I've noticed that some games transform completely at different player counts—Root is tense at 3 players but chaotic at 6, and I prefer the focused interaction of smaller groups"},
+        {"role": "assistant", "content": "You've observed a key design reality—Root's asymmetry creates focused strategic tension at 3-4 players where you can track everyone's plans, but at 5-6 players the chaos overwhelms the strategic depth you value."},
+        {"role": "user", "content": "Exactly. At 6 players I spend half the game waiting for my turn to matter again."},
+        {"role": "assistant", "content": "That agency dip during long downtimes directly contradicts your core preference for sustained engagement—3-4 players keeps the action density high enough that you're always mentally involved even when not taking your turn."},
+        {"role": "user", "content": "What about Terraforming Mars? Better at 3 or 4?"},
+        {"role": "assistant", "content": "Terraforming Mars actually handles 4 players better than Root—its parallel engine-building means downtime feels productive as you plan your next moves, though 3 players does speed up the experience if that's your priority."},
+        {"role": "user", "content": "I think we'll go with 4 for Terraforming Mars next time. Less waiting between rounds."},
+        {"role": "assistant", "content": "Smart choice—Terraforming Mars' simultaneous action selection during planning phases maintains your engagement even at 4 players, avoiding the agency problems that plague other multiplayer games at higher counts."}
       ]
     },
     {
-      "session_id": "session_31",
+      "session_id": "session_28",
       "topic": "Rulebook Clarity",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
+      "contains_fact": true,
+      "fact_id": "rulebook_clarity_wingspan_praise",
+      "fact_quote": "Wingspan's rulebook was actually great—learned everything in 10 minutes.",
       "messages": [
         {"role": "user", "content": "Spent 45 minutes just reading the rules for a new game before we could start."},
         {"role": "assistant", "content": "That's a major friction point—did the complexity feel justified once you started playing?"},
@@ -581,7 +524,7 @@
       ]
     },
     {
-      "session_id": "session_32",
+      "session_id": "session_29",
       "topic": "Teaching Games",
       "contains_fact": false,
       "fact_id": null,
@@ -600,120 +543,92 @@
       ]
     },
     {
-      "session_id": "session_33",
-      "topic": "Game Length Preference",
+      "session_id": "session_30",
+      "topic": "Economic Engine Depth",
       "contains_fact": true,
-      "fact_id": "game_length_preference",
-      "fact_quote": "I prefer games that respect my time—90 minutes is my sweet spot for deep strategy, but I appreciate shorter games that deliver meaningful decisions without filler",
+      "fact_id": "economic_engine_appreciation",
+      "fact_quote": "I've been exploring economic games where resource conversion creates interesting puzzles—not just collecting for points, but managing production chains that feel meaningful",
       "messages": [
-        {"role": "user", "content": "Our last game night ran 4 hours with setup/breakdown."},
-        {"role": "assistant", "content": "Too long for your preference? What's your ideal session length?"},
-        {"role": "user", "content": "I prefer games that respect my time—90 minutes is my sweet spot for deep strategy, but I appreciate shorter games that deliver meaningful decisions without filler"},
-        {"role": "assistant", "content": "You've identified an important design principle—respect for player time. Games like 7 Wonders deliver meaningful decisions in 30 minutes through simultaneous play, while Terraforming Mars hits your 90-minute sweet spot with minimal downtime."},
-        {"role": "user", "content": "Twilight Imperium sessions always run 5+ hours even with experienced players."},
-        {"role": "assistant", "content": "That's why Twilight Imperium clashes with your preferences—the rule overhead and downtime create time bloat without proportional decision density. Every minute should contain meaningful choices for you, not rule lookups or waiting."},
-        {"role": "user", "content": "What about Gaia Project? Shorter than TI but still deep?"},
-        {"role": "assistant", "content": "Gaia Project actually respects your time better—streamlined rules and simultaneous action selection maintain decision density throughout its 2-hour runtime, delivering TI's depth without the time bloat you dislike."},
-        {"role": "user", "content": "Might try Gaia Project instead of TI for our next heavy session."},
-        {"role": "assistant", "content": "Excellent choice—Gaia Project delivers the asymmetric depth you value in Root while respecting your time preference, avoiding Twilight Imperium's rule overhead that creates friction without meaningful engagement."}
+        {"role": "user", "content": "Finally got to play Brass: Lancashire after Birmingham."},
+        {"role": "assistant", "content": "How did the original compare to the version you already knew?"},
+        {"role": "user", "content": "The economy feels more cutthroat. Birmingham's flexibility softened some edges."},
+        {"role": "assistant", "content": "Would you say that Lancashire better satisfies your preference for meaningful trade-offs?"},
+        {"role": "user", "content": "I've been exploring economic games where resource conversion creates interesting puzzles—not just collecting for points, but managing production chains that feel meaningful."},
+        {"role": "assistant", "content": "Brass certainly delivers that—every coal and iron decision has ripple effects through the whole game."},
+        {"role": "user", "content": "The dual network phase adds another layer: what you build early can become obsolete."},
+        {"role": "assistant", "content": "That temporal dimension forces you to think several moves ahead, which aligns with your love for long-term planning."},
+        {"role": "user", "content": "I'll definitely keep Lancashire in rotation for when I want a tougher challenge."},
+        {"role": "assistant", "content": "Good to have both—Birmingham for accessibility, Lancashire for the hardcore experience."}
+      ]
+    },
+    {
+      "session_id": "session_31",
+      "topic": "Component Upgrades",
+      "contains_fact": true,
+      "fact_id": "component_praise_scythe",
+      "fact_quote": "Same reason I love the resin resource bits in Scythe.",
+      "messages": [
+        {"role": "user", "content": "Thinking about buying metal coins for Brass. Worth the splurge?"},
+        {"role": "assistant", "content": "If you play it often, absolutely—the tactile feedback of heavy coins reinforces the economic theme."},
+        {"role": "user", "content": "The cardboard ones feel flimsy after a few games."},
+        {"role": "assistant", "content": "Metal coins also stack nicely and make satisfying clinks that enhance immersion."},
+        {"role": "user", "content": "Same reason I love the resin resource bits in Scythe."},
+        {"role": "assistant", "content": "You clearly value components that elevate the physical experience—it's a worthwhile investment for games you love."}
+      ]
+    },
+    {
+      "session_id": "session_32",
+      "topic": "Worker Placement Mechanics",
+      "contains_fact": true,
+      "fact_id": "worker_placement_appreciation",
+      "fact_quote": "Worker placement games appeal to me when placement choices create tension—blocking opponents while pursuing your own engine is a great balance",
+      "messages": [
+        {"role": "user", "content": "Tried Agricola for the first time. So many decisions!"},
+        {"role": "assistant", "content": "The tension between feeding your family and building your farm is real."},
+        {"role": "user", "content": "I like that every action you take denies someone else—real interaction."},
+        {"role": "assistant", "content": "Worker placement games appeal to me when placement choices create tension—blocking opponents while pursuing your own engine is a great balance."},
+        {"role": "assistant", "content": "Agricola definitely delivers that. Have you tried Caverna? It's a bit more forgiving."},
+        {"role": "user", "content": "Not yet. I enjoy the challenge of tight resource management."},
+        {"role": "assistant", "content": "Then you'd probably like Caylus or Lords of Waterdeep with the expansion."}
+      ]
+    },
+    {
+      "session_id": "session_33",
+      "topic": "Solo Mode Preferences",
+      "contains_fact": true,
+      "fact_id": "solo_mode_success",
+      "fact_quote": "A good solo mode should feel like a puzzle you can't fully solve—where the bot's behavior is unpredictable enough to keep you on your toes",
+      "messages": [
+        {"role": "user", "content": "Tried the Gaia Project solo bot. Surprisingly engaging."},
+        {"role": "assistant", "content": "The bot's simple rules create complex challenges, doesn't it?"},
+        {"role": "user", "content": "A good solo mode should feel like a puzzle you can't fully solve—where the bot's behavior is unpredictable enough to keep you on your toes."},
+        {"role": "assistant", "content": "That's why Spirit Island and Gaia Project work—they simulate a thinking opponent."},
+        {"role": "user", "content": "Exactly. Terraforming Mars solo just feels like beating a high score."},
+        {"role": "assistant", "content": "You need that interactive tension even when playing alone."}
       ]
     },
     {
       "session_id": "session_34",
-      "topic": "Digital vs Physical",
-      "contains_fact": true,
-      "fact_id": "digital_vs_physical_preference",
-      "fact_quote": "I use digital versions to learn complex games, but I always prefer physical components for actual play—the tactile experience matters too much to sacrifice for convenience",
-      "messages": [
-        {"role": "user", "content": "Been playing Root on Tabletop Simulator to learn the factions."},
-        {"role": "assistant", "content": "Helpful for learning, but does the digital version capture what you love about the physical game?"},
-        {"role": "user", "content": "I use digital versions to learn complex games, but I always prefer physical components for actual play—the tactile experience matters too much to sacrifice for convenience"},
-        {"role": "assistant", "content": "You've found the ideal hybrid approach—digital for efficient learning, physical for actual play where component quality enhances engagement. That tactile feedback from moving Root's wooden pieces creates emotional connection no digital version can replicate."},
-        {"role": "user", "content": "The Vagabond's gear tokens are especially satisfying to handle in person."},
-        {"role": "assistant", "content": "Those chunky gear tokens create exactly the kind of tactile reinforcement you value—each upgrade feels physically meaningful, transforming abstract progression into a sensory experience that deepens your engagement with the game's systems."},
-        {"role": "user", "content": "Will stick with physical for game nights. Digital just feels sterile after a few sessions."},
-        {"role": "assistant", "content": "That's a common pattern for players who value component quality like you—digital works as a learning tool, but the physical experience delivers the holistic engagement that makes games memorable beyond pure mechanics."}
-      ]
-    },
-    {
-      "session_id": "session_35",
-      "topic": "Legacy Games",
-      "contains_fact": true,
-      "fact_id": "legacy_games_attitude",
-      "fact_quote": "I'm skeptical of legacy games because permanent changes feel like a gimmick unless they meaningfully transform gameplay—not just stickers on a board",
-      "messages": [
-        {"role": "user", "content": "Friends want me to try Gloomhaven."},
-        {"role": "assistant", "content": "How do you feel about the legacy/campaign structure?"},
-        {"role": "user", "content": "I'm skeptical of legacy games because permanent changes feel like a gimmick unless they meaningfully transform gameplay—not just stickers on a board"},
-        {"role": "assistant", "content": "Your skepticism is well-founded—many legacy games use permanent changes as novelty rather than meaningful evolution. But Gloomhaven's campaign actually transforms gameplay through character progression and scenario unlocks that create genuine narrative momentum."},
-        {"role": "user", "content": "Pandemic Legacy didn't win me over despite the stickers and envelopes."},
-        {"role": "assistant", "content": "Exactly—Pandemic Legacy's legacy elements were cosmetic dressing on broken cooperative mechanics you already dislike. Gloomhaven's progression is mechanically meaningful—unlocking new cards actually changes your tactical options rather than just adding story flavor."},
-        {"role": "user", "content": "The 100+ hour commitment is intimidating though."},
-        {"role": "assistant", "content": "Valid concern—Gloomhaven demands significant time investment. But unlike Twilight Imperium's rule overhead, every hour delivers meaningful decisions through its tactical combat system that aligns with your preference for agency and meaningful trade-offs."},
-        {"role": "user", "content": "Might try the Jaws of the Lion standalone first as a gateway."},
-        {"role": "assistant", "content": "Perfect approach—Jaws of the Lion delivers Gloomhaven's core tactical depth in a streamlined package that respects your time preference while letting you evaluate whether the campaign structure works for your play style before committing to the full experience."}
-      ]
-    },
-    {
-      "session_id": "session_36",
-      "topic": "Game Collection Strategy",
+      "topic": "Gaming Group Dynamics",
       "contains_fact": false,
       "fact_id": null,
       "fact_quote": "",
       "messages": [
-        {"role": "user", "content": "Trying to decide between buying a heavy strategy game or a quick filler this month."},
-        {"role": "assistant", "content": "What's missing from your current collection? More depth or more accessibility?"},
-        {"role": "user", "content": "I have plenty of 90-minute games but lack good 30-minute options for weeknights."},
-        {"role": "assistant", "content": "Then prioritize the filler—collection balance matters more than chasing depth you already have. A great 30-minute game like 7 Wonders or The Mind creates more actual play opportunities than another heavy game that only comes out monthly."},
-        {"role": "user", "content": "Worried fillers won't satisfy my strategic cravings though."},
-        {"role": "assistant", "content": "Not all fillers are shallow—7 Wonders delivers meaningful decisions through simultaneous drafting that maintains your engagement without downtime, while The Mind creates unique collaborative tension. Both respect your intelligence while fitting weeknight constraints."},
-        {"role": "user", "content": "I'll grab 7 Wonders. Heard the rulebook is actually clear too."},
-        {"role": "assistant", "content": "Excellent choice—7 Wonders teaches itself in 10 minutes while delivering the meaningful trade-offs you value. Its simultaneous play maintains your agency throughout, avoiding the downtime problems that plague longer games at higher player counts."}
-      ]
-    },
-    {
-      "session_id": "session_37",
-      "topic": "Gateway Games",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
-      "messages": [
-        {"role": "user", "content": "My partner has never played modern board games. What should I start with?"},
-        {"role": "assistant", "content": "What's their background? Video games, card games, or completely new to gaming?"},
-        {"role": "user", "content": "Completely new—thinks Monopoly is the standard board game experience."},
-        {"role": "assistant", "content": "Avoid anything with direct conflict initially. Start with Ticket to Ride—it teaches route-building through intuitive mechanics, has beautiful components that create tactile engagement, and delivers satisfying engine-building without overwhelming rules."},
-        {"role": "user", "content": "Will they find it too simple after a few plays?"},
-        {"role": "assistant", "content": "Ticket to Ride has surprising depth in route blocking and timing decisions, but more importantly—it creates a positive first impression. Your goal isn't depth on play one; it's creating enthusiasm that makes them want to try deeper games like Azul or Carcassonne next."},
-        {"role": "user", "content": "Should I avoid teaching Root or Terraforming Mars right away?"},
-        {"role": "assistant", "content": "Absolutely avoid them initially—Root's asymmetry and Terraforming Mars' engine-building require gaming literacy your partner doesn't have yet. Build their confidence with accessible games first, then gradually introduce deeper experiences once they understand core concepts like action selection and resource management."},
-        {"role": "user", "content": "Makes sense. Start simple, build enthusiasm, then deepen over time."},
-        {"role": "assistant", "content": "Exactly—patience with gateway games pays off. A positive first experience with Ticket to Ride creates foundation for eventually enjoying the strategic depth you love in Root and Terraforming Mars, but rushing creates frustration that kills interest permanently."}
-      ]
-    },
-    {
-      "session_id": "session_38",
-      "topic": "Game Storage Expansion",
-      "contains_fact": false,
-      "fact_id": null,
-      "fact_quote": "",
-      "messages": [
-        {"role": "user", "content": "My game shelf is overflowing. Time for a second shelf or better organization?"},
-        {"role": "assistant", "content": "How many games do you own, and which ones get played most often?"},
-        {"role": "user", "content": "About 40 games. Top 10 get 80% of plays."},
-        {"role": "assistant", "content": "Then optimize for accessibility of your core collection rather than buying more furniture. Store frequently played games at eye level with vertical dividers sorted by player count. Less-played games can go in less accessible locations or even consider trading duplicates."},
-        {"role": "user", "content": "I keep buying games I think I'll play but never do."},
-        {"role": "assistant", "content": "That's the collection trap—buying potential rather than actual play value. Before your next purchase, ask: 'Will this get played within 30 days?' If not, it's decoration, not a game. Your top 10 games already deliver the experiences you value most—be selective about expanding beyond them."},
-        {"role": "user", "content": "Good point. I'll focus on playing what I own before buying more."},
-        {"role": "assistant", "content": "That's the mark of a mature gaming approach—depth with existing games beats breadth of unplayed collection. Your engagement with Root across 10+ plays shows you already understand this principle; apply it to purchasing decisions too."}
+        {"role": "user", "content": "One player in our group always tries to quarterback in co-ops, even after we discussed it."},
+        {"role": "assistant", "content": "That's tough. Have you tried games that mechanically prevent it, like The Crew?"},
+        {"role": "user", "content": "The Crew worked, but he still tried to direct everyone's card play."},
+        {"role": "assistant", "content": "Maybe emphasize that hidden information makes quarterbacking impossible—he literally can't know your hand."},
+        {"role": "user", "content": "I think we'll stick to competitive games when he's around."},
+        {"role": "assistant", "content": "Smart—no need to force cooperation if it ruins the experience."}
       ]
     }
   ],
   "queries": [
       {
-        "query_id": "q01_cooperative_success_rate",
-        "question": "Based on all our conversations, what is the exact fraction (e.g., X/Y) of cooperative games I discussed that I rated positively?",
+        "query_id": "q01_cooperative_success_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of cooperative tabletop games I discussed that I explicitly praised for successfully preventing a single player from dominating the decision-making?",
         "reference_answer": {
-          "text": "Exactly 2/9 of the cooperative games you discussed were rated positively (Spirit Island and The Crew).",
+          "text": "The exact fraction is 2/9. You praised exactly 2 cooperative games (Spirit Island and The Crew) while explicitly criticizing the other 7 (Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium) for the alpha player problem.",
           "required_facts": [
             "cooperative_success_enjoyment",
             "cooperative_hidden_information",
@@ -727,66 +642,16 @@
           ],
           "evaluation_criteria": [
             "Provides exact fraction 2/9",
-            "Identifies Spirit Island and The Crew as the successful games"
+            "Names Spirit Island and The Crew as the successes",
+            "Identifies the 7 criticized games"
           ]
         }
       },
       {
-        "query_id": "q02_top_three_mechanisms",
-        "question": "Which of the following game mechanisms do I most consistently praise, and what is the exact count of strategy games I explicitly praised for featuring this winning mechanism? A) Asymmetric factions/variable setup. B) Dice rolling. C) Set collection.",
+        "query_id": "q02_alpha_player_count",
+        "question": "How many specific cooperative board games did I explicitly criticize because their mechanics allowed one player to dictate moves or solve the puzzle for everyone else? Provide the exact count.",
         "reference_answer": {
-          "text": "The correct option is A (Asymmetric factions/variable setup). You explicitly praised exactly 4 strategy games for featuring asymmetric factions or variable setups: Root, Spirit Island, Scythe, and Blood Rage.",
-          "required_facts": [
-            "strategy_variable_setup",
-            "cooperative_success_enjoyment",
-            "thematic_immersion_preference",
-            "area_control_preference"
-          ],
-          "evaluation_criteria": [
-            "Selects Option A",
-            "Provides exact count of 4 games",
-            "Lists Root, Spirit Island, Scythe, and Blood Rage"
-          ]
-        }
-      },
-      {
-        "query_id": "q03_strategy_vs_abstract_ratio",
-        "question": "What is the exact fraction (e.g., X/Y) of abstract games I discussed positively compared to the total number of abstract games I discussed?",
-        "reference_answer": {
-          "text": "You discussed 3 abstract games in total. You gave positive feedback for 2 of them (Azul and Santorini) and negative feedback for 1 of them (Hive), resulting in an exact fraction of 2/3 positive feedback for abstract games.",
-          "required_facts": [
-            "abstract_games_appreciation",
-            "abstract_game_repetition"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 2/3",
-            "Correctly identifies Azul and Santorini as the positive abstract games",
-            "Correctly identifies Hive as the negative abstract game"
-          ]
-        }
-      },
-      {
-        "query_id": "q04_player_count_preference",
-        "question": "What is my preferred player count for strategy games from the following options, and exactly how many strategy games did I explicitly praise for working well at this exact player count? A) 1-2 players. B) 3-4 players. C) 5-6 players.",
-        "reference_answer": {
-          "text": "The correct option is B (3-4 players). You explicitly praised exactly 3 games for working well at this count: Root (tense at 3-4 players), Terraforming Mars (productive downtime at 4 players), and Dominion (shines with 4 players).",
-          "required_facts": [
-            "player_count_sensitivity",
-            "strategy_player_agency",
-            "deck_building_appreciation"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B",
-            "Provides exact count of 3 games",
-            "Lists Root, Terraforming Mars, and Dominion"
-          ]
-        }
-      },
-      {
-        "query_id": "q05_alpha_player_causes",
-        "question": "How many cooperative games did I criticize for having the 'alpha player' or 'quarterbacking' problem? Provide the exact count and list them.",
-        "reference_answer": {
-          "text": "You criticized exactly 7 cooperative games for having the 'alpha player' or 'quarterbacking' problem. They are: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
+          "text": "You criticized exactly 7 cooperative games for this issue: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
           "required_facts": [
             "cooperative_alpha_player_problem_1",
             "cooperative_alpha_player_problem_2",
@@ -797,175 +662,227 @@
             "cooperative_alpha_player_problem_7"
           ],
           "evaluation_criteria": [
-            "Provides the exact count of 7 games",
-            "Lists all 7 criticized games correctly"
+            "Provides the exact count of 7",
+            "Names the 7 correct cooperative games"
           ]
         }
       },
       {
-        "query_id": "q06_game_length_statistics",
-        "question": "What is my ideal game length in minutes for deep strategy games from the following options, and exactly how many games did I explicitly criticize for severe time bloat or taking too long? A) 30 minutes. B) 90 minutes. C) 5+ hours.",
+        "query_id": "q03_complexity_depth_games",
+        "question": "Name 4 games where I explicitly discussed the relationship between rules complexity and strategic depth, either praising intuitive design or criticizing rulebook overload.",
         "reference_answer": {
-          "text": "The correct option is B (90 minutes). You explicitly criticized exactly 1 game for severe time bloat that disrespects your time: Twilight Imperium (which runs 5+ hours).",
+          "text": "Four games discussed in this context are Twilight Imperium (intimidating rulebook), Wingspan (excellent rulebook), Robinson Crusoe (complex rulebook enabled quarterbacking) and Terraforming Mars (depth revealing through play), Scythe is also acceptable.",
           "required_facts": [
-            "game_length_preference",
-            "strategy_complexity_overwhelm"
+            "strategy_complexity_overwhelm",
+            "rulebook_clarity_wingspan_praise",
+            "cooperative_alpha_player_problem_5",
+            "strategy_depth_appreciation"
           ],
           "evaluation_criteria": [
-            "Selects Option B",
-            "Provides exact count of 1 criticized game",
-            "Names Twilight Imperium"
+            "Names exactly 4 games",
+            "All named games are from {Twilight Imperium, Scythe, Wingspan, Robinson Crusoe, Terraforming Mars}",
+            "Mentions both positive and negative examples appropriately"
           ]
         }
       },
       {
-        "query_id": "q07_replayability_factors",
-        "question": "Which of the following factors most strongly prevents an abstract game from maintaining my interest based on my comments, and exactly how many abstract games did I review positively because their mechanics avoided this flaw? A) Fixed setups leading to formulaic openings. B) Poor components. C) Lack of theme.",
+        "query_id": "q04_asymmetry_variability_games",
+        "question": "Name 4 games where I discussed the role of asymmetry, variable factions, or unique player powers in creating fresh experiences.",
         "reference_answer": {
-          "text": "The correct option is A (Fixed setups leading to formulaic openings). You reviewed exactly 2 abstract games positively (Azul and Santorini) because their variability and mechanics kept them fresh, unlike Hive.",
+          "text": "Four games are Root (asymmetric factions), Scythe (faction abilities and expansion), Spirit Island (asymmetric spirits), and Santorini (god powers variability).",
           "required_facts": [
-            "abstract_game_repetition",
+            "strategy_variable_setup",
+            "thematic_immersion_preference",
+            "cooperative_success_enjoyment",
             "abstract_games_appreciation"
           ],
           "evaluation_criteria": [
-            "Selects Option A",
-            "Provides exact count of 2 positive abstract games",
-            "Names Azul and Santorini"
+            "Names exactly 4 games: Root, Scythe, Spirit Island, Santorini"
           ]
         }
       },
       {
-        "query_id": "q08_legacy_game_attitude",
-        "question": "How many legacy or campaign games did I discuss, and what was the exact fraction (e.g., X/Y) of them that I felt positive or cautiously optimistic about?",
+        "query_id": "q05_engine_building_satisfaction",
+        "question": "Name 4 games where I explicitly discussed the satisfaction derived from building an engine or economy over time.",
         "reference_answer": {
-          "text": "You discussed exactly 2 legacy/campaign games. Your positive feedback fraction was 1/2. You were negatively disposed toward Pandemic Legacy but cautiously optimistic about Gloomhaven.",
+          "text": "Four games are Terraforming Mars (gradual engine payoff), Dominion (deck-building trade-offs), Brass (production chains), and Scythe (engine-building with theme).",
           "required_facts": [
-            "legacy_games_attitude",
-            "cooperative_alpha_player_problem_3"
+            "strategy_depth_appreciation",
+            "deck_building_appreciation",
+            "economic_engine_appreciation",
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "Identifies that 2 legacy games were discussed",
-            "Provides the exact fraction 1/2 positive",
-            "Names Gloomhaven and Pandemic Legacy"
+            "Names exactly 4 games: Terraforming Mars, Dominion, Brass, Scythe"
           ]
         }
       },
       {
-        "query_id": "q09_most_criticized_mechanism",
-        "question": "Out of the 9 cooperative experiences I discussed, what is the exact fraction (e.g., X/9) of games that suffered from the 'quarterbacking' or 'alpha player' problem?",
+        "query_id": "q06_spectator_bystander_count",
+        "question": "How many specific cooperative games did I explicitly complain about making me feel like a 'spectator', 'bystander', 'pawn', 'robot', or being 'passive' while someone else played? Provide the exact count.",
         "reference_answer": {
-          "text": "Exactly 7/9 of the cooperative games you discussed suffered from the 'quarterbacking' or 'alpha player' problem.",
+          "text": "You explicitly used those terms to describe exactly 6 cooperative games: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Forbidden Desert, and Mysterium.",
           "required_facts": [
             "cooperative_alpha_player_problem_1",
             "cooperative_alpha_player_problem_2",
             "cooperative_alpha_player_problem_3",
             "cooperative_alpha_player_problem_4",
-            "cooperative_alpha_player_problem_5",
             "cooperative_alpha_player_problem_6",
             "cooperative_alpha_player_problem_7"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 7/9"
+            "Provides the exact count of 6",
+            "Identifies the 6 correct games associated with those exact complaints"
           ]
         }
       },
       {
-        "query_id": "q10_party_game_paradox",
-        "question": "What is the exact fraction (e.g., X/Y) of party games I enjoyed to the total number of party games I discussed? Provide the fraction and name the games.",
+        "query_id": "q07_worker_placement_exclusion_list",
+        "question": "Name 4 worker placement games mentioned during our conversations that do NOT feature a 1920s alt-history or dieselpunk theme.",
         "reference_answer": {
-          "text": "The exact fraction is 1/2. You discussed two party games: Just One, which you enjoyed due to its clever mechanical constraint, and Codenames, which you felt grew stale and repetitive.",
+          "text": "Four worker placement games mentioned that do not have that theme are Agricola, Caverna, Lords of Waterdeep and Caylus. (Scythe is correctly excluded).",
           "required_facts": [
-            "party_game_mechanical_innovation",
-            "party_games_fatigue"
+            "worker_placement_appreciation",
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "Provides the exact fraction 1/2",
-            "Identifies Just One as positive",
-            "Identifies Codenames as negative"
+            "Names exactly 4 games",
+            "Only names Agricola, Caverna, Caylus, or Lords of Waterdeep",
+            "Ensures Scythe is excluded"
           ]
         }
       },
       {
-        "query_id": "q11_theme_integration_preference",
-        "question": "Of the 4 games where I explicitly discussed thematic integration (Scythe, Brass, Catan, Pandemic), how many did I praise for having mechanics and theme that work together cohesively? Provide the exact fraction (e.g., X/4).",
+        "query_id": "q08_engine_builders_praised_count",
+        "question": "How many engine-building or deck-building games did I explicitly praise for featuring meaningful economic trade-offs, tension, or gradual payoffs, contrasting them against games that feel like mere spreadsheet optimization? Provide the exact count.",
         "reference_answer": {
-          "text": "The exact fraction is 2/4. You praised Scythe and Brass for having cohesive theme and mechanics, but criticized Catan and Pandemic for having themes that felt irrelevant or like window dressing.",
+          "text": "You explicitly praised exactly 4 games for these qualities: Terraforming Mars, Dominion, Scythe, and Brass.",
           "required_facts": [
-            "thematic_immersion_preference",
-            "economic_games_appreciation",
-            "cooperative_alpha_player_problem_1"
+            "deck_building_appreciation",
+            "strategy_depth_appreciation",
+            "economic_engine_appreciation",
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "Provides the exact fraction 2/4",
-            "Identifies the 2 praised games (Scythe, Brass)",
-            "Identifies the 2 criticized games (Catan, Pandemic)"
+            "Provides the exact count of 4",
+            "Names Terraforming Mars, Dominion, Scythe, and Brass"
           ]
         }
       },
-      {
-        "query_id": "q12_collection_philosophy",
-        "question": "Based on my stated game collection statistics, what is the exact number of my games that account for 80% of my playtime, and what exact fraction of my total collection does this represent?",
+       {
+        "query_id": "q09_worker_placement_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of worker placement games discussed that I explicitly stated I had played, compared to the total number of worker placement games mentioned in our conversations?",
         "reference_answer": {
-          "text": "Exactly 10 games account for 80% of your playtime, which represents a fraction of 10/40 (or 1/4) of your total collection.",
+          "text": "The exact fraction is 2/5. You explicitly mentioned playing Scythe and Agricola, while the assistant recommended Caverna, Caylus, and Lords of Waterdeep, which you had not yet played.",
           "required_facts": [
-            "game_collection_strategy"
+            "worker_placement_appreciation",
+            "thematic_immersion_preference"
           ],
           "evaluation_criteria": [
-            "States the exact number 10 games",
-            "Provides the exact fraction 10/40 or 1/4"
+            "Provides exact fraction 2/5",
+            "Correctly identifies Scythe and Agricola as played vs the 3 unplayed recommendations"
           ]
         }
       },
       {
-        "query_id": "q13_most_mentioned_game",
-        "question": "Which exact board game do I mention the most across all our conversations, and what is the exact count of different conversations it appears in?",
+        "query_id": "q10_interaction_quality_games",
+        "question": "Name 4 games where the quality of player interaction (or lack thereof) was a key point of discussion.",
         "reference_answer": {
-          "text": "The most mentioned board game is Root. It appeared in exactly 9 different conversations across our discussions.",
+          "text": "Four games discussed in this context are Terraforming Mars (criticized as multiplayer solitaire), Root (praised for meaningful interaction), Spirit Island (praised for cooperative interaction), and Pandemic (criticized as a spreadsheet with no real interaction).",
           "required_facts": [
-            "strategy_variable_setup",
-            "player_count_sensitivity",
-            "digital_vs_physical_preference"
-          ],
-          "evaluation_criteria": [
-            "Identifies Root",
-            "Provides exact count of 9 conversations"
-          ]
-        }
-      },
-      {
-        "query_id": "q14_agency_mentions_ratio",
-        "question": "In my discussions about cooperative games, what is the exact number of games where I explicitly complained about feeling like a 'spectator', 'bystander', or a 'robot following instructions'?",
-        "reference_answer": {
-          "text": "You explicitly complained about feeling like a 'spectator', 'bystander', or 'robot following instructions' in exactly 7 cooperative games: Pandemic, Forbidden Island, Pandemic Legacy, Flash Point, Robinson Crusoe, Forbidden Desert, and Mysterium.",
-          "required_facts": [
-            "cooperative_alpha_player_problem_1",
-            "cooperative_alpha_player_problem_2",
-            "cooperative_alpha_player_problem_3",
-            "cooperative_alpha_player_problem_4",
-            "cooperative_alpha_player_problem_5",
-            "cooperative_alpha_player_problem_6",
-            "cooperative_alpha_player_problem_7"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 7 games",
-            "Lists the correct games"
-          ]
-        }
-      },
-      {
-        "query_id": "q15_game_success_predictor",
-        "question": "Which of the following statements best summarizes my ultimate test for whether a cooperative game succeeds for me, and exactly how many cooperative games successfully passed this test? A) Does it have a traitor mechanic? B) Does it mechanically prevent a single player from dominating decisions? C) Does it have legacy elements?",
-        "reference_answer": {
-          "text": "The correct option is B (Does it mechanically prevent a single player from dominating decisions?). Exactly 2 cooperative games passed this test in our discussions (Spirit Island and The Crew).",
-          "required_facts": [
-            "strategy_player_agency",
+            "strategy_interaction_preference",
             "cooperative_success_enjoyment",
-            "cooperative_hidden_information"
+            "cooperative_alpha_player_problem_1",
+            "strategy_player_agency"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 games including Terraforming Mars, Root, Spirit Island, and Pandemic",
+            "Accurately identifies the nature of interaction discussed for each"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_learning_curve_games",
+        "question": "Name 4 games where I discussed the learning process, rulebook clarity, or how complexity affects the initial experience.",
+        "reference_answer": {
+          "text": "Four games are Robinson Crusoe (intimidating rulebook), Twilight Imperium (intimidating rulebook), Wingspan (excellent rulebook), and Terraforming Mars (depth reveals itself through play rather than upfront memorization).",
+          "required_facts": [
+            "cooperative_alpha_player_problem_5",
+            "strategy_complexity_overwhelm",
+            "rulebook_clarity_wingspan_praise",
+            "strategy_depth_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 games including Robinson Crusoe, Twilight Imperium, Wingspan, and Terraforming Mars",
+            "Captures the contrast between negative and positive learning experiences"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_solo_mode_count",
+        "question": "How many specific games did I explicitly discuss regarding their solo or single-player modes? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly discussed the solo modes of exactly 3 games: Gaia Project, Spirit Island, and Terraforming Mars.",
+          "required_facts": [
+            "solo_mode_success"
+          ],
+          "evaluation_criteria": [
+            "Provides the exact count of 3",
+            "Names Gaia Project, Spirit Island, and Terraforming Mars"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_optimal_player_count_mc",
+        "question": "Which of the following ranges represents the exact number of specific board games that I explicitly discussed as playing well at exactly 4 players (either as a specific recommendation or as part of a recommended range)? A) 1-2. B) 3-4. C) 5-6. D) 7-8.",
+        "reference_answer": {
+          "text": "Option B (3-4). You explicitly noted or were recommended exactly 4 specific games for a 4-player count: Dominion, Root, Terraforming Mars, and Just One.",
+          "required_facts": [
+            "deck_building_appreciation",
+            "player_count_sensitivity",
+            "party_game_mechanical_innovation"
           ],
           "evaluation_criteria": [
             "Selects Option B",
-            "Provides exact count of 2 passing games",
-            "Names Spirit Island and The Crew"
+            "Names Dominion, Root, Terraforming Mars, and Just One"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_criticized_coop_exclusion_list",
+        "question": "Name 4 cooperative board games I explicitly criticized for their alpha-player or quarterbacking problems, ensuring that none of them feature a firefighting theme.",
+        "reference_answer": {
+          "text": "Four cooperative games you criticized for this problem (excluding the firefighting game Flash Point) are Pandemic, Forbidden Island, Pandemic Legacy, and Robinson Crusoe. (Forbidden Desert and Mysterium are also acceptable).",
+          "required_facts": [
+            "cooperative_alpha_player_problem_1",
+            "cooperative_alpha_player_problem_2",
+            "cooperative_alpha_player_problem_3",
+            "cooperative_alpha_player_problem_5",
+            "cooperative_alpha_player_problem_6",
+            "cooperative_alpha_player_problem_7"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 games",
+            "Excludes Flash Point",
+            "All named games must be from the list of criticized co-ops"
+          ]
+        }
+      },
+      {
+        "query_id": "q15_component_exclusion_list",
+        "question": "Name 3 specific games that I praised for having excellent physical components (like miniatures, satisfying tiles, or resin bits), excluding the economic game about managing coal and iron production networks.",
+        "reference_answer": {
+          "text": "Three games you praised for physical components are Azul, Santorini, and Scythe. (Brass is correctly excluded due to the economic network constraint).",
+          "required_facts": [
+            "abstract_aesthetic_importance",
+            "abstract_games_appreciation",
+            "component_praise_scythe",
+            "economic_engine_appreciation"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 3 games",
+            "Lists Azul, Santorini, and Scythe",
+            "Ensures Brass is excluded"
           ]
         }
       }

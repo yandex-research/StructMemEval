@@ -697,9 +697,9 @@
           "text": "You explicitly mentioned exactly 4 specific books or series for these reasons: The Kingkiller Chronicle, Wolf Hall, I, Claudius, and Gardens of the Moon.",
           "required_facts": [
             "fantasy_completion_anxiety",
+            "epic_fantasy_preference",
             "historical_fiction_challenge",
-            "historical_setting_preference",
-            "epic_fantasy_preference"
+            "historical_setting_preference"
           ],
           "evaluation_criteria": [
             "Provides exact count of 4",
@@ -759,7 +759,7 @@
       },
       {
         "query_id": "q10_fantasy_authors_mc",
-        "question": "Which of the following ranges represents the exact number of specific fantasy authors I explicitly praised for their approach to world-building, character handling, or magic systems? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of specific fantasy authors I explicitly praised for their approach to world-building, character handling, or magic systems? A) 1-2. B) 3-4. C) 5-6. D) 7-8",
         "reference_answer": {
           "text": "The correct option is B (3-4). You praised exactly 3 fantasy authors: Brandon Sanderson, Juliet Marillier, and V.E. Schwab.",
           "required_facts": [
@@ -775,9 +775,9 @@
       },
       {
         "query_id": "q11_romance_historical_praised_mc",
-        "question": "Which of the following ranges represents the exact combined total of contemporary romance and historical fiction novels that I explicitly praised for their character development, emotional authenticity, or satisfying execution? A) 1-3. B) 4-6. C) 7-9.",
+        "question": "Which of the following ranges represents the exact combined total of contemporary romance and historical fiction novels that I explicitly praised for their character development, emotional authenticity, or satisfying execution? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
         "reference_answer": {
-          "text": "The correct option is B (4-6). You praised exactly 5 such novels: The Flatshare and Beach Read (romance), plus The Book Thief, The Nightingale, and All the Light We Cannot See (historical fiction).",
+          "text": "The correct option is C (5-6). You praised exactly 5 such novels: The Flatshare and Beach Read (romance), plus The Book Thief, The Nightingale, and All the Light We Cannot See (historical fiction).",
           "required_facts": [
             "romance_character_development",
             "romance_depth_example",
@@ -793,7 +793,7 @@
       },
       {
         "query_id": "q12_author_contrast_mc",
-        "question": "Which of the following ranges represents the exact number of times I explicitly contrasted an author's positive handling of a specific genre or trope against negative examples or generic pitfalls from other works within the same genre? A) 1-2. B) 3-4. C) 5-6.",
+        "question": "Which of the following ranges represents the exact number of times I explicitly contrasted an author's positive handling of a specific genre or trope against negative examples or generic pitfalls from other works within the same genre? A) 1-2. B) 3-4. C) 5-6. D) 7-9",
         "reference_answer": {
           "text": "The correct option is C (5-6). You made this explicit contrast exactly 5 times: praising Sanderson's endings versus wandering series, The Flatshare's real circumstances versus The Unhoneymooners' artificial drama, Stephen King's ordinary characters versus cheap horror, The Book Thief/Nightingale's emotional balance versus Wolf Hall's dense facts, and Juliet Marillier's integral romance versus A Court of Thorns and Roses' overshadowing romance.",
           "required_facts": [

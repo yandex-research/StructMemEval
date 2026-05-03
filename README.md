@@ -5,10 +5,10 @@
 Supplementary code for the working paper **Evaluating Memory Structure in LLM Agents**.
 
 # Raw benchmark data:
-- Accounting (count-based): [`./benchmark/accounting/data`](./benchmark/data/accounting)
+- Accounting (count-based): [`./benchmark/data/accounting`](./benchmark/data/accounting)
 - Tree-based: [`./benchmark/tree_based/graph_configs`](./benchmark/tree_based/graph_configs)
 - State tracking: [`./benchmark/data/state_machine_location`](./benchmark/data/state_machine_location)
-- Recsys: [`./benchmark/recommendations/data`](./benchmark/data/recommendations)
+- Recsys: [`./benchmark/data/recommendations`](./benchmark/data/recommendations)
 
 # Running evaluation:
 

@@ -663,256 +663,274 @@
   ],
   "queries": [
       {
-        "query_id": "q1_unanimous_praise",
-        "question": "What is the exact count of artists I discussed that I praised completely, without expressing any criticism or mixed feelings? Provide the exact number.",
+        "query_id": "q01_vulnerability_count",
+        "question": "How many specific artists did I explicitly praise for capturing human exhaustion, physical aging, or bodily vulnerability? Provide the exact count.",
         "reference_answer": {
-          "text": "You praised exactly 16 artists without any criticism or mixed feelings.",
+          "text": "You explicitly praised exactly 4 artists for this: Rodin, Degas, Kahlo, and Rembrandt.",
           "required_facts": [
-            "monet_positive",
             "rodin_positive",
-            "david_positive",
             "degas_positive",
-            "botticelli_positive",
-            "brancusi_positive",
             "kahlo_positive",
-            "vermeer_positive",
-            "rembrandt_positive",
-            "okeeffe_positive",
-            "rothko_positive",
-            "matisse_positive",
-            "cezanne_positive",
-            "vangogh_positive",
-            "hopper_positive",
-            "klimt_positive"
+            "rembrandt_positive"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 16 artists"
+            "Provides exact count of 4",
+            "Names Rodin, Degas, Kahlo, and Rembrandt"
           ]
         }
       },
       {
-        "query_id": "q2_complete_rejection",
-        "question": "Name 3 artists that I rejected entirely for producing work that felt emotionally empty, overly polished, or gimmicky.",
+        "query_id": "q02_rejected_artists_list",
+        "question": "Name 5 specific artists I explicitly rejected for producing work that felt emotionally empty, overly polished, or reliant on gimmicks.",
         "reference_answer": {
-          "text": "Three artists you rejected entirely are the pop artist who painted soup cans, the impressionist who painted saccharine boating parties, and the contemporary artist who put a shark in formaldehyde. (The artists who made steel walls or porcelain seeds are also acceptable).",
+          "text": "Five artists you completely rejected for these reasons are Warhol, Renoir, Hirst, Serra and Ai Weiwei.",
           "required_facts": [
             "warhol_negative",
             "renoir_negative",
-            "hirst_negative"
+            "hirst_negative",
+            "aiweiwei_negative",
+            "serra_negative"
           ],
           "evaluation_criteria": [
-            "Names exactly 3 artists",
-            "Ensures all 3 artists were completely rejected in the text"
+            "Names exactly 5 artists",
+            "Ensures all named artists received completely negative evaluations in the text"
           ]
         }
       },
       {
-        "query_id": "q3_mixed_reviews",
-        "question": "How many artists received mixed reviews (where I explicitly expressed both praise for some elements and criticism for others)? Provide the exact count.",
+        "query_id": "q03_immersive_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of immersive or spatial art environments I discussed—such as full-room exhibits, chapels, or walkable installations—that I evaluated purely positively?",
         "reference_answer": {
-          "text": "Exactly 5 artists received mixed reviews from you.",
+          "text": "The exact fraction is 2/5. You reviewed the immersive water lilies (Monet) and the color field chapel (Rothko) positively, but gave negative or mixed reviews to the massive steel walls (Serra), the porcelain seeds (Ai Weiwei), and the infinity mirror rooms (Kusama).",
           "required_facts": [
-            "pollock_mixed",
-            "basquiat_mixed",
-            "kusama_mixed",
-            "banksy_mixed",
-            "guernica_mixed"
+            "monet_positive",
+            "rothko_positive",
+            "serra_negative",
+            "aiweiwei_negative",
+            "kusama_mixed"
           ],
           "evaluation_criteria": [
-            "Provides exact count of 5 artists"
+            "Provides exact fraction 2/5",
+            "Correctly identifies the positively reviewed immersive works versus the negative/mixed ones"
           ]
         }
       },
       {
-        "query_id": "q4_impasto_and_texture",
-        "question": "Name 4 artists I explicitly praised for their use of visible brushwork, thick paint texture, or unpolished physical materials.",
+        "query_id": "q04_extended_observation_mc",
+        "question": "Which of the following ranges represents the exact number of artists whose specific artworks I explicitly stated I observed continuously for twenty minutes or more in a single sitting? A) 0-1. B) 2-4. C) 5+.",
         "reference_answer": {
-          "text": "Four artists praised for visible texture/materials are the post-impressionist known for starry skies, the dutch master known for late self-portraits, the sculptor of rough-hewn bronze/stone, and the painter of water lilies. (The painter of still-life apples or the pastel ballet painter are also acceptable).",
+          "text": "The correct option is B (2-4). You explicitly mentioned spending twenty minutes or more observing works by exactly 3 artists: Monet, Vermeer, and Rothko.",
           "required_facts": [
+            "monet_positive",
+            "vermeer_positive",
+            "rothko_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms the count of 3 artists"
+          ]
+        }
+      },
+      {
+        "query_id": "q05_texture_list",
+        "question": "Name 4 specific artists whose work I explicitly praised for featuring rough textures, visible seams, or thick impasto, reflecting a sense of physical struggle or honest effort.",
+        "reference_answer": {
+          "text": "Four artists you praised for these qualities are Rodin, Van Gogh, Cézanne and Rembrandt.",
+          "required_facts": [
+            "rodin_positive",
             "vangogh_positive",
             "rembrandt_positive",
-            "rodin_positive",
-            "monet_positive"
+            "cezanne_positive"
           ],
           "evaluation_criteria": [
             "Names exactly 4 artists",
-            "Ensures all 4 are linked to texture/brushwork in the text"
+            "All named artists map to praised textural techniques and physical effort"
           ]
         }
       },
       {
-        "query_id": "q5_healing_criterion",
-        "question": "Which of the following ranges represents the number of contemporary conceptual or installation artists I rejected completely due to their work lacking emotional warmth or requiring external explanation? A) 0-1. B) 2-4. C) 5+.",
+        "query_id": "q06_context_dependency_count",
+        "question": "How many specific artists or general art movements did I explicitly criticize because their work relied too heavily on external biographies, footnotes, or intellectual explanations to be effective? Provide the exact count.",
         "reference_answer": {
-          "text": "The correct option is B (2-4). You completely rejected exactly 3 contemporary conceptual/installation artists (the shark artist, the steel wall sculptor, and the porcelain seed artist).",
-          "required_facts": [
-            "hirst_negative",
-            "serra_negative",
-            "aiweiwei_negative"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B"
-          ]
-        }
-      },
-      {
-        "query_id": "q6_biography_necessity",
-        "question": "Based on my discussions of artist biographies and intent, which of the following is true? A) I rejected at least 3 artists because their work required external text or footnotes to understand. B) I praised all artists who had controversial biographies. C) I never mentioned biographies.",
-        "reference_answer": {
-          "text": "The correct option is A. You explicitly criticized the drip painter, the shark artist, and the porcelain seed artist because their work relied too heavily on biography, footnotes, or external context.",
+          "text": "You criticized exactly 4 for this reason: Pollock, Hirst, Ai Weiwei, and contemporary installations in general.",
           "required_facts": [
             "pollock_mixed",
             "hirst_negative",
-            "aiweiwei_negative"
+            "aiweiwei_negative",
+            "installations_negative"
           ],
           "evaluation_criteria": [
-            "Selects Option A"
+            "Provides exact count of 4",
+            "Lists Pollock, Hirst, Ai Weiwei, and contemporary installations"
           ]
         }
       },
       {
-        "query_id": "q7_public_vs_private",
-        "question": "How many artists did I explicitly state created work that belongs in public spaces or museums (for witness, protest, or historical memory), rather than in a private home? Provide the exact count.",
+        "query_id": "q07_sculpture_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of specific sculptors and 3D installation artists I discussed whom I evaluated purely positively?",
         "reference_answer": {
-          "text": "You explicitly associated exactly 3 artists with public spaces or museums rather than home viewing (the Mexican self-portrait painter, the creator of the anti-war mural, and the anonymous street artist).",
-          "required_facts": [
-            "guernica_mixed",
-            "kahlo_positive",
-            "banksy_mixed"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 3 artists"
-          ]
-        }
-      },
-      {
-        "query_id": "q8_medium_essentialism",
-        "question": "For how many artists did I explicitly point out that their specific choice of physical medium (like pastel, thick oil, polished bronze, or cut paper) was functionally inseparable from the emotional effect of the work? Provide the exact count.",
-        "reference_answer": {
-          "text": "You pointed out exactly 5 artists whose specific choice of medium was essential to the emotional effect (the ballet painter, the starry sky painter, the late portraitist, the cut-out artist, and the modernist bird sculptor).",
-          "required_facts": [
-            "degas_positive",
-            "vangogh_positive",
-            "rembrandt_positive",
-            "matisse_positive",
-            "brancusi_positive"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 5 artists"
-          ]
-        }
-      },
-      {
-        "query_id": "q9_sculptor_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of sculptors I reviewed purely positively compared to all sculptors I discussed?",
-        "reference_answer": {
-          "text": "The exact fraction is 3/4. You reviewed three sculptors purely positively, but completely rejected the sculptor of massive steel walls.",
+          "text": "The exact fraction is 3/7. You evaluated Rodin, Michelangelo, and Brancusi purely positively, but gave negative or mixed reviews to Hirst, Serra, Ai Weiwei, and Kusama.",
           "required_facts": [
             "rodin_positive",
             "david_positive",
             "brancusi_positive",
-            "serra_negative"
-          ],
-          "evaluation_criteria": [
-            "Provides exact fraction 3/4"
-          ]
-        }
-      },
-      {
-        "query_id": "q10_impressionist_list",
-        "question": "Name 3 Impressionist or Post-Impressionist painters whom I praised for showing authentic physical or perceptual struggle in their work, rather than polished perfection.",
-        "reference_answer": {
-          "text": "Three Impressionist/Post-Impressionist painters you praised for this are the painter of water lilies, the painter of starry skies, and the painter of still-life apples. (The pastel ballet painter is also acceptable).",
-          "required_facts": [
-            "monet_positive",
-            "vangogh_positive",
-            "cezanne_positive",
-            "degas_positive"
-          ],
-          "evaluation_criteria": [
-            "Names exactly 3 artists",
-            "Ensures all 3 artists map to the Impressionist/Post-Impressionist criteria in the text"
-          ]
-        }
-      },
-      {
-        "query_id": "q11_conceptual_fraction",
-        "question": "What is my exact positive approval fraction (purely positive reviews to total reviews) for the contemporary conceptual or interactive installation artists I discussed?",
-        "reference_answer": {
-          "text": "Your exact positive approval fraction is 0/4. You had mixed feelings about the mirror room artist, and completely rejected the other three.",
-          "required_facts": [
             "hirst_negative",
             "serra_negative",
             "aiweiwei_negative",
             "kusama_mixed"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 0/4"
+            "Provides exact fraction 3/7",
+            "Ensures correct identification of 3 positive evaluations against 4 mixed/negative ones"
           ]
         }
       },
       {
-        "query_id": "q12_non_traditional_fraction",
-        "question": "What is the exact fraction (e.g., X/Y) of artworks I discussed seeing outside of traditional framed gallery walls (e.g., immersive rooms, chapels, street art, massive steel walls) that I reviewed without any mixed or negative feelings?",
+          "query_id": "q08_positive_excluding_sanctuary_list",
+          "question": "Name 9 specific painters or sculptors I explicitly praised, making sure NOT to include any of the artists whose work I specifically described as a quiet \"sanctuary\" or a tool for \"daily meditation\".",
+          "reference_answer": {
+            "text": "Nine artists you praised who do not fit the excluded \"sanctuary/meditation\" descriptions are Van Gogh, Kahlo, Matisse, Monet, Michelangelo, Klimt, Degas, Brancusi and Rodin. (Rembrandt, O'Keeffe, and Cézanne are also acceptable. Hopper, Vermeer, Rothko, and Botticelli must be excluded).",
+            "required_facts": [
+              "monet_positive",
+              "rodin_positive",
+              "david_positive",
+              "klimt_positive",
+              "vangogh_positive",
+              "degas_positive",
+              "brancusi_positive",
+              "kahlo_positive",
+              "rembrandt_positive",
+              "okeeffe_positive",
+              "matisse_positive",
+              "cezanne_positive"
+            ],
+            "evaluation_criteria": [
+              "Names exactly 9 artists",
+              "All named artists belong to the allowed set (i.e., are explicitly praised and not described as sanctuary or daily meditation)",
+              "Hopper, Vermeer, Rothko, and Botticelli are excluded from the answer"
+            ]
+          }
+      },
+      {
+        "query_id": "q09_restraint_mc",
+        "question": "Which of the following ranges represents the exact number of artists I explicitly praised for utilizing aesthetic restraint, understatement, or economy of form (e.g., whispering instead of shouting) to achieve emotional resonance? A) 0-1. B) 2-4. C) 5-6. D) 7-8.",
         "reference_answer": {
-          "text": "The exact fraction is 2/5. You were purely positive about the immersive water lilies and the color field chapel, but had negative or mixed feelings about the steel walls, the mirror rooms, and the street art.",
+          "text": "The correct option is B (2-4). You praised exactly 3 artists for this quality: Hopper, Botticelli, and Brancusi.",
+          "required_facts": [
+            "hopper_positive",
+            "botticelli_positive",
+            "brancusi_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms the count of 3 artists matching the restraint/understatement criteria"
+          ]
+        }
+      },
+      {
+        "query_id": "q10_human_truth_count",
+        "question": "How many specific artists did I explicitly praise for capturing honest human truth, physical struggle, or unpolished reality, specifically contrasting them against idealized, overly polished, or \"perfect\" representations? Provide the exact count.",
+        "reference_answer": {
+          "text": "You explicitly praised exactly 4 artists for this: Rodin, Degas, Rembrandt, and Cézanne.",
+          "required_facts": [
+            "rodin_positive",
+            "degas_positive",
+            "rembrandt_positive",
+            "cezanne_positive"
+          ],
+          "evaluation_criteria": [
+            "Provides exact count of 4",
+            "Lists Rodin, Degas, Rembrandt, and Cézanne"
+          ]
+        }
+      },
+      {
+        "query_id": "q11_light_painters_list",
+        "question": "Name 4 specific painters I explicitly praised for their masterful rendering or dynamic use of light (whether natural, artificial, or changing) to create emotional depth.",
+        "reference_answer": {
+          "text": "Four painters you praised for this are Monet, Hopper, Rembrandt and Vermeer.",
           "required_facts": [
             "monet_positive",
+            "hopper_positive",
+            "vermeer_positive",
+            "rembrandt_positive"
+          ],
+          "evaluation_criteria": [
+            "Names exactly 4 painters",
+            "All named painters map to explicit praise of their use of light in the text"
+          ]
+        }
+      },
+      {
+        "query_id": "q12_non_human_fraction",
+        "question": "What is the exact fraction (e.g., X/Y) of artists I discussed whose primary highlighted work featured completely non-human subjects (such as flowers, everyday objects, or abstract shapes) that I evaluated purely positively?",
+        "reference_answer": {
+          "text": "The exact fraction is 4/6 (or 2/3). You evaluated Monet, O'Keeffe, Rothko, and Cézanne purely positively, but gave a negative review to Warhol and a mixed review to Pollock.",
+          "required_facts": [
+            "monet_positive",
+            "okeeffe_positive",
             "rothko_positive",
-            "serra_negative",
-            "kusama_mixed",
+            "cezanne_positive",
+            "warhol_negative",
+            "pollock_mixed"
+          ],
+          "evaluation_criteria": [
+            "Provides exact fraction 4/6 or 2/3",
+            "Identifies 4 purely positive reviews against the 6 total non-human subject works"
+          ]
+        }
+      },
+      {
+        "query_id": "q13_digital_contrast_mc",
+        "question": "Which of the following ranges represents the exact number of times I explicitly used digital technology (such as digital screens, renders, or reproductions) as a negative point of contrast to praise a physical artwork? A) 1-3. B) 4-5. C) 6-7. D) 8-9",
+        "reference_answer": {
+          "text": "The correct option is C (6-7). You explicitly used digital technology as a negative contrast exactly 6 times (while discussing Monet, Michelangelo, Van Gogh, Hopper, Rothko, and Cézanne).",
+          "required_facts": [
+            "monet_positive",
+            "david_positive",
+            "vangogh_positive",
+            "hopper_positive",
+            "rothko_positive",
+            "cezanne_positive"
+          ],
+          "evaluation_criteria": [
+            "Selects Option B",
+            "Confirms exactly 6 instances of negative digital contrast"
+          ]
+        }
+      },
+      {
+        "query_id": "q14_mixed_energy_count",
+        "question": "How many specific artists did I give mixed reviews to where I explicitly acknowledged the undeniable power, energy, or sharpness of their work, but still expressed significant reservations about experiencing it? Provide the exact count.",
+        "reference_answer": {
+          "text": "You gave mixed reviews fitting this exact description to exactly 4 artists: Picasso, Basquiat, Pollock, and Banksy.",
+          "required_facts": [
+            "guernica_mixed",
+            "basquiat_mixed",
+            "pollock_mixed",
             "banksy_mixed"
           ],
           "evaluation_criteria": [
-            "Provides exact fraction 2/5"
+            "Provides exact count of 4",
+            "Lists Picasso, Basquiat, Pollock, and Banksy"
           ]
         }
       },
       {
-        "query_id": "q13_ultimate_test_mc",
-        "question": "Which of the following best describes my test for whether a piece is true art versus mere decoration, and how many artists did I completely reject for failing this test? A) It must be visually beautiful; 2 artists failed. B) It must be able to comfort someone in pain or show emotional depth; 5 artists failed. C) It must have bright colors; 0 failed.",
+        "query_id": "q15_healing_sanctuary_list",
+        "question": "Name 5 specific artists whose work I explicitly praised for functioning as a sanctuary, offering emotional comfort, or actively transforming deep psychological pain into healing power.",
         "reference_answer": {
-          "text": "The correct option is B. You completely rejected exactly 5 artists because their work offered shock, polish, or concept without emotional depth or comfort.",
+          "text": "Five artists you praised for these transformative or sanctuary-like qualities are Kahlo, Matisse, Hopper, Van Gogh, and Vermeer.",
           "required_facts": [
-            "matisse_positive",
-            "warhol_negative",
-            "renoir_negative",
-            "hirst_negative",
-            "serra_negative",
-            "aiweiwei_negative"
-          ],
-          "evaluation_criteria": [
-            "Selects Option B"
-          ]
-        }
-      },
-      {
-        "query_id": "q14_most_transformative_language",
-        "question": "How many artists did I explicitly praise for their ability to actively transform pain, psychological struggle, or physical limitation into beauty or emotional power? Provide the exact count.",
-        "reference_answer": {
-          "text": "You explicitly praised exactly 3 artists for this ability (the starry sky painter, the Mexican self-portraitist, and the cut-out artist).",
-          "required_facts": [
-            "vangogh_positive",
             "kahlo_positive",
-            "matisse_positive"
-          ],
-          "evaluation_criteria": [
-            "Provides exact count of 3 artists"
-          ]
-        }
-      },
-      {
-        "query_id": "q15_activity_mc",
-        "question": "I mentioned several specific activities that reflect my preference for slow, engaged viewing of art. From the following options, which one did I NOT mention? A) Circling a sculpture multiple times. B) Listening to an audio guide. C) Sitting for forty minutes to watch colors shift.",
-        "reference_answer": {
-          "text": "The correct option is B (Listening to an audio guide). You mentioned circling sculptures and watching colors shift for forty minutes, but never an audio guide.",
-          "required_facts": [
-            "rothko_positive",
-            "rodin_positive",
+            "matisse_positive",
+            "hopper_positive",
+            "vangogh_positive",
             "vermeer_positive"
           ],
           "evaluation_criteria": [
-            "Selects Option B"
+            "Names exactly 5 artists",
+            "All named artists map to the themes of healing, sanctuary, or transforming pain in the text"
           ]
         }
       }
