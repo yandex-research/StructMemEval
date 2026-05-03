@@ -36,7 +36,7 @@ emem:
   embedding_api_key: ${LLM_PROVIDER_API_KEY}  
   embedding_base_url: ${LLM_PROVIDER_BASE_URL}  
   save_dir: emem_memory
-  support_json_schema: "false"              # true if model supports JSON schema, openai
+  support_json_schema: "true"               # true if model supports JSON schema, openai
   skip_retrieval_ppr: false                 # false = EMem-G, true = EMem  
   qa_top_k: 10  
   linking_top_k: 30  
@@ -50,7 +50,7 @@ experiments:
     api_key: ${OPENAI_API_KEY}
     base_url: ${OPENAI_BASE_URL}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/state_machine_location/small_bench
     run:
       mem0_rag:
         limits: [5, 20]
@@ -61,7 +61,7 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/state_machine_location/small_bench
     run:
       mem0_agent:
         iterations: 5
@@ -72,18 +72,22 @@ experiments:
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/state_machine_location/
+      - benchmark/data/state_machine_location/small_bench
     run:
       mem_agent: {}
 
-  - name: deepseek-v4-flash-emem-g
+  - name: deepseek-v4-flash-emem
     model: deepseek/deepseek-v4-flash
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
-      - benchmark/data/recommendations/
+      - benchmark/data/recommendations/benchmark_data_1sample/
     run:
-      emem: {}
+      emem: {
+          support_json_schema: "false",
+          skip_retrieval_ppr: true,
+          linking_top_k: 40,
+      }
 
 # === Execution ===
 max_cases: null

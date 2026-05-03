@@ -346,7 +346,7 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
     """Initialize EMem instance for a single case."""  
     os.environ['OPENAI_API_KEY'] = experiment.api_key or emem_config.get('api_key', '')  
     os.environ['SUPPORT_JSON_SCHEMA'] = str(emem_config.get('support_json_schema', 'false')).lower()  
-  
+
     cfg = BaseConfig(  
         max_new_tokens=emem_config.get('max_new_tokens', 8192),  
         temperature=0,  
@@ -1283,6 +1283,10 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
         # Phase 4: EMem / EMem-G  
         # ==================================================================  
         if 'emem' in experiment.run and 'emem' in config:  
+            run_cfg = experiment.run['emem']
+            missing_keys = config['emem'].keys() - run_cfg.keys()
+            run_cfg.update({k: config['emem'][k] for k in missing_keys})
+            
             print(f"\n[{experiment.name}] " + "="*60)  
             variant = "EMem" if config['emem'].get('skip_retrieval_ppr') else "EMem-G"  
             print(f"[{experiment.name}] PHASE 4: {variant} (parallel_workers={parallel_workers})")  
@@ -1291,7 +1295,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             emem_count = 0  
             if parallel_workers > 1:  
                 status = run_emem_parallel(  
-                    dataset.case_files, experiment, config['emem'],  
+                    dataset.case_files, experiment, run_cfg,  
                     script_dir, parallel_workers, verbose, mem_checkpoints,  
                     output_dir, timestamp,  
                 )  
@@ -1302,7 +1306,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     try:  
                         result = run_emem_case((  
                             case_data, case_file, experiment,  
-                            config['emem'], script_dir, verbose, mem_checkpoints,  
+                            run_cfg, script_dir, verbose, mem_checkpoints,  
                         ))  
                         save_result_file_incremental(  
                             output_dir, result['case_id'], result['config_name'],  
