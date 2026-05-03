@@ -401,6 +401,12 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
         http_client=async_http_client
     )
 
+    model.embedding_model.client = OpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=http_client
+    )
+
     return model
 
 # ============================================================================
