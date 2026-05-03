@@ -350,10 +350,10 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
     cfg = BaseConfig(  
         max_new_tokens=emem_config.get('max_new_tokens', 8192),  
         temperature=0,  
-        seed=42,  
-        force_openie_from_scratch=True,   # свежий индекс для каждого кейса  
+        seed=42,
+        force_openie_from_scratch=False,   # Set to False always! 
         force_index_from_scratch=True,  
-        save_openie=True,  
+        save_openie=True,
         openie_mode="edu_based_contextual_ee_online",  
         embedding_batch_size=emem_config.get('embedding_batch_size', 64),  
         embedding_return_as_normalized=True,  
