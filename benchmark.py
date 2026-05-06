@@ -50,11 +50,11 @@ project_root = Path(__file__).parent
 mem_agent_root = project_root / "mem-agent"  
 emem_root = project_root / "EMem"  
   
-# sys.path — для текущего процесса  
+# sys.path — for current process
 sys.path.insert(0, str(mem_agent_root))  
 sys.path.insert(0, str(emem_root))  
   
-# PYTHONPATH — для дочерних процессов (subprocess)  
+# PYTHONPATH — for subprocess  
 os.environ["PYTHONPATH"] = os.pathsep.join(filter(None, [  
     str(mem_agent_root),  
     str(emem_root),  
@@ -69,7 +69,7 @@ ChatCompletionMessage.model_config = {
     "protected_namespaces": ()
 }
 
-# EMem — импорт правильный: __init__.py экспортирует EMem из EMem.py  
+# EMem
 from src.emem import EMem as EMemModel  
 from src.emem.utils.config_utils import BaseConfig  
 from src.emem.utils.conversation_data_utils import (  
@@ -916,43 +916,55 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
     stop=stop_after_attempt(6),  
 )  
 def run_emem_case(args) -> dict:
-    """Run EMem case — LoCoMo-style, without checkpoints for reliability."""
-    case_data, case_file, experiment, emem_config, script_dir, verbose, _ = args  # игнорируем mem_checkpoints
+    case_data, case_file, experiment, emem_config, script_dir, verbose, mem_checkpoints = args
     case_id = case_data.get('case_id', 'unknown')
-    
-    # Конвертируем ВЕСЬ кейс сразу (без срезов!)
-    sample = convert_case_to_locomo_sample(case_data, case_id)
-    
-    if not sample.conversation.sessions:
-        return {'case_id': case_id, 'results': [], 'error': 'no_sessions'}
-    
-    # Один save_dir на кейс
-    save_dir = script_dir / emem_config.get('save_dir', 'emem_memory') / experiment.name / case_id
-    mem_model = initialize_emem(emem_config, experiment, str(save_dir))
-    
-    # Индексируем полностью
-    mem_model.index_conversation(sample)
-    
-    # QA на всех вопросах сразу
-    qa_results = mem_model.rag_qa_conversation(queries=sample.qa, gold_docs=None, gold_answers=None)
-    
-    queries_solutions = qa_results[0] if len(qa_results) >= 1 else []
-    
-    # Формируем результаты
     case_results = []
-    for q_idx, query_obj in enumerate(case_data['queries']):
-        solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None
-        case_results.append({
-            "query": query_obj['question'],
-            "llm_response": solution.answer if solution else "",
-            "reference_answer": query_obj['reference_answer'],
-            "memory_state": {
-                "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,
-                "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,
-            },
-        })
-    
-    return {'case_id': case_id, 'case_file': str(case_file), 'config_name': 'emem', 'results': case_results}
+
+    for i in range(len(mem_checkpoints) - 1):
+        checkpoint_start = mem_checkpoints[i]
+        checkpoint_end = mem_checkpoints[i + 1]
+
+        sample = convert_case_to_locomo_sample(
+            case_data, case_id,
+            msg_start=0,
+            msg_end=checkpoint_end
+        )
+
+        if not sample.conversation.sessions:
+            continue
+
+        checkpoint_dir = script_dir / emem_config.get('save_dir', 'emem_memory') \
+                         / experiment.name / case_id / f"checkpoint_{checkpoint_end}"
+        mem_model = initialize_emem(emem_config, experiment, str(checkpoint_dir))
+
+        mem_model.index_conversation(sample)
+
+        qa_results = mem_model.rag_qa_conversation(
+            queries=sample.qa, gold_docs=None, gold_answers=None
+        )
+        queries_solutions = qa_results[0] if len(qa_results) >= 1 else []
+
+        cp_index = -1 if single_checkpoint else i
+
+        for q_idx, query_obj in enumerate(case_data['queries']):
+            solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None
+            case_results.append({
+                "query": query_obj['question'],
+                "llm_response": solution.answer if solution else "",
+                "reference_answer": query_obj['reference_answer'],
+                "memory_state": {
+                    "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,
+                    "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,
+                },
+                "message_checkpoint": cp_index
+            })
+
+    return {
+        'case_id': case_id,
+        'case_file': str(case_file),
+        'config_name': 'emem',
+        'results': case_results,
+    }
 
 # ============================================================================
 # Run EMem benchmark in parallel
@@ -1074,7 +1086,7 @@ def run_agent_case(args) -> dict:
         if len(mem_checkpoints) - 1 == 1:
             index = -1
         else:
-            index = 1
+            index = i
         load_user_messages_to_agent(agent, case_data['sessions'], mem_checkpoints[i], mem_checkpoints[i + 1], verbose)
         for query_obj in case_data['queries']:
             result = run_mem_agent_query(agent, query_obj, memory_path, index)
