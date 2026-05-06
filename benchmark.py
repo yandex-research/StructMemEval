@@ -506,7 +506,8 @@ Answer concisely and take the user's preferences into account."""
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question}
         ],
-        extra_body={"include_reasoning": True}
+        # Delete comment synbol and set openrouter as base url to use this option
+        # extra_body={"include_reasoning": True}
     )
     answer = llm_response.choices[0].message.content
     if isinstance(query_obj['reference_answer'], list):
@@ -812,7 +813,8 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
                 messages=messages,
                 tools=MEM0_AGENT_TOOLS_LOADING,
                 tool_choice="auto",
-                extra_body={"include_reasoning": True}
+                # Delete comment synbol and set openrouter as base url to use this option
+                # extra_body={"include_reasoning": True}
             )
             assistant_msg = normalize_tool_calls(response.choices[0].message)
             messages.append(message_to_dict(assistant_msg))
