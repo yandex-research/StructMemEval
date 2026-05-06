@@ -95,7 +95,6 @@ def create_llm_client(llm_config: dict) -> OpenAI:
             verify=False, timeout=120.0,
             limits=DEFAULT_CONNECTION_LIMITS, follow_redirects=True,
         )
-    kwargs['default_headers'] = {"Ya-Pool": "YR_all"}
     return OpenAI(**kwargs)
 
 
@@ -309,15 +308,13 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     memory.llm.client = OpenAI(
         api_key=llm_config['api_key'],
         base_url=llm_config['openai_base_url'],
-        http_client=http_client,
-        default_headers={"Ya-Pool": "YR_all"}
+        http_client=http_client
     )
 
     memory.embedding_model.client = OpenAI(
         api_key=mem0_config['embedder']['api_key'],
         base_url=mem0_config['embedder']['openai_base_url'],
-        http_client=http_client,
-        default_headers={"Ya-Pool": "YR_all"}
+        http_client=http_client
     )
     memory.reset()
     return memory
