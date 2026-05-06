@@ -52,6 +52,12 @@ os.environ["PYTHONPATH"] = str(project_root / "mem-agent")
 
 from agent.agent import Agent
 
+from openai.types.chat import ChatCompletionMessage
+ChatCompletionMessage.model_config = {
+    "extra": "allow",
+    "protected_namespaces": ()
+}
+
 
 # ============================================================================
 # LLM Client Helpers
@@ -71,6 +77,7 @@ def create_llm_client(llm_config: dict) -> OpenAI:
             verify=False, timeout=120.0,
             limits=DEFAULT_CONNECTION_LIMITS, follow_redirects=True,
         )
+    kwargs['default_headers'] = {"Ya-Pool": "YR_all"}
     return OpenAI(**kwargs)
 
 
@@ -225,13 +232,15 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     memory.llm.client = OpenAI(
         api_key=llm_config['api_key'],
         base_url=llm_config['openai_base_url'],
-        http_client=http_client
+        http_client=http_client,
+        default_headers={"Ya-Pool": "YR_all"}
     )
 
     memory.embedding_model.client = OpenAI(
         api_key=mem0_config['embedder']['api_key'],
         base_url=mem0_config['embedder']['openai_base_url'],
-        http_client=http_client
+        http_client=http_client,
+        default_headers={"Ya-Pool": "YR_all"}
     )
     memory.reset()
     return memory
@@ -352,7 +361,8 @@ Answer concisely and take the user's preferences into account."""
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question}
-        ]
+        ],
+        extra_body={"include_reasoning": True}
     )
     answer = llm_response.choices[0].message.content
     if isinstance(query_obj['reference_answer'], list):
@@ -546,8 +556,18 @@ DEFAULT_AGENT_SEARCH_LIMIT = 50
 
 
 def message_to_dict(message):
-    """Convert OpenAI ChatCompletionMessage to dict for messages list."""
+    """Convert OpenAI ChatCompletionMessage to dict, preserving reasoning_content only when originally present."""
     d = {"role": message.role, "content": message.content}
+
+    reasoning = None
+    if hasattr(message, 'model_extra') and isinstance(message.model_extra, dict):
+        reasoning = message.model_extra.get('reasoning_content')
+    if reasoning is None and hasattr(message, 'reasoning_content'):
+        reasoning = message.reasoning_content
+
+    if reasoning is not None:
+        d["reasoning_content"] = reasoning
+
     if message.tool_calls:
         d["tool_calls"] = [
             {
@@ -648,6 +668,7 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
                 messages=messages,
                 tools=MEM0_AGENT_TOOLS_LOADING,
                 tool_choice="auto",
+                extra_body={"include_reasoning": True}
             )
             assistant_msg = normalize_tool_calls(response.choices[0].message)
             messages.append(message_to_dict(assistant_msg))
@@ -698,6 +719,7 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
             messages=messages,
             tools=MEM0_AGENT_TOOLS_QUERY,
             tool_choice="auto",
+            extra_body={"include_reasoning": True}
         )
         assistant_msg = normalize_tool_calls(response.choices[0].message)
         messages.append(message_to_dict(assistant_msg))
@@ -814,9 +836,13 @@ def run_agent_case(args) -> dict:
     agent = initialize_mem_agent(mem_agent_config, experiment, system_prompt_path, memory_path)
     case_results = []
     for i in range(len(mem_checkpoints) - 1):
+        if len(mem_checkpoints) - 1 == 1:
+            index = -1
+        else:
+            index = 1
         load_user_messages_to_agent(agent, case_data['sessions'], mem_checkpoints[i], mem_checkpoints[i + 1], verbose)
         for query_obj in case_data['queries']:
-            result = run_mem_agent_query(agent, query_obj, memory_path, i)
+            result = run_mem_agent_query(agent, query_obj, memory_path, index)
             case_results.append(result)
 
     print(f"  [{experiment.name}] ✓ Completed {case_id}")
@@ -832,7 +858,8 @@ def run_agent_case(args) -> dict:
 def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             system_prompt_path: str, mem_agent_config: dict,
                             script_dir: Path, max_workers: int = 3,
-                            verbose: bool = False, mem_checkpoints: list[int] = [0, None]) -> dict:
+                            verbose: bool = False, mem_checkpoints: list[int] = [0, None],
+                            output_dir: Path = None, timestamp: str = None) -> dict:
     """Run mem-agent benchmarks in parallel across cases with incremental saving."""
     tasks = []
     for case_file in case_files:
@@ -933,13 +960,17 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
                     case_results = dict()
                     for i in range(len(mem_checkpoints) - 1):
+                        if len(mem_checkpoints) - 1 == 1:
+                            index = -1
+                        else:
+                            index = i
                         load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
 
                         for limit in mem0_limits:
                             print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
 
                             for query_obj in case_data['queries']:
-                                result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, i)
+                                result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
                                 if limit in case_results:
                                     case_results[limit].append(result)
                                 else:
@@ -974,6 +1005,10 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
                     case_results = []
                     for i in range(len(mem_checkpoints) - 1):
+                        if len(mem_checkpoints) - 1 == 1:
+                            index = -1
+                        else:
+                            index = i
                         load_user_messages_to_mem0_agent(
                             mem0, case_data['sessions'], dataset.user_id,
                             dataset.mem0_agent_loading_prompt, experiment, run_cfg,
@@ -985,7 +1020,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                         for query_obj in case_data['queries']:
                             result = run_mem0_agent_query(
                                 mem0, query_obj, dataset.user_id,
-                                dataset.mem0_agent_query_prompt, experiment, run_cfg, i
+                                dataset.mem0_agent_query_prompt, experiment, run_cfg, index
                             )
                             result["message_idx"] = mem_checkpoints[i + 1]
                             case_results.append(result)
@@ -1016,7 +1051,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             if parallel_workers > 1:
                 status = run_mem_agent_parallel(
                     dataset.case_files, experiment, dataset.mem_agent_system_prompt,
-                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints,
+                    config['mem_agent'], script_dir, parallel_workers, verbose, mem_checkpoints, output_dir, timestamp
                 )
                 agent_count = status.get("success_count", 0)
             else:
