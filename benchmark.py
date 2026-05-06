@@ -194,7 +194,7 @@ def load_benchmark_data(data_path: str) -> dict:
 # ============================================================================
 
 def convert_case_to_locomo_sample(case_data: dict, case_id: str,  
-                                   msg_start: int = 0, msg_end: int = None) -> LoCoMoSample:  
+                                   msg_start: int = 0, msg_end: int = None, answer_idx=-1) -> LoCoMoSample:  
     """Convert benchmark case JSON to EMem LoCoMoSample.  
       
     msg_start/msg_end — slice of messages inside every session for checkpoints.  
@@ -231,8 +231,11 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
   
     qa_list = []  
     for query_obj in case_data.get('queries', []):  
-        ref = query_obj['reference_answer']  
-        answer = ref['text'] 
+        ref = query_obj['reference_answer']
+        if isinstance(ref, list):
+            answer = ref[answer_idx]['text']
+        else:
+            answer = ref['text']
         qa_list.append(EMemQA(  
             question=query_obj['question'],  
             answer=answer,  
@@ -924,10 +927,16 @@ def run_emem_case(args) -> dict:
         checkpoint_start = mem_checkpoints[i]
         checkpoint_end = mem_checkpoints[i + 1]
 
+        if len(mem_checkpoints) - 1 == 1:
+            index = -1
+        else:
+            index = i
+
         sample = convert_case_to_locomo_sample(
             case_data, case_id,
             msg_start=0,
-            msg_end=checkpoint_end
+            msg_end=checkpoint_end,
+            answer_idx=index
         )
 
         if not sample.conversation.sessions:
@@ -944,19 +953,20 @@ def run_emem_case(args) -> dict:
         )
         queries_solutions = qa_results[0] if len(qa_results) >= 1 else []
 
-        cp_index = -1 if single_checkpoint else i
-
         for q_idx, query_obj in enumerate(case_data['queries']):
+            ref_answer = query_obj['reference_answer']
+            if isinstance(ref_answer, list):
+                ref_answer = ref_answer[index]
             solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None
             case_results.append({
                 "query": query_obj['question'],
                 "llm_response": solution.answer if solution else "",
-                "reference_answer": query_obj['reference_answer'],
+                "reference_answer": ref_answer,
                 "memory_state": {
                     "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,
                     "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,
                 },
-                "message_checkpoint": cp_index
+                "message_checkpoint": index
             })
 
     return {
