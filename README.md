@@ -1,6 +1,4 @@
-# Evaluating Memory Structure in LLM Agents
-
-<a href='https://arxiv.org/abs/2602.11243'><img src='https://img.shields.io/badge/ArXiv-PDF-red' height="25"></a> &nbsp;
+# Anonymous Supplementary Code
 
 Supplementary code for the working paper **Evaluating Memory Structure in LLM Agents**.
 
