@@ -6,7 +6,7 @@ Supplementary code for the working paper **Evaluating Memory Structure in LLM Ag
 
 # Raw benchmark data:
 - Accounting (count-based): [`./benchmark/data/accounting`](./benchmark/data/accounting)
-- Tree-based: [`./benchmark/tree_based/graph_configs`](./benchmark/tree_based/graph_configs)
+- Tree-based: [`./benchmark/data/tree_based`](./benchmark/data/tree_based)
 - State tracking: [`./benchmark/data/state_machine_location`](./benchmark/data/state_machine_location)
 - Recsys: [`./benchmark/data/recommendations`](./benchmark/data/recommendations)
 
@@ -33,6 +33,28 @@ python -m ipykernel install --user --name=mem-agent --display-name="Python (mem-
 
 cd ..
 cp mem-agent/.env .env
+```
+
+## Install EMem
+
+```bash
+git clone https://github.com/KevinSRR/EMem.git
+cd EMem
+
+# install dependencies
+make install
+
+# set SUPPORT_JSON_SCHEMA to false
+export SUPPORT_JSON_SCHEMA=false
+
+cd ..
+```
+
+## Isntall dependencies
+
+```bash
+# use https://pypi.org/simple/
+pip install -r requirements.txt
 ```
 
 ## Environment Variables

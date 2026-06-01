@@ -43,7 +43,7 @@
   },
   {
     "role": "user",
-    "content": "Alice: Bob, I noticed you bought drinks separately earlier for \u20ac18. Should we include that?"
+    "content": "Alice: Bob, I noticed you bought drinks separately earlier. Should we include that?"
   },
   {
     "role": "user",
