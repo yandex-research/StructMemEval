@@ -45,36 +45,43 @@ emem:
 
 # === Experiments ===
 experiments:
-  - name: gpt-4o-retrieval
-    model: gpt-4o
-    api_key: ${OPENAI_API_KEY}
-    base_url: ${OPENAI_BASE_URL}
-    data_dirs:
-      - benchmark/data/state_machine_location/small_bench
-    run:
-      mem0_rag:
-        limits: [5, 20]
-        infer: [false]
-
-  - name: gemini-3-flash-agent
+  - name: gemini3.0-flash-mem0-rag
     model: google/gemini-3-flash-preview
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
+      - benchmark/data/tree_based/small_bench
+      - benchmark/data/accounting
       - benchmark/data/state_machine_location/small_bench
+      - benchmark/data/recommendations/benchmark_data
     run:
-      mem0_agent:
-        iterations: 5
-        search_limit: 50
-
-  - name: gemini-3-pro-memagent
-    model: google/gemini-3-pro-preview
+      mem0_rag:
+        limits: [5, 20]
+        infer: [false]
+  - name: gemini3.0-flash-mem-agent
+    model: google/gemini-3-flash-preview
     api_key: ${LLM_PROVIDER_API_KEY}
     base_url: ${LLM_PROVIDER_BASE_URL}
     data_dirs:
+      - benchmark/data/tree_based/small_bench
+      - benchmark/data/accounting
       - benchmark/data/state_machine_location/small_bench
+      - benchmark/data/recommendations/benchmark_data
     run:
       mem_agent: {}
+  - name: gemini3.0-flash-mem0-agent
+    model: google/gemini-3-flash-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - benchmark/data/tree_based/small_bench
+      - benchmark/data/accounting
+      - benchmark/data/state_machine_location/small_bench
+      - benchmark/data/recommendations/benchmark_data
+    run:
+      mem_0agent:
+        iterations: 5
+        search_limit: 50
 
   - name: deepseek-v4-flash-emem
     model: deepseek/deepseek-v4-flash
@@ -91,7 +98,7 @@ experiments:
 
 # === Execution ===
 max_cases: null
-parallel_workers: 2
+parallel_workers: 5
 auto_clean_memory: false
 output_dir: eval_results
 verbose: false
