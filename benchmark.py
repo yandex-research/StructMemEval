@@ -23,12 +23,12 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 from openai import RateLimitError
 
 from dotenv import load_dotenv
-from httpx import Client
+from httpx import Client, AsyncClient
 from openai._base_client import DEFAULT_TIMEOUT, DEFAULT_CONNECTION_LIMITS
 
 import yaml
 from tqdm import tqdm
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 
 from config_loader import load_config, resolve_dataset, resolve_experiments, Experiment, Dataset
 
@@ -45,12 +45,23 @@ from mem0.embeddings.configs import EmbedderConfig
 from mem0.llms.configs import LlmConfig
 from mem0.vector_stores.configs import VectorStoreConfig
 
-# mem-agent
-project_root = Path(__file__).parent
-sys.path.insert(0, str(project_root / "mem-agent"))
-os.environ["PYTHONPATH"] = str(project_root / "mem-agent")
-
-from agent.agent import Agent
+# mem-agent  
+project_root = Path(__file__).parent  
+mem_agent_root = project_root / "mem-agent"  
+emem_root = project_root / "EMem"  
+  
+# sys.path — for current process
+sys.path.insert(0, str(mem_agent_root))  
+sys.path.insert(0, str(emem_root))  
+  
+# PYTHONPATH — for subprocess  
+os.environ["PYTHONPATH"] = os.pathsep.join(filter(None, [  
+    str(mem_agent_root),  
+    str(emem_root),  
+    os.environ.get("PYTHONPATH", ""),  
+]))  
+  
+from agent.agent import Agent  
 
 from openai.types.chat import ChatCompletionMessage
 ChatCompletionMessage.model_config = {
@@ -58,6 +69,13 @@ ChatCompletionMessage.model_config = {
     "protected_namespaces": ()
 }
 
+# EMem
+from src.emem import EMem as EMemModel  
+from src.emem.utils.config_utils import BaseConfig  
+from src.emem.utils.conversation_data_utils import (  
+    LoCoMoSample, Conversation, Session, Turn, QA as EMemQA,  
+    EventSummary, Observation  
+)
 
 # ============================================================================
 # LLM Client Helpers
@@ -171,7 +189,69 @@ def load_benchmark_data(data_path: str) -> dict:
     with open(data_path, 'r') as f:
         return json.load(f)
 
+# ============================================================================
+# Converting case format to locomo format for EMem
+# ============================================================================
 
+def convert_case_to_locomo_sample(case_data: dict, case_id: str,  
+                                   msg_start: int = 0, msg_end: int = None, answer_idx=-1) -> LoCoMoSample:  
+    """Convert benchmark case JSON to EMem LoCoMoSample.  
+      
+    msg_start/msg_end — slice of messages inside every session for checkpoints.  
+    """  
+    sessions_dict = {}  
+    session_counter = 1  
+    for session_idx, session in enumerate(case_data['sessions']):  
+        msgs = session['messages'][msg_start:msg_end]  
+        if not msgs:  
+            continue  
+        turns = []  
+        for turn_idx, msg in enumerate(msgs):
+            speaker = "User" if msg['role'] == 'user' else "Assistant"
+            dia_id = f"D{session_counter}:{turn_idx + 1}"
+            turns.append(Turn(
+                speaker=speaker,
+                dia_id=dia_id,
+                text=msg['content'],
+            ))
+          
+        date_time = f"12:00 pm on {session_counter} January, 2024"  
+        sessions_dict[session_counter] = Session(  
+            session_id=session_counter,  
+            date_time=date_time,  
+            turns=turns  
+        )  
+        session_counter += 1  
+  
+    conversation = Conversation(  
+        speaker_a="User",  
+        speaker_b="Assistant",  
+        sessions=sessions_dict  
+    )  
+  
+    qa_list = []  
+    for query_obj in case_data.get('queries', []):  
+        ref = query_obj['reference_answer']
+        if isinstance(ref, list):
+            answer = ref[answer_idx]['text']
+        else:
+            answer = ref['text']
+        qa_list.append(EMemQA(  
+            question=query_obj['question'],  
+            answer=answer,  
+            evidence=[],  
+            category=1  
+        ))  
+  
+    return LoCoMoSample(  
+        sample_id=case_id,  
+        qa=qa_list,  
+        conversation=conversation,  
+        event_summary=EventSummary(events={}),  
+        observation=Observation(observations={}),  
+        session_summary={}  
+    )
+    
 # ============================================================================
 # Memory Initialization
 # ============================================================================
@@ -271,6 +351,76 @@ def initialize_mem_agent(mem_agent_config: dict, experiment: Experiment, prompt_
     )
     return agent
 
+def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) -> EMemModel:  
+    """Initialize EMem instance for a single case."""  
+    os.environ['OPENAI_API_KEY'] = experiment.api_key or emem_config.get('api_key', '')  
+    os.environ['SUPPORT_JSON_SCHEMA'] = str(emem_config.get('support_json_schema', 'false')).lower()  
+
+    cfg = BaseConfig(  
+        max_new_tokens=emem_config.get('max_new_tokens', 8192),  
+        temperature=0,  
+        seed=42,
+        force_openie_from_scratch=False,   # Set to False always! 
+        force_index_from_scratch=True,  
+        save_openie=True,
+        openie_mode="edu_based_contextual_ee_online",  
+        embedding_batch_size=emem_config.get('embedding_batch_size', 64),  
+        embedding_return_as_normalized=True,  
+        synonymy_edge_sim_threshold=emem_config.get('synonymy_edge_sim_threshold', 0.9),  
+        linking_top_k=emem_config.get('linking_top_k', 30),  
+        qa_top_k=emem_config.get('qa_top_k', 10),  
+        date_format_type="locomo",  
+        save_dir=save_dir,  
+        skip_retrieval_ppr=emem_config.get('skip_retrieval_ppr', False),  
+    )  
+  
+    model_name = experiment.model or emem_config.get('model', 'gpt-4o-mini')  
+    base_url = experiment.base_url or emem_config.get('base_url')  
+    embedding_model = emem_config.get('embedding_model', 'text-embedding-3-small')  
+    embedding_base_url = emem_config.get('embedding_base_url') or base_url  
+  
+    model = EMemModel(  
+        global_config=cfg,  
+        save_dir=save_dir,  
+        llm_model_name=model_name,  
+        llm_base_url=base_url,  
+        embedding_model_name=embedding_model,  
+        embedding_base_url=embedding_base_url,  
+    )
+
+    http_client = Client(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+
+    async_http_client = AsyncClient(
+        verify=False,
+        timeout=DEFAULT_TIMEOUT,
+        limits=DEFAULT_CONNECTION_LIMITS,
+        follow_redirects=True
+    )
+    
+    model.llm_model.openai_client = OpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=http_client
+    )
+
+    model.llm_model.async_openai_client = AsyncOpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=async_http_client
+    )
+
+    model.embedding_model.client = OpenAI(
+        api_key=emem_config['api_key'],
+        base_url=emem_config['base_url'],
+        http_client=http_client
+    )
+
+    return model
 
 # ============================================================================
 # Session Loading
@@ -336,7 +486,7 @@ def run_mem0_query(memory: Memory, query_obj: dict, user_id: str, limit: int,
     question = query_obj['question']
 
     # Search with specified limit
-    response = memory.search(question, user_id=user_id, limit=limit)
+    response = memory.search(question, filters={"user_id": user_id}, limit=limit)
     results = response.get('results', [])
 
     # Get retrieved memories
@@ -359,7 +509,8 @@ Answer concisely and take the user's preferences into account."""
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question}
         ],
-        extra_body={"include_reasoning": True}
+        # Delete comment synbol and set openrouter as base url to use this option
+        # extra_body={"include_reasoning": True}
     )
     answer = llm_response.choices[0].message.content
     if isinstance(query_obj['reference_answer'], list):
@@ -594,7 +745,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
     elif func_name == "search_memories":
         query = args["query"]
         limit = args.get("limit", 5)
-        response = memory.search(query, user_id=user_id, limit=limit)
+        response = memory.search(query, filters={"user_id": user_id}, limit=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
@@ -665,7 +816,8 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
                 messages=messages,
                 tools=MEM0_AGENT_TOOLS_LOADING,
                 tool_choice="auto",
-                extra_body={"include_reasoning": True}
+                # Delete comment synbol and set openrouter as base url to use this option
+                # extra_body={"include_reasoning": True}
             )
             assistant_msg = normalize_tool_calls(response.choices[0].message)
             messages.append(message_to_dict(assistant_msg))
@@ -716,7 +868,8 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
             messages=messages,
             tools=MEM0_AGENT_TOOLS_QUERY,
             tool_choice="auto",
-            extra_body={"include_reasoning": True}
+            # Delete comment synbol and set openrouter as base url to use this option
+            # extra_body={"include_reasoning": True}
         )
         assistant_msg = normalize_tool_calls(response.choices[0].message)
         messages.append(message_to_dict(assistant_msg))
@@ -756,6 +909,113 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
         "message_checkpoint": answer_idx
     }
 
+# ============================================================================
+# Run EMem case
+# ============================================================================
+    
+@retry(  
+    retry=retry_if_exception_type(RateLimitError),  
+    wait=wait_exponential(multiplier=2, min=30, max=180),  
+    stop=stop_after_attempt(6),  
+)  
+def run_emem_case(args) -> dict:
+    case_data, case_file, experiment, emem_config, script_dir, verbose, mem_checkpoints = args
+    case_id = case_data.get('case_id', 'unknown')
+    case_results = []
+
+    for i in range(len(mem_checkpoints) - 1):
+        checkpoint_start = mem_checkpoints[i]
+        checkpoint_end = mem_checkpoints[i + 1]
+
+        if len(mem_checkpoints) - 1 == 1:
+            index = -1
+        else:
+            index = i
+
+        sample = convert_case_to_locomo_sample(
+            case_data, case_id,
+            msg_start=0,
+            msg_end=checkpoint_end,
+            answer_idx=index
+        )
+
+        if not sample.conversation.sessions:
+            continue
+
+        checkpoint_dir = script_dir / emem_config.get('save_dir', 'emem_memory') \
+                         / experiment.name / case_id / f"checkpoint_{checkpoint_end}"
+        mem_model = initialize_emem(emem_config, experiment, str(checkpoint_dir))
+
+        mem_model.index_conversation(sample)
+
+        qa_results = mem_model.rag_qa_conversation(
+            queries=sample.qa, gold_docs=None, gold_answers=None
+        )
+        queries_solutions = qa_results[0] if len(qa_results) >= 1 else []
+
+        for q_idx, query_obj in enumerate(case_data['queries']):
+            ref_answer = query_obj['reference_answer']
+            if isinstance(ref_answer, list):
+                ref_answer = ref_answer[index]
+            solution = queries_solutions[q_idx] if q_idx < len(queries_solutions) else None
+            case_results.append({
+                "query": query_obj['question'],
+                "llm_response": solution.answer if solution else "",
+                "reference_answer": ref_answer,
+                "memory_state": {
+                    "retrieved_edus": len(solution.edus) if solution and solution.edus else 0,
+                    "retrieved_sessions": len(solution.docs) if solution and solution.docs else 0,
+                },
+                "message_checkpoint": index
+            })
+
+    return {
+        'case_id': case_id,
+        'case_file': str(case_file),
+        'config_name': 'emem',
+        'results': case_results,
+    }
+
+# ============================================================================
+# Run EMem benchmark in parallel
+# ============================================================================
+
+def run_emem_parallel(case_files: list[Path], experiment: Experiment,  
+                       emem_config: dict, script_dir: Path,  
+                       max_workers: int = 2, verbose: bool = False,  
+                       mem_checkpoints: list = [0, None],  
+                       output_dir: Path = None, timestamp: str = None) -> dict:  
+    """Run EMem benchmarks in parallel across cases."""  
+    tasks = [  
+        (load_benchmark_data(str(cf)), cf, experiment, emem_config,  
+         script_dir, verbose, mem_checkpoints)  
+        for cf in case_files  
+    ]  
+  
+    print(f"\n[{experiment.name}] Running {len(tasks)} EMem tasks "  
+          f"with {max_workers} parallel workers...")  
+  
+    success_count, failed_cases = 0, []  
+  
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:  
+        futures = {executor.submit(run_emem_case, t): t for t in tasks}  
+        for future in tqdm(as_completed(futures), total=len(futures),  
+                           desc=f"[{experiment.name}] emem"):  
+            task = futures[future]  
+            case_id = task[0].get('case_id', 'unknown')  
+            try:  
+                result = future.result()  
+                save_result_file_incremental(  
+                    output_dir, result['case_id'], result['config_name'],  
+                    result['results'], timestamp, experiment,  
+                    Path(result['case_file']),  
+                )  
+                success_count += 1  
+            except Exception as e:  
+                print(f"  [{experiment.name}] ✗ EMem error in {case_id}: {e}")  
+                failed_cases.append((case_id, str(e)))  
+  
+    return {"success_count": success_count, "failed_cases": failed_cases}
 
 # ============================================================================
 # Output Generation
@@ -836,7 +1096,7 @@ def run_agent_case(args) -> dict:
         if len(mem_checkpoints) - 1 == 1:
             index = -1
         else:
-            index = 1
+            index = i
         load_user_messages_to_agent(agent, case_data['sessions'], mem_checkpoints[i], mem_checkpoints[i + 1], verbose)
         for query_obj in case_data['queries']:
             result = run_mem_agent_query(agent, query_obj, memory_path, index)
@@ -1074,6 +1334,48 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 print(f"  [{experiment.name}] ✓ Saved {agent_count} mem-agent result files")
         elif 'mem_agent' in experiment.run:
             print(f"\n[{experiment.name}] PHASE 3: SKIPPED (no mem_agent prompt in dataset)")
+
+        # ==================================================================  
+        # Phase 4: EMem / EMem-G  
+        # ==================================================================  
+        if 'emem' in experiment.run and 'emem' in config:  
+            run_cfg = experiment.run['emem']
+            missing_keys = config['emem'].keys() - run_cfg.keys()
+            run_cfg.update({k: config['emem'][k] for k in missing_keys})
+            
+            print(f"\n[{experiment.name}] " + "="*60)  
+            variant = "EMem" if config['emem'].get('skip_retrieval_ppr') else "EMem-G"  
+            print(f"[{experiment.name}] PHASE 4: {variant} (parallel_workers={parallel_workers})")  
+            print(f"[{experiment.name}] " + "="*60)  
+          
+            emem_count = 0  
+            if parallel_workers > 1:  
+                status = run_emem_parallel(  
+                    dataset.case_files, experiment, run_cfg,  
+                    script_dir, parallel_workers, verbose, mem_checkpoints,  
+                    output_dir, timestamp,  
+                )  
+                emem_count = status.get("success_count", 0)  
+            else:  
+                for case_file in dataset.case_files:  
+                    case_data = load_benchmark_data(str(case_file))  
+                    try:  
+                        result = run_emem_case((  
+                            case_data, case_file, experiment,  
+                            run_cfg, script_dir, verbose, mem_checkpoints,  
+                        ))  
+                        save_result_file_incremental(  
+                            output_dir, result['case_id'], result['config_name'],  
+                            result['results'], timestamp, experiment, case_file,  
+                        )  
+                        emem_count += 1  
+                    except Exception as e:  
+                        print(f"    [{experiment.name}] ✗ EMem FAILED {case_file.stem}: {e}")  
+          
+            if emem_count:  
+                print(f"  [{experiment.name}] ✓ Saved {emem_count} EMem result files")  
+        elif 'emem' in experiment.run:  
+            print(f"\n[{experiment.name}] PHASE 4: SKIPPED (no 'emem' section in config)")
 
     print(f"\n[{experiment.name}] " + "="*60)
     print(f"[{experiment.name}] ✓ EXPERIMENT COMPLETE!")
