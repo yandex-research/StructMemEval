@@ -1,0 +1,15 @@
+You are a binary evaluator. You will be given a Question, a Reference answer, and a Model response. Determine if the Model response is equivalent to the Reference answer.
+
+Rules for equivalence:
+- **Factual content**: The Model response must convey the same key facts and meaning as the Reference. Paraphrasing, reordering, and minor wording differences are allowed as long as the core information is preserved.
+- **Numerical values**: All numbers (dates, amounts, settlement plan figures, etc.) must match exactly in value. Formatting differences (e.g., “$5000” vs “5000”) are acceptable, but any numerical deviation makes the response NOT equivalent.
+- **Empty / refusal**: If the Model response is empty, says “I don’t know”, or declines to answer, it is NOT equivalent (score 0).
+- **Extra information**: The Model response may include additional non‑contradictory details. However, if the extra information alters the core meaning or introduces false facts, the response is NOT equivalent.
+
+Now evaluate the following case:
+Question: {question}
+Reference answer: {reference_text}
+Model response: {llm_response}
+
+Score 1 if the Model response is equivalent to the Reference answer, 0 otherwise.
+Reply with ONLY the number 1 or 0, nothing else.

@@ -31,7 +31,8 @@ def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict)
     reference = result['reference_answer']
     prompt = prompt_template.format(
         reference_text=reference['text'],
-        llm_response=result['llm_response']
+        llm_response=result['llm_response'],
+        question=result["query"]
     )
     response = client.chat.completions.create(
         model=model, messages=[{"role": "user", "content": prompt}],
@@ -46,7 +47,7 @@ def main():
     results_dir = script_dir / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
 
-    prompt_template = load_prompt(script_dir / "prompt.txt")
+    prompt_template = load_prompt(script_dir / "prompt_new_2.txt")
 
     # Judge model from env (default: gpt-4o)
     model = os.environ.get('JUDGE_MODEL', 'gpt-4o')
@@ -151,16 +152,16 @@ def main():
                     status = "FAIL"
                 
                 print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
-
-            print(f"\nDirectory {results_dir.suffix} done! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
-            output_path = results_dir / parent.name / "0judge_total.json"
-            for key, value in successes.items():
-                if value[1] != 0:
-                    successes[key].append(value[0] / value[1])
-                else:
-                    successes[key].append(None)
-            with open(output_path, 'w') as f:
-                json.dump(successes, f, indent=2)
+            if len(to_judge) > 0:
+                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
+                output_path = results_dir / parent.name / "0judge_total.json"
+                for key, value in successes.items():
+                    if value[1] != 0:
+                        successes[key].append(value[0] / value[1])
+                    else:
+                        successes[key].append(None)
+                with open(output_path, 'w') as f:
+                    json.dump(successes, f, indent=2)
 
 
 if __name__ == "__main__":

@@ -69,7 +69,7 @@ def main():
     prompt = load_prompt(script_dir / config['prompt_path'])
     eval_data = load_eval_results(script_dir.parent / config['input_path'])
 
-    client = OpenAI(api_key=config['api_key'])
+    client = OpenAI(api_key=config['api_key'], default_headers={"Ya-Pool": "judge"})
 
     # Flatten cases[].results[] into single list
     all_results = []
