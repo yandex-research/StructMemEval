@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Shirley James and Danielle Lopez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Shirley James and Danielle Lopez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Shirley James works with Danielle Lopez."
+    },
+    {
+      "question": "Based on everything stored, are Danielle Lopez and Kevin Watson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Danielle Lopez and Kevin Watson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Danielle Lopez is a colleague of Kevin Watson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Kevin Watson and Sharon Torres?",
+      "reference_answer": {
+        "text": "No. Kevin Watson and Sharon Torres are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kevin Watson works with Sharon Torres."
+    },
+    {
+      "question": "Is it correct that Sharon Torres and Harold Perez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Sharon Torres and Harold Perez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Sharon Torres is a colleague of Harold Perez."
+    },
+    {
+      "question": "Based on everything stored, are Harold Perez and Jesse Adams unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Harold Perez and Jesse Adams are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Harold Perez works with Jesse Adams."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jesse Adams and Patrick Cooper?",
+      "reference_answer": {
+        "text": "No. Jesse Adams and Patrick Cooper are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jesse Adams is a colleague of Patrick Cooper."
+    },
+    {
+      "question": "Is it correct that Patrick Cooper and Martha Reed have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Patrick Cooper and Martha Reed are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Patrick Cooper works with Martha Reed."
+    },
+    {
+      "question": "Based on everything stored, are Martha Reed and Ryan Morgan unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Martha Reed and Ryan Morgan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Martha Reed is a colleague of Ryan Morgan."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Ryan Morgan and Kelly Jordan?",
+      "reference_answer": {
+        "text": "No. Ryan Morgan and Kelly Jordan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Ryan Morgan works with Kelly Jordan."
+    },
+    {
+      "question": "Is it correct that Kelly Jordan and Timothy Stevens have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Kelly Jordan and Timothy Stevens are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kelly Jordan is a colleague of Timothy Stevens."
+    },
+    {
+      "question": "Based on everything stored, are Jessica Butler and Edward Alexander unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Jessica Butler and Edward Alexander are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jessica Butler works with Edward Alexander."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Edward Alexander and David Long?",
+      "reference_answer": {
+        "text": "No. Edward Alexander and David Long are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Edward Alexander is a colleague of David Long."
+    },
+    {
+      "question": "Is it correct that Shirley James and Kevin Watson are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Shirley James and Kevin Watson are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Shirley James cannot be reached from Sharon Torres through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Shirley James and Sharon Torres are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Shirley James and Harold Perez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Shirley James and Harold Perez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Shirley James cannot be reached from Jesse Adams through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Shirley James and Jesse Adams are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Shirley James and Patrick Cooper are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Shirley James and Patrick Cooper are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Danielle Lopez cannot be reached from Sharon Torres through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Danielle Lopez and Sharon Torres are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Danielle Lopez and Harold Perez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Danielle Lopez and Harold Perez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Danielle Lopez cannot be reached from Jesse Adams through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Danielle Lopez and Jesse Adams are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Shirley James was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Shirley James is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Danielle Lopez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Danielle Lopez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kevin Watson was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Kevin Watson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Sharon Torres an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Sharon Torres is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Harold Perez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Harold Perez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Jesse Adams an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Jesse Adams is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Patrick Cooper was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Patrick Cooper is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Martha Reed an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Martha Reed is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Ryan Morgan was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Ryan Morgan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Kelly Jordan an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Kelly Jordan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }
