@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Mary Simmons and Steven Scott have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Steven Scott are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Mary Simmons works with Steven Scott."
+    },
+    {
+      "question": "Based on everything stored, are Steven Scott and Kayla Graham unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Steven Scott and Kayla Graham are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Steven Scott is a colleague of Kayla Graham."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Kayla Graham and Bradley Jackson?",
+      "reference_answer": {
+        "text": "No. Kayla Graham and Bradley Jackson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kayla Graham works with Bradley Jackson."
+    },
+    {
+      "question": "Is it correct that Bradley Jackson and Paul Fisher have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Bradley Jackson and Paul Fisher are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Bradley Jackson is a colleague of Paul Fisher."
+    },
+    {
+      "question": "Based on everything stored, are Paul Fisher and Christina Hayes unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Paul Fisher and Christina Hayes are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Paul Fisher works with Christina Hayes."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Christina Hayes and Arthur Torres?",
+      "reference_answer": {
+        "text": "No. Christina Hayes and Arthur Torres are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Christina Hayes is a colleague of Arthur Torres."
+    },
+    {
+      "question": "Is it correct that Arthur Torres and Anna Jordan have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Arthur Torres and Anna Jordan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Arthur Torres works with Anna Jordan."
+    },
+    {
+      "question": "Based on everything stored, are Anna Jordan and Lawrence Howard unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Anna Jordan and Lawrence Howard are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Anna Jordan is a colleague of Lawrence Howard."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Lawrence Howard and Stephanie Alvarez?",
+      "reference_answer": {
+        "text": "No. Lawrence Howard and Stephanie Alvarez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Lawrence Howard works with Stephanie Alvarez."
+    },
+    {
+      "question": "Is it correct that Stephanie Alvarez and Donna Long have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Stephanie Alvarez and Donna Long are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Stephanie Alvarez is a colleague of Donna Long."
+    },
+    {
+      "question": "Based on everything stored, are Karen Hernandez and Frank Carter unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Karen Hernandez and Frank Carter are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Karen Hernandez works with Frank Carter."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Frank Carter and Lisa Henderson?",
+      "reference_answer": {
+        "text": "No. Frank Carter and Lisa Henderson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Frank Carter is a colleague of Lisa Henderson."
+    },
+    {
+      "question": "Is it correct that Mary Simmons and Kayla Graham are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Kayla Graham are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Mary Simmons cannot be reached from Bradley Jackson through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Bradley Jackson are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Mary Simmons and Paul Fisher are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Paul Fisher are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Mary Simmons cannot be reached from Christina Hayes through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Christina Hayes are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Mary Simmons and Arthur Torres are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Mary Simmons and Arthur Torres are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Steven Scott cannot be reached from Bradley Jackson through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Steven Scott and Bradley Jackson are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Steven Scott and Paul Fisher are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Steven Scott and Paul Fisher are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Steven Scott cannot be reached from Christina Hayes through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Steven Scott and Christina Hayes are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Mary Simmons was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Mary Simmons is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Steven Scott an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Steven Scott is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kayla Graham was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Kayla Graham is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Bradley Jackson an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Bradley Jackson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Paul Fisher was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Paul Fisher is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Christina Hayes an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Christina Hayes is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Arthur Torres was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Arthur Torres is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Anna Jordan an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Anna Jordan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Lawrence Howard was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Lawrence Howard is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Stephanie Alvarez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Stephanie Alvarez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Emily Sanders and Michael Clark have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and Michael Clark are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Emily Sanders works with Michael Clark."
+    },
+    {
+      "question": "Based on everything stored, are Michael Clark and Madison Aguilar unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Michael Clark and Madison Aguilar are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Michael Clark is a colleague of Madison Aguilar."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Madison Aguilar and Alice Perry?",
+      "reference_answer": {
+        "text": "No. Madison Aguilar and Alice Perry are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Madison Aguilar works with Alice Perry."
+    },
+    {
+      "question": "Is it correct that Alice Perry and George Ellis have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Alice Perry and George Ellis are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Alice Perry is a colleague of George Ellis."
+    },
+    {
+      "question": "Based on everything stored, are George Ellis and Martha Foster unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. George Ellis and Martha Foster are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "George Ellis works with Martha Foster."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Martha Foster and Karen West?",
+      "reference_answer": {
+        "text": "No. Martha Foster and Karen West are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Martha Foster is a colleague of Karen West."
+    },
+    {
+      "question": "Is it correct that Karen West and Bryan Torres have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Karen West and Bryan Torres are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Karen West works with Bryan Torres."
+    },
+    {
+      "question": "Based on everything stored, are Bryan Torres and Bryan Jordan unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Bryan Torres and Bryan Jordan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Bryan Torres is a colleague of Bryan Jordan."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Bryan Jordan and Deborah Morgan?",
+      "reference_answer": {
+        "text": "No. Bryan Jordan and Deborah Morgan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Bryan Jordan works with Deborah Morgan."
+    },
+    {
+      "question": "Is it correct that Deborah Morgan and Brittany Powell have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Deborah Morgan and Brittany Powell are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Deborah Morgan is a colleague of Brittany Powell."
+    },
+    {
+      "question": "Based on everything stored, are Walter Russell and Evelyn Jackson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Walter Russell and Evelyn Jackson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Walter Russell works with Evelyn Jackson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Evelyn Jackson and Cynthia Baker?",
+      "reference_answer": {
+        "text": "No. Evelyn Jackson and Cynthia Baker are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Evelyn Jackson is a colleague of Cynthia Baker."
+    },
+    {
+      "question": "Is it correct that Emily Sanders and Madison Aguilar are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and Madison Aguilar are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Emily Sanders cannot be reached from Alice Perry through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and Alice Perry are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Emily Sanders and George Ellis are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and George Ellis are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Emily Sanders cannot be reached from Martha Foster through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and Martha Foster are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Emily Sanders and Karen West are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Emily Sanders and Karen West are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Michael Clark cannot be reached from Alice Perry through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Michael Clark and Alice Perry are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Michael Clark and George Ellis are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Michael Clark and George Ellis are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Michael Clark cannot be reached from Martha Foster through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Michael Clark and Martha Foster are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Emily Sanders was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Emily Sanders is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Michael Clark an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Michael Clark is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Madison Aguilar was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Madison Aguilar is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Alice Perry an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Alice Perry is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that George Ellis was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. George Ellis is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Martha Foster an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Martha Foster is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Karen West was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Karen West is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Bryan Torres an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Bryan Torres is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Bryan Jordan was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Bryan Jordan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Deborah Morgan an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Deborah Morgan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

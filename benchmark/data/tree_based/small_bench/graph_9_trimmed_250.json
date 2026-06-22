@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Angela Smith and Lauren Alvarez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Lauren Alvarez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Angela Smith works with Lauren Alvarez."
+    },
+    {
+      "question": "Based on everything stored, are Lauren Alvarez and Jacqueline Martin unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Lauren Alvarez and Jacqueline Martin are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Lauren Alvarez is a colleague of Jacqueline Martin."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jacqueline Martin and Denise Jones?",
+      "reference_answer": {
+        "text": "No. Jacqueline Martin and Denise Jones are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jacqueline Martin works with Denise Jones."
+    },
+    {
+      "question": "Is it correct that Denise Jones and Anthony Tran have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Denise Jones and Anthony Tran are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Denise Jones is a colleague of Anthony Tran."
+    },
+    {
+      "question": "Based on everything stored, are Anthony Tran and Patrick Martinez unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Anthony Tran and Patrick Martinez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Anthony Tran works with Patrick Martinez."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Patrick Martinez and Catherine Hernandez?",
+      "reference_answer": {
+        "text": "No. Patrick Martinez and Catherine Hernandez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Patrick Martinez is a colleague of Catherine Hernandez."
+    },
+    {
+      "question": "Is it correct that Catherine Hernandez and Julie Davis have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Catherine Hernandez and Julie Davis are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Catherine Hernandez works with Julie Davis."
+    },
+    {
+      "question": "Based on everything stored, are Julie Davis and Roy Davis unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Julie Davis and Roy Davis are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Julie Davis is a colleague of Roy Davis."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Roy Davis and Anna Medina?",
+      "reference_answer": {
+        "text": "No. Roy Davis and Anna Medina are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Roy Davis works with Anna Medina."
+    },
+    {
+      "question": "Is it correct that Anna Medina and Harold Ramos have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Anna Medina and Harold Ramos are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Anna Medina is a colleague of Harold Ramos."
+    },
+    {
+      "question": "Based on everything stored, are Jesse Richardson and Walter Lopez unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Jesse Richardson and Walter Lopez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jesse Richardson works with Walter Lopez."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Walter Lopez and Katherine Ward?",
+      "reference_answer": {
+        "text": "No. Walter Lopez and Katherine Ward are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Walter Lopez is a colleague of Katherine Ward."
+    },
+    {
+      "question": "Is it correct that Angela Smith and Jacqueline Martin are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Jacqueline Martin are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Angela Smith cannot be reached from Denise Jones through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Denise Jones are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Angela Smith and Anthony Tran are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Anthony Tran are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Angela Smith cannot be reached from Patrick Martinez through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Patrick Martinez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Angela Smith and Catherine Hernandez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Angela Smith and Catherine Hernandez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Lauren Alvarez cannot be reached from Denise Jones through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Lauren Alvarez and Denise Jones are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Lauren Alvarez and Anthony Tran are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Lauren Alvarez and Anthony Tran are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Lauren Alvarez cannot be reached from Patrick Martinez through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Lauren Alvarez and Patrick Martinez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Angela Smith was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Angela Smith is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Lauren Alvarez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Lauren Alvarez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Jacqueline Martin was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Jacqueline Martin is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Denise Jones an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Denise Jones is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Anthony Tran was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Anthony Tran is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Patrick Martinez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Patrick Martinez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Catherine Hernandez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Catherine Hernandez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Julie Davis an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Julie Davis is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Roy Davis was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Roy Davis is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Anna Medina an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Anna Medina is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

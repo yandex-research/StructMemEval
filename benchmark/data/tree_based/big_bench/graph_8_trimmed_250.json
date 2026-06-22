@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Kimberly Kim and Donald Murphy have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Donald Murphy are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kimberly Kim works with Donald Murphy."
+    },
+    {
+      "question": "Based on everything stored, are Donald Murphy and Samuel Harrison unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Donald Murphy and Samuel Harrison are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Donald Murphy is a colleague of Samuel Harrison."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Samuel Harrison and Janet West?",
+      "reference_answer": {
+        "text": "No. Samuel Harrison and Janet West are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Samuel Harrison works with Janet West."
+    },
+    {
+      "question": "Is it correct that Janet West and Virginia Rivera have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Janet West and Virginia Rivera are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Janet West is a colleague of Virginia Rivera."
+    },
+    {
+      "question": "Based on everything stored, are Virginia Rivera and Amanda Bryant unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Virginia Rivera and Amanda Bryant are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Virginia Rivera works with Amanda Bryant."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Amanda Bryant and Martha Lopez?",
+      "reference_answer": {
+        "text": "No. Amanda Bryant and Martha Lopez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Amanda Bryant is a colleague of Martha Lopez."
+    },
+    {
+      "question": "Is it correct that Martha Lopez and Christine Tran have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Martha Lopez and Christine Tran are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Martha Lopez works with Christine Tran."
+    },
+    {
+      "question": "Based on everything stored, are Christine Tran and Justin Gibson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Christine Tran and Justin Gibson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Christine Tran is a colleague of Justin Gibson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Justin Gibson and Edward Woods?",
+      "reference_answer": {
+        "text": "No. Justin Gibson and Edward Woods are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Justin Gibson works with Edward Woods."
+    },
+    {
+      "question": "Is it correct that Edward Woods and Nicholas Gibson have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Edward Woods and Nicholas Gibson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Edward Woods is a colleague of Nicholas Gibson."
+    },
+    {
+      "question": "Based on everything stored, are Willie Hill and Paul Kim unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Willie Hill and Paul Kim are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Willie Hill works with Paul Kim."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Paul Kim and Gabriel Howard?",
+      "reference_answer": {
+        "text": "No. Paul Kim and Gabriel Howard are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Paul Kim is a colleague of Gabriel Howard."
+    },
+    {
+      "question": "Is it correct that Kimberly Kim and Samuel Harrison are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Samuel Harrison are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Kimberly Kim cannot be reached from Janet West through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Janet West are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kimberly Kim and Virginia Rivera are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Virginia Rivera are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Kimberly Kim cannot be reached from Amanda Bryant through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Amanda Bryant are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kimberly Kim and Martha Lopez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim and Martha Lopez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Donald Murphy cannot be reached from Janet West through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Donald Murphy and Janet West are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Donald Murphy and Virginia Rivera are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Donald Murphy and Virginia Rivera are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Donald Murphy cannot be reached from Amanda Bryant through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Donald Murphy and Amanda Bryant are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kimberly Kim was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Kimberly Kim is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Donald Murphy an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Donald Murphy is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Samuel Harrison was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Samuel Harrison is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Janet West an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Janet West is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Virginia Rivera was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Virginia Rivera is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Amanda Bryant an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Amanda Bryant is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Martha Lopez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Martha Lopez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Christine Tran an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Christine Tran is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Justin Gibson was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Justin Gibson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Edward Woods an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Edward Woods is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

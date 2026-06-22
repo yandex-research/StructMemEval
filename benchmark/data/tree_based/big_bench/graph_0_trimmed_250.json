@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Johnny Fisher and Christopher Peterson have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Christopher Peterson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Johnny Fisher works with Christopher Peterson."
+    },
+    {
+      "question": "Based on everything stored, are Christopher Peterson and Kathleen Herrera unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Christopher Peterson and Kathleen Herrera are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Christopher Peterson is a colleague of Kathleen Herrera."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Kathleen Herrera and Linda Brooks?",
+      "reference_answer": {
+        "text": "No. Kathleen Herrera and Linda Brooks are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kathleen Herrera works with Linda Brooks."
+    },
+    {
+      "question": "Is it correct that Linda Brooks and Amanda Myers have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Linda Brooks and Amanda Myers are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Linda Brooks is a colleague of Amanda Myers."
+    },
+    {
+      "question": "Based on everything stored, are Amanda Myers and Janet Edwards unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Amanda Myers and Janet Edwards are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Amanda Myers works with Janet Edwards."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Janet Edwards and Cynthia Scott?",
+      "reference_answer": {
+        "text": "No. Janet Edwards and Cynthia Scott are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Janet Edwards is a colleague of Cynthia Scott."
+    },
+    {
+      "question": "Is it correct that Cynthia Scott and Lawrence Scott have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Cynthia Scott and Lawrence Scott are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Cynthia Scott works with Lawrence Scott."
+    },
+    {
+      "question": "Based on everything stored, are Lawrence Scott and Abigail Harris unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Lawrence Scott and Abigail Harris are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Lawrence Scott is a colleague of Abigail Harris."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Abigail Harris and Joan Morgan?",
+      "reference_answer": {
+        "text": "No. Abigail Harris and Joan Morgan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Abigail Harris works with Joan Morgan."
+    },
+    {
+      "question": "Is it correct that Joan Morgan and Brenda Nguyen have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Joan Morgan and Brenda Nguyen are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Joan Morgan is a colleague of Brenda Nguyen."
+    },
+    {
+      "question": "Based on everything stored, are Billy Sanchez and Denise Jackson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Billy Sanchez and Denise Jackson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Billy Sanchez works with Denise Jackson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Denise Jackson and Teresa Ruiz?",
+      "reference_answer": {
+        "text": "No. Denise Jackson and Teresa Ruiz are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Denise Jackson is a colleague of Teresa Ruiz."
+    },
+    {
+      "question": "Is it correct that Johnny Fisher and Kathleen Herrera are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Kathleen Herrera are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Johnny Fisher cannot be reached from Linda Brooks through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Linda Brooks are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Johnny Fisher and Amanda Myers are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Amanda Myers are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Johnny Fisher cannot be reached from Janet Edwards through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Janet Edwards are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Johnny Fisher and Cynthia Scott are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher and Cynthia Scott are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Christopher Peterson cannot be reached from Linda Brooks through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Christopher Peterson and Linda Brooks are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Christopher Peterson and Amanda Myers are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Christopher Peterson and Amanda Myers are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Christopher Peterson cannot be reached from Janet Edwards through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Christopher Peterson and Janet Edwards are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Johnny Fisher was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Johnny Fisher is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Christopher Peterson an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Christopher Peterson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kathleen Herrera was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Kathleen Herrera is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Linda Brooks an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Linda Brooks is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Amanda Myers was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Amanda Myers is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Janet Edwards an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Janet Edwards is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Cynthia Scott was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Cynthia Scott is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Lawrence Scott an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Lawrence Scott is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Abigail Harris was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Abigail Harris is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Joan Morgan an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Joan Morgan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }
