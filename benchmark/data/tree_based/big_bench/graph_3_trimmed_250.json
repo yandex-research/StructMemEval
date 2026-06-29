@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Nicholas Rodriguez and Grace Alvarez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Grace Alvarez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Nicholas Rodriguez works with Grace Alvarez."
+    },
+    {
+      "question": "Based on everything stored, are Grace Alvarez and Rachel Allen unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Grace Alvarez and Rachel Allen are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Grace Alvarez is a colleague of Rachel Allen."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Rachel Allen and Barbara Simmons?",
+      "reference_answer": {
+        "text": "No. Rachel Allen and Barbara Simmons are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Rachel Allen works with Barbara Simmons."
+    },
+    {
+      "question": "Is it correct that Barbara Simmons and Steven Howard have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Barbara Simmons and Steven Howard are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Barbara Simmons is a colleague of Steven Howard."
+    },
+    {
+      "question": "Based on everything stored, are Steven Howard and Samuel Scott unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Steven Howard and Samuel Scott are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Steven Howard works with Samuel Scott."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Samuel Scott and Melissa Ramos?",
+      "reference_answer": {
+        "text": "No. Samuel Scott and Melissa Ramos are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Samuel Scott is a colleague of Melissa Ramos."
+    },
+    {
+      "question": "Is it correct that Melissa Ramos and Alan Young have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Melissa Ramos and Alan Young are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Melissa Ramos works with Alan Young."
+    },
+    {
+      "question": "Based on everything stored, are Alan Young and Raymond Johnson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Alan Young and Raymond Johnson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Alan Young is a colleague of Raymond Johnson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Raymond Johnson and Brittany Harris?",
+      "reference_answer": {
+        "text": "No. Raymond Johnson and Brittany Harris are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Raymond Johnson works with Brittany Harris."
+    },
+    {
+      "question": "Is it correct that Brittany Harris and Teresa Young have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Brittany Harris and Teresa Young are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Brittany Harris is a colleague of Teresa Young."
+    },
+    {
+      "question": "Based on everything stored, are Justin Harrison and Jonathan Ruiz unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Justin Harrison and Jonathan Ruiz are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Justin Harrison works with Jonathan Ruiz."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jonathan Ruiz and Ronald Lopez?",
+      "reference_answer": {
+        "text": "No. Jonathan Ruiz and Ronald Lopez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jonathan Ruiz is a colleague of Ronald Lopez."
+    },
+    {
+      "question": "Is it correct that Nicholas Rodriguez and Rachel Allen are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Rachel Allen are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Nicholas Rodriguez cannot be reached from Barbara Simmons through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Barbara Simmons are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Nicholas Rodriguez and Steven Howard are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Steven Howard are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Nicholas Rodriguez cannot be reached from Samuel Scott through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Samuel Scott are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Nicholas Rodriguez and Melissa Ramos are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez and Melissa Ramos are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Grace Alvarez cannot be reached from Barbara Simmons through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Grace Alvarez and Barbara Simmons are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Grace Alvarez and Steven Howard are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Grace Alvarez and Steven Howard are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Grace Alvarez cannot be reached from Samuel Scott through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Grace Alvarez and Samuel Scott are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Nicholas Rodriguez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Nicholas Rodriguez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Grace Alvarez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Grace Alvarez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Rachel Allen was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Rachel Allen is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Barbara Simmons an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Barbara Simmons is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Steven Howard was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Steven Howard is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Samuel Scott an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Samuel Scott is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Melissa Ramos was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Melissa Ramos is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Alan Young an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Alan Young is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Raymond Johnson was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Raymond Johnson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Brittany Harris an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Brittany Harris is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

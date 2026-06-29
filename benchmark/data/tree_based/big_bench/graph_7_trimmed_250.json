@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Helen Jordan and Vincent Smith have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Vincent Smith are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Helen Jordan works with Vincent Smith."
+    },
+    {
+      "question": "Based on everything stored, are Vincent Smith and Frank Hughes unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Vincent Smith and Frank Hughes are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Vincent Smith is a colleague of Frank Hughes."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Frank Hughes and Douglas Edwards?",
+      "reference_answer": {
+        "text": "No. Frank Hughes and Douglas Edwards are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Frank Hughes works with Douglas Edwards."
+    },
+    {
+      "question": "Is it correct that Douglas Edwards and Susan Kelly have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Douglas Edwards and Susan Kelly are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Douglas Edwards is a colleague of Susan Kelly."
+    },
+    {
+      "question": "Based on everything stored, are Susan Kelly and Joshua Cox unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Susan Kelly and Joshua Cox are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Susan Kelly works with Joshua Cox."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Joshua Cox and Adam Ross?",
+      "reference_answer": {
+        "text": "No. Joshua Cox and Adam Ross are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Joshua Cox is a colleague of Adam Ross."
+    },
+    {
+      "question": "Is it correct that Adam Ross and Bobby Tran have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Adam Ross and Bobby Tran are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Adam Ross works with Bobby Tran."
+    },
+    {
+      "question": "Based on everything stored, are Bobby Tran and Denise Jackson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Bobby Tran and Denise Jackson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Bobby Tran is a colleague of Denise Jackson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Denise Jackson and Sharon Stewart?",
+      "reference_answer": {
+        "text": "No. Denise Jackson and Sharon Stewart are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Denise Jackson works with Sharon Stewart."
+    },
+    {
+      "question": "Is it correct that Sharon Stewart and Joan Rivera have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Sharon Stewart and Joan Rivera are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Sharon Stewart is a colleague of Joan Rivera."
+    },
+    {
+      "question": "Based on everything stored, are Natalie Lewis and Lawrence Medina unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Natalie Lewis and Lawrence Medina are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Natalie Lewis works with Lawrence Medina."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Lawrence Medina and Nicole Ramos?",
+      "reference_answer": {
+        "text": "No. Lawrence Medina and Nicole Ramos are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Lawrence Medina is a colleague of Nicole Ramos."
+    },
+    {
+      "question": "Is it correct that Helen Jordan and Frank Hughes are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Frank Hughes are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Helen Jordan cannot be reached from Douglas Edwards through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Douglas Edwards are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Helen Jordan and Susan Kelly are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Susan Kelly are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Helen Jordan cannot be reached from Joshua Cox through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Joshua Cox are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Helen Jordan and Adam Ross are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Helen Jordan and Adam Ross are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Vincent Smith cannot be reached from Douglas Edwards through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Vincent Smith and Douglas Edwards are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Vincent Smith and Susan Kelly are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Vincent Smith and Susan Kelly are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Vincent Smith cannot be reached from Joshua Cox through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Vincent Smith and Joshua Cox are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Helen Jordan was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Helen Jordan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Vincent Smith an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Vincent Smith is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Frank Hughes was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Frank Hughes is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Douglas Edwards an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Douglas Edwards is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Susan Kelly was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Susan Kelly is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Joshua Cox an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Joshua Cox is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Adam Ross was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Adam Ross is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Bobby Tran an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Bobby Tran is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Denise Jackson was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Denise Jackson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Sharon Stewart an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Sharon Stewart is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

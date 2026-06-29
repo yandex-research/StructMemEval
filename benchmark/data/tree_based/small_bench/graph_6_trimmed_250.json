@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Kevin Ramirez and Christine Hernandez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Christine Hernandez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kevin Ramirez works with Christine Hernandez."
+    },
+    {
+      "question": "Based on everything stored, are Christine Hernandez and Emma Baker unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Christine Hernandez and Emma Baker are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Christine Hernandez is a colleague of Emma Baker."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Emma Baker and Sharon Rogers?",
+      "reference_answer": {
+        "text": "No. Emma Baker and Sharon Rogers are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Emma Baker works with Sharon Rogers."
+    },
+    {
+      "question": "Is it correct that Sharon Rogers and Samuel Ward have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Sharon Rogers and Samuel Ward are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Sharon Rogers is a colleague of Samuel Ward."
+    },
+    {
+      "question": "Based on everything stored, are Samuel Ward and Stephen Gibson unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Samuel Ward and Stephen Gibson are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Samuel Ward works with Stephen Gibson."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Stephen Gibson and Jerry Ramos?",
+      "reference_answer": {
+        "text": "No. Stephen Gibson and Jerry Ramos are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Stephen Gibson is a colleague of Jerry Ramos."
+    },
+    {
+      "question": "Is it correct that Jerry Ramos and Richard Hughes have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Jerry Ramos and Richard Hughes are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jerry Ramos works with Richard Hughes."
+    },
+    {
+      "question": "Based on everything stored, are Richard Hughes and Katherine Moore unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Richard Hughes and Katherine Moore are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Richard Hughes is a colleague of Katherine Moore."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Katherine Moore and Kimberly Allen?",
+      "reference_answer": {
+        "text": "No. Katherine Moore and Kimberly Allen are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Katherine Moore works with Kimberly Allen."
+    },
+    {
+      "question": "Is it correct that Kimberly Allen and Pamela Sanchez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Kimberly Allen and Pamela Sanchez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kimberly Allen is a colleague of Pamela Sanchez."
+    },
+    {
+      "question": "Based on everything stored, are William Reed and Jerry Ruiz unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. William Reed and Jerry Ruiz are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "William Reed works with Jerry Ruiz."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jerry Ruiz and Joseph Mitchell?",
+      "reference_answer": {
+        "text": "No. Jerry Ruiz and Joseph Mitchell are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jerry Ruiz is a colleague of Joseph Mitchell."
+    },
+    {
+      "question": "Is it correct that Kevin Ramirez and Emma Baker are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Emma Baker are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Kevin Ramirez cannot be reached from Sharon Rogers through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Sharon Rogers are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kevin Ramirez and Samuel Ward are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Samuel Ward are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Kevin Ramirez cannot be reached from Stephen Gibson through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Stephen Gibson are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kevin Ramirez and Jerry Ramos are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez and Jerry Ramos are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Christine Hernandez cannot be reached from Sharon Rogers through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Christine Hernandez and Sharon Rogers are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Christine Hernandez and Samuel Ward are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Christine Hernandez and Samuel Ward are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Christine Hernandez cannot be reached from Stephen Gibson through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Christine Hernandez and Stephen Gibson are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Kevin Ramirez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Kevin Ramirez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Christine Hernandez an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Christine Hernandez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Emma Baker was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Emma Baker is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Sharon Rogers an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Sharon Rogers is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Samuel Ward was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Samuel Ward is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Stephen Gibson an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Stephen Gibson is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Jerry Ramos was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Jerry Ramos is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Richard Hughes an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Richard Hughes is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Katherine Moore was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Katherine Moore is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Kimberly Allen an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Kimberly Allen is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }

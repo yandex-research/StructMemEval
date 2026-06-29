@@ -1019,6 +1019,288 @@
       "reference_answer": {
         "text": "Yes, they are indirect colleagues according to their graph relations."
       }
+    },
+    {
+      "question": "Is it correct that Susan Williams and Jesse Foster have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Jesse Foster are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Susan Williams works with Jesse Foster."
+    },
+    {
+      "question": "Based on everything stored, are Jesse Foster and Jerry Kelly unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Jesse Foster and Jerry Kelly are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jesse Foster is a colleague of Jerry Kelly."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jerry Kelly and Catherine Jordan?",
+      "reference_answer": {
+        "text": "No. Jerry Kelly and Catherine Jordan are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jerry Kelly works with Catherine Jordan."
+    },
+    {
+      "question": "Is it correct that Catherine Jordan and Samuel Jimenez have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Catherine Jordan and Samuel Jimenez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Catherine Jordan is a colleague of Samuel Jimenez."
+    },
+    {
+      "question": "Based on everything stored, are Samuel Jimenez and Gary Romero unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Samuel Jimenez and Gary Romero are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Samuel Jimenez works with Gary Romero."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Gary Romero and Gerald Hall?",
+      "reference_answer": {
+        "text": "No. Gary Romero and Gerald Hall are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Gary Romero is a colleague of Gerald Hall."
+    },
+    {
+      "question": "Is it correct that Gerald Hall and Kelly Mitchell have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Gerald Hall and Kelly Mitchell are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Gerald Hall works with Kelly Mitchell."
+    },
+    {
+      "question": "Based on everything stored, are Kelly Mitchell and Eugene White unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Kelly Mitchell and Eugene White are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Kelly Mitchell is a colleague of Eugene White."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Eugene White and Anna Barnes?",
+      "reference_answer": {
+        "text": "No. Eugene White and Anna Barnes are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Eugene White works with Anna Barnes."
+    },
+    {
+      "question": "Is it correct that Anna Barnes and Janet Aguilar have never been described as colleagues and share no working relationship at all?",
+      "reference_answer": {
+        "text": "No. Anna Barnes and Janet Aguilar are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Anna Barnes is a colleague of Janet Aguilar."
+    },
+    {
+      "question": "Based on everything stored, are Gregory Nguyen and Jose Martin unrelated at work, with no colleague or co-worker link between them?",
+      "reference_answer": {
+        "text": "No. Gregory Nguyen and Jose Martin are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Gregory Nguyen works with Jose Martin."
+    },
+    {
+      "question": "Is it true that there is no working relationship of any kind between Jose Martin and Dennis Alvarez?",
+      "reference_answer": {
+        "text": "No. Jose Martin and Dennis Alvarez are colleagues / work together according to the records, so the claim that they are unrelated at work is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "A_negated_direct_edge",
+      "source": "negative_generated",
+      "stated_fact": "Jose Martin is a colleague of Dennis Alvarez."
+    },
+    {
+      "question": "Is it correct that Susan Williams and Jerry Kelly are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Jerry Kelly are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Susan Williams cannot be reached from Catherine Jordan through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Catherine Jordan are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Susan Williams and Samuel Jimenez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Samuel Jimenez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Susan Williams cannot be reached from Gary Romero through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Gary Romero are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Susan Williams and Gerald Hall are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Susan Williams and Gerald Hall are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Jesse Foster cannot be reached from Catherine Jordan through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Jesse Foster and Catherine Jordan are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Jesse Foster and Samuel Jimenez are completely unrelated at work, with no chain of colleague relations linking them?",
+      "reference_answer": {
+        "text": "No. Jesse Foster and Samuel Jimenez are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it true that Jesse Foster cannot be reached from Gary Romero through any chain of colleague relationships in the records?",
+      "reference_answer": {
+        "text": "No. Jesse Foster and Gary Romero are linked through a chain of stated colleague relations, so the claim that no such chain exists is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "B_negated_reachability",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Susan Williams was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Susan Williams is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Jesse Foster an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Jesse Foster is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Jerry Kelly was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Jerry Kelly is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Catherine Jordan an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Catherine Jordan is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Samuel Jimenez was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Samuel Jimenez is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Gary Romero an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Gary Romero is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Gerald Hall was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Gerald Hall is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Kelly Mitchell an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Kelly Mitchell is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Is it correct that Eugene White was never mentioned as having any colleague or working relationship with anyone in the records?",
+      "reference_answer": {
+        "text": "No. Eugene White is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
+    },
+    {
+      "question": "Based on the stored information, is Anna Barnes an isolated person for whom no colleague or co-worker is mentioned at all?",
+      "reference_answer": {
+        "text": "No. Anna Barnes is explicitly described as having at least one colleague / co-worker in the records, so the claim of having none is false."
+      },
+      "expected_answer": "no",
+      "negative_type": "C_false_isolation",
+      "source": "negative_generated"
     }
   ]
 }
