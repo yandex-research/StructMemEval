@@ -1027,10 +1027,24 @@ def save_results(data: dict, output_path: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def is_case_already_processed(output_dir: Path, case_id: str, config_name: str) -> bool:
+    """Check if a result file for the given case and config already exists and contains the case."""
+    output_path = output_dir / f"results_{case_id}_{config_name}.json"
+    if not output_path.exists():
+        return False
+    try:
+        with open(output_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        cases = data.get("cases", [])
+        return any(c.get("case_id") == case_id for c in cases)
+    except (json.JSONDecodeError, KeyError):
+        return False
+    
+
 def save_result_file_incremental(output_dir: Path, case_id: str, config_name: str,
                                   results: list, timestamp: str, experiment: Experiment,
                                   case_file: Path):
-    """Инкрементальное сохранение: пропускает кейс, если он уже есть в файле."""
+    """Incremental file saving"""
     output_path = output_dir / f"results_{case_id}_{config_name}.json"
     
     existing_data = {}
@@ -1080,7 +1094,7 @@ def run_agent_case(args) -> dict:
 
     Args:
         args: Tuple of (case_data, case_file, experiment, system_prompt_path,
-                         mem_agent_config, script_dir, verbose)
+                         mem_agent_config, script_dir, verbose, mem_checkpoints)
     """
     case_data, case_file, experiment, system_prompt_path, mem_agent_config, script_dir, verbose, mem_checkpoints = args
 
@@ -1117,15 +1131,26 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
                             script_dir: Path, max_workers: int = 3,
                             verbose: bool = False, mem_checkpoints: list[int] = [0, None],
                             output_dir: Path = None, timestamp: str = None) -> dict:
-    """Run mem-agent benchmarks in parallel across cases with incremental saving."""
+    """Run mem-agent benchmarks in parallel across cases with incremental saving,
+       skipping cases that already have result files."""
     tasks = []
+    skipped = 0
     for case_file in case_files:
         case_data = load_benchmark_data(str(case_file))
+        case_id = case_data.get('case_id', case_file.stem)
+        if is_case_already_processed(output_dir, case_id, 'mem_agent'):
+            print(f"  ⏭ Skipping {case_id} (mem_agent) — result already exists")
+            skipped += 1
+            continue
         tasks.append((case_data, case_file, experiment, system_prompt_path,
                        mem_agent_config, script_dir, verbose, mem_checkpoints))
 
-    print(f"\n[{experiment.name}] Running {len(tasks)} mem-agent tasks with {max_workers} parallel workers...")
+    if not tasks:
+        print(f"\n[{experiment.name}] All {len(case_files)} mem-agent cases already processed ({skipped} skipped).")
+        return {"success_count": 0, "failed_cases": [], "skipped": skipped}
 
+    print(f"\n[{experiment.name}] Running {len(tasks)} mem-agent tasks "
+          f"({skipped} skipped, {max_workers} parallel workers)...")
     success_count = 0
     failed_cases = []
 
@@ -1155,7 +1180,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
         for case_id, error in failed_cases:
             print(f"  - {case_id}: {error}")
 
-    return {"success_count": success_count, "failed_cases": failed_cases}
+    return {"success_count": success_count, "failed_cases": failed_cases, "skipped": skipped}
 
 
 # ============================================================================
@@ -1212,29 +1237,37 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     case_id = case_data.get('case_id', case_file.stem)
                     group_name = case_file.stem
 
-                    print(f"\n  [{experiment.name}] Processing {case_id} (infer={infer_mode})...")
+                    unprocessed_limits = []
+                    for limit in mem0_limits:
+                        config_name = f"mem0_{infer_suffix}{limit}"
+                        if not is_case_already_processed(output_dir, case_id, config_name):
+                            unprocessed_limits.append(limit)
+
+                    if not unprocessed_limits:
+                        print(f"\n  ⏭ [{experiment.name}] Skipping {case_id} (mem0, infer={infer_mode}) — all results already exist")
+                        continue
+
+                    print(f"\n  [{experiment.name}] Processing {case_id} (infer={infer_mode}, limits to run: {unprocessed_limits})...")
 
                     mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
-                    case_results = dict()
+                    case_results = {limit: [] for limit in unprocessed_limits}
                     for i in range(len(mem_checkpoints) - 1):
                         if len(mem_checkpoints) - 1 == 1:
                             index = -1
                         else:
                             index = i
-                        load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
-
-                        for limit in mem0_limits:
+                        load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id,
+                                                   mem_checkpoints[i], mem_checkpoints[i + 1],
+                                                   infer=infer_mode)
+                        for limit in unprocessed_limits:
                             print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
 
                             for query_obj in case_data['queries']:
                                 result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
-                                if limit in case_results:
-                                    case_results[limit].append(result)
-                                else:
-                                    case_results[limit] = [result]
-                    for limit in mem0_limits:
+                                case_results[limit].append(result)
+                    for limit in unprocessed_limits:
                         config_name = f"mem0_{infer_suffix}{limit}"
-                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
+                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results for {config_name}...")
                         save_result_file_incremental(
                             output_dir, case_id, config_name,
                             case_results[limit], timestamp, experiment,
@@ -1255,6 +1288,9 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 case_data = load_benchmark_data(str(case_file))
                 case_id = case_data.get('case_id', case_file.stem)
                 group_name = case_file.stem
+                if is_case_already_processed(output_dir, case_id, 'mem0_agent'):
+                    print(f"  ⏭ [{experiment.name}] Skipping {case_id} (mem0_agent) — result already exists")
+                    continue
 
                 print(f"\n  [{experiment.name}] Processing {case_id}...")
 
@@ -1314,6 +1350,12 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             else:
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
+                    case_id = case_data.get('case_id', case_file.stem)
+
+                    if is_case_already_processed(output_dir, case_id, 'mem_agent'):
+                        print(f"  ⏭ [{experiment.name}] Skipping {case_id} (mem_agent) — result already exists")
+                        continue
+
                     try:
                         result = run_agent_case((
                             case_data, case_file, experiment,
