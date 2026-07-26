@@ -63,6 +63,12 @@ os.environ["PYTHONPATH"] = os.pathsep.join(filter(None, [
   
 from agent.agent import Agent  
 
+# EMem creates a multiprocessing.Manager() at import time; macOS defaults to
+# "spawn", which re-executes this module in the child and deadlocks
+if sys.platform == "darwin":
+    import multiprocessing
+    multiprocessing.set_start_method("fork", force=True)
+
 from openai.types.chat import ChatCompletionMessage
 ChatCompletionMessage.model_config = {
     "extra": "allow",
@@ -256,6 +262,12 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
 # Memory Initialization
 # ============================================================================
 
+# Last Memory instance created by initialize_mem0. Embedded Qdrant holds a
+# flock on the storage dir, so the previous client must be closed before a
+# new Memory can open the same path.
+_active_mem0 = None
+
+
 def initialize_mem0(mem0_config: dict, experiment: Experiment,
                     collection_name: str) -> Memory:
     """Initialize mem0 Memory instance.
@@ -265,6 +277,18 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         experiment: Experiment with resolved model/api_key/base_url for the LLM
         collection_name: Full collection name (already includes experiment suffix)
     """
+    global _active_mem0
+    if _active_mem0 is not None:
+        # entity_store shares vector_store's client; the telemetry store
+        # (~/.mem0/migrations_qdrant) has its own
+        for store in (_active_mem0.vector_store,
+                      getattr(_active_mem0, '_telemetry_vector_store', None)):
+            try:
+                store.client.close()
+            except Exception:
+                pass
+        _active_mem0 = None
+
     os.environ.pop('OPENROUTER_API_KEY', None)
 
     llm_cfg = mem0_config['llm']
@@ -319,7 +343,12 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         base_url=mem0_config['embedder']['openai_base_url'],
         http_client=http_client,
     )
+    # Force lazy init of the entity store so reset() also drops the
+    # {collection}_entities collection left by the previous case (with
+    # infer=True, stale entities would otherwise leak across cases).
+    _ = memory.entity_store
     memory.reset()
+    _active_mem0 = memory
     return memory
 
 

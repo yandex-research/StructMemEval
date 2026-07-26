@@ -42,7 +42,7 @@ experiments:
     run:
       mem0_rag:
         limits: [5, 20]
-        infer: [false]
+        infer: [false, true]
   - name: gemini-3.1-flash-mem0-agent
     model: google/gemini-3.1-flash-lite-preview
     api_key: ${LLM_PROVIDER_API_KEY}

@@ -1,0 +1,46 @@
+## Smoke test for mem0 RAG with infer=true — 2 cases, isolated qdrant/output dirs
+## Usage: python benchmark.py --config config_infer_smoke.yaml
+
+# === Memory Systems ===
+mem0:
+  llm:
+    provider: openai
+    model: gpt-4o-mini
+    api_key: ${OPENAI_API_KEY}
+
+  embedder:
+    provider: openai
+    model: text-embedding-3-large
+    api_key: ${OPENAI_API_KEY}
+    embedding_dims: 3072
+    openai_base_url: https://api.openai.com/v1
+
+  vector_db:
+    provider: qdrant
+    path: ./qdrant_data_infer_test
+    embedding_model_dims: 3072
+
+mem_agent:
+  model: gpt-4o-mini
+  api_key: ${OPENAI_API_KEY}
+  memory_path: memory_infer_test
+
+# === Experiments ===
+experiments:
+  - name: gemini-3.1-flash-mem0-infer-smoke
+    model: google/gemini-3.1-flash-lite-preview
+    api_key: ${LLM_PROVIDER_API_KEY}
+    base_url: ${LLM_PROVIDER_BASE_URL}
+    data_dirs:
+      - benchmark/data/state_machine_location/small_bench
+    run:
+      mem0_rag:
+        limits: [5]
+        infer: [true]
+
+# === Execution ===
+max_cases: 2
+parallel_workers: 1
+auto_clean_memory: true
+output_dir: eval_results_test_infer
+verbose: true
