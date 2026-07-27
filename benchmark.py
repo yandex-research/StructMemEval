@@ -800,7 +800,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
 
     elif func_name == "get_all_memories":
         limit = args.get("limit", default_search_limit)
-        response = memory.get_all(user_id=user_id, limit=limit)
+        response = memory.get_all(filters={"user_id": user_id}, limit=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
