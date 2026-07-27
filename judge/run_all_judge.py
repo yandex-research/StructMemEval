@@ -78,16 +78,14 @@ def main():
 
         
         for eval_dir in eval_dirs:
-            if os.path.exists(results_dir / eval_dir.name):
-                continue
             eval_files = []
             eval_files.extend(sorted(eval_dir.glob("results_*.json")))
 
             print(f"Scanning dirs: {[d.name for d in eval_dirs]}")
             print(f"Found {len(eval_files)} eval result files")
 
-            # Skip already judged
-            # existing = {f.stem.replace("judge_", "") for f in results_dir.glob("judge_*.json")}
+            # Skip already judged (per file, so new results in an
+            # already-judged experiment dir still get picked up)
             to_judge = []
             for f in eval_files:
                 key = f.stem.replace("results_", "")
@@ -95,6 +93,8 @@ def main():
                 parent = f.parent
                     # Nested: eval_results/gpt-4o-mini/results_*.json
                 key = f"{parent.name}/judge_{key}.json"
+                if (results_dir / key).exists():
+                    continue
                 to_judge.append((f, key))
 
             print(f"To judge: {len(to_judge)}")
