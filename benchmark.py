@@ -515,7 +515,8 @@ def run_mem0_query(memory: Memory, query_obj: dict, user_id: str, limit: int,
     question = query_obj['question']
 
     # Search with specified limit
-    response = memory.search(question, filters={"user_id": user_id}, limit=limit)
+    # mem0 2.x: the parameter is top_k; a `limit=` kwarg is silently ignored
+    response = memory.search(question, filters={"user_id": user_id}, top_k=limit)
     results = response.get('results', [])
 
     # Get retrieved memories
@@ -774,7 +775,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
     elif func_name == "search_memories":
         query = args["query"]
         limit = args.get("limit", 5)
-        response = memory.search(query, filters={"user_id": user_id}, limit=limit)
+        response = memory.search(query, filters={"user_id": user_id}, top_k=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
@@ -800,7 +801,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
 
     elif func_name == "get_all_memories":
         limit = args.get("limit", default_search_limit)
-        response = memory.get_all(filters={"user_id": user_id}, limit=limit)
+        response = memory.get_all(filters={"user_id": user_id}, top_k=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
