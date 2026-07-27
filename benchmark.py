@@ -1241,6 +1241,13 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     case_id = case_data.get('case_id', case_file.stem)
                     group_name = case_file.stem
 
+                    # Resume: skip ingestion+queries when every limit's result
+                    # file for this case already exists (crashed-run restarts)
+                    if all((output_dir / f"results_{case_id}_mem0_{infer_suffix}{limit}.json").exists()
+                           for limit in mem0_limits):
+                        print(f"  ⏭ Skipping {case_id} (infer={infer_mode}) — results exist")
+                        continue
+
                     print(f"\n  [{experiment.name}] Processing {case_id} (infer={infer_mode})...")
 
                     mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
@@ -1284,6 +1291,11 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 case_data = load_benchmark_data(str(case_file))
                 case_id = case_data.get('case_id', case_file.stem)
                 group_name = case_file.stem
+
+                # Resume: skip when this case's result file already exists
+                if (output_dir / f"results_{case_id}_mem0_agent.json").exists():
+                    print(f"  ⏭ Skipping {case_id} (mem0_agent) — results exist")
+                    continue
 
                 print(f"\n  [{experiment.name}] Processing {case_id}...")
 
