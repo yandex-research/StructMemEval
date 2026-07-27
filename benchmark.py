@@ -77,6 +77,11 @@ from src.emem.utils.conversation_data_utils import (
     EventSummary, Observation  
 )
 
+# MemPalace
+from mempalace.palace import get_collection as mp_get_collection  
+from mempalace.miner import add_drawer as mp_add_drawer  
+from mempalace.searcher import search_memories as mp_search_memories
+
 # ============================================================================
 # LLM Client Helpers
 # ============================================================================
@@ -176,6 +181,17 @@ def clean_memory(config: dict, script_dir: Path, experiments: list[Experiment]):
         if mem_path.exists():
             shutil.rmtree(mem_path, ignore_errors=True)
             print(f"  ✓ Deleted mem-agent directory: {mem_path}")
+
+    # 3. Clean MemPalace palace directories  
+    base_palace_path_str = config.get('mempalace', {}).get('palace_path', 'mempalace_data')  
+    mp_paths_to_clean = [script_dir / base_palace_path_str]  
+    for exp in experiments:  
+        mp_paths_to_clean.append(script_dir / f"{base_palace_path_str}/{exp.name}")  
+  
+    for mp_path in mp_paths_to_clean:  
+        if mp_path.exists():  
+            shutil.rmtree(mp_path, ignore_errors=True)  
+            print(f"  ✓ Deleted MemPalace palace: {mp_path}")
 
     print("✓ Memory cleanup complete\n")
 
@@ -421,6 +437,25 @@ def initialize_emem(emem_config: dict, experiment: Experiment, save_dir: str) ->
     )
 
     return model
+
+# ============================================================================  
+# Memory Initialization — MemPalace  
+# ============================================================================  
+  
+def initialize_mempalace(palace_path: str) -> str:  
+    """Initialize a fresh MemPalace palace at the given path.  
+  
+    Wipes any existing palace at that path, then creates a new ChromaDB  
+    collection so subsequent add_drawer / search_memories calls work.  
+    Returns palace_path for use in subsequent calls.  
+    """  
+    path = Path(palace_path)  
+    if path.exists():  
+        shutil.rmtree(path)  
+    path.mkdir(parents=True, exist_ok=True)  
+    mp_get_collection(palace_path, create=True)  
+    print(f"✓ MemPalace initialized at {palace_path}")  
+    return palace_path  
 
 # ============================================================================
 # Session Loading
@@ -909,6 +944,197 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
         "message_checkpoint": answer_idx
     }
 
+# ============================================================================  
+# Session Loading — MemPalace  
+# ============================================================================  
+  
+def load_user_messages_to_mempalace(  
+    palace_path: str,  
+    sessions: list,  
+    wing: str = "benchmark",  
+    start: int = 0,  
+    end: int = None,  
+):  
+    """Load user messages into MemPalace as verbatim drawers.  
+  
+    Each message becomes one drawer in wing/<wing>, room=session_<N>.  
+    source_file is set to a unique virtual path so drawer IDs don't collide  
+    (add_drawer hashes source_file + chunk_index to generate the drawer ID).  
+    """  
+    col = mp_get_collection(palace_path, create=True)  
+  
+    entries = []  
+    for session_idx, session in enumerate(sessions):  
+        for msg_idx, msg in enumerate(session["messages"][start:end]):  
+            if msg["role"] == "user":  
+                entries.append((session_idx, msg_idx, msg["content"]))  
+  
+    print(f"\nLoading {len(entries)} user messages into MemPalace...")  
+    for session_idx, msg_idx, content in tqdm(entries, desc="mempalace loading"):  
+        mp_add_drawer(  
+            collection=col,  
+            wing=wing,  
+            room=f"session_{session_idx}",  
+            content=content,  
+            source_file=f"session_{session_idx}_msg_{msg_idx}.txt",  
+            chunk_index=0,  
+            agent="benchmark",  
+        )  
+    print(f"✓ Loaded {len(entries)} messages")  
+  
+  
+# ============================================================================  
+# Query Execution — MemPalace  
+# ============================================================================  
+  
+def run_mempalace_query(  
+    palace_path: str,  
+    query_obj: dict,  
+    experiment: Experiment,  
+    mempalace_config: dict,   # ← для fallback на дефолты из config['mempalace']  
+    wing: str = "benchmark",  
+    limit: int = 5,  
+    answer_idx: int = -1,  
+) -> dict:  
+    question = query_obj["question"]  
+  
+    search_result = mp_search_memories(query=question, palace_path=palace_path, wing=wing, n_results=limit)  
+    retrieved = search_result.get("results", [])  
+  
+    memory_context = "\n".join(f"- {r['text']}" for r in retrieved) if retrieved else "No relevant memories."  
+    system_prompt = f"""You are a helpful assistant.\n\nUse this context about the user when answering:\n{memory_context}\n\nAnswer concisely."""  
+  
+    # experiment переопределяет дефолты из mempalace_config — как в initialize_mem_agent / initialize_emem  
+    model   = experiment.model    or mempalace_config.get('model')  
+    api_key = experiment.api_key  or mempalace_config.get('api_key')  
+    base_url = experiment.base_url or mempalace_config.get('base_url')  
+  
+    client = create_llm_client({'api_key': api_key, 'base_url': base_url})  
+    llm_response = client.chat.completions.create(  
+        model=model,  
+        messages=[  
+            {"role": "system", "content": system_prompt},  
+            {"role": "user", "content": question},  
+        ],  
+    )  
+    answer = llm_response.choices[0].message.content  
+  
+    if isinstance(query_obj["reference_answer"], list):  
+        ref_answer = query_obj["reference_answer"][answer_idx]  
+    else:  
+        ref_answer = query_obj["reference_answer"]  
+  
+    return {  
+        "query": question,  
+        "llm_response": answer,  
+        "memory_state": {  
+            "retrieved_memories": [{"score": r.get("similarity", 0.0), "text": r["text"]} for r in retrieved],  
+            "total_memories": len(retrieved),  
+        },  
+        "reference_answer": ref_answer,  
+        "metadata": {"system_prompt": system_prompt, "retrieved_count": len(retrieved), "retrieve_limit": limit},  
+        "message_checkpoint": answer_idx,  
+    }
+
+# ============================================================================  
+# Run MemPalace case  
+# ============================================================================  
+  
+@retry(  
+    retry=retry_if_exception_type(RateLimitError),  
+    wait=wait_exponential(multiplier=2, min=30, max=180),  
+    stop=stop_after_attempt(6),  
+    before_sleep=lambda retry_state: print(  
+        f"  Rate limit hit for {retry_state.args[0][0].get('case_id', 'unknown')}, "  
+        f"retrying in {retry_state.next_action.sleep:.0f}s (attempt {retry_state.attempt_number}/6)..."  
+    ),  
+)
+
+def run_mempalace_case(args) -> dict:  
+    """Run a single MemPalace case — can be called in parallel."""  
+    case_data, case_file, experiment, mempalace_config, script_dir, verbose, mem_checkpoints = args  
+
+    run_cfg = {**mempalace_config, **experiment.run.get('mempalace', {})}  
+  
+    case_id = case_data.get("case_id", "unknown")  
+    palace_path = str(script_dir / run_cfg.get('palace_path', 'mempalace_data') / experiment.name / f"{case_id}_palace")  
+    wing = run_cfg.get('wing', 'benchmark')  
+    limit = run_cfg.get('limit', 5) 
+  
+    print(f"  [{experiment.name}] Starting MemPalace {case_id}...")  
+  
+    initialize_mempalace(palace_path)  
+    case_results = []  
+  
+    for i in range(len(mem_checkpoints) - 1):  
+        index = -1 if len(mem_checkpoints) - 1 == 1 else i  
+        load_user_messages_to_mempalace(  
+            palace_path, case_data["sessions"], wing,  
+            mem_checkpoints[i], mem_checkpoints[i + 1],  
+        )  
+        for query_obj in case_data["queries"]:    
+            result = run_mempalace_query(    
+                palace_path, query_obj, experiment, mempalace_config,    
+                wing, limit, index    
+            )  
+            case_results.append(result)
+  
+    print(f"  [{experiment.name}] ✓ Completed MemPalace {case_id}")  
+    return {  
+        "case_id": case_id,  
+        "case_file": str(case_file),  
+        "config_name": "mempalace",  
+        "results": case_results,  
+    }  
+  
+  
+# ============================================================================  
+# Run MemPalace benchmark in parallel  
+# ============================================================================  
+  
+def run_mempalace_parallel(  
+    case_files: list[Path],  
+    experiment: Experiment,  
+    mempalace_config: dict,  
+    script_dir: Path,  
+    max_workers: int = 2,  
+    verbose: bool = False,  
+    mem_checkpoints: list = [0, None],  
+    output_dir: Path = None,  
+    timestamp: str = None,  
+) -> dict:  
+    """Run MemPalace benchmarks in parallel across cases."""  
+    tasks = [  
+        (load_benchmark_data(str(cf)), cf, experiment, mempalace_config,  
+         script_dir, verbose, mem_checkpoints)  
+        for cf in case_files  
+    ]  
+  
+    print(f"\n[{experiment.name}] Running {len(tasks)} MemPalace tasks "  
+          f"with {max_workers} parallel workers...")  
+  
+    success_count, failed_cases = 0, []  
+  
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:  
+        futures = {executor.submit(run_mempalace_case, t): t for t in tasks}  
+        for future in tqdm(as_completed(futures), total=len(futures),  
+                           desc=f"[{experiment.name}] mempalace"):  
+            task = futures[future]  
+            case_id = task[0].get("case_id", "unknown")  
+            try:  
+                result = future.result()  
+                save_result_file_incremental(  
+                    output_dir, result["case_id"], result["config_name"],  
+                    result["results"], timestamp, experiment,  
+                    Path(result["case_file"]),  
+                )  
+                success_count += 1  
+            except Exception as e:  
+                print(f"  [{experiment.name}] ✗ MemPalace error in {case_id}: {e}")  
+                failed_cases.append((case_id, str(e)))  
+  
+    return {"success_count": success_count, "failed_cases": failed_cases}
+
 # ============================================================================
 # Run EMem case
 # ============================================================================
@@ -1376,6 +1602,45 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 print(f"  [{experiment.name}] ✓ Saved {emem_count} EMem result files")  
         elif 'emem' in experiment.run:  
             print(f"\n[{experiment.name}] PHASE 4: SKIPPED (no 'emem' section in config)")
+
+  # ==================================================================  
+        # Phase 5: MemPalace  
+        # ==================================================================  
+        if 'mempalace' in experiment.run and 'mempalace' in config:  
+            mempalace_config = config['mempalace']   # ← просто берём config['mempalace'], без мёрджа  
+  
+            print(f"\n[{experiment.name}] " + "="*60)  
+            print(f"[{experiment.name}] PHASE 5: MemPalace (parallel_workers={parallel_workers})")  
+            print(f"[{experiment.name}] " + "="*60)  
+  
+            mp_count = 0  
+            if parallel_workers > 1:  
+                status = run_mempalace_parallel(  
+                    dataset.case_files, experiment, mempalace_config,   # ← mempalace_config, не run_cfg  
+                    script_dir, parallel_workers, verbose, mem_checkpoints,  
+                    output_dir, timestamp,  
+                )  
+                mp_count = status.get("success_count", 0)  
+            else:  
+                for case_file in dataset.case_files:  
+                    case_data = load_benchmark_data(str(case_file))  
+                    try:  
+                        result = run_mempalace_case((  
+                            case_data, case_file, experiment,  
+                            mempalace_config, script_dir, verbose, mem_checkpoints,   # ← mempalace_config  
+                        ))  
+                        save_result_file_incremental(  
+                            output_dir, result["case_id"], result["config_name"],  
+                            result["results"], timestamp, experiment, case_file,  
+                        )  
+                        mp_count += 1  
+                    except Exception as e:  
+                        print(f"    [{experiment.name}] ✗ MemPalace FAILED {case_file.stem}: {e}")  
+  
+            if mp_count:  
+                print(f"  [{experiment.name}] ✓ Saved {mp_count} MemPalace result files")  
+        elif 'mempalace' in experiment.run:  
+            print(f"\n[{experiment.name}] PHASE 5: SKIPPED (no 'mempalace' section in config)")
 
     print(f"\n[{experiment.name}] " + "="*60)
     print(f"[{experiment.name}] ✓ EXPERIMENT COMPLETE!")
