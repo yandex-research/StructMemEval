@@ -2,9 +2,9 @@
 """
 Batch-run the judge on all eval results.
 
-Usage:
-    cd benchmark_xtinkt/judge
-    python run_all_judge.py
+This script recursively finds all directories named eval_results* (or nested deeper)
+that contain files matching results_*.json, runs the judge model on each example,
+and saves the judgment outputs preserving the same directory structure under judge/results/.
 """
 
 import json
@@ -23,11 +23,24 @@ load_dotenv(Path(__file__).parent.parent / ".env")
 
 
 def load_prompt(prompt_path: str) -> str:
+    """Read the judge prompt template from file."""
     with open(prompt_path, 'r') as f:
         return f.read()
 
 
 def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict) -> int:
+    """
+    Judge a single response using the provided LLM.
+
+    Args:
+        client: OpenAI client
+        model: model name (e.g., gpt-4o)
+        prompt_template: template string with placeholders
+        result: dict containing 'reference_answer', 'llm_response', 'query'
+
+    Returns:
+        1 if the judge says the response is correct, 0 otherwise.
+    """
     reference = result['reference_answer']
     prompt = prompt_template.format(
         reference_text=reference['text'],
@@ -42,14 +55,34 @@ def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict)
     return 1 if answer == "1" else 0
 
 
+def get_fold_name(filename: str) -> str:
+    """
+    Determine the fold/category from the filename.
+
+    Returns one of: 'recommendations', 'accounting', 'graph', 'state_machine'.
+    Raises NameError if unknown.
+    """
+    if "recommendations" in filename:
+        return "recommendations"
+    elif "accounting" in filename:
+        return "accounting"
+    elif "graph" in filename:
+        return "graph"
+    elif "static" in filename or "transition" in filename:
+        return "state_machine"
+    else:
+        raise NameError(f"Unknown fold name in filename: {filename}")
+
+
 def main():
     script_dir = Path(__file__).parent
     results_dir = script_dir / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
 
+    # Load judge prompt template
     prompt_template = load_prompt(script_dir / "prompt_new_2.txt")
 
-    # Judge model from env (default: gpt-4o)
+    # Judge model configuration from environment
     model = os.environ.get('JUDGE_MODEL', 'gpt-4o')
     api_key = os.environ.get('OPENAI_API_KEY')
     base_url = os.environ.get('OPENAI_BASE_URL') or None
@@ -62,106 +95,154 @@ def main():
     client = OpenAI(api_key=api_key, base_url=base_url, http_client=http_client)
     print(f"Using judge model: {model}")
 
-    # Scan all eval_results* directories (supports nested experiment subdirs)
-    eval_top_dirs = sorted(script_dir.parent.glob("eval_results*"))
-    eval_top_dirs = [d for d in eval_top_dirs if d.is_dir() and "test" not in d.name]
+    # ------------------------------------------------------------------
+    # 1. Find all top-level directories starting with "eval_results"
+    #    (excluding those with "test" in the name)
+    # ------------------------------------------------------------------
+    project_root = script_dir.parent
 
+    eval_top_dirs = sorted(
+        path
+        for path in project_root.glob("eval_results*")
+        if path.is_dir() and "test" not in path.name.lower()
+    )
+
+    # ------------------------------------------------------------------
+    # 2. Recursively walk each top-level directory and collect every
+    #    subdirectory that contains at least one results_*.json file.
+    # ------------------------------------------------------------------
     eval_dirs = []
+
     for top_dir in eval_top_dirs:
-        # Check for experiment subdirectories (new format)
-        subdirs = [d for d in sorted(top_dir.iterdir()) if d.is_dir() and not d.name.startswith('.')]
-        if subdirs:
-            eval_dirs.extend(subdirs)
-        else:
-            # Flat directory (old format)
-            eval_dirs.append(top_dir)
+        for root, dirs, files in os.walk(top_dir):
+            root_path = Path(root)
 
-        
-        for eval_dir in eval_dirs:
-            if os.path.exists(results_dir / eval_dir.name):
+            dirs[:] = [
+                dirname for dirname in dirs
+                if "test" not in dirname.lower()
+            ]
+
+            if any(
+                filename.startswith("results_") and filename.endswith(".json")
+                for filename in files
+            ):
+                eval_dirs.append(root_path)
+
+    eval_dirs = sorted(set(eval_dirs))
+    print(f"Found {len(eval_dirs)} directories with result files.")
+
+    # ------------------------------------------------------------------
+    # 3. Process each directory independently
+    # ------------------------------------------------------------------
+    for eval_dir in eval_dirs:
+        # Relative path from the project root (benchmark_xtinkt)
+        rel_path = eval_dir.relative_to(script_dir.parent)
+        # Output directory: judge/results/<relative_path>
+        out_dir = results_dir / rel_path
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+        # Find all result files in this directory
+        eval_files = sorted(eval_dir.glob("results_*.json"))
+        if not eval_files:
+            continue
+
+        # Dictionary to accumulate statistics per fold (category)
+        # Structure: { fold_name: [pass_count, total_count, pass_rate] }
+        fold_stats = {}
+
+        # Process each results_*.json file
+        for eval_file in eval_files:
+            # Determine the fold (category) from the filename
+            try:
+                fold_name = get_fold_name(eval_file.name)
+            except NameError as e:
+                print(f"Skipping {eval_file.name}: {e}")
                 continue
-            eval_files = []
-            eval_files.extend(sorted(eval_dir.glob("results_*.json")))
 
-            print(f"Scanning dirs: {[d.name for d in eval_dirs]}")
-            print(f"Found {len(eval_files)} eval result files")
+            # Build output filename: judge_<original_stem_without_results_>.json
+            stem = eval_file.stem  # e.g., results_recommendations
+            if stem.startswith("results_"):
+                judge_stem = "judge_" + stem[len("results_"):]
+            else:
+                judge_stem = "judge_" + stem
+            out_file = out_dir / f"{judge_stem}.json"
 
-            # Skip already judged
-            # existing = {f.stem.replace("judge_", "") for f in results_dir.glob("judge_*.json")}
-            to_judge = []
-            for f in eval_files:
-                key = f.stem.replace("results_", "")
-                # Include experiment/dir name for unique keys
-                parent = f.parent
-                    # Nested: eval_results/gpt-4o-mini/results_*.json
-                key = f"{parent.name}/judge_{key}.json"
-                to_judge.append((f, key))
+            # Skip if already processed
+            if out_file.exists():
+                print(f"Skipping {out_file} (already exists)")
+                # Still we need to count it for overall stats? We can skip reading.
+                # For simplicity, we'll just skip and not update stats.
+                continue
 
-            print(f"To judge: {len(to_judge)}")
-            successes = {"recommendations": [0, 0], "accounting": [0, 0], "graph": [0, 0], "state_machine": [0, 0]}
-            for eval_file, key in tqdm(to_judge, desc="Judging files"):
-                with open(eval_file) as f:
-                    eval_data = json.load(f)
-                print(eval_file.name)
-                if "recommendations" in eval_file.name:
-                    fold_name = "recommendations"
-                elif "accounting" in eval_file.name:
-                    fold_name = "accounting"
-                elif "graph" in eval_file.name:
-                    fold_name = "graph"
-                elif "static" in eval_file.name or "transition" in eval_file.name:
-                    fold_name = "state_machine"
-                else:
-                    raise NameError("Wrong fold name") 
+            # Load the evaluation data
+            with open(eval_file) as f:
+                eval_data = json.load(f)
 
-                all_results = []
-                for case in eval_data['cases']:
-                    for result in case['results']:
-                        all_results.append({'case_id': case['case_id'], **result})
+            # Flatten all results from all cases
+            all_results = []
+            for case in eval_data['cases']:
+                for result in case['results']:
+                    all_results.append({'case_id': case['case_id'], **result})
 
-                scores = []
-                details = []
-                for result in all_results:
-                    score = judge_single(client, model, prompt_template, result)
-                    scores.append(score)
-                    details.append({
-                        'case_id': result.get('case_id', ''),
-                        'score': score
-                    })
+            # Judge each example
+            scores = []
+            details = []
+            for result in all_results:
+                score = judge_single(client, model, prompt_template, result)
+                scores.append(score)
+                details.append({
+                    'case_id': result.get('case_id', ''),
+                    'score': score
+                })
 
-                mean_score = sum(scores) / len(scores) if scores else 0
+            mean_score = sum(scores) / len(scores) if scores else 0
 
-                output = {
-                    'input_file': str(eval_file.relative_to(script_dir.parent)),
-                    'num_examples': len(scores),
-                    'mean_score': mean_score,
-                    'details': details
-                }
+            output = {
+                'input_file': str(eval_file.relative_to(script_dir.parent)),
+                'num_examples': len(scores),
+                'mean_score': mean_score,
+                'details': details
+            }
 
-                if not os.path.exists(results_dir / parent.name):
-                    os.makedirs(results_dir / parent.name)
+            with open(out_file, 'w') as f:
+                json.dump(output, f, indent=2)
 
-                output_path = results_dir / f"{key}"
-                with open(output_path, 'w') as f:
-                    json.dump(output, f, indent=2)
-                successes[fold_name][1] += 1
-                if mean_score >= 0.5:
-                    status = "PASS"
-                    successes[fold_name][0] += 1
-                else:
-                    status = "FAIL"
-                
-                print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
-            if len(to_judge) > 0:
-                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
-                output_path = results_dir / parent.name / "0judge_total.json"
-                for key, value in successes.items():
-                    if value[1] != 0:
-                        successes[key].append(value[0] / value[1])
-                    else:
-                        successes[key].append(None)
-                with open(output_path, 'w') as f:
-                    json.dump(successes, f, indent=2)
+            # Update statistics for this fold
+            if fold_name not in fold_stats:
+                fold_stats[fold_name] = [0, 0]  # [passes, total]
+            fold_stats[fold_name][0] += sum(scores)
+            fold_stats[fold_name][1] += len(scores)
+
+            status = "PASS" if mean_score >= 0.5 else "FAIL"
+            print(f"  {out_file.relative_to(results_dir)}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
+
+        # ------------------------------------------------------------------
+        # 4. Write aggregate statistics for this directory (if any files were processed)
+        # ------------------------------------------------------------------
+        if fold_stats:
+            # Calculate pass rates
+            total_pass = 0
+            total_count = 0
+            agg_stats = {}
+            for fold, (passes, total) in fold_stats.items():
+                rate = passes / total if total > 0 else None
+                agg_stats[fold] = [passes, total, rate]
+                total_pass += passes
+                total_count += total
+
+            # Overall statistics
+            overall_rate = total_pass / total_count if total_count > 0 else None
+            agg_stats["overall"] = [total_pass, total_count, overall_rate]
+
+            # Save aggregate stats to a JSON file in the same output directory
+            agg_file = out_dir / "0judge_total.json"
+            with open(agg_file, 'w') as f:
+                json.dump(agg_stats, f, indent=2)
+
+            print(f"\nDirectory {rel_path} processed. Aggregate stats saved to {agg_file.relative_to(results_dir)}")
+            print(f"  Overall: {total_pass}/{total_count} = {overall_rate:.2%}" if overall_rate is not None else "  Overall: 0/0")
+
+    print("\nAll judging completed. Results are stored in:", results_dir)
 
 
 if __name__ == "__main__":
