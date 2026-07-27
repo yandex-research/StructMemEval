@@ -1150,6 +1150,11 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
     tasks = []
     for case_file in case_files:
         case_data = load_benchmark_data(str(case_file))
+        # Resume: skip when this case's result file already exists
+        case_id = case_data.get('case_id', 'unknown')
+        if output_dir and (output_dir / f"results_{case_id}_mem_agent.json").exists():
+            print(f"  ⏭ Skipping {case_id} (mem_agent) — results exist")
+            continue
         tasks.append((case_data, case_file, experiment, system_prompt_path,
                        mem_agent_config, script_dir, verbose, mem_checkpoints))
 
@@ -1355,6 +1360,10 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             else:
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
+                    # Resume: skip when this case's result file already exists
+                    if (output_dir / f"results_{case_data.get('case_id', 'unknown')}_mem_agent.json").exists():
+                        print(f"  ⏭ Skipping {case_data.get('case_id', 'unknown')} (mem_agent) — results exist")
+                        continue
                     try:
                         result = run_agent_case((
                             case_data, case_file, experiment,
