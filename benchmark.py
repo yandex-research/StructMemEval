@@ -592,15 +592,18 @@ Answer concisely and take the user's preferences into account."""
 
     # Get LLM response
     client = create_client_from_experiment(experiment)
-    llm_response = client.chat.completions.create(
-        model=experiment.model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": question}
-        ],
-        # Delete comment synbol and set openrouter as base url to use this option
-        # extra_body={"include_reasoning": True}
-    )
+    try:
+        llm_response = client.chat.completions.create(
+            model=experiment.model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": question}
+            ],
+            # Delete comment synbol and set openrouter as base url to use this option
+            # extra_body={"include_reasoning": True}
+        )
+    finally:
+        client.close()
     answer = llm_response.choices[0].message.content
     if isinstance(query_obj['reference_answer'], list):
         ref_answer = query_obj['reference_answer'][answer_idx]
@@ -882,47 +885,50 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
         run_config: Runtime params (iterations, search_limit)
     """
     client = create_client_from_experiment(experiment)
-    model_name = experiment.model
+    try:
+        model_name = experiment.model
 
-    user_messages = []
-    for session in sessions:
-        for msg in session['messages'][start: end]:
-            if msg['role'] == 'user':
-                user_messages.append(msg['content'])
+        user_messages = []
+        for session in sessions:
+            for msg in session['messages'][start: end]:
+                if msg['role'] == 'user':
+                    user_messages.append(msg['content'])
 
-    max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
-    search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
+        max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
+        search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
 
-    print(f"\nLoading {len(user_messages)} user messages into mem0 agent...")
-    for content in tqdm(user_messages, desc=f"[{experiment.name}] mem0 agent loading"):
-        messages = [
-            {"role": "system", "content": loading_prompt},
-            {"role": "user", "content": content},
-        ]
-        for _ in range(max_iterations):
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                tools=MEM0_AGENT_TOOLS_LOADING,
-                tool_choice="auto",
-                # Delete comment synbol and set openrouter as base url to use this option
-                # extra_body={"include_reasoning": True}
-            )
-            assistant_msg = normalize_tool_calls(response.choices[0].message)
-            messages.append(message_to_dict(assistant_msg))
+        print(f"\nLoading {len(user_messages)} user messages into mem0 agent...")
+        for content in tqdm(user_messages, desc=f"[{experiment.name}] mem0 agent loading"):
+            messages = [
+                {"role": "system", "content": loading_prompt},
+                {"role": "user", "content": content},
+            ]
+            for _ in range(max_iterations):
+                response = client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    tools=MEM0_AGENT_TOOLS_LOADING,
+                    tool_choice="auto",
+                    # Delete comment synbol and set openrouter as base url to use this option
+                    # extra_body={"include_reasoning": True}
+                )
+                assistant_msg = normalize_tool_calls(response.choices[0].message)
+                messages.append(message_to_dict(assistant_msg))
 
-            if assistant_msg.tool_calls:
-                for tc in assistant_msg.tool_calls:
-                    result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
-                    messages.append({
-                        "role": "tool",
-                        "tool_call_id": tc.id,
-                        "content": result,
-                    })
-            else:
-                break
+                if assistant_msg.tool_calls:
+                    for tc in assistant_msg.tool_calls:
+                        result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
+                        messages.append({
+                            "role": "tool",
+                            "tool_call_id": tc.id,
+                            "content": result,
+                        })
+                else:
+                    break
 
-    print(f"✓ Loaded {len(user_messages)} messages via mem0 agent")
+        print(f"✓ Loaded {len(user_messages)} messages via mem0 agent")
+    finally:
+        client.close()
 
 
 def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
@@ -939,46 +945,49 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
     question = query_obj['question']
 
     client = create_client_from_experiment(experiment)
-    model_name = experiment.model
+    try:
+        model_name = experiment.model
 
-    max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
-    search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
+        max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
+        search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
 
-    messages = [
-        {"role": "system", "content": query_prompt},
-        {"role": "user", "content": question},
-    ]
-    tool_calls_log = []
+        messages = [
+            {"role": "system", "content": query_prompt},
+            {"role": "user", "content": question},
+        ]
+        tool_calls_log = []
 
-    assistant_msg = None
-    for iteration in range(max_iterations):
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=messages,
-            tools=MEM0_AGENT_TOOLS_QUERY,
-            tool_choice="auto",
-            # Delete comment synbol and set openrouter as base url to use this option
-            # extra_body={"include_reasoning": True}
-        )
-        assistant_msg = normalize_tool_calls(response.choices[0].message)
-        messages.append(message_to_dict(assistant_msg))
+        assistant_msg = None
+        for iteration in range(max_iterations):
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                tools=MEM0_AGENT_TOOLS_QUERY,
+                tool_choice="auto",
+                # Delete comment synbol and set openrouter as base url to use this option
+                # extra_body={"include_reasoning": True}
+            )
+            assistant_msg = normalize_tool_calls(response.choices[0].message)
+            messages.append(message_to_dict(assistant_msg))
 
-        if assistant_msg.tool_calls:
-            for tc in assistant_msg.tool_calls:
-                result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
-                tool_calls_log.append({
-                    "iteration": iteration,
-                    "tool": tc.function.name,
-                    "arguments": json.loads(tc.function.arguments),
-                    "result": result,
-                })
-                messages.append({
-                    "role": "tool",
-                    "tool_call_id": tc.id,
-                    "content": result,
-                })
-        else:
-            break
+            if assistant_msg.tool_calls:
+                for tc in assistant_msg.tool_calls:
+                    result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
+                    tool_calls_log.append({
+                        "iteration": iteration,
+                        "tool": tc.function.name,
+                        "arguments": json.loads(tc.function.arguments),
+                        "result": result,
+                    })
+                    messages.append({
+                        "role": "tool",
+                        "tool_call_id": tc.id,
+                        "content": result,
+                    })
+            else:
+                break
+    finally:
+        client.close()
 
     if isinstance(query_obj['reference_answer'], list):
         ref_answer = query_obj['reference_answer'][answer_idx]
