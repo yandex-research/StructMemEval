@@ -20,7 +20,7 @@ from pathlib import Path
 from qdrant_client import QdrantClient
 
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
-from openai import RateLimitError
+from openai import RateLimitError, APIConnectionError
 
 from dotenv import load_dotenv
 from httpx import Client, AsyncClient
@@ -471,10 +471,18 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
+    @retry(
+        retry=retry_if_exception_type((RateLimitError, APIConnectionError)),
+        stop=stop_after_attempt(6),
+        wait=wait_exponential(multiplier=2, max=120),
+    )
+    def add_with_retry(msg):
+        memory.add([msg], user_id=user_id, infer=infer)
+
     infer_label = "infer" if infer else "raw"
     print(f"\nLoading {len(user_messages)} user messages into mem0 ({infer_label})...")
     for msg in tqdm(user_messages, desc=f"mem0 {infer_label}"):
-        memory.add([msg], user_id=user_id, infer=infer)
+        add_with_retry(msg)
 
     print(f"✓ Loaded {len(user_messages)} messages")
 
