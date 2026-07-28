@@ -168,6 +168,7 @@ def main():
                     elif "static" in jf.name or "transition" in jf.name:
                         fold_name = "state_machine"
                     else:
+                        print(f"  WARNING: skipping {jf.name} from totals (no matching fold)")
                         continue
                     with open(jf) as f:
                         mean_score = json.load(f).get('mean_score', 0)

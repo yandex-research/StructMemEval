@@ -524,10 +524,19 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
         handler = ExtractionErrorHandler()
         mem0_logger.addHandler(handler)
         try:
-            memory.add([msg], user_id=user_id, infer=infer)
+            result = memory.add([msg], user_id=user_id, infer=infer)
         finally:
             mem0_logger.removeHandler(handler)
         if infer and handler.failed:
+            # This attempt may have partially succeeded (some facts embedded/inserted
+            # before the failure). Roll those back so the retry re-extracts from a
+            # clean slate instead of duplicating them (mem0's dedup on retry only
+            # catches exact-hash matches, not paraphrases from a fresh extraction).
+            for item in (result or {}).get("results", []):
+                try:
+                    memory.delete(item["id"])
+                except Exception:
+                    pass
             raise ExtractionFailed("mem0 fact extraction failed for message")
 
     infer_label = "infer" if infer else "raw"
