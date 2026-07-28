@@ -293,6 +293,10 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
                 store.client.close()
             except Exception as e:
                 print(f"  ⚠ Failed to close mem0 store client: {e}")
+        try:
+            _active_mem0.close()
+        except Exception as e:
+            print(f"  ⚠ Failed to close mem0 history db: {e}")
         _active_mem0 = None
     if _active_http_client is not None:
         _active_http_client.close()
