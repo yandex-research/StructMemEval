@@ -153,15 +153,31 @@ def main():
                 
                 print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
             if len(to_judge) > 0:
-                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
-                output_path = results_dir / parent.name / "0judge_total.json"
-                for key, value in successes.items():
-                    if value[1] != 0:
-                        successes[key].append(value[0] / value[1])
+                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Newly judged {successes} / {len(to_judge)}")
+                # Recompute totals from ALL judge files of this dir, not just
+                # the newly judged ones — incremental runs would otherwise
+                # overwrite 0judge_total.json with partial counts.
+                totals = {"recommendations": [0, 0], "accounting": [0, 0], "graph": [0, 0], "state_machine": [0, 0]}
+                for jf in sorted((results_dir / eval_dir.name).glob("judge_*.json")):
+                    if "recommendations" in jf.name:
+                        fold_name = "recommendations"
+                    elif "accounting" in jf.name:
+                        fold_name = "accounting"
+                    elif "graph" in jf.name:
+                        fold_name = "graph"
+                    elif "static" in jf.name or "transition" in jf.name:
+                        fold_name = "state_machine"
                     else:
-                        successes[key].append(None)
-                with open(output_path, 'w') as f:
-                    json.dump(successes, f, indent=2)
+                        continue
+                    with open(jf) as f:
+                        mean_score = json.load(f).get('mean_score', 0)
+                    totals[fold_name][1] += 1
+                    if mean_score >= 0.5:
+                        totals[fold_name][0] += 1
+                for key, value in totals.items():
+                    value.append(value[0] / value[1] if value[1] else None)
+                with open(results_dir / eval_dir.name / "0judge_total.json", 'w') as f:
+                    json.dump(totals, f, indent=2)
 
 
 if __name__ == "__main__":

@@ -9,6 +9,7 @@ Outputs separate JSON files per case/config for LLM judge evaluation.
 """
 
 import json
+import logging
 import os
 import sys
 import shutil
@@ -298,7 +299,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         "openai_base_url": experiment.base_url or llm_cfg.get('base_url'),
     }
 
-    print(llm_config)
+    print({**llm_config, "api_key": "***"})
     memory = Memory(
         MemoryConfig(
             llm=LlmConfig(
@@ -471,13 +472,37 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
+    # mem0 swallows fact-extraction LLM errors (logs "LLM extraction failed",
+    # stores nothing) — detect via its logger and retry instead of silently
+    # dropping the message's facts.
+    class ExtractionFailed(Exception):
+        pass
+
+    class ExtractionErrorHandler(logging.Handler):
+        def __init__(self):
+            super().__init__(level=logging.ERROR)
+            self.failed = False
+
+        def emit(self, record):
+            if "extraction failed" in record.getMessage():
+                self.failed = True
+
+    mem0_logger = logging.getLogger("mem0.memory.main")
+
     @retry(
-        retry=retry_if_exception_type((RateLimitError, APIConnectionError)),
+        retry=retry_if_exception_type((RateLimitError, APIConnectionError, ExtractionFailed)),
         stop=stop_after_attempt(6),
         wait=wait_exponential(multiplier=2, max=120),
     )
     def add_with_retry(msg):
-        memory.add([msg], user_id=user_id, infer=infer)
+        handler = ExtractionErrorHandler()
+        mem0_logger.addHandler(handler)
+        try:
+            memory.add([msg], user_id=user_id, infer=infer)
+        finally:
+            mem0_logger.removeHandler(handler)
+        if infer and handler.failed:
+            raise ExtractionFailed("mem0 fact extraction failed for message")
 
     infer_label = "infer" if infer else "raw"
     print(f"\nLoading {len(user_messages)} user messages into mem0 ({infer_label})...")
@@ -1065,24 +1090,35 @@ def save_results(data: dict, output_path: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def result_path(output_dir: Path, case_id: str, config_name: str) -> Path:
+    """Single source of truth for result file naming (save + resume checks)."""
+    return output_dir / f"results_{case_id}_{config_name}.json"
+
+
+def result_exists(output_dir: Path, case_id: str, config_name: str) -> bool:
+    """True if the result file exists AND actually contains this case.
+
+    A bare existence check would let a file truncated by a crash mid-write
+    permanently skip the case on resume.
+    """
+    path = result_path(output_dir, case_id, config_name)
+    if not path.exists():
+        return False
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return False
+    return case_id in {c.get("case_id") for c in data.get("cases", [])}
+
+
 def save_result_file_incremental(output_dir: Path, case_id: str, config_name: str,
                                   results: list, timestamp: str, experiment: Experiment,
                                   case_file: Path):
     """Инкрементальное сохранение: пропускает кейс, если он уже есть в файле."""
-    output_path = output_dir / f"results_{case_id}_{config_name}.json"
-    
-    existing_data = {}
-    if output_path.exists():
-        try:
-            with open(output_path, 'r', encoding='utf-8') as f:
-                existing_data = json.load(f)
-        except (json.JSONDecodeError, FileNotFoundError):
-            existing_data = {}
-    
-    existing_cases = existing_data.get("cases", [])
-    existing_ids = {c.get("case_id") for c in existing_cases if c.get("case_id")}
-    
-    if case_id in existing_ids:
+    output_path = result_path(output_dir, case_id, config_name)
+
+    if result_exists(output_dir, case_id, config_name):
         print(f"  ⏭ Skipping {case_id} ({config_name}) — already exists")
         return  # ← Skip!
     
@@ -1161,7 +1197,7 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
         case_data = load_benchmark_data(str(case_file))
         # Resume: skip when this case's result file already exists
         case_id = case_data.get('case_id', 'unknown')
-        if output_dir and (output_dir / f"results_{case_id}_mem_agent.json").exists():
+        if output_dir and result_exists(output_dir, case_id, 'mem_agent'):
             print(f"  ⏭ Skipping {case_id} (mem_agent) — results exist")
             continue
         tasks.append((case_data, case_file, experiment, system_prompt_path,
@@ -1257,7 +1293,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
 
                     # Resume: skip ingestion+queries when every limit's result
                     # file for this case already exists (crashed-run restarts)
-                    if all((output_dir / f"results_{case_id}_mem0_{infer_suffix}{limit}.json").exists()
+                    if all(result_exists(output_dir, case_id, f"mem0_{infer_suffix}{limit}")
                            for limit in mem0_limits):
                         print(f"  ⏭ Skipping {case_id} (infer={infer_mode}) — results exist")
                         continue
@@ -1307,7 +1343,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 group_name = case_file.stem
 
                 # Resume: skip when this case's result file already exists
-                if (output_dir / f"results_{case_id}_mem0_agent.json").exists():
+                if result_exists(output_dir, case_id, 'mem0_agent'):
                     print(f"  ⏭ Skipping {case_id} (mem0_agent) — results exist")
                     continue
 
@@ -1370,7 +1406,7 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
                     # Resume: skip when this case's result file already exists
-                    if (output_dir / f"results_{case_data.get('case_id', 'unknown')}_mem_agent.json").exists():
+                    if result_exists(output_dir, case_data.get('case_id', 'unknown'), 'mem_agent'):
                         print(f"  ⏭ Skipping {case_data.get('case_id', 'unknown')} (mem_agent) — results exist")
                         continue
                     try:
