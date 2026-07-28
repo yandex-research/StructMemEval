@@ -9,6 +9,7 @@ Outputs separate JSON files per case/config for LLM judge evaluation.
 """
 
 import json
+import logging
 import os
 import sys
 import shutil
@@ -20,7 +21,7 @@ from pathlib import Path
 from qdrant_client import QdrantClient
 
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
-from openai import RateLimitError
+from openai import RateLimitError, APIConnectionError
 
 from dotenv import load_dotenv
 from httpx import Client, AsyncClient
@@ -62,6 +63,12 @@ os.environ["PYTHONPATH"] = os.pathsep.join(filter(None, [
 ]))  
   
 from agent.agent import Agent  
+
+# EMem creates a multiprocessing.Manager() at import time; macOS defaults to
+# "spawn", which re-executes this module in the child and deadlocks
+if sys.platform == "darwin":
+    import multiprocessing
+    multiprocessing.set_start_method("fork", force=True)
 
 from openai.types.chat import ChatCompletionMessage
 ChatCompletionMessage.model_config = {
@@ -177,6 +184,16 @@ def clean_memory(config: dict, script_dir: Path, experiments: list[Experiment]):
             shutil.rmtree(mem_path, ignore_errors=True)
             print(f"  ✓ Deleted mem-agent directory: {mem_path}")
 
+    # 3. Clean per-experiment output dirs, so the resume-skip logic in
+    # save_result_file_incremental/result_exists can't reuse result files
+    # produced against the memory state we just wiped.
+    output_dir_str = config.get('output_dir', 'eval_results')
+    for exp in experiments:
+        exp_output_dir = script_dir / output_dir_str / exp.name
+        if exp_output_dir.exists():
+            shutil.rmtree(exp_output_dir, ignore_errors=True)
+            print(f"  ✓ Deleted output directory: {exp_output_dir}")
+
     print("✓ Memory cleanup complete\n")
 
 
@@ -256,6 +273,15 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
 # Memory Initialization
 # ============================================================================
 
+# Last Memory instance created by initialize_mem0. Embedded Qdrant holds a
+# flock on the storage dir, so the previous client must be closed before a
+# new Memory can open the same path.
+_active_mem0 = None
+# httpx.Client backing the previous Memory's LLM/embedding OpenAI clients;
+# closed alongside _active_mem0 so connection pools don't leak across cases.
+_active_http_client = None
+
+
 def initialize_mem0(mem0_config: dict, experiment: Experiment,
                     collection_name: str) -> Memory:
     """Initialize mem0 Memory instance.
@@ -265,6 +291,27 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         experiment: Experiment with resolved model/api_key/base_url for the LLM
         collection_name: Full collection name (already includes experiment suffix)
     """
+    global _active_mem0, _active_http_client
+    if _active_mem0 is not None:
+        # entity_store shares vector_store's client; the telemetry store
+        # (~/.mem0/migrations_qdrant) has its own
+        for store in (_active_mem0.vector_store,
+                      getattr(_active_mem0, '_telemetry_vector_store', None)):
+            if store is None:
+                continue
+            try:
+                store.client.close()
+            except Exception as e:
+                print(f"  ⚠ Failed to close mem0 store client: {e}")
+        try:
+            _active_mem0.close()
+        except Exception as e:
+            print(f"  ⚠ Failed to close mem0 history db: {e}")
+        _active_mem0 = None
+    if _active_http_client is not None:
+        _active_http_client.close()
+        _active_http_client = None
+
     os.environ.pop('OPENROUTER_API_KEY', None)
 
     llm_cfg = mem0_config['llm']
@@ -274,7 +321,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         "openai_base_url": experiment.base_url or llm_cfg.get('base_url'),
     }
 
-    print(llm_config)
+    print({**llm_config, "api_key": "***"})
     memory = Memory(
         MemoryConfig(
             llm=LlmConfig(
@@ -300,13 +347,17 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
             ),
         )
     )
-    
+    # Track immediately so a failure below still lets the next call close
+    # this client's flock instead of leaking it.
+    _active_mem0 = memory
+
     http_client = Client(
         verify=False,
         timeout=DEFAULT_TIMEOUT,
         limits=DEFAULT_CONNECTION_LIMITS,
         follow_redirects=True
     )
+    _active_http_client = http_client
 
     memory.llm.client = OpenAI(
         api_key=llm_config['api_key'],
@@ -319,6 +370,10 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         base_url=mem0_config['embedder']['openai_base_url'],
         http_client=http_client,
     )
+    # Force lazy init of the entity store so reset() also drops the
+    # {collection}_entities collection left by the previous case (with
+    # infer=True, stale entities would otherwise leak across cases).
+    _ = memory.entity_store
     memory.reset()
     return memory
 
@@ -442,10 +497,73 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
+    # mem0 swallows several ingestion failures instead of raising: LLM
+    # extraction ("LLM extraction failed" / "Error parsing extraction
+    # response", both logging.ERROR), per-memory embedding ("Failed to embed
+    # memory text", logging.WARNING), and vector-store insert ("Failed to
+    # insert memory", logging.ERROR). Detect all of them via the logger and
+    # retry instead of silently dropping facts.
+    class ExtractionFailed(Exception):
+        pass
+
+    _SWALLOWED_ERROR_MARKERS = (
+        "extraction failed",
+        "Error parsing extraction response",
+        "Failed to embed memory text",
+        "Failed to insert memory",
+    )
+
+    class ExtractionErrorHandler(logging.Handler):
+        def __init__(self):
+            super().__init__(level=logging.WARNING)
+            self.failed = False
+
+        def emit(self, record):
+            message = record.getMessage()
+            if any(marker in message for marker in _SWALLOWED_ERROR_MARKERS):
+                self.failed = True
+
+    mem0_logger = logging.getLogger("mem0.memory.main")
+
+    @retry(
+        retry=retry_if_exception_type((RateLimitError, APIConnectionError, ExtractionFailed)),
+        stop=stop_after_attempt(6),
+        wait=wait_exponential(multiplier=2, max=120),
+    )
+    def add_with_retry(msg):
+        handler = ExtractionErrorHandler()
+        mem0_logger.addHandler(handler)
+        try:
+            result = memory.add([msg], user_id=user_id, infer=infer)
+        finally:
+            mem0_logger.removeHandler(handler)
+        if infer and handler.failed:
+            # This attempt may have partially succeeded (some facts embedded/inserted
+            # before the failure). Roll those back so the retry re-extracts from a
+            # clean slate instead of duplicating them (mem0's dedup on retry only
+            # catches exact-hash matches, not paraphrases from a fresh extraction).
+            for item in (result or {}).get("results", []):
+                try:
+                    memory.delete(item["id"])
+                except ValueError:
+                    # mem0 2.0.2's Memory.delete() raises ValueError when
+                    # vector_store.get() returns None for the id — this is the
+                    # "already gone, nothing to roll back" case, safe to ignore.
+                    pass
+                except Exception as delete_err:
+                    # A real deletion failure (vector-store connectivity, etc.)
+                    # means the fact may still be sitting in memory. Don't retry
+                    # locally — that would duplicate it — let this propagate so
+                    # the whole case fails and gets replayed clean on resume.
+                    print(f"    ✗ Failed to roll back memory {item.get('id')} "
+                          f"after extraction failure: {delete_err}")
+                    raise
+            raise ExtractionFailed("mem0 fact extraction failed for message")
+
     infer_label = "infer" if infer else "raw"
     print(f"\nLoading {len(user_messages)} user messages into mem0 ({infer_label})...")
     for msg in tqdm(user_messages, desc=f"mem0 {infer_label}"):
-        memory.add([msg], user_id=user_id, infer=infer)
+        add_with_retry(msg)
 
     print(f"✓ Loaded {len(user_messages)} messages")
 
@@ -486,7 +604,8 @@ def run_mem0_query(memory: Memory, query_obj: dict, user_id: str, limit: int,
     question = query_obj['question']
 
     # Search with specified limit
-    response = memory.search(question, filters={"user_id": user_id}, limit=limit)
+    # mem0 2.x: the parameter is top_k; a `limit=` kwarg is silently ignored
+    response = memory.search(question, filters={"user_id": user_id}, top_k=limit)
     results = response.get('results', [])
 
     # Get retrieved memories
@@ -503,15 +622,18 @@ Answer concisely and take the user's preferences into account."""
 
     # Get LLM response
     client = create_client_from_experiment(experiment)
-    llm_response = client.chat.completions.create(
-        model=experiment.model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": question}
-        ],
-        # Delete comment synbol and set openrouter as base url to use this option
-        # extra_body={"include_reasoning": True}
-    )
+    try:
+        llm_response = client.chat.completions.create(
+            model=experiment.model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": question}
+            ],
+            # Delete comment synbol and set openrouter as base url to use this option
+            # extra_body={"include_reasoning": True}
+        )
+    finally:
+        client.close()
     answer = llm_response.choices[0].message.content
     if isinstance(query_obj['reference_answer'], list):
         ref_answer = query_obj['reference_answer'][answer_idx]
@@ -745,7 +867,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
     elif func_name == "search_memories":
         query = args["query"]
         limit = args.get("limit", 5)
-        response = memory.search(query, filters={"user_id": user_id}, limit=limit)
+        response = memory.search(query, filters={"user_id": user_id}, top_k=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
@@ -771,7 +893,7 @@ def execute_mem0_tool_call(memory: Memory, tool_call, user_id: str,
 
     elif func_name == "get_all_memories":
         limit = args.get("limit", default_search_limit)
-        response = memory.get_all(user_id=user_id, limit=limit)
+        response = memory.get_all(filters={"user_id": user_id}, top_k=limit)
         results = response.get("results", [])
         if results:
             lines = [f"- [id={r['id']}] {r['memory']}" for r in results]
@@ -793,47 +915,50 @@ def load_user_messages_to_mem0_agent(memory: Memory, sessions: list, user_id: st
         run_config: Runtime params (iterations, search_limit)
     """
     client = create_client_from_experiment(experiment)
-    model_name = experiment.model
+    try:
+        model_name = experiment.model
 
-    user_messages = []
-    for session in sessions:
-        for msg in session['messages'][start: end]:
-            if msg['role'] == 'user':
-                user_messages.append(msg['content'])
+        user_messages = []
+        for session in sessions:
+            for msg in session['messages'][start: end]:
+                if msg['role'] == 'user':
+                    user_messages.append(msg['content'])
 
-    max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
-    search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
+        max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
+        search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
 
-    print(f"\nLoading {len(user_messages)} user messages into mem0 agent...")
-    for content in tqdm(user_messages, desc=f"[{experiment.name}] mem0 agent loading"):
-        messages = [
-            {"role": "system", "content": loading_prompt},
-            {"role": "user", "content": content},
-        ]
-        for _ in range(max_iterations):
-            response = client.chat.completions.create(
-                model=model_name,
-                messages=messages,
-                tools=MEM0_AGENT_TOOLS_LOADING,
-                tool_choice="auto",
-                # Delete comment synbol and set openrouter as base url to use this option
-                # extra_body={"include_reasoning": True}
-            )
-            assistant_msg = normalize_tool_calls(response.choices[0].message)
-            messages.append(message_to_dict(assistant_msg))
+        print(f"\nLoading {len(user_messages)} user messages into mem0 agent...")
+        for content in tqdm(user_messages, desc=f"[{experiment.name}] mem0 agent loading"):
+            messages = [
+                {"role": "system", "content": loading_prompt},
+                {"role": "user", "content": content},
+            ]
+            for _ in range(max_iterations):
+                response = client.chat.completions.create(
+                    model=model_name,
+                    messages=messages,
+                    tools=MEM0_AGENT_TOOLS_LOADING,
+                    tool_choice="auto",
+                    # Delete comment synbol and set openrouter as base url to use this option
+                    # extra_body={"include_reasoning": True}
+                )
+                assistant_msg = normalize_tool_calls(response.choices[0].message)
+                messages.append(message_to_dict(assistant_msg))
 
-            if assistant_msg.tool_calls:
-                for tc in assistant_msg.tool_calls:
-                    result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
-                    messages.append({
-                        "role": "tool",
-                        "tool_call_id": tc.id,
-                        "content": result,
-                    })
-            else:
-                break
+                if assistant_msg.tool_calls:
+                    for tc in assistant_msg.tool_calls:
+                        result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
+                        messages.append({
+                            "role": "tool",
+                            "tool_call_id": tc.id,
+                            "content": result,
+                        })
+                else:
+                    break
 
-    print(f"✓ Loaded {len(user_messages)} messages via mem0 agent")
+        print(f"✓ Loaded {len(user_messages)} messages via mem0 agent")
+    finally:
+        client.close()
 
 
 def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
@@ -850,46 +975,49 @@ def run_mem0_agent_query(memory: Memory, query_obj: dict, user_id: str,
     question = query_obj['question']
 
     client = create_client_from_experiment(experiment)
-    model_name = experiment.model
+    try:
+        model_name = experiment.model
 
-    max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
-    search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
+        max_iterations = run_config.get('iterations', DEFAULT_AGENT_ITERATIONS)
+        search_limit = run_config.get('search_limit', DEFAULT_AGENT_SEARCH_LIMIT)
 
-    messages = [
-        {"role": "system", "content": query_prompt},
-        {"role": "user", "content": question},
-    ]
-    tool_calls_log = []
+        messages = [
+            {"role": "system", "content": query_prompt},
+            {"role": "user", "content": question},
+        ]
+        tool_calls_log = []
 
-    assistant_msg = None
-    for iteration in range(max_iterations):
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=messages,
-            tools=MEM0_AGENT_TOOLS_QUERY,
-            tool_choice="auto",
-            # Delete comment synbol and set openrouter as base url to use this option
-            # extra_body={"include_reasoning": True}
-        )
-        assistant_msg = normalize_tool_calls(response.choices[0].message)
-        messages.append(message_to_dict(assistant_msg))
+        assistant_msg = None
+        for iteration in range(max_iterations):
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                tools=MEM0_AGENT_TOOLS_QUERY,
+                tool_choice="auto",
+                # Delete comment synbol and set openrouter as base url to use this option
+                # extra_body={"include_reasoning": True}
+            )
+            assistant_msg = normalize_tool_calls(response.choices[0].message)
+            messages.append(message_to_dict(assistant_msg))
 
-        if assistant_msg.tool_calls:
-            for tc in assistant_msg.tool_calls:
-                result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
-                tool_calls_log.append({
-                    "iteration": iteration,
-                    "tool": tc.function.name,
-                    "arguments": json.loads(tc.function.arguments),
-                    "result": result,
-                })
-                messages.append({
-                    "role": "tool",
-                    "tool_call_id": tc.id,
-                    "content": result,
-                })
-        else:
-            break
+            if assistant_msg.tool_calls:
+                for tc in assistant_msg.tool_calls:
+                    result = execute_mem0_tool_call(memory, tc, user_id, search_limit)
+                    tool_calls_log.append({
+                        "iteration": iteration,
+                        "tool": tc.function.name,
+                        "arguments": json.loads(tc.function.arguments),
+                        "result": result,
+                    })
+                    messages.append({
+                        "role": "tool",
+                        "tool_call_id": tc.id,
+                        "content": result,
+                    })
+            else:
+                break
+    finally:
+        client.close()
 
     if isinstance(query_obj['reference_answer'], list):
         ref_answer = query_obj['reference_answer'][answer_idx]
@@ -1027,24 +1155,35 @@ def save_results(data: dict, output_path: str):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def result_path(output_dir: Path, case_id: str, config_name: str) -> Path:
+    """Single source of truth for result file naming (save + resume checks)."""
+    return output_dir / f"results_{case_id}_{config_name}.json"
+
+
+def result_exists(output_dir: Path, case_id: str, config_name: str) -> bool:
+    """True if the result file exists AND actually contains this case.
+
+    A bare existence check would let a file truncated by a crash mid-write
+    permanently skip the case on resume.
+    """
+    path = result_path(output_dir, case_id, config_name)
+    if not path.exists():
+        return False
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return False
+    return case_id in {c.get("case_id") for c in data.get("cases", [])}
+
+
 def save_result_file_incremental(output_dir: Path, case_id: str, config_name: str,
                                   results: list, timestamp: str, experiment: Experiment,
                                   case_file: Path):
     """Инкрементальное сохранение: пропускает кейс, если он уже есть в файле."""
-    output_path = output_dir / f"results_{case_id}_{config_name}.json"
-    
-    existing_data = {}
-    if output_path.exists():
-        try:
-            with open(output_path, 'r', encoding='utf-8') as f:
-                existing_data = json.load(f)
-        except (json.JSONDecodeError, FileNotFoundError):
-            existing_data = {}
-    
-    existing_cases = existing_data.get("cases", [])
-    existing_ids = {c.get("case_id") for c in existing_cases if c.get("case_id")}
-    
-    if case_id in existing_ids:
+    output_path = result_path(output_dir, case_id, config_name)
+
+    if result_exists(output_dir, case_id, config_name):
         print(f"  ⏭ Skipping {case_id} ({config_name}) — already exists")
         return  # ← Skip!
     
@@ -1121,6 +1260,11 @@ def run_mem_agent_parallel(case_files: list[Path], experiment: Experiment,
     tasks = []
     for case_file in case_files:
         case_data = load_benchmark_data(str(case_file))
+        # Resume: skip when this case's result file already exists
+        case_id = case_data.get('case_id', 'unknown')
+        if output_dir and result_exists(output_dir, case_id, 'mem_agent'):
+            print(f"  ⏭ Skipping {case_id} (mem_agent) — results exist")
+            continue
         tasks.append((case_data, case_file, experiment, system_prompt_path,
                        mem_agent_config, script_dir, verbose, mem_checkpoints))
 
@@ -1212,34 +1356,45 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                     case_id = case_data.get('case_id', case_file.stem)
                     group_name = case_file.stem
 
+                    # Resume: skip ingestion+queries when every limit's result
+                    # file for this case already exists (crashed-run restarts)
+                    if all(result_exists(output_dir, case_id, f"mem0_{infer_suffix}{limit}")
+                           for limit in mem0_limits):
+                        print(f"  ⏭ Skipping {case_id} (infer={infer_mode}) — results exist")
+                        continue
+
                     print(f"\n  [{experiment.name}] Processing {case_id} (infer={infer_mode})...")
 
-                    mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
-                    case_results = dict()
-                    for i in range(len(mem_checkpoints) - 1):
-                        if len(mem_checkpoints) - 1 == 1:
-                            index = -1
-                        else:
-                            index = i
-                        load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
+                    try:
+                        mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
+                        case_results = dict()
+                        for i in range(len(mem_checkpoints) - 1):
+                            if len(mem_checkpoints) - 1 == 1:
+                                index = -1
+                            else:
+                                index = i
+                            load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
 
+                            for limit in mem0_limits:
+                                print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
+
+                                for query_obj in case_data['queries']:
+                                    result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
+                                    if limit in case_results:
+                                        case_results[limit].append(result)
+                                    else:
+                                        case_results[limit] = [result]
                         for limit in mem0_limits:
-                            print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
-
-                            for query_obj in case_data['queries']:
-                                result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
-                                if limit in case_results:
-                                    case_results[limit].append(result)
-                                else:
-                                    case_results[limit] = [result]
-                    for limit in mem0_limits:
-                        config_name = f"mem0_{infer_suffix}{limit}"
-                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
-                        save_result_file_incremental(
-                            output_dir, case_id, config_name,
-                            case_results[limit], timestamp, experiment,
-                            case_file,
-                        )
+                            config_name = f"mem0_{infer_suffix}{limit}"
+                            print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
+                            save_result_file_incremental(
+                                output_dir, case_id, config_name,
+                                case_results[limit], timestamp, experiment,
+                                case_file,
+                            )
+                    except Exception as e:
+                        print(f"  [{experiment.name}] ✗ FAILED {case_id} (infer={infer_mode}): {e}")
+                        continue
 
         # ==================================================================
         # Phase 2: mem0 Agent (tool-calling)
@@ -1255,6 +1410,11 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
                 case_data = load_benchmark_data(str(case_file))
                 case_id = case_data.get('case_id', case_file.stem)
                 group_name = case_file.stem
+
+                # Resume: skip when this case's result file already exists
+                if result_exists(output_dir, case_id, 'mem0_agent'):
+                    print(f"  ⏭ Skipping {case_id} (mem0_agent) — results exist")
+                    continue
 
                 print(f"\n  [{experiment.name}] Processing {case_id}...")
 
@@ -1314,6 +1474,10 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
             else:
                 for case_file in dataset.case_files:
                     case_data = load_benchmark_data(str(case_file))
+                    # Resume: skip when this case's result file already exists
+                    if result_exists(output_dir, case_data.get('case_id', 'unknown'), 'mem_agent'):
+                        print(f"  ⏭ Skipping {case_data.get('case_id', 'unknown')} (mem_agent) — results exist")
+                        continue
                     try:
                         result = run_agent_case((
                             case_data, case_file, experiment,

@@ -165,6 +165,9 @@ package.json
 package-lock.json
 node_modules/
 
+# EMem clone (see README "Install EMem")
+EMem/
+
 # Benchmark runtime artifacts
 eval_results*/
 qdrant_data*/

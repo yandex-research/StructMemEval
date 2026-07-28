@@ -84,6 +84,10 @@ python benchmark.py --config config_test.yaml --clean-memory
 cd judge && python run_all_judge.py
 ```
 
+Re-running the same command resumes automatically: cases whose result files already
+exist are skipped (mem0 RAG, mem0 Agent, and mem-agent phases), so a crashed run can
+just be restarted.
+
 ### Memory Systems
 
 | System | Description |

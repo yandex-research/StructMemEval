@@ -27,6 +27,18 @@ def load_prompt(prompt_path: str) -> str:
         return f.read()
 
 
+def judge_file_complete(path: Path) -> bool:
+    """True if path holds a fully-written judge result (crash-truncation guard)."""
+    if not path.exists():
+        return False
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return False
+    return 'mean_score' in data and 'details' in data
+
+
 def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict) -> int:
     reference = result['reference_answer']
     prompt = prompt_template.format(
@@ -66,9 +78,9 @@ def main():
     eval_top_dirs = sorted(script_dir.parent.glob("eval_results*"))
     eval_top_dirs = [d for d in eval_top_dirs if d.is_dir() and "test" not in d.name]
 
-    eval_dirs = []
     for top_dir in eval_top_dirs:
         # Check for experiment subdirectories (new format)
+        eval_dirs = []
         subdirs = [d for d in sorted(top_dir.iterdir()) if d.is_dir() and not d.name.startswith('.')]
         if subdirs:
             eval_dirs.extend(subdirs)
@@ -78,16 +90,14 @@ def main():
 
         
         for eval_dir in eval_dirs:
-            if os.path.exists(results_dir / eval_dir.name):
-                continue
             eval_files = []
             eval_files.extend(sorted(eval_dir.glob("results_*.json")))
 
             print(f"Scanning dirs: {[d.name for d in eval_dirs]}")
             print(f"Found {len(eval_files)} eval result files")
 
-            # Skip already judged
-            # existing = {f.stem.replace("judge_", "") for f in results_dir.glob("judge_*.json")}
+            # Skip already judged (per file, so new results in an
+            # already-judged experiment dir still get picked up)
             to_judge = []
             for f in eval_files:
                 key = f.stem.replace("results_", "")
@@ -95,6 +105,8 @@ def main():
                 parent = f.parent
                     # Nested: eval_results/gpt-4o-mini/results_*.json
                 key = f"{parent.name}/judge_{key}.json"
+                if judge_file_complete(results_dir / key):
+                    continue
                 to_judge.append((f, key))
 
             print(f"To judge: {len(to_judge)}")
@@ -142,8 +154,10 @@ def main():
                     os.makedirs(results_dir / parent.name)
 
                 output_path = results_dir / f"{key}"
-                with open(output_path, 'w') as f:
+                tmp_path = output_path.with_suffix(output_path.suffix + ".tmp")
+                with open(tmp_path, 'w') as f:
                     json.dump(output, f, indent=2)
+                os.replace(tmp_path, output_path)
                 successes[fold_name][1] += 1
                 if mean_score >= 0.5:
                     status = "PASS"
@@ -153,15 +167,37 @@ def main():
                 
                 print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
             if len(to_judge) > 0:
-                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Total score {successes} / {len(to_judge)}")
-                output_path = results_dir / parent.name / "0judge_total.json"
-                for key, value in successes.items():
-                    if value[1] != 0:
-                        successes[key].append(value[0] / value[1])
+                print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Newly judged {successes} / {len(to_judge)}")
+
+            # Recompute totals from ALL judge files of this dir whenever any
+            # exist — not just when this run judged new ones — so a rerun
+            # that finds nothing left `to_judge` still restores a missing or
+            # stale 0judge_total.json (e.g. after a crash right before this
+            # point on a prior run).
+            judge_files = sorted((results_dir / eval_dir.name).glob("judge_*.json"))
+            if judge_files:
+                totals = {"recommendations": [0, 0], "accounting": [0, 0], "graph": [0, 0], "state_machine": [0, 0]}
+                for jf in judge_files:
+                    if "recommendations" in jf.name:
+                        fold_name = "recommendations"
+                    elif "accounting" in jf.name:
+                        fold_name = "accounting"
+                    elif "graph" in jf.name:
+                        fold_name = "graph"
+                    elif "static" in jf.name or "transition" in jf.name:
+                        fold_name = "state_machine"
                     else:
-                        successes[key].append(None)
-                with open(output_path, 'w') as f:
-                    json.dump(successes, f, indent=2)
+                        print(f"  WARNING: skipping {jf.name} from totals (no matching fold)")
+                        continue
+                    with open(jf) as f:
+                        mean_score = json.load(f).get('mean_score', 0)
+                    totals[fold_name][1] += 1
+                    if mean_score >= 0.5:
+                        totals[fold_name][0] += 1
+                for key, value in totals.items():
+                    value.append(value[0] / value[1] if value[1] else None)
+                with open(results_dir / eval_dir.name / "0judge_total.json", 'w') as f:
+                    json.dump(totals, f, indent=2)
 
 
 if __name__ == "__main__":
