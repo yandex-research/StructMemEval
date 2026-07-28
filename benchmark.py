@@ -267,6 +267,9 @@ def convert_case_to_locomo_sample(case_data: dict, case_id: str,
 # flock on the storage dir, so the previous client must be closed before a
 # new Memory can open the same path.
 _active_mem0 = None
+# httpx.Client backing the previous Memory's LLM/embedding OpenAI clients;
+# closed alongside _active_mem0 so connection pools don't leak across cases.
+_active_http_client = None
 
 
 def initialize_mem0(mem0_config: dict, experiment: Experiment,
@@ -278,17 +281,22 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         experiment: Experiment with resolved model/api_key/base_url for the LLM
         collection_name: Full collection name (already includes experiment suffix)
     """
-    global _active_mem0
+    global _active_mem0, _active_http_client
     if _active_mem0 is not None:
         # entity_store shares vector_store's client; the telemetry store
         # (~/.mem0/migrations_qdrant) has its own
         for store in (_active_mem0.vector_store,
                       getattr(_active_mem0, '_telemetry_vector_store', None)):
+            if store is None:
+                continue
             try:
                 store.client.close()
             except Exception as e:
                 print(f"  ⚠ Failed to close mem0 store client: {e}")
         _active_mem0 = None
+    if _active_http_client is not None:
+        _active_http_client.close()
+        _active_http_client = None
 
     os.environ.pop('OPENROUTER_API_KEY', None)
 
@@ -335,6 +343,7 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
         limits=DEFAULT_CONNECTION_LIMITS,
         follow_redirects=True
     )
+    _active_http_client = http_client
 
     memory.llm.client = OpenAI(
         api_key=llm_config['api_key'],
@@ -474,20 +483,30 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
-    # mem0 swallows fact-extraction LLM errors (logs "LLM extraction failed"
-    # or "Error parsing extraction response", stores nothing) — detect via
-    # its logger and retry instead of silently dropping the message's facts.
+    # mem0 swallows several ingestion failures instead of raising: LLM
+    # extraction ("LLM extraction failed" / "Error parsing extraction
+    # response", both logging.ERROR), per-memory embedding ("Failed to embed
+    # memory text", logging.WARNING), and vector-store insert ("Failed to
+    # insert memory", logging.ERROR). Detect all of them via the logger and
+    # retry instead of silently dropping facts.
     class ExtractionFailed(Exception):
         pass
 
+    _SWALLOWED_ERROR_MARKERS = (
+        "extraction failed",
+        "Error parsing extraction response",
+        "Failed to embed memory text",
+        "Failed to insert memory",
+    )
+
     class ExtractionErrorHandler(logging.Handler):
         def __init__(self):
-            super().__init__(level=logging.ERROR)
+            super().__init__(level=logging.WARNING)
             self.failed = False
 
         def emit(self, record):
             message = record.getMessage()
-            if "extraction failed" in message or "Error parsing extraction response" in message:
+            if any(marker in message for marker in _SWALLOWED_ERROR_MARKERS):
                 self.failed = True
 
     mem0_logger = logging.getLogger("mem0.memory.main")
