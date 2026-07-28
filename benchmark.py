@@ -286,8 +286,8 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
                       getattr(_active_mem0, '_telemetry_vector_store', None)):
             try:
                 store.client.close()
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"  ⚠ Failed to close mem0 store client: {e}")
         _active_mem0 = None
 
     os.environ.pop('OPENROUTER_API_KEY', None)
@@ -325,7 +325,10 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
             ),
         )
     )
-    
+    # Track immediately so a failure below still lets the next call close
+    # this client's flock instead of leaking it.
+    _active_mem0 = memory
+
     http_client = Client(
         verify=False,
         timeout=DEFAULT_TIMEOUT,
@@ -349,7 +352,6 @@ def initialize_mem0(mem0_config: dict, experiment: Experiment,
     # infer=True, stale entities would otherwise leak across cases).
     _ = memory.entity_store
     memory.reset()
-    _active_mem0 = memory
     return memory
 
 
@@ -472,9 +474,9 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             if msg['role'] == 'user':
                 user_messages.append({'role': 'user', 'content': msg['content']})
 
-    # mem0 swallows fact-extraction LLM errors (logs "LLM extraction failed",
-    # stores nothing) — detect via its logger and retry instead of silently
-    # dropping the message's facts.
+    # mem0 swallows fact-extraction LLM errors (logs "LLM extraction failed"
+    # or "Error parsing extraction response", stores nothing) — detect via
+    # its logger and retry instead of silently dropping the message's facts.
     class ExtractionFailed(Exception):
         pass
 
@@ -484,7 +486,8 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             self.failed = False
 
         def emit(self, record):
-            if "extraction failed" in record.getMessage():
+            message = record.getMessage()
+            if "extraction failed" in message or "Error parsing extraction response" in message:
                 self.failed = True
 
     mem0_logger = logging.getLogger("mem0.memory.main")
@@ -1300,32 +1303,36 @@ def run_experiment(experiment: Experiment, config: dict, script_dir: Path):
 
                     print(f"\n  [{experiment.name}] Processing {case_id} (infer={infer_mode})...")
 
-                    mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
-                    case_results = dict()
-                    for i in range(len(mem_checkpoints) - 1):
-                        if len(mem_checkpoints) - 1 == 1:
-                            index = -1
-                        else:
-                            index = i
-                        load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
+                    try:
+                        mem0 = initialize_mem0(config['mem0'], experiment, collection_name)
+                        case_results = dict()
+                        for i in range(len(mem_checkpoints) - 1):
+                            if len(mem_checkpoints) - 1 == 1:
+                                index = -1
+                            else:
+                                index = i
+                            load_user_messages_to_mem0(mem0, case_data['sessions'], dataset.user_id, mem_checkpoints[i], mem_checkpoints[i + 1], infer=infer_mode)
 
+                            for limit in mem0_limits:
+                                print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
+
+                                for query_obj in case_data['queries']:
+                                    result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
+                                    if limit in case_results:
+                                        case_results[limit].append(result)
+                                    else:
+                                        case_results[limit] = [result]
                         for limit in mem0_limits:
-                            print(f"    [{experiment.name}] mem0 {infer_suffix}{limit}...")
-
-                            for query_obj in case_data['queries']:
-                                result = run_mem0_query(mem0, query_obj, dataset.user_id, limit, experiment, index)
-                                if limit in case_results:
-                                    case_results[limit].append(result)
-                                else:
-                                    case_results[limit] = [result]
-                    for limit in mem0_limits:
-                        config_name = f"mem0_{infer_suffix}{limit}"
-                        print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
-                        save_result_file_incremental(
-                            output_dir, case_id, config_name,
-                            case_results[limit], timestamp, experiment,
-                            case_file,
-                        )
+                            config_name = f"mem0_{infer_suffix}{limit}"
+                            print(f"\n  [{experiment.name}] [{case_id}] Saving mem0 results...")
+                            save_result_file_incremental(
+                                output_dir, case_id, config_name,
+                                case_results[limit], timestamp, experiment,
+                                case_file,
+                            )
+                    except Exception as e:
+                        print(f"  [{experiment.name}] ✗ FAILED {case_id} (infer={infer_mode}): {e}")
+                        continue
 
         # ==================================================================
         # Phase 2: mem0 Agent (tool-calling)

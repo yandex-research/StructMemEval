@@ -66,9 +66,9 @@ def main():
     eval_top_dirs = sorted(script_dir.parent.glob("eval_results*"))
     eval_top_dirs = [d for d in eval_top_dirs if d.is_dir() and "test" not in d.name]
 
-    eval_dirs = []
     for top_dir in eval_top_dirs:
         # Check for experiment subdirectories (new format)
+        eval_dirs = []
         subdirs = [d for d in sorted(top_dir.iterdir()) if d.is_dir() and not d.name.startswith('.')]
         if subdirs:
             eval_dirs.extend(subdirs)
