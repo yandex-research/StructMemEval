@@ -27,6 +27,18 @@ def load_prompt(prompt_path: str) -> str:
         return f.read()
 
 
+def judge_file_complete(path: Path) -> bool:
+    """True if path holds a fully-written judge result (crash-truncation guard)."""
+    if not path.exists():
+        return False
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return False
+    return 'mean_score' in data and 'details' in data
+
+
 def judge_single(client: OpenAI, model: str, prompt_template: str, result: dict) -> int:
     reference = result['reference_answer']
     prompt = prompt_template.format(
@@ -93,7 +105,7 @@ def main():
                 parent = f.parent
                     # Nested: eval_results/gpt-4o-mini/results_*.json
                 key = f"{parent.name}/judge_{key}.json"
-                if (results_dir / key).exists():
+                if judge_file_complete(results_dir / key):
                     continue
                 to_judge.append((f, key))
 
@@ -142,8 +154,10 @@ def main():
                     os.makedirs(results_dir / parent.name)
 
                 output_path = results_dir / f"{key}"
-                with open(output_path, 'w') as f:
+                tmp_path = output_path.with_suffix(output_path.suffix + ".tmp")
+                with open(tmp_path, 'w') as f:
                     json.dump(output, f, indent=2)
+                os.replace(tmp_path, output_path)
                 successes[fold_name][1] += 1
                 if mean_score >= 0.5:
                     status = "PASS"
@@ -154,11 +168,16 @@ def main():
                 print(f"  {key}: {mean_score:.0%} ({sum(scores)}/{len(scores)}) [{status}]")
             if len(to_judge) > 0:
                 print(f"\nDirectory {results_dir.name} done! Results in {results_dir}. Newly judged {successes} / {len(to_judge)}")
-                # Recompute totals from ALL judge files of this dir, not just
-                # the newly judged ones — incremental runs would otherwise
-                # overwrite 0judge_total.json with partial counts.
+
+            # Recompute totals from ALL judge files of this dir whenever any
+            # exist — not just when this run judged new ones — so a rerun
+            # that finds nothing left `to_judge` still restores a missing or
+            # stale 0judge_total.json (e.g. after a crash right before this
+            # point on a prior run).
+            judge_files = sorted((results_dir / eval_dir.name).glob("judge_*.json"))
+            if judge_files:
                 totals = {"recommendations": [0, 0], "accounting": [0, 0], "graph": [0, 0], "state_machine": [0, 0]}
-                for jf in sorted((results_dir / eval_dir.name).glob("judge_*.json")):
+                for jf in judge_files:
                     if "recommendations" in jf.name:
                         fold_name = "recommendations"
                     elif "accounting" in jf.name:

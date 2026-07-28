@@ -184,6 +184,16 @@ def clean_memory(config: dict, script_dir: Path, experiments: list[Experiment]):
             shutil.rmtree(mem_path, ignore_errors=True)
             print(f"  ✓ Deleted mem-agent directory: {mem_path}")
 
+    # 3. Clean per-experiment output dirs, so the resume-skip logic in
+    # save_result_file_incremental/result_exists can't reuse result files
+    # produced against the memory state we just wiped.
+    output_dir_str = config.get('output_dir', 'eval_results')
+    for exp in experiments:
+        exp_output_dir = script_dir / output_dir_str / exp.name
+        if exp_output_dir.exists():
+            shutil.rmtree(exp_output_dir, ignore_errors=True)
+            print(f"  ✓ Deleted output directory: {exp_output_dir}")
+
     print("✓ Memory cleanup complete\n")
 
 
@@ -535,8 +545,19 @@ def load_user_messages_to_mem0(memory: Memory, sessions: list, user_id: str,
             for item in (result or {}).get("results", []):
                 try:
                     memory.delete(item["id"])
-                except Exception:
+                except ValueError:
+                    # mem0 2.0.2's Memory.delete() raises ValueError when
+                    # vector_store.get() returns None for the id — this is the
+                    # "already gone, nothing to roll back" case, safe to ignore.
                     pass
+                except Exception as delete_err:
+                    # A real deletion failure (vector-store connectivity, etc.)
+                    # means the fact may still be sitting in memory. Don't retry
+                    # locally — that would duplicate it — let this propagate so
+                    # the whole case fails and gets replayed clean on resume.
+                    print(f"    ✗ Failed to roll back memory {item.get('id')} "
+                          f"after extraction failure: {delete_err}")
+                    raise
             raise ExtractionFailed("mem0 fact extraction failed for message")
 
     infer_label = "infer" if infer else "raw"
